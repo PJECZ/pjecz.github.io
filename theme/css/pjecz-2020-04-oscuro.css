@@ -1,0 +1,33 @@
+/*
+ * Poder Judicial del Estado de Coahuila de Zaragoza
+ * Direccion de Informatica
+ *
+ * Hoja de Estilos CSS 2020-04 Oscuro
+ */
+
+@import url('pjecz-2020-04-claro.css');
+
+/* -------
+ * Colores
+ * -------
+ */
+
+body             { color: white; background-color: #1e2227; }
+h1               { color: #ffffff; }
+h2               { color: #31322c; }
+h3               { color: #eeeeee; }
+h4               { color: #dddddd; }
+h5               { color: #dddddd; }
+h6               { color: #dddddd; }
+a                { color: #dddddd; }
+a:focus,
+a:hover          { color: #ffffff; }
+a:active,
+a:visited        { color: #dddddd; }
+header           { background-color: #1d1b1e; }
+#cabecera        { background-color: #222222; }
+#destacados      { background-color: #222222; }
+#novedades       { background-color: #444444; }
+#recomendaciones { background-color: #222222; }
+#sitios_interes  { background-color: #444444; }
+.destacados-card { background-color: #444444; }

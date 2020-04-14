@@ -1,0 +1,123 @@
+/*
+ * Poder Judicial del Estado de Coahuila de Zaragoza
+ * Direccion de Informatica
+ *
+ * Hoja de Estilos CSS 2020-04 Claro
+ */
+
+/* -----------
+ * Tipografias
+ * -----------
+ */
+
+body        { font-family: 'Lato', sans-serif; font-weight: 300; line-height: 1.3em; }
+h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.8em; }
+h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
+h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
+h4          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4em; }
+h5          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2em; }
+h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0em; }
+header      { font-family: 'Lato', sans-serif; font-weight: 300; }
+#navegacion { font-family: 'Saira', sans-serif; font-weight: 700; }
+p           { font-size: 1.0em; }
+blockquote  { font-size: 1.2em; font-style: italic; }
+footer      { font-family: 'Saira', sans-serif; font-weight: 400; }
+
+/* --------
+ * Espacios
+ * --------
+ */
+
+body             { padding-top: 80px; /* Es la altura de Navegacion */ }
+h1               { margin-bottom: 0.4em; }
+h2               { margin-bottom: 0.4em; }
+h3               { margin-bottom: 0.3em; }
+h4               { margin-bottom: 0.3em; }
+h5               { margin-bottom: 0.2em; }
+h6               { margin-bottom: 0.2em; }
+p                { padding: 0.4em 0; }
+blockquote       { padding: 1.2em; }
+header           { min-height: 100px; }
+main             { min-height: 800px; }
+article          { min-height: 800px; }
+#cabecera        { min-height: 400px; }
+#destacados      { min-height: 400px; }
+#novedades       { min-height: 400px; }
+#recomendaciones { min-height: 400px; }
+#sitios_interes  { min-height: 200px; }
+footer           { min-height: 200px; }
+footer ul li     { padding: 0.2em 0; }
+
+/* -------
+ * Colores
+ * -------
+ */
+
+body             { color: black; background-color: white; }
+h1               { color: #000000; }
+h2               { color: #31322c; }
+h3               { color: #004360; }
+h4               { color: #d0a473; }
+h5               { color: #004360; }
+h6               { color: #004360; }
+a                { color: #083755; }
+a:focus,
+a:hover          { color: #00568d; }
+a:active,
+a:visited        { color: #083755; }
+header           { background-color: #e3e1e4; }
+#navegacion      { background-color: #083755; border-bottom: 16px solid #859497; }
+#cabecera        { background-color: #ffffff; }
+#destacados      { background-color: #ffffff; }
+#novedades       { background-color: #e3e1e4; }
+#recomendaciones { background-color: #ffffff; }
+#sitios_interes  { background-color: #f7f3f2; }
+footer           { color: #ffffff; background-color: #4f5e61; }
+footer h3        { color: #859497; }
+footer h4        { color: #859497; }
+footer h5        { color: #859497; }
+footer ul li     { color: #777777; }
+footer a         { color: #dddddd; }
+footer a:focus,
+footer a:hover   { color: #ffffff; }
+footer a:active,
+footer a:visited { color: #dddddd; }
+
+/* ----------
+ * Responsivo
+ * ----------
+ */
+
+@media only screen and (max-width: 990px) {
+    body       { font-size: 0.9em; }
+    h1         { font-size: 2.6em; margin-bottom: 0.3em; }
+    h2         { font-size: 2.2em; margin-bottom: 0.3em; }
+    h3         { font-size: 2.0em; margin-bottom: 0.2em; }
+    h4         { font-size: 1.6em; margin-bottom: 0.2em; }
+    h5         { font-size: 1.4em; margin-bottom: 0.1em; }
+    h6         { font-size: 1.2em; margin-bottom: 0.1em; }
+    p          { font-size: 1.0em; padding: 0.3em 0; }
+    blockquote { font-size: 1.0em; padding: 0.8em; }
+}
+@media only screen and (max-width: 580px) {
+    body       { font-size: 0.8em; }
+    h1         { font-size: 2.2em; margin-bottom: 0.3em; }
+    h2         { font-size: 2.0em; margin-bottom: 0.3em; }
+    h3         { font-size: 1.8em; margin-bottom: 0.2em; }
+    h4         { font-size: 1.6em; margin-bottom: 0.2em; }
+    h5         { font-size: 1.4em; margin-bottom: 0.1em; }
+    h6         { font-size: 1.2em; margin-bottom: 0.1em; }
+    p          { font-size: 0.9em; padding: 0.2em 0; }
+    blockquote { font-size: 1.0em; padding: 0.8em; }
+}
+@media only screen and (max-width: 300px) {
+    body       { font-size: 0.7em; }
+    h1         { font-size: 1.8em; margin-bottom: 0.2em; }
+    h2         { font-size: 1.6em; margin-bottom: 0.2em; }
+    h3         { font-size: 1.4em; margin-bottom: 0.1em; }
+    h4         { font-size: 1.2em; margin-bottom: 0.1em; }
+    h5         { font-size: 1.1em; margin-bottom: 0.0em; }
+    h6         { font-size: 1.0em; margin-bottom: 0.0em; }
+    p          { font-size: 0.8em; padding: 0.1em 0; }
+    blockquote { font-size: 0.9em; padding: 0.4em; }
+}
