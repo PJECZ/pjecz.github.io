@@ -42,6 +42,7 @@ main             { min-height: 800px; }
 article          { min-height: 800px; }
 #cabecera        { min-height: 400px; }
 #destacados      { min-height: 400px; }
+#en_construccion { min-height: 120px; }
 #novedades       { min-height: 400px; }
 #recomendaciones { min-height: 400px; }
 #sitios_interes  { min-height: 200px; }
@@ -69,6 +70,7 @@ header           { background-color: #e3e1e4; }
 #navegacion      { background-color: #083755; border-bottom: 16px solid #859497; }
 #cabecera        { background-color: #ffffff; }
 #destacados      { background-color: #ffffff; }
+#en_construccion { background-color: #fff2b6; background-image: linear-gradient(#fff2b6, #fffced); }
 #novedades       { background-color: #e3e1e4; }
 #recomendaciones { background-color: #ffffff; }
 #sitios_interes  { background-color: #f7f3f2; }

@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pjecz.gob.mx/</loc>
-<lastmod>2020-04-14T15:50:23-00:00</lastmod>
+<lastmod>2020-04-14T22:59:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -480,92 +480,71 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2019/avances-cumplimiento-plan-integral-desarrollo-2019/</loc>
-<lastmod>2019-06-30T16:00:00-05:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-13-0400-acuerdo-establecen-medidas-sanitarias/</loc>
+<lastmod>2020-04-13T04:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2018/informe-anual-actividades-2018/</loc>
-<lastmod>2018-12-31T16:00:00-06:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-13-0300-acuerdo-sesiones-de-pleno-del-consejo-atraves-de-tecnologias/</loc>
+<lastmod>2020-04-13T03:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/comunicados/2018/2018-12-19-infonavit/</loc>
-<lastmod>2018-12-19T16:00:00-06:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-13-0200-acuerdo-relativo-al-cierre-de-monclova/</loc>
+<lastmod>2020-04-13T02:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2017/informe-anual-actividades-2017/</loc>
-<lastmod>2017-12-31T18:00:00-06:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-13-0100-acuerdo-implementacion-buzon-deposito-de-demandas/</loc>
+<lastmod>2020-04-13T01:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2017/boletin-informacion-judicial-2017-02/</loc>
-<lastmod>2017-12-31T16:00:00-06:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-06-0200-acuerdo-cuestiones-urgentes-en-materia-familiar/</loc>
+<lastmod>2020-04-06T02:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2017/boletin-judicial-2017-01/</loc>
-<lastmod>2017-06-30T16:00:00-05:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-06-0100-acuerdo-audiencias-en-materia-penal-por-videoconferencias/</loc>
+<lastmod>2020-04-06T01:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2016/boletin-judicial-2016-02/</loc>
-<lastmod>2016-12-31T16:00:00-06:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-04-01-0100-acuerdo-posterga-suspensión-al-30-abril/</loc>
+<lastmod>2020-04-01T01:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/boletines-judiciales/2016/boletin-judicial-2016-01/</loc>
-<lastmod>2016-06-30T16:00:00-05:00</lastmod>
+<loc>https://pjecz.gob.mx/acuerdos/2020/2020-03-18-0100-acuerdo-c048-2020-suspension-covid-19/</loc>
+<lastmod>2020-03-18T01:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://pjecz.gob.mx/category/boletines-judiciales.html</loc>
-<lastmod>2019-06-30T16:00:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2018-12-19T16:00:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://pjecz.gob.mx/tag/informes-anuales.html</loc>
-<lastmod>2019-06-30T16:00:00-06:41</lastmod>
+<loc>https://pjecz.gob.mx/category/acuerdos.html</loc>
+<lastmod>2020-04-13T04:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://pjecz.gob.mx/tag/infonavit.html</loc>
-<lastmod>2018-12-19T16:00:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://pjecz.gob.mx/tag/boletines-judiciales.html</loc>
-<lastmod>2017-12-31T16:00:00-06:41</lastmod>
+<lastmod>2020-04-13T04:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
