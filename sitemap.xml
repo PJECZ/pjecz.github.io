@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-04-14T23:27:19-00:00</lastmod>
+<lastmod>2020-04-15T10:34:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -480,6 +480,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/2020/2020-04-15-0100-sesion-pleno/</loc>
+<lastmod>2020-04-15T10:08:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-0400-acuerdo-establecen-medidas-sanitarias/</loc>
 <lastmod>2020-04-13T04:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -543,7 +550,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tag/infonavit.html</loc>
+<loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
+<lastmod>2020-04-15T10:08:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
+<lastmod>2020-04-15T10:08:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/tag/covid-19.html</loc>
 <lastmod>2020-04-13T04:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

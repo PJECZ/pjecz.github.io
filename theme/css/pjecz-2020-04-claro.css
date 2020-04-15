@@ -46,6 +46,7 @@ article          { min-height: 800px; }
 #novedades       { min-height: 400px; }
 #recomendaciones { min-height: 400px; }
 #sitios_interes  { min-height: 200px; }
+#transmisiones_sesiones { min-height: 120px; }
 footer           { min-height: 200px; }
 footer ul li     { padding: 0.2em 0; }
 
@@ -74,6 +75,7 @@ header           { background-color: #e3e1e4; }
 #novedades       { background-color: #e3e1e4; }
 #recomendaciones { background-color: #ffffff; }
 #sitios_interes  { background-color: #f7f3f2; }
+#min-height: 120px; { background-color: #ffffff; }
 footer           { color: #ffffff; background-color: #4f5e61; }
 footer h3        { color: #859497; }
 footer h4        { color: #859497; }
