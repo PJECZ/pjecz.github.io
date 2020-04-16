@@ -22,6 +22,8 @@ header      { font-family: 'Lato', sans-serif; font-weight: 300; }
 p           { font-size: 1.0em; }
 blockquote  { font-size: 1.2em; font-style: italic; }
 footer      { font-family: 'Saira', sans-serif; font-weight: 400; }
+b,
+strong      { font-weight: 700; }
 
 /* --------
  * Espacios
