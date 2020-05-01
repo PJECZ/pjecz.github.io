@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-04-30T11:11:47-00:00</lastmod>
+<lastmod>2020-05-01T16:05:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1586,6 +1586,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-0200-acuerdo-declaran-dias-inhabiles/</loc>
+<lastmod>2020-04-30T15:44:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1400-acuerdo-continuar-observando-medidas-apotadas/</loc>
+<lastmod>2020-04-30T15:32:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020-04-30-segunda-sesion-extraordinaria/</loc>
 <lastmod>2020-04-30T11:05:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1741,7 +1755,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/acuerdos.html</loc>
-<lastmod>2020-04-13T04:00:00-06:41</lastmod>
+<lastmod>2020-04-30T15:44:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1761,15 +1775,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
-<lastmod>2020-04-30T11:05:00-06:41</lastmod>
+<loc>https://www.pjecz.gob.mx/tag/covid-19.html</loc>
+<lastmod>2020-04-30T15:44:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tag/covid-19.html</loc>
-<lastmod>2020-04-16T12:54:00-06:41</lastmod>
+<loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
+<lastmod>2020-04-30T11:05:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
