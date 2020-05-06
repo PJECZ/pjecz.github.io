@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "Fecha": "2020-05-01",
+      "Juzgado": "Juzgado Rojo",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-01",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-01",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-02",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-02",
+      "Juzgado": "Juzgado Verde",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-03",
+      "Juzgado": "Juzgado Verde",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-03",
+      "Juzgado": "Juzgado Rojo",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-04",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-04",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-04",
+      "Juzgado": "Juzgado Azul",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-05",
+      "Juzgado": "Juzgado Verde",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    },
+    {
+      "Fecha": "2020-05-05",
+      "Juzgado": "Juzgado Verde",
+      "Archivo": "https://storage.googleapis.com/pjecz-gob-mx/consultas/expediente-virtual-procedimiento-registro-usuario-en-linea.pdf"
+    }
+  ]
+}
