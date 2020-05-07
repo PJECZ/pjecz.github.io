@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-06T14:04:47-00:00</lastmod>
+<lastmod>2020-05-07T09:04:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -109,6 +109,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/atribuciones/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/aviso-de-privacidad/</loc>
 <lastmod>2020-04-15T15:32:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -130,6 +137,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/central-de-actuarios/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -138,13 +152,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-evaluacion-psicosocial/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-medios-alternos-de-solucion-de-controversias/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1271,7 +1278,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-medios-alternos-de-solucion-de-controversias/listado-de-personas-certificadas-vigentes-como-facilitadoras-privadas-en-mediacion/</loc>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/listado-de-personas-certificadas-vigentes-como-facilitadoras-privadas-en-mediacion/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1292,7 +1299,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-medios-alternos-de-solucion-de-controversias/marco-normativo/</loc>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/marco-normativo/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1313,7 +1320,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-medios-alternos-de-solucion-de-controversias/mision-vision-y-valores/</loc>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/mision-vision-y-valores/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1411,7 +1418,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-medios-alternos-de-solucion-de-controversias/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/</loc>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/proceso-de-certificacion-2017/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/proceso-de-certificacion-2018/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/proceso-de-certificacion-2019/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/procedimientos-de-certificacion-para-facilitadores-en-mediacion-y-conciliacion/proceso-de-certificacion-2020/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1489,6 +1524,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-distritales/segundo/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/servicios/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
