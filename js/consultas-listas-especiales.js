@@ -1,7 +1,7 @@
 // Consultas Listas Especiales
 $(document).ready(function() {
     $('#listasEspecialesTabla').DataTable( {
-        "ajax": 'listas-especiales.json',
+        "ajax": 'https://storage.googleapis.com/pjecz-consultas/listas-especiales.json/listas-especiales.json',
         "columns": [
             { "data": "Fecha" },
             { "data": "Juzgado" },
