@@ -11,7 +11,7 @@ $(document).ready(function() {
                 }
             }
         ],
-        "pageLength": 100,
+        "pageLength": 50,
         "language": {
             "lengthMenu": "Mostrar _MENU_",
             "search": "Filtrar:",
