@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-13T21:22:48-00:00</lastmod>
+<lastmod>2020-05-14T14:02:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1642,8 +1642,29 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-0200-acuerdo-protocolo-atencion-organos-jurisdiccionales/</loc>
+<lastmod>2020-05-13T19:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-0100-acuerdo-protocolo-acceso-edificios/</loc>
+<lastmod>2020-05-13T18:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/tercera-sesion-extraordinaria/</loc>
 <lastmod>2020-05-13T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-11-0100-acciones-emergencia-sanitaria/</loc>
+<lastmod>2020-05-11T18:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -1846,7 +1867,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/acuerdos.html</loc>
-<lastmod>2020-04-30T15:44:00-06:41</lastmod>
+<lastmod>2020-05-13T19:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1874,7 +1895,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/tag/covid-19.html</loc>
-<lastmod>2020-04-30T15:44:00-06:41</lastmod>
+<lastmod>2020-05-13T19:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
