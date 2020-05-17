@@ -92,7 +92,11 @@ $(document).ready(function() {
 
         console.log($("#autoridadSelect").val())
 
-        $("#listaDeAcuerdos").show();
+        if ($("#listaDeAcuerdos").is(":hidden")) {
+            $("#listaDeAcuerdos").show();
+        } else {
+            $('#listaDeAcuerdos').DataTable.clear().destroy();
+        }
 
         $('#listaDeAcuerdos').DataTable( {
             "ajax": $("#autoridadSelect").val(),
