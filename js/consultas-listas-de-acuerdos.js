@@ -1,10 +1,13 @@
 // Consultas Listas de Acuerdos
 $(document).ready(function() {
 
+    // Inicialmente se muestra los select y se oculta la lista
     $("#elegirListaDeAcuerdos").show();
     $("#listaDeAcuerdos").hide();
 
+    // Opciones del select distrito
     $("#distritoSelect").append(
+        '<option value="0">- Elija la entidad/distrito -</select>',
         '<option value="0">Pleno del Tribunal Superior de Justicia</select>',
         '<option value="1">Tribunal Constitucional Local</select>',
         '<option value="2">Tribunales Especializados</select>',
@@ -22,7 +25,13 @@ $(document).ready(function() {
         '<option value="14">Distrito de Torreón</select>'
     );
 
+    // Arreglo de opciones para el select autoridad,
+    // debe tener la misma cantidad de elementos que el distritoSelect,
+    // cada elemento son los options
     var options = [
+
+        '',
+
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/lista.json">Pleno del Tribunal Superior de Justicia</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Constitucional%20Local/Tribunal%20Constitucional%20Local/lista.json">Tribunal Constitucional Local</option>',
@@ -116,49 +125,62 @@ $(document).ready(function() {
 
     ];
 
+    // Al cambiar el distrito se cambian las opciones en autoridad
     $("#distritoSelect").change(function() {
         var val = $(this).val();
         $("#autoridadSelect").html(options[val]);
     });
 
+    // Al dar clic en el botón mostrar
     $("#mostrarButton").click(function(){
 
-        if ($("#listaDeAcuerdos").is(":hidden")) {
-            $("#listaDeAcuerdos").show();
-        } else {
-            $('#listaDeAcuerdos').DataTable().clear();
-            $('#listaDeAcuerdos').DataTable().destroy();
-        }
+        // Si hay un valor en autoridadSelect
+        if (!$("#autoridadSelect").is(":empty")) {
 
-        $('#listaDeAcuerdos').DataTable( {
-            "ajax": $("#autoridadSelect").val(),
-            "columns": [
-                { "data": "Fecha" },
-                { "data": "Descripción" },
-                { "data": "Archivo",
-                    "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
-                        $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
+            // Si es la primera vez se muestra la tabla
+            // de lo contrario hay que limpiar y destruir
+            // para que puedan cargarse otros resultados
+            if ($("#listaDeAcuerdos").is(":hidden")) {
+                $("#listaDeAcuerdos").show();
+            } else {
+                $('#listaDeAcuerdos').DataTable().clear();
+                $('#listaDeAcuerdos').DataTable().destroy();
+            }
+
+            // Cargar los datos a la tabla
+            // toma el valor de distritoSelect que es el URL al archivo JSON
+            // dicho archivo debe tener valores para Fecha, Descripción y Archivo
+            $('#listaDeAcuerdos').DataTable( {
+                "ajax": $("#autoridadSelect").val(),
+                "columns": [
+                    { "data": "Fecha" },
+                    { "data": "Descripción" },
+                    { "data": "Archivo",
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
+                        }
+                    }
+                ],
+                "pageLength": 50,
+                "order": [[ 0, "desc" ]],
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_",
+                    "search": "Filtrar:",
+                    "zeroRecords": "Cargando información...",
+                    "info": "Página _PAGE_ de _PAGES_",
+                    "infoEmpty": "No hay registros",
+                    "infoFiltered": "(filtrados desde _MAX_ registros totales)",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
                     }
                 }
-            ],
-            "pageLength": 50,
-            "order": [[ 0, "desc" ]],
-            "language": {
-                "lengthMenu": "Mostrar _MENU_",
-                "search": "Filtrar:",
-                "zeroRecords": "Cargando información...",
-                "info": "Página _PAGE_ de _PAGES_",
-                "infoEmpty": "No hay registros",
-                "infoFiltered": "(filtrados desde _MAX_ registros totales)",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
-                }
-            }
-        } );
+            }); // Cargar los datos a la tabla
 
-    });
+        } // Si hay un valor en autoridadSelect
 
-} );
+    }); // Al dar clic en el botón mostrar
+
+});
