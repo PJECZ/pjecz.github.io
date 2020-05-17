@@ -90,12 +90,13 @@ $(document).ready(function() {
 
     $("#mostrarButton").click(function(){
 
-        console.log($("#autoridadSelect").val())
-
         if ($("#listaDeAcuerdos").is(":hidden")) {
+            console.log("SHOW")
             $("#listaDeAcuerdos").show();
         } else {
-            $('#listaDeAcuerdos').DataTable.clear().destroy();
+            console.log("DESTROY")
+            $('#listaDeAcuerdos').DataTable.clear();
+            $('#listaDeAcuerdos').DataTable.destroy();
         }
 
         $('#listaDeAcuerdos').DataTable( {
