@@ -70,7 +70,11 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Piedras%20Negras/lista.json">Juzgado Tercero de Primera Instancia en Materia Penal Piedras Negras</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20en%20Materia%20de%20Adolescentes%20Piedras%20Negras/lista.json">Juzgado en Materia de Adolescentes Piedras Negras</option>',
 
-        '<option value="#">Distrito de Sabinas</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Civil y Familiar Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Familiar Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20de%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Penal de Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20Penal%20del%20Sistema%20Acusatorio%20y%20Oral%20Sabinas/lista.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20Sexto%20Auxiliar%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Sabinas/lista.json">Juzgado Sexto Auxiliar de Primera Instancia en Materia Familiar Sabinas</option>',
 
         '<option value="#">Distrito de Saltillo</option>',
 
