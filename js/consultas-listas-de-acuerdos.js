@@ -76,11 +76,17 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20Penal%20del%20Sistema%20Acusatorio%20y%20Oral%20Sabinas/lista.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Sabinas</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Sabinas/Juzgado%20Sexto%20Auxiliar%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Sabinas/lista.json">Juzgado Sexto Auxiliar de Primera Instancia en Materia Familiar Sabinas</option>',
 
-        '<option value="#">Distrito de Saltillo</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Mercantil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Saltillo</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20San%20Pedro%20de%20las%20Colonias/Juzgado%20Civil%20y%20Familiar%20Francisco%20I.%20Madero/lista.json">Juzgado Civil y Familiar Francisco I. Madero</option>',
 
-        '<option value="#">Distrito de Torreón</option>'
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Mercantil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Torreón</option>'
     ];
 
     $("#distritoSelect").change(function() {
@@ -91,10 +97,8 @@ $(document).ready(function() {
     $("#mostrarButton").click(function(){
 
         if ($("#listaDeAcuerdos").is(":hidden")) {
-            console.log("SHOW")
             $("#listaDeAcuerdos").show();
         } else {
-            console.log("DESTROY 2")
             $('#listaDeAcuerdos').DataTable().clear();
             $('#listaDeAcuerdos').DataTable().destroy();
         }
@@ -115,7 +119,7 @@ $(document).ready(function() {
             "language": {
                 "lengthMenu": "Mostrar _MENU_",
                 "search": "Filtrar:",
-                "zeroRecords": "No se encontraron registros",
+                "zeroRecords": "Cargando información...",
                 "info": "Página _PAGE_ de _PAGES_",
                 "infoEmpty": "No hay registros",
                 "infoFiltered": "(filtrados desde _MAX_ registros totales)",
