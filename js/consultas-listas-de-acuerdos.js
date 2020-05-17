@@ -94,9 +94,9 @@ $(document).ready(function() {
             console.log("SHOW")
             $("#listaDeAcuerdos").show();
         } else {
-            console.log("DESTROY")
-            $('#listaDeAcuerdos').DataTable.clear();
-            $('#listaDeAcuerdos').DataTable.destroy();
+            console.log("DESTROY 2")
+            $('#listaDeAcuerdos').DataTable().clear();
+            $('#listaDeAcuerdos').DataTable().destroy();
         }
 
         $('#listaDeAcuerdos').DataTable( {
