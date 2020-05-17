@@ -35,11 +35,14 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Penal/lista.json">Sala Penal</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>',
 
-        '<option value="#">Tribunal Distrital Saltillo materia Penal</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Distrital%20Saltillo%20materia%20Penal/Tribunal%20Distrital%20Saltillo%20materia%20Penal/lista.json">Tribunal Distrital Saltillo materia Penal</option>',
 
-        '<option value="#">Tribunal Electoral del Estado de Coahuila de Zaragoza</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Electoral%20del%20Estado%20de%20Coahuila%20de%20Zaragoza/Tribunal%20Electoral%20del%20Estado%20de%20Coahuila%20de%20Zaragoza/lista.json">Tribunal Electoral del Estado de Coahuila de Zaragoza</option>',
 
-        '<option value="#">Tribunales Distritales</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Distritales/Primer%20Tribunal%20Distrital/lista.json">Primer Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Distritales/Segundo%20Tribunal%20Distrital/lista.json">Segundo Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Distritales/Tercer%20Tribunal%20Distrital/lista.json">Tercer Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Distritales/Cuarto%20Tribunal%20Distrital/lista.json">Cuarto Tribunal Distrital</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
@@ -91,7 +94,7 @@ $(document).ready(function() {
             "ajax": $("#autoridadSelect").val(),
             "columns": [
                 { "data": "Fecha" },
-                { "data": "Juzgado" },
+                { "data": "Descripción" },
                 { "data": "Archivo",
                     "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
                         $(nTd).html("<a href='"+oData.Archivo+"'><i class='fa fa-download'></i> Descargar</a>");
