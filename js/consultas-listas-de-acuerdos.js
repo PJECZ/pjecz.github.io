@@ -19,7 +19,7 @@ $(document).ready(function() {
         '<option value="11">Distrito de Sabinas</select>',
         '<option value="12">Distrito de Saltillo</select>',
         '<option value="13">Distrito de San Pedro de las Colonias</select>',
-        '<option value="14">Distrito de Torreón</select>',
+        '<option value="14">Distrito de Torreón</select>'
     );
 
     var options = [
@@ -37,31 +37,31 @@ $(document).ready(function() {
 
         '<option value="#">Tribunales Distritales</option>',
 
-        '<option value="distrito-de-acuna-juzgado-de-primera-instancia-en-materia-civil-acuna.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
-        '<option value="distrito-de-acuna-juzgado-de-primera-instancia-en-materia-familiar-acuna.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
-        '<option value="distrito-de-acuna-juzgado-de-primera-instancia-en-materia-penal-acuna.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>',
 
-        '<option value="distrito-de-monclova-juzgado-cuarto-de-primera-instancia-en-materia-familiar-monclova.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-en-materia-de-adolescentes-monclova.json">Juzgado en Materia de Adolescentes Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-primero-de-primera-instancia-en-materia-civil-monclova.json">Juzgado Primero de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-primero-de-primera-instancia-en-materia-familiar-monclova.json">Juzgado Primero de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-primero-de-primera-instancia-en-materia-penal-monclova.json">Juzgado Primero de Primera Instancia en Materia Penal Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-segundo-de-primera-instancia-en-materia-civil-monclova.json">Juzgado Segundo de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-segundo-de-primera-instancia-en-materia-familiar-monclova.json">Juzgado Segundo de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-tercero-de-primera-instancia-en-materia-civil-monclova.json">Juzgado Tercero de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="distrito-de-monclova-juzgado-tercero-de-primera-instancia-en-materia-familiar-monclova.json">Juzgado Tercero de Primera Instancia en Materia Familiar Monclova</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Tercero de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Tercero de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20en%20Materia%20de%20Adolescentes%20Monclova/lista.json">Juzgado en Materia de Adolescentes Monclova</option>',
 
-        '<option value="">Juzgado de Primera Instancia en Materia Civil y Familiar Parras</option>' +
-        '<option value="">Juzgado de Primera Instancia en Materia Familiar Oral de Parras</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Parras/lista.json">Juzgado de Primera Instancia en Materia Civil y Familiar Parras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20de%20Parras/lista.json">Juzgado de Primera Instancia en Materia Familiar Oral de Parras</option>',
 
-        '<option value="distrito-de-rio-grande-juzgado-en-materia-de-adolescentes-piedras-negras.json">Juzgado en Materia de Adolescentes Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-primero-de-primera-instancia-en-materia-civil-piedras-negras.json">Juzgado Primero de Primera Instancia en Materia Civil Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-primero-de-primera-instancia-en-materia-familiar-piedras-negras.json">Juzgado Primero de Primera Instancia en Materia Familiar Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-primero-penal-piedras-negras-especializado-en-narcomenudeo.json">Juzgado Primero Penal Piedras Negras Especializado en Narcomenudeo</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-segundo-de-primera-instancia-en-materia-civil-piedras-negras.json">Juzgado Segundo de Primera Instancia en Materia Civil Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-segundo-de-primera-instancia-en-materia-familiar-oral-piedras-negras.json">Juzgado Segundo de Primera Instancia en Materia Familiar Oral Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-segundo-de-primera-instancia-en-materia-penal-piedras-negras.json">Juzgado Segundo de Primera Instancia en Materia Penal Piedras Negras</option>' +
-        '<option value="distrito-de-rio-grande-juzgado-tercero-de-primera-instancia-en-materia-penal-piedras-negras.json">Juzgado Tercero de Primera Instancia en Materia Penal Piedras Negras</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Piedras%20Negras/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Piedras%20Negras/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20Penal%20Piedras%20Negras%20Especializado%20en%20Narcomenudeo/lista.json">Juzgado Primero Penal Piedras Negras Especializado en Narcomenudeo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Oral Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Penal Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Piedras%20Negras/lista.json">Juzgado Tercero de Primera Instancia en Materia Penal Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Rio%20Grande/Juzgado%20en%20Materia%20de%20Adolescentes%20Piedras%20Negras/lista.json">Juzgado en Materia de Adolescentes Piedras Negras</option>',
 
         '<option value="#">Distrito de Sabinas</option>',
 
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
         '<option value="#">Distrito de San Pedro de las Colonias</option>',
 
-        '<option value="#">Distrito de Torreón</option>',
+        '<option value="#">Distrito de Torreón</option>'
     ];
 
     $("#distritoSelect").change(function() {
@@ -114,7 +114,5 @@ $(document).ready(function() {
         } );
 
     });
-
-
 
 } );
