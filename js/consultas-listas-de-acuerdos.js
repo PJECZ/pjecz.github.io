@@ -78,7 +78,7 @@ $(document).ready(function() {
 
         '<option value="#">Distrito de Saltillo</option>',
 
-        '<option value="#">Distrito de San Pedro de las Colonias</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20San%20Pedro%20de%20las%20Colonias/Juzgado%20Civil%20y%20Familiar%20Francisco%20I.%20Madero/lista.json">Juzgado Civil y Familiar Francisco I. Madero</option>',
 
         '<option value="#">Distrito de Torreón</option>'
     ];
@@ -101,7 +101,7 @@ $(document).ready(function() {
                 { "data": "Descripción" },
                 { "data": "Archivo",
                     "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
-                        $(nTd).html("<a href='"+oData.Archivo+"'><i class='fa fa-download'></i> Descargar</a>");
+                        $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
                     }
                 }
             ],
