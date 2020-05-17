@@ -25,11 +25,15 @@ $(document).ready(function() {
     var options = [
         '<option value="#">Pleno del Tribunal Superior de Justicia</option>',
 
-        '<option value="#">Tribunal Constitucional Local</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Constitucional%20Local/Tribunal%20Constitucional%20Local/lista.json">Tribunal Constitucional Local</option>',
 
-        '<option value="#">Tribunales Especializados</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Especializados/Tribunal%20de%20Apelaci%C3%B3n%20Especializado%20en%20Materia%20de%20Adolescentes/lista.json">Tribunal de Apelación Especializado en Materia de Adolescentes</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunales%20Especializados/Tribunal%20de%20Conciliaci%C3%B3n%20y%20Arbitraje/lista.json">Tribunal de Conciliación y Arbitraje</option>',
 
-        '<option value="#">Salas TSJ</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Auxiliar%20Penal/lista.json">Sala Auxiliar Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Civil/lista.json">Sala Civil</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Penal/lista.json">Sala Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>',
 
         '<option value="#">Tribunal Distrital Saltillo materia Penal</option>',
 
@@ -85,7 +89,6 @@ $(document).ready(function() {
 
         $('#listaDeAcuerdos').DataTable( {
             "ajax": $("#autoridadSelect").val(),
-            "ajax": 'https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Parras/' + + '/' + ,
             "columns": [
                 { "data": "Fecha" },
                 { "data": "Juzgado" },
