@@ -23,7 +23,7 @@ $(document).ready(function() {
     );
 
     var options = [
-        '<option value="#">Pleno del Tribunal Superior de Justicia</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/lista.json">Pleno del Tribunal Superior de Justicia</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Constitucional%20Local/Tribunal%20Constitucional%20Local/lista.json">Tribunal Constitucional Local</option>',
 
