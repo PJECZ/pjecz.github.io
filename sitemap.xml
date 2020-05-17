@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-15T12:08:51-00:00</lastmod>
+<lastmod>2020-05-17T07:34:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -201,7 +201,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/</loc>
-<lastmod>2020-04-28T15:20:00-05:00</lastmod>
+<lastmod>2020-05-16T22:36:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1322,6 +1322,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/listado-de-personas-certificadas-vigentes-como-facilitadoras-privadas-en-mediacion/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/</loc>
+<lastmod>2020-05-16T22:39:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>

@@ -1,7 +1,8 @@
 // Consultas Listas Especiales
 $(document).ready(function() {
-    $('#listasEspecialesTabla').DataTable( {
-        "ajax": 'https://storage.googleapis.com/pjecz-consultas/listas-especiales.json/listas-especiales.json',
+
+    $('#listaEspecial').DataTable( {
+        "ajax": 'https://storage.googleapis.com/pjecz-consultas/Listas%20Especiales/lista.json',
         "columns": [
             { "data": "Fecha" },
             { "data": "Juzgado" },
@@ -28,4 +29,5 @@ $(document).ready(function() {
             }
         }
     } );
+
 } );

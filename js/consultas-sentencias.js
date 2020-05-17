@@ -1,8 +1,8 @@
 // Consultas Sentencias
 $(document).ready(function() {
 
-    $("#sentenciasDiv").hide();
-    $("#sentenciasTable").hide();
+    $("#elegirListaDeSentencias").hide();
+    $("#listaDeSentencias").hide();
 
     $("#distritoSelect").append(
         '<option value="0">Pleno del Tribunal Superior de Justicia</select>',
@@ -122,6 +122,6 @@ $(document).ready(function() {
         console.log($("#autoridadSelect").val())
     });
 
-    $("#sentenciasDiv").show();
+    $("#elegirListaDeSentencias").show();
 
 } );

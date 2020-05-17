@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="generator" content="Pelican Static Site Generator, Powered by Python">
-    <meta name="description" content="Transparencia, Artículo 21">
-    <meta name="keywords" content="Transparencia">
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
     <meta name="author" content="PJECZ">
-    <title>Condiciones Generales de Trabajo - Poder Judicial del Estado de Coahuila de Zaragoza</title>
+    <title>Listas de Acuerdos - Poder Judicial del Estado de Coahuila de Zaragoza</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://www.pjecz.gob.mx/favicon.ico">
     <link rel="icon" href="https://www.pjecz.gob.mx/theme/images/icon-hires.png" sizes="192x192">
     <link rel="icon" href="https://www.pjecz.gob.mx/theme/images/icon-normal.png" sizes="128x128">
@@ -64,8 +64,8 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
-                    <h1 class="display-4 mt-5 mb-2">Condiciones Generales de Trabajo</h1>
-                    <p class="lead mb-5">Transparencia, Artículo 21</p>
+                    <h1 class="display-4 mt-5 mb-2">Listas de Acuerdos</h1>
+                    <p class="lead mb-5">.</p>
                 </div>
             </div>
         </div>
@@ -73,26 +73,19 @@
     <!-- Contenido -->
 	<article>
 		<div class="container py-4">
-<h3>RESPONSABLE</h3>
-<p>C.P. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
-<h3>FECHA DE VALIDACIÓN</h3>
-<p>4 de mayo de 2020</p>
-<p>Las condiciones generales de trabajo, o instrumentos que regulen las relaciones laborales del personal sindicalizado y de confianza que se encuentre adscrito a los sujetos obligados y los recursos económicos o en especie que por cualquier motivo se hayan entregado a los sindicatos, incluso los donativos y el monto global de las cuotas sindicales.</p>
-<ul>
-<li><a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/1_060320.pdf">Constitución Política de los Estados Unidos Mexicanos</a></li>
-<li><a href="http://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa01.pdf">Constitución Política del Estado de Coahuila de Zaragoza</a></li>
-<li><a href="http://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa61.pdf">Ley Orgánica del Poder Judicial del Estado de Coahuila de Zaragoza</a></li>
-<li><a href="http://www.sefincoahuila.gob.mx/contenido/docs/ipm/VERDE/VC110b-conveniolaboral%20(1).pdf">Convenio Laboral de Prestaciones Económicas y Sociales</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/transparencia/articulo-21/f10-condiciones-generales-trabajo/reglamento-de-condiciones-generales-de-trabajo-para-el-gobierno-del-estado.pdf">Reglamento de Condiciones Generales de Trabajo para el Gobierno del Estado</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/transparencia/articulo-21/f10-condiciones-generales-trabajo/estatuto-juridico-para-los-trabajadores-al-servicio-del-estado-de-coahuila.pdf">Estatuto Jurídico para los Trabajadores al Servicio del Estado De Coahuila</a></li>
-</ul>
-<h2>Descargar</h2>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F10 Condiciones Generales de Trabajo/Convenio Laboral de Prestaciones Económicas y Sociales.pdf">Convenio Laboral de Prestaciones Económicas y Sociales.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F10 Condiciones Generales de Trabajo/Estatuto Jurídico para los Trabajadores al Servicio del Estado de Coahuila.pdf">Estatuto Jurídico para los Trabajadores al Servicio del Estado de Coahuila.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F10 Condiciones Generales de Trabajo/Reglamento de Condiciones Generales de Trabajo para el Gobierno del Estado.pdf">Reglamento de Condiciones Generales de Trabajo para el Gobierno del Estado.pdf</a></li>
-</ul>
-<p>En el Poder Judicial del Estado de Coahuila de Zaragoza no ha sido constituido algún sindicato de empleados adscritos al mismo, por lo que no se realiza aportación en dinero o en especie a sindicato alguno. Es importante mencionar que en el Poder Judicial labora personal agremiado al Sindicato Único de Trabajadores del Gobierno del Estado, el cuál se rige conforme al convenio laboral de prestaciones económicas y sociales para trabajadores sindicalizados al servicio del gobierno del Estado de Coahuila de Zaragoza.</p>
+<div id="elegirListaDeAcuerdos">
+<select id="distritoSelect"></select>
+<select id="autoridadSelect"></select>
+<button id="mostrarButton" type="button" class="btn btn-primary">Mostrar</button>
+</div>
+
+<table id="listaDeAcuerdos" class="table" style="width:100%">
+<thead>
+<th>Fecha</th>
+<th>Descripción</th>
+<th>Archivo</th>
+</thead>
+</table>
 		</div>
 	</article>
     <!-- Footer -->
@@ -225,5 +218,6 @@
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <!-- JavaScripts propios -->
     <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tema.js"></script>
+<script src="https://www.pjecz.gob.mx/js/consultas-listas-de-acuerdos.js"></script>
 </body>
 </html>
