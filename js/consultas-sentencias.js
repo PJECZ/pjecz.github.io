@@ -159,7 +159,7 @@ $(document).ready(function() {
                     { "data": "Fecha" },
                     { "data": "Sentencia" },
                     { "data": "Expediente" },
-                    { "data": "P. Género" },
+                    { "data": "Genero" },
                     { "data": "Archivo",
                         "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
                             $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
