@@ -1,127 +1,191 @@
 // Consultas Sentencias
 $(document).ready(function() {
 
-    $("#elegirListaDeSentencias").hide();
+    // Inicialmente se muestra los select y se oculta la lista
+    $("#elegirListaDeSentencias").show();
     $("#listaDeSentencias").hide();
 
+    // Opciones del select distrito
     $("#distritoSelect").append(
-        '<option value="0">Pleno del Tribunal Superior de Justicia</select>',
-        '<option value="1">Tribunal Constitucional Local</select>',
-        '<option value="2">Tribunales Especializados</select>',
-        '<option value="3">Salas TSJ</select>',
-        '<option value="4">Tribunales Distritales</select>',
-        '<option value="5">Distrito de Saltillo</select>',
-        '<option value="6">Distrito de Monclova</select>',
-        '<option value="7">Distrito de Sabinas</select>',
-        '<option value="8">Distrito de Rio Grande</select>',
-        '<option value="9">Distrito de Acuña</select>',
-        '<option value="10">Distrito de Torreón</select>',
-        '<option value="11">Distrito de San Pedro de las Colonias</select>',
-        '<option value="12">Distrito de Parras de la Fuente</select>'
+        '<option value="0">- Elija la entidad/distrito -</select>',
+        '<option value="1">Consejo de la Judicatura</select>',
+        '<option value="2">Pleno del Tribunal Superior de Justicia</select>',
+        '<option value="3">Tribunal Constitucional Local</select>',
+        '<option value="4">Tribunales Especializados</select>',
+        '<option value="5">Salas TSJ</select>',
+        '<option value="6">Tribunal Distrital Saltillo materia Penal</select>',
+        '<option value="7">Tribunales Distritales</select>',
+        '<option value="8">Distrito de Acuña</select>',
+        '<option value="9">Distrito de Monclova</select>',
+        '<option value="10">Distrito de Parras de la Fuente</select>',
+        '<option value="11">Distrito de Rio Grande</select>',
+        '<option value="12">Distrito de Sabinas</select>',
+        '<option value="13">Distrito de Saltillo</select>',
+        '<option value="14">Distrito de San Pedro de las Colonias</select>',
+        '<option value="15">Distrito de Torreón</select>'
     );
 
+    // Arreglo de opciones para el select autoridad,
+    // debe tener la misma cantidad de elementos que el distritoSelect,
+    // note los textos se concatenan con un signo de más
+    // el primero está vacío porque no se ha elejido la entidad/distrito
     var options = [
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0001.json">Pleno del Tribunal Superior de Justicia</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0101.json">Tribunal Constitucional Local</option>',
+        '',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0201.json">Tribunal de Apelación Especializado en Materia de Adolescentes</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0202.json">Tribunal de Conciliación y Arbitraje</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Consejo%20de%20la%20Judicatura/Consejo%20de%20la%20Judicatura/lista.json">Consejo de la Judicatura</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0301.json">Sala Civil</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0302.json">Sala Auxiliar Penal</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0303.json">Sala Penal</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0304.json">Sala Regional</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/Pleno%20del%20Tribunal%20Superior%20de%20Justicia/lista.json">Pleno del Tribunal Superior de Justicia</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0401.json">Primer Tribunal Distrital</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0402.json">Segundo Tribunal Distrital</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0403.json">Tercer Tribunal Distrital</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0404.json">Cuarto Tribunal Distrital</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunal%20Constitucional%20Local/Tribunal%20Constitucional%20Local/lista.json">Tribunal Constitucional Local</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0501.json">Juzgado Primero de Primera Instancia en Materia Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0502.json">Juzgado Segundo de Primera Instancia en Materia Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0503.json">Juzgado Tercero de Primera Instancia en Materia Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0504.json">Juzgado Cuarto de Primera Instancia en Materia Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0505.json">Juzgado Primero de Primera Instancia en Materia Familiar Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0506.json">Juzgado Segundo de Primera Instancia en Materia Familiar Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0507.json">Juzgado Tercero de Primera Instancia en Materia Familiar Oral Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0508.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Oral Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0509.json">Juzgado Primero de Primera Instancia en Materia Mercantil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0510.json">Juzgado Segundo de Primera Instancia en Materia Mercantil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0511.json">Juzgado Tercero de Primera Instancia en Materia Mercantil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0512.json">Juzgado Primero de Primera Instancia en Materia Penal Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0513.json">Juzgado Primero Letrado Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0514.json">Juzgado Segundo Letrado Civil Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0515.json">Juzgado Segundo Penal Saltillo Especializado en Narcomenudeo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0516.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio y Oral Saltillo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0517.json">Juzgado de Primera Instancia en Materia Familiar Auxiliar del Juzgado Segundo Familiar Saltillo</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Apelaci%C3%B3n%20Especializado%20en%20Materia%20de%20Adolescentes/lista.json">Tribunal de Apelación Especializado en Materia de Adolescentes</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Conciliaci%C3%B3n%20y%20Arbitraje/lista.json">Tribunal de Conciliación y Arbitraje</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0601.json">Juzgado Primero de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0602.json">Juzgado Segundo de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0603.json">Juzgado Tercero de Primera Instancia en Materia Civil Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0604.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0605.json">Juzgado Primero de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0606.json">Juzgado Segundo de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0607.json">Juzgado Tercero de Primera Instancia en Materia Familiar Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0608.json">Juzgado Primero de Primera Instancia en Materia Penal Monclova</option>',
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0609.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Frontera</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Auxiliar%20Penal/lista.json">Sala Auxiliar Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Civil/lista.json">Sala Civil</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Penal/lista.json">Sala Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0701.json">Juzgado de Primera Instancia en Materia Civil y Familiar Sabinas</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0702.json">Juzgado de Primera Instancia en Materia Familiar Sabinas</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0703.json">Juzgado de Primera Instancia en Materia Penal de Sabinas</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0704.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Sabinas</option>',
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0705.json">Juzgado Sexto Auxiliar de Primera Instancia en Materia Familiar Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunal%20Distrital%20Saltillo%20materia%20Penal/Tribunal%20Distrital%20Saltillo%20materia%20Penal/lista.json">Tribunal Distrital Saltillo materia Penal</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0801.json">Juzgado Primero de Primera Instancia en Materia Civil Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0802.json">Juzgado Segundo de Primera Instancia en Materia Civil Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0803.json">Juzgado Primero de Primera Instancia en Materia Familiar Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0804.json">Juzgado Segundo de Primera Instancia en Materia Familiar Oral Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0805.json">Juzgado Primero Penal Piedras Negras Especializado en Narcomenudeo</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0806.json">Juzgado Segundo de Primera Instancia en Materia Penal Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0807.json">Juzgado Tercero de Primera Instancia en Materia Penal Piedras Negras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0808.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio y Oral Piedras Negras</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Distritales/Primer%20Tribunal%20Distrital/lista.json">Primer Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Distritales/Segundo%20Tribunal%20Distrital/lista.json">Segundo Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Distritales/Tercer%20Tribunal%20Distrital/lista.json">Tercer Tribunal Distrital</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Distritales/Cuarto%20Tribunal%20Distrital/lista.json">Cuarto Tribunal Distrital</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0901.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0902.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0903.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-0904.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio Y Oral de Acuña</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20del%20Sistema%20Acusatorio%20Y%20Oral%20de%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio Y Oral de Acuña</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1001.json">Juzgado Primero de Primera Instancia en Materia Civil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1002.json">Juzgado Segundo de Primera Instancia en Materia Civil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1003.json">Juzgado Primero de Primera Instancia en Materia Mercantil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1004.json">Juzgado Segundo de Primera Instancia en Materia Mercantil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1005.json">Juzgado Cuarto de Primera Instancia en Materia Civil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1006.json">Juzgado Tercero de Primera Instancia en Materia Civil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1007.json">Juzgado Tercero de Primera Instancia en Materia Mercantil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1008.json">Juzgado Segundo Letrado Civil Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1009.json">Juzgado Quinto de Primera Instancia en Materia Familiar Oral Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1010.json">Juzgado Primero de Primera Instancia en Materia Familiar Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1011.json">Juzgado Segundo de Primera Instancia en Materia Familiar Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1012.json">Juzgado Tercero de Primera Instancia en Materia Familiar Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1013.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1014.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio y Oral Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1015.json">Juzgado Primero de Primera Instancia en Materia Penal Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1016.json">Juzgado Segundo de Primera Instancia en Materia Penal Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1017.json">Juzgado Tercero de Primera Instancia en Materia Penal Especializado en Narcomenudeo Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1018.json">Juzgado Cuarto de Primera Instancia en Materia Penal Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1019.json">Juzgado Quinto de Primera Instancia en Materia Penal Torreón</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Tercero de Primera Instancia en Materia Civil Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Tercero de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Monclova/Juzgado%20de%20Primera%20Instancia%20Penal%20del%20Sistema%20Acusatorio%20y%20Oral%20Frontera/lista.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Frontera</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1101.json">Juzgado de Primera Instancia en Materia Civil San Pedro</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1102.json">Juzgado de Primera Instancia en Materia Familiar Oral San Pedro</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Parras/lista.json">Juzgado de Primera Instancia en Materia Civil y Familiar Parras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20de%20Parras/lista.json">Juzgado de Primera Instancia en Materia Familiar Oral de Parras</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1201.json">Juzgado de Primera Instancia en Materia Civil y Familiar Parras</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/sentencias-1202.json">Juzgado de Primera Instancia en Materia Familiar Oral de Parras</option>'
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Piedras%20Negras/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Piedras%20Negras/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Primero%20Penal%20Piedras%20Negras%20Especializado%20en%20Narcomenudeo/lista.json">Juzgado Primero Penal Piedras Negras Especializado en Narcomenudeo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Oral Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Piedras%20Negras/lista.json">Juzgado Segundo de Primera Instancia en Materia Penal Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Piedras%20Negras/lista.json">Juzgado Tercero de Primera Instancia en Materia Penal Piedras Negras</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Rio%20Grande/Juzgado%20en%20Materia%20de%20Adolescentes%20Piedras%20Negras/lista.json">Juzgado en Materia de Adolescentes Piedras Negras</option>',
+
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Civil y Familiar Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Familiar Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20de%20Sabinas/lista.json">Juzgado de Primera Instancia en Materia Penal de Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Sabinas/Juzgado%20de%20Primera%20Instancia%20Penal%20del%20Sistema%20Acusatorio%20y%20Oral%20Sabinas/lista.json">Juzgado de Primera Instancia Penal del Sistema Acusatorio y Oral Sabinas</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Sabinas/Juzgado%20Sexto%20Auxiliar%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Sabinas/lista.json">Juzgado Sexto Auxiliar de Primera Instancia en Materia Familiar Sabinas</option>',
+
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Auxiliar%20del%20Juzgado%20Segundo%20Familiar%20Saltillo/lista.json">Juzgado de Primera Instancia en Materia Familiar Auxiliar del Juzgado Segundo Familiar Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Mercantil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20Letrado%20Civil%20Saltillo/lista.json">Juzgado Primero Letrado Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Saltillo/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Segundo%20Penal%20Saltillo%20Especializado%20en%20Narcomenudeo/lista.json">Juzgado Segundo Penal Saltillo Especializado en Narcomenudeo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Segundo%20Letrado%20Civil%20Saltillo/lista.json">Juzgado Segundo Letrado Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Tercero de Primera Instancia en Materia Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Saltillo/lista.json">Juzgado Tercero de Primera Instancia en Materia Familiar Oral Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Saltillo/lista.json">Juzgado Tercero de Primera Instancia en Materia Mercantil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Cuarto de Primera Instancia en Materia Civil Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Saltillo/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Oral Saltillo</option>',
+
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20San%20Pedro%20de%20las%20Colonias/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20San%20Pedro/lista.json">Juzgado de Primera Instancia en Materia Civil San Pedro</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20San%20Pedro%20de%20las%20Colonias/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20San%20Pedro/lista.json">Juzgado de Primera Instancia en Materia Familiar Oral San Pedro</option>',
+
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Mercantil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Torre%C3%B3n/lista.json">Juzgado Segundo de Primera Instancia en Materia Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Segundo de Primera Instancia en Materia Familiar Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Torre%C3%B3n/lista.json">Juzgado Segundo de Primera Instancia en Materia Mercantil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Segundo%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Segundo de Primera Instancia en Materia Penal Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Segundo%20Letrado%20Civil%20Torre%C3%B3n/lista.json">Juzgado Segundo Letrado Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Torre%C3%B3n/lista.json">Juzgado Tercero de Primera Instancia en Materia Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Tercero de Primera Instancia en Materia Familiar Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Tercero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Torre%C3%B3n/lista.json">Juzgado Tercero de Primera Instancia en Materia Mercantil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Torre%C3%B3n/lista.json">Juzgado Cuarto de Primera Instancia en Materia Civil Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Cuarto de Primera Instancia en Materia Penal Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Quinto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Torre%C3%B3n/lista.json">Juzgado Quinto de Primera Instancia en Materia Familiar Oral Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Quinto%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Quinto de Primera Instancia en Materia Penal Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20en%20Materia%20de%20Adolescentes%20Torre%C3%B3n/lista.json">Juzgado en Materia de Adolescentes Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Torre%C3%B3n/Juzgado%20Civil%20y%20Familiar%20Matamoros/lista.json">Juzgado Civil y Familiar Matamoros</option>'
+
     ];
 
+    // Al cambiar el distrito se cambian las opciones en autoridad
     $("#distritoSelect").change(function() {
         var val = $(this).val();
         $("#autoridadSelect").html(options[val]);
     });
 
+    // Al dar clic en el botón mostrar
     $("#mostrarButton").click(function(){
-        console.log($("#autoridadSelect").val())
-    });
 
-    $("#elegirListaDeSentencias").show();
+        // Si hay un valor en autoridadSelect
+        if (!$("#autoridadSelect").is(":empty")) {
+
+            // Si es la primera vez se muestra la tabla
+            // de lo contrario hay que limpiar y destruir
+            // para que puedan cargarse otros resultados
+            if ($("#listaDeSentencias").is(":hidden")) {
+                $("#listaDeSentencias").show();
+            } else {
+                $('#listaDeSentencias').DataTable().clear();
+                $('#listaDeSentencias').DataTable().destroy();
+            }
+
+            // Cargar los datos a la tabla
+            // toma el valor de distritoSelect que es el URL al archivo JSON
+            // dicho archivo debe tener valores para Fecha, Sentencia, Expediente, P. Género y Archivo
+            $('#listaDeSentencias').DataTable( {
+                "ajax": $("#autoridadSelect").val(),
+                "columns": [
+                    { "data": "Fecha" },
+                    { "data": "Sentencia" },
+                    { "data": "Expediente" },
+                    { "data": "P. Género" },
+                    { "data": "Archivo",
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
+                        }
+                    }
+                ],
+                "pageLength": 50,
+                "order": [[ 0, "desc" ]],
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_",
+                    "search": "Filtrar:",
+                    "zeroRecords": "Cargando información...",
+                    "info": "Página _PAGE_ de _PAGES_",
+                    "infoEmpty": "No hay registros",
+                    "infoFiltered": "(filtrados desde _MAX_ registros totales)",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    }
+                }
+            }); // Cargar los datos a la tabla
+
+        } // Si hay un valor en autoridadSelect
+
+    }); // Al dar clic en el botón mostrar
 
 } );
