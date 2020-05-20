@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-20T12:27:14-00:00</lastmod>
+<lastmod>2020-05-20T12:36:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -474,7 +474,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/edictos/</loc>
-<lastmod>2020-05-19T22:22:00-05:00</lastmod>
+<lastmod>2020-05-20T12:32:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1748,7 +1748,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/</loc>
-<lastmod>2020-05-17T16:36:00-05:00</lastmod>
+<lastmod>2020-05-20T12:32:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2119,7 +2119,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/sentencias/</loc>
-<lastmod>2020-05-11T16:00:00-05:00</lastmod>
+<lastmod>2020-05-20T12:32:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
