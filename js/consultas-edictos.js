@@ -222,28 +222,64 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Torre%C3%B3n/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Juzgado%20Quinto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20Torre%C3%B3n/lista.json">Juzgado Quinto de Primera Instancia en Materia Familiar Oral Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Juzgado%20en%20Materia%20de%20Adolescentes%20Torre%C3%B3n/lista.json">Juzgado en Materia de Adolescentes Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%201%20Torreon/lista.json">Notaria Publica 1 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%203%20Torreon/lista.json">Notaria Publica 3 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%204%20Torreon/lista.json">Notaria Publica 4 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%205%20Torreon/lista.json">Notaria Publica 5 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%206%20Torreon/lista.json">Notaria Publica 6 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%207%20Torreon/lista.json">Notaria Publica 7 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%208%20Torreon/lista.json">Notaria Publica 8 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2010%20Torreon/lista.json">Notaria Publica 10 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2012%20Torreon/lista.json">Notaria Publica 12 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2014%20Torreon/lista.json">Notaria Publica 14 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2015%20Torreon/lista.json">Notaria Publica 15 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2016%20Torreon/lista.json">Notaria Publica 16 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2017%20Torreon/lista.json">Notaria Publica 17 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2018%20Torreon/lista.json">Notaria Publica 18 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2019%20Torreon/lista.json">Notaria Publica 19 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2021%20Torreon/lista.json">Notaria Publica 21 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2022%20Torreon/lista.json">Notaria Publica 22 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2023%20Torreon/lista.json">Notaria Publica 23 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2024%20Torreon/lista.json">Notaria Publica 24 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2027%20Torreon/lista.json">Notaria Publica 27 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2028%20Torreon/lista.json">Notaria Publica 28 Torreon</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2029%20Torreon/lista.json">Notaria Publica 29 Torreon</option>'
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%201%20Torreon/lista.json">Notaria Pública 1 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%203%20Torreon/lista.json">Notaria Pública 3 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%204%20Torreon/lista.json">Notaria Pública 4 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%205%20Torreon/lista.json">Notaria Pública 5 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%206%20Torreon/lista.json">Notaria Pública 6 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%207%20Torreon/lista.json">Notaria Pública 7 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%208%20Torreon/lista.json">Notaria Pública 8 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2010%20Torreon/lista.json">Notaria Pública 10 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2012%20Torreon/lista.json">Notaria Pública 12 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2014%20Torreon/lista.json">Notaria Pública 14 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2015%20Torreon/lista.json">Notaria Pública 15 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2016%20Torreon/lista.json">Notaria Pública 16 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2017%20Torreon/lista.json">Notaria Pública 17 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2018%20Torreon/lista.json">Notaria Pública 18 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2019%20Torreon/lista.json">Notaria Pública 19 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2021%20Torreon/lista.json">Notaria Pública 21 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2022%20Torreon/lista.json">Notaria Pública 22 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2023%20Torreon/lista.json">Notaria Pública 23 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2024%20Torreon/lista.json">Notaria Pública 24 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2027%20Torreon/lista.json">Notaria Pública 27 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2028%20Torreon/lista.json">Notaria Pública 28 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2029%20Torreon/lista.json">Notaria Pública 29 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2030%20Torreon/lista.json">Notaria Pública 30 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2031%20Torreon/lista.json">Notaria Pública 31 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2033%20Torreon/lista.json">Notaria Pública 33 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2034%20Torreon/lista.json">Notaria Pública 34 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2039%20Torreon/lista.json">Notaria Pública 39 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2040%20Torreon/lista.json">Notaria Pública 40 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2041%20Torreon/lista.json">Notaria Pública 41 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2044%20Torreon/lista.json">Notaria Pública 44 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2045%20Torreon/lista.json">Notaria Pública 45 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2047%20Torreon/lista.json">Notaria Pública 47 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2049%20Torreon/lista.json">Notaria Pública 49 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2053%20Torreon/lista.json">Notaria Pública 53 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2058%20Torreon/lista.json">Notaria Pública 58 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2059%20Torreon/lista.json">Notaria Pública 59 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2060%20Torreon/lista.json">Notaria Pública 60 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2061%20Torreon/lista.json">Notaria Pública 61 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2064%20Matamoros/lista.json">Notaria Pública 64 Matamoros</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2065%20Torreon/lista.json">Notaria Pública 65 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2066%20Torreon/lista.json">Notaria Pública 66 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2068%20Matamoros/lista.json">Notaria Pública 68 Matamoros</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2069%20Torreon/lista.json">Notaria Pública 69 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2070%20Torreon/lista.json">Notaria Pública 70 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2072%20Torreon/lista.json">Notaria Pública 72 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2073%20Torreon/lista.json">Notaria Pública 73 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2074%20Torreon/lista.json">Notaria Pública 74 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2075%20Torreon/lista.json">Notaria Pública 75 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2076%20Torreon/lista.json">Notaria Pública 76 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2077%20Torreon/lista.json">Notaria Pública 77 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2078%20Torreon/lista.json">Notaria Pública 78 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2079%20Torreon/lista.json">Notaria Pública 79 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2080%20Torreon/lista.json">Notaria Pública 80 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2081%20Torreon/lista.json">Notaria Pública 81 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2083%20Torreon/lista.json">Notaria Pública 83 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2084%20Torreon/lista.json">Notaria Pública 84 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2088%20Torreon/lista.json">Notaria Pública 88 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2089%20Torreon/lista.json">Notaria Pública 89 Torreón</option>' +
 
     ];
 
@@ -277,7 +313,6 @@ $(document).ready(function() {
                 "columns": [
                     { "data": "Fecha" },
                     { "data": "Expediente" },
-                    { "data": "Edicto" },
                     { "data": "Descripcion" },
                     { "data": "Archivo",
                         "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
