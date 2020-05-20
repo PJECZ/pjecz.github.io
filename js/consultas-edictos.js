@@ -279,7 +279,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2083%20Torreon/lista.json">Notaria Pública 83 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2084%20Torreon/lista.json">Notaria Pública 84 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2088%20Torreon/lista.json">Notaria Pública 88 Torreón</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2089%20Torreon/lista.json">Notaria Pública 89 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2089%20Torreon/lista.json">Notaria Pública 89 Torreón</option>'
 
     ];
 
