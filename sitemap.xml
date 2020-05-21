@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-21T09:17:08-00:00</lastmod>
+<lastmod>2020-05-21T09:57:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2328,6 +2328,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/decima-cuarta-sesion-ordinaria-segunda-digital/</loc>
+<lastmod>2020-05-22T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/decima-segunda-sesion-ordinaria/</loc>
 <lastmod>2020-05-20T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2588,14 +2595,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/misc.html</loc>
-<lastmod>2020-05-20T11:00:00-06:41</lastmod>
+<lastmod>2020-05-22T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
-<lastmod>2020-05-20T11:00:00-06:41</lastmod>
+<lastmod>2020-05-22T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
