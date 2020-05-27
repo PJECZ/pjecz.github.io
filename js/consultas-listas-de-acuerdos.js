@@ -12,7 +12,7 @@ $(document).ready(function() {
         '<option value="2">Tribunal Constitucional Local</select>',
         '<option value="3">Tribunales Especializados</select>',
         '<option value="4">Salas TSJ</select>',
-        '<option value="5">Tribunal Distrital Saltillo materia Penal</select>',
+        '<option value="5">Tribunal Distrital Saltillo Materia Penal</select>',
         '<option value="6">Tribunal Electoral del Estado de Coahuila de Zaragoza</select>',
         '<option value="7">Tribunales Distritales</select>',
         '<option value="8">Distrito de Acuña</select>',
@@ -45,7 +45,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Penal/lista.json">Sala Penal</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Distrital%20Saltillo%20materia%20Penal/Tribunal%20Distrital%20Saltillo%20materia%20Penal/lista.json">Tribunal Distrital Saltillo materia Penal</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Distrital%20Saltillo%20Materia%20Penal/Tribunal%20Distrital%20Saltillo%20Materia%20Penal/lista.json">Tribunal Distrital Saltillo Materia Penal</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Tribunal%20Electoral%20del%20Estado%20de%20Coahuila%20de%20Zaragoza/Tribunal%20Electoral%20del%20Estado%20de%20Coahuila%20de%20Zaragoza/lista.json">Tribunal Electoral del Estado de Coahuila de Zaragoza</option>',
 
