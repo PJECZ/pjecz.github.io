@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-05-28T10:05:32-00:00</lastmod>
+<lastmod>2020-05-28T15:01:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2377,13 +2377,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tramites-servicios/</loc>
-<lastmod>2020-04-22T15:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/tramites-y-servicios/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2552,8 +2545,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1200-acuerdo-c-067-2020-buzon-por-la-noche/</loc>
+<lastmod>2020-05-22T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1130-acuerdo-c-066-2020-modificacion-comite-transparencia/</loc>
+<lastmod>2020-05-22T11:30:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1100-acuerdo-c-065-2020-creacion-juzgado-primera-instancia-penal-sistema-acusatorio-oral-san-pedro/</loc>
+<lastmod>2020-05-22T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/decima-cuarta-sesion-ordinaria-segunda-digital/</loc>
 <lastmod>2020-05-22T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1030-acuerdo-c-064-2020-creacion-juzgado-tercero-letrado-materia-civil-torreon/</loc>
+<lastmod>2020-05-22T10:30:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1000-acuerdo-c-063-2020-supresion-juzgados/</loc>
+<lastmod>2020-05-22T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2580,22 +2608,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-0300-acuerdo-pleno-se-reanudan-actividades/</loc>
-<lastmod>2020-05-13T19:32:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1400-acuerdo-sobre-reanudar-actividades/</loc>
+<lastmod>2020-05-13T14:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-0200-acuerdo-protocolo-atencion-organos-jurisdiccionales/</loc>
-<lastmod>2020-05-13T19:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1300-acuerdo-protocolo-de-atencion-de-los-organos-jurisdiccionales/</loc>
+<lastmod>2020-05-13T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-0100-acuerdo-protocolo-acceso-edificios/</loc>
-<lastmod>2020-05-13T18:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1200-acuerdo-protocolo-de-acceso-a-edificios/</loc>
+<lastmod>2020-05-13T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2608,15 +2636,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-11-0100-acciones-emergencia-sanitaria/</loc>
-<lastmod>2020-05-11T18:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/primera-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-05-11/</loc>
+<lastmod>2020-05-11T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/primera-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-05-11/</loc>
-<lastmod>2020-05-11T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-11-0100-acuerdo-acciones-de-emergencia-sanitaria/</loc>
+<lastmod>2020-05-11T01:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2643,15 +2671,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-0200-acuerdo-declaran-dias-inhabiles/</loc>
-<lastmod>2020-04-30T15:44:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1300-acuerdo-mediante-el-cual-se-declaran-dias-inhabiles/</loc>
+<lastmod>2020-04-30T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1400-acuerdo-continuar-observando-medidas-apotadas/</loc>
-<lastmod>2020-04-30T15:32:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1200-acuerdo-mediante-el-cual-se-dispone-continuar-las-medidas-adoptadas/</loc>
+<lastmod>2020-04-30T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2678,50 +2706,50 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-0400-acuerdo-establecen-medidas-sanitarias/</loc>
-<lastmod>2020-04-13T04:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1500-acuerdo-donde-se-establecen-medidas-sanitarias/</loc>
+<lastmod>2020-04-13T15:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-0300-acuerdo-sesiones-de-pleno-del-consejo-atraves-de-tecnologias/</loc>
-<lastmod>2020-04-13T03:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1400-acuerdo-para-sesiones-de-pleno-del-consejo-atraves-de-tecnologias-digitales/</loc>
+<lastmod>2020-04-13T14:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-0200-acuerdo-relativo-al-cierre-de-monclova/</loc>
-<lastmod>2020-04-13T02:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1300-acuerdo-relativo-al-cierre-de-monclova/</loc>
+<lastmod>2020-04-13T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-0100-acuerdo-implementacion-buzon-deposito-de-demandas/</loc>
-<lastmod>2020-04-13T01:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1200-acuerdo-para-la-implementacion-del-buzon-de-deposito-de-demandas/</loc>
+<lastmod>2020-04-13T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-0200-acuerdo-cuestiones-urgentes-en-materia-familiar/</loc>
-<lastmod>2020-04-06T02:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-1200-acuerdo-de-audiencias-en-materia-penal-por-videoconferencias/</loc>
+<lastmod>2020-04-06T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-0100-acuerdo-audiencias-en-materia-penal-por-videoconferencias/</loc>
-<lastmod>2020-04-06T01:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-1200-acuerdo-sobre-cuestiones-urgentes-en-materia-familiar/</loc>
+<lastmod>2020-04-06T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-01-0100-acuerdo-posterga-suspension-al-30-abril/</loc>
-<lastmod>2020-04-01T01:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-01-1200-acuerdo-que-posterga-la-suspension-al-30-de-abril/</loc>
+<lastmod>2020-04-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2734,8 +2762,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-03-18-0100-acuerdo-c048-2020-suspension-covid-19/</loc>
-<lastmod>2020-03-18T01:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-03-18-1200-acuerdo-de-suspension-frente-al-covid-19/</loc>
+<lastmod>2020-03-18T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2811,13 +2839,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/category/acuerdos.html</loc>
-<lastmod>2020-05-13T19:32:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
 <lastmod>2020-04-16T12:54:00-06:41</lastmod>
 <changefreq>daily</changefreq>
@@ -2839,8 +2860,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/tag/acuerdos.html</loc>
+<lastmod>2020-05-22T12:00:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/tag/covid-19.html</loc>
-<lastmod>2020-05-13T19:32:00-06:41</lastmod>
+<lastmod>2020-04-16T12:54:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
