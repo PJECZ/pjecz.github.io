@@ -20,6 +20,7 @@ h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0
 header      { font-family: 'Lato', sans-serif; font-weight: 300; }
 #navegacion { font-family: 'Saira', sans-serif; font-weight: 700; }
 p           { font-size: 1.0em; }
+p.lead      { font-size: 1.0em; line-height: 1.2em; }
 blockquote  { font-size: 1.2em; font-style: italic; }
 footer      { font-family: 'Saira', sans-serif; font-weight: 400; }
 b,
@@ -42,7 +43,7 @@ blockquote              { padding: 1.2em; }
 header                  { min-height: 100px; }
 main                    { min-height: 800px; }
 article                 { min-height: 800px; }
-#cabecera               { min-height: 400px; }
+#cabecera               { }
 #destacados             { min-height: 400px; }
 #en_construccion        { min-height: 120px; }
 #novedades              { min-height: 400px; }
@@ -98,35 +99,41 @@ footer a:visited        { color: #dddddd; }
  */
 
 @media only screen and (max-width: 990px) {
-    body       { font-size: 0.9em; }
-    h1         { font-size: 2.6em; margin-bottom: 0.3em; }
-    h2         { font-size: 2.2em; margin-bottom: 0.3em; }
-    h3         { font-size: 2.0em; margin-bottom: 0.2em; }
-    h4         { font-size: 1.6em; margin-bottom: 0.2em; }
-    h5         { font-size: 1.4em; margin-bottom: 0.1em; }
-    h6         { font-size: 1.2em; margin-bottom: 0.1em; }
-    p          { font-size: 1.0em; padding: 0.3em 0; }
-    blockquote { font-size: 1.0em; padding: 0.8em; }
+    body         { font-size: 0.9em; }
+    h1           { font-size: 2.6em; margin-bottom: 0.3em; }
+    h2           { font-size: 2.2em; margin-bottom: 0.3em; }
+    h3           { font-size: 2.0em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.6em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.4em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.2em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.6em }
+    p            { font-size: 1.0em; padding: 0.3em 0; }
+    p.lead       { font-size: 1.0em; }
+    blockquote   { font-size: 1.0em; padding: 0.8em; }
 }
 @media only screen and (max-width: 580px) {
-    body       { font-size: 0.8em; }
-    h1         { font-size: 2.2em; margin-bottom: 0.3em; }
-    h2         { font-size: 2.0em; margin-bottom: 0.3em; }
-    h3         { font-size: 1.8em; margin-bottom: 0.2em; }
-    h4         { font-size: 1.6em; margin-bottom: 0.2em; }
-    h5         { font-size: 1.4em; margin-bottom: 0.1em; }
-    h6         { font-size: 1.2em; margin-bottom: 0.1em; }
-    p          { font-size: 0.9em; padding: 0.2em 0; }
-    blockquote { font-size: 1.0em; padding: 0.8em; }
+    body         { font-size: 0.8em; }
+    h1           { font-size: 2.2em; margin-bottom: 0.3em; }
+    h2           { font-size: 2.0em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.8em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.6em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.4em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.2em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.2em }
+    p            { font-size: 0.9em; padding: 0.2em 0; }
+    p.lead       { font-size: 0.9em; }
+    blockquote   { font-size: 1.0em; padding: 0.8em; }
 }
 @media only screen and (max-width: 300px) {
-    body       { font-size: 0.7em; }
-    h1         { font-size: 1.8em; margin-bottom: 0.2em; }
-    h2         { font-size: 1.6em; margin-bottom: 0.2em; }
-    h3         { font-size: 1.4em; margin-bottom: 0.1em; }
-    h4         { font-size: 1.2em; margin-bottom: 0.1em; }
-    h5         { font-size: 1.1em; margin-bottom: 0.0em; }
-    h6         { font-size: 1.0em; margin-bottom: 0.0em; }
-    p          { font-size: 0.8em; padding: 0.1em 0; }
-    blockquote { font-size: 0.9em; padding: 0.4em; }
+    body         { font-size: 0.7em; }
+    h1           { font-size: 1.8em; margin-bottom: 0.2em; }
+    h2           { font-size: 1.6em; margin-bottom: 0.2em; }
+    h3           { font-size: 1.4em; margin-bottom: 0.1em; }
+    h4           { font-size: 1.2em; margin-bottom: 0.1em; }
+    h5           { font-size: 1.1em; margin-bottom: 0.0em; }
+    h6           { font-size: 1.0em; margin-bottom: 0.0em; }
+    h1.display-4 { font-size: 1.8em }
+    p            { font-size: 0.8em; padding: 0.1em 0; }
+    p.lead       { font-size: 0.8em; }
+    blockquote   { font-size: 0.9em; padding: 0.4em; }
 }
