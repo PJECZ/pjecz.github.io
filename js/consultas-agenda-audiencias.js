@@ -1,16 +1,24 @@
 var dataSet = [];
+var API_KEY = '';  
+var CLIENT_ID = '';
+var SCOPE = '';
+var SHEET_AUTORIDADES_ID = '';
+var RANGE_AUTORIDADES = '';
 
-var API_KEY = 'AIzaSyDTPTTr3prCYIM7GlVxtkIHXVbb4zUvikM';
-var CLIENT_ID = '616965235487-g5ld50subl69ncjktrr94f4i39nk0tk8.apps.googleusercontent.com';
-var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+$(document).ready(function(){   
 
-var SHEET_AUTORIDADES_ID = '1J82-XGF-Y6N3SsDPX8qQFyy9kLfEAy49rUx7R3WcpSc';
-var RANGE_AUTORIDADES = 'Autoridades';
-
-$(document).ready(function(){
+    $.getJSON("https://storage.googleapis.com/pjecz-consultas/consultas-agenda-audiencias-llaves.json", function(datos) {
+        $.each(datos, function(clave, dato) {
+            API_KEY = dato.API_KEY;
+            CLIENT_ID = dato.CLIENT_ID;
+            SCOPE = dato.SCOPE;
+            SHEET_AUTORIDADES_ID = dato.SHEET_AUTORIDADES_ID;
+            RANGE_AUTORIDADES = dato.RANGE_AUTORIDADES;
+        })
+    });
 
     CargarApiGoogleSheet();
-
+    
     LlenarTabla();
 
     let añosSelect =  $("#añosSelect");
@@ -36,29 +44,29 @@ $(document).ready(function(){
         var val = $(this).val();
         autoridadSelect.empty();
         autoridadSelect.append('<option selected="true" disabled>- Elija la Entidad o el Juzgado -</option>');
-        autoridadSelect.prop("selectedIndex", 0);
+        autoridadSelect.prop("selectedIndex", 0);  
         LLenarJuzgados(val);
     });
 
-    $('#autoridadSelect').change(function(){
+    $('#autoridadSelect').change(function(){       
         LlenarAño();
     });
 
-    $('#mostrarButton').click(function(){
+    $('#mostrarButton').click(function(){  
         $('#listaAgendaAudiencias').DataTable().clear();
-        $('#listaAgendaAudiencias').DataTable().destroy();
-        ConsultarInformacion();
+        $('#listaAgendaAudiencias').DataTable().destroy();        
+        ConsultarInformacion();    
     });
 });
 
 function ConsultarInformacion() {
-    var params = {
-        spreadsheetId: $('#autoridadSelect').val(),
+    var params = {        
+        spreadsheetId: $('#autoridadSelect').val(),  
         range: $('#añosSelect').val()
     };
-
+    
     var request = gapi.client.sheets.spreadsheets.values.get(params);
-    request.then(function(response){
+    request.then(function(response){                            
         dataSet = [];
         var status = response.status;
         if(status == "200"){
@@ -70,45 +78,45 @@ function ConsultarInformacion() {
                 var Audiencia = datos[1];
                 var Fecha = datos[2];
                 var Actor = datos[3];
-                var Demandado = datos[4];
+                var Demandado = datos[4];                            
                 var informacion = [];
-
-                if(Fecha == undefined){
-                    datos.push("   ");
-                }
-                if(Expediente == undefined){
-                    datos.push("   ");
-                }
-                if(Audiencia == undefined){
-                    datos.push("   ");
-                }
-                if(Actor == undefined){
-                     datos.push("   ");
-                }
-                if(Demandado == undefined){
-                     datos.push("   ");
-                }
-                dataSet.push(datos);
-            }
-            LlenarTabla();
+                
+                if(Fecha == undefined){ 
+                    datos.push("   "); 
+                }                             
+                if(Expediente == undefined){ 
+                    datos.push("   "); 
+                }                             
+                if(Audiencia == undefined){ 
+                    datos.push("   "); 
+                }                             
+                if(Actor == undefined){ 
+                     datos.push("   "); 
+                }                             
+                if(Demandado == undefined){ 
+                     datos.push("   "); 
+                }                         
+                dataSet.push(datos);  
+            }                       
+            LlenarTabla();                       
         }
     },function(reason) {
         var code = reason.result.error.code;
         if(code == "400"){
-            dataSet = [];
-            LlenarTabla();
+            dataSet = [];  
+            LlenarTabla();   
         }
     });
 }
 
 function LLenarJuzgados(distrito) {
-    var params = {
-        spreadsheetId: SHEET_AUTORIDADES_ID,
+    var params = {        
+        spreadsheetId: SHEET_AUTORIDADES_ID,  
         range: RANGE_AUTORIDADES
     };
 
     var request = gapi.client.sheets.spreadsheets.values.get(params);
-    request.then(function(response){
+    request.then(function(response){                            
         dataSet = [];
         var status = response.status;
         if(status == "200"){
@@ -121,14 +129,14 @@ function LLenarJuzgados(distrito) {
                 if(distrito == idDistrito){
                     $('#autoridadSelect').append( '<option value="' + Id + '">' + Autoridad + '</option');
                 }
-            }
+            }                
         }
     },function(reason) {
         //console.error('error: ' + reason.result.error.message);
     });
 }
 
-function IniciarApi() {
+function IniciarApi() {   
     gapi.client.init({
         'apiKey': API_KEY,
         'clientId': CLIENT_ID,
@@ -137,11 +145,11 @@ function IniciarApi() {
     }).then(function(){});
 }
 
-function CargarApiGoogleSheet() {
+function CargarApiGoogleSheet() {                
     gapi.load('client:auth2', IniciarApi);
-}
+}   
 
-function LlenarAño(){
+function LlenarAño(){    
     $("#añosSelect").empty();
     $("#añosSelect").append('<option selected="true" disabled>- Elija un año </option>');
     $("#añosSelect").prop("selectedIndex", 0);
@@ -151,19 +159,19 @@ function LlenarAño(){
         var año = parseInt(n - i);
         $('#añosSelect').append('<option value="' + año + '">' + año + '</option');
     }
-}
+}        
 
-function LlenarTabla(){
+function LlenarTabla(){    
     $('#listaAgendaAudiencias').DataTable( {
         data: dataSet,
-        columns: [
-            { title: "Expediente" },
+        columns: [                        
+            { title: "Expediente" },                        
             { title: "Audiencia" },
             { title: "Fecha" },
             { title: "Actor(es)" },
             { title: "Demandado(s)" }
         ],
-        "pageLength": 10,
+        "pageLength": 10,        
         "order": 3,
         "language": {
             "lengthMenu": "Mostrar _MENU_",
