@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-01T15:35:13-00:00</lastmod>
+<lastmod>2020-06-02T10:13:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -20,6 +20,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/administrativos/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/consultas/agenda-audiencias/</loc>
+<lastmod>2020-06-01T16:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -208,7 +215,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/</loc>
-<lastmod>2020-05-16T22:36:00-05:00</lastmod>
+<lastmod>2020-06-01T16:29:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2531,6 +2538,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2020-06-04T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/decima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2020-06-03T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2020-06-02T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/decima-quinta-sesion-ordinaria/</loc>
 <lastmod>2020-05-28T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2854,14 +2882,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/misc.html</loc>
-<lastmod>2020-05-28T11:00:00-06:41</lastmod>
+<lastmod>2020-06-04T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
-<lastmod>2020-05-28T11:00:00-06:41</lastmod>
+<lastmod>2020-06-03T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

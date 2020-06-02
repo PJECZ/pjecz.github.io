@@ -6,24 +6,15 @@ $(document).ready(function() {
     $("#listaDeSentencias").hide();
 
     // Opciones del select distrito
-    $("#distritoSelect").append(
-        '<option value="0">- Elija la entidad/distrito -</select>',
-        '<option value="1">Consejo de la Judicatura</select>',
-        '<option value="2">Pleno del Tribunal Superior de Justicia</select>',
-        '<option value="3">Tribunal Constitucional Local</select>',
-        '<option value="4">Tribunales Especializados</select>',
-        '<option value="5">Salas TSJ</select>',
-        '<option value="6">Tribunal Distrital Saltillo materia Penal</select>',
-        '<option value="7">Tribunales Distritales</select>',
-        '<option value="8">Distrito de Acuña</select>',
-        '<option value="9">Distrito de Monclova</select>',
-        '<option value="10">Distrito de Parras de la Fuente</select>',
-        '<option value="11">Distrito de Rio Grande</select>',
-        '<option value="12">Distrito de Sabinas</select>',
-        '<option value="13">Distrito de Saltillo</select>',
-        '<option value="14">Distrito de San Pedro de las Colonias</select>',
-        '<option value="15">Distrito de Torreón</select>'
-    );
+    let distritoSelect = $("#distritoSelect");
+    distritoSelect.empty();
+    distritoSelect.append('<option selected="true" disabled>- Elija la entidad o distrito -</option>');
+    distritoSelect.prop("selectedIndex", 0);
+    $.getJSON("/json/distritos.json", function(datos) {
+        $.each(datos, function(clave, dato) {
+            distritoSelect.append($('<option></option>').attr('value', dato.id).text(dato.nombre))
+        })
+    });
 
     // Arreglo de opciones para el select autoridad,
     // debe tener la misma cantidad de elementos que el distritoSelect,
