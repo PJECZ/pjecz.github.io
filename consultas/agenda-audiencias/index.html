@@ -73,19 +73,21 @@
 	<article>
 		<div class="container py-4">
 <div id="elegirAgendaAudiencias" class="form-row mb-3">
-<div class="col"><select id="distritoSelect"></select></div>
-<div class="col"><select id="autoridadSelect"></select></div>
-<div class="col"><button id="mostrarButton" type="button" class="btn btn-primary">Mostrar</button></div>
+<div class="col">
+<select id="distritoSelect"></select>
+</div>
+<div class="col">
+<select id="autoridadSelect"></select>
+</div>
+<div class="col">
+<select id="añosSelect"></select>
+</div>
+<div class="col">
+<button id="mostrarButton" type="button" class="btn btn-primary">Mostrar</button>
+</div>
 </div>
 
 <table id="listaAgendaAudiencias" class="table" style="width:100%">
-<thead>
-<th>Fecha</th>
-<th>Expediente</th>
-<th>Audencia</th>
-<th>Actores</th>
-<th>Demandados</th>
-</thead>
 </table>
 		</div>
 	</article>
@@ -213,5 +215,6 @@
     <!-- JavaScripts propios -->
     <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tema.js"></script>
 <script src="https://www.pjecz.gob.mx/js/consultas-agenda-audiencias.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
 </body>
 </html>
