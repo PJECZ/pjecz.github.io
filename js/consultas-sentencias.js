@@ -8,12 +8,12 @@ $(document).ready(function() {
     // Opciones del select distrito
     $("#distritoSelect").append(
         '<option value="0">- Elija la entidad/distrito -</select>',
-        '<option value="1">Pleno del Tribunal Superior de Justicia</select>',
-        '<option value="2">Tribunal Constitucional Local</select>',
-        '<option value="3">Tribunales Especializados</select>',
-        '<option value="4">Salas TSJ</select>',
-        '<option value="5">Tribunal Distrital Saltillo materia Penal</select>',
-        '<option value="6">Tribunal Electoral del Estado de Coahuila de Zaragoza</select>',
+        '<option value="1">Consejo de la Judicatura</select>',
+        '<option value="2">Pleno del Tribunal Superior de Justicia</select>',
+        '<option value="3">Tribunal Constitucional Local</select>',
+        '<option value="4">Tribunales Especializados</select>',
+        '<option value="5">Salas TSJ</select>',
+        '<option value="6">Tribunal Distrital Saltillo materia Penal</select>',
         '<option value="7">Tribunales Distritales</select>',
         '<option value="8">Distrito de Acuña</select>',
         '<option value="9">Distrito de Monclova</select>',
