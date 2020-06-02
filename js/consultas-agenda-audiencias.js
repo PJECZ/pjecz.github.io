@@ -29,7 +29,7 @@ $(document).ready(function(){
     distritoSelect.empty();
     distritoSelect.append('<option selected="true" disabled>- Elija la Entidad o el Distrito Judicial </option>');
     distritoSelect.prop("selectedIndex", 0);
-    $.getJSON("/json/distritos.json", function(datos) {
+    $.getJSON("/json/consultas-agenda-audiencias-distritos.json", function(datos) {
         $.each(datos, function(clave, dato) {
             distritoSelect.append($('<option></option>').attr('value', dato.id).text(dato.nombre))
         })
@@ -55,7 +55,10 @@ $(document).ready(function(){
     $('#mostrarButton').click(function(){  
         $('#listaAgendaAudiencias').DataTable().clear();
         $('#listaAgendaAudiencias').DataTable().destroy();        
-        ConsultarInformacion();    
+        var añosSelect = $("#añosSelect").val();
+        if(añosSelect != null){
+            ConsultarInformacion();    
+        }
     });
 });
 
