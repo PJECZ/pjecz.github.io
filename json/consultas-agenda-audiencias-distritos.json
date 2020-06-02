@@ -1,0 +1,16 @@
+ [
+    { "id": "1", "nombre": "Pleno del Tribunal Superior de Justicia" },
+    { "id": "2", "nombre": "Tribunal Constitucional Local" },
+    { "id": "3", "nombre": "Tribunales Especializados" },
+    { "id": "4", "nombre": "Salas TSJ" },
+
+    { "id": "7", "nombre": "Tribunales Distritales" },
+    { "id": "8", "nombre": "Distrito de Acuña" },
+    { "id": "9", "nombre": "Distrito de Monclova" },
+    { "id": "10", "nombre": "Distrito de Parras de la Fuente" },
+    { "id": "11", "nombre": "Distrito de Río Grande" },
+    { "id": "12", "nombre": "Distrito de Sabinas" },
+    { "id": "13", "nombre": "Distrito de Saltillo" },
+    { "id": "14", "nombre": "Distrito de San Pedro de las Colonias" },
+    { "id": "15", "nombre": "Distrito de Torreón" }
+]
