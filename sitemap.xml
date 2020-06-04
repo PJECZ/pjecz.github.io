@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-03T11:50:57-00:00</lastmod>
+<lastmod>2020-06-04T09:39:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1705,6 +1705,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-apelacion-especializado-en-materia-de-adolescentes/formulario-de-contacto/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-conciliacion-y-arbitraje/formulario-de-contacto/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2392,6 +2399,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/pleno/tramites-y-servicios/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-apelacion-especializado-en-materia-de-adolescentes/tramites-y-servicios/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-conciliacion-y-arbitraje/tramites-y-servicios/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
