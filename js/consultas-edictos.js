@@ -53,6 +53,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Juzgado%20Cuarto%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Cuarto de Primera Instancia en Materia Familiar Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%203%20Monclova/lista.json">Notaria Pública 3 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%209%20Monclova/lista.json">Notaria Pública 9 Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2013%20Monclova/lista.json">Notaria Pública 13 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2014%20Monclova/lista.json">Notaria Pública 14 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2015%20Monclova/lista.json">Notaria Pública 15 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2017%20Monclova/lista.json">Notaria Pública 17 Monclova</option>' +
