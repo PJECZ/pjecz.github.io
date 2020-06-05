@@ -5,16 +5,16 @@ var SCOPE = '';
 var SHEET_AUTORIDADES_ID = '';
 var RANGE_AUTORIDADES = '';
 
-var columnas = [ { title: "Expediente" },                        
-                { title: "Audiencia" },
-                { title: "Fecha" },
-                { title: "Actor(es)" },
-                { title: "Demandado(s)" }];
+var columnas = [ { title: "Fecha" },                       
+                 { title: "Audiencia" },
+                 { title: "Expediente" },  
+                 { title: "Actor(es)" },
+                 { title: "Demandado(s)" }];
 
-var columnasAcusatorio = [   { title: "Carácter" },                        
-                            { title: "Tipo de Audiencia" },
-                            { title: "Fecha" },
-                            { title: "Sala" },
+var columnasAcusatorio = [  { title: "Fecha" }, 
+                            { title: "Sala" }, 
+                            { title: "Carácter" },                        
+                            { title: "Audiencia" },                            
                             { title: "Causa Penal" },
                             { title: "Delito" }];
 
@@ -238,12 +238,10 @@ function LlenarTablaInicial(){
     $('#listaAgendaAudiencias').DataTable( {
         data: dataSet,
         columns: [                        
-            { title: "Expediente/Causa Penal" },                        
-            { title: "Tipo de Audiencia" },
             { title: "Fecha" },
             { title: "Sala" },
-            { title: "Demandado/Imputado" },
-            { title: "Actor/Victima Ofendido" }
+            { title: "Audiencia" },
+            { title: "Expediente/Causa Penal" }
         ],
         "pageLength": 10,        
         "order": 3,
