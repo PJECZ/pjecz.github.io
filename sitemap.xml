@@ -5,9 +5,23 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-05T11:28:39-00:00</lastmod>
+<lastmod>2020-06-05T15:23:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/01-informacion-general/</loc>
+<lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/02-informacion-financiera-gubernamental/</loc>
+<lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
 </url>
 
 <url>
@@ -2951,22 +2965,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/category/misc.html</loc>
-<lastmod>2020-06-04T11:00:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/tag/acuerdos.html</loc>
+<loc>https://www.pjecz.gob.mx/category/acuerdos.html</loc>
 <lastmod>2020-06-03T12:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tag/sesiones.html</loc>
-<lastmod>2020-06-03T11:00:00-06:41</lastmod>
+<loc>https://www.pjecz.gob.mx/category/misc.html</loc>
+<lastmod>2020-05-26T12:00:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
+<lastmod>2020-06-04T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

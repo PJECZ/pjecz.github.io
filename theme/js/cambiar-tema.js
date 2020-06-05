@@ -1,6 +1,4 @@
-//
-// cambiar-tema.js
-//
+// Cambiar tema
 document.addEventListener('DOMContentLoaded', () => {
 
     const temaStylesheet = document.getElementById('tema');
