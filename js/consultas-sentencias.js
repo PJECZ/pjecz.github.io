@@ -13,16 +13,17 @@ $(document).ready(function() {
         '<option value="3">Tribunal Constitucional Local</select>',
         '<option value="4">Tribunales Especializados</select>',
         '<option value="5">Salas TSJ</select>',
-        '<option value="6">Tribunal Distrital Saltillo materia Penal</select>',
-        '<option value="7">Tribunales Distritales</select>',
-        '<option value="8">Distrito de Acuña</select>',
-        '<option value="9">Distrito de Monclova</select>',
-        '<option value="10">Distrito de Parras de la Fuente</select>',
-        '<option value="11">Distrito de Rio Grande</select>',
-        '<option value="12">Distrito de Sabinas</select>',
-        '<option value="13">Distrito de Saltillo</select>',
-        '<option value="14">Distrito de San Pedro de las Colonias</select>',
-        '<option value="15">Distrito de Torreón</select>'
+        '<option value="6">Tribunal Distrital Rio Grande Materia Penal</select>',
+        '<option value="7">Tribunal Distrital Saltillo Materia Penal</select>',
+        '<option value="8">Tribunales Distritales</select>',
+        '<option value="9">Distrito de Acuña</select>',
+        '<option value="10">Distrito de Monclova</select>',
+        '<option value="11">Distrito de Parras de la Fuente</select>',
+        '<option value="12">Distrito de Rio Grande</select>',
+        '<option value="13">Distrito de Sabinas</select>',
+        '<option value="14">Distrito de Saltillo</select>',
+        '<option value="15">Distrito de San Pedro de las Colonias</select>',
+        '<option value="16">Distrito de Torreón</select>'
     );
 
     // Arreglo de opciones para el select autoridad,
@@ -42,10 +43,15 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Apelaci%C3%B3n%20Especializado%20en%20Materia%20de%20Adolescentes/lista.json">Tribunal de Apelación Especializado en Materia de Adolescentes</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Conciliaci%C3%B3n%20y%20Arbitraje/lista.json">Tribunal de Conciliación y Arbitraje</option>',
 
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Auxiliar%20Penal/lista.json">Sala Auxiliar Penal</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Civil/lista.json">Sala Civil</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Penal/lista.json">Sala Penal</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Colegiada%20Civil%20y%20Familiar/lista.json">Sala Colegiada Civil y Familiar</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Colegiada%20Penal/lista.json">Sala Colegiada Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Penal/lista.json">Sala Regional Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Jos%C3%A9%20Ignacio%20M%C3%A1ynez%20Varela/lista.json">Sala Regional Ponencia José Ignacio Máynez Varela</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Ulises%20G.%20Hern%C3%A1ndez%20Torres/lista.json">Sala Regional Ponencia Ulises G. Hernández Torres</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Vladimir%20Kaiceros%20Barranco/lista.json">Sala Regional Ponencia Vladimir Kaiceros Barranco</option>',
+
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunal%20Distrital%20Rio%20Grande%20Materia%20Penal/Tribunal%20Distrital%20Rio%20Grande%20Materia%20Penal/lista.json">Tribunal Distrital Rio Grande Materia Penal</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunal%20Distrital%20Saltillo%20materia%20Penal/Tribunal%20Distrital%20Saltillo%20materia%20Penal/lista.json">Tribunal Distrital Saltillo materia Penal</option>',
 
@@ -90,6 +96,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Auxiliar%20del%20Juzgado%20Segundo%20Familiar%20Saltillo/lista.json">Juzgado de Primera Instancia en Materia Familiar Auxiliar del Juzgado Segundo Familiar Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20del%20Sistema%20Acusatorio%20y%20Oral%20Saltillo/lista.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio y Oral Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Mercantil%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Mercantil Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Saltillo/lista.json">Juzgado Primero de Primera Instancia en Materia Penal Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Distrito%20de%20Saltillo/Juzgado%20Primero%20Letrado%20Civil%20Saltillo/lista.json">Juzgado Primero Letrado Civil Saltillo</option>' +
