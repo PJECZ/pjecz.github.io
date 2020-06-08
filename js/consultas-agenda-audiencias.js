@@ -18,9 +18,16 @@ var columnasAcusatorio = [  { title: "Fecha" },
                             { title: "Causa Penal" },
                             { title: "Delito" }];
 
+var columnasSalasPenales = [{ title: "Fecha" },                                                
+                            { title: "Audiencia" },                            
+                            { title: "Toca Penal" },
+                            { title: "Exp. Origen" },
+                            { title: "Delito" },
+                            { title: "Origen" }];
+
 $(document).ready(function(){   
 
-    $.getJSON("https://storage.googleapis.com/pjecz-consultas/consultas-agenda-audiencias-llaves.json", function(datos) {    
+    $.getJSON("https://storage.googleapis.com/pjecz-consultas/consultas-agenda-audiencias-llaves.json", function(datos) {        
         $.each(datos, function(clave, dato) {
             API_KEY = dato.API_KEY;
             CLIENT_ID = dato.CLIENT_ID;
@@ -73,6 +80,9 @@ $(document).ready(function(){
             var acusatorio = $("#autoridadSelect option:selected" ).text();               
             if(acusatorio.indexOf("Sistema Acusatorio y Oral") > -1){
                 ConsultarInformacionAcusatorio();
+            }
+            if(acusatorio.indexOf("Sala Regional Penal") > -1 || acusatorio.indexOf("Sala Colegiada Penal") > -1 ){
+                ConsultarInformacionSalasPenales();
             }
             else{
                 ConsultarInformacion();    
@@ -184,6 +194,60 @@ function ConsultarInformacionAcusatorio() {
     });
 }
 
+function ConsultarInformacionSalasPenales() {
+    var params = {        
+        spreadsheetId: $('#autoridadSelect').val(),  
+        range: $('#añosSelect').val()
+    };
+    
+    var request = gapi.client.sheets.spreadsheets.values.get(params);
+    request.then(function(response){                            
+        dataSet = [];
+        var status = response.status;
+        if(status == "200"){
+            var values = response.result.values;
+            var ColeccionDatos = [];
+            for (var i = 1; i < values.length; i++){
+                var datos = values[i];
+                var Fecha = datos[1];
+                var Audiencia = datos[2];                
+                var Toca = datos[3];
+                var ExpOrigen = datos[4];                
+                var Delito = datos[5]; 
+                var Origen = datos[6];                            
+                
+                if(Fecha == undefined){ 
+                    datos.push("   "); 
+                }                 
+                if(Audiencia == undefined){ 
+                    datos.push("   "); 
+                } 
+                if(Toca == undefined){ 
+                    datos.push("   "); 
+                }                           
+                if(ExpOrigen == undefined){ 
+                    datos.push("   "); 
+                }                            
+                if(Delito == undefined){ 
+                     datos.push("   "); 
+                }  
+                if(Origen == undefined){ 
+                     datos.push("   "); 
+                }  
+                dataSet.push(datos);  
+            }                       
+            LlenarTablaSalasPenales();                       
+        }
+    },function(reason) {
+        var code = reason.result.error.code;
+        if(code == "400"){
+            dataSet = [];  
+            LlenarTablaInicial();   
+        }
+    });
+}
+
+
 function LLenarJuzgados(distrito) {
     var params = {        
         spreadsheetId: SHEET_AUTORIDADES_ID,  
@@ -289,6 +353,29 @@ function LlenarTablaAcusatorio(){
     $('#listaAgendaAudiencias').DataTable( {
         data: dataSet,
         columns: columnasAcusatorio,
+        "pageLength": 10,        
+        "order": 3,
+        "language": {
+            "lengthMenu": "Mostrar _MENU_",
+            "search": "Filtrar:",
+            "zeroRecords": " ",
+            "info": "Página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros",
+            "infoFiltered": "(filtrados desde _MAX_ registros totales)",
+            "oPaginate": {
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
+                "sPrevious": "Anterior"
+            }
+        }
+    } );
+}
+
+function LlenarTablaSalasPenales(){    
+    $('#listaAgendaAudiencias').DataTable( {
+        data: dataSet,
+        columns: columnasSalasPenales,
         "pageLength": 10,        
         "order": 3,
         "language": {
