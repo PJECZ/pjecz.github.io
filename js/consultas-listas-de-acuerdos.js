@@ -127,7 +127,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Quinto%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Torre%C3%B3n/lista.json">Juzgado Quinto de Primera Instancia en Materia Penal Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20en%20Materia%20de%20Adolescentes%20Torre%C3%B3n/lista.json">Juzgado en Materia de Adolescentes Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Torre%C3%B3n/Juzgado%20Civil%20y%20Familiar%20Matamoros/lista.json">Juzgado Civil y Familiar Matamoros</option>'
-ls
+
     ];
 
     // Al cambiar el distrito se cambian las opciones en autoridad
