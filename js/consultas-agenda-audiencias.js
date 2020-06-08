@@ -81,7 +81,7 @@ $(document).ready(function(){
             if(acusatorio.indexOf("Sistema Acusatorio y Oral") > -1){
                 ConsultarInformacionAcusatorio();
             }
-            elseif(acusatorio.indexOf("Sala Regional Penal") > -1 || acusatorio.indexOf("Sala Colegiada Penal") > -1 ){
+            else if(acusatorio.indexOf("Sala Regional Penal") > -1 || acusatorio.indexOf("Sala Colegiada Penal") > -1 ){
                 ConsultarInformacionSalasPenales();
             }
             else{
