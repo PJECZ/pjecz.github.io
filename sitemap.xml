@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-11T08:50:45-00:00</lastmod>
+<lastmod>2020-06-12T13:13:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2693,6 +2693,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-06-03-1200-acuerdo-c-077-2020-sistema-de-citas/</loc>
+<lastmod>2020-06-03T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-06-03-1200-acuerdo-protocolos-en-audiencias-via-remota/</loc>
 <lastmod>2020-06-03T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
