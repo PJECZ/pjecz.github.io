@@ -41,6 +41,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%205%20Acu%C3%B1a/lista.json">Notaria Pública 5 Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%206%20Acu%C3%B1a/lista.json">Notaria Pública 6 Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%208%20Acu%C3%B1a/lista.json">Notaria Pública 8 Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%2010%20Acu%C3%B1a/lista.json">Notaria Pública 10 Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%2014%20Acu%C3%B1a/lista.json">Notaria Pública 14 Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Acu%C3%B1a/Notaria%20P%C3%BAblica%2017%20Acu%C3%B1a/lista.json">Notaria Pública 17 Acuña</option>',
 
