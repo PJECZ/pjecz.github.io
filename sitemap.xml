@@ -5,62 +5,83 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-15T11:21:19-00:00</lastmod>
+<lastmod>2020-06-15T11:56:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/01-articulo-46-ii-47-51-y-58/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/100-informacion-general/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/01-informacion-general/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/02-estado-analitico-del-ejercicio-del-presupuesto-de-egresos-articulo-46-ii-b-47-51-y-58/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/201-informacion-contable/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/02-informacion-financiera-gubernamental/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/201-informacion-contable/20107-notas-de-estados-financieros/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/03-endeudamiento-neto-financiamiento-menos-armonizacion-articulo-46-ii-c-47-51-y-58-trimestral---anual/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/202-informacion-presupuestaria/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/203-informacion-programatica/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/04-intereses-de-la-deuda-articulo-46-ii-d-47-51-y-58-trimestral---anual/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/300-informacion-financiera-relativa-a-la-elaboracion-de-las-iniciativas-de-ley-de-ingresos-y-los-proyectos-de-presupuesto-de-egresos/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/armonizacion-contable/03-informacion-presupuestaria/05-un-flujo-de-fondos-que-resuma-todas-las-operaciones-y-los-indicadores-de-la-postura-fiscal-articulo-46-ii-d-47-51-y-58-trimestral---anual/</loc>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/400-de-la-informacion-financiera-relativa-a-la-aprobacion-de-las-leyes-de-ingresos-y-de-los-presupuestos-de-egresos/</loc>
+<lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/500-de-la-informacion-relativa-al-ejercicio-del-presupuesto/</loc>
+<lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/600-de-la-informacion-financiera-relativa-a-la-evaluacion-y-rendicion-de-cuentas/</loc>
+<lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/armonizacion-contable/700-informacion-financiera-y-de-los-formatos-a-que-hace-referencia-la-ley-de-disciplina-financiera-de-las-entidades-federativas-y-los-municipios/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -173,13 +194,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/atribuciones/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/atribuciones/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1950,13 +1964,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/eventos-actividades/funciones/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/funciones/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2069,21 +2076,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/marco-normativo/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-materia/mercantiles/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/mision-vision-y-valores/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2182,13 +2175,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-estatal-de-defensoria-publica/objetivo/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/eventos-actividades/objetivo/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2349,13 +2335,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/proceso-de-seleccion-de-jueces/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/quienes-somos/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2449,13 +2428,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/sentencias/</loc>
 <lastmod>2020-05-20T12:32:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/servicios/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2573,20 +2545,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-apelacion-especializado-en-materia-de-adolescentes/tramites/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/tribunal-de-conciliacion-y-arbitraje/tramites/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/</loc>
 <lastmod>2020-01-01T15:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2644,13 +2602,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/unidad-de-derechos-humanos-e-igualdad-de-genero/</loc>
-<lastmod>2020-05-04T09:12:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/administrativos/unidad-juridica/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
