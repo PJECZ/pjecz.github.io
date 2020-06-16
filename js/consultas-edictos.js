@@ -149,6 +149,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2041%20Saltillo/lista.json">Notaria Pública 41 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2042%20Saltillo/lista.json">Notaria Pública 42 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2044%20Saltillo/lista.json">Notaria Pública 44 Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2045%20Saltillo/lista.json">Notaria Pública 45 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2047%20Saltillo/lista.json">Notaria Pública 47 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2049%20Saltillo/lista.json">Notaria Pública 49 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2050%20Saltillo/lista.json">Notaria Pública 50 Saltillo</option>' +
