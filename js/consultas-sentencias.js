@@ -43,13 +43,17 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Apelaci%C3%B3n%20Especializado%20en%20Materia%20de%20Adolescentes/lista.json">Tribunal de Apelación Especializado en Materia de Adolescentes</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunales%20Especializados/Tribunal%20de%20Conciliaci%C3%B3n%20y%20Arbitraje/lista.json">Tribunal de Conciliación y Arbitraje</option>',
 
+
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Colegiada%20Civil%20y%20Familiar/lista.json">Sala Colegiada Civil y Familiar</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Colegiada%20Penal/lista.json">Sala Colegiada Penal</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional/lista.json">Sala Regional</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Penal/lista.json">Sala Regional Penal</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Carlos%20de%20Lara%20McGrat/lista.json">Sala Regional Ponencia Carlos de Lara McGrat</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Jos%C3%A9%20Francisco%20G%C3%B3mez%20G%C3%B3mez/lista.json">Sala Regional Ponencia José Francisco Gómez Gómez</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Jos%C3%A9%20Ignacio%20M%C3%A1ynez%20Varela/lista.json">Sala Regional Ponencia José Ignacio Máynez Varela</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Ulises%20G.%20Hern%C3%A1ndez%20Torres/lista.json">Sala Regional Ponencia Ulises G. Hernández Torres</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Salas%20TSJ/Sala%20Regional%20Ponencia%20Vladimir%20Kaiceros%20Barranco/lista.json">Sala Regional Ponencia Vladimir Kaiceros Barranco</option>',
+
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Sentencias/Tribunal%20Distrital%20Rio%20Grande%20Materia%20Penal/Tribunal%20Distrital%20Rio%20Grande%20Materia%20Penal/lista.json">Tribunal Distrital Rio Grande Materia Penal</option>',
 
