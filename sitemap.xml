@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-15T17:23:49-00:00</lastmod>
+<lastmod>2020-06-16T09:12:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2615,6 +2615,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2020-06-18T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2020-06-17T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2020-06-16T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/decima-septima-sesion-ordinaria/</loc>
 <lastmod>2020-06-11T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3008,7 +3029,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-06-11T11:00:00-06:41</lastmod>
+<lastmod>2020-06-18T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
