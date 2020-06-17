@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-06-16T17:43:42-00:00</lastmod>
+<lastmod>2020-06-17T11:10:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -83,6 +83,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/armonizacion-contable/700-informacion-financiera-y-de-los-formatos-a-que-hace-referencia-la-ley-de-disciplina-financiera-de-las-entidades-federativas-y-los-municipios/</loc>
 <lastmod>2020-06-01T12:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/consultas/abogados-registrados/</loc>
+<lastmod>2020-06-17T10:42:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -740,7 +747,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/consultas/expediente-virtual/</loc>
-<lastmod>2020-05-22T14:00:00-05:00</lastmod>
+<lastmod>2020-06-17T11:04:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
