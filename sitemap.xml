@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-07-07T15:39:59-00:00</lastmod>
+<lastmod>2020-07-07T16:18:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2748,6 +2748,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-07-03-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/</loc>
+<lastmod>2020-07-03T13:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-sesion-ordinaria/</loc>
 <lastmod>2020-07-02T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2764,13 +2771,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-sesion-ordinaria-tercera-digital/</loc>
 <lastmod>2020-06-30T11:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-06-25-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/</loc>
-<lastmod>2020-06-25T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3680,7 +3680,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/acuerdos-del-consejo.html</loc>
-<lastmod>2020-06-25T13:00:00-06:41</lastmod>
+<lastmod>2020-07-03T13:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

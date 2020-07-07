@@ -98,9 +98,9 @@ footer a:visited        { color: #dddddd; }
  * ----------
  */
 
-.navbar { padding: 0; }
+.navbar { padding: 0 0.2em; }
 .dropdown-menu { margin-top: 0; }
-.navbar .nav-item:not(:last-child) { margin-right: 8px; }
+.navbar .nav-item:not(:last-child) { margin-right: 1.2em; }
 .dropdown-toggle::after { transition: transform 0.15s linear; }
 .show.dropdown .dropdown-toggle::after { transform: translateY(3px); }
 
