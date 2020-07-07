@@ -34,14 +34,45 @@
     <!-- Navegacion -->
     <nav id="navegacion" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="https://www.pjecz.gob.mx/"><img src="https://www.pjecz.gob.mx/theme/images/pjecz-48x48-blanco.png" alt="PJECZ"> PJECZ</a>
+            <a class="navbar-brand" href="https://www.pjecz.gob.mx/"><img src="https://www.pjecz.gob.mx/theme/images/pjecz-48x48-blanco.png" alt="PJECZ"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.pjecz.gob.mx/conocenos/">Conócenos</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarConocenos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarConocenos">
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/conocenos/quienes-somos/bienvenida/">Bienvenida</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/">Tribunal Superior de Justicia</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/">Consejo de la Judicatura</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarConsultas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Consultas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarConsultas">
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/buzon-electronico/">Buzón Electrónico</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/citas/">Citas</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/edictos/">Edictos en Línea</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/">Listas de Acuerdos</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/sentencias/">Versión Pública de Sentencias</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/">Más...</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarInformacion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarInformacion">
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo.html">Acuerdos del Consejo</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/category/comunicados.html">Comunicados</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/sesiones/">Sesiones</a>
+                            <a class="dropdown-item" href="https://www.pjecz.gob.mx/tramites-y-servicios/">Trámites y Servicios</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.pjecz.gob.mx/transparencia/">Transparencia</a>
@@ -200,16 +231,16 @@
             <h3 class="text-center mt-2">Consultas, Información, Trámites y Servicios</h3>
             <div class="row">
                 <div class="col-md-4 mb-2">
-                    <h5>Consultas</h5>
+                    <h5 id="footerConsultas">Consultas</h5>
                     <ul class="list-unstyled text-small">
                         <li><a href="https://www.pjecz.gob.mx/consultas/abogados-registrados/">Abogados Registrados</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/agenda-audiencias/">Agenda de Audiencias</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/boletas/">Boletas de Central de Actuarios</a></li>
                         <li><a href="https://www.pjecz.gob.mx/buzon-electronico/">Buzón Electrónico</a></li>
+                        <li><a href="https://www.pjecz.gob.mx/citas/">Citas</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/edictos/">Edictos en Línea</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/expediente-virtual/">Expediente Virtual</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/">Listas de Acuerdos</a></li>
-                        <li><a href="https://www.pjecz.gob.mx/citas/">Sistema de Citas</a></li>
                         <li><a href="https://www.pjecz.gob.mx/consultas/sentencias/">Versión Pública de Sentencias</a></li>
                     </ul>
                 </div>
@@ -265,5 +296,6 @@
     <!-- JavaScripts propios -->
     <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tablas.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tema.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/navegacion.js"></script>
 </body>
 </html>
