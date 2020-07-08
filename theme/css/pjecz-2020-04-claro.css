@@ -10,10 +10,10 @@
  * -----------
  */
 
-body        { font-family: 'Lato', sans-serif; font-weight: 300; line-height: 1.3em; }
-h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.8em; }
-h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
-h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
+body        { font-family: 'Lato', sans-serif; font-weight: 300; line-height: 1.2em; }
+h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
+h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
+h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
 h4          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4em; }
 h5          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2em; }
 h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0em; }
@@ -31,13 +31,13 @@ strong      { font-weight: 700; }
  * --------
  */
 
-body                    { padding-top: 80px; /* Es la altura de Navegacion */ }
-h1                      { margin-bottom: 0.4em; }
-h2                      { margin-bottom: 0.4em; }
-h3                      { margin-bottom: 0.3em; }
-h4                      { margin-bottom: 0.3em; }
-h5                      { margin-bottom: 0.2em; }
-h6                      { margin-bottom: 0.2em; }
+body                    { padding-top: 64px; /* Es la altura de Navegacion */ }
+h1                      { margin-top: 1.0em; margin-bottom: 0.4em; }
+h2                      { margin-top: 0.8em; margin-bottom: 0.4em; }
+h3                      { margin-top: 0.6em; margin-bottom: 0.3em; }
+h4                      { margin-top: 0.4em; margin-bottom: 0.3em; }
+h5                      { margin-top: 0.2em; margin-bottom: 0.2em; }
+h6                      { margin-top: 0.2em; margin-bottom: 0.2em; }
 p                       { padding: 0.4em 0; }
 blockquote              { padding: 1.2em; }
 header                  { min-height: 100px; }
@@ -73,7 +73,7 @@ a:hover                 { color: #00568d; }
 a:active,
 a:visited               { color: #083755; }
 header                  { background-color: #e3e1e4; }
-#navegacion             { background-color: #083755; border-bottom: 16px solid #859497; }
+#navegacion             { background-color: #083755; border-bottom: 8px solid #859497; }
 #cabecera               { background-color: #ffffff; }
 #destacados             { background-color: #ffffff; }
 .destacados-card        { background-color: #f7f3f2; }
@@ -110,33 +110,33 @@ footer a:visited        { color: #dddddd; }
  */
 
 @media only screen and (max-width: 990px) {
-    body         { font-size: 0.9em; }
-    h1           { font-size: 2.6em; margin-bottom: 0.3em; }
-    h2           { font-size: 2.2em; margin-bottom: 0.3em; }
-    h3           { font-size: 2.0em; margin-bottom: 0.2em; }
-    h4           { font-size: 1.6em; margin-bottom: 0.2em; }
-    h5           { font-size: 1.4em; margin-bottom: 0.1em; }
-    h6           { font-size: 1.2em; margin-bottom: 0.1em; }
-    h1.display-4 { font-size: 2.6em }
-    p            { font-size: 1.0em; padding: 0.3em 0; }
-    p.lead       { font-size: 1.0em; }
-    blockquote   { font-size: 1.0em; padding: 0.8em; }
-}
-@media only screen and (max-width: 580px) {
-    body         { font-size: 0.8em; }
+    body         { font-size: 1.0em; }
     h1           { font-size: 2.2em; margin-bottom: 0.3em; }
     h2           { font-size: 2.0em; margin-bottom: 0.3em; }
     h3           { font-size: 1.8em; margin-bottom: 0.2em; }
     h4           { font-size: 1.6em; margin-bottom: 0.2em; }
     h5           { font-size: 1.4em; margin-bottom: 0.1em; }
     h6           { font-size: 1.2em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.4em }
+    p            { font-size: 1.0em; padding: 0.3em 0; }
+    p.lead       { font-size: 1.0em; }
+    blockquote   { font-size: 1.0em; padding: 0.8em; }
+}
+@media only screen and (max-width: 580px) {
+    body         { font-size: 1.0em; }
+    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.8em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.6em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.4em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.2em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.1em; margin-bottom: 0.1em; }
     h1.display-4 { font-size: 2.2em }
     p            { font-size: 0.9em; padding: 0.2em 0; }
     p.lead       { font-size: 0.9em; }
     blockquote   { font-size: 1.0em; padding: 0.8em; }
 }
 @media only screen and (max-width: 300px) {
-    body         { font-size: 0.7em; }
+    body         { font-size: 0.9em; }
     h1           { font-size: 1.8em; margin-bottom: 0.2em; }
     h2           { font-size: 1.6em; margin-bottom: 0.2em; }
     h3           { font-size: 1.4em; margin-bottom: 0.1em; }
