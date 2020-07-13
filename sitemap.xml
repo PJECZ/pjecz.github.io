@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-07-13T10:57:50-00:00</lastmod>
+<lastmod>2020-07-13T12:53:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2727,15 +2727,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-segunda-sesion-ordinaria/</loc>
-<lastmod>2020-07-16T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-sesion-ordinaria/</loc>
+<lastmod>2020-07-17T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-sesion-ordinaria/</loc>
-<lastmod>2020-07-15T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2020-07-16T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3212,20 +3212,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/primera-sesion-ordinaria/</loc>
 <lastmod>2020-01-08T15:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/votos-particulares/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/votos-disidentes/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3715,7 +3701,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-07-16T11:00:00-06:41</lastmod>
+<lastmod>2020-07-17T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
