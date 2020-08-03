@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-07-20T23:47:58-00:00</lastmod>
+<lastmod>2020-08-02T22:42:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2727,6 +2727,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-tercera-sesion-ordinaria/</loc>
+<lastmod>2020-08-06T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-tercera-sesion-ordinaria-sexta-digital/</loc>
+<lastmod>2020-08-04T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2020-08-03T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-sesion-ordinaria/</loc>
 <lastmod>2020-07-17T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2862,6 +2883,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/decima-septima-sesion-ordinaria/</loc>
 <lastmod>2020-06-09T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-pruebas-y-alegatos-de-la-controversia-constitucional-cc-3-2019/</loc>
+<lastmod>2020-06-06T12:30:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-pruebas-y-alegatos-de-la-controversia-constitucional-cc-2-2019/</loc>
+<lastmod>2020-06-06T10:30:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3226,20 +3261,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/primera-sesion-ordinaria/</loc>
 <lastmod>2020-01-08T15:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-pruebas-y-alegatos-de-la-controversia-constitucional-cc-2-2019/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-pruebas-y-alegatos-de-la-controversia-constitucional-cc-3-2019/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3729,7 +3750,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-07-17T11:00:00-06:41</lastmod>
+<lastmod>2020-08-06T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
