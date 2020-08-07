@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-08-07T10:11:20-00:00</lastmod>
+<lastmod>2020-08-07T16:34:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -188,6 +188,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/licencias/agpl/</loc>
 <lastmod>2020-04-27T16:48:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/alberto-lara-fernandez/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2160,6 +2167,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/jorge-hernandez-tafich-martinez/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/observatorio/integracion/juan-antonio-sifuentes-terrazas/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2238,6 +2252,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/observatorio/integracion/miguel-felipe-mery-ayup/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/miguel-wong-sanchez-ibarra/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2616,6 +2637,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/saltillo/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/salvador-hernandez-velez/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
