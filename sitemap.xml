@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-08-03T12:24:22-00:00</lastmod>
+<lastmod>2020-08-07T10:11:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,7 +60,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/actividades/2018/2018-04-17-acta-de-la-primera-sesion-ordinaria-del-consejo-tecnico-del-observatorio-judicial/</loc>
+<lastmod>2018-04-17T00:00:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/sanciones-a-servidores-publicos/2018/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/actividades/2018/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -123,8 +137,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/abel-alcala-hernandez/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/consultas/abogados-registrados/</loc>
 <lastmod>2020-06-17T10:42:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/actividades/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -160,6 +188,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/licencias/agpl/</loc>
 <lastmod>2020-04-27T16:48:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/alejandra-wade-villanueva/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -298,6 +333,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/carlos-gregorio-ramirez-hernandez/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/carlos-javier-garcia-mata/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -334,6 +383,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/conocenos/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2069,6 +2125,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/guillermo-prieto-salinas/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/politicas-de-uso/terminos-de-uso-de-la-informacion/</loc>
 <lastmod>2020-04-27T17:02:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2084,6 +2147,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-estatal-de-defensoria-publica/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/juan-antonio-sifuentes-terrazas/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/juan-carlos-lopez-villarreal/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2132,6 +2216,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/luis-arizpe-jimenez/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/marco-juridico/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2140,6 +2231,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-materia/mercantiles/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/miguel-felipe-mery-ayup/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2286,6 +2384,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/oficialia-de-partes/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2322,6 +2427,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/parras-de-la-fuente/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/patricia-vargas-bryan/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2419,6 +2531,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/observatorio/conocenos/quienes-somos/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-distrito/rio-grande/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -2427,6 +2546,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/rio-grande/</loc>
+<lastmod>2020-05-04T09:12:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/observatorio/integracion/rodrigo-gonzalez-morales/</loc>
 <lastmod>2020-05-04T09:12:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
