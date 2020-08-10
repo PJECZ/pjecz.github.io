@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-08-10T12:41:54-00:00</lastmod>
+<lastmod>2020-08-10T16:26:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -74,7 +74,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-05-03-curso-de-induccion-sobre-el-sistema-penal-acusatorio-a-los-consejeros-tecnicos-en-saltillo/</loc>
+<loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-05-03-curso-de-induccion-sobre-el-sistema-penal-acusatorio/</loc>
 <lastmod>2018-05-03T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -88,7 +88,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-08-15-instalacion-del-capitulo-regional-de-torreon-en-el-edificio-de-rectoria-de-la-universidad-iberoamericana/</loc>
+<loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-08-15-instalacion-del-capitulo-regional-de-torreon/</loc>
 <lastmod>2018-08-15T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -96,13 +96,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-08-15-primera-visita-a-organos-jurisdiccionales-en-la-ciudad-de-torreon/</loc>
-<lastmod>2018-08-15T00:00:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/2018/2018-08-15-primera-visita-a-organos-jurisdiccionales-en-torreon-por-parte-del-capitulo-regional/</loc>
 <lastmod>2018-08-15T00:00:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
