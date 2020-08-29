@@ -65,6 +65,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2024%20Monclova/lista.json">Notaria Pública 24 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2029%20Monclova/lista.json">Notaria Pública 29 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2032%20Monclova/lista.json">Notaria Pública 32 Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2035%20Monclova/lista.json">Notaria Pública 35 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2036%20Monclova/lista.json">Notaria Pública 36 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2039%20Monclova/lista.json">Notaria Pública 39 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2041%20Monclova/lista.json">Notaria Pública 41 Monclova</option>',
