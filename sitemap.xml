@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-08-28T21:42:17-00:00</lastmod>
+<lastmod>2020-08-31T10:05:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2993,6 +2993,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2020-09-03T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-quinta-sesion-ordinaria/</loc>
+<lastmod>2020-09-02T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-septima-sesion-ordinaria-digital/</loc>
+<lastmod>2020-09-01T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2020-08-27T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3133,7 +3154,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-07-03-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-07-03-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/</loc>
 <lastmod>2020-07-03T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3245,14 +3266,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-06-03-1200-acuerdo-c-077-2020-sistema-de-citas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-c-077-2020-sistema-de-citas/</loc>
 <lastmod>2020-06-03T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-06-03-1200-acuerdo-protocolos-en-audiencias-via-remota/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-protocolos-en-audiencias-via-remota/</loc>
 <lastmod>2020-06-03T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3301,21 +3322,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1200-acuerdo-c-067-2020-buzon-por-la-noche/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-22-1200-acuerdo-c-067-2020-buzon-por-la-noche/</loc>
 <lastmod>2020-05-22T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1130-acuerdo-c-066-2020-modificacion-comite-transparencia/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-22-1130-acuerdo-c-066-2020-modificacion-comite-transparencia/</loc>
 <lastmod>2020-05-22T11:30:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1100-acuerdo-c-065-2020-creacion-juzgado-primera-instancia-penal-sistema-acusatorio-oral-san-pedro/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-22-1100-acuerdo-c-065-2020-creacion-juzgado-primera-instancia-penal-sistema-acusatorio-oral-san-pedro/</loc>
 <lastmod>2020-05-22T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3329,14 +3350,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1030-acuerdo-c-064-2020-creacion-juzgado-tercero-letrado-materia-civil-torreon/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-22-1030-acuerdo-c-064-2020-creacion-juzgado-tercero-letrado-materia-civil-torreon/</loc>
 <lastmod>2020-05-22T10:30:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-22-1000-acuerdo-c-063-2020-supresion-juzgados/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-22-1000-acuerdo-c-063-2020-supresion-juzgados/</loc>
 <lastmod>2020-05-22T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3371,21 +3392,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1400-acuerdo-sobre-reanudar-actividades/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-13-1400-acuerdo-sobre-reanudar-actividades/</loc>
 <lastmod>2020-05-13T14:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1300-acuerdo-protocolo-de-atencion-de-los-organos-jurisdiccionales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-13-1300-acuerdo-protocolo-de-atencion-de-los-organos-jurisdiccionales/</loc>
 <lastmod>2020-05-13T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-13-1200-acuerdo-protocolo-de-acceso-a-edificios/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-13-1200-acuerdo-protocolo-de-acceso-a-edificios/</loc>
 <lastmod>2020-05-13T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3406,7 +3427,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-05-11-0100-acuerdo-acciones-de-emergencia-sanitaria/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-05-11-0100-acuerdo-acciones-de-emergencia-sanitaria/</loc>
 <lastmod>2020-05-11T01:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3434,14 +3455,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1300-acuerdo-mediante-el-cual-se-declaran-dias-inhabiles/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-30-1300-acuerdo-mediante-el-cual-se-declaran-dias-inhabiles/</loc>
 <lastmod>2020-04-30T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-30-1200-acuerdo-mediante-el-cual-se-dispone-continuar-las-medidas-adoptadas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-30-1200-acuerdo-mediante-el-cual-se-dispone-continuar-las-medidas-adoptadas/</loc>
 <lastmod>2020-04-30T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3469,49 +3490,49 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1500-acuerdo-donde-se-establecen-medidas-sanitarias/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-13-1500-acuerdo-donde-se-establecen-medidas-sanitarias/</loc>
 <lastmod>2020-04-13T15:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1400-acuerdo-para-sesiones-de-pleno-del-consejo-atraves-de-tecnologias-digitales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-13-1400-acuerdo-para-sesiones-de-pleno-del-consejo-atraves-de-tecnologias-digitales/</loc>
 <lastmod>2020-04-13T14:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1300-acuerdo-relativo-al-cierre-de-monclova/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-13-1300-acuerdo-relativo-al-cierre-de-monclova/</loc>
 <lastmod>2020-04-13T13:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-13-1200-acuerdo-para-la-implementacion-del-buzon-de-deposito-de-demandas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-13-1200-acuerdo-para-la-implementacion-del-buzon-de-deposito-de-demandas/</loc>
 <lastmod>2020-04-13T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-1200-acuerdo-de-audiencias-en-materia-penal-por-videoconferencias/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-06-1200-acuerdo-de-audiencias-en-materia-penal-por-videoconferencias/</loc>
 <lastmod>2020-04-06T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-06-1200-acuerdo-sobre-cuestiones-urgentes-en-materia-familiar/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-06-1200-acuerdo-sobre-cuestiones-urgentes-en-materia-familiar/</loc>
 <lastmod>2020-04-06T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-04-01-1200-acuerdo-que-posterga-la-suspension-al-30-de-abril/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-01-1200-acuerdo-que-posterga-la-suspension-al-30-de-abril/</loc>
 <lastmod>2020-04-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3525,7 +3546,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2020/2020-03-18-1200-acuerdo-de-suspension-frente-al-covid-19/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-03-18-1200-acuerdo-de-suspension-frente-al-covid-19/</loc>
 <lastmod>2020-03-18T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3602,6 +3623,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/votos-particulares/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2019/cuadragesima-septima-sesion-ordinaria/</loc>
 <lastmod>2019-12-20T15:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3637,7 +3665,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2019/2019-11-15-1200-acuerdo-261-2019-creacion-de-la-secretaria-de-acuerdo-y-tramite/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2019/2019-11-15-1200-acuerdo-261-2019-creacion-de-la-secretaria-de-acuerdo-y-tramite/</loc>
 <lastmod>2019-11-15T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3651,420 +3679,420 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2019/2019-08-30-1200-acuerdo166-lineamientos-para-el-ingreso-de-audicnecias-orales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2019/2019-08-30-1200-acuerdo166-lineamientos-para-el-ingreso-de-audicnecias-orales/</loc>
 <lastmod>2019-08-30T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2019/2019-04-30-1201-acuerdo-78-cuantia-letrados/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2019/2019-04-30-1201-acuerdo-78-cuantia-letrados/</loc>
 <lastmod>2019-04-30T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-10-17-1200-acuerdo-254-2018-proyecto-acuerdo-guia-de-analisis-sentencias/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-10-17-1200-acuerdo-254-2018-proyecto-acuerdo-guia-de-analisis-sentencias/</loc>
 <lastmod>2018-10-17T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-09-24-1204-acuerdo-231-a-2018-modifican-los-articulos-2429-y-30/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-09-24-1204-acuerdo-231-a-2018-modifican-los-articulos-2429-y-30/</loc>
 <lastmod>2018-09-24T12:04:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-09-24-1202-acuerdo-233-2018-propuesta-excusa-de-jueces-de-ejecucion/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-09-24-1202-acuerdo-233-2018-propuesta-excusa-de-jueces-de-ejecucion/</loc>
 <lastmod>2018-09-24T12:02:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-09-24-1201-acuerdo-236-2018-consejo-medidas-de-competencia-acuna/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-09-24-1201-acuerdo-236-2018-consejo-medidas-de-competencia-acuna/</loc>
 <lastmod>2018-09-24T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-09-24-1200-acuerdo-237-18-consejo-medidas-de-competencia-sabinas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-09-24-1200-acuerdo-237-18-consejo-medidas-de-competencia-sabinas/</loc>
 <lastmod>2018-09-24T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-08-29-1207-acuerdo-192-2018-creacion-juzgado-auxiliar-del-segundo-familiar/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-08-29-1207-acuerdo-192-2018-creacion-juzgado-auxiliar-del-segundo-familiar/</loc>
 <lastmod>2018-08-29T12:07:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-08-29-1204-acuerdo-195-2018-creacion-jugado-3ro-mercantil-saltillo/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-08-29-1204-acuerdo-195-2018-creacion-jugado-3ro-mercantil-saltillo/</loc>
 <lastmod>2018-08-29T12:04:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-08-29-1203-acuerdo-196-2018-creacion-juzgado-segundo-familiar-piedras-negras-rio-grande/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-08-29-1203-acuerdo-196-2018-creacion-juzgado-segundo-familiar-piedras-negras-rio-grande/</loc>
 <lastmod>2018-08-29T12:03:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-08-29-1202-acuerdo-197-2018-creacion-juzgado-quinto-familiar-torreoon/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-08-29-1202-acuerdo-197-2018-creacion-juzgado-quinto-familiar-torreoon/</loc>
 <lastmod>2018-08-29T12:02:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-08-29-1201-acuerdo-198-2018-creacion-ejecucion-torreon/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-08-29-1201-acuerdo-198-2018-creacion-ejecucion-torreon/</loc>
 <lastmod>2018-08-29T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-07-18-1202-acuerdo-157-2018-cambio-domicilio-juzgados-mercantiles-saltillo/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-07-18-1202-acuerdo-157-2018-cambio-domicilio-juzgados-mercantiles-saltillo/</loc>
 <lastmod>2018-07-18T12:02:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-07-18-1201-acuerdo-158-2018-cambio-domicilio-iedp_archivo-regional-y-ojsabinas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-07-18-1201-acuerdo-158-2018-cambio-domicilio-iedp_archivo-regional-y-ojsabinas/</loc>
 <lastmod>2018-07-18T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-07-18-1200-acuerdo-164-2018-transformacion-monclova-oral/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-07-18-1200-acuerdo-164-2018-transformacion-monclova-oral/</loc>
 <lastmod>2018-07-18T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-07-01-1200-acuerdo-123-2018-gastos-medicos/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-07-01-1200-acuerdo-123-2018-gastos-medicos/</loc>
 <lastmod>2018-07-01T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-01-17-1202-acuerdo-10-2018-uso-de-togas/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-01-17-1202-acuerdo-10-2018-uso-de-togas/</loc>
 <lastmod>2018-01-17T12:02:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-01-17-1201-acuerdo-11-2018-reforma-articulo-tercero-transitorio-del-acuerdo-317-2017/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-01-17-1201-acuerdo-11-2018-reforma-articulo-tercero-transitorio-del-acuerdo-317-2017/</loc>
 <lastmod>2018-01-17T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2018/2018-01-17-1200-acuerdo-12-201-adhesion-protocolos-scjn/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2018/2018-01-17-1200-acuerdo-12-201-adhesion-protocolos-scjn/</loc>
 <lastmod>2018-01-17T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-12-18-1200-acuerdo-c-3402017-transformar-los-juzgados-1pi-de-torreon-saltillo/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-12-18-1200-acuerdo-c-3402017-transformar-los-juzgados-1pi-de-torreon-saltillo/</loc>
 <lastmod>2017-12-18T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-28-1200-acuerdo-320-2017-desincorporacion-destino-y-baja-de-bienes-muebles/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-28-1200-acuerdo-320-2017-desincorporacion-destino-y-baja-de-bienes-muebles/</loc>
 <lastmod>2017-11-28T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-17-1201-acuerdo-316-2017-lineamientos-para-el-uso-de-vehiculos-oficiales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-17-1201-acuerdo-316-2017-lineamientos-para-el-uso-de-vehiculos-oficiales/</loc>
 <lastmod>2017-11-17T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-17-1200-acuerdo-c-3272017-se-suprime-el-juzgado1pim-penal-del-dj-de-monclova/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-17-1200-acuerdo-c-3272017-se-suprime-el-juzgado1pim-penal-del-dj-de-monclova/</loc>
 <lastmod>2017-11-17T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1208-acuerdo-310-2017-creacion-auditoria-interna/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1208-acuerdo-310-2017-creacion-auditoria-interna/</loc>
 <lastmod>2017-11-16T12:08:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1207-acuerdo-311-2017-lineamientos-para-el-uso-de-lenguaje-incluyente/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1207-acuerdo-311-2017-lineamientos-para-el-uso-de-lenguaje-incluyente/</loc>
 <lastmod>2017-11-16T12:07:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1206-acuerdo-312-2017-lineamientos-otorgamiento-de-viaticos/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1206-acuerdo-312-2017-lineamientos-otorgamiento-de-viaticos/</loc>
 <lastmod>2017-11-16T12:06:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1205-acuerdo-313-2017-reglamento-interior-del-centro-de-evaluacion-psicosocial/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1205-acuerdo-313-2017-reglamento-interior-del-centro-de-evaluacion-psicosocial/</loc>
 <lastmod>2017-11-16T12:05:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1203-acuerdo-315-2017-lineamientos-entransparencia-y-ai/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1203-acuerdo-315-2017-lineamientos-entransparencia-y-ai/</loc>
 <lastmod>2017-11-16T12:03:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1202-acuerdo-317-2017-creacion-observatorio-judicial/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1202-acuerdo-317-2017-creacion-observatorio-judicial/</loc>
 <lastmod>2017-11-16T12:02:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-11-16-1201-acuerdo-318-2017-reglamento-interio-del-cmasc/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1201-acuerdo-318-2017-reglamento-interio-del-cmasc/</loc>
 <lastmod>2017-11-16T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-10-31-1200-acuerdos-lineamientos-en-materia-de-transparencia/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-10-31-1200-acuerdos-lineamientos-en-materia-de-transparencia/</loc>
 <lastmod>2017-10-31T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-10-21-1200-acuerdos-reglamento-interior-secretaria-tecnica-y-de-transparencia/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-10-21-1200-acuerdos-reglamento-interior-secretaria-tecnica-y-de-transparencia/</loc>
 <lastmod>2017-10-21T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-09-27-1201-acuerdo-282-2017-creacion-unidad-de-transparencia-del-tcarbitraje/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-09-27-1201-acuerdo-282-2017-creacion-unidad-de-transparencia-del-tcarbitraje/</loc>
 <lastmod>2017-09-27T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2017/2017-04-26-1200-acuerdo-110-2017-remuneracion-por-exceso-de-cargas-de-trabajo/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-04-26-1200-acuerdo-110-2017-remuneracion-por-exceso-de-cargas-de-trabajo/</loc>
 <lastmod>2017-04-26T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-11-21-1200-acuerdos-391-2016-implementacion-modelo-de-justicia-familiar-saltillo-y-torreon/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-11-21-1200-acuerdos-391-2016-implementacion-modelo-de-justicia-familiar-saltillo-y-torreon/</loc>
 <lastmod>2016-11-21T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-11-18-1202-acuerdos-376-2016-modificacion-de-fecha-de-implementacion-del-modelo-de-jf/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-11-18-1202-acuerdos-376-2016-modificacion-de-fecha-de-implementacion-del-modelo-de-jf/</loc>
 <lastmod>2016-11-18T12:02:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-11-18-1201-a377-2016-se-aprueba-tranferencia-gradual-de-expedientes/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-11-18-1201-a377-2016-se-aprueba-tranferencia-gradual-de-expedientes/</loc>
 <lastmod>2016-11-18T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-09-27-1202-acuerdos-317-2016-ampliacion-de-periodo-de-actuacion-6-jamf-distritos-stmys/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-09-27-1202-acuerdos-317-2016-ampliacion-de-periodo-de-actuacion-6-jamf-distritos-stmys/</loc>
 <lastmod>2016-09-27T12:02:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-09-27-1201-acuerdos-319-2016-determian-competencia-del-tribuna-de-aem-de-adolescentes/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-09-27-1201-acuerdos-319-2016-determian-competencia-del-tribuna-de-aem-de-adolescentes/</loc>
 <lastmod>2016-09-27T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-09-27-1200-acuerdo-318-implementacion-del-mjf-distritos-rio-grande-y-monclova/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-09-27-1200-acuerdo-318-implementacion-del-mjf-distritos-rio-grande-y-monclova/</loc>
 <lastmod>2016-09-27T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-08-31-1201-acuerdo-281-2016-cambio-de-domicilio-jpim-civil-familiar-y-penal-e-iedp-acuna/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-08-31-1201-acuerdo-281-2016-cambio-de-domicilio-jpim-civil-familiar-y-penal-e-iedp-acuna/</loc>
 <lastmod>2016-08-31T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-08-31-1200-acuerdo-282-2016-implementacion-del-modelo-de-justicia-familair-dja/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-08-31-1200-acuerdo-282-2016-implementacion-del-modelo-de-justicia-familair-dja/</loc>
 <lastmod>2016-08-31T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-06-30-1200-acuerdo-221-2016-cambio-de-domicilio-tema-1y2-letrado-cs-y-daa/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-06-30-1200-acuerdo-221-2016-cambio-de-domicilio-tema-1y2-letrado-cs-y-daa/</loc>
 <lastmod>2016-06-30T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-06-10-1201-acuerdos-205-2016-gradualidad-implementacion-del-modelo-de-justicia-familiar/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-06-10-1201-acuerdos-205-2016-gradualidad-implementacion-del-modelo-de-justicia-familiar/</loc>
 <lastmod>2016-06-10T12:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-06-10-1200-acuerdos-206-2016-implementacion-modelo-de-justicia-familiar-djs/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-06-10-1200-acuerdos-206-2016-implementacion-modelo-de-justicia-familiar-djs/</loc>
 <lastmod>2016-06-10T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-04-27-1200-acuerdo-146-2016-creacion-de-organos-jurisdiccionales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-04-27-1200-acuerdo-146-2016-creacion-de-organos-jurisdiccionales/</loc>
 <lastmod>2016-04-27T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-03-16-1200-acuerdos-098-2016-indicadores-para-la-reeleccion-de-magistrados-y-jueces/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-03-16-1200-acuerdos-098-2016-indicadores-para-la-reeleccion-de-magistrados-y-jueces/</loc>
 <lastmod>2016-03-16T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-22-1204-acuerdo-047-2016-creacion-de-juzgado-pimpsa-y-oral-distito-judicial-rio-grande/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1204-acuerdo-047-2016-creacion-de-juzgado-pimpsa-y-oral-distito-judicial-rio-grande/</loc>
 <lastmod>2016-02-22T12:04:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-22-1203-auerdo-048-2016-supresion-de-juzgado-3pimp-distrito-rg/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1203-auerdo-048-2016-supresion-de-juzgado-3pimp-distrito-rg/</loc>
 <lastmod>2016-02-22T12:03:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-22-1202-acuerdo-049-2016-se-modifia-acuerdo-c-004-2016/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1202-acuerdo-049-2016-se-modifia-acuerdo-c-004-2016/</loc>
 <lastmod>2016-02-22T12:02:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-22-1201-acuerdos-050-2016-se-complementa-acuerdo-c-211-2014/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1201-acuerdos-050-2016-se-complementa-acuerdo-c-211-2014/</loc>
 <lastmod>2016-02-22T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-22-1200-acuerdo-053-2016-homologacion-de-funciones-de-oj-en-materia-cmyf/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1200-acuerdo-053-2016-homologacion-de-funciones-de-oj-en-materia-cmyf/</loc>
 <lastmod>2016-02-22T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-02-16-1201-acuerdos-088-2016-supresion-juzgados-primero-y-segundo-primera-instancia-mp-djt/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-16-1201-acuerdos-088-2016-supresion-juzgados-primero-y-segundo-primera-instancia-mp-djt/</loc>
 <lastmod>2016-02-16T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2016/2016-01-19-1200-acuerdo-004-2016-creacion-juzgadopimp-sistema-acusatorio-y-oral-djs/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-01-19-1200-acuerdo-004-2016-creacion-juzgadopimp-sistema-acusatorio-y-oral-djs/</loc>
 <lastmod>2016-01-19T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2015/2015-08-10-1200-acuerdo-187-b-2015-tabulador-salarial-manual-servidores-publicos/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2015/2015-08-10-1200-acuerdo-187-b-2015-tabulador-salarial-manual-servidores-publicos/</loc>
 <lastmod>2015-08-10T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2014/2014-09-09-1200-acuerdo-c-197-2014-nuevo-sistema-de-justicia-pa-inicia-281014/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2014/2014-09-09-1200-acuerdo-c-197-2014-nuevo-sistema-de-justicia-pa-inicia-281014/</loc>
 <lastmod>2014-09-09T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2013/2013-05-28-1200-acuerdo-por-el-cual-se-determina-que-el-nuevo-sistema-de-justicia-penal-iniciara-el-primero-de-junio-de-dos-mil-trece-en-el-distrito-judicial-de-monclova/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2013/2013-05-28-1200-acuerdo-por-el-cual-se-determina-que-el-nuevo-sistema-de-justicia-penal-iniciara-el-primero-de-junio-de-dos-mil-trece-en-el-distrito-judicial-de-monclova/</loc>
 <lastmod>2013-05-28T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2012/2012-01-18-1200-acuerdo-relativo-a-la-remision-de-expeidentes-en-materia-penal-radicados-en-el-jpimf-al-juzgado-de-pimp-ambos-del-distrito-judicial-de-acuna/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2012/2012-01-18-1200-acuerdo-relativo-a-la-remision-de-expeidentes-en-materia-penal-radicados-en-el-jpimf-al-juzgado-de-pimp-ambos-del-distrito-judicial-de-acuna/</loc>
 <lastmod>2012-01-18T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2011/2011-01-24-1200-cambio-de-domicilio-jpimcyf-del-distrito-de-acuna/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2011/2011-01-24-1200-cambio-de-domicilio-jpimcyf-del-distrito-de-acuna/</loc>
 <lastmod>2011-01-24T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos/2010/2010-01-25-1200-cambio-de-domicilo-jpimcyf-del-djs-y-archivo-regional/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2010/2010-01-25-1200-cambio-de-domicilo-jpimcyf-del-djs-y-archivo-regional/</loc>
 <lastmod>2010-01-25T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4086,7 +4114,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-08-27T11:00:00-06:41</lastmod>
+<lastmod>2020-09-03T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
