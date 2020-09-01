@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-08-31T15:47:08-00:00</lastmod>
+<lastmod>2020-09-01T09:41:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3098,15 +3098,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-segunda-sesion-ordinaria-quinta-digital/</loc>
-<lastmod>2020-07-14T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-07-14-1000-presentacion-del-sistema-de-citas-poder-judicial-de-coahuila-y-campeche/</loc>
+<lastmod>2020-07-14T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-07-14-1000-presentacion-del-sistema-de-citas-poder-judicial-de-coahuila-y-campeche/</loc>
-<lastmod>2020-07-14T10:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-segunda-sesion-ordinaria-quinta-digital/</loc>
+<lastmod>2020-07-14T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
