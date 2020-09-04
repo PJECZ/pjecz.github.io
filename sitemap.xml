@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-03T12:14:56-00:00</lastmod>
+<lastmod>2020-09-04T13:16:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -859,13 +859,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/datos-del-organo/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/unidad-de-derechos-humanos-e-igualdad-de-genero/datos-del-organo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2497,13 +2490,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/objetivo/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/unidad-de-derechos-humanos-e-igualdad-de-genero/objetivo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
