@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-06T23:24:20-00:00</lastmod>
+<lastmod>2020-09-07T16:13:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -586,7 +586,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-18/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -600,7 +600,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-20/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -614,7 +614,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -628,7 +628,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -642,7 +642,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1110,14 +1110,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f01-estructura-jurisdiccional-administrativa/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f01-estructura-jurisdiccional-y-administrativa/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f01-estructura-jurisdiccional-y-administrativa/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f01-estructura-jurisdiccional-y-administrativa/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1132,7 +1132,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f01-estructura-organica/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1146,7 +1146,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f02-funciones/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1160,7 +1160,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f02-marco-normativo/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1180,28 +1180,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f03-directorio/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f03-directorio-de-servidores-publicos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f03-directorio/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f04-nombramientos-comisiones-licencias/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f04-nombramientos-comisiones-y-licencias/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f04-nombramientos-comisiones-y-licencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1216,14 +1216,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f04-presupuesto-asignado/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f05-asuntos-iniciados-tramite-concluidos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f05-asuntos-iniciados-en-tramite-y-resueltos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1243,8 +1243,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f05-remuneracion-mensual-puesto/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f05-remuneracion-mensual-por-puesto/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1265,21 +1265,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f06-declaracion-patrimonial/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f06-listas-acuerdos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f06-listas-de-acuerdos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f07-agenda-audiencias/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f07-agenda-de-audiencias/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1292,14 +1292,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f07-viaticos-gastos-representacion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f07-viaticos-y-gastos-de-representacion/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f07-viaticos-y-gastos-de-representacion/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f07-viaticos-y-gastos-de-representacion/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1320,35 +1320,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f08-perfil-puestos-curriculum-vitae/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f08-perfil-de-puestos-y-curriculum-vitae/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f08-sentencias-causado-ejecutoria/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f08-sentencias-que-hayan-causado-ejecutoria-en-su-version-publica/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f09-calendario-dias-inhabiles/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f09-convenios-colaboracion-contratos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f09-calendario-de-dias-inhabiles/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f09-convenios-de-colaboracion-y-contratos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f09-convenios-de-colaboracion-y-contratos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1376,15 +1376,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f10-condiciones-generales-trabajo/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f10-condiciones-generales-de-trabajo/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f10-ubicacion-expedientes/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f10-ubicacion-de-los-expedientes/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1397,8 +1397,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f11-formatos-procedimientos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f11-formatos-de-procedimientos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1411,28 +1411,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f11-planes-programas-proyectos-indicadores-gestion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f11-planes-programas-o-proyectos-con-indicadores-de-gestion/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f12-estadisticas-amparos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f12-servicios-tramites/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f12-estadisticas-de-amparos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f12-servicios-y-tramites/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f12-servicios-y-tramites/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1453,13 +1453,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f13-glosa-debate/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f13-mecanismo-de-solicitudes-opiniones-quejas-denuncias-o-sugerencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -1467,14 +1460,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f13-mecanismo-solicitudes-opiniones-quejas-denuncias-sugerencias/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f13-mecanismo-de-solicitudes-opiniones-quejas-denuncias-o-sugerencias/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f13-resumen-de-glosa-de-debate/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f14-estadisticas-de-amparos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f14-las-tesis-aisladas-y-jurisdiccionales/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1488,22 +1495,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f14-mecanismo-participacion-ciudadana/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f14-tesis-aisladas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f14-mecanismo-de-participacion-ciudadana/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f15-otra-informacion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1516,8 +1516,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f15-programas-subsidio/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f15-programas-de-subsidio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1537,8 +1537,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f16-beneficiarios-programas-subsidio/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f16-beneficiarios-de-los-programas-de-subsidio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1551,8 +1551,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f16-seleccion-jueces-magistrados/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f16-proceso-de-seleccion-de-magistrados/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1565,14 +1565,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f17-padron-beneficiarios-programas-sociales/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f17-padron-de-beneficiarios-de-programas-sociales/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f17-padron-de-beneficiarios-de-programas-sociales/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f17-padron-de-beneficiarios-de-programas-sociales/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1586,8 +1586,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f18-listado-personas-reciben-recursos-publicos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f18-listado-de-personas-que-reciben-recursos-publicos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1600,14 +1600,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f19-instituciones-beneficencia/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f19-instituciones-de-beneficencia/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f19-instituciones-de-beneficencia/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f19-instituciones-de-beneficencia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1636,7 +1636,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f20-presupuesto-asignado/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f21-calendariacion-de-reuniones-publicas/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1644,13 +1651,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f21-calendario-de-reuniones-publicas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f21-calendarizacion-reuniones-publicas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1677,21 +1677,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f22-unidad-transparencia/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f23-catalogos-documentales-archivos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f22-unidad-de-transparencia/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f23-catalogos-documentales-de-archivos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f23-catalogos-documentales-de-archivos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1712,21 +1712,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f24-solicitudes-informacion-respuestas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f25-balances-estados-financieros/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f24-solicitudes-de-informacion-y-respuestas/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f25-balances-y-estados-financieros/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f25-balances-y-estados-financieros/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1741,20 +1741,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f26-deuda-publica/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f27-auditorias-practicadas-concluidas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f27-auditorias-practicadas-y-concluidas/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f27-auditorias-practicadas-y-concluidas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1768,15 +1768,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f28-padron-proveedores/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f29-inspectores-visitadores/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f28-padron-de-proveedores/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1789,14 +1782,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f30-convocatorias-concurso-licitaciones/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f29-inspectores-y-visitadores/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f30-los-resultados-sobre-procedimientos-de-adjudicacion-directa-invitacion-restringida-y-licitacion/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f30-los-resultados-sobre-procedimientos-de-adjudicacion-directa-invitacion-restringida-y-licitacion/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1811,7 +1811,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f31-agenda-mensual/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1824,8 +1824,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f32-actas-entrega-recepcion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f32-actas-de-entrega-recepcion/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1838,8 +1838,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f33-georreferenciacion-obras-publicas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f33-georreferenciacion-de-obras-publicas/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1852,15 +1852,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f34-indices-informacion-reservada/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f35-guia-simple-archivos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f34-indices-de-informacion-reservada/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1873,14 +1866,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f36-concesiones-licencias-permisos-autorizaciones/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f35-guia-simple-de-archivos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f36-concesiones-licencias-permisos-y-autorizaciones/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f36-concesiones-licencias-permisos-y-autorizaciones/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1894,8 +1894,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f37-concesiones-transporte-publico/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f37-concesiones-de-transporte-publico/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1908,8 +1908,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f38-entrega-recursos-publicos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f38-entrega-de-recursos-publicos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1923,14 +1923,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f39-sistemas-pensionarios/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f40-informe-anual-actividades/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -1943,14 +1936,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f41-estadisticas-sobre-ingresos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f40-informe-anual-de-actividades/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f41-estadisticas-sobre-los-ingresos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f41-estadisticas-sobre-los-ingresos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1965,20 +1965,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f42-informacion-desclasificada/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f43-preguntas-frecuentes-respuestas/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f43-preguntas-frecuentes-y-sus-respuestas/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f43-preguntas-frecuentes-y-sus-respuestas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -1992,21 +1992,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f44-catalogo-informacion-adicional/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f45-informe-acciones-realizadas-durante-contingencias/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f44-catalogo-de-informacion-adicional/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f45-informe-sobre-acciones-realizadas-durante-contingencias/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f45-informe-sobre-acciones-realizadas-durante-contingencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2020,8 +2020,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f46-aportaciones-municipios-emergencia-desastre/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f46-aportaciones-a-municipios-en-emergencia-o-desastre/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2034,8 +2034,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f47-sanciones-servidores-publicos/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f47-listado-de-servidores-publicos-sancionados/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2048,8 +2048,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f48-listado-parque-vehicular/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f48-listado-del-parque-vehicular/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2063,7 +2063,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f49-informacion-catastral/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2076,21 +2076,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f50-proceso-catastral-valuacion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f51-mecanismos-midan-impacto-ambiental-social-demografico-economico/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f50-proceso-catastral-de-valuacion/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f51-mecanismos-que-midan-el-impacto-ambiental-social-demografico-y-economico/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f51-mecanismos-que-midan-el-impacto-ambiental-social-demografico-y-economico/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -2105,7 +2105,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f52-otra-informacion/</loc>
-<lastmod>2020-04-30T09:30:00-05:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2910,7 +2910,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/</loc>
-<lastmod>2020-01-01T15:00:00-06:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -2982,6 +2982,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-octava-sesion-ordinaria/</loc>
+<lastmod>2020-09-10T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2020-09-09T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-octava-sesion-ordinaria-digital/</loc>
+<lastmod>2020-09-08T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
@@ -3616,13 +3637,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/votos-particulares/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2019/cuadragesima-septima-sesion-ordinaria/</loc>
 <lastmod>2019-12-20T15:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4107,7 +4121,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-09-03T11:00:00-06:41</lastmod>
+<lastmod>2020-09-10T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
