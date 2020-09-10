@@ -3,6 +3,7 @@
  * Direccion de Informatica
  *
  * Hoja de Estilos CSS 2020-04 Claro
+ * Versión septiembre 2020
  */
 
 /* -----------
@@ -10,21 +11,24 @@
  * -----------
  */
 
-body        { font-family: 'Lato', sans-serif; font-weight: 300; line-height: 1.2em; }
-h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
-h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
-h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
-h4          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4em; }
-h5          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2em; }
-h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0em; }
-header      { font-family: 'Lato', sans-serif; font-weight: 300; }
-#navegacion { font-family: 'Saira', sans-serif; font-weight: 700; }
-p           { font-size: 1.0em; }
-p.lead      { font-size: 1.0em; line-height: 1.2em; }
-blockquote  { font-size: 1.2em; font-style: italic; }
-footer      { font-family: 'Saira', sans-serif; font-weight: 400; }
+body        { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
+
+h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
+h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
+h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; }
+h4          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4rem; }
+h5          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.3rem; }
+h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2rem; }
+
+p,
+p.lead      { font-size: 1.2rem; }
+blockquote  { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
+footer      { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0rem; line-height: 1.4rem; }
 b,
 strong      { font-weight: 700; }
+
+header      { font-family: 'Lato', sans-serif; font-weight: 300; }
+#navegacion { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
 
 /* --------
  * Espacios
@@ -56,8 +60,8 @@ footer                  { min-height: 200px; }
 footer ul li            { padding: 0.2em 0; }
 
 /* -------
- * Colores  4c6074 azul
- * -------  f2edce emblema
+ * Colores
+ * -------
  */
 
 body                    { color: black; background-color: white; }
@@ -67,13 +71,13 @@ h3                      { color: #004360; }
 h4                      { color: #d0a473; }
 h5                      { color: #004360; }
 h6                      { color: #004360; }
-a                       { color: #083755; }
+a                       { color: #46576b; }
 a:focus,
-a:hover                 { color: #00568d; }
+a:hover                 { color: #215796; }
 a:active,
-a:visited               { color: #083755; }
+a:visited               { color: #46576b; }
 header                  { background-color: #e3e1e4; }
-#navegacion             { background-color: #083755; border-bottom: 8px solid #859497; }
+#navegacion             { background-color: #46576b; border-bottom: 8px solid #f3edce; }
 #cabecera               { background-color: #ffffff; }
 #destacados             { background-color: #ffffff; }
 .destacados-card        { background-color: #f7f3f2; }
@@ -81,11 +85,11 @@ header                  { background-color: #e3e1e4; }
 #novedades              { background-color: #e3e1e4; }
 #recomendaciones        { background-color: #ffffff; }
 #sitios_interes         { background-color: #f7f3f2; }
-#transmisiones_sesiones { background-color: #a0a8ba; }
-footer                  { color: #ffffff; background-color: #4f5e61; }
-footer h3               { color: #859497; }
-footer h4               { color: #859497; }
-footer h5               { color: #859497; }
+#transmisiones_sesiones { background-color: #f7f3f2; }
+footer                  { color: #ffffff; background-color: #46576b; }
+footer h3               { color: #96a5b6; }
+footer h4               { color: #96a5b6; }
+footer h5               { color: #96a5b6; }
 footer ul li            { color: #777777; }
 footer a                { color: #dddddd; }
 footer a:focus,
@@ -110,31 +114,30 @@ footer a:visited        { color: #dddddd; }
  */
 
 @media only screen and (max-width: 990px) {
-    body         { font-size: 1.0em; }
     h1           { font-size: 2.2em; margin-bottom: 0.3em; }
-    h2           { font-size: 2.0em; margin-bottom: 0.3em; }
-    h3           { font-size: 1.8em; margin-bottom: 0.2em; }
-    h4           { font-size: 1.6em; margin-bottom: 0.2em; }
-    h5           { font-size: 1.4em; margin-bottom: 0.1em; }
-    h6           { font-size: 1.2em; margin-bottom: 0.1em; }
-    h1.display-4 { font-size: 2.4em }
-    p            { font-size: 1.0em; padding: 0.3em 0; }
-    p.lead       { font-size: 1.0em; }
-    blockquote   { font-size: 1.0em; padding: 0.8em; }
-}
-@media only screen and (max-width: 580px) {
-    body         { font-size: 1.0em; }
-    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
     h2           { font-size: 1.8em; margin-bottom: 0.3em; }
     h3           { font-size: 1.6em; margin-bottom: 0.2em; }
     h4           { font-size: 1.4em; margin-bottom: 0.2em; }
     h5           { font-size: 1.2em; margin-bottom: 0.1em; }
-    h6           { font-size: 1.1em; margin-bottom: 0.1em; }
-    h1.display-4 { font-size: 2.2em }
-    p            { font-size: 0.9em; padding: 0.2em 0; }
-    p.lead       { font-size: 0.9em; }
-    blockquote   { font-size: 1.0em; padding: 0.8em; }
+    h6           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.4em }
+    blockquote   { font-size: 1.4em; padding: 0.4em; }
 }
+
+@media only screen and (max-width: 580px) {
+    body         { font-size: 1.0em; line-height: 1.4rem; }
+    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.7em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.5em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.3em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.1em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.2em }
+    p            { font-size: 1.1em; padding: 0.1em 0; }
+    p.lead       { font-size: 1.1em; }
+    blockquote   { font-size: 1.2em; padding: 0.4em; }
+}
+
 @media only screen and (max-width: 300px) {
     body         { font-size: 0.9em; }
     h1           { font-size: 1.8em; margin-bottom: 0.2em; }
@@ -144,7 +147,7 @@ footer a:visited        { color: #dddddd; }
     h5           { font-size: 1.1em; margin-bottom: 0.0em; }
     h6           { font-size: 1.0em; margin-bottom: 0.0em; }
     h1.display-4 { font-size: 1.8em }
-    p            { font-size: 0.8em; padding: 0.1em 0; }
-    p.lead       { font-size: 0.8em; }
-    blockquote   { font-size: 0.9em; padding: 0.4em; }
+    p            { font-size: 1.0em; padding: 0.1em 0; }
+    p.lead       { font-size: 1.0em; }
+    blockquote   { font-size: 1.1em; padding: 0.4em; }
 }
