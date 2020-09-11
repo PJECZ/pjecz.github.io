@@ -68,7 +68,8 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2035%20Monclova/lista.json">Notaria Pública 35 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2036%20Monclova/lista.json">Notaria Pública 36 Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2039%20Monclova/lista.json">Notaria Pública 39 Monclova</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2041%20Monclova/lista.json">Notaria Pública 41 Monclova</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2041%20Monclova/lista.json">Notaria Pública 41 Monclova</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Monclova/Notaria%20P%C3%BAblica%2042%20Monclova/lista.json">Notaria Pública 42 Monclova</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20y%20Familiar%20Parras/lista.json">Juzgado de Primera Instancia en Materia Civil y Familiar Parras</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Parras%20de%20la%20Fuente/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Oral%20de%20Parras/lista.json">Juzgado de Primera Instancia en Materia Familiar Oral de Parras</option>',
