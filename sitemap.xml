@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-12T15:27:48-00:00</lastmod>
+<lastmod>2020-09-14T11:24:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2958,6 +2958,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-novena-sesion-ordinaria/</loc>
+<lastmod>2020-09-17T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-novena-sesion-ordinaria-digital/</loc>
+<lastmod>2020-09-15T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2020-09-15T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-10-1800-puesta-en-marcha-del-buzon-electronico-de-demandas-y-promociones/</loc>
 <lastmod>2020-09-10T18:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4100,7 +4121,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-09-10T11:00:00-06:41</lastmod>
+<lastmod>2020-09-17T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
