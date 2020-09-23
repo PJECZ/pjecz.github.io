@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-22T22:03:25-00:00</lastmod>
+<lastmod>2020-09-23T13:02:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3245,6 +3245,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-08-21-1300-acuerdo-c-111-2020-lineamientos-anticipos-prestamos/</loc>
+<lastmod>2020-08-21T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2020-08-20T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3385,6 +3392,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-c-077-2020-sistema-de-citas/</loc>
+<lastmod>2020-06-30T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-protocolos-en-audiencias-via-remota/</loc>
+<lastmod>2020-06-30T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-sesion-ordinaria-tercera-digital/</loc>
 <lastmod>2020-06-30T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3471,20 +3492,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/decima-sexta-sesion-ordinaria/</loc>
 <lastmod>2020-06-04T11:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-c-077-2020-sistema-de-citas/</loc>
-<lastmod>2020-06-03T12:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-06-03-1200-acuerdo-protocolos-en-audiencias-via-remota/</loc>
-<lastmod>2020-06-03T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4310,7 +4317,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/acuerdos-del-consejo.html</loc>
-<lastmod>2020-07-03T13:00:00-06:41</lastmod>
+<lastmod>2020-08-21T12:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
