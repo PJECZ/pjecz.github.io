@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-25T14:05:02-00:00</lastmod>
+<lastmod>2020-09-25T16:36:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3238,6 +3238,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1600-firma-de-convenio-con-la-universidad-autonoma-del-noreste/</loc>
+<lastmod>2020-09-24T17:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1500-firma-de-convenio-con-la-secretaria-de-educacion/</loc>
+<lastmod>2020-09-24T15:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1400-firma-del-convenio-para-fortalecer-el-estado-a-traves-de-valores/</loc>
+<lastmod>2020-09-24T14:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1300-conferencia-poder-en-linea-con-comunidad-empresarial/</loc>
+<lastmod>2020-09-24T13:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-sesion-ordinaria/</loc>
 <lastmod>2020-09-24T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4436,7 +4464,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-09-10T18:00:00-06:41</lastmod>
+<lastmod>2020-09-24T17:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
