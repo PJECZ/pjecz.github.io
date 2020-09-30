@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-09-30T09:16:42-00:00</lastmod>
+<lastmod>2020-09-30T15:25:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3252,6 +3252,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-01-1000-cemasc-15-aniversario/</loc>
+<lastmod>2020-10-01T10:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-sesion-ordinaria/</loc>
 <lastmod>2020-10-01T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4492,7 +4499,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-09-24T17:00:00-06:41</lastmod>
+<lastmod>2020-10-01T10:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
