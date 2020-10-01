@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-01T14:30:23-00:00</lastmod>
+<lastmod>2020-10-01T15:15:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3252,7 +3252,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-primera-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-primera-sesion-ordinaria-digital/</loc>
 <lastmod>2020-10-01T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3273,8 +3273,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/tercera-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-09-30/</loc>
+<lastmod>2020-09-30T12:30:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-novena-sesion-ordinaria/</loc>
 <lastmod>2020-09-30T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/continuacion-de-audiencia-incidental-de-pruebas-y-alegatos-del-expediente-ail-4-2020/</loc>
+<lastmod>2020-09-28T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3322,6 +3336,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/segunda-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-09-23/</loc>
+<lastmod>2020-09-23T12:30:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2020-09-23T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3352,6 +3373,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-septima-sesion-ordinaria/</loc>
 <lastmod>2020-09-15T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-incidental-de-pruebas-y-alegatos-del-expediente-ail-4-2020/</loc>
+<lastmod>2020-09-14T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4017,13 +4045,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/primera-sesion-ordinaria/</loc>
 <lastmod>2020-01-08T15:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-incidental-de-pruebas-y-alegatos-del-expediente-ail-4-2020/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
