@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-05T15:42:25-00:00</lastmod>
+<lastmod>2020-10-05T16:10:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4134,7 +4134,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2019/2019-08-30-1200-acuerdo166-lineamientos-para-el-ingreso-de-audicnecias-orales/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2019/2019-08-30-1200-acuerdo-166-lineamientos-para-el-ingreso-de-audiencias-orales/</loc>
 <lastmod>2019-08-30T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4344,8 +4344,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-10-31-1200-acuerdos-lineamientos-en-materia-de-transparencia/</loc>
-<lastmod>2017-10-31T12:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1200-acuerdo-319-2017-desincorporacion-del-dominio-publico-de-bienes-muebles/</loc>
+<lastmod>2017-11-16T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4360,6 +4360,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-09-27-1201-acuerdo-282-2017-creacion-unidad-de-transparencia-del-tcarbitraje/</loc>
 <lastmod>2017-09-27T12:01:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-09-27-1200-acuerdo-383-2017-supresion-de-jpmp-y-creacion-de-juzgado-justicia-fm/</loc>
+<lastmod>2017-09-27T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4386,7 +4393,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-11-18-1201-a377-2016-se-aprueba-tranferencia-gradual-de-expedientes/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-11-18-1201-acuerdo-a377-2016-se-aprueba-tranferencia-gradual-de-expedientes/</loc>
 <lastmod>2016-11-18T12:01:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4470,7 +4477,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1203-auerdo-048-2016-supresion-de-juzgado-3pimp-distrito-rg/</loc>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2016/2016-02-22-1203-acuerdo-048-2016-supresion-de-juzgado-3pimp-distrito-rg/</loc>
 <lastmod>2016-02-22T12:03:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4513,6 +4520,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2015/2015-08-10-1200-acuerdo-187-b-2015-tabulador-salarial-manual-servidores-publicos/</loc>
+<lastmod>2015-08-10T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2015/2015-08-10-1200-acuerdo-c-191-protocolo-para-la-elaboracion-de-la-glosa-de-debate-en-los-organos-jurisdiccionales/</loc>
 <lastmod>2015-08-10T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
