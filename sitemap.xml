@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-02T21:05:20-00:00</lastmod>
+<lastmod>2020-10-05T11:55:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3245,6 +3245,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2020-10-08T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2020-10-08T10:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-sesion-ordinaria/</loc>
+<lastmod>2020-10-07T11:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-segunda-sesion-ordinaria-digital/</loc>
+<lastmod>2020-10-06T12:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-10-02-1130-acuerdo-c-109-2020-modificacion-a-protocolos-de-actuacion-durante-la-emergencia-covid-19/</loc>
 <lastmod>2020-10-02T16:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4541,7 +4569,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-10-01T12:00:00-06:41</lastmod>
+<lastmod>2020-10-08T11:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
