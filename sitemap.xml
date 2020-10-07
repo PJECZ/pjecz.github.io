@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-06T18:31:36-00:00</lastmod>
+<lastmod>2020-10-07T09:56:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -823,8 +823,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/calendario-de-labores/</loc>
-<lastmod>2020-07-03T15:32:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/calendario-de-labores/</loc>
+<lastmod>2020-10-07T09:20:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
@@ -3254,6 +3254,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-segunda-sesion-ordinaria/</loc>
 <lastmod>2020-10-07T13:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/cuarta-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-10-07/</loc>
+<lastmod>2020-10-07T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
