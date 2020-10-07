@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-07T12:22:30-00:00</lastmod>
+<lastmod>2020-10-07T12:29:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4416,6 +4416,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-11-16-1200-acuerdo-319-2017-desincorporacion-del-dominio-publico-de-bienes-muebles/</loc>
 <lastmod>2017-11-16T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-10-31-1200-acuerdo-lineamientos-en-materia-de-transparencia/</loc>
+<lastmod>2017-10-31T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
