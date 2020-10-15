@@ -94,6 +94,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2018%20Piedras%20Negras/lista.json">Notaria Pública 18 Piedras Negras</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2019%20Nava/lista.json">Notaria Pública 19 Nava</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2022%20Nava/lista.json">Notaria Pública 22 Nava</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2023%20Morelos/lista.json">Notaria Pública 23 Morelos</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2024%20Piedras%20Negras/lista.json">Notaria Pública 24 Piedras Negras</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Rio%20Grande/Notaria%20P%C3%BAblica%2025%20Piedras%20Negras/lista.json">Notaria Pública 25 Piedras Negras</option>',
 
