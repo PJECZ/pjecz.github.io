@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-10-19T15:22:46-00:00</lastmod>
+<lastmod>2020-10-20T09:39:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3273,6 +3273,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-20-1000-digitalizacion-de-archivos-y-portal-de-pagos/</loc>
+<lastmod>2020-10-20T10:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-tercera-sesion-ordinaria/</loc>
 <lastmod>2020-10-15T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4758,7 +4765,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-10-09T16:01:00-06:41</lastmod>
+<lastmod>2020-10-20T10:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
