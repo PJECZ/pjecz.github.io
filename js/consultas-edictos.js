@@ -186,6 +186,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2083%20Saltillo/lista.json">Notaria Pública 83 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2084%20Saltillo/lista.json">Notaria Pública 84 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2085%20Saltillo/lista.json">Notaria Pública 85 Saltillo</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2086%20Saltillo/lista.json">Notaria Pública 86 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2087%20Saltillo/lista.json">Notaria Pública 87 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2088%20Saltillo/lista.json">Notaria Pública 88 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%2089%20Saltillo/lista.json">Notaria Pública 89 Saltillo</option>' +
@@ -261,6 +262,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2041%20Torreon/lista.json">Notaria Pública 41 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2044%20Torreon/lista.json">Notaria Pública 44 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2045%20Torreon/lista.json">Notaria Pública 45 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2046%20Torreon/lista.json">Notaria Pública 46 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2047%20Torreon/lista.json">Notaria Pública 47 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2049%20Torreon/lista.json">Notaria Pública 49 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2053%20Torreon/lista.json">Notaria Pública 53 Torreón</option>' +
