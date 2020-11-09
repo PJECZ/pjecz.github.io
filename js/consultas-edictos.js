@@ -207,6 +207,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20110%20Saltillo/lista.json">Notaria Pública 110 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20112%20Arteaga/lista.json">Notaria Pública 112 Arteaga</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20113%20Ramos%20Arizpe/lista.json">Notaria Pública 113 Ramos Arizpe</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20115%20Saltillo/lista.json">Notaria Pública 115 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20117%20Saltillo/lista.json">Notaria Pública 117 Saltillo</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20118%20Arteaga/lista.json">Notaria Pública 118 Arteaga</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Saltillo/Notaria%20P%C3%BAblica%20119%20Saltillo/lista.json">Notaria Pública 119 Saltillo</option>' +
