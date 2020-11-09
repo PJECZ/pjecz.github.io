@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-11-06T16:53:14-00:00</lastmod>
+<lastmod>2020-11-09T09:08:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3574,6 +3574,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2020-11-12T13:30:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/</loc>
+<lastmod>2020-11-12T12:30:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/</loc>
+<lastmod>2020-11-10T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2020-11-05T11:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4603,6 +4624,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-ofrecimiento-y-desahogo-de-pruebas-dentro-de-la-controversia-constitucional-cc-5-2019/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-dentro-de-la-controversia-constitucional-cc-2-2019/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5206,7 +5234,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/sesiones.html</loc>
-<lastmod>2020-11-05T11:00:00-06:41</lastmod>
+<lastmod>2020-11-12T13:30:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
