@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-11-11T11:04:22-00:00</lastmod>
+<lastmod>2020-11-11T16:06:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3588,6 +3588,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-11-11-1500-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/</loc>
+<lastmod>2020-11-11T09:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/</loc>
 <lastmod>2020-11-10T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5234,7 +5241,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-10-30T12:33:00-06:41</lastmod>
+<lastmod>2020-11-11T09:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
