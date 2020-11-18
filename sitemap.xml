@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-11-18T09:57:27-00:00</lastmod>
+<lastmod>2020-11-18T11:53:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3602,6 +3602,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-11-18-lineamientos-de-sistematizacon-de-tesis/</loc>
+<lastmod>2020-11-18T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2020-11-12T12:30:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3623,7 +3630,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-11-11-1500-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-11-11-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/</loc>
 <lastmod>2020-11-11T09:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3672,7 +3679,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-30-0900-concurso-nacional-de-oratoria/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-30-concurso-nacional-de-oratoria/</loc>
 <lastmod>2020-10-30T09:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3763,7 +3770,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-20-1000-digitalizacion-de-archivos-y-portal-de-pagos/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-20-digitalizacion-de-archivos-y-portal-de-pagos/</loc>
 <lastmod>2020-10-22T13:05:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3805,14 +3812,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-09-1601-expediente-20/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-09-expediente-20/</loc>
 <lastmod>2020-10-09T16:01:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-09-1600-arranca-capacitacion-para-el-personal-de-nuevos-juzgados-especializados/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-09-arranca-capacitacion-para-el-personal-de-nuevos-juzgados-especializados/</loc>
 <lastmod>2020-10-09T16:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3875,7 +3882,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-01-1000-cemasc-15-aniversario/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-01-cemasc-15-aniversario/</loc>
 <lastmod>2020-10-01T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3910,28 +3917,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1600-firma-de-convenio-con-la-universidad-autonoma-del-noreste/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-firma-de-convenio-con-la-universidad-autonoma-del-noreste/</loc>
 <lastmod>2020-10-30T12:31:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1500-firma-de-convenio-con-la-secretaria-de-educacion/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-firma-de-convenio-con-la-secretaria-de-educacion/</loc>
 <lastmod>2020-10-30T12:30:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1400-firma-del-convenio-para-fortalecer-el-estado-a-traves-de-valores/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-firma-del-convenio-para-fortalecer-el-estado-a-traves-de-valores/</loc>
 <lastmod>2020-10-30T12:33:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-1300-conferencia-poder-en-linea-con-comunidad-empresarial/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-24-conferencia-poder-en-linea-con-comunidad-empresarial/</loc>
 <lastmod>2020-10-30T12:32:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4001,15 +4008,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-10-1800-puesta-en-marcha-del-buzon-electronico-de-demandas-y-promociones/</loc>
-<lastmod>2020-09-10T18:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-octava-sesion-ordinaria/</loc>
+<lastmod>2020-09-10T11:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-octava-sesion-ordinaria/</loc>
-<lastmod>2020-09-10T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-10-puesta-en-marcha-del-buzon-electronico-de-demandas-y-promociones/</loc>
+<lastmod>2020-09-10T00:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4120,7 +4127,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-08-10-1130-horario-del-tribunal-de-conciliacion-y-arbitraje/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-08-10-horario-del-tribunal-de-conciliacion-y-arbitraje/</loc>
 <lastmod>2020-08-10T11:30:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4162,7 +4169,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-07-14-1000-presentacion-del-sistema-de-citas-poder-judicial-de-coahuila-y-campeche/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-07-14-presentacion-del-sistema-de-citas-poder-judicial-de-coahuila-y-campeche/</loc>
 <lastmod>2020-07-14T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4351,7 +4358,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-05-26-1200-plan-de-accion-ante-el-covid-19/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-05-26-plan-de-accion-ante-el-covid-19/</loc>
 <lastmod>2020-05-26T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4519,7 +4526,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-04-16-1200-reconocimiento-al-personal-del-sector-salud/</loc>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-04-16-reconocimiento-al-personal-del-sector-salud/</loc>
 <lastmod>2020-04-16T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5276,7 +5283,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-11-11T09:00:00-06:41</lastmod>
+<lastmod>2020-11-18T00:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
