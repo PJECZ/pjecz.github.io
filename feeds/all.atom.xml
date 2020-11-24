@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Poder Judicial del Estado de Coahuila de Zaragoza</title><link href="https://www.pjecz.gob.mx/" rel="alternate"></link><link href="https://www.pjecz.gob.mx/feeds/all.atom.xml" rel="self"></link><id>https://www.pjecz.gob.mx/</id><updated>2020-11-26T11:00:00-06:00</updated><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-novena-sesion-ordinaria/" rel="alternate"></link><published>2020-11-26T11:00:00-06:00</published><updated>2020-11-26T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-26:/sesiones/sala-civil-y-familiar/2020/trigesima-novena-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar, 26 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481849470" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Poder Judicial del Estado de Coahuila de Zaragoza</title><link href="https://www.pjecz.gob.mx/" rel="alternate"></link><link href="https://www.pjecz.gob.mx/feeds/all.atom.xml" rel="self"></link><id>https://www.pjecz.gob.mx/</id><updated>2020-11-26T11:00:00-06:00</updated><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-novena-sesion-ordinaria/" rel="alternate"></link><published>2020-11-26T11:00:00-06:00</published><updated>2020-11-26T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-26:/sesiones/sala-civil-y-familiar/2020/trigesima-novena-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Civil y Familiar&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Novena Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481849470" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/481849470"&gt;TRIGÉSIMA NOVENA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-octava-sesion-ordinaria/" rel="alternate"></link><published>2020-11-26T10:00:00-06:00</published><updated>2020-11-26T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-26:/sesiones/sala-regional/2020/trigesima-octava-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional, 26 de Noviembre  2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481859311" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/481849470"&gt;TRIGÉSIMA NOVENA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Civil y Familiar"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-octava-sesion-ordinaria/" rel="alternate"></link><published>2020-11-26T10:00:00-06:00</published><updated>2020-11-26T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-26:/sesiones/sala-regional/2020/trigesima-octava-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Regional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Octava Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481859311" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/481859311"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-24T12:00:00-06:00</published><updated>2020-11-24T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-24:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ, 24 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481863459" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/481859311"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Regional"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-24T12:00:00-06:00</published><updated>2020-11-24T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-24:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Pleno del Tribunal Superior de Justicia&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Séptima Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481863459" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -16,7 +43,16 @@
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Pleno del Tribunal Superior de Justicia/2020/Trigésima Séptima Sesión Ordinaria/Orden del día 2020-11-24.docx"&gt;Orden del día 2020-11-24.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Novena Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-novena-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-24T10:00:00-06:00</published><updated>2020-11-24T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-24:/sesiones/sala-penal/2020/trigesima-novena-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal, 24 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481847824" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Pleno del Tribunal Superior de Justicia"></category></entry><entry><title>Trigésima Novena Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-novena-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-24T10:00:00-06:00</published><updated>2020-11-24T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-24:/sesiones/sala-penal/2020/trigesima-novena-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Penal&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Novena Sesión Ordinaria Digital&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481847824" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -25,25 +61,66 @@
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Sala Penal/2020/Trigésima Novena Sesión Ordinaria Digital/Lista de proyectos a discusión 2020-11-24.docx"&gt;Lista de proyectos a discusión 2020-11-24.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Primer Concurso Estatal de Mediación Penal</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-11-24-concurso-estatal-de-mediacion-penal/" rel="alternate"></link><published>2020-11-23T18:50:00-06:00</published><updated>2020-11-23T18:50:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-23:/noticias/2020/2020-11-24-concurso-estatal-de-mediacion-penal/</id><summary type="html">&lt;p&gt;El Centro de Medios Alternos de Solución de Controversias convoca a alumnas y alumnos de cualquier institución de Coahuila.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Preview: previa.jpg
-Tags: Justicia Abierta, Defensa Pública, Derechos Humanos&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Sala Penal"></category></entry><entry><title>Primer Concurso Estatal de Mediación Penal</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-11-24-concurso-estatal-de-mediacion-penal/" rel="alternate"></link><published>2020-11-23T18:50:00-06:00</published><updated>2020-11-23T18:50:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-23:/noticias/2020/2020-11-24-concurso-estatal-de-mediacion-penal/</id><summary type="html">&lt;p&gt;El Centro de Medios Alternos de Solución de Controversias convoca a alumnas y alumnos de cualquier institución de Coahuila.&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Noticias&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;2020-11-24 Concurso Estatal de Mediación Penal&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
 &lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/482815317" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/482815317"&gt;Inauguraci&amp;oacute;n del Concurso Estatal de mediaci&amp;oacute;n Penal&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Noticias"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-octava-sesion-ordinaria/" rel="alternate"></link><published>2020-11-19T11:00:00-06:00</published><updated>2020-11-19T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-civil-y-familiar/2020/trigesima-octava-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar, 19 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479022228" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/482815317"&gt;Inauguraci&amp;oacute;n del Concurso Estatal de mediaci&amp;oacute;n Penal&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Noticias"></category><category term="Justicia Abierta"></category><category term="Defensa Pública"></category><category term="Derechos Humanos"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-octava-sesion-ordinaria/" rel="alternate"></link><published>2020-11-19T11:00:00-06:00</published><updated>2020-11-19T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-civil-y-familiar/2020/trigesima-octava-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Civil y Familiar&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Octava Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479022228" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/479022228"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-octava-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-19T11:00:00-06:00</published><updated>2020-11-19T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-penal/2020/trigesima-octava-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal, 19 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481358735" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/479022228"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Civil y Familiar"></category></entry><entry><title>Trigésima Octava Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-octava-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-19T11:00:00-06:00</published><updated>2020-11-19T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-penal/2020/trigesima-octava-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Penal&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Octava Sesión Ordinaria Digital&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/481358735" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/481358735"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-19T10:00:00-06:00</published><updated>2020-11-19T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-regional/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional, 19 de Noviembre  2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479709824" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/481358735"&gt;TRIGÉSIMA OCTAVA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Penal"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-19T10:00:00-06:00</published><updated>2020-11-19T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-19:/sesiones/sala-regional/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Regional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Séptima Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479709824" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/479709824"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Lineamientos para la emisión, aprobación, sistematización, compilación y publicación de Tesis y Jurisprudencias</title><link href="https://www.pjecz.gob.mx/comunicados/2020/2020-11-18-lineamientos-de-sistematizacon-de-tesis/" rel="alternate"></link><published>2020-11-18T16:30:00-06:00</published><updated>2020-11-18T16:30:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-18:/comunicados/2020/2020-11-18-lineamientos-de-sistematizacon-de-tesis/</id><summary type="html"></summary><content type="html">&lt;h3&gt;LINEAMIENTOS PARA LA EMISIÓN, APROBACIÓN, SISTEMATIZACIÓN, COMPILACIÓN Y PUBLICACIÓN DE LAS TESIS Y JURISPRUDENCIAS EN EL PODER JUDICIAL DEL ESTADO DE COAHUILA DE ZARAGOZA.&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/479709824"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Regional"></category></entry><entry><title>Lineamientos para la emisión, aprobación, sistematización, compilación y publicación de Tesis y Jurisprudencias</title><link href="https://www.pjecz.gob.mx/comunicados/2020/2020-11-18-lineamientos-de-sistematizacon-de-tesis/" rel="alternate"></link><published>2020-11-18T16:30:00-06:00</published><updated>2020-11-18T16:30:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-18:/comunicados/2020/2020-11-18-lineamientos-de-sistematizacon-de-tesis/</id><summary type="html"></summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Comunicados&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;2020-11-18 Lineamientos de Sistematizacón de Tesis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;h3&gt;LINEAMIENTOS PARA LA EMISIÓN, APROBACIÓN, SISTEMATIZACIÓN, COMPILACIÓN Y PUBLICACIÓN DE LAS TESIS Y JURISPRUDENCIAS EN EL PODER JUDICIAL DEL ESTADO DE COAHUILA DE ZARAGOZA.&lt;/h3&gt;
 &lt;h4&gt;CONSIDERANDOS&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Primero.&lt;/strong&gt; La Ley Orgánica del Poder Judicial del Estado de Coahuila de Zaragoza, faculta al Presidente del Tribunal Superior de Justicia, a través de los artículos 14 fracción XIX, 282, 284 y 285 para compilar y publicar las ejecutorias sobresalientes pronunciadas por el Pleno, las Salas y los demás Tribunales, así como de dirigir el Boletín de Información Judicial u otro medio de difusión judicial.&lt;/p&gt;
 &lt;p&gt;También, dicha ley estipula que el Presidente del Tribunal Superior de Justicia depurará y compilará las tesis, los criterios o acuerdos relevantes para ser publicados y emitirá las circulares bajo las cuales se formularán, depurarán y glosarán las tesis aisladas o de jurisprudencia.&lt;/p&gt;
@@ -323,7 +400,16 @@ Tags: Justicia Abierta, Defensa Pública, Derechos Humanos&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Comunicados/2020/2020-11-18 Lineamientos de Sistematizacón de Tesis/CIRCULAR 20-2020.pdf"&gt;CIRCULAR 20-2020.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Comunicados/2020/2020-11-18 Lineamientos de Sistematizacón de Tesis/Lineamientos para la sistematizacion de tesis 18 nov 2020.pdf"&gt;Lineamientos para la sistematizacion de tesis 18 nov 2020.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Comunicados"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-18T11:00:00-06:00</published><updated>2020-11-18T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-18:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ, 18 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479019121" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Comunicados"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-18T11:00:00-06:00</published><updated>2020-11-18T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-18:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Pleno del Tribunal Superior de Justicia&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Sexta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/479019121" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -332,7 +418,16 @@ Tags: Justicia Abierta, Defensa Pública, Derechos Humanos&lt;/p&gt;
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Pleno del Tribunal Superior de Justicia/2020/Trigésima Sexta Sesión Ordinaria/Orden del día 2020-11-18.docx"&gt;Orden del día 2020-11-18.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Quinta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T12:30:00-06:00</published><updated>2020-11-12T12:30:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ, 12 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476374455" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Pleno del Tribunal Superior de Justicia"></category></entry><entry><title>Trigésima Quinta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T12:30:00-06:00</published><updated>2020-11-12T12:30:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-quinta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Pleno del Tribunal Superior de Justicia&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Quinta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476374455" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -341,16 +436,40 @@ Tags: Justicia Abierta, Defensa Pública, Derechos Humanos&lt;/p&gt;
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Pleno del Tribunal Superior de Justicia/2020/Trigésima Quinta Sesión Ordinaria/Orden del día 2020-11-12.docx"&gt;Orden del día 2020-11-12.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T11:00:00-06:00</published><updated>2020-11-12T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/sala-civil-y-familiar/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar, 12 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476434288" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Pleno del Tribunal Superior de Justicia"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-septima-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T11:00:00-06:00</published><updated>2020-11-12T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/sala-civil-y-familiar/2020/trigesima-septima-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Civil y Familiar&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Séptima Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476434288" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/476434288"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T10:00:00-06:00</published><updated>2020-11-12T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/sala-regional/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional, 12 de Noviembre  2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/478935465" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/476434288"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Civil y Familiar"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-12T10:00:00-06:00</published><updated>2020-11-12T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-12:/sesiones/sala-regional/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Regional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Sexta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/478935465" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/478935465"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Colocación de primera piedra del Centro de Justicia Civil y Familiar del Distrito Judicial de Sabinas</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-11-11-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/" rel="alternate"></link><published>2020-11-11T09:00:00-06:00</published><updated>2020-11-11T09:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-11:/noticias/2020/2020-11-11-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/</id><summary type="html">&lt;p&gt;Con el objetivo de continuar brindando un servicio de calidad a todos los justiciables en el estado de Coahuila y atendiendo al crecimiento socioeconómico de la entidad, el día 11 de noviembre de 2020 el Magistrado Presidente Miguel Mery Ayup en compañía del Gobernador del Estado, Miguel Ángel Riquelme Solís se llevó a cabo la Colocación de la Primera Piedra del Centro de Justicia Civil y Familiar del Distrito Judicial de Sabinas...&lt;/p&gt;</summary><content type="html">&lt;p&gt;Preview: previa.jpg
-Tags: M. Civil, M. Familiar, Juzgados, Justicia Pronta, Justicia Expedita, Defensa Pública, Capacitación&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/478935465"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Regional"></category></entry><entry><title>Colocación de primera piedra del Centro de Justicia Civil y Familiar del Distrito Judicial de Sabinas</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-11-11-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/" rel="alternate"></link><published>2020-11-11T09:00:00-06:00</published><updated>2020-11-11T09:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-11:/noticias/2020/2020-11-11-primera-piedra-c-de-justicia-civil-y-familiar-sabinas/</id><summary type="html">&lt;p&gt;Con el objetivo de continuar brindando un servicio de calidad a todos los justiciables en el estado de Coahuila y atendiendo al crecimiento socioeconómico de la entidad, el día 11 de noviembre de 2020 el Magistrado Presidente Miguel Mery Ayup en compañía del Gobernador del Estado, Miguel Ángel Riquelme Solís se llevó a cabo la Colocación de la Primera Piedra del Centro de Justicia Civil y Familiar del Distrito Judicial de Sabinas...&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Noticias&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;2020-11-11 Primera piedra C de Justicia Civil y Familiar Sabinas&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
 &lt;p&gt;Con el objetivo de continuar brindando un servicio de calidad a todos los justiciables en el estado de Coahuila y atendiendo al crecimiento socioeconómico de la entidad, el día 11 de noviembre de 2020 el Magistrado Presidente Miguel Mery Ayup en compañía del Gobernador del Estado, Miguel Ángel Riquelme Solís se llevó a cabo la Colocación de la Primera Piedra del Centro de Justicia Civil y Familiar del Distrito Judicial de Sabinas, resultado de una coordinación entre los tres niveles de gobierno y una gestión de los recursos eficiente y transparente por parte del Poder Judicial del Estado.&lt;/p&gt;
 &lt;p&gt;Ante la presencia de diputados, alcaldes de la región, magistrados, jueces, representantes de barras y colegios de abogados, se dieron a conocer los por menores de la obra que contará con una inversión estimada de 40 MDP y en un terreno de 9,877 m2 donado por el Gobierno del Estado de Coahuila. El nuevo centro de justicia albergará: 1 Juzgado civil, 2 juzgados familiares, preparación para un juzgado más, Centro de Mediación, Auditorio para Capacitación, Instituto Estatal de Defensoría Pública, Área de Archivo Judicial, Área de Convivencia Familiar Supervisada al aire libre, preparación para Juzgados Laborales.&lt;/p&gt;
 &lt;p&gt;De esta forma, el Poder Judicial mantiene su compromiso de otorgar un servicio eficiente y de calidad a los justiciables de los municipios de Sabinas, San Juan de Sabinas, Muzquiz, Juárez y Progreso donde habitan más de 160 mil personas y en cuyo distrito judicial se atienden alrededor de 4 mil asuntos familiares, civiles y mercantiles anualmente y se reciben en promedio mil personas al mes en las instalaciones actuales, mismas que son atendidas por sesenta personas, entre jueces, secretarios, defensores, mediadores y evaluadoras.&lt;/p&gt;
@@ -359,19 +478,55 @@ Tags: M. Civil, M. Familiar, Juzgados, Justicia Pronta, Justicia Expedita, Defen
 &lt;p&gt;&lt;img class="img-fluid" src="foto2-sabinas.jpg" alt="Foto 2"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img class="img-fluid" src="foto3-sabinas.jpg" alt="Foto 3"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img class="img-fluid" src="foto4-sabinas.jpg" alt="Foto 4"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="img-fluid" src="foto5-sabinas.jpg" alt="Foto 5"&gt;&lt;/p&gt;</content><category term="Noticias"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-10T12:00:00-06:00</published><updated>2020-11-10T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-10:/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal, 10 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476370100" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img class="img-fluid" src="foto5-sabinas.jpg" alt="Foto 5"&gt;&lt;/p&gt;</content><category term="Noticias"></category><category term="M. Civil"></category><category term="M. Familiar"></category><category term="Juzgados"></category><category term="Justicia Pronta"></category><category term="Justicia Expedita"></category><category term="Defensa Pública"></category><category term="Capacitación"></category></entry><entry><title>Trigésima Séptima Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-10T12:00:00-06:00</published><updated>2020-11-10T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-10:/sesiones/sala-penal/2020/trigesima-septima-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Penal&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Séptima Sesión Ordinaria Digital&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/476370100" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/476370100"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-05T11:00:00-06:00</published><updated>2020-11-05T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-05:/sesiones/sala-civil-y-familiar/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar, 5 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474704490" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/476370100"&gt;TRIGÉSIMA SÉPTIMA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Penal"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-sexta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-05T11:00:00-06:00</published><updated>2020-11-05T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-05:/sesiones/sala-civil-y-familiar/2020/trigesima-sexta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Civil y Familiar&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Sexta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474704490" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/474704490"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Quinta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-quinta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-05T10:00:00-06:00</published><updated>2020-11-05T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-05:/sesiones/sala-regional/2020/trigesima-quinta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional, 5 de Noviembre  2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/477430935" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/474704490"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Civil y Familiar"></category></entry><entry><title>Trigésima Quinta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-quinta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-05T10:00:00-06:00</published><updated>2020-11-05T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-05:/sesiones/sala-regional/2020/trigesima-quinta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Regional&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Regional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Quinta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/477430935" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/477430935"&gt;TRIGÉSIMA QUINTA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Séptima Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/septima-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-11-04/" rel="alternate"></link><published>2020-11-04T12:00:00-06:00</published><updated>2020-11-04T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-04:/sesiones/tribunal-constitucional/2020/septima-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-11-04/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Tribunal Constitucional, 4 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/475205172" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/477430935"&gt;TRIGÉSIMA QUINTA SESIÓN ORDINARIA DE LA SALA REGIONAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Regional"></category></entry><entry><title>Séptima Sesión Ordinaria del Pleno del Tribunal Constitucional Local</title><link href="https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/septima-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-11-04/" rel="alternate"></link><published>2020-11-04T12:00:00-06:00</published><updated>2020-11-04T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-04:/sesiones/tribunal-constitucional/2020/septima-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-11-04/</id><summary type="html"></summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Tribunal Constitucional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Séptima Sesión Ordinaria del Pleno del Tribunal Constitucional Local 2020-11-04&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/475205172" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -380,7 +535,16 @@ Tags: M. Civil, M. Familiar, Juzgados, Justicia Pronta, Justicia Expedita, Defen
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Tribunal Constitucional/2020/Séptima Sesión Ordinaria del Pleno del Tribunal Constitucional Local 2020-11-04/Orden del Día 2020-11-04.docx"&gt;Orden del Día 2020-11-04.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Cuarta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-cuarta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-04T11:00:00-06:00</published><updated>2020-11-04T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-04:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-cuarta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ, 4 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474701237" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Tribunal Constitucional"></category></entry><entry><title>Trigésima Cuarta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-cuarta-sesion-ordinaria/" rel="alternate"></link><published>2020-11-04T11:00:00-06:00</published><updated>2020-11-04T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-04:/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-cuarta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria del Pleno del TSJ&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Pleno del Tribunal Superior de Justicia&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Cuarta Sesión Ordinaria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474701237" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
@@ -389,17 +553,45 @@ Tags: M. Civil, M. Familiar, Juzgados, Justicia Pronta, Justicia Expedita, Defen
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Sesiones/Pleno del Tribunal Superior de Justicia/2020/Trigésima Cuarta Sesión Ordinaria/Orden del día 2020-11-04.docx"&gt;Orden del día 2020-11-04.docx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Sesiones"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-sexta-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-03T12:00:00-06:00</published><updated>2020-11-03T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-03:/sesiones/sala-penal/2020/trigesima-sexta-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal, 3 de Noviembre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474697129" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/ul&gt;</content><category term="Sesiones"></category><category term="Pleno del Tribunal Superior de Justicia"></category></entry><entry><title>Trigésima Sexta Sesión Ordinaria Digital</title><link href="https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-sexta-sesion-ordinaria-digital/" rel="alternate"></link><published>2020-11-03T12:00:00-06:00</published><updated>2020-11-03T12:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-03:/sesiones/sala-penal/2020/trigesima-sexta-sesion-ordinaria-digital/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Penal&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Sala Penal&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Trigésima Sexta Sesión Ordinaria Digital&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/474697129" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/474697129"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</content><category term="Sesiones"></category></entry><entry><title>Concurso Nacional de Oratoria 2020</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-10-30-concurso-nacional-de-oratoria/" rel="alternate"></link><published>2020-10-30T09:00:00-06:00</published><updated>2020-10-30T09:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-10-30:/noticias/2020/2020-10-30-concurso-nacional-de-oratoria/</id><summary type="html">&lt;p&gt;Concurso Nacional de Oratoria 2020, México tiene la palabra 2020&lt;/p&gt;</summary><content type="html">&lt;p&gt;Preview: previa.jpg
-Tags: Justicia Abierta, Defensa Pública, Derechos Humanos&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/474697129"&gt;TRIGÉSIMA SEXTA SESIÓN ORDINARIA DIGITAL DE LA SALA COLEGIADA PENAL DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Sala Penal"></category></entry><entry><title>Audiencia de Alegatos dentro de la Acción de Inconstitucionalidad Local del Expediente AIL-6/2020</title><link href="https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-alegatos-dentro-de-la-accion-de-inconstitucionalidad-local-del-expediente-ail-6-2020/" rel="alternate"></link><published>2020-11-03T10:00:00-06:00</published><updated>2020-11-03T10:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-11-03:/sesiones/tribunal-constitucional/2020/audiencia-de-alegatos-dentro-de-la-accion-de-inconstitucionalidad-local-del-expediente-ail-6-2020/</id><summary type="html"></summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../../"&gt;Sesiones&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Tribunal Constitucional&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;Audiencia de Alegatos dentro de la Acción de Inconstitucionalidad Local del Expediente AIL-6 2020&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/475079833" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/475079833"&gt;Audiencia de Alegatos dentro de la Acción de Inconstitucionalidad Local del Expediente AIL-6/2020&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category><category term="Tribunal Constitucional"></category></entry><entry><title>Concurso Nacional de Oratoria 2020</title><link href="https://www.pjecz.gob.mx/noticias/2020/2020-10-30-concurso-nacional-de-oratoria/" rel="alternate"></link><published>2020-10-30T09:00:00-06:00</published><updated>2020-10-30T09:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-10-30:/noticias/2020/2020-10-30-concurso-nacional-de-oratoria/</id><summary type="html">&lt;p&gt;Concurso Nacional de Oratoria 2020, México tiene la palabra 2020&lt;/p&gt;</summary><content type="html">&lt;nav aria-label="breadcrumb"&gt;
+&lt;ol class="breadcrumb"&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../../"&gt;Noticias&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item"&gt;&lt;a href="../"&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li class="breadcrumb-item active" aria-current="page"&gt;2020-10-30 Concurso Nacional de Oratoria&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
 &lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/473590382" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/473590382"&gt;Concurso Nacional de Oratoria, M&amp;eacute;xico tiene la palabra 2020&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Noticias"></category></entry><entry><title>Acuerdo C-128/2020 Modifiación de las reglas de operación del Sistema de Citas</title><link href="https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-10-29-1200-acuerdo-c-128-2020-modificacion-de-reglas-de-operacion-del-sistema-de-citas/" rel="alternate"></link><published>2020-10-29T12:00:00-06:00</published><updated>2020-11-06T11:59:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-10-29:/acuerdos-del-consejo/2020/2020-10-29-1200-acuerdo-c-128-2020-modificacion-de-reglas-de-operacion-del-sistema-de-citas/</id><summary type="html">&lt;p&gt;Mediante el cual se modifican las reglas de operación del Sistema de Citas mediante Plataforma en Línea del Poder Judicial del Estado de Coahuila de Zaragoza.&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/473590382"&gt;Concurso Nacional de Oratoria, M&amp;eacute;xico tiene la palabra 2020&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Noticias"></category><category term="Justicia Abierta"></category><category term="Defensa Pública"></category><category term="Derechos Humanos"></category></entry><entry><title>Acuerdo C-128/2020 Modifiación de las reglas de operación del Sistema de Citas</title><link href="https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-10-29-1200-acuerdo-c-128-2020-modificacion-de-reglas-de-operacion-del-sistema-de-citas/" rel="alternate"></link><published>2020-10-29T12:00:00-06:00</published><updated>2020-11-06T11:59:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-10-29:/acuerdos-del-consejo/2020/2020-10-29-1200-acuerdo-c-128-2020-modificacion-de-reglas-de-operacion-del-sistema-de-citas/</id><summary type="html">&lt;p&gt;Mediante el cual se modifican las reglas de operación del Sistema de Citas mediante Plataforma en Línea del Poder Judicial del Estado de Coahuila de Zaragoza.&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;ACUERDO C-128/2020 EMITIDO POR EL PLENO DEL CONSEJO DE LA JUDICATURA EN LA SESIÓN CELEBRADA EL VEINTINUEVE DE OCTUBRE DE DOS MIL VEINTE, A TRAVÉS DEL CUAL SE MODIFICAN LAS REGLAS DE OPERACIÓN DEL SISTEMA DE CITAS MEDIANTE PLATAFORMA EN LÍNEA DEL PODER JUDICIAL DEL ESTADO DE COAHUILA DE ZARAGOZA.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;CONSIDERACIONES&lt;/h2&gt;
@@ -571,8 +763,4 @@ una comunicación clara y eficiente con los órganos jurisdiccionales, a fin de 
 &lt;h2&gt;Descargar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://storage.googleapis.com/pjecz-gob-mx/Acuerdos del Consejo/2020/2020-10-29 1100 Acuerdo C-127-2020 SIBED/C-127-2020.pdf"&gt;C-127-2020.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Acuerdos del Consejo"></category></entry><entry><title>Trigésima Quinta Sesión Ordinaria</title><link href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-quinta-sesion-ordinaria/" rel="alternate"></link><published>2020-10-29T11:00:00-06:00</published><updated>2020-10-29T11:00:00-06:00</updated><author><name>PJECZ</name></author><id>tag:www.pjecz.gob.mx,2020-10-29:/sesiones/sala-civil-y-familiar/2020/trigesima-quinta-sesion-ordinaria/</id><summary type="html">&lt;p&gt;Sesión Ordinaria de la Sala Civil y Familiar, 29 de Octubre 2020&lt;/p&gt;</summary><content type="html">&lt;div style="padding:56.25% 0 0 0;position:relative;"&gt;&lt;iframe src="https://player.vimeo.com/video/471418953" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;script src="https://player.vimeo.com/api/player.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/471418953"&gt;TRIGÉSIMA QUINTA SESIÓN ORDINARIA DE LA SALA CIVIL Y FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA&lt;/a&gt; from &lt;a href="https://vimeo.com/user103229504"&gt;PODER JUDICIAL DE COAHUILA&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="Sesiones"></category></entry></feed>
+&lt;/ul&gt;</content><category term="Acuerdos del Consejo"></category></entry></feed>
