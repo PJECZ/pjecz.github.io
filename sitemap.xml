@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-11-24T16:05:22-00:00</lastmod>
+<lastmod>2020-11-24T20:05:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3609,6 +3609,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/noticias/2020/2020-11-26-conferencia-acceso-a-la-justicia-para-las-mujeres/</loc>
+<lastmod>2020-11-26T10:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2020/trigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2020-11-26T10:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5388,7 +5395,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/noticias.html</loc>
-<lastmod>2020-11-23T18:50:00-06:41</lastmod>
+<lastmod>2020-11-26T10:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5403,6 +5410,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/tag/sala-civil-y-familiar.html</loc>
 <lastmod>2020-11-26T11:00:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/tag/defensa-publica.html</loc>
+<lastmod>2020-11-26T10:00:00-06:41</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/tag/derechos-humanos.html</loc>
+<lastmod>2020-11-26T10:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5436,14 +5457,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/tag/defensa-publica.html</loc>
-<lastmod>2020-11-23T18:50:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/tag/derechos-humanos.html</loc>
+<loc>https://www.pjecz.gob.mx/tag/m-penal.html</loc>
 <lastmod>2020-11-23T18:50:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -5522,13 +5536,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/tag/m-mercantil.html</loc>
 <lastmod>2020-07-14T12:00:00-06:41</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/tag/m-penal.html</loc>
-<lastmod>2020-04-16T12:00:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
