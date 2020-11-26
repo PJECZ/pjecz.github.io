@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-11-26T12:23:26-00:00</lastmod>
+<lastmod>2020-11-26T14:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3602,6 +3602,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-11-26-nuevos-juzgados-en-violencia-familiar-y-aplicacion-mujer-segura/</loc>
+<lastmod>2020-11-26T13:30:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-novena-sesion-ordinaria/</loc>
 <lastmod>2020-11-26T11:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3980,13 +3987,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-10-01-cemasc-15-aniversario/</loc>
-<lastmod>2020-10-01T10:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/noticias/2020/2020-10-01-cemasc-15-aniversario/</loc>
 <lastmod>2020-10-01T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4113,7 +4113,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/comunicados/2020/2020-09-10-puesta-en-marcha-del-buzon-electronico-de-demandas-y-promociones/</loc>
+<loc>https://www.pjecz.gob.mx/noticias/2020/2020-09-10-puesta-en-marcha-del-buzon-electronico-de-demandas-y-promociones/</loc>
 <lastmod>2020-09-10T16:30:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5395,7 +5395,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/category/comunicados.html</loc>
-<lastmod>2020-11-18T16:30:00-06:41</lastmod>
+<lastmod>2020-11-26T13:30:00-06:41</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
