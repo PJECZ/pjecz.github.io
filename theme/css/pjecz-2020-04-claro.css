@@ -30,6 +30,8 @@ strong      { font-weight: 700; }
 header      { font-family: 'Lato', sans-serif; font-weight: 300; }
 #navegacion { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
 
+#novedades p { font-size: 0.9rem; line-height: 1.3rem; }
+
 /* --------
  * Espacios
  * --------
@@ -47,15 +49,20 @@ blockquote              { padding: 1.2em; }
 header                  { min-height: 100px; }
 main                    { min-height: 800px; }
 article                 { min-height: 800px; }
-#cabecera               { }
+
 #destacados             { min-height: 400px; }
 #en_construccion        { min-height: 120px; }
-#novedades              { min-height: 400px; }
-#novedades h5           { margin-top: 0.8em; margin-bottom: 0em; }
-#novedades p            { margin-top: 0; margin-bottom: 0.2em; }
 #recomendaciones        { min-height: 400px; }
 #sitios_interes         { min-height: 200px; }
-#transmisiones_sesiones { min-height: 120px; }
+
+#transmisiones_sesiones    { min-height: 200px; }
+#transmisiones_sesiones h3 { margin-top: 0.4em; margin-bottom: 0; }
+#transmisiones_sesiones p  { margin-top: 0; margin-bottom: 0.4em; padding: 0; }
+
+#novedades                 { min-height: 400px; }
+#novedades h5              { margin-top: 0.6em; margin-bottom: 0.2em; }
+#novedades p               { margin-top: 0.2em; margin-bottom: 0.6em; padding: 0; }
+
 footer                  { min-height: 200px; }
 footer ul li            { padding: 0.2em 0; }
 
