@@ -1,0 +1,261 @@
+/*
+ * Poder Judicial del Estado de Coahuila de Zaragoza
+ * Dirección de Informatica
+ *
+ * Versión 2020-10
+ */
+
+/* -----------
+ * Tipografias
+ * -----------
+ */
+
+body                    { font-family: 'Lato', sans-serif; font-weight: 300; }
+h1                      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
+h2                      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
+h3                      { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4em; }
+h4                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2em; }
+h5                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1em; }
+h6                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0em; }
+p                       { font-size: 1.2em; line-height: 1.8em; }
+blockquote              { font-size: 1.6em; line-height: 2.4em; font-style: italic; }
+b,
+strong                  { font-weight: 900; }
+
+#navegacion_menu        { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0em; line-height: 1.2em; }
+.navegacion_icon        { font-size: 0.7em; }
+.breadcrumb             { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3em; }
+
+#accesos h3             { font-size: 1.3em; }
+#accesos p              { font-size: 0.9em; line-height: 1.3em; }
+
+#novedades h3           { font-size: 1.3em; }
+#novedades p            { font-size: 0.9em; line-height: 1.3em; }
+
+#indices h3             { font-size: 1.3em; }
+#indices .card-subtitle { font-size: 0.8em; }
+#indices p              { font-size: 0.9em; line-height: 1.3em; }
+
+footer                  { font-size: 0.9em; line-height: 1.2em; }
+footer .btn             { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
+footer p                { line-height: 1.4em; }
+
+/* --------
+ * Espacios
+ * --------
+ */
+
+h1                       { margin-top: 1.0em; margin-bottom: 0.4em; }
+h2                       { margin-top: 0.8em; margin-bottom: 0.4em; }
+h3                       { margin-top: 0.6em; margin-bottom: 0.3em; }
+h4                       { margin-top: 0.4em; margin-bottom: 0.3em; }
+h5                       { margin-top: 0.2em; margin-bottom: 0.2em; }
+h6                       { margin-top: 0.2em; margin-bottom: 0.2em; }
+p                        { padding: 0.4em 0; }
+blockquote               { padding: 1.2em; }
+header                   { min-height: 100px; }
+main                     { min-height: 800px; }
+article                  { min-height: 800px; }
+
+#navegacion_menu         { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
+#navegacion_secundaria   { margin: 0.4em 0; }
+.breadcrumb              { padding: 0.8em 0; }
+
+#accesos                 { min-height: 400px; }
+#accesos                 { margin: 0; }
+#accesos p               { padding-top: 0.2em; padding-bottom: 0.4em; }
+
+#transmisiones_sesiones h3 { margin-bottom: 0; padding-bottom: 0; }
+#transmisiones_sesiones p  { margin-top: 0; padding-top: 0; }
+
+#novedades               { min-height: 400px; }
+#novedades h3,
+#novedades p             { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
+
+#recomendaciones         { min-height: 400px; }
+#sitios_interes          { min-height: 200px; }
+
+#indices h3,
+#indices p               { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
+
+footer                   { min-height: 200px; }
+footer ul li             { padding: 0.2em 0; }
+
+/* -------
+ * Colores
+ * -------
+ */
+
+body                           { color: black; background-color: white; }
+h1                             { color: #000000; }
+h2                             { color: #31322c; }
+h3                             { color: #004360; }
+h4                             { color: #d0a473; }
+h5                             { color: #004360; }
+h6                             { color: #004360; }
+a,
+a:link,
+a:visited                      { color: #46576b; }
+a:active,
+a:hover                        { color: #215796; }
+
+header                         { background-color: #e3e1e4; }
+#navegacion_logo               { background-color: #ffffff; }
+a.navegacion_icon,
+a.navegacion_icon:link,
+a.navegacion_icon:visited      { color: #dbb993; }
+a.navegacion_icon:active,
+a.navegacion_icon:hover        { color: #a36e33; }
+#navegacion_menu               { background-color: #004360; border-bottom: 6px solid #dbb993; }
+.breadcrumb                    { background-color: #ffffff; }
+
+#carrusel                      { background-color: #ffffff; }
+
+#accesos                       { background-color: #ffffff; }
+.accesos-card                  { border:none; }
+
+#novedades                     { background-color: #efebe8; }
+#novedades p                   { color: gray; }
+
+#recomendaciones               { background-color: #ffffff; }
+#sitios_interes                { background-color: #efebe8; }
+#transmisiones_sesiones        { background-color: #ffffff; }
+
+#indices                       { background-color: #ffffff; }
+#indices .card                 { border: none; }
+
+#botones a.btn-primary:link,
+#botones a.btn-primary:visited { background-color: #004360; border-color: #004360; color: #c7d5dc; }
+#botones a.btn-primary:active,
+#botones a.btn-primary:hover   { background-color: #006c9b; border-color: #006c9b; color: #ffffff; }
+#botones .icono                { font-size: 2em; color: #dbb993; }
+
+footer .footer-dark            { color: #ffffff; background-color: #212530; }
+footer .card                   { color: #ffffff; background-color: #212530; }
+footer .btn,
+footer h3,
+footer h4,
+footer h5                      { color: #daba93; }
+footer .btn,
+footer .btn:link,
+footer .btn:visited            { color: #daba93; }
+footer .btn:active,
+footer .btn:hover              { color: #a36e33; }
+footer ul li                   { color: #777777; }
+footer a:link,
+footer a:visited               { color: #dddddd; }
+footer a:active,
+footer a:hover                 { color: #ffffff; }
+
+footer .footer-light           { color: #dbb993; background-color: #ffffff; }
+footer .footer-light a,
+footer .footer-light a:link,
+footer .footer-light a:visited { color:#dbb993; }
+footer .footer-light a:active,
+footer .footer-light a:hover   { color:#212530; }
+
+/* ----------
+ * Navegacion
+ * ----------
+ */
+
+.navbar                                { padding: 0 0.2em; }
+.dropdown-menu                         { margin-top: 0; }
+.navbar .nav-item:not(:last-child)     { margin-right: 1.2em; }
+.dropdown-toggle::after                { transition: transform 0.15s linear; }
+.show.dropdown .dropdown-toggle::after { transform: translateY(3px); }
+.navbar-dark .navbar-nav .nav-link     { color: rgba(255,255,255,.8); }
+
+.dropdown-submenu                      { position: relative; }
+.dropdown-submenu .dropdown-menu       { top: 0; left: 100%; margin-top: -1px; }
+
+/* --------
+ * Carrusel
+ * --------
+ */
+
+.carousel-indicators li { width: 1.1em; height: 1.1em; border-radius: 100%; }
+
+/* ----------------
+ * Etiquetas (tags)
+ * ----------------
+ */
+
+.badge-capacitacion      { background-color: #463f59; }
+.badge-derechos-humanos  { background-color: #00808d; }
+.badge-defensa-publica   { background-color: #8abbbc; }
+.badge-juzgados          { background-color: #89c6ce; }
+.badge-innovacion        { background-color: #004560; }
+.badge-justicia-abierta  { background-color: #ddd1c1; color: black; }
+.badge-justicia-expedita { background-color: #ddd1c1; color: black; }
+.badge-justicia-medible  { background-color: #ddd1c1; color: black; }
+.badge-justicia-pronta   { background-color: #ddd1c1; color: black; }
+.badge-m-civil           { background-color: #8abbbc; }
+.badge-m-familiar        { background-color: #e2c0b7; color: black; }
+.badge-m-mercantil       { background-color: #d1a372; }
+.badge-m-penal           { background-color: #6c7b95; }
+.badge-mediacion         { background-color: #6d8093; }
+.badge-psicologia-ts     { background-color: #607991; }
+
+.badge-pleno-del-tribunal-superior-de-justicia { background-color: #00808d; }
+.badge-sala-civil-y-familiar                   { background-color: #8abbbc; }
+.badge-sala-penal                              { background-color: #e2c0b7; color: black; }
+.badge-sala-regional                           { background-color: #d1a372; }
+.badge-tribunal-constitucional                 { background-color: #6c7b95; }
+.badge-votos-disidentes                        { background-color: #ddd1c1; color: black; }
+.badge-votos-particulares                      { background-color: #ddd1c1; color: black; }
+
+/* ----------
+ * Responsivo
+ * ----------
+ */
+
+@media only screen and (max-width: 990px) {
+    h1           { font-size: 2.2em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.6em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.2em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.1em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.2em; }
+    p            { font-size: 1.1em; line-height: 1.4em; padding: 0.4em 0; }
+    blockquote   { font-size: 1.4em; padding: 1.0em; }
+    #accesos h3  { font-size: 1.2em; }
+    #accesos p   { font-size: 0.8em; line-height: 1.2em; }
+    .breadcrumb  { font-size: 1.0em; }
+    footer       { font-size: 0.8em; line-height: 1.2em; }
+}
+
+@media only screen and (max-width: 580px) {
+    body         { font-size: 0.9em; line-height: 1.4em; }
+    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.4em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.1em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.1em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h6           { font-size: 0.9em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.0em; }
+    p            { font-size: 1.0em; line-height: 1.2em; padding: 0.2em 0; }
+    blockquote   { font-size: 1.2em; padding: 0.8em; }
+    #accesos h3  { font-size: 1.1em; }
+    #accesos p   { font-size: 0.8em; line-height: 1.1em; }
+    .breadcrumb  { font-size: 0.9em; }
+    footer       { font-size: 0.8em; line-height: 1.1em; }
+}
+
+@media only screen and (max-width: 300px) {
+    body         { font-size: 0.8em; }
+    h1           { font-size: 1.4em; margin-bottom: 0.2em; }
+    h2           { font-size: 1.2em; margin-bottom: 0.2em; }
+    h3           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h4           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h5           { font-size: 0.9em; margin-bottom: 0.0em; }
+    h6           { font-size: 0.8em; margin-bottom: 0.0em; }
+    h1.display-4 { font-size: 1.8em; }
+    p            { font-size: 1.0em; line-height: 1.1em; padding: 0.1em 0; }
+    blockquote   { font-size: 1.1em; padding: 0.6em; }
+    #accesos h3  { font-size: 1.0em; }
+    #accesos p   { font-size: 0.7em; line-height: 1.0em; }
+    .breadcrumb  { font-size: 0.8em; }
+    footer       { font-size: 0.7em; line-height: 1.0em; }
+}
