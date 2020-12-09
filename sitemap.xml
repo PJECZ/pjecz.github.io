@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-12-09T09:42:11-00:00</lastmod>
+<lastmod>2020-12-09T12:16:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3952,6 +3952,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-novena-sesion-ordinaria/</loc>
+<lastmod>2020-12-10T12:45:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/cuadragesima-primera-sesion-ordinaria/</loc>
 <lastmod>2020-12-10T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -3961,13 +3968,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2020/cuadragesima-sesion-ordinaria/</loc>
 <lastmod>2020-12-10T10:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-novena-sesion-ordinaria/</loc>
-<lastmod>2020-12-09T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
