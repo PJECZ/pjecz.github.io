@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-12-14T16:30:58-00:00</lastmod>
+<lastmod>2020-12-15T13:18:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3973,6 +3973,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/noticias/2020/2020-12-15-centro-de-justicia-de-acuna/</loc>
+<lastmod>2020-12-15T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/trigesima-novena-sesion-ordinaria/</loc>
 <lastmod>2020-12-10T14:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5290,14 +5297,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/votos-disidentes/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/votos-particulares/</loc>
-<lastmod>2020-01-01T12:00:00-06:00</lastmod>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
