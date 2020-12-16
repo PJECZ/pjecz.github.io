@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-12-16T14:54:33-00:00</lastmod>
+<lastmod>2020-12-16T15:49:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -671,6 +671,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/observatorio-judicial/actividades/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/consultas/articulos/acuerdos-consejo/</loc>
+<lastmod>2020-12-16T13:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3967,14 +3974,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/cuadragesima-segunda-sesion-ordinaria/</loc>
-<lastmod>2020-12-17T11:00:00-06:00</lastmod>
+<lastmod>2020-12-17T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/cuadragesima-segunda-sesion-ordinaria-digital/</loc>
-<lastmod>2020-12-17T10:00:00-06:00</lastmod>
+<lastmod>2020-12-17T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/novena-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-12-17/</loc>
+<lastmod>2020-12-17T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -3989,6 +4003,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/noticias/2020/2020-12-15-centro-de-justicia-de-acuna/</loc>
 <lastmod>2020-12-15T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/octava-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-12-14/</loc>
+<lastmod>2020-12-14T14:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/audiencia-de-alegatos-dentro-de-la-accion-de-inconstitucionalidad-local-del-expediente-ail-7-2020/</loc>
+<lastmod>2020-12-11T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>

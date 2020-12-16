@@ -4,14 +4,14 @@ $(document).ready(function() {
     $('#articulosNoticiasEventos').DataTable( {
         "ajax": '/json/noticias-eventos.json',
         "columns": [
-            { "data": "date" },
-            { "data": "title",
+            { "data": "date", "title": "Fecha" },
+            { "data": "title", "title": "Vínculo",
                 "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
                 {
-                    $(nTd).html("<a href='"+oData.url+"' target='_blank'>"+oData.title+"</a>");
+                    $(nTd).html("<a href='"+oData.url+"'>"+oData.title+"</a>");
                 }
             },
-            { "data": "summary" }
+            { "data": "summary", "title": "Resumen" }
         ],
         "pageLength": 10,
         "order": [[ 0, "desc" ]],

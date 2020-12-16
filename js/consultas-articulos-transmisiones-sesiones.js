@@ -4,12 +4,12 @@ $(document).ready(function() {
     $('#articulosTransmisionesSesiones').DataTable( {
         "ajax": '/json/transmisiones-sesiones.json',
         "columns": [
-            { "data": "date" },
-            { "data": "category" },
-            { "data": "title",
+            { "data": "date", "title": "Fecha" },
+            { "data": "category", "title": "Sala" },
+            { "data": "title", "title": "Vínculo",
                 "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
                 {
-                    $(nTd).html("<a href='"+oData.url+"' target='_blank'>"+oData.title+"</a>");
+                    $(nTd).html("<a href='"+oData.url+"'>"+oData.title+"</a>");
                 }
             }
         ],
