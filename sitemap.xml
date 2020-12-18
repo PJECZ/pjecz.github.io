@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2020-12-18T12:48:10-00:00</lastmod>
+<lastmod>2020-12-18T15:09:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3975,6 +3975,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2020/decima-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2020-12-19/</loc>
 <lastmod>2020-12-19T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2020/2020-12-18-unanimidad-consolidara-miguel-mery-el-nuevo-modelo-de-justicia/</loc>
+<lastmod>2020-12-18T14:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
