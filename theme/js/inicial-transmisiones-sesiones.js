@@ -1,11 +1,11 @@
-// Pagina inicial- Transmisiones de las Sesiones
-
-function fechaEnEspanol(tiempo) {
-  var tiempo = new Date(tiempo)
-  return(Intl.DateTimeFormat('es-MX', {dateStyle:'long'}).format(tiempo))
-}
+// Inicial - Transmisiones de las Sesiones
 
 $(document).ready(function() {
+
+  function fechaEnEspanol(tiempo) {
+    var tiempo = new Date(tiempo)
+    return(Intl.DateTimeFormat('es-MX', {dateStyle:'long'}).format(tiempo))
+  }
 
   // Pleno del TSJ
   var celda_tsj = document.getElementById('transmisiones_sesiones_tsj')

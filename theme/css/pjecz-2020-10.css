@@ -40,6 +40,8 @@ footer                  { font-size: 0.9em; line-height: 1.2em; }
 footer .btn             { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
 footer p                { line-height: 1.4em; }
 
+#botones .icono         { font-size: 2em; }
+
 /* --------
  * Espacios
  * --------
@@ -128,11 +130,11 @@ a.navegacion_icon:hover        { color: #a36e33; }
 #botones a.btn-primary:visited { background-color: #004360; border-color: #004360; color: #c7d5dc; }
 #botones a.btn-primary:active,
 #botones a.btn-primary:hover   { background-color: #006c9b; border-color: #006c9b; color: #ffffff; }
-#botones .icono                { font-size: 2em; color: #dbb993; }
+#botones .icono                { color: #dbb993; }
 
 footer .footer-dark            { color: #ffffff; background-color: #212530; }
 footer .card                   { color: #ffffff; background-color: #212530; }
-footer .btn,
+footer h2                      { color: #a9b0c9; }
 footer h3,
 footer h4,
 footer h5                      { color: #daba93; }
