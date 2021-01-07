@@ -11,7 +11,7 @@ $(document).ready(function() {
   var contenedor = document.getElementById('inicial_noticias_eventos')
   // Solo debe de trabajar cuando encuentra el contenedor
   if (contenedor) {
-    fetch('json/noticias-eventos.json').then((res) => {
+    fetch('json/comunicados-noticias.json').then((res) => {
       res.json().then((entrada) => {
         var datos = entrada.data
         for(var i = 0; i < datos.length; i++) {

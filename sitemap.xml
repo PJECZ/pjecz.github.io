@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-01-07T14:08:15-00:00</lastmod>
+<lastmod>2021-01-07T15:16:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1105,6 +1105,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/comisiones/</loc>
 <lastmod>2020-10-27T14:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/consultas/articulos/comunicados-noticias/</loc>
+<lastmod>2020-12-16T13:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3289,13 +3296,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/sentencias-relevantes-sobre-derechos-humanos-e-igualdad-de-genero/corte-interamericana-de-derechos-humanos/documentos-sobre-derechos-humanos/ninos-de-la-calle-villagran-morales-y-otros-vs-guatemala/</loc>
 <lastmod>2020-10-23T10:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/articulos/noticias-eventos/</loc>
-<lastmod>2020-12-16T13:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>

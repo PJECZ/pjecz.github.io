@@ -1,8 +1,8 @@
 // Consultas
 $(document).ready(function() {
 
-    $('#articulosNoticiasEventos').DataTable( {
-        "ajax": '/json/noticias-eventos.json',
+    $('#articulosComunicadosNoticias').DataTable( {
+        "ajax": '/json/comunicados-noticias.json',
         "columns": [
             { "data": "date", "title": "Fecha" },
             { "data": "title", "title": "Vínculo",
