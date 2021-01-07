@@ -80,7 +80,9 @@ article                  { min-height: 800px; }
 #indices h3,
 #indices p               { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
 
-footer                   { min-height: 200px; }
+footer                   { padding: 0; }
+footer .footer-dark,
+footer .footer-light     { padding: 0.4em 0; }
 footer ul li             { padding: 0.2em 0; }
 
 /* -------
@@ -148,7 +150,6 @@ footer a:link,
 footer a:visited               { color: #dddddd; }
 footer a:active,
 footer a:hover                 { color: #ffffff; }
-
 footer .footer-light           { color: #dbb993; background-color: #ffffff; }
 footer .footer-light a,
 footer .footer-light a:link,

@@ -1,8 +1,8 @@
 // Consultas
 $(document).ready(function() {
 
-    $('#articulosAcuerdosConsejo').DataTable( {
-        "ajax": '/json/acuerdos-consejo.json',
+    $('#articulosAcuerdos').DataTable( {
+        "ajax": '/json/acuerdos.json',
         "columns": [
             { "data": "date", "title": "Fecha" },
             { "data": "title", "title": "Vínculo",

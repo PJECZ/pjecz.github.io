@@ -42,6 +42,7 @@
     <!-- RSS feeds -->
     <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/all.rss.xml" type="application/rss+xml" title="PJECZ Todos" />
     <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-consejo.rss.xml" type="application/rss+xml" title="PJECZ Acuerdos del Consejo" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-pleno.rss.xml" type="application/rss+xml" title="PJECZ Acuerdos del Pleno" />
     <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/comunicados.rss.xml" type="application/rss+xml" title="PJECZ Comunicados" />
     <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/news-letters.rss.xml" type="application/rss+xml" title="PJECZ News Letters" />
     <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/noticias.rss.xml" type="application/rss+xml" title="PJECZ Noticias" />
@@ -135,6 +136,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownConsultas">
                             <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo1.html">Acuerdos del Consejo</a></li>
+                            <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/acuerdos-del-pleno1.html">Acuerdos del Pleno</a></li>
                             <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/buzon-electronico/">Buzón Electrónico</a></li>
                             <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/citas/">Citas</a></li>
                             <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/edictos/">Edictos en Línea</a></li>
@@ -204,6 +206,25 @@
             <div class="container pt-4 pb-2">
         <!-- Tarjetas a tres o dos columnas -->
         <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card my-2 mx-1">
+                    <a href="https://www.pjecz.gob.mx/comunicados/2020/2020-08-10-horario-del-tribunal-de-conciliacion-y-arbitraje/">
+                        <img class="card-img-top" src="https://www.pjecz.gob.mx/theme/images/categoria-comunicados.jpg" alt="Comunicados">
+                    </a>
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <a href="https://www.pjecz.gob.mx/tag/justicia-pronta.html"><span class="badge badge-pill badge-primary badge-justicia-pronta">Justicia Pronta</span></a>
+                            <a href="https://www.pjecz.gob.mx/tag/justicia-expedita.html"><span class="badge badge-pill badge-primary badge-justicia-expedita">Justicia Expedita</span></a>
+                            <a href="https://www.pjecz.gob.mx/tag/transparecia.html"><span class="badge badge-pill badge-primary badge-transparecia">Transparecia</span></a>
+                        </div>
+                        <p class="card-subtitle text-muted">10 de agosto de 2020</p>
+                        <h3 class="card-title"><a href="https://www.pjecz.gob.mx/comunicados/2020/2020-08-10-horario-del-tribunal-de-conciliacion-y-arbitraje/">Horario del Tribunal de Conciliación y Arbitraje</a></h3>
+                        <p class="card-text">
+                            El Consejo de la Judicatura del Estado, en sesión de 03 de julio de 2020, aprobó el acuerdo C-087/2020, el cual señala que el horario laboral del Tribunal de Conciliación y Arbitraje, será de 8:00 am a 16:00 pm.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 col-sm-6">
                 <div class="card my-2 mx-1">
                     <a href="https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/vigesima-tercera-sesion-ordinaria/">
@@ -388,22 +409,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card my-2 mx-1">
-                    <a href="https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-07-03-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/">
-                        <img class="card-img-top" src="https://www.pjecz.gob.mx/theme/images/generic.jpg" alt="Imagen previa">
-                    </a>
-                    <div class="card-body">
-                        <div class="mb-2">
-                        </div>
-                        <p class="card-subtitle text-muted">03 de julio de 2020</p>
-                        <h3 class="card-title"><a href="https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-07-03-1300-acuerdo-buzon-electronico-de-demandas-y-promociones/">Acuerdo C-086/2020 Buzón Electrónico de Demandas y Promociones</a></h3>
-                        <p class="card-text">
-                            Mediante el cual se instaura del Buzón Electrónico de Demandas y Promociones del Poder Judicial
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Paginacion -->
                         <nav>
@@ -561,8 +566,9 @@
                                     <div class="col-md-4 mb-2">
                                         <h4 id="footerConsultas">Consultas</h4>
                                         <ul class="list-unstyled text-small">
+                                            <li><a href="https://www.pjecz.gob.mx/consultas/articulos/acuerdos/">Acuerdos (tabla)</a></li>
                                             <li><a href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo1.html">Acuerdos del Consejo</a></li>
-                                            <li><a href="https://www.pjecz.gob.mx/consultas/articulos/acuerdos-consejo/">Acuerdos del Consejo (tabla)</a></li>
+                                            <li><a href="https://www.pjecz.gob.mx/category/acuerdos-del-pleno1.html">Acuerdos del Pleno</a></li>
                                             <li><a href="https://www.pjecz.gob.mx/consultas/abogados-registrados/">Abogados Registrados</a></li>
                                             <li><a href="https://www.pjecz.gob.mx/consultas/agenda-audiencias/">Agenda de Audiencias</a></li>
                                             <li><a href="https://www.pjecz.gob.mx/consultas/boletas/">Boletas de Central de Actuarios</a></li>
