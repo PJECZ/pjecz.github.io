@@ -59,7 +59,7 @@ header                   { min-height: 100px; }
 main                     { min-height: 800px; }
 article                  { min-height: 800px; }
 
-#navegacion_menu         { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
+#navegacion_menu         { padding: 0.2em 0; margin-bottom: 4px; }
 #navegacion_secundaria   { margin: 0.4em 0; }
 .breadcrumb              { padding: 0.8em 0; }
 
@@ -80,9 +80,8 @@ article                  { min-height: 800px; }
 #indices h3,
 #indices p               { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
 
-footer                   { padding: 0; }
-footer .footer-dark,
-footer .footer-light     { padding: 0.4em 0; }
+footer .footer-dark      { padding: 0.4em 0; }
+footer .footer-light     { padding: 1.4em 0; }
 footer ul li             { padding: 0.2em 0; }
 
 /* -------
