@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-01-27T14:51:50-00:00</lastmod>
+<lastmod>2021-01-27T17:07:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -123,7 +123,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/1-justicia-digital/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -242,7 +242,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/2-plan-de-accion-ante-el-covid-19/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/2-plan-de-accion-ante-el-covid-19/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -509,6 +509,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/</loc>
+<lastmod>2020-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -585,7 +592,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -620,35 +627,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/31-justicia-pronta/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/31-justicia-pronta/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/32-justicia-expedita/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/32-justicia-expedita/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/33-justicia-profesional/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/33-justicia-profesional/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/34-justicia-medible/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/34-justicia-medible/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/3-un-nuevo-modelo-de-justicia/35-justicia-abierta-y-transparente/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/3-un-nuevo-modelo-de-justicia/35-justicia-abierta-y-transparente/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -1320,7 +1327,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/directorio/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/directorio/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3308,7 +3315,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/mensaje-del-presidente/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/mensaje-del-presidente/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3469,7 +3476,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/plan-estrategico-judicial-coahuila-2025/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/plan-estrategico-judicial-coahuila-2025/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3511,7 +3518,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/presentacion/</loc>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/presentacion/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
