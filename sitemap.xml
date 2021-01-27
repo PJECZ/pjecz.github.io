@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-01-26T13:36:02-00:00</lastmod>
+<lastmod>2021-01-27T09:02:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -158,13 +158,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/11-transicion-hacia-la-justicia-digital/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/junio/12-de-junio---dia-mundial-contra-el-trabajo-infantil/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -179,13 +172,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/12-rediseno-del-sitio-web/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/13-reposicion-de-credencial-institucional/</loc>
 <lastmod>2020-09-24T11:34:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -193,29 +179,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/13-sistemas-de-gestion-judicial/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/14-firmado-electronico-y-juzgado-cero-papel/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/14-validacion-de-contenidos/</loc>
 <lastmod>2020-09-24T11:24:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/15-app-mujer-segura/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -256,13 +221,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/16-desahogo-de-audiencias-mediante-videoconferencia/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/16-renta-de-instalaciones/</loc>
 <lastmod>2020-09-24T11:24:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -277,29 +235,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/17-sala-de-oralidad-siga/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/18-servicios-de-soporte-tecnico/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/junio/19-de-junio---dia-internacional-para-la-eliminacion-de-la-violencia-sexual-en-los-conflictos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/1-justicia-digital/19-sistema-integral-de-calidad-iso-9001-y-de-gestion-gubernamental-iso-30301/</loc>
-<lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3527,6 +3464,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/observatorio-judicial/integracion/patricia-vargas-bryan/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/plan-estrategico-judicial-coahuila-2025/</loc>
+<lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
