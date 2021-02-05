@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-02-05T13:56:52-00:00</lastmod>
+<lastmod>2021-02-05T16:46:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1483,6 +1483,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/comisiones/</loc>
 <lastmod>2020-10-27T14:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/juzgados-especializados-en-volencia-familiar-contra-las-mujeres/competencia/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3336,6 +3343,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/juzgados-especializados-en-volencia-familiar-contra-las-mujeres/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-materia/juzgados-familiares/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3476,7 +3490,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/juzgados-especializados-en-volencia-familiar-contra-las-mujeres/marco-conceptual/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/marco-juridico/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/juzgados-especializados-en-volencia-familiar-contra-las-mujeres/marco-normativo-ine/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
