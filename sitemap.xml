@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-02-09T15:29:55-00:00</lastmod>
+<lastmod>2021-02-09T16:16:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4533,8 +4533,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2021/primera-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2021-02-10/</loc>
+<lastmod>2021-02-10T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2021/sexta-sesion-ordinaria/</loc>
-<lastmod>2021-02-10T11:00:00-06:00</lastmod>
+<lastmod>2021-02-10T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
