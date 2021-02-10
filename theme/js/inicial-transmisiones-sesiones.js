@@ -1,10 +1,10 @@
 // Inicial - Transmisiones de las Sesiones
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   function fechaEnEspanol(tiempo) {
     var tiempo = new Date(tiempo)
-    return(Intl.DateTimeFormat('es-MX', {dateStyle:'long'}).format(tiempo))
+    return (Intl.DateTimeFormat('es-MX', { dateStyle: 'long' }).format(tiempo))
   }
 
   // Pleno del TSJ
@@ -33,7 +33,7 @@ $(document).ready(function() {
         // Armar descripcion
         let pequeno = document.createElement('small')
         pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
-        let descripcion = document.createElement('p')
+        let descripcion = document.createElement('h4')
         descripcion.appendChild(pequeno)
         // Agregar a la celda
         celda_tsj.appendChild(vinculo)
@@ -70,7 +70,7 @@ $(document).ready(function() {
         // Armar descripcion
         let pequeno = document.createElement('small')
         pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
-        let descripcion = document.createElement('p')
+        let descripcion = document.createElement('h4')
         descripcion.appendChild(pequeno)
         // Agregar a la celda
         celda_scf.appendChild(vinculo)
@@ -107,7 +107,7 @@ $(document).ready(function() {
         // Armar descripcion
         let pequeno = document.createElement('small')
         pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
-        let descripcion = document.createElement('p')
+        let descripcion = document.createElement('h4')
         descripcion.appendChild(pequeno)
         // Agregar a la celda
         celda_sp.appendChild(vinculo)
@@ -144,7 +144,7 @@ $(document).ready(function() {
         // Armar descripcion
         let pequeno = document.createElement('small')
         pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
-        let descripcion = document.createElement('p')
+        let descripcion = document.createElement('h4')
         descripcion.appendChild(pequeno)
         // Agregar a la celda
         celda_sr.appendChild(vinculo)

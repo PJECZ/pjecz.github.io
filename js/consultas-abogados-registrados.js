@@ -1,7 +1,10 @@
 // Consultas Abogados Registrados
 $(document).ready(function () {
 
+    // Para desarrollo
     //const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/abogados"
+
+    // Para producción
     const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
 
     // Elaborar lista de años, desde el presente hasta 1925
@@ -50,7 +53,6 @@ $(document).ready(function () {
     function alRecibirResultados(data) {
 
         // Si tiene datos, limpiar la tabla
-        console.log("Tenía " + $('#abogadosRegistradosTable').length + " renglones.");
         if ($('#abogadosRegistradosTable').length > 0) {
             $('#abogadosRegistradosTable').DataTable().clear();
             $('#abogadosRegistradosTable').DataTable().destroy();
