@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="generator" content="Pelican Static Site Generator, Powered by Python">
-    <meta name="description" content="">
+    <meta name="description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
     <meta name="author" content="PJECZ">
     <!-- Facebook open graph -->
     <meta property="og:title" content="Abogados Registrados">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.pjecz.gob.mx/consultas/abogados-registrados/">
     <meta property="og:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
     <meta property="og:site_name" content="Poder Judicial del Estado de Coahuila de Zaragoza">
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@PJCoah">
     <meta name="twitter:title" content="Abogados Registrados">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
     <meta name="twitter:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
     <title>Abogados Registrados - Poder Judicial del Estado de Coahuila de Zaragoza</title>
     <!-- Iconos -->
@@ -185,6 +185,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <h1 class="display-4 mt-5 mb-2">Abogados Registrados</h1>
+                    <p class="lead mb-5">Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.</p>
                 </div>
             </div>
         </div>
@@ -207,28 +208,77 @@
                 "author": "PJECZ",
                 "name": "Abogados Registrados",
                 "headline": "Abogados Registrados",
-                "description": "",
+                "description": "Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.",
                 "dateCreated": "2020-06-17 10:42:00-05:00",
                 "datePublished": "2020-06-17 10:42:00-05:00",
-                "dateModified": "2020-12-08 11:50:00-06:00",
+                "dateModified": "2021-02-08 20:00:00-06:00",
                 "image": "https://www.pjecz.gob.mx/theme/images/generic.jpg",                "url": "https://www.pjecz.gob.mx/consultas/abogados-registrados/"
             }
         </script>
 		<div class="container py-4">
 <nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="../">Consultas</a></li>
-<li class="breadcrumb-item active" aria-current="page">Abogados Registrados</li>
-</ol>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../">Consultas</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Abogados registrados</li>
+    </ol>
 </nav>
 
-<blockquote>
-<p>Las y los abogados registrados en el <strong>Poder Judicial del estado de Coahuila de Zaragoza.</strong></p>
-</blockquote>
-<h2>Descargar</h2>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Abogados%20Registrados/REGISTRO%20DE%20T%C3%8DTULOS%201925-2020%20081220.docx">REGISTRO DE TÍTULOS 1925-2020 081220.docx</a></li>
-</ul>
+<h2>Instrucciones</h2>
+<ol>
+<li>Seleccione el año de registro.</li>
+<li>Opcionalmente puede escribir parte del nombre.</li>
+<li>Presione el botón <strong>Consultar</strong> y espere a que se carguen los abogados registrados. Tiene un límite de 100 resultados.</li>
+<li>Puede usar el campo <strong>Filtrar</strong> para encontrar algo específico en los resultados.</li>
+</ol>
+<div class="card mb-2">
+    <div class="card-body">
+        <form id="abogadosForm">
+            <div class="form-group">
+                <label for="anoSelect">Año de registro</label>
+                <select id="anoSelect" class="form-control">
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreInput">Nombre</label>
+                <input id="nombreInput" type="text" class="form-control" aria-describedby="nombreInputHelp">
+                <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes y caracteres especiales.</small>
+            </div>
+            <button id="consultarButton" type="button" class="btn btn-primary">
+                Consultar
+            </button>
+            <button id="cargandoButton" class="btn btn-primary" type="button"  style="display: none;" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Cargando...
+            </button>
+        </form>
+    </div>
+</div>
+
+<div id="sinResultados" class="card mb-2" style="display: none;">
+    <div class="card-body">
+        <div id="sinResultadosAlert" class="alert alert-warning" role="alert">
+            No se encontraron abogados registrados con las opciones dadas.
+        </div>
+    </div>
+</div>
+
+<div id="abogadosRegistrados" class="card mb-2" style="display: none;">
+    <div class="card-body">
+        <table id="abogadosRegistradosTable" class="table" style="width: 100%;">
+            <thead>
+                <th>Fecha</th>
+                <th>Libro</th>
+                <th>Número</th>
+                <th>Nombre</th>
+            </thead>
+        </table>
+    </div>
+</div>
 		</div>
 	</article>
     <!-- Footer collapse -->
@@ -439,5 +489,6 @@
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-noticias-eventos.js"></script>
     <!-- JavaScripts individuales -->
+<script src="https://www.pjecz.gob.mx/js/consultas-abogados-registrados.js"></script>
 </body>
 </html>
