@@ -4,6 +4,24 @@ $(document).ready(function () {
     //const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/abogados"
     const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
 
+    // Elaborar lista de años, desde el presente hasta 1925
+    this.years = function (startYear) {
+        var currentYear = new Date().getFullYear(), years = [];
+        startYear = startYear || 1925; // Por defecto este es el año más antiguo
+        while (startYear <= currentYear) {
+            years.push(currentYear--);
+        }
+        return years;
+    }
+
+    // Agregar cada año como opción al select
+    $.each(this.years(), function (i, year) {
+        $('#anoSelect').append($('<option>', {
+            value: year,
+            text: year
+        }));
+    });
+
     // Al dar clic en el botón mostrar
     $('#consultarButton').click(function () {
 
