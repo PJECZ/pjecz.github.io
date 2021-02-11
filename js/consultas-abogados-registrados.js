@@ -10,7 +10,7 @@ $(document).ready(function () {
     // Primer año
     const PRIMER_ANO = 1925
 
-    // Elaborar lista de años, desde el presente hasta 1925
+    // Elaborar lista de años, desde el presente hasta PRIMER_ANO
     this.years = function (startYear) {
         var currentYear = new Date().getFullYear(), years = [];
         startYear = startYear || PRIMER_ANO;
@@ -20,7 +20,7 @@ $(document).ready(function () {
         return years;
     }
 
-    // Agregar en Año de registro desde las opciones al select
+    // Agregar en "Año de registro, desde" las opciones al select
     $.each(this.years(), function (i, year) {
         $('#anoDesdeSelect').append($('<option>', {
             value: year,
@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
     $('#anoDesdeSelect').val(PRIMER_ANO);
 
-    // Agregar en Año de registro hasta las opciones al select
+    // Agregar en "Año de registro, hasta" las opciones al select
     $.each(this.years(), function (i, year) {
         $('#anoHastaSelect').append($('<option>', {
             value: year,
@@ -56,7 +56,7 @@ $(document).ready(function () {
             $('#cargandoButton').show();
             $('#revisarParametros').hide();
             $('#sinResultados').hide();
-            // Llamar a la API y ejecutar acciones al recibir resultados
+            // Llamar a la API y ejecutar acciones hasta recibir resultados
             $.ajax({
                 'url': ABOGADOS_PLATAFORMA_WEB_API_URL,
                 'type': "GET",
