@@ -234,13 +234,17 @@
     <div class="card-body">
         <form id="abogadosForm">
             <div class="form-group">
-                <label for="anoSelect">Año de registro</label>
-                <select id="anoSelect" class="form-control"></select>
-            </div>
-            <div class="form-group">
                 <label for="nombreInput">Nombre</label>
                 <input id="nombreInput" type="text" class="form-control" aria-describedby="nombreInputHelp">
                 <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes y caracteres especiales.</small>
+            </div>
+            <div class="form-group">
+                <label for="anoDesdeSelect">Año de registro, desde:</label>
+                <select id="anoDesdeSelect" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="anoHastaSelect">Año de registro, hasta:</label>
+                <select id="anoHastaSelect" class="form-control"></select>
             </div>
             <button id="consultarButton" type="button" class="btn btn-primary">
                 Consultar
@@ -253,11 +257,15 @@
     </div>
 </div>
 
+<div id="revisarParametros" class="card mb-2" style="display: none;">
+    <div class="card-body">
+        <div id="revisarParametrosAlert" class="alert alert-primary" role="alert"></div>
+    </div>
+</div>
+
 <div id="sinResultados" class="card mb-2" style="display: none;">
     <div class="card-body">
-        <div id="sinResultadosAlert" class="alert alert-warning" role="alert">
-            No se encontraron abogados registrados con las opciones dadas.
-        </div>
+        <div id="sinResultadosAlert" class="alert alert-warning" role="alert"></div>
     </div>
 </div>
 
