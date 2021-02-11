@@ -2,10 +2,10 @@
 $(document).ready(function () {
 
     // Para desarrollo
-    const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/abogados"
+    //const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/abogados"
 
     // Para producción
-    //const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
+    const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
 
     // Primer año
     const PRIMER_ANO = 1925
