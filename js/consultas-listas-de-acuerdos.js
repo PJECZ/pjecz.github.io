@@ -1,5 +1,5 @@
 // Consultas Listas de Acuerdos
-$(document).ready(function() {
+$(document).ready(function () {
 
     // Inicialmente se muestra los select y se oculta la lista
     $("#elegirListaDeAcuerdos").show();
@@ -56,7 +56,8 @@ $(document).ready(function() {
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Civil Acuña</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Familiar Acuña</option>' +
-        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>',
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal Acuña</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Acu%C3%B1a/Juzgado%20de%20Primera%20Instancia%20en%20Materia%20Penal%20del%20Sistema%20Acusatorio%20Y%20Oral%20de%20Acu%C3%B1a/lista.json">Juzgado de Primera Instancia en Materia Penal del Sistema Acusatorio y Oral de Acuña</option>',
 
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Civil%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Civil Monclova</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Listas%20de%20Acuerdos/Distrito%20de%20Monclova/Juzgado%20Primero%20de%20Primera%20Instancia%20en%20Materia%20Familiar%20Monclova/lista.json">Juzgado Primero de Primera Instancia en Materia Familiar Monclova</option>' +
@@ -132,13 +133,13 @@ $(document).ready(function() {
     ];
 
     // Al cambiar el distrito se cambian las opciones en autoridad
-    $("#distritoSelect").change(function() {
+    $("#distritoSelect").change(function () {
         var val = $(this).val();
         $("#autoridadSelect").html(options[val]);
     });
 
     // Al dar clic en el botón mostrar
-    $("#mostrarButton").click(function(){
+    $("#mostrarButton").click(function () {
 
         // Si hay un valor en autoridadSelect
         if (!$("#autoridadSelect").is(":empty")) {
@@ -156,19 +157,20 @@ $(document).ready(function() {
             // Cargar los datos a la tabla
             // toma el valor de distritoSelect que es el URL al archivo JSON
             // dicho archivo debe tener valores para Fecha, Descripción y Archivo
-            $('#listaDeAcuerdos').DataTable( {
+            $('#listaDeAcuerdos').DataTable({
                 "ajax": $("#autoridadSelect").val(),
                 "columns": [
                     { "data": "Fecha" },
                     { "data": "Descripción" },
-                    { "data": "Archivo",
+                    {
+                        "data": "Archivo",
                         "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
-                            $(nTd).html("<a href='"+oData.Archivo+"' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
+                            $(nTd).html("<a href='" + oData.Archivo + "' target='_blank'><i class='fa fa-download'></i> Descargar</a>");
                         }
                     }
                 ],
                 "pageLength": 50,
-                "order": [[ 0, "desc" ]],
+                "order": [[0, "desc"]],
                 "language": {
                     "lengthMenu": "Mostrar _MENU_",
                     "search": "Filtrar:",
