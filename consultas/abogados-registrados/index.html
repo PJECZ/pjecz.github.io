@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="generator" content="Pelican Static Site Generator, Powered by Python">
-    <meta name="description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
+    <meta name="description" content="Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.">
     <meta name="author" content="PJECZ">
     <!-- Facebook open graph -->
     <meta property="og:title" content="Abogados Registrados">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.pjecz.gob.mx/consultas/abogados-registrados/">
     <meta property="og:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
-    <meta property="og:description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
+    <meta property="og:description" content="Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.">
     <meta property="og:site_name" content="Poder Judicial del Estado de Coahuila de Zaragoza">
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@PJCoah">
     <meta name="twitter:title" content="Abogados Registrados">
-    <meta name="twitter:description" content="Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.">
+    <meta name="twitter:description" content="Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.">
     <meta name="twitter:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
     <title>Abogados Registrados - Poder Judicial del Estado de Coahuila de Zaragoza</title>
     <!-- Iconos -->
@@ -185,7 +185,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <h1 class="display-4 mt-5 mb-2">Abogados Registrados</h1>
-                    <p class="lead mb-5">Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.</p>
+                    <p class="lead mb-5">Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.</p>
                 </div>
             </div>
         </div>
@@ -208,10 +208,10 @@
                 "author": "PJECZ",
                 "name": "Abogados Registrados",
                 "headline": "Abogados Registrados",
-                "description": "Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.",
+                "description": "Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.",
                 "dateCreated": "2020-06-17 10:42:00-05:00",
                 "datePublished": "2020-06-17 10:42:00-05:00",
-                "dateModified": "2021-02-08 20:00:00-06:00",
+                "dateModified": "2021-02-15 10:38:00-06:00",
                 "image": "https://www.pjecz.gob.mx/theme/images/generic.jpg",                "url": "https://www.pjecz.gob.mx/consultas/abogados-registrados/"
             }
         </script>
@@ -225,10 +225,10 @@
 
 <h2>Instrucciones</h2>
 <ol>
-<li>Seleccione el año de registro.</li>
-<li>Opcionalmente puede escribir parte del nombre.</li>
-<li>Presione el botón <strong>Consultar</strong> y espere a que se carguen los abogados registrados. Tiene un límite de 100 resultados.</li>
-<li>Puede usar el campo <strong>Filtrar</strong> para encontrar algo específico en los resultados.</li>
+<li>Escriba parte del nombre; preferentemente los apellidos paterno y materno. No use acentos, eñes, diéresis o caracteres especiales.</li>
+<li>Puede cambiar el rango de años de registro. El año "desde" debe ser igual o menor al año "hasta".</li>
+<li>Presione el botón <strong>Consultar</strong> y espere a que se carguen. Como máximo verá 100 resultados.</li>
+<li>Puede usar el campo <strong>Filtrar</strong> para encontrar algo específico entre los resultados.</li>
 </ol>
 <div class="card mb-2">
     <div class="card-body">
@@ -236,7 +236,7 @@
             <div class="form-group">
                 <label for="nombreInput">Nombre</label>
                 <input id="nombreInput" type="text" class="form-control" aria-describedby="nombreInputHelp">
-                <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes y caracteres especiales.</small>
+                <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes, diéresis o caracteres especiales.</small>
             </div>
             <div class="form-group">
                 <label for="anoDesdeSelect">Año de registro, desde:</label>
@@ -273,10 +273,12 @@
     <div class="card-body">
         <table id="abogadosRegistradosTable" class="table" style="width: 100%;">
             <thead>
-                <th>Fecha</th>
-                <th>Libro</th>
-                <th>Número</th>
-                <th>Nombre</th>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Libro</th>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                </tr>
             </thead>
         </table>
     </div>
