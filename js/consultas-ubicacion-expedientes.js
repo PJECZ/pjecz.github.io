@@ -1,17 +1,22 @@
 // Consultas Ubicación de Expedientes
 $(document).ready(function () {
 
-    // Para desarrollo
-    //const DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/distritos"
-    //const AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/autoridades"
-    //const UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/ubicaciones_expedientes"
+    // Variables
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+        // Para desarrollo
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/distritos"
+        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/autoridades"
+        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/ubicaciones_expedientes"
+    } else {
+        // Para producción
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
+        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades"
+        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes"
+    }
+    var distrito_id_max = 0
+    var autoridades_opciones = []
 
-    // Para producción
-    const DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-    const AUTORIDADES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades"
-    const UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes"
-
-    // Llamar a la API de Distritos para alimentar distritoSelect
+    // Cargar distritos
     $.ajax({
         'url': DISTRITOS_PLATAFORMA_WEB_API_URL,
         'type': "GET",
@@ -26,37 +31,31 @@ $(document).ready(function () {
                 value: distrito.id,
                 text: distrito.nombre
             }));
+            if (distrito.id > distrito_id_max) {
+                distrito_id_max = distrito.id;
+            };
         });
-    };
-
-    // Cargar autoridades
-    $.ajax({
-        'url': AUTORIDADES_PLATAFORMA_WEB_API_URL,
-        'type': "GET",
-        'dataType': "json",
-        'success': function (dataAutoridades) {
-            alRecibirAutoridades(dataAutoridades);
-        }
-    });
-    var autoridades_opciones = [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ];
-    function alRecibirAutoridades(dataAutoridades) {
-        $.each(dataAutoridades, function (i, autoridad) {
-            console.log();
-            autoridades_opciones[autoridad.distrito_id - 1].push({
-                value: autoridad.id,
-                text: autoridad.descripcion
+        // Cargar autoridades
+        $.ajax({
+            'url': AUTORIDADES_PLATAFORMA_WEB_API_URL,
+            'type': "GET",
+            'dataType': "json",
+            'success': function (dataAutoridades) {
+                alRecibirAutoridades(dataAutoridades);
+            }
+        });
+        function alRecibirAutoridades(dataAutoridades) {
+            for (let i = 0; i < distrito_id_max; i++) {
+                autoridades_opciones.push([]);
+            }
+            $.each(dataAutoridades, function (i, autoridad) {
+                console.log();
+                autoridades_opciones[autoridad.distrito_id - 1].push({
+                    value: autoridad.id,
+                    text: autoridad.descripcion
+                });
             });
-        });
-        console.log(autoridades_opciones);
+        };
     };
 
     // Al cambiar el select distrito, cambiar las opciones de autoridad
@@ -80,7 +79,7 @@ $(document).ready(function () {
 
         // Si es válido el formulario
         if (valido) {
-            // Ocultar botón Consultar, mostrar botón Cargando... y ocultar mensaje Sin resultados
+            // Mostrar botón Cargando...
             $('#consultarButton').hide();
             $('#cargandoButton').show();
             $('#revisarParametros').hide();
@@ -90,7 +89,7 @@ $(document).ready(function () {
                 'url': UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL,
                 'type': "GET",
                 'data': {
-                    'autoridad': $('#autoridadSelect').val(),
+                    'autoridad_id': $('#autoridadSelect').val(),
                     'expediente': $('#expedienteInput').val().trim()
                 },
                 'dataType': "json",
@@ -99,6 +98,7 @@ $(document).ready(function () {
                 }
             });
         } else {
+            // No es válido, debe revisar los parámetros
             $('#revisarParametros').show();
             $('#ubicacionExpedientes').hide();
         };
