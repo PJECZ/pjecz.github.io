@@ -1,11 +1,17 @@
 // Consultas Abogados Registrados
 $(document).ready(function () {
 
-    // Para desarrollo
-    //const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/abogados"
-
-    // Para producción
-    const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
+    // Variables
+    if (location.hostname === "localhost") {
+        // Para desarrollo
+        var ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/abogados"
+    } else if (location.hostname === "127.0.0.1") {
+        // Para desarrollo
+        var ABOGADOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/abogados"
+    } else {
+        // Para producción
+        var ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
+    }
 
     // Primer año
     const PRIMER_ANO = 1925
