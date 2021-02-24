@@ -66,6 +66,9 @@ article                  { min-height: 800px; }
 #accesos                 { min-height: 400px; }
 #accesos                 { margin: 0; }
 #accesos p               { padding-top: 0.2em; padding-bottom: 0.4em; }
+.accesos-card            { margin-bottom: 1.2em;}
+.accesos-card-body       { padding-top: 16px; padding-bottom: 20px; }
+.accesos-card-title      { margin-top: 0; margin-bottom: 0.2em;}
 
 #transmisiones_sesiones h3 { margin-bottom: 0; padding-bottom: 0; }
 #transmisiones_sesiones p  { margin-top: 0; padding-top: 0; }
@@ -222,6 +225,8 @@ footer .footer-light a:hover   { color:#212530; }
     h1.display-4 { font-size: 2.2em; }
     p            { font-size: 1.1em; line-height: 1.4em; padding: 0.4em 0; }
     blockquote   { font-size: 1.4em; padding: 1.0em; }
+    .accesos-card      { margin-bottom: 0.8em;}
+    .accesos-card-body { padding-top: 12px; padding-bottom: 16px; }
     #accesos h3  { font-size: 1.2em; }
     #accesos p   { font-size: 0.8em; line-height: 1.2em; }
     .breadcrumb  { font-size: 1.0em; }
@@ -239,6 +244,8 @@ footer .footer-light a:hover   { color:#212530; }
     h1.display-4 { font-size: 2.0em; }
     p            { font-size: 1.0em; line-height: 1.2em; padding: 0.2em 0; }
     blockquote   { font-size: 1.2em; padding: 0.8em; }
+    .accesos-card      { margin-bottom: 0.4em;}
+    .accesos-card-body { padding-top: 8px; padding-bottom: 12px; }
     #accesos h3  { font-size: 1.1em; }
     #accesos p   { font-size: 0.8em; line-height: 1.1em; }
     .breadcrumb  { font-size: 0.9em; }
@@ -256,6 +263,8 @@ footer .footer-light a:hover   { color:#212530; }
     h1.display-4 { font-size: 1.8em; }
     p            { font-size: 1.0em; line-height: 1.1em; padding: 0.1em 0; }
     blockquote   { font-size: 1.1em; padding: 0.6em; }
+    .accesos-card      { margin-bottom: 0.2em;}
+    .accesos-card-body { padding-top: 4px; padding-bottom: 8px; }
     #accesos h3  { font-size: 1.0em; }
     #accesos p   { font-size: 0.7em; line-height: 1.0em; }
     .breadcrumb  { font-size: 0.8em; }
