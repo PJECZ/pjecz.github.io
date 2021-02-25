@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-02-25T11:31:59-00:00</lastmod>
+<lastmod>2021-02-25T12:18:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4540,6 +4540,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/comunicados/2021/2021-02-25-comunicado-audiencia-inicial/</loc>
+<lastmod>2021-02-25T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2021/octava-sesion-ordinaria/</loc>
 <lastmod>2021-02-25T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -6201,13 +6208,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/octava-sesion-ordinaria/</loc>
 <lastmod>2020-02-26T15:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/comunicados/2021/2021-02-25-comunicado-audiencia-inicial/</loc>
-<lastmod>2020-02-25T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
