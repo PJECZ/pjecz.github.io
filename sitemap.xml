@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-03-02T15:00:41-00:00</lastmod>
+<lastmod>2021-03-02T16:38:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3632,6 +3632,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/monclova/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/mujer-segura/</loc>
+<lastmod>2021-03-02T15:45:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
