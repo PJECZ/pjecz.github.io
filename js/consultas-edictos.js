@@ -105,6 +105,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%206%20Sabinas/lista.json">Notaria Pública 6 Sabinas</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%207%20Nueva%20Rosita/lista.json">Notaria Pública 7 Nueva Rosita</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%208%20Nueva%20Rosita/lista.json">Notaria Pública 8 Nueva Rosita</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%2010%20Nueva%20Rosita/lista.json">Notaria Pública 10 Nueva Rosita</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%2012%20Sabinas/lista.json">Notaria Pública 12 Sabinas</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%2013%20Melchor%20Muzquiz/lista.json">Notaria Pública 13 Melchor Muzquiz</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Sabinas/Notaria%20P%C3%BAblica%2014%20Sabinas/lista.json">Notaria Pública 14 Sabinas</option>' +
