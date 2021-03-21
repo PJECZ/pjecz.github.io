@@ -1,10 +1,10 @@
 // Inicial - Noticias y eventos
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   function fechaEnEspanol(tiempo) {
     var tiempo = new Date(tiempo)
-    return(Intl.DateTimeFormat('es-MX', {dateStyle:'long'}).format(tiempo))
+    return (Intl.DateTimeFormat('es-MX', { dateStyle: 'long' }).format(tiempo))
   }
 
   // Contenedor
@@ -14,7 +14,7 @@ $(document).ready(function() {
     fetch('json/comunicados-noticias.json').then((res) => {
       res.json().then((entrada) => {
         var datos = entrada.data
-        for(var i = 0; i < datos.length; i++) {
+        for (var i = 0; i < datos.length; i++) {
           var articulo = datos[i];
           // Armar titulo
           let titulo = document.createElement('h3')
@@ -60,15 +60,15 @@ $(document).ready(function() {
           media.classList.add('mb-3')
           // Agregar al contenedor
           contenedor.appendChild(media)
-          // Máximo 4 elementos (del 0 al 3)
-          if (i >= 3) {
+          // Máximo 5 elementos (del 0 al 4)
+          if (i >= 4) {
             break;
           }
         }
         // Ocultar spinner
         $('#inicial_noticias_eventos_spinner').hide();
-      } )
-    } )
+      })
+    })
   }
 
-} );
+});

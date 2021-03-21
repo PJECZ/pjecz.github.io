@@ -34,7 +34,7 @@ $(document).ready(function () {
         $.each(dataDistritos, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
-                text: distrito.nombre
+                text: distrito.distrito
             }));
             if (distrito.id > distrito_id_max) {
                 distrito_id_max = distrito.id;
@@ -57,7 +57,7 @@ $(document).ready(function () {
                 console.log();
                 autoridades_opciones[autoridad.distrito_id - 1].push({
                     value: autoridad.id,
-                    text: autoridad.descripcion
+                    text: autoridad.autoridad
                 });
             });
         };

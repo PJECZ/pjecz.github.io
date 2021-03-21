@@ -30,7 +30,7 @@ $(document).ready(function () {
         $.each(dataDistritos, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
-                text: distrito.nombre
+                text: distrito.distrito
             }));
         });
     };
