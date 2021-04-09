@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-04-09T13:52:15-00:00</lastmod>
+<lastmod>2021-04-09T14:29:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -510,6 +510,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2020/</loc>
 <lastmod>2020-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/sanciones-a-servidores-publicos/2020/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
