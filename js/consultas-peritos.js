@@ -1,31 +1,39 @@
-// Consultas Peritos
+'use strict';
+
+let distritos_plataforma_web_api_url;
+let peritos_plataforma_web_api_url;
+
+/*
+ * Consultas Peritos
+ */
 $(document).ready(function () {
 
-    // Variables
-    if (location.hostname === "localhost") {
-        // Para desarrollo
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/distritos"
-        var PERITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/peritos"
-    } else if (location.hostname === "127.0.0.1") {
-        // Para desarrollo
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/distritos"
-        var PERITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/peritos"
-    } else {
-        // Para producción
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-        var PERITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos"
+    switch (location.hostname) {
+        case "localhost":
+            // Para desarrollo
+            distritos_plataforma_web_api_url = "http://localhost:8001/distritos";
+            peritos_plataforma_web_api_url = "http://localhost:8001/peritos";
+            break;
+        case "127.0.0.1":
+            // Para desarrollo
+            distritos_plataforma_web_api_url = "http://127.0.0.1:8001/distritos";
+            peritos_plataforma_web_api_url = "http://127.0.0.1:8001/peritos";
+            break;
+        default:
+            // Para producción
+            distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos";
+            peritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos";
     }
 
     // Llamar a la API de Distritos para alimentar distritoSelect
     $.ajax({
-        'url': DISTRITOS_PLATAFORMA_WEB_API_URL,
+        'url': distritos_plataforma_web_api_url,
         'type': "GET",
         'dataType': "json",
         'success': function (dataDistritos) {
             alRecibirDistritos(dataDistritos);
         }
     });
-
     function alRecibirDistritos(dataDistritos) {
         $.each(dataDistritos, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
@@ -39,11 +47,13 @@ $(document).ready(function () {
     $('#consultarButton').click(function () {
 
         // Validar
-        var valido = true;
-        //if ($('#nombreInput').val().trim() == '') {
-        //    $('#revisarParametrosAlert').text("Falta el nombre.");
-        //    valido = false;
-        //};
+        let valido = true;
+        let distrito = $('#distritoSelect').val();
+        let nombre = $('#nombreInput').val().trim();
+        if (nombre != "" && nombre.length < 4) {
+            $('#revisarParametrosAlert').text("El nombre a buscar debe tener por lo menos cuatro letras.");
+            valido = false;
+        };
 
         // Si es válido el formulario
         if (valido) {
@@ -53,18 +63,32 @@ $(document).ready(function () {
             $('#revisarParametros').hide();
             $('#sinResultados').hide();
             // Llamar a la API y ejecutar acciones hasta recibir resultados
-            $.ajax({
-                'url': PERITOS_PLATAFORMA_WEB_API_URL,
-                'type': "GET",
-                'data': {
-                    'distrito_id': $('#distritoSelect').val(),
-                    'nombre': $('#nombreInput').val().trim()
-                },
-                'dataType': "json",
-                'success': function (data) {
-                    alRecibirResultados(data);
-                }
-            });
+            if (nombre == "") {
+                $.ajax({
+                    'url': peritos_plataforma_web_api_url,
+                    'type': "GET",
+                    'data': {
+                        'distrito_id': distrito
+                    },
+                    'dataType': "json",
+                    'success': function (data) {
+                        alRecibirResultados(data);
+                    }
+                });
+            } else {
+                $.ajax({
+                    'url': peritos_plataforma_web_api_url,
+                    'type': "GET",
+                    'data': {
+                        'distrito_id': distrito,
+                        'nombre': nombre
+                    },
+                    'dataType': "json",
+                    'success': function (data) {
+                        alRecibirResultados(data);
+                    }
+                });
+            }
         } else {
             $('#revisarParametros').show();
             $('#peritosRegistrados').hide();

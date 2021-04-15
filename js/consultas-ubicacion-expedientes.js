@@ -7,7 +7,7 @@ let distritos = [];
 let encontradoIndice;
 let formularioEsValido;
 
-/* 
+/*
  * Consultas Ubicación de Expedientes
  */
 $(document).ready(function () {
@@ -15,21 +15,21 @@ $(document).ready(function () {
     switch (location.hostname) {
         case "localhost":
             // Para desarrollo
-            distritos_plataforma_web_api_url = "http://localhost:8001/distritos"
-            autoridades_plataforma_web_api_url = "http://localhost:8001/autoridades"
-            ubicaciones_expedientes_plataforma_web_api_url = "http://localhost:8001/ubicaciones_expedientes"
+            distritos_plataforma_web_api_url = "http://localhost:8001/distritos";
+            autoridades_plataforma_web_api_url = "http://localhost:8001/autoridades";
+            ubicaciones_expedientes_plataforma_web_api_url = "http://localhost:8001/ubicaciones_expedientes";
             break;
         case "127.0.0.1":
             // Para desarrollo
-            distritos_plataforma_web_api_url = "http://127.0.0.1:8001/distritos"
-            autoridades_plataforma_web_api_url = "http://127.0.0.1:8001/autoridades"
-            ubicaciones_expedientes_plataforma_web_api_url = "http://127.0.0.1:8001/ubicaciones_expedientes"
+            distritos_plataforma_web_api_url = "http://127.0.0.1:8001/distritos";
+            autoridades_plataforma_web_api_url = "http://127.0.0.1:8001/autoridades";
+            ubicaciones_expedientes_plataforma_web_api_url = "http://127.0.0.1:8001/ubicaciones_expedientes";
             break;
         default:
             // Para producción
-            distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-            autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades"
-            ubicaciones_expedientes_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes"
+            distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos";
+            autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades";
+            ubicaciones_expedientes_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes";
     }
 
     // Cargar distritos
