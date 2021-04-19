@@ -275,6 +275,7 @@ $(document).ready(function() {
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2064%20Matamoros/lista.json">Notaria Pública 64 Matamoros</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2065%20Torreon/lista.json">Notaria Pública 65 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2066%20Torreon/lista.json">Notaria Pública 66 Torreón</option>' +
+        '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2067%20Torreon/lista.json">Notaria Pública 67 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2068%20Matamoros/lista.json">Notaria Pública 68 Matamoros</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2069%20Torreon/lista.json">Notaria Pública 69 Torreón</option>' +
         '<option value="https://storage.googleapis.com/pjecz-consultas/Edictos/Distrito%20de%20Torreon/Notaria%20Publica%2070%20Torreon/lista.json">Notaria Pública 70 Torreón</option>' +
