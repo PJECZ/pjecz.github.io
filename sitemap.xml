@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-04-23T10:46:50-00:00</lastmod>
+<lastmod>2021-04-23T10:50:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4589,8 +4589,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-04-21-acuerdo-lineamientos-nivel-bajo-verde-semaforo-epidemico/</loc>
+<lastmod>2021-04-21T00:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2021/decima-quinta-sesion-ordinaria/</loc>
 <lastmod>2021-04-19T12:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-04-16-acuerdo-declaratoria-competencia-juicios-orales-mercantiles/</loc>
+<lastmod>2021-04-16T11:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-04-16-acuerdo-lineamientos-cosntancias-candidatos-proceso-electoral-local-2021/</loc>
+<lastmod>2021-04-16T11:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-04-16-acuerdo-lineamientos-para-la-prestacion-de-tramites-y-servicios/</loc>
+<lastmod>2021-04-16T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
