@@ -1,5 +1,5 @@
 // Consultas Abogados Registrados
-$(document).ready(function () {
+$(document).ready(function() {
 
     // Variables
     if (location.hostname === "localhost") {
@@ -17,8 +17,9 @@ $(document).ready(function () {
     const PRIMER_ANO = 1925
 
     // Elaborar lista de años, desde el presente hasta PRIMER_ANO
-    this.years = function (startYear) {
-        var currentYear = new Date().getFullYear(), years = [];
+    this.years = function(startYear) {
+        var currentYear = new Date().getFullYear(),
+            years = [];
         startYear = startYear || PRIMER_ANO;
         while (startYear <= currentYear) {
             years.push(currentYear--);
@@ -27,7 +28,7 @@ $(document).ready(function () {
     }
 
     // Agregar en "Año de registro, desde" las opciones al select
-    $.each(this.years(), function (i, year) {
+    $.each(this.years(), function(i, year) {
         $('#anoDesdeSelect').append($('<option>', {
             value: year,
             text: year
@@ -36,7 +37,7 @@ $(document).ready(function () {
     $('#anoDesdeSelect').val(PRIMER_ANO);
 
     // Agregar en "Año de registro, hasta" las opciones al select
-    $.each(this.years(), function (i, year) {
+    $.each(this.years(), function(i, year) {
         $('#anoHastaSelect').append($('<option>', {
             value: year,
             text: year
@@ -44,7 +45,7 @@ $(document).ready(function () {
     });
 
     // Al dar clic en el botón mostrar
-    $('#consultarButton').click(function () {
+    $('#consultarButton').click(function() {
 
         // Validar
         var valido = true;
@@ -72,7 +73,7 @@ $(document).ready(function () {
                     'nombre': $('#nombreInput').val().trim(),
                 },
                 'dataType': "json",
-                'success': function (data) {
+                'success': function(data) {
                     alRecibirResultados(data);
                 }
             });
@@ -118,6 +119,9 @@ $(document).ready(function () {
             'language': {
                 'lengthMenu': "Mostrar _MENU_",
                 'search': "Filtrar:",
+                "order": [
+                    [0, "desc"]
+                ],
                 'zeroRecords': "Cargando información...",
                 'info': "Página _PAGE_ de _PAGES_",
                 'infoEmpty': "No hay registros",
