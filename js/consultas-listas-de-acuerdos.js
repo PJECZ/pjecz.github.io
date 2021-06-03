@@ -190,7 +190,7 @@ function getDistritos() {
         'dataType': "json",
         'success': function(response) {
             $.each(response, function(i, distrito) {
-                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
+                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="../../theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
             });
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
@@ -266,7 +266,7 @@ function resultadoConsulta(autoridad) {
                 ],
                 'pageLength': 10,
                 "order": [
-                    [0, "asc"]
+                    [0, "desc"]
                 ],
                 'language': {
                     'lengthMenu': "Mostrar _MENU_",
