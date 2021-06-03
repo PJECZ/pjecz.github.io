@@ -46,7 +46,7 @@ $(document).ready(function() {
         });
 
         var jobCount = $('#listDistritos .in').length;
-        $('.list-countDistritos').text(jobCount + ' Distritos');
+        $('.list-countDistritos').text(jobCount + ' Elementos');
 
         //shows empty state text when no jobs found
         if (jobCount == '0') {
@@ -87,7 +87,7 @@ $(document).ready(function() {
         });
 
         var jobCount = $('#listAutoridades .in').length;
-        $('.list-countAutoridades').text(jobCount + ' Autoridades');
+        $('.list-countAutoridades').text(jobCount + ' Elementos');
 
         //shows empty state text when no jobs found
         if (jobCount == '0') {
@@ -190,11 +190,11 @@ function getDistritos() {
         'dataType': "json",
         'success': function(response) {
             $.each(response, function(i, distrito) {
-                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="../../theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
+                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
             });
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
-            $('.list-countDistritos').text(jobCount + ' Distritos');
+            $('.list-countDistritos').text(jobCount + ' Elementos');
             $('#divcargando').hide();
         }
     });
@@ -221,7 +221,7 @@ function getAutoridades(distrito) {
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
-            $('.list-countAutoridades').text(jobCount + ' Autoridades');
+            $('.list-countAutoridades').text(jobCount + '  Elementos');
             $('#consultaDistrito').html(nombreDistrito);
             $('#divcargando').hide();
         }
@@ -266,7 +266,7 @@ function resultadoConsulta(autoridad) {
                 ],
                 'pageLength': 10,
                 "order": [
-                    [0, "desc"]
+                    [0, "asc"]
                 ],
                 'language': {
                     'lengthMenu': "Mostrar _MENU_",
