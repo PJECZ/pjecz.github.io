@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-06-25T14:57:15-00:00</lastmod>
+<lastmod>2021-06-25T16:31:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4612,6 +4612,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-06-17-acuerdo-apoyo-jurisdiccional-buzon-electronico/</loc>
 <lastmod>2021-06-17T16:10:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2021/2021-06-17-concluye-diplomado-de-justicia-penal-para-adolescentes-en-la-ulsa/</loc>
+<lastmod>2021-06-17T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
