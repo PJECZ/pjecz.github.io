@@ -1,11 +1,14 @@
 let distritos_plataforma_web_api_url;
 let autoridades_plataforma_web_api_url;
 let sentencias_plataforma_web_api_url;
+let id_autoridad;
 
 $(document).ready(function() {
     $('#divcargando').hide();
 
     getDistritos();
+
+    getYears();
 
     $('#ListasTable').removeClass('table-striped');
 
@@ -110,14 +113,35 @@ $(document).ready(function() {
         $('#divcargando').hide();
         $('#distritos').hide();
         $('#autoridades').show();
+        var currentYear = new Date().getFullYear();
+        $("#anio").val(currentYear);
+        $("option:selected", 0);
+        id_autoridad = 0;
         $('#tablaResultado').hide();
         $('#consultaJuzgado').empty();
         $('#ListasTable').DataTable().clear();
         $('#ListasTable').DataTable().destroy();
     });
+
+    $('#anio').on('change', function(e) {
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+        resultadoConsulta(id_autoridad, valueSelected);
+    });
+
 });
 
-function consulta(api, id = 0) {
+function getYears() {
+    var currentYear = new Date().getFullYear();
+    var years = [];
+    var startYear = 2015;
+    for (var i = currentYear; i >= startYear; i--) {
+        years.push('<option value= "' + currentYear + '">' + currentYear-- + '</option>');
+    }
+    $('#anio').append(years);
+}
+
+function consulta(api, id = 0, anio = 0) {
     switch (api) {
         case "distritos":
             switch (location.hostname) {
@@ -161,19 +185,19 @@ function consulta(api, id = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id;
+                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id;
+                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id;
+                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 default:
                     // Para producción
-                    sentencias_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/sentencias?autoridad_id=" + id;
+                    sentencias_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/sentencias?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }
@@ -215,7 +239,7 @@ function getAutoridades(distrito) {
         'success': function(response) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
+                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
                 nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
@@ -227,7 +251,8 @@ function getAutoridades(distrito) {
     });
 }
 
-function resultadoConsulta(autoridad) {
+function resultadoConsulta(autoridad, anio) {
+    id_autoridad = autoridad;
     $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').hide();
@@ -239,7 +264,13 @@ function resultadoConsulta(autoridad) {
         $('#ListasTable').DataTable().destroy();
     };
 
-    consulta("listas", autoridad);
+    if (anio == 0) {
+        var currentYear = new Date().getFullYear();
+        anio = currentYear
+    }
+
+    consulta("listas", id_autoridad, anio);
+
     var nombreDistrito = "";
     var nombreAutoridad = "";
     $.ajax({

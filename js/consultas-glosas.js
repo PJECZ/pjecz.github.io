@@ -1,11 +1,11 @@
 let autoridades_plataforma_web_api_url;
 let listas_plataforma_web_api_url;
-let id_autoriad;
+let id_autoridad;
 
 $(document).ready(function() {
     getAutoridades();
 
-    getYears()
+    getYears();
 
     $('#divcargando').hide();
 
@@ -61,7 +61,9 @@ $(document).ready(function() {
     $("#btnbackAutoridades").click(function() {
         $('#divcargando').hide();
         $('#autoridades').show();
-        id_autoriad = 0;
+        var currentYear = new Date().getFullYear();
+        $("#anio").val(currentYear);
+        id_autoridad = 0;
         $('#tablaResultado').hide();
         $('#consultaJuzgado').empty();
         $('#ListasTable').DataTable().clear();
@@ -71,7 +73,7 @@ $(document).ready(function() {
     $('#anio').on('change', function(e) {
         var optionSelected = $("option:selected", this);
         var valueSelected = this.value;
-        resultadoConsulta(id_autoriad, valueSelected);
+        resultadoConsulta(id_autoridad, valueSelected);
     });
 });
 
@@ -153,7 +155,7 @@ function getAutoridades() {
 
 
 function resultadoConsulta(autoridad, anio) {
-    id_autoriad = autoridad;
+    id_autoridad = autoridad;
     $('#divcargando').show();
     $('#autoridades').hide();
     $('#tablaResultado').show();
@@ -169,7 +171,7 @@ function resultadoConsulta(autoridad, anio) {
         anio = currentYear
     }
 
-    consulta("listas", id_autoriad, anio);
+    consulta("listas", id_autoridad, anio);
 
     var nombreAutoridad = "";
     $.ajax({
