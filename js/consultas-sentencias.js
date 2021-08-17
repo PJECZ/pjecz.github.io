@@ -293,7 +293,7 @@ function resultadoConsulta(autoridad, anio) {
                     { 'data': "fecha", 'width': "20%" },
                     { 'data': "sentencia", 'width': "20%" },
                     { 'data': "expediente", 'width': "20%" },
-                    { 'data': "es_paridad_genero", 'width': "20%", "render": function(data, type, row) { return data == true ? "Si" : "No" } },
+                    { 'data': "es_perspectiva_genero", 'width': "20%", "render": function(data, type, row) { return data == true ? "Si" : "No" } },
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
