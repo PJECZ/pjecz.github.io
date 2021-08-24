@@ -241,7 +241,7 @@ function getAutoridades(distrito) {
         'success': function(response) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
+                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
                 nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
