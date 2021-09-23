@@ -277,7 +277,13 @@ function resultadoConsulta(autoridad, anio, audiencia) {
     switch (audiencia_categoria) {
         case "CIVIL FAMILIAR MERCANTIL LETRADO TCYA":
             var hiddencolumns = [
-                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                {
+                    'targets': [0],
+                    'visible': true,
+                    'searchable': true,
+                    'type': 'date',
+                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
+                }, // tiempo
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
@@ -294,7 +300,13 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "MATERIA ACUSATORIO PENAL ORAL":
             var hiddencolumns = [
-                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                {
+                    'targets': [0],
+                    'visible': true,
+                    'searchable': true,
+                    'type': 'date',
+                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
+                }, // tiempo
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': false, 'searchable': false }, // expediente
                 { 'targets': [3], 'visible': false, 'searchable': false }, // actores
@@ -311,7 +323,13 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "SALAS":
             var hiddencolumns = [
-                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                {
+                    'targets': [0],
+                    'visible': true,
+                    'searchable': true,
+                    'type': 'date',
+                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
+                }, // tiempo
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
@@ -328,7 +346,13 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "DISTRITALES":
             var hiddencolumns = [
-                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                {
+                    'targets': [0],
+                    'visible': true,
+                    'searchable': true,
+                    'type': 'date',
+                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
+                }, // tiempo
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
