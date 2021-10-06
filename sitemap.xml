@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2021-10-06T08:40:27-00:00</lastmod>
+<lastmod>2021-10-06T13:33:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4764,8 +4764,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/noticias/2021/2021-10-06-sistema-de-justicia-penal-sube-tres-lugares/</loc>
+<lastmod>2021-10-06T11:40:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2021/trigesima-septima-sesion-ordinaria/</loc>
 <lastmod>2021-10-06T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2021/2021-10-06-boletin-fondo-nacional-por-la-justicia-local/</loc>
+<lastmod>2021-10-06T10:40:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -4836,6 +4850,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2021/trigesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2021-09-29T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2021/2021-09-24-15-aniversario-de-cemasc/</loc>
+<lastmod>2021-09-24T10:40:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
