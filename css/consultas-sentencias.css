@@ -140,7 +140,7 @@
 
 @media (min-width: 1200px) {
     #consultas>div {
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -149,7 +149,7 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
     #consultas>div {
-        width: 60%;
+        width: 80%;
     }
 }
 

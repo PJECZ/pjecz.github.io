@@ -290,10 +290,11 @@ function resultadoConsulta(autoridad, anio) {
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "fecha", 'width': "20%" },
-                    { 'data': "sentencia", 'width': "20%" },
-                    { 'data': "expediente", 'width': "20%" },
-                    { 'data': "es_perspectiva_genero", 'width': "20%", "render": function(data, type, row) { return data == true ? "Si" : "No" } },
+                    { 'data': "fecha", 'width': "10%" },
+                    { 'data': "sentencia", 'width': "10%" },
+                    { 'data': "expediente", 'width': "10%" },
+                    { 'data': "materia_tipo_juicio", 'width': "40%" },
+                    { 'data': "es_perspectiva_genero", 'width': "10%", "render": function(data, type, row) { return data == true ? "Si" : "No" } },
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
