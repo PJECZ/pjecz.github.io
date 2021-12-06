@@ -10,7 +10,7 @@ $(document).ready(function() {
         var ABOGADOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/abogados"
     } else {
         // Para producción
-        var ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
+        var ABOGADOS_PLATAFORMA_WEB_API_URL = "https://api.justiciadigital.gob.mx/abogados"
     }
 
     // Primer año

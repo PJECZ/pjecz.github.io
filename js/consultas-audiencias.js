@@ -158,7 +158,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos";
+                    distritos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/distritos";
             }
             break;
         case "autoridades":
@@ -177,7 +177,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/autoridades?distrito_id=" + id;
             }
             break;
         case "listas":
@@ -196,7 +196,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    listas_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/audiencias?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/audiencias?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }

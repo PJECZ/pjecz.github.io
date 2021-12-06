@@ -1,3 +1,3 @@
 setTimeout(function(){
-    window.location.href = 'https://plataforma-web-dot-pjecz-268521.uc.r.appspot.com/';
+    window.location.href = 'https://plataforma-web.justiciadigital.gob.mx/';
 }, 2000);
