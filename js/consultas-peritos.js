@@ -21,8 +21,8 @@ $(document).ready(function () {
             break;
         default:
             // Para producción
-            distritos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/distritos";
-            peritos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/peritos";
+            distritos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/distritos";
+            peritos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/peritos";
     }
 
     // Llamar a la API de Distritos para alimentar distritoSelect

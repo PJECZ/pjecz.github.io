@@ -27,9 +27,9 @@ $(document).ready(function () {
             break;
         default:
             // Para producción
-            distritos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/distritos";
-            autoridades_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/autoridades";
-            ubicaciones_expedientes_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/ubicaciones_expedientes";
+            distritos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/distritos";
+            autoridades_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/autoridades";
+            ubicaciones_expedientes_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/ubicaciones_expedientes";
     }
 
     // Cargar distritos

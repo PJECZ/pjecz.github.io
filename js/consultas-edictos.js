@@ -159,7 +159,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    distritos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/distritos";
+                    distritos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/distritos";
             }
             break;
         case "autoridades":
@@ -178,7 +178,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    autoridades_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/autoridades?distrito_id=" + id + '&con_notarias=true';
+                    autoridades_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/autoridades?distrito_id=" + id + '&con_notarias=true';
             }
             break;
         case "listas":
@@ -197,7 +197,7 @@ function consulta(api, id = 0, anio = 0) {
                     break;
                 default:
                     // Para producción
-                    edictos_plataforma_web_api_url = "https://api.justiciadigital.gob.mx/edictos?autoridad_id=" + id + '&ano=' + anio;
+                    edictos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/edictos?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }
