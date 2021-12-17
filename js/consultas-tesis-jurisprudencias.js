@@ -1,84 +1,21 @@
 // consultas-tesis-jurisprudencias.js
-let autoridades_api_url;
+let autoridades_api_url = 0;
 let listas_api_url;
 let detalle_api_url;
 let id_autoridad;
 
 $(document).ready(function() {
-    getAutoridades();
-    getYears();
-
+    resultadoConsulta();
     $('#divcargando').hide();
-    $('#ListasTable').removeClass('table-striped');
-    $('#ListasTable').DataTable();
-    $('#tablaResultado').hide();
+    $('#tablaResultado').show();
     $('#tablaDetalle').hide();
 
-    $("#search-autoridad").keyup(function() {
-        var searchTerm = $("#search-autoridad").val();
-        var listItem = $('#listAutoridades').children('li');
-        var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
-
-        $.extend($.expr[':'], {
-            'containsi': function(elem, i, match, array) {
-                return (elem.textContent || elem.innerText || '').toLowerCase()
-                    .indexOf((match[3] || "").toLowerCase()) >= 0;
-            }
-        });
-
-        $("#listAutoridades li").not(":containsi('" + searchSplit + "')").each(function(e) {
-            $(this).addClass('hiding out').removeClass('in');
-            setTimeout(function() {
-                $('.out').addClass('hidden');
-            }, 300);
-        });
-
-        $("#listAutoridades li:containsi('" + searchSplit + "')").each(function(e) {
-            $(this).removeClass('hidden out').addClass('in');
-            setTimeout(function() {
-                $('.in').removeClass('hiding');
-            }, 1);
-        });
-
-        var jobCount = $('#listAutoridades .in').length;
-        $('.list-countAutoridades').text(jobCount + ' Elementos');
-
-        if (jobCount == '0') {
-            $('#listAutoridades').addClass('empty');
-        } else {
-            $('#listAutoridades').removeClass('empty');
-        }
-    });
-
-    $("#btnbackAutoridades").click(function() {
-        $('#divcargando').hide();
-        $('#autoridades').show();
-        var currentYear = new Date().getFullYear();
-        $("#anio").val(currentYear);
-        id_autoridad = 0;
-        $('#tablaResultado').hide();
-        $('#consultaJuzgado').empty();
-        $('#ListasTable').DataTable().clear();
-        $('#ListasTable').DataTable().destroy();
-    });
-
-    $('#anio').on('change', function(e) {
-        var optionSelected = $("option:selected", this);
-        var valueSelected = this.value;
-        resultadoConsulta(id_autoridad, valueSelected);
+    $("#btnbackTesisJusrisprudencias").click(function() {
+        resultadoConsulta();
+        $('#autoridades').hide();
     });
 
 });
-
-function getYears() {
-    var currentYear = new Date().getFullYear();
-    var years = [];
-    var startYear = 2015;
-    for (var i = currentYear; i >= startYear; i--) {
-        years.push('<option value= "' + currentYear + '">' + currentYear-- + '</option>');
-    }
-    $('#anio').append(years);
-}
 
 function consulta(api, id = 0, anio = 0) {
     switch (api) {
@@ -142,36 +79,9 @@ function consulta(api, id = 0, anio = 0) {
         }
 }
 
-function getAutoridades() {
+function resultadoConsulta(id_autoridad, anio) {
     // Limpiar
     $('#divcargando').show();
-    $('#autoridades').show();
-    $('#tablaResultado').hide();
-    $('#consultaJuzgado').val("");
-    // Definir la URL de la API
-    consulta("autoridades", 0, 0);
-    // Consultar la API
-    $.ajax({
-        'url': autoridades_api_url,
-        'type': "GET",
-        'dataType': "json",
-        'success': function(response) {
-            $("#listAutoridades").empty();
-            $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
-            });
-            $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
-            var jobCount = response.length;
-            $('.list-countAutoridades').text(jobCount + '  Elementos');
-            $('#divcargando').hide();
-        }
-    });
-}
-
-function resultadoConsulta(autoridad, anio) {
-    // Limpiar
-    $('#divcargando').show();
-    $('#autoridades').hide();
     $('#tablaResultado').show();
     $('#tablaDetalle').hide();
     $('#consultaJuzgado').val("");
@@ -184,7 +94,7 @@ function resultadoConsulta(autoridad, anio) {
         var currentYear = new Date().getFullYear();
         anio = currentYear
     }
-    id_autoridad = autoridad;
+    id_autoridad = 0;
     consulta("listas", id_autoridad, anio);
     var nombreAutoridad = "";
     // Consultar la API
@@ -199,21 +109,22 @@ function resultadoConsulta(autoridad, anio) {
                     return false;
                 }
             });
-            $('#consultaJuzgado').html(nombreAutoridad);
             // DataTable
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "id", 'width': "20%" },
-                    { 'data': "aprobacion_fecha", 'width': "20%" },
-                    { 'data': "titulo", 'width': "60%" }
+                    { 'data': "id", 'width': "auto" },
+                    { 'data': "aprobacion_fecha", 'width': "auto" },
+                    { 'data': "titulo", 'width': "auto" },
+                    { 'data': "subtitulo", 'width': "auto" },
+                    { 'data': "autoridad", 'width': "auto" }
                 ],
                 'columnDefs': [
                     {
                         'targets': 0,
                         'data': null,
                         render: function(data, type, row, meta) {
-                            return '<button onClick="detalleConsulta(' + data + ')">' + data + '</button>';
+                            return '<button type="button" class="btn btn-secondary" onClick="detalleConsulta(' + data + ')">' + data + '</button>';
                         }
                     }
                 ],
@@ -256,6 +167,7 @@ function detalleConsulta(id_tesis_jurisprudencia) {
         'dataType': "json",
         'success': function(result) {
             $('#detalleTitulo').text(result.titulo);
+            $('#detalleTituloTJ').text(result.titulo);
             $('#detalleRegistro').text(result.id);
             $('#detalleSubtitulo').text(result.subtitulo);
             $('#detalleDistrito').text(result.distrito);
