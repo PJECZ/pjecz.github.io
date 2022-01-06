@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-01-06T15:23:50-00:00</lastmod>
+<lastmod>2022-01-06T15:29:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4806,13 +4806,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-12-17-acuerdo-c-173-2021-regulan-emolumentos-de-magistrados-supernumerario/</loc>
-<lastmod>2021-12-17T10:30:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/noticias/2021/2021-12-17-presentacion-del-portal-de-tesis-y-jurisprudencia/</loc>
 <lastmod>2021-12-17T00:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -4836,6 +4829,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2021/cuadragesima-septima-sesion-ordinaria/</loc>
 <lastmod>2021-12-16T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2021/2021-12-16-acuerdo-c-173-2021-regulan-emolumentos-de-magistrados-supernumerario/</loc>
+<lastmod>2021-12-16T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
