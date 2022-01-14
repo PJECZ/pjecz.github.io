@@ -123,7 +123,7 @@ $(document).ready(function () {
         $('#peritosRegistradosTable').DataTable({
             'data': data,
             'columns': [
-                { 'data': "tipo", 'width': "10%" },
+                { 'data': "perito_tipo", 'width': "10%" },
                 { 'data': "nombre", 'width': "30%" },
                 { 'data': "domicilio", 'width': "10%" },
                 { 'data': "telefono_fijo", 'width': "10%" },
