@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-02-01T10:13:03-00:00</lastmod>
+<lastmod>2022-02-01T12:39:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4862,6 +4862,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/quinta-sesion-ordinaria/</loc>
+<lastmod>2022-02-03T14:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/quinta-sesion-ordinaria/</loc>
 <lastmod>2022-02-03T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -4870,14 +4877,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/quinta-sesion-ordinaria/</loc>
-<lastmod>2022-02-02T11:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/quinta-sesion-ordinaria/</loc>
-<lastmod>2022-02-01T13:00:00-06:00</lastmod>
+<lastmod>2022-02-02T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
