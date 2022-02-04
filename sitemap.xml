@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-02-04T13:11:14-00:00</lastmod>
+<lastmod>2022-02-04T16:17:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4851,6 +4851,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-02-04-acuerdo-c-013-2022-copias_2022/</loc>
+<lastmod>2022-02-04T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
