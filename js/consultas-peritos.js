@@ -3,11 +3,14 @@
 let distritos_plataforma_web_api_url;
 let peritos_plataforma_web_api_url;
 
-/*
- * Consultas Peritos
- */
 $(document).ready(function () {
 
+    // Que no se refresque la página al presionar Enter
+    $('#buscarForm').on('submit', function(event){
+        event.preventDefault();
+    });
+
+    // URL de la API
     switch (location.hostname) {
         case "localhost":
             // Para desarrollo
@@ -25,7 +28,7 @@ $(document).ready(function () {
             peritos_plataforma_web_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/peritos";
     }
 
-    // Llamar a la API de Distritos para alimentar distritoSelect
+    // Alimentar distritoSelect
     $.ajax({
         'url': distritos_plataforma_web_api_url,
         'type': "GET",

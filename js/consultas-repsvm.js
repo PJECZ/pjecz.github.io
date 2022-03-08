@@ -5,6 +5,12 @@ let repsvm_agresores_api_url;
 
 $(document).ready(function() {
 
+    // Que no se refresque la página al presionar Enter
+    $('#buscarForm').on('submit', function(event){
+        event.preventDefault();
+    });
+
+    // URL de la API
     switch (location.hostname) {
         case "localhost":
             // Para desarrollo
@@ -27,7 +33,7 @@ $(document).ready(function() {
             repsvm_agresores_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/repsvm_agresores";
     }
 
-    // Llamar a la API de Distritos para alimentar distritoSelect
+    // Alimentar distritoSelect
     $.ajax({
         'url': distritos_api_url,
         'type': "GET",
