@@ -23,7 +23,7 @@ $(document).ready(function() {
             break;
         default:
             // Para producción
-            distritos_api_url = "http://plataforma-web-api.justiciadigital.gob.mx/distritos";
+            distritos_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/distritos";
             repsvm_agresores_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/repsvm_agresores";
     }
 
