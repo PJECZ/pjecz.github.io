@@ -136,6 +136,7 @@ $(document).ready(function() {
                 { "data": "observaciones" }
             ],
             'pageLength': 10,
+            'order': [[0, "desc"]],
             'language': {
                 'lengthMenu': "Mostrar _MENU_",
                 'search': "Filtrar:",
