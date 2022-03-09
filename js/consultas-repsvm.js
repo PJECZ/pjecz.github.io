@@ -139,7 +139,21 @@ $(document).ready(function() {
                 { "data": "nombre" },
                 { "data": "numero_causa" },
                 { "data": "pena_impuesta" },
-                { "data": "observaciones" }
+                { "data": "observaciones" },
+                { "data": "sentencia_url" }
+            ],
+            'columnDefs': [
+                {
+                    'targets': 10, // sentencia_url
+                    'data': null,
+                    render: function(data, type, row, meta) {
+                        if (data != "") {
+                            return '<a href="' + data + '" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>';
+                        } else {
+                            return "-";
+                        }
+                    }
+                }
             ],
             'pageLength': 10,
             'order': [[0, "desc"]],
