@@ -6,9 +6,9 @@ let peritos_plataforma_web_api_url;
 $(document).ready(function () {
 
     // Que no se refresque la página al presionar Enter
-    $('#buscarForm').on('submit', function(event){
-        event.preventDefault();
-    });
+    // $('#buscarForm').on('submit', function(event){
+    //     event.preventDefault();
+    // });
 
     // URL de la API
     switch (location.hostname) {
