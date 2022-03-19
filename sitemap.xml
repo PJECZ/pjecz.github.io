@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-03-18T16:04:43-00:00</lastmod>
+<lastmod>2022-03-19T10:43:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -615,13 +615,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/calendario/torreon/2021/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/cursos-seminarios-diplomados/2022-04-04-reforma-en-materia-laboral/</loc>
-<lastmod>2022-04-01T13:30:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
