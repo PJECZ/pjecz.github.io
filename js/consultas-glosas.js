@@ -93,11 +93,11 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?con_notarias=false&para_glosas=true";
+                    autoridades_plataforma_web_api_url = "http://localhost:8001/autoridades?con_notarias=false&para_glosas=true";
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?con_notarias=false&para_glosas=true";
+                    autoridades_plataforma_web_api_url = "http://127.0.0.1:8001/autoridades?con_notarias=false&para_glosas=true";
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
@@ -112,11 +112,11 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://localhost:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://127.0.0.1:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo

@@ -147,11 +147,11 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
+                    distritos_plataforma_web_api_url = "http://localhost:8001/distritos";
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
+                    distritos_plataforma_web_api_url = "http://127.0.0.1:8001/distritos";
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
@@ -166,11 +166,11 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://localhost:8001/autoridades?distrito_id=" + id;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://127.0.0.1:8001/autoridades?distrito_id=" + id;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
@@ -185,11 +185,11 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    sentencias_plataforma_web_api_url = "http://localhost:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    sentencias_plataforma_web_api_url = "http://127.0.0.1:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
