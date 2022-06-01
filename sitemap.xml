@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-06-01T07:50:34-00:00</lastmod>
+<lastmod>2022-06-01T09:12:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4969,6 +4969,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-05-31-protocolo-para-prevenir-atender-y-sancionar-el-hyas-en-el-pjecz/</loc>
 <lastmod>2022-05-31T12:40:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-05-31-acuerdo-c-0612022-se-aprueba-protocolo/</loc>
+<lastmod>2022-05-31T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
