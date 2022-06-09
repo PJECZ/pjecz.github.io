@@ -57,11 +57,34 @@ $(document).ready(function() {
 
     // Al dar clic en el botón Consultar
     $('#consultarButton').click(function () {
-        alRecibirRedam();
+
+        // Validar formulario
+        let valido = true;
+        let nombre = $('#nombreInput').val().trim();
+        if (nombre != "" && nombre.length < 4) {
+            $('#revisarParametrosAlert').text("El nombre a buscar debe tener por lo menos cuatro letras.");
+            valido = false;
+        };
+
+        // Si es válido el formulario
+        if (valido) {
+            // Mostrar botón Cargando...
+            $('#consultarButton').hide();
+            $('#cargandoButton').show();
+            $('#revisarParametros').hide();
+            $('#sinResultados').hide();
+            // Mostrar DataTable
+            ejecutarDataTable();
+        } else {
+            // Mostrar mensaje de validacion
+            $('#revisarParametros').show();
+            $('#resultadosDiv').hide();
+        };
+
     });
 
-    // Mostrar DataTable
-    function alRecibirRedam() {
+    // Ejecutar DataTable
+    function ejecutarDataTable() {
 
         // Si tiene datos, limpiar la tabla
         if ($('#resultadosDataTable').length > 0) {
@@ -69,14 +92,12 @@ $(document).ready(function() {
             $('#resultadosDataTable').DataTable().destroy();
         };
 
-        // Mostrar tabla
-        $('#resultadosDiv').show();
-
-        // DataTable
+        // DataTable con serverSide para obtener solo los datos necesarios
         $('#resultadosDataTable').DataTable({
             lengthChange: false,
             ordering: false,
             searching: false,
+            scrollX: true,
             serverSide: true,
             ajax: {
                 url: redams_api_url,
@@ -85,7 +106,21 @@ $(document).ready(function() {
                     distrito_id: $('#distritoSelect').val(),
                     nombre: $('#nombreInput').val(),
                 },
-                dataType: "json"
+                dataType: "json",
+                dataSrc: function (response) {
+                    $('#cargandoButton').hide();
+                    $('#consultarButton').show();
+                    if (response.data.length > 0) {
+                        $('#sinResultados').hide();
+                        $('#sinResultadosAlert').text("");
+                        $('#resultadosDiv').show();
+                    } else {
+                        $('#sinResultados').show();
+                        $('#sinResultadosAlert').text("No se encontraron registros con las opciones dadas.");
+                        $('#resultadosDiv').hide();
+                    }
+                    return response.data;
+                }
             },
             columns: [
                 { "data": "id" },
@@ -111,6 +146,6 @@ $(document).ready(function() {
             }
         });
 
-    }; // alRecibirRedam
+    };
 
 });
