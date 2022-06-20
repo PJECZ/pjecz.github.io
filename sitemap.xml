@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-06-17T14:34:27-00:00</lastmod>
+<lastmod>2022-06-20T08:55:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4956,6 +4956,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/vigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-06-23T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/vigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-06-23T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/vigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-06-22T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/vigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-06-21T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
