@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-06-20T14:16:20-00:00</lastmod>
+<lastmod>2022-06-21T11:45:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5009,6 +5009,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/vigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-06-22T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2022/cuarta-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2022-06-22/</loc>
+<lastmod>2022-06-22T11:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/vigesima-cuarta-sesion-ordinaria/</loc>
 <lastmod>2022-06-22T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5016,8 +5030,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/vigesima-cuarta-sesion-ordinaria/</loc>
-<lastmod>2022-06-21T12:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2022/audiencia-publica-de-alegatos-dentro-de-la-accion-de-inconstitucionalidad-local-del-expediente-ail-3-2022/</loc>
+<lastmod>2022-06-20T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
