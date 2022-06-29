@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-06-29T11:00:27-00:00</lastmod>
+<lastmod>2022-06-29T13:41:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3630,6 +3630,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/juez/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/materia-laboral/juez/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3981,6 +3988,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/materia-laboral/notificador/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/notificador/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4667,6 +4681,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/materia-laboral/secretario/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/secretario/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
