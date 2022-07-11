@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-07-11T08:56:27-00:00</lastmod>
+<lastmod>2022-07-11T15:04:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5058,6 +5058,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2022/07-julio/</loc>
+<lastmod>2022-07-01T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/noticias/2022/2022-07-01-examen-de-meritos/</loc>
 <lastmod>2022-07-01T09:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5275,6 +5282,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2022/06-junio/</loc>
+<lastmod>2022-06-01T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/vigesima-primera-sesion-ordinaria/</loc>
 <lastmod>2022-06-01T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5424,6 +5438,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2022/audiencia-publica-de-alegatos-dentro-de-la-accion-de-inconstitucionalidad-local-ail-2-2022/</loc>
 <lastmod>2022-05-02T09:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2022/05-mayo/</loc>
+<lastmod>2022-05-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
