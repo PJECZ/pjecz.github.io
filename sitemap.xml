@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-08-09T10:17:45-00:00</lastmod>
+<lastmod>2022-08-10T10:03:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5004,6 +5004,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/vigesima-novena-sesion-ordinaria/</loc>
 <lastmod>2022-08-11T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2022/sexta-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2022-08-10/</loc>
+<lastmod>2022-08-10T11:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
