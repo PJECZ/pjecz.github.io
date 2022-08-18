@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-08-17T14:44:29-00:00</lastmod>
+<lastmod>2022-08-18T16:38:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5025,6 +5025,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/trigesima-sesion-ordinaria/</loc>
 <lastmod>2022-08-18T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2022/2022-08-17-coordinacion-de-alto-nivel-entre-coahuila-y-queretaro/</loc>
+<lastmod>2022-08-17T15:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
