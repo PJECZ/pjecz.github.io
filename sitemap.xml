@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-08-31T12:30:26-00:00</lastmod>
+<lastmod>2022-08-31T16:41:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4995,6 +4995,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/trigesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2022-09-01T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/trigesima-segunda-sesion-ordinaria/</loc>
 <lastmod>2022-09-01T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5004,13 +5011,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/trigesima-segunda-sesion-ordinaria/</loc>
 <lastmod>2022-09-01T10:00:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/trigesima-segunda-sesion-ordinaria/</loc>
-<lastmod>2022-08-31T14:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
