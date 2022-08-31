@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-08-31T16:41:17-00:00</lastmod>
+<lastmod>2022-08-31T18:51:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5011,6 +5011,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/trigesima-segunda-sesion-ordinaria/</loc>
 <lastmod>2022-09-01T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-08-31-acuerdo-c-1052022-usaid/</loc>
+<lastmod>2022-08-31T18:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-08-31-acuerdo-c-0982022-se-aprueba-el-auxilo-actuarial/</loc>
+<lastmod>2022-08-31T17:55:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-08-31-acuerdo-c-0962022-regulacion-de-facultad-para-la-visitaduria-jg/</loc>
+<lastmod>2022-08-31T17:40:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
