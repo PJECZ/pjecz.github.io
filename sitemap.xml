@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-09-12T12:52:08-00:00</lastmod>
+<lastmod>2022-09-12T12:57:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5032,6 +5032,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/comunicados/2022/2022-09-09-lista-de-personas-admitidas-para-presentar-el-examen-oral/</loc>
 <lastmod>2022-09-09T14:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-09-09-acuerdo-personas-admitidas-examen-oral-meritos-laboral2022/</loc>
+<lastmod>2022-09-09T11:50:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
