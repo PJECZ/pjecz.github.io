@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-09-22T16:02:11-00:00</lastmod>
+<lastmod>2022-09-26T08:46:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5009,8 +5009,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2022-09-29T13:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2022-09-29T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2022-09-28T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2022-09-27T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/trigesima-quinta-sesion-ordinaria/</loc>
-<lastmod>2022-09-22T11:00:00-05:00</lastmod>
+<lastmod>2022-09-22T13:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -5024,7 +5052,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/trigesima-quinta-sesion-ordinaria/</loc>
-<lastmod>2022-09-21T11:00:00-05:00</lastmod>
+<lastmod>2022-09-21T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
