@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-09-29T13:47:08-00:00</lastmod>
+<lastmod>2022-09-29T19:57:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5046,6 +5046,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-09-27-acuerdo-se-autoriza-el-uso-opcional-del-cubre-bocas-pjecz/</loc>
 <lastmod>2022-09-27T11:50:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-09-26-acuerdo-listapersonas-admitidas-valoracion-aptitudes/</loc>
+<lastmod>2022-09-26T16:50:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
