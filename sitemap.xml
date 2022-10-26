@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-10-26T09:12:45-00:00</lastmod>
+<lastmod>2022-10-26T17:05:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5109,6 +5109,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/cuadragesima-sesion-ordinaria/</loc>
 <lastmod>2022-10-27T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-10-26-acuerdo-c-137-2022-uso-opcional-del-ususo-del-sistema-de-citas-en-plataforma-en-linea/</loc>
+<lastmod>2022-10-26T16:10:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
