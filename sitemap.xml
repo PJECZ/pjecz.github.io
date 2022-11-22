@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-11-22T13:32:54-00:00</lastmod>
+<lastmod>2022-11-22T17:13:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5256,6 +5256,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-11-03-acuerdo-c-1402022-tribunales-de-enjuiciamiento/</loc>
 <lastmod>2022-11-03T16:10:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-10-03-certificacion-acuerdo-asignaciones-tribunales-laborales-pjecz-2022/</loc>
+<lastmod>2022-11-03T13:10:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
