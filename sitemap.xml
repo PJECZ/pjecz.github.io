@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-11-22T17:46:28-00:00</lastmod>
+<lastmod>2022-11-23T08:41:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5163,8 +5163,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
-<lastmod>2022-11-24T13:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-11-24T13:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -5177,15 +5177,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
-<lastmod>2022-11-24T10:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-11-24T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
-<lastmod>2022-11-23T11:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2022/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2022-11-24T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
