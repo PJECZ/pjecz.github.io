@@ -92,22 +92,25 @@ $(document).ready(function() {
             $('#resultadosDataTable').DataTable().destroy();
         };
 
-        // DataTable con serverSide para obtener solo los datos necesarios
+        // Mostrar tabla
+        $('#resultadosDiv').show();
+
+        // DataTable
         $('#resultadosDataTable').DataTable({
-            lengthChange: false,
-            ordering: false,
-            searching: false,
-            scrollX: true,
-            serverSide: true,
-            ajax: {
-                url: redams_api_url,
-                type: "GET",
-                data: {
-                    distrito_id: $('#distritoSelect').val(),
-                    nombre: $('#nombreInput').val(),
+            'lengthChange': false,
+            'ordering': false,
+            'searching': false,
+            'scrollX': true,
+            'serverSide': true,
+            'ajax': {
+                'url': redams_api_url,
+                'type': "GET",
+                'data': {
+                    'distrito_id': $('#distritoSelect').val(),
+                    'nombre': $('#nombreInput').val(),
                 },
-                dataType: "json",
-                dataSrc: function (response) {
+                'dataType': "json",
+                'dataSrc': function (response) {
                     $('#cargandoButton').hide();
                     $('#consultarButton').show();
                     if (response.data.length > 0) {
@@ -122,26 +125,25 @@ $(document).ready(function() {
                     return response.data;
                 }
             },
-            columns: [
-                { "data": "id" },
+            'columns': [
                 { "data": "distrito_nombre_corto" },
                 { "data": "autoridad_descripcion_corta" },
                 { "data": "nombre" },
                 { "data": "expediente" },
                 { "data": "fecha" }
             ],
-            language: {
-                lengthMenu: "Mostrar _MENU_",
-                search: "Filtrar:",
-                zeroRecords: "No se encontraron registros",
-                info: "Total de registros _TOTAL_",
-                infoEmpty: "No hay registros",
-                infoFiltered: "(_TOTAL_ filtrados de _MAX_ registros)",
-                oPaginate: {
-                    sFirst: "Primero",
-                    sLast: "Último",
-                    sNext: "Siguiente",
-                    sPrevious: "Anterior"
+            'language': {
+                'lengthMenu': "Mostrar _MENU_",
+                'search': "Filtrar:",
+                'zeroRecords': "No se encontraron registros",
+                'info': "Total de registros _TOTAL_",
+                'infoEmpty': "No hay registros",
+                'infoFiltered': "(_TOTAL_ filtrados de _MAX_ registros)",
+                'oPaginate': {
+                    'sFirst': "Primero",
+                    'sLast': "Último",
+                    'sNext': "Siguiente",
+                    'sPrevious': "Anterior"
                 }
             }
         });
