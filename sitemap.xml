@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2022-11-29T16:17:48-00:00</lastmod>
+<lastmod>2022-11-29T17:29:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5186,6 +5186,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2022/cuadragesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2022-11-30T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-11-29-acuerdo-c-159-2022-oralidad-familiar-totalidad-juzgados-sal-tor-mva-vf/</loc>
+<lastmod>2022-11-29T16:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2022/2022-11-29-acuerdo-c-158-2022-auxilio-central-actuarios-juzgados-letrados-civiles-saltillo/</loc>
+<lastmod>2022-11-29T16:10:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
