@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-01-19T21:08:55-00:00</lastmod>
+<lastmod>2023-01-19T21:52:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5229,6 +5229,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-01-19-acuerdo-c-023-2023_convocatorias_2023_cargos_judiciales_vf/</loc>
+<lastmod>2023-01-19T16:55:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-01-19-acuerdo-c-022-2023-_juzgado_auxiliar_hipotecario_central_actuarios_hipotecaria/</loc>
+<lastmod>2023-01-19T16:45:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-01-19-acuerdo-c-021-2023_constancias_procesos_electorales_locales/</loc>
+<lastmod>2023-01-19T16:35:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-01-19-acuerdo-c-015-2023_-pago-alimentos-con-tarjetas-modalidad/</loc>
+<lastmod>2023-01-19T16:25:00-06:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
