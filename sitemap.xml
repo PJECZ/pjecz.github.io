@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-01-23T08:56:13-00:00</lastmod>
+<lastmod>2023-01-23T09:30:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5303,6 +5303,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-01-26T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-01-26T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/sesion-solemne/</loc>
+<lastmod>2023-01-25T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-01-24T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-01-19-acuerdo-c-023-2023_convocatorias_2023_cargos_judiciales_vf/</loc>
 <lastmod>2023-01-19T16:55:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5331,15 +5359,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/tercera-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/tercera-sesion-ordinaria/</loc>
 <lastmod>2023-01-19T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/tercera-sesion-ordinaria/</loc>
-<lastmod>2023-01-19T11:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/tercera-sesion-ordinaria/</loc>
+<lastmod>2023-01-19T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
