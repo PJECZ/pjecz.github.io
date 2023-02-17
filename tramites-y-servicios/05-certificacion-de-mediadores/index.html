@@ -291,7 +291,27 @@
 </tr>
 </tbody>
 </table>
-<p><a href="https://pagos.justiciadigital.gob.mx/carro?clave=F05CM" type="button" class="btn btn-primary btn-lg btn-block text-white">Ir al Portal de Pagos para adquirirlo fácilmente por banca electrónica</a></p>
+<div id="buscarDiv" class="card mb-2">
+    <div class="card-body">
+        <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
+            <input id="clave" name="clave" type="hidden" value="F05CM">
+            <div class="form-group">
+                <label for="distritoSelect">Distrito Judicial:</label>
+                <select id="distritoSelect" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="autoridadSelect">Autoridad:</label>
+                <select id="autoridadSelect" name="autoridad_clave" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="cantidadInput">Cantidad</label>
+                <input type="text" class="form-control" id="cantidadInput" aria-describedby="cantidadHelp">
+                <small id="cantidadHelp" class="form-text text-muted">Números enteros apartir de 1.</small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Contratar servicio</button>
+        </form>
+    </div>
+</div>
     </div>
 </article>
     </main>
@@ -515,6 +535,7 @@
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-noticias-eventos.js"></script>
     <!-- JavaScripts individuales -->
+<script src="https://www.pjecz.gob.mx/js/tramites-y-servicios.js"></script>
 </body>
 
 </html>

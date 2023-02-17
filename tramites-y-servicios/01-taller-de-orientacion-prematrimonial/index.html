@@ -233,7 +233,7 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Fundamento legal:</strong></th>
+<th align="left"><strong>Fundamento legal</strong></th>
 <th align="left">Ley de Hacienda para el Estado de Coahuila de Zaragoza, Artículo 152 Fracción I, Artículo 169</th>
 </tr>
 </thead>
@@ -296,7 +296,28 @@
 </tr>
 </tbody>
 </table>
-<p><a href="https://pagos.justiciadigital.gob.mx/carro?clave=F01TOPM" type="button" class="btn btn-primary btn-lg btn-block text-white">Ir al Portal de Pagos para adquirirlo fácilmente por banca electrónica</a></p>
+<div id="buscarDiv" class="card mb-2">
+    <div class="card-body">
+        <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
+            <input id="clave" name="clave" type="hidden" value="F01TOPM">
+            <div class="form-group">
+                <label for="distritoSelect">Distrito Judicial:</label>
+                <select id="distritoSelect" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="autoridadSelect">Autoridad:</label>
+                <select id="autoridadSelect" name="autoridad_clave" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="cantidadInput">Cantidad</label>
+                <input type="text" class="form-control" id="cantidadInput" name="cantidad" aria-describedby="cantidadHelp">
+                <small id="cantidadHelp" class="form-text text-muted">Números enteros apartir de 1.</small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Contratar servicio</button>
+        </form>
+    </div>
+</div>
+
 <h3>Infografía</h3>
 <p><img class="img-fluid" src="Img-T-infografia-TOP.jpg" alt="TOP"></p>
 <h2>Descargar</h2>
@@ -527,6 +548,7 @@
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-noticias-eventos.js"></script>
     <!-- JavaScripts individuales -->
+<script src="https://www.pjecz.gob.mx/js/tramites-y-servicios.js"></script>
 </body>
 
 </html>
