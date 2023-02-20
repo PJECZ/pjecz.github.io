@@ -3,6 +3,20 @@
 $(document).ready(function() {
     getDistritos();
 
+    // Validar que los select no esten vacíos
+    $('#buscarForm').on('submit', function(event){
+        // Validar que el distrito no este vacío
+        if($("#distritoSelect").val() !== null && $("#autoridadSelect").val() !== null){
+            this.submit();
+        }else {
+            // Mostrar error
+            $("#msjError").append(`<div class="alert alert-danger text-center" rol="alert">Selecciona un distrito y un juzgado </div>`);
+            console.log("error")
+        }
+        // Que no se refresque la página al presionar Enter
+        event.preventDefault();
+    });
+
     // Cambiar el valor del distrito y tomar el id para cargar las autoridades
     $("#distritoSelect").on('change', function() {
 
