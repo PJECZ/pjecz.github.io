@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-02-22T09:35:31-00:00</lastmod>
+<lastmod>2023-02-22T13:59:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9651,7 +9651,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2021/01-enero/</loc>
-<lastmod>2021-01-04T10:30:00-06:00</lastmod>
+<lastmod>2021-01-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -9994,7 +9994,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/11-noviembre/</loc>
-<lastmod>2020-11-01T16:30:00-06:00</lastmod>
+<lastmod>2020-11-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10203,13 +10203,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/news-letters/2020/10-octubre/</loc>
-<lastmod>2020-10-01T16:30:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2020/trigesima-primera-sesion-ordinaria/</loc>
 <lastmod>2020-10-01T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -10219,6 +10212,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/trigesima-primera-sesion-ordinaria-digital/</loc>
 <lastmod>2020-10-01T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2020/09-septiembre/</loc>
+<lastmod>2020-10-01T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2020/10-octubre/</loc>
+<lastmod>2020-10-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10392,15 +10399,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/news-letters/2020/09-septiembre/</loc>
-<lastmod>2020-09-01T16:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-septima-sesion-ordinaria-digital/</loc>
+<lastmod>2020-09-01T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2020/vigesima-septima-sesion-ordinaria-digital/</loc>
-<lastmod>2020-09-01T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/news-letters/2020/08-agosto/</loc>
+<lastmod>2020-09-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10504,13 +10511,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/news-letters/2020/08-agosto/</loc>
-<lastmod>2020-08-01T16:30:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/vigesima-sesion-ordinaria/</loc>
 <lastmod>2020-07-17T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -10574,15 +10574,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/news-letters/2020/07-julio/</loc>
-<lastmod>2020-07-01T16:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2020-07-01T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2020/decima-octava-sesion-ordinaria/</loc>
-<lastmod>2020-07-01T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/news-letters/2020/07-julio/</loc>
+<lastmod>2020-07-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10708,7 +10708,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/06-junio/</loc>
-<lastmod>2020-06-01T16:30:00-05:00</lastmod>
+<lastmod>2020-06-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10876,7 +10876,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/05-mayo/</loc>
-<lastmod>2020-05-01T16:30:00-05:00</lastmod>
+<lastmod>2020-05-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10959,15 +10959,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/news-letters/2020/04-abril/</loc>
-<lastmod>2020-04-01T16:30:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-01-1200-acuerdo-que-posterga-la-suspension-al-30-de-abril/</loc>
+<lastmod>2020-04-01T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2020/2020-04-01-1200-acuerdo-que-posterga-la-suspension-al-30-de-abril/</loc>
-<lastmod>2020-04-01T12:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/news-letters/2020/04-abril/</loc>
+<lastmod>2020-04-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -11002,7 +11002,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/03-marzo/</loc>
-<lastmod>2020-03-01T16:30:00-06:00</lastmod>
+<lastmod>2020-03-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -11037,7 +11037,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/02-febrero/</loc>
-<lastmod>2020-02-01T16:30:00-06:00</lastmod>
+<lastmod>2020-02-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -11072,7 +11072,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2020/01-enero/</loc>
-<lastmod>2020-01-01T16:30:00-06:00</lastmod>
+<lastmod>2020-01-03T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -11121,7 +11121,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/news-letters/2019/12-diciembre/</loc>
-<lastmod>2019-12-01T16:30:00-06:00</lastmod>
+<lastmod>2019-12-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
