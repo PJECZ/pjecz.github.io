@@ -7,8 +7,11 @@ $(document).ready(function() {
 
     // Validar que los select no esten vacíos
     $('#buscarForm').on('submit', function(event){
+        // Concatenar razon social y licitacion en descripcion
+        var descripcion = $("#razonSocialInput").val() + " - " + $("#licitacionInput").val();
+        $("#descripcion").val(descripcion);
+        
         // Validar que el distrito no este vacío
-        //Validar Distritos
         if($("#distritoSelect option:selected").val() !== '0'){
             //Validar Juzgados
             if($("#autoridadSelect option:selected").val() !== '0'){

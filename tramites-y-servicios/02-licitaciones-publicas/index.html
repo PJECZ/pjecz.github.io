@@ -292,13 +292,18 @@
     <div class="card-body">
         <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
             <input id="clave" name="clave" type="hidden" value="F02BLPNOPS">
-            <input type="hidden" id="autoridadST" name="autoridad_clave" value="OM">
+            <input type="hidden" id="autoridadOM" name="autoridad_clave" value="OM">
+            <input type="hidden" id="descripcion" name="descripcion">
             <div class="form-group">
-                <label for="descripcionInput">Razón Social:</label>
-                <input  id="descripcionInput" name="descripcion" placeholder="Escribe la Razón Social" aria-describedby="descripcionHelp" class="md-textarea form-control" rows="3">
+                <label for="razonSocialInput">Razón Social:</label>
+                <input  id="razonSocialInput" placeholder="Escribe la Razón Social" aria-describedby="razonSocialHelp" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="licitacionInput">Número de Licitacion:</label>
+                <input  id="licitacionInput" placeholder="Número de licitacion" aria-describedby="licitacionHelp" class="form-control">
             </div>
             <div id="msjError"></div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
+            <button type="submit" id="button" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
         </form>
     </div>
 </div>
