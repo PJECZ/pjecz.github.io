@@ -117,7 +117,7 @@ $(document).ready(function() {
             }))
             $.each(result.items,function (i, distrito) {
                 $('#distritoSelect').append($('<option>', {
-                    value: distrito["clave"],
+                    value: distrito["id"],
                     text: distrito["nombre"]
                 }));
             })
