@@ -280,26 +280,17 @@
     <div class="card-header">
         <h3 class="card-title text-center mb-0">Ahora puede pagar por banca electrónica</h3>
         <p class="card-text text-muted text-center">Elija el distrito, luego el juzgado u oficina y la cantidad para continuar el proceso en el <b>Portal de Pagos</b></p>
-    </div>  
+    </div>
     <div class="card-body">
-        <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
-            <input id="clave" name="clave" type="hidden" value="F06VECMP">
-             <div class="form-group">
-                <label for="solodistritoSelect">Distrito Judicial:</label>
-                <select id="solodistritoSelect" class="form-control"></select>
-            </div>
+         <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
+            <input id="clave" name="clave" type="hidden" value="F04CPMM">
             <div class="form-group">
-                <label for="autoridadSelect">Juzgado u Oficina:</label>
-                <input type="text" for="autoridadST" value="CENTRO DE MEDIOS ALTERNOS DE SOLUCION DE CONTROVERSIAS" class="form-control" disabled>
-                <input type="hidden" id="autoridadST" name="autoridad_clave" value="ONJ-CEMASC" class="form-control">
+                <label for="cemascautoridadSelect">Juzgado u Oficina:</label>
+                <select id="cemascautoridadSelect" name="autoridad_clave" class="form-control"></select>
             </div>
             <div class="form-group">
                 <label for="cantidadInput">Cantidad:</label>
                 <input type="text" class="form-control" id="cantidadInput" value="1" name="cantidad" aria-describedby="cantidadHelp">
-            </div>
-            <div class="form-group">
-                <label for="descripcionInput">Descripción:</label>
-                <input type="text" class="form-control" id="descripcionInput" name="descripcion" aria-describedby="descripcionHelp">
             </div>
             <div id="msjError"></div>
             <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>

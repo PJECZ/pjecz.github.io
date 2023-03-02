@@ -293,19 +293,17 @@
         <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
             <input id="clave" name="clave" type="hidden" value="F01TOPM">
             <div class="form-group">
-                <label for="distritoSelect">Distrito Judicial:</label>
-                <select id="distritoSelect" class="form-control"></select>
+                <input type="hidden" id="autoridadST" name="autoridad_clave" value="OM" class="form-control">
             </div>
             <div class="form-group">
-                <label for="autoridadSelect">Juzgado u Oficina:</label>
-                <select id="autoridadSelect" name="autoridad_clave" class="form-control"></select>
+                <input type="hidden" class="form-control" id="cantidadInput" value="1" name="cantidad" aria-describedby="cantidadHelp">
             </div>
             <div class="form-group">
-                <label for="cantidadInput">Cantidad:</label>
-                <input type="text" class="form-control" id="cantidadInput" value="1" name="cantidad" aria-describedby="cantidadHelp">
+                <label for="descripcionInput">Razón Social:</label>
+                <input  id="descripcionInput" name="descripcion" placeholder="Escribe la Razón Social" aria-describedby="descripcionHelp" class="md-textarea form-control" rows="3">
             </div>
             <div id="msjError"></div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
+            <button type="submit" id="pago" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
         </form>
     </div>
 </div>
