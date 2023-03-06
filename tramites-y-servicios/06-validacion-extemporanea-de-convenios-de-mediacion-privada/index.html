@@ -279,21 +279,17 @@
 <div id="buscarDiv" class="card mb-2">
     <div class="card-header">
         <h3 class="card-title text-center mb-0">Ahora puede pagar por banca electrónica</h3>
-        <p class="card-text text-muted text-center">Elija el juzgado u oficina, la cantidad y al dar click en <b>Ir al portal de pagos</b> será enviado al formulario del sistema bancario que le solicitará sus datos personales.</p>
+        <p class="card-text text-muted text-center">Al dar click en <b>Ir al portal de pagos</b> será enviado al formulario del sistema bancario que le solicitará sus datos personales.</p>
     </div>
     <div class="card-body">
          <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
             <input id="clave" name="clave" type="hidden" value="F06VECMP">
             <div class="form-group">
-                <label for="cemascautoridadSelect">Juzgado u Oficina:</label>
-                <select id="cemascautoridadSelect" name="autoridad_clave" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <label for="cantidadInput">Cantidad:</label>
-                <input type="text" class="form-control" id="cantidadInput" value="1" name="cantidad" aria-describedby="cantidadHelp">
+                <label for="cemascSelect">Elige una Oficina:</label>
+                <select id="cemascSelect" name="autoridad_clave" class="form-control"></select>
             </div>
             <div id="msjError"></div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
+            <button type="submit" id="VECMP" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
         </form>
     </div>
 </div>

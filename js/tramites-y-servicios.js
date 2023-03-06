@@ -2,45 +2,180 @@
 
 $(document).ready(function() {
     getDistritos();
+    getDistritosClave();
     getCemascAutoridades();
     getdefensoriautoridades();
 
-    // Validar que los select no esten vacíos
-    $('#buscarForm').on('submit', function(event){
-        // Concatenar razon social y licitacion en descripcion
-        var descripcion = $("#razonSocialInput").val() + " - " + $("#licitacionInput").val();
-        $("#descripcion").val(descripcion);
-        
-        // Validar que el distrito no este vacío
-        if($("#distritoSelect option:selected").val() !== '0'){
-            //Validar Juzgados
-            if($("#autoridadSelect option:selected").val() !== '0'){
-                // Validar CEMASC
-                if(  $("#cemascautoridadSelect").length ){
-                    if($("#cemascautoridadSelect option:selected").val() !== '0'){
-                        this.submit();
-                    }else{
-                        $("#msjError").append(`<div id='errAut' class="alert alert-danger text-center" rol="alert">Selecciona una Oficina CEMASC</div>`);
-                    }
-                    
-                }else{
-
-                    this.submit();
-                }
-
-            }else{
-                $("#msjError").append(`<div id='errAut' class="alert alert-danger text-center" rol="alert">Selecciona un Juzgado </div>`);
-            }
-        }else {
-            // Mostrar error
-            $("#msjError").append(`<div id='errDist' class="alert alert-danger text-center" rol="alert">Selecciona un Distrito</div>`);
-            console.log("error")
+    // Validación 01 TALLER DE ORIENTACIÓN
+    function validateT(){
+        if($("#defensoriaSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
         }
-        // Que no se refresque la página al presionar Enter
+        else {
+            errorMessage('Selecciona una Oficina');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#TOPM").bind("click", validateT);
+
+    // Validación 02 LICITACIÓNES PÚBLICAS
+    function validateLP(){
+        if($("#razonSocial").val().trim() === '' || $("#licitacion").val().trim() === ''){
+            errorMessage('Llene todos los campos');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        } else {
+            var descripcion = $("#razonSocial").val() + " - " + $("#licitacion").val();
+            $("#descripcion").val(descripcion)
+            document.getElementById("buscarForm").submit(); 
+            return false;
+        }
+    }
+    $("#BLPNOPS").bind("click", validateLP);
+
+    // Validación 04 CURSO DE MEDIACIÓN
+    function validateCM(){
+        if($("#cemascSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else {
+            errorMessage('Selecciona una Oficina');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#CPMM").bind("click", validateCM);
+
+    // Validación 05 CERTIFICADO DE MEDIADORES
+    function validateCDM(){
+        if($("#cemascSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else {
+            errorMessage('Selecciona una Oficina');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#CM").bind("click", validateCDM);
+
+    // Validación 06 VALIDACIÓN EXTEMPORANEA
+    function validateVE(){
+        if($("#cemascSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Elige una Oficina');  
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        } 
+    }
+    $("#VECMP").bind("click", validateVE);
+
+    // Validación 08 CURSO CAPACITACIÓN PARA EXTERNOS
+    function validateCCI(){
+        if($("#distritoClaveSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Elige una Distrito');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);  
+        } 
+    }
+    $("#CCIEJ").bind("click", validateCCI);
+
+    // Validación 09 COPIA SIMPLE
+    function validateCS(){
+        if($("#distritoSelect option:selected").val() !== "0" && $("#autoridadSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Llene los campos');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#CS").bind("click", validateCS);
+
+    // Validación 10 COPIA CERTIFICADA
+    function validateCC(){
+        if($("#distritoSelect option:selected").val() !== "0" && $("#autoridadSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Llene los campos');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#CC").bind("click", validateCC);
+
+    // Validación 11 CONSTANCIA DE NO REGISTRO REDAM
+    function validateREDAM(){
+        if($("#distritoClaveSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Elige una Distrito');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#REDAM").bind("click", validateREDAM);
+
+    // Validación 12 GRABACIÓN DE LA AUDIENCIA
+    function validateCDDVD(){
+        if($("#distritoSelect option:selected").val() !== "0" && $("#autoridadSelect option:selected").val() !== "0"){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{ 
+            errorMessage('Llene los campos');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#CDDVD").bind("click", validateCDDVD);
+
+    // Validación 16 RENTA DE INSTALACIONES
+    function validateRI(){
+        if($("#distritoClaveSelect option:selected").val() !== "0" && $("#descripcionInput").val().trim() !== ''){
+            document.getElementById("buscarForm").submit(); 
+        }
+        else{
+            errorMessage('Elige una Distrito y escribe una descripción');
+            setTimeout(() => {
+                $("#msjError").remove();
+            },5000);
+        }
+    }
+    $("#RI").bind("click", validateRI);
+
+   
+    // Que no se refresque la página al presionar Enter y se restablezca el formulario después de enviar
+    $('#buscarForm').on('submit', function(event){
+        document.getElementById("buscarForm").reset(); 
         event.preventDefault();
+
     });
 
-    
+    // Mensaje de error alert
+    const errorMessage = (text) => {
+        $("#msjError").append(`<div id='errMsj' class="alert alert-danger text-center" rol="alert">${text}</div>`);
+    }
+
+
     // Cambiar el valor del distrito y tomar el id para cargar las autoridades
     $("#distritoSelect").on('change', function() {
 
@@ -49,7 +184,7 @@ $(document).ready(function() {
 
     });
 
-    // URL de la API
+    // URL de la API Distrito ID
     function get_api_distritos(){
         var distritos_api_url;
         switch (location.hostname) {
@@ -63,7 +198,18 @@ $(document).ready(function() {
         return distritos_api_url;
     }
 
-    // URL de la API
+    // URL de la API solo Distritos y clave
+    function get_api_url_only_distritos(){
+        var only_distritos_api_url;
+        switch (location.hostname){
+            // para desarrollo
+            case "172.30.37.233": only_distritos_api_url = "http://172.30.37.233:8001/v2/distritos?solo_distritos=true"; break;
+            default:  only_distritos_api_url = "https://plataforma-web-api.justiciadigital.gob.mx/v2/distritos?solo_distritos=true";
+        }
+        return only_distritos_api_url;
+    }
+
+    // URL de la API Autoridades por distrito_id
     function get_api_autoridades(id = 0){
         var autoridad_api_url;
         switch(location.hostname){
@@ -102,12 +248,11 @@ $(document).ready(function() {
             // Para producción
             default: autoridad_defensoria_api_url = 'https://plataforma-web-api.justiciadigital.gob.mx/v2/autoridades/defensorias'; break;
         }
-        console.log(autoridad_defensoria_api_url)
         return autoridad_defensoria_api_url;
     }
     
    
-    // Obtener Distritos 
+    // Obtener Distritos por ID
     function getDistritos(){
         var api_distritos = get_api_distritos();
 
@@ -121,6 +266,30 @@ $(document).ready(function() {
             $.each(result.items,function (i, distrito) {
                 $('#distritoSelect').append($('<option>', {
                     value: distrito["id"],
+                    text: distrito["nombre"]
+                }));
+            })
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }       
+
+
+    // Obtener Distritos por CLAVE
+    function getDistritosClave(){
+        var api_distritos_clave = get_api_url_only_distritos();
+
+        fetch(api_distritos_clave)
+        .then(res => res.json())
+        .then(result => {
+            $('#distritoClaveSelect').append($('<option>', {
+                value: 0,
+                text: 'Selecciona un Distrito'
+            }))
+            $.each(result.items,function (i, distrito) {
+                $('#distritoClaveSelect').append($('<option>', {
+                    value: distrito["clave"],
                     text: distrito["nombre"]
                 }));
             })
@@ -164,13 +333,12 @@ $(document).ready(function() {
         fetch(api_url)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
-            $('#cemascautoridadSelect').append($('<option>', {
+            $('#cemascSelect').append($('<option>', {
                 value: 0,
-                text: 'Selecciona una Oficina CEMASC'
+                text: 'Selecciona:'
             }))
             $.each(data.items, function (i, autoridades) {
-                $('#cemascautoridadSelect').append($('<option>', {
+                $('#cemascSelect').append($('<option>', {
                     value: autoridades["clave"],
                     text: autoridades["descripcion"]
                 }));
@@ -190,13 +358,12 @@ $(document).ready(function() {
         fetch(api_url)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
-            $('#defensoriautoridadSelect').append($('<option>', {
+            $('#defensoriaSelect').append($('<option>', {
                 value: 0,
-                text: 'Selecciona una Oficina de Defensoría'
+                text: 'Selecciona:'
             }))
             $.each(data.items, function (i, autoridades) {
-                $('#defensoriautoridadSelect').append($('<option>', {
+                $('#defensoriaSelect').append($('<option>', {
                     value: autoridades["clave"],
                     text: autoridades["descripcion"]
                 }));
