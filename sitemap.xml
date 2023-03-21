@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-03-17T18:28:19-00:00</lastmod>
+<lastmod>2023-03-21T06:46:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5366,6 +5366,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-03-23T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-03-23T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-03-22T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-03-22T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/noticias/2023/2023-03-17-instalacion-del-consejo-consultivo/</loc>
 <lastmod>2023-03-17T12:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5381,7 +5409,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/decima-primera-sesion-ordinaria/</loc>
-<lastmod>2023-03-16T11:00:00-06:00</lastmod>
+<lastmod>2023-03-16T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -5395,7 +5423,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/decima-primera-sesion-ordinaria/</loc>
-<lastmod>2023-03-15T13:00:00-06:00</lastmod>
+<lastmod>2023-03-15T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
