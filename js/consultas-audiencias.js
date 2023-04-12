@@ -145,7 +145,7 @@ function consulta(api, id = 0, anio = 0) {
         case "distritos":
             switch (location.hostname) {
                 case "localhost":
-                    // Para desarrollo
+                    //Para desarrollo
                     distritos_plataforma_web_api_url = "http://localhost:8001/distritos";
                     break;
                 case "127.0.0.1":
@@ -277,13 +277,19 @@ function resultadoConsulta(autoridad, anio, audiencia) {
     switch (audiencia_categoria) {
         case "CIVIL FAMILIAR MERCANTIL LETRADO TCYA":
             var hiddencolumns = [
-                {
-                    'targets': [0],
-                    'visible': true,
-                    'searchable': true,
-                    'type': 'date',
-                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
-                }, // tiempo
+                { 'targets': [0], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [2], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [3], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [4], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [5], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [6], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [7], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [8], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [9], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [10], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [11], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
@@ -300,13 +306,19 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "MATERIA ACUSATORIO PENAL ORAL":
             var hiddencolumns = [
-                {
-                    'targets': [0],
-                    'visible': true,
-                    'searchable': true,
-                    'type': 'date',
-                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
-                }, // tiempo
+                { 'targets': [0], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [2], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [3], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [4], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [5], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [6], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [7], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [8], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [9], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [10], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [11], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': false, 'searchable': false }, // expediente
                 { 'targets': [3], 'visible': false, 'searchable': false }, // actores
@@ -323,13 +335,19 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "SALAS":
             var hiddencolumns = [
-                {
-                    'targets': [0],
-                    'visible': true,
-                    'searchable': true,
-                    'type': 'date',
-                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
-                }, // tiempo
+                { 'targets': [0], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [2], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [3], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [4], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [5], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [6], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [7], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [8], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [9], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [10], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [11], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+    
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
@@ -346,13 +364,19 @@ function resultadoConsulta(autoridad, anio, audiencia) {
             break;
         case "DISTRITALES":
             var hiddencolumns = [
-                {
-                    'targets': [0],
-                    'visible': true,
-                    'searchable': true,
-                    'type': 'date',
-                    'render': function (data, type, row) { return moment.utc(data).local().format("lll"); }
-                }, // tiempo
+                { 'targets': [0], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [2], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [3], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [4], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [5], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [6], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [7], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [8], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [9], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [10], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                { 'targets': [11], 'visible': true, 'searchable': true, 'type': 'date', 'render': function (data, type, row) { return data; } }, // tiempo
+                
                 { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
                 { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
                 { 'targets': [3], 'visible': true, 'searchable': true }, // actores
