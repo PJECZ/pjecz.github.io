@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-04-17T21:08:06-00:00</lastmod>
+<lastmod>2023-04-17T21:09:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3602,6 +3602,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/magistrados/gricelda-elizalde-castellanos/</loc>
+<lastmod>2023-04-17T16:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/biblioteca-digital/guia-para-la-incorporacion-de-la-perspectiva-de-genero-en-las-estrategias-de-desarrollo-economico-local/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3625,6 +3632,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/observatorio-judicial/integracion/guillermo-prieto-salinas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/magistrados/gustavo-sergio-lopez-arizpe/</loc>
+<lastmod>2020-04-17T16:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
