@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-04-18T11:25:20-00:00</lastmod>
+<lastmod>2023-04-18T14:28:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5380,13 +5380,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/decima-quinta-sesion-ordinaria/</loc>
-<lastmod>2023-04-20T11:00:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/decima-quinta-sesion-ordinaria/</loc>
 <lastmod>2023-04-20T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5396,6 +5389,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/decima-quinta-sesion-ordinaria/</loc>
 <lastmod>2023-04-19T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/decima-quinta-sesion-ordinaria/</loc>
+<lastmod>2023-04-19T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
