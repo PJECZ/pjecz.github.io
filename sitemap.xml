@@ -5,20 +5,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-04-26T12:39:59-00:00</lastmod>
+<lastmod>2023-04-26T14:23:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/agosto/01-de-agosto---semana-mundial-de-la-lactancia/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/08-agosto/01-agosto/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/08-agosto/01-de-agosto---semana-mundial-de-la-lactancia/</loc>
+<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/agosto/01-de-agosto---semana-mundial-de-la-lactancia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -39,7 +39,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/01-de-octubre---dia-internacional-de-las-personas-de-edad/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/01-enero/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -47,6 +47,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/01-marzo/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/01-octubre/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -67,7 +74,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/02-de-octubre---dia-internacional-de-la-no-violencia/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/02-febrero/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -81,8 +88,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/02-octubre/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/03-busqueda-de-datos/</loc>
 <lastmod>2023-02-07T13:51:01-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -186,6 +207,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/08-agosto/09-agosto/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/09-copias-simples/</loc>
 <lastmod>2023-02-07T13:51:01-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -194,13 +222,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/agosto/09-de-agosto---dia-internacional-de-los-pueblos-indigenas/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/08-agosto/09-de-agosto---dia-internacional-de-los-pueblos-indigenas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -270,13 +291,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/11-de-octubre---dia-internacional-de-la-nina/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/11-noviembre/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -284,14 +298,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/junio/12-de-junio---dia-mundial-contra-el-trabajo-infantil/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/11-octubre/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/12-de-junio---dia-mundial-contra-el-trabajo-infantil/</loc>
+<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/junio/12-de-junio---dia-mundial-contra-el-trabajo-infantil/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -307,6 +321,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/12-grabacion-de-la-audiencia/</loc>
 <lastmod>2020-09-24T11:32:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/12-junio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -340,21 +361,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/15-de-junio---dia-mundial-de-toma-de-conciencia-del-abuso-y-maltrato-en-la-vejez/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/octubre/15-de-octubre---dia-internacional-de-las-mujeres-rurales/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/15-de-octubre---dia-internacional-de-las-mujeres-rurales/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -368,14 +375,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/abril/16-de-abril---dia-mundial-contra-la-esclavitud-infantil/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/15-junio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/04-abril/16-de-abril---dia-mundial-contra-la-esclavitud-infantil/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/15-octubre/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/04-abril/16-abril/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/abril/16-de-abril---dia-mundial-contra-la-esclavitud-infantil/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -389,7 +410,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/11-noviembre/16-de-noviembre---dia-internacional-para-la-tolerancia/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/11-noviembre/16-noviembre/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -417,7 +438,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/05-mayo/17-de-mayo---dia-internacional-contra-la-homofobia-la-transfobia-y-la-bifobia/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/05-mayo/17-mayo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -431,7 +452,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/19-de-junio---dia-internacional-para-la-eliminacion-de-la-violencia-sexual-en-los-conflictos/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/19-junio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -466,7 +487,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/20-de-junio---dia-mundial-de-los-refugiados/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/20-junio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -865,21 +886,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/23-de-octubre---dia-mundial-de-accion-para-la-supervivencia-infantil/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/septiembre/23-de-septiembre---dia-internacional-de-las-lenguas-de-senas/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/23-de-septiembre---dia-internacional-de-las-lenguas-de-senas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -893,7 +900,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/23-de-septiembre---dia-internacional-en-contra-de-la-explotacion-y-trafico-de-mujeres-ninas-y-ninos/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/10-octubre/23-octubre/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/23-septiembre-e/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/23-septiembre-l/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -914,14 +935,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/05-mayo/24-de-mayo---dia-internacional-de-las-mujeres-por-la-paz-y-el-desarme/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/24-marzo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/24-marzo/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/05-mayo/24-mayo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -949,7 +970,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/26-de-junio---dia-internacional-en-apoyo-de-las-victimas-de-la-tortura/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/26-junio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -963,7 +984,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/28-de-junio---dia-internacional-del-orgullo-lgbt-o-dia-del-orgullo-gay/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/06-junio/28-junio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -991,14 +1012,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/abril/30-de-abril---dia-del-nino-en-mexico/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/04-abril/30-abril/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/04-abril/30-de-abril---dia-del-nino-en-mexico/</loc>
+<loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/abril/30-de-abril---dia-del-nino-en-mexico/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -1012,13 +1033,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/07-julio/30-de-julio---dia-mundial-contra-la-trata-de-personas/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/sabias-que/septiembre/30-de-septiembre---dia-internacional-de-las-personas-sordas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1026,7 +1040,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/30-de-septiembre---dia-internacional-de-las-personas-sordas/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/07-julio/30-julio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/09-septiembre/30-septiembre/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
