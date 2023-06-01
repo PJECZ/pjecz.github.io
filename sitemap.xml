@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-05-31T21:19:04-00:00</lastmod>
+<lastmod>2023-06-01T10:17:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5723,8 +5723,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-05-31-acuerdo-c-0842023-especializacion-en-materia-de-ejecucion-penal/</loc>
+<lastmod>2023-05-31T17:10:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-05-31-acuerdo-c-083-2023-aprueba-lista-personas-aprobaron-examen-practico/</loc>
-<lastmod>2023-05-31T21:10:00-05:00</lastmod>
+<lastmod>2023-05-31T16:10:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
