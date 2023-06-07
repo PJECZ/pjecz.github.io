@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-06-06T16:24:16-00:00</lastmod>
+<lastmod>2023-06-06T18:06:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5739,6 +5739,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-06-06-acuerdo-modificacion-convocatoria-actuarios-notificadores-em042023/</loc>
 <lastmod>2023-06-06T17:10:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2023/2023-06-06-reunion-de-trabajo-comision-de-presupuesto/</loc>
+<lastmod>2023-06-06T12:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
