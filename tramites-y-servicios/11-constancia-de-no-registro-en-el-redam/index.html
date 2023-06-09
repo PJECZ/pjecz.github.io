@@ -305,9 +305,14 @@
         <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
             <input id="clave" name="clave" type="hidden" value="F11CNRREDAM">
             <input type="hidden" id="autoridadST" name="autoridad_clave" value="ST" class="form-control">
+            <input type="hidden" id="descripcion" name="descripcion">
             <div class="form-group">
                 <label for="distritoClaveSelect">Distrito Judicial:</label>
                 <select id="distritoClaveSelect" name="distrito_clave" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="nombreREDAM">Nombre completo de quien solicita la constancia REDAM:</label>
+                <input  id="nombreREDAM" placeholder="Escribe el nombre completo" aria-describedby="nombreREDAMHelp" class="form-control">
             </div>
             <div id="msjError"></div>
             <button type="submit" id="REDAM" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
