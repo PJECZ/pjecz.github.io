@@ -122,11 +122,14 @@ $(document).ready(function() {
 
     // Validación 11 CONSTANCIA DE NO REGISTRO REDAM
     function validateREDAM(){
-        if($("#distritoClaveSelect option:selected").val() !== "0"){
+        if($("#distritoClaveSelect option:selected").val() !== "0" || $("#nombreREDAM").val().trim() === ''){
+            var descripcion = $("#nombreREDAM").val();
+            $("#descripcion").val(descripcion)
             document.getElementById("buscarForm").submit(); 
+            return false;
         }
         else{
-            errorMessage('Elige una Distrito');
+            errorMessage('Llene todos los campos');
             setTimeout(() => {
                 $("#msjError").remove();
             },5000);
