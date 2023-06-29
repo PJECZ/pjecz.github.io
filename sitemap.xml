@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-06-29T10:36:15-00:00</lastmod>
+<lastmod>2023-06-29T17:04:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5900,6 +5900,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/vigesima-primera-sesion-ordinaria/</loc>
 <lastmod>2023-05-31T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-06-29-acuerdo-c-102-2023-ley-proteccion-no-fumadores/</loc>
+<lastmod>2023-05-29T14:40:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-06-28-acuerdo-c-101-2023-protocolo-osieg/</loc>
+<lastmod>2023-05-28T14:40:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
