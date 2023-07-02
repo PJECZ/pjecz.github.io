@@ -1,2 +1,11 @@
 User-Agent: *
-Disallow: /author /beta /category /css /feeds /js /json /tag /theme
+Disallow: /author
+Disallow: /category
+Disallow: /consultas/js
+Disallow: /consultas/theme
+Disallow: /css
+Disallow: /feeds
+Disallow: /js
+Disallow: /json
+Disallow: /tag
+Disallow: /theme

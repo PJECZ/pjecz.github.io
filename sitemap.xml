@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-06-30T13:53:00-00:00</lastmod>
+<lastmod>2023-07-02T13:55:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1173,13 +1173,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/abogados-registrados/</loc>
-<lastmod>2021-02-15T10:38:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/sentencias-relevantes-sobre-derechos-humanos-e-igualdad-de-genero/suprema-corte-de-justicia-de-la-nacion/documentos-sobre-derechos-humanos/accion-de-inconstitucionalidad-02-2010/</loc>
 <lastmod>2020-10-23T10:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1217,13 +1210,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/interna-2023/actuario_a_notificador_a/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/articulos/acuerdos/</loc>
-<lastmod>2020-12-16T13:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -1600,13 +1586,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/audiencias/</loc>
-<lastmod>2020-05-20T12:32:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/auditoria-interna/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1616,13 +1595,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/aviso-de-privacidad/</loc>
 <lastmod>2020-04-15T15:32:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/poder-en-linea/aviso-de-privacidad.html</loc>
-<lastmod>2021-05-18T11:55:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -1658,13 +1630,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/quienes-somos/bienvenida/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/boletas/</loc>
-<lastmod>2021-09-14T12:55:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2055,13 +2020,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/articulos/comunicados-noticias/</loc>
-<lastmod>2021-03-21T09:50:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2078,13 +2036,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/</loc>
-<lastmod>2022-03-08T12:20:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2552,13 +2503,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/edictos/</loc>
-<lastmod>2020-05-20T12:32:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/magistrados/eduardo-prado-garcia/</loc>
 <lastmod>2020-12-04T11:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2645,13 +2589,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/examen-de-meritos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/expediente-virtual/</loc>
-<lastmod>2021-09-14T12:55:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -3721,13 +3658,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/fuentes-rss/</loc>
-<lastmod>2021-03-21T09:55:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/funciones/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3877,13 +3807,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/biblioteca-digital/glosario-de-genero/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/glosas/</loc>
-<lastmod>2021-06-22T15:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4311,20 +4234,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/listado-de-personas-certificadas-vigentes-como-facilitadoras-privadas-en-mediacion/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/</loc>
-<lastmod>2020-05-20T12:32:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/listas-especiales/</loc>
-<lastmod>2020-05-08T14:32:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4883,13 +4792,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/peritos/</loc>
-<lastmod>2021-02-22T13:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/plan-estrategico-judicial-coahuila-2025/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4906,13 +4808,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/pleno/pleno/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/poder-en-linea/</loc>
-<lastmod>2023-04-24T12:40:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5114,13 +5009,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/redam/</loc>
-<lastmod>2022-06-08T12:50:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/comisiones/reforma-de-la-ley-organica-y-reglamentos-interiores/</loc>
 <lastmod>2020-11-09T14:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5158,13 +5046,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/biblioteca-digital/reparaciones-con-perspectiva-de-genero/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/repsvm/</loc>
-<lastmod>2022-03-09T07:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5345,13 +5226,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/sentencias/</loc>
-<lastmod>2020-05-20T12:32:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/comisiones/sistema-de-identificacion-palmar/</loc>
 <lastmod>2020-11-12T15:56:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5401,22 +5275,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/consultas/poder-en-linea/terminos-condiciones.html</loc>
-<lastmod>2021-05-18T11:55:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/mujer-segura/terminos-de-uso/</loc>
 <lastmod>2021-03-08T14:01:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/tesis-jurisprudencias/</loc>
-<lastmod>2021-12-13T10:08:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5501,13 +5361,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/tramites-y-servicios/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/</loc>
-<lastmod>2020-12-16T13:29:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5620,13 +5473,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-laborales/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/consultas/ubicacion-expedientes/</loc>
-<lastmod>2021-02-17T14:22:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
