@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-07-03T12:29:22-00:00</lastmod>
+<lastmod>2023-07-03T13:29:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1602,6 +1602,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/mujer-segura/aviso-de-privacidad/</loc>
 <lastmod>2021-03-08T14:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/poder-en-linea/aviso-de-privacidad.html</loc>
+<lastmod>2021-05-18T11:55:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4813,6 +4820,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/poder-en-linea/</loc>
+<lastmod>2023-04-24T12:40:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/podcasts/poder-judicial-al-aire/</loc>
 <lastmod>2020-10-30T12:38:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5270,6 +5284,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-distritales/tercer-tribunal-distrital/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/poder-en-linea/terminos-condiciones.html</loc>
+<lastmod>2021-05-18T11:55:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
