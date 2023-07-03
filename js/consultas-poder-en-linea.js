@@ -1,3 +1,3 @@
 setTimeout(function(){
-    window.location.href = 'https://www.pjecz.gob.mx/consultas/poder-en-linea/';
+    window.location.href = 'https://poderenlinea.gob.mx/';
 }, 2000);
