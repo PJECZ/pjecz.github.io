@@ -1,0 +1,180 @@
+body {
+    font-size: 16px;
+}
+
+#miencabezado {
+    font-size: 16px; /* Tamaño de fuente fijo para el encabezado */
+}
+
+/* Modo oscuro */
+.oscuro body{
+    background-color: #1f1f1f !important;
+    color: #f1eded !important;
+}
+
+.oscuro .footer-light{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro section{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro article{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro .container-oscuro{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro #navegacion_logo {
+    filter: invert(100%);
+}
+
+.oscuro .breadcrumb {
+    background-color: #434343 !important;
+    padding-left: 10px;
+}
+
+.oscuro .breadcrumb-item :active{
+    color: #d8d8d8 !important;
+}
+
+.oscuro h1 {
+    color: #f0eded !important;
+}
+
+.oscuro h2 {
+    color: #f0eded !important;
+}
+
+.oscuro h3 {
+    color: #3492ff !important;
+}
+
+.oscuro h6 {
+    color: #f0eded !important;
+}
+
+ .oscuro th {
+    color: #f0eded !important;
+}
+
+.oscuro p {
+    color: #828389 !important;
+}
+
+.oscuro a:not(.dropdown-item) {
+    color: #d5c69c !important;
+}
+
+.oscuro .card-body {
+    background-color: #434346 !important;
+}
+
+.oscuro header {
+    background-color: #1f1f1f !important;
+}
+
+.oscuro main {
+    background-color: #1f1f1f !important;
+}
+
+/* Boton para ir al inicio */
+.boton-flotante {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #004360;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 999;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+.boton-flotante:hover {
+    background-color: #025b81;
+}
+
+/* Estilo para tabla en modo oscuro */
+.tabla {
+    border-collapse: collapse;
+}
+  
+.oscuro td {
+    padding: 8px !important;
+    border: 1px solid #555 !important;
+    color: #fff !important;
+}
+  
+.oscuro .remarcada {
+    background-color: #464646 !important;
+    color: #d1d0d0 !important;
+}
+  
+/* Botones de accesibilidades */
+
+div.accessibility-bar {
+    position: fixed;
+    width: 55px;
+    margin-top: 50px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(100, 100, 100, 0.4);
+    right: 0;
+    z-index: 999;
+}
+  
+div.accessibility-bar ul.accessibility-barList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+div.accessibility-bar li.accessibility-barItem {
+    height: 50px;
+    position: relative;
+}
+  
+div.accessibility-bar li.accessibility-barItem button {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15%;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.4);
+    transition: all 0.3s linear;
+}
+  
+div.accessibility-bar li:nth-child(1) button {
+    background: #2e2d2d;
+}
+
+div.accessibility-bar li:nth-child(2) button {
+    background: #4267b2;
+}
+
+div.accessibility-bar li:nth-child(3) button {
+    background: #1da1f2;
+}
+  
+div.accessibility-bar li.accessibility-barItem button i {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 25px;
+}
+  
+

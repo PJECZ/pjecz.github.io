@@ -56,6 +56,8 @@
     <script src="https://use.fontawesome.com/af111b85f5.js"></script>
     <!-- Stylesheets del tema -->
     <link rel="stylesheet" href="https://www.pjecz.gob.mx/theme/css/pjecz-2020-10.css">
+    <!-- Stylesheets del tema accesibilidades -->
+    <link rel="stylesheet" href="https://www.pjecz.gob.mx/theme/css/accesibilidades.css">
     <!-- Stylesheets individuales -->
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164475591-1"></script>
@@ -189,7 +191,24 @@
             </div>
         </div>
     </div>
-</nav><!-- Encabezado -->
+</nav><!-- Boton regresar al inicio -->   
+<div>
+    <button class="boton-flotante"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+</div>
+<!-- Botones de accesibilidades -->
+<div class="accessibility-bar">
+    <ul class="accessibility-barList">
+        <li class="accessibility-barItem">
+            <button id="toggle-theme-btn" onclick="cambiarModo()"><i id="icono-tema" class="fa fa-moon-o" aria-hidden="true"></i></button>
+        </li>
+        <li class="accessibility-barItem">
+            <button id="increase-font-size" onclick="increaseFontSize()">A+</button>
+        </li>
+        <li class="accessibility-barItem">
+            <button id="decrease-font-size" onclick="decreaseFontSize()">A-</button>
+        </li>
+    </ul>
+</div><!-- Encabezado -->
 <div class="py-2">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -574,6 +593,7 @@
     <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tablas.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="https://www.pjecz.gob.mx/theme/js/inicial-noticias-eventos.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/accesibilidades.js"></script>
     <!-- JavaScripts individuales -->
 </body>
 
