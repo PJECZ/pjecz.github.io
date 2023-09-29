@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-09-28T16:14:33-00:00</lastmod>
+<lastmod>2023-09-28T18:22:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5642,6 +5642,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-09-28-acuerdo-c-1532023-lista-de-reserva-em-2023/</loc>
+<lastmod>2023-09-28T14:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
