@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-10-01T14:53:39-00:00</lastmod>
+<lastmod>2023-10-02T07:59:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5646,6 +5646,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2023-10-05T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2023-10-05T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2023-10-05T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2023-10-04T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-09-29-acuerdo_adecuacion_horario_ps_pjecz/</loc>
 <lastmod>2023-09-29T14:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5660,6 +5688,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2023-09-28T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/trigesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2023-09-28T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5669,13 +5704,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2023/primera-sesion-ordinaria-del-pleno-del-tribunal-constitucional-local-2023-09-28/</loc>
 <lastmod>2023-09-28T11:30:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/trigesima-sexta-sesion-ordinaria/</loc>
-<lastmod>2023-09-28T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
