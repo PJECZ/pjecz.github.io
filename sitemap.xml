@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-10-09T15:14:09-00:00</lastmod>
+<lastmod>2023-10-10T11:36:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5653,13 +5653,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/trigesima-octava-sesion-ordinaria/</loc>
-<lastmod>2023-10-11T13:00:00-05:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/trigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2023-10-11T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5667,8 +5660,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/trigesima-octava-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/trigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2023-10-11T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/trigesima-octava-sesion-ordinaria/</loc>
+<lastmod>2023-10-11T09:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
