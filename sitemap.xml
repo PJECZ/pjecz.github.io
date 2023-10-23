@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-10-23T06:58:28-00:00</lastmod>
+<lastmod>2023-10-23T15:44:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5674,8 +5674,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-10-19-acuerdo-c-1692023-lineamientos-para-las-audiencias-acceso-rapido-a-la-justicia-penal-sao-pjecz/</loc>
-<lastmod>2023-10-19T14:30:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-10-23-acuerdo-c-171-2023-creacion-del-juzado-auxiliar-materia-civil/</loc>
+<lastmod>2023-10-23T15:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-10-23-acuerdo-c-170-2023-funciones-y-lineamientos-juez-auxiliar-familiar-djs/</loc>
+<lastmod>2023-10-23T14:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
