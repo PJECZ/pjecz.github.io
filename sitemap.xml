@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-10-24T18:15:54-00:00</lastmod>
+<lastmod>2023-10-26T18:04:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5642,6 +5642,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-10-26-acuerdo-c-175-programa-de-fortalecimiento-actuarial-en-los-jpimc-del-djs/</loc>
+<lastmod>2023-10-26T15:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
