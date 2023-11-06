@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-11-02T16:47:16-00:00</lastmod>
+<lastmod>2023-11-06T07:50:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5646,6 +5646,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-11-09T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/cuadragesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-11-09T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/cuadragesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-11-08T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/cuadragesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2023-11-08T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-11-02-acuerdo-c-180-modificacion-de-la-competencia-de-la-jueza-de-pimc-con-especializacion-ambiental/</loc>
 <lastmod>2023-11-02T12:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5681,15 +5709,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-primera-sesion-ordinaria/</loc>
-<lastmod>2023-11-01T12:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/cuadragesima-primera-sesion-ordinaria/</loc>
+<lastmod>2023-11-01T11:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/cuadragesima-primera-sesion-ordinaria/</loc>
-<lastmod>2023-11-01T11:30:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-primera-sesion-ordinaria/</loc>
+<lastmod>2023-11-01T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
