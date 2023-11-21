@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-11-17T16:35:07-00:00</lastmod>
+<lastmod>2023-11-20T20:56:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5646,6 +5646,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-11-23T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2023/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-11-23T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2023/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-11-22T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2023/cuadragesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2023-11-22T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-11-17-acuerdo-resultados-examen-oral-pase-etapa-valoracion-em-04/</loc>
 <lastmod>2023-11-17T14:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5654,7 +5682,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-tercera-sesion-ordinaria/</loc>
-<lastmod>2023-11-16T11:00:00-06:00</lastmod>
+<lastmod>2023-11-16T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
