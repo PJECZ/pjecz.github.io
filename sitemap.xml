@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-12-07T17:09:47-00:00</lastmod>
+<lastmod>2023-12-07T17:42:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5662,6 +5662,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2023-12-08T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-12-07-acuerdo---lista-aprobados-y-reserva-examen-meritos-em-04_2023_actuarios/</loc>
+<lastmod>2023-12-07T16:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
