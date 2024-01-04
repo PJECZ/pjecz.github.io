@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2023-12-20T16:07:54-00:00</lastmod>
+<lastmod>2024-01-04T17:49:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5660,6 +5660,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/primera-sesion-ordinaria/</loc>
+<lastmod>2024-01-08T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/primera-sesion-ordinaria/</loc>
+<lastmod>2024-01-08T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/primera-sesion-ordinaria/</loc>
+<lastmod>2024-01-08T08:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-12-20-acuerdo---lineamientos-que-regulan-el-funcionamiento-de-los-juzgados-auxiliares/</loc>
 <lastmod>2023-12-20T14:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -5682,7 +5703,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2023/cuadragesima-octava-sesion-ordinaria/</loc>
-<lastmod>2023-12-20T12:00:00-06:00</lastmod>
+<lastmod>2023-12-20T11:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
