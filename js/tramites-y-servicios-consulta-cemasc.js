@@ -39,6 +39,19 @@ $(document).ready(function () {
     }
     $("#VECMP").bind("click", validateVE);
 
+    // Validación 14 VALIDACIÓN DE CONTENIDOS DE CAPACITACION
+    function validateVCC() {
+        if ($("#cemascSelect option:selected").val() !== "0") {
+        document.getElementById("buscarForm").submit();
+        } else {
+        errorMessage("Elige una Oficina");
+        setTimeout(() => {
+            $("#msjError").remove();
+        }, 5000);
+        }
+    }
+    $("#VCCMMAC").bind("click", validateVCC);
+
     // Que no se refresque la página al presionar Enter y se restablezca el formulario después de enviar
     $("#buscarForm").on("submit", function (event) {
         document.getElementById("buscarForm").reset();
