@@ -296,35 +296,10 @@
 </tr>
 <tr>
 <td align="left"><strong>Modalidad de pago:</strong></td>
-<td align="left">Efectivo o transferencia de pago en banca electrónica - Portal de Pagos del Poder Judicial del Estado de Coahuila de Zaragoza</td>
+<td align="left">Efectivo</td>
 </tr>
 </tbody>
 </table>
-<div id="buscarDiv" class="card mb-2">
-    <div class="card-header">
-        <h3 class="card-title text-center mb-0">Ahora puede pagar por banca electrónica</h3>
-        <p class="card-text text-muted text-center">Elija el distrito, luego el juzgado u oficina y la cantidad, al dar click en <b>Ir al portal de pagos</b> será enviado al formulario del sistema bancario que le solicitará sus datos personales.</p>
-    </div>
-    <div class="card-body">
-        <form id="buscarForm" method="GET" action="https://pagos.justiciadigital.gob.mx/carro">
-            <input id="clave" name="clave" type="hidden" value="F12CDDVD">
-            <div class="form-group">
-                <label for="distritoSelect">Distrito Judicial:</label>
-                <select id="distritoSelect" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <label for="autoridadSelect">Juzgado u Oficina:</label>
-                <select id="autoridadSelect" name="autoridad_clave" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <label for="cantidadInput">Cantidad:</label>
-                <input type="text" class="form-control" id="cantidadInput" value="1" name="cantidad" aria-describedby="cantidadHelp">
-            </div>
-            <div id="msjError"></div>
-            <button type="submit" id="CDDVD" class="btn btn-primary btn-lg btn-block text-white">Ir al portal de pagos</button>
-        </form>
-    </div>
-</div>
     </div>
 </article>
     </main>
