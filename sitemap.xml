@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-01-19T15:14:15-00:00</lastmod>
+<lastmod>2024-01-22T07:20:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5660,15 +5660,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/segunda-sesion-ordinaria/</loc>
-<lastmod>2024-01-18T10:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/tercera-sesion-ordinaria/</loc>
+<lastmod>2024-01-25T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/segunda-sesion-ordinaria/</loc>
-<lastmod>2024-01-17T13:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/tercera-sesion-ordinaria/</loc>
+<lastmod>2024-01-25T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/tercera-sesion-ordinaria/</loc>
+<lastmod>2024-01-24T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/tercera-sesion-ordinaria/</loc>
+<lastmod>2024-01-24T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/segunda-sesion-ordinaria/</loc>
+<lastmod>2024-01-18T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -5689,6 +5710,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/segunda-sesion-ordinaria/</loc>
+<lastmod>2024-01-16T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/segunda-sesion-ordinaria/</loc>
 <lastmod>2024-01-16T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
