@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-01-22T14:07:34-00:00</lastmod>
+<lastmod>2024-01-23T15:02:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -249,6 +249,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/1-justicia-cercana/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2021/1-justicia-digital/</loc>
 <lastmod>2021-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -475,6 +482,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2023/2-justicia-eficiente/</loc>
 <lastmod>2023-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/2-justicia-eficiente/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -872,6 +886,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/203-informacion-programatica/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1019,6 +1040,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/3-justicia-de-calidad/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/protocolos-de-actuacion/protocolo-osieg/3-objetivos/</loc>
 <lastmod>2023-06-28T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1131,6 +1159,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/4-justicia-profesional/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/protocolos-de-actuacion/protocolo-osieg/4-marco-conceptual/</loc>
 <lastmod>2023-06-28T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1159,6 +1194,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/5-justicia-abierta-y-transparente/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/protocolos-de-actuacion/protocolo-osieg/5-marco-juridico-aplicable/</loc>
 <lastmod>2023-06-28T12:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1182,6 +1224,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2023/6-justicia-innovadora/</loc>
 <lastmod>2023-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/6-justicia-innovadora/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -2323,6 +2372,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2023/directorio/</loc>
 <lastmod>2023-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/directorio/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -4498,6 +4554,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/mensaje-del-presidente/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/presidencia/mensajes/</loc>
 <lastmod>2020-09-02T12:52:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4955,6 +5018,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/boletines-judiciales/2023/presentacion/</loc>
 <lastmod>2023-01-01T12:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/boletines-judiciales/2024/presentacion/</loc>
+<lastmod>2024-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
