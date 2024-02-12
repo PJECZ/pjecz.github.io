@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-02-12T08:58:25-00:00</lastmod>
+<lastmod>2024-02-12T09:46:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5737,15 +5737,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/sexta-sesion-ordinaria/</loc>
-<lastmod>2024-02-15T11:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/sexta-sesion-ordinaria/</loc>
+<lastmod>2024-02-15T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/sexta-sesion-ordinaria/</loc>
-<lastmod>2024-02-15T10:00:00-06:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/sexta-sesion-ordinaria/</loc>
+<lastmod>2024-02-14T12:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
