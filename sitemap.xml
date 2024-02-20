@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-02-20T10:53:43-00:00</lastmod>
+<lastmod>2024-02-20T12:04:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5850,6 +5850,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/septima-sesion-ordinaria/</loc>
+<lastmod>2024-02-22T12:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/septima-sesion-ordinaria/</loc>
+<lastmod>2024-02-22T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/septima-sesion-ordinaria/</loc>
 <lastmod>2024-02-22T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
@@ -5858,20 +5872,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/septima-sesion-ordinaria/</loc>
 <lastmod>2024-02-22T10:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/septima-sesion-ordinaria/</loc>
-<lastmod>2024-02-21T12:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/septima-sesion-ordinaria/</loc>
-<lastmod>2024-02-21T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
