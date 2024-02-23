@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-02-21T15:43:32-00:00</lastmod>
+<lastmod>2024-02-23T12:32:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -13894,6 +13894,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-07-21-1200-acuerdo-109-a-2017-autorizacion-del-incremento-ejercicio-efectivo-del-cargo/</loc>
 <lastmod>2017-07-21T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2017/2017-06-13-acuerdo-c-186-2017-creacion-unidad-de-derechos-humanos-e-igualdad-de-genero/</loc>
+<lastmod>2017-06-13T00:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
