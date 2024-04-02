@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-04-02T12:55:15-00:00</lastmod>
+<lastmod>2024-04-02T13:41:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -6559,6 +6559,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2024-04-04T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2024-04-04T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2024-04-03T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/decima-segunda-sesion-ordinaria/</loc>
+<lastmod>2024-04-03T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
