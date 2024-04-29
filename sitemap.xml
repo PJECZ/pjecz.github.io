@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-04-24T17:10:40-00:00</lastmod>
+<lastmod>2024-04-29T15:01:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -6738,6 +6738,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2024-05-02T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2024-05-02T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2024-04-30T14:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2024-04-30T11:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/decima-quinta-sesion-ordinaria/</loc>
 <lastmod>2024-04-25T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -6753,7 +6781,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/decima-quinta-sesion-ordinaria/</loc>
-<lastmod>2024-04-24T12:00:00-05:00</lastmod>
+<lastmod>2024-04-24T14:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
