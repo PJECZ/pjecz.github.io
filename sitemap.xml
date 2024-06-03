@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-06-03T14:23:37-00:00</lastmod>
+<lastmod>2024-06-03T16:27:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -6871,6 +6871,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/vigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2024-06-06T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/vigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2024-06-05T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/vigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2024-06-05T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/vigesima-primera-sesion-ordinaria/</loc>
+<lastmod>2024-06-04T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-05-31-codigo-de-etica-y-conducta-pjecz/</loc>
 <lastmod>2024-05-31T15:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -6907,7 +6935,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/vigesima-sesion-ordinaria/</loc>
-<lastmod>2024-05-29T09:45:00-05:00</lastmod>
+<lastmod>2024-05-29T10:15:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
