@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-06-06T13:41:37-00:00</lastmod>
+<lastmod>2024-06-06T14:10:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -104,6 +104,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/tramites-y-servicios/04-1-curso-de-mediacion-en-linea/</loc>
+<lastmod>2024-06-06T13:51:01-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
