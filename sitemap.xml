@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-06-18T10:58:19-00:00</lastmod>
+<lastmod>2024-06-18T13:48:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -6874,6 +6874,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/noticias/2024/24-06-24-apo-conatrib-2024/</loc>
+<lastmod>2024-06-14T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
