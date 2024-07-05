@@ -1,0 +1,42 @@
+/*
+ * Listados interactivos
+ */
+
+main .lista ul,
+main .lista ul li,
+main .lista ul li a:link,
+main .lista ul li a:visited {
+  text-decoration: none !important;
+  color: red !important;
+}
+
+/* estilos para botones que son usados para abrir y cerrar el panel  */
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* mediante javascript se le agrega fondo al boton si esta seleccionado o el cursor este encima  */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Estilos para el panel acordion */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.titulo {
+  color: red;
+}
