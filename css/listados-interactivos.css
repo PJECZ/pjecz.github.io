@@ -1,13 +1,13 @@
-/*
- * Listados interactivos
- */
-
 main .lista ul,
 main .lista ul li,
 main .lista ul li a:link,
 main .lista ul li a:visited {
   text-decoration: none !important;
-  color: red !important;
+}
+
+main h2 {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 /* estilos para botones que son usados para abrir y cerrar el panel  */
@@ -15,18 +15,27 @@ main .lista ul li a:visited {
   background-color: transparent;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding-left: 10px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  border-radius: 10px;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 /* mediante javascript se le agrega fondo al boton si esta seleccionado o el cursor este encima  */
-.active,
+.activo {
+  background-color: #004360;
+  border: 1px solid #aaa;
+  color: #fff !important;
+}
+
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #8ab8cc;
+  color: #fff !important;
 }
 
 /* Estilos para el panel acordion */
@@ -37,6 +46,32 @@ main .lista ul li a:visited {
   overflow: hidden;
 }
 
-.titulo {
-  color: red;
+button.activo h2 {
+  color: #fff;
+  font-weight: normal;
+}
+
+button.activo h3 {
+  color: #fff;
+  font-weight: normal;
+}
+
+.divAcordion span.toggle-icon {
+  /*position: absolute;*/
+  float: right;
+  top: 0px;
+  padding-right: 30px;
+  font-size: 2em;
+  font-weight: normal;
+  margin-top: -20px;
+}
+
+.divAcordion span.toggle-icon:before {
+  content: "+";
+}
+
+button.activo span.toggle-icon:before {
+  content: "-" !important;
+  color: #fff;
+  font-weight: normal;
 }
