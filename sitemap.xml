@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-09-05T16:28:06-00:00</lastmod>
+<lastmod>2024-09-05T18:57:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7195,6 +7195,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-08-20-acuerdo-remesa-agosto-juzgados-auxiliares/</loc>
 <lastmod>2024-08-20T00:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2024/audiencia-de-alegatos-de-la-accion-de-inconstitucionalidad-local-del-expediente-ail-2-2024/</loc>
+<lastmod>2024-08-19T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
