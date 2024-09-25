@@ -53,7 +53,7 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-    
+
     // Funcion para mostrar el mensaje de error
     function errorMessage(message){
         if(!errorShow){
@@ -63,11 +63,11 @@ $(document).ready(function () {
             errorShow = true;
         }
     }
-  
+
 
     // Obtener Distritos por CLAVE
     function getDistritosClave() {
-        
+
         fetch(onlyDistritos, { headers: { "X-Api-Key": apiKey } })
         .then((res) => res.json())
         .then((data) => {
@@ -80,7 +80,7 @@ $(document).ready(function () {
                 text: "Selecciona un Distrito",
             })
             );
-            $.each(data.result.items, function (i, distrito) {
+            $.each(data.items, function (i, distrito) {
             $("#distritoClaveSelect").append(
                 $("<option>", {
                 value: distrito["clave"],

@@ -78,7 +78,7 @@ $(document).ready(function () {
                 text: "Selecciona:",
             })
             );
-            $.each(data.result.items, function (i, autoridades) {
+            $.each(data.items, function (i, autoridades) {
             $("#cemascSelect").append(
                 $("<option>", {
                 value: autoridades["clave"],

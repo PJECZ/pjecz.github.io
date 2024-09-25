@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     // Validación 09 COPIA SIMPLE
     function validateCS() {
         if ($("#distritoSelect option:selected").val() !== "0" && $("#autoridadSelect option:selected").val() !== "0") {
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 text: "Selecciona un Distrito",
             })
             );
-            $.each(data.result.items, function (i, distrito) {
+            $.each(data.items, function (i, distrito) {
             $("#distritoSelect").append(
                 $("<option>", {
                 value: distrito["id"],
@@ -101,7 +101,7 @@ $(document).ready(function () {
                 text: "Selecciona un Juzgado u Oficina",
             })
             );
-            $.each(data.result.items, function (i, autoridades) {
+            $.each(data.items, function (i, autoridades) {
             $("#autoridadSelect").append(
                 $("<option>", {
                 value: autoridades["clave"],

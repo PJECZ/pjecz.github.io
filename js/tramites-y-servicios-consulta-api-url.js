@@ -10,16 +10,16 @@ let apiDefensoria;
 
 switch(window.location.hostname){
   case "localhost":
-    apiDistrito = "http://172.30.37.233:8012/v3/distritos";
-    onlyDistritos = "http://172.30.37.233:8012/v3/distritos?es_distrito=true";
-    apiCemasc = "http://172.30.37.233:8012/v3/autoridades?es_cemasc=true";
-    apiDefensoria = "http://172.30.37.233:8012/v3/autoridades?es_defensoria=true";
+    apiDistrito = "http://localhost:8012/v3/distritos";
+    onlyDistritos = "http://localhost:8012/v3/distritos?es_distrito=true";
+    apiCemasc = "http://localhost:8012/v3/autoridades?es_cemasc=true";
+    apiDefensoria = "http://localhost:8012/v3/autoridades?es_defensoria=true";
     break;
   case "127.0.0.1":
-    apiDistrito = "http://172.30.37.233:8012/v3/distritos";
-    onlyDistritos = "http://172.30.37.233:8012/v3/distritos?es_distrito=true";
-    apiCemasc = "http://172.30.37.233:8012/v3/autoridades?es_cemasc=true";
-    apiDefensoria = "http://172.30.37.233:8012/v3/autoridades?es_defensoria=true";
+    apiDistrito = "http://127.0.0.1:8012/v3/distritos";
+    onlyDistritos = "http://127.0.0.1:8012/v3/distritos?es_distrito=true";
+    apiCemasc = "http://127.0.0.1:8012/v3/autoridades?es_cemasc=true";
+    apiDefensoria = "http://127.0.0.1:8012/v3/autoridades?es_defensoria=true";
     break;
   case "172.30.37.233":
     apiDistrito = "http://172.30.37.233:8012/v3/distritos";
