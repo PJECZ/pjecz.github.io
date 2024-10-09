@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-10-08T16:32:29-00:00</lastmod>
+<lastmod>2024-10-08T19:42:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7116,6 +7116,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-10-10T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-10-10T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-10-09T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-10-09T11:15:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-10-04-acuerdo-sistema-turno-excusas-juzgados-familiares/</loc>
 <lastmod>2024-10-04T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7124,7 +7152,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/trigesima-sexta-sesion-ordinaria/</loc>
-<lastmod>2024-10-04T09:30:00-05:00</lastmod>
+<lastmod>2024-10-04T08:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
