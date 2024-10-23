@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-10-21T15:44:16-00:00</lastmod>
+<lastmod>2024-10-22T22:00:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7116,6 +7116,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/trigesima-novena-sesion-ordinaria/</loc>
+<lastmod>2024-10-24T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/trigesima-novena-sesion-ordinaria/</loc>
+<lastmod>2024-10-23T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-10-21-acuerdo-archivo/</loc>
 <lastmod>2024-10-21T15:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7123,14 +7137,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/trigesima-octava-sesion-ordinaria/</loc>
-<lastmod>2024-10-17T11:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/trigesima-octava-sesion-ordinaria/</loc>
+<lastmod>2024-10-17T12:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/trigesima-octava-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/trigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2024-10-17T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
