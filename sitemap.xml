@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-10-30T17:01:16-00:00</lastmod>
+<lastmod>2024-10-31T12:26:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7277,6 +7277,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2024/10-octubre/</loc>
+<lastmod>2024-10-01T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/trigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2024-09-26T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7398,6 +7405,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/trigesima-segunda-sesion-ordinaria/</loc>
 <lastmod>2024-09-04T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2024/09-septiembre/</loc>
+<lastmod>2024-09-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
