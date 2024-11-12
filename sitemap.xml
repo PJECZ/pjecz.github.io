@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-11-12T10:48:59-00:00</lastmod>
+<lastmod>2024-11-12T13:13:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1740,13 +1740,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/convocatorias/2024-04-10-convocatoria-magistrado-por-un-dia/</loc>
-<lastmod>2024-04-10T00:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2024/2024-04-30-magistrado-por-un-dia/</loc>
 <lastmod>2024-04-30T00:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -1762,13 +1755,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-07-08-convocatoria-personaje/</loc>
-<lastmod>2024-07-08T00:00:00-05:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-07-08-nuestro-personaje/</loc>
 <lastmod>2024-07-08T00:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -2580,7 +2566,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/ana-claudia-de-la-pena-sanchez/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/ana-claudia-de-la-pena-sanchez/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3252,13 +3238,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/convocatorias/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/documentos-de-interes/sentencias-relevantes-sobre-derechos-humanos-e-igualdad-de-genero/corte-interamericana-de-derechos-humanos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -3737,6 +3716,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/directorio/</loc>
 <lastmod>2020-11-19T13:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/magistrado-x1-dia/directorio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5065,7 +5051,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/gael-itziar-granados/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/gael-itziar-granados/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5079,7 +5065,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/galeria/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/galeria/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5149,7 +5135,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/hector-gabriel-gutierrez-zablah/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/hector-gabriel-gutierrez-zablah/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5310,7 +5296,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/jose-emiliano-falconez-morales/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/jose-emiliano-falconez-morales/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5534,7 +5520,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/lady-valentina-hernandez-rosas/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/lady-valentina-hernandez-rosas/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5548,7 +5534,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/larissa-estefania-valero-rodriguez/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/larissa-estefania-valero-rodriguez/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5569,7 +5555,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/leire-itziar-castellanos/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/leire-itziar-castellanos/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5653,7 +5639,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/luis-carlos-medina-leija/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/luis-carlos-medina-leija/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5683,13 +5669,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/magistrados/</loc>
 <lastmod>2020-11-09T15:34:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -5821,7 +5800,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/matthew-lopez-rodriguez/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/matthew-lopez-rodriguez/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5877,7 +5856,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/miguel-fernando-aguirre-viera/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/miguel-fernando-aguirre-viera/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5919,7 +5898,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/monserrat-santiago-vargas/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/monserrat-santiago-vargas/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5947,7 +5926,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/natalia-davila-bersoza/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/natalia-davila-bersoza/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -6227,7 +6206,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/pablo-francisco-reyna-orozco/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/pablo-francisco-reyna-orozco/</loc>
 <lastmod>2024-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -6584,7 +6563,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/magistradox1dia/resultados/</loc>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/nuevo/convocatorias/2024/2024-04-10-convocatoria-magistrado-por-un-dia/resultados/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
