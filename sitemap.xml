@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-11-14T12:47:53-00:00</lastmod>
+<lastmod>2024-11-15T15:04:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7152,6 +7152,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/cuadragesima-primera-sesion-ordinaria/</loc>
+<lastmod>2024-11-07T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/segunda-sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal/</loc>
 <lastmod>2024-11-07T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
