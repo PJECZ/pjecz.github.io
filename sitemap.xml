@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-11-28T14:00:21-00:00</lastmod>
+<lastmod>2024-11-28T16:40:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7132,6 +7132,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/cuadragesima-cuarta-sesion-ordinaria/</loc>
 <lastmod>2024-11-29T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-11-28-acuerdo-c-184-2024-aprueba-que-el-ptd-audiencias-presenciales/</loc>
+<lastmod>2024-11-28T13:35:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-11-28-acuerdo-c-183-2024-aprobar-criterios-caif-juzgados-familiares/</loc>
+<lastmod>2024-11-28T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
