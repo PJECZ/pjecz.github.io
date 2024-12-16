@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-12-13T16:08:55-00:00</lastmod>
+<lastmod>2024-12-16T06:49:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7130,6 +7130,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/cuadragesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-12-18T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2024/cuadragesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-12-17T12:45:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/cuadragesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-12-17T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/cuadragesima-septima-sesion-ordinaria/</loc>
+<lastmod>2024-12-17T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/cuadragesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2024-12-12T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7146,6 +7174,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2024/cuadragesima-sexta-sesion-ordinaria/</loc>
 <lastmod>2024-12-11T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2024/quinta-sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal/</loc>
+<lastmod>2024-12-10T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
