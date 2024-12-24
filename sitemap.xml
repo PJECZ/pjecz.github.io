@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2024-12-23T20:54:04-00:00</lastmod>
+<lastmod>2024-12-23T21:06:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7179,6 +7179,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-12-23-comite-de-evaluacion-proceso-electoral-judicial-extraordinario-2024-2025/</loc>
+<lastmod>2024-12-23T16:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2024/segunda-sesion-extraordinaria/</loc>
 <lastmod>2024-12-23T14:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7187,13 +7194,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-12-20-cargos-a-elegir-proceso-electoral-judicial-extraordinario-2024-2025/</loc>
-<lastmod>2024-12-20T16:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2024/2024-12-23-comite-de-evaluacion-proceso-electoral-judicial-extraordinario-2024-2025/</loc>
 <lastmod>2024-12-20T16:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
