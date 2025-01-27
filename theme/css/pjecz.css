@@ -10,21 +10,21 @@
  * -----------
  */
 
-body                    { font-family: 'Lato', sans-serif; font-weight: 300; }
-h1                      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
-h2                      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
-h3                      { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4em; }
-h4                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2em; }
-h5                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1em; }
-h6                      { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0em; }
+body                    { font-family: 'Inter', sans-serif; font-weight: 300; }
+h1                      { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 2.4em; }
+h2                      { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 2.0em; }
+h3                      { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.4em; }
+h4                      { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 1.2em; }
+h5                      { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 1.1em; }
+h6                      { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 1.0em; }
 p                       { font-size: 1.2em; line-height: 1.8em; }
 blockquote              { font-size: 1.6em; line-height: 2.4em; font-style: italic; }
 b,
-strong                  { font-weight: 900; }
+strong                  { font-weight: 700; }
 
-#navegacion_menu        { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0em; line-height: 1.2em; }
+#navegacion_menu        { font-family: 'Saira', sans-serif; font-weight: 500; font-size: 1.0em; line-height: 1.2em; }
 .navegacion_icon        { font-size: 0.7em; }
-.breadcrumb             { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3em; }
+.breadcrumb             { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.3em; }
 
 #accesos h3             { font-size: 1.3em; }
 #accesos p              { font-size: 0.9em; line-height: 1.3em; }
@@ -37,7 +37,7 @@ strong                  { font-weight: 900; }
 #indices p              { font-size: 0.9em; line-height: 1.3em; }
 
 footer                  { font-size: 0.9em; line-height: 1.2em; }
-footer .btn             { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
+footer .btn             { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 1.6em; }
 footer p                { line-height: 1.4em; }
 
 #botones .icono         { font-size: 2em; }
@@ -95,24 +95,24 @@ footer ul li             { padding: 0.2em 0; }
 body                           { color: black; background-color: white; }
 h1                             { color: #000000; }
 h2                             { color: #31322c; }
-h3                             { color: #004360; }
-h4                             { color: #d0a473; }
-h5                             { color: #004360; }
-h6                             { color: #004360; }
+h3                             { color: #486238; }
+h4                             { color: #646566; }
+h5                             { color: #486238; }
+h6                             { color: #486238; }
 a,
 a:link,
-a:visited                      { color: #46576b; }
+a:visited                      { color: #486238; }
 a:active,
-a:hover                        { color: #215796; }
+a:hover                        { color: #646566; }
 
 header                         { background-color: #ffffff; }
 #navegacion_logo               { background-color: #ffffff; }
 a.navegacion_icon,
 a.navegacion_icon:link,
-a.navegacion_icon:visited      { color: #dbb993; }
+a.navegacion_icon:visited      { color: #c6cabd; }
 a.navegacion_icon:active,
-a.navegacion_icon:hover        { color: #a36e33; }
-#navegacion_menu               { background-color: #004360; border-bottom: 6px solid #dbb993; }
+a.navegacion_icon:hover        { color: #486238; }
+#navegacion_menu               { background-color: #486238; border-bottom: 6px solid #b4b49e; }
 .breadcrumb                    { background-color: #ffffff; }
 
 #carrusel                      { background-color: #ffffff; }
@@ -120,44 +120,45 @@ a.navegacion_icon:hover        { color: #a36e33; }
 #accesos                       { background-color: #ffffff; }
 .accesos-card                  { border:none; }
 
-#novedades                     { background-color: #efebe8; }
+#novedades                     { background-color: #c5cabd; }
 #novedades p                   { color: gray; }
 
 #recomendaciones               { background-color: #ffffff; }
-#sitios_interes                { background-color: #efebe8; }
+#sitios_interes                { background-color: #b4b49e; }
 #transmisiones_sesiones        { background-color: #ffffff; }
 
 #indices                       { background-color: #ffffff; }
 #indices .card                 { border: none; }
 
 #botones a.btn-primary:link,
-#botones a.btn-primary:visited { background-color: #004360; border-color: #004360; color: #c7d5dc; }
+#botones a.btn-primary:visited { background-color: #486238; border-color: #486238; color: #c6c7c8; }
 #botones a.btn-primary:active,
-#botones a.btn-primary:hover   { background-color: #006c9b; border-color: #006c9b; color: #ffffff; }
-#botones .icono                { color: #dbb993; }
+#botones a.btn-primary:hover   { background-color: #646566; border-color: #646566; color: #ffffff; }
+#botones .icono                { color: #b4b49e; }
 
-footer .footer-dark            { color: #ffffff; background-color: #212530; }
-footer .card                   { color: #ffffff; background-color: #212530; }
-footer h2                      { color: #a9b0c9; }
+footer .footer-dark            { color: #ffffff; background-color: #486238; }
+footer .card                   { color: #ffffff; background-color: #486238; border: none; }
+footer .card-header            { background-color: #486238; border: none; }
+footer h2                      { color: #c6cabd; }
 footer h3,
 footer h4,
-footer h5                      { color: #daba93; }
+footer h5                      { color: #b4b49e; }
 footer .btn,
 footer .btn:link,
-footer .btn:visited            { color: #daba93; }
+footer .btn:visited            { color: #b4b49e; }
 footer .btn:active,
-footer .btn:hover              { color: #a36e33; }
-footer ul li                   { color: #777777; }
+footer .btn:hover              { color: #c6cabd; }
+footer ul li                   { color: #b4b49e; }
 footer a:link,
-footer a:visited               { color: #dddddd; }
+footer a:visited               { color: #b4b49e; }
 footer a:active,
-footer a:hover                 { color: #ffffff; }
-footer .footer-light           { color: #dbb993; background-color: #ffffff; }
+footer a:hover                 { color: #c6cabd; }
+footer .footer-light           { color: #486238; background-color: #ffffff; }
 footer .footer-light a,
 footer .footer-light a:link,
-footer .footer-light a:visited { color:#dbb993; }
+footer .footer-light a:visited { color:#486238; }
 footer .footer-light a:active,
-footer .footer-light a:hover   { color:#212530; }
+footer .footer-light a:hover   { color:#646566; }
 
 /* ----------
  * Navegacion
