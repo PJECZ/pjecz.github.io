@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-02-05T16:06:23-00:00</lastmod>
+<lastmod>2025-02-06T13:34:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7368,6 +7368,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-02-06-acuerdo-remesa-juzgados-auxiliares-2025/</loc>
+<lastmod>2025-02-06T14:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/quinta-sesion-ordinaria/</loc>
 <lastmod>2025-02-06T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7384,6 +7391,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2025/quinta-sesion-ordinaria/</loc>
 <lastmod>2025-02-04T14:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-01-31-acuerdo-c-021-modificacion-comite-transparencia/</loc>
+<lastmod>2025-01-31T14:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-01-31-acuerdo-c-020-gratuidad-consultas-archivo/</loc>
+<lastmod>2025-01-31T14:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
