@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-03-07T16:24:31-00:00</lastmod>
+<lastmod>2025-03-10T07:39:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7378,6 +7378,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://www.pjecz.gob.mx/magistrados/vladimir-kaiceros-barranco/</loc>
 <lastmod>2020-11-09T16:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/decima-sesion-ordinaria/</loc>
+<lastmod>2025-03-13T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/decima-sesion-ordinaria/</loc>
+<lastmod>2025-03-13T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
 
