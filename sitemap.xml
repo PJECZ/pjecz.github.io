@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-04-01T12:12:10-00:00</lastmod>
+<lastmod>2025-04-01T12:24:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7433,6 +7433,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/decima-tercera-sesion-ordinaria/</loc>
 <lastmod>2025-04-02T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-04-01-acuerdo-c-087-2025-formalizar-la-elaboracion-de-las-sentencias-al-sistema-braille/</loc>
+<lastmod>2025-04-01T14:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
