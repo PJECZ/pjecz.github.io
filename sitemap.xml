@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-04-02T12:25:38-00:00</lastmod>
+<lastmod>2025-04-02T13:20:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7459,6 +7459,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/04-abril/</loc>
+<lastmod>2025-04-01T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-familiar/2025/decima-segunda-sesion-ordinaria/</loc>
 <lastmod>2025-03-28T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7573,6 +7580,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/novena-sesion-ordinaria/</loc>
 <lastmod>2025-03-05T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/03-marzo/</loc>
+<lastmod>2025-03-03T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
