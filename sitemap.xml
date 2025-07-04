@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-07-03T15:21:12-00:00</lastmod>
+<lastmod>2025-07-04T13:24:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -7578,6 +7578,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/07-julio/</loc>
+<lastmod>2025-07-01T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-06-30-acuerdo-c-145-2025-herramientas-de-control-archivistico-y-manual-de-procedimientos/</loc>
 <lastmod>2025-06-30T15:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -7734,6 +7741,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-06-02-acuerdo-c-126-2025-suspension-juzgado-auxiliar-civil-saltillo/</loc>
 <lastmod>2025-06-02T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/06-junio/</loc>
+<lastmod>2025-06-01T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
