@@ -248,104 +248,55 @@
             }
         </script>
     <div class="container py-4">
-        <!-- Estilos específicos -->
-<style>
-  .banner-transparencia {
-    background-image: url('cabecera.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-
-  .articulos-sobre-banner {
-    position: absolute;
-    bottom: -60px;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .circulo-articulo {
-    text-align: center;
-  }
-
-  .circulo-articulo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-  }
-
-  .circulo-articulo img:hover {
-    transform: scale(1.05);
-  }
-
-  .circulo-articulo h5 {
-    margin-top: 10px;
-    color: #222;
-  }
-</style>
-
-<!-- Contenedor general -->
-<div class="container my-5">
+        <div class="container my-5">
 
   <!-- Título principal -->
-  <div class="text-center mb-5">
+  <div class="text-center mb-4">
     <h1 class="display-5 fw-bold">Transparencia</h1>
     <p class="lead">Información Pública de Oficio</p>
   </div>
 
-  <!-- Banner como fondo -->
-  <div class="banner-transparencia">
-    <div class="articulos-sobre-banner">
-      <div class="circulo-articulo">
+  <!-- Cabecera con imagen centrada -->
+  <div class="text-center mb-4">
+    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Transparencia" style="max-width: 1000px;">
+  </div>
+
+  <!-- Información anterior Ley -->
+  <div class="mb-4">
+    <h5 class="fw-semibold">Información Pública de Oficio, conforme a la anterior Ley de Acceso a la Información Pública:</h5>
+    <ul class="list-unstyled ps-3">
+      <li>• Artículo 8</li>
+      <li>• Artículo 18</li>
+      <li>• Artículo 20</li>
+      <li>• Artículo 21</li>
+      <li>• Artículo 22</li>
+      <li>• Artículo 27</li>
+    </ul>
+  </div>
+
+  <!-- Información nueva Ley -->
+  <div class="mb-5">
+    <h5 class="fw-semibold text-success">
+      Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
+    </h5>
+
+    <!-- Círculos centrados -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-3 text-center mb-3">
         <a href="articulo-22/">
-          <img src="transparencia-22.png" alt="Artículo 22">
-          <h5>Artículo 22</h5>
+          <img src="transparencia-22.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 22">
+          <h5 class="mt-2">Artículo 22</h5>
         </a>
       </div>
-      <div class="circulo-articulo">
+      <div class="col-md-3 text-center mb-3">
         <a href="articulo-27/">
-          <img src="transparencia-27.png" alt="Artículo 27">
-          <h5>Artículo 27</h5>
+          <img src="transparencia-27.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 27">
+          <h5 class="mt-2">Artículo 27</h5>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Espacio debajo del banner para evitar traslape -->
-  <div class="mt-5 pt-5">
-
-    <!-- Información Ley anterior -->
-    <div class="mb-4">
-      <h5 class="fw-semibold">Información Pública de Oficio, conforme a la anterior Ley de Acceso a la Información Pública:</h5>
-      <ul class="list-unstyled ps-3">
-        <li>• Artículo 8</li>
-        <li>• Artículo 18</li>
-        <li>• Artículo 20</li>
-        <li>• Artículo 21</li>
-        <li>• Artículo 22</li>
-        <li>• Artículo 27</li>
-      </ul>
-    </div>
-
-    <!-- Información nueva Ley -->
-    <div class="mb-5">
-      <h5 class="fw-semibold text-success">
-        Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
-      </h5>
-    </div>
-
-  </div>
 </div>
     </div>
 </article>
