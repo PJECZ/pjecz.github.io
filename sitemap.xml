@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-07-11T12:51:26-00:00</lastmod>
+<lastmod>2025-07-11T13:15:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2867,13 +2867,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4169,7 +4162,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f01-estructura-jurisdiccional-y-administrativa/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f01-estructura-jurisdiccional-y-administrativa/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4197,7 +4190,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f02-funciones-de-las-unidades-jurisdiccionales-y-administrativas/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f02-funciones-de-las-unidades-jurisdiccionales-y-administrativas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4225,7 +4218,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f03-directorio-de-los-organos-jurisdiccionales-y-administrativos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f03-directorio-de-los-organos-jurisdiccionales-y-administrativos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4267,7 +4260,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f04-presupuesto-asignado/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f04-presupuesto-asignado/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4288,7 +4281,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f05-fondo-para-el-mejoramiento-de-la-administracion-justicia/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f05-fondo-para-el-mejoramiento-de-la-administracion-justicia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4309,7 +4302,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f06-asuntos-iniciados-en-tramite-y-concluidos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f06-asuntos-iniciados-en-tramite-y-concluidos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4344,7 +4337,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f07-listas-de-acuerdos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f07-listas-de-acuerdos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4365,7 +4358,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f08-agenda-de-audiencias/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f08-agenda-de-audiencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4414,14 +4407,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f09-sentencias-en-su-version-publica/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f09-sentencias-en-su-version-publica/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f10-actas-de-las-visitas-de-inspeccion/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f10-actas-de-las-visitas-de-inspeccion/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4449,7 +4442,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f11-calendario-de-dias-inhabiles/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f11-calendario-de-dias-inhabiles/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4498,14 +4491,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f12-ubicacion-de-los-expedientes/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f12-ubicacion-de-los-expedientes/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f13-formatos-de-procedimientos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f13-formatos-de-procedimientos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4533,7 +4526,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f14-estadisticas-de-amparos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f14-estadisticas-de-amparos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4582,7 +4575,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f15-programas-y-cursos-del-consejo-de-la-judicatura/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f15-programas-y-cursos-del-consejo-de-la-judicatura/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4603,7 +4596,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f16-procedimientos-de-justicia-constitucional/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f16-procedimientos-de-justicia-constitucional/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4617,7 +4610,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f17-glosa-de-debate/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f17-glosa-de-debate/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4652,7 +4645,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f18-sanciones-disciplinarias-impuestas-a-los-integrantes-del-poder-judicial/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f18-sanciones-disciplinarias-impuestas-a-los-integrantes-del-poder-judicial/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4673,14 +4666,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f19-tesis-aisladas/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f19-tesis-aisladas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f20-lista-de-peritos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f20-lista-de-peritos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4715,14 +4708,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f21-sistema-pensionario/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f21-sistema-pensionario/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f22-otra-informacion/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f22-otra-informacion/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4757,7 +4750,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f23-seleccion-de-jueces-y-magistrados/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-271/f23-seleccion-de-jueces-y-magistrados/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
