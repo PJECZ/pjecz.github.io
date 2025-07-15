@@ -251,29 +251,39 @@
         <!DOCTYPE html>
 <p><html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 <br>
 <style>
     body {
       margin: 0;
       padding: 0;
     }
+
     .contenido-limite {
       max-width: 900px;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    .sin-espacio-arriba {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .justificado {
+      text-align: justify;
+    }
+
     .titulo-ley {
       color: #198754;
       font-weight: 600;
       text-align: center;
-      margin-top: 2rem;
       margin-bottom: 1rem;
+      font-size: 1.25rem;
     }
-    .justificado {
-      text-align: justify;
-    }
+
     .rounded-circle {
       width: 130px;
       height: 130px;
@@ -283,53 +293,70 @@
 <p></head></p>
 <body>
 
-<!-- Modal o aviso destacado -->
-<div class="container contenido-limite">
-  <h5 class="text-center text-success fw-bold">Suspensión del plazo</h5>
-  <p class="small justificado">
-    Con fundamento en el artículo quinto transitorio del Decreto número 267, de la reforma en materia de transparencia y acceso a la información, publicado el 27 de junio de 2025 en el Periódico Oficial del Gobierno del Estado número 51, se suspenden por un plazo de treinta días naturales contados a partir de su entrada en vigor todos y cada uno de los trámites, procedimientos y demás medios de impugnación que conocía el Instituto Coahuilense de Acceso a la Información Pública.
-  </p>
-  <p class="small justificado">
-    Lo anterior con excepción de los que se tramitan a través de la Plataforma Nacional de Transparencia consistentes en la recepción y atención de las solicitudes de acceso a la información y solicitudes de acceso, rectificación, cancelación y oposición de datos personales, los cuales se tramitarán conforme a las disposiciones vigentes al momento en que ingresaron su solicitud.
-  </p>
+<!-- Modal aviso al cargar -->
+<div class="modal fade" id="modalAviso" tabindex="-1" aria-labelledby="modalAvisoLabel" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="modalAvisoLabel">Suspensión del plazo</h5>
+      </div>
+      <div class="modal-body small text-justify">
+        <p>
+          Con fundamento en el artículo quinto transitorio del Decreto número 267, de la reforma en materia de transparencia y acceso a la información, publicado el 27 de junio de 2025 en el Periódico Oficial del Gobierno del Estado número 51, se suspenden por un plazo de treinta días naturales contados a partir de su entrada en vigor todos y cada uno de los trámites, procedimientos y demás medios de impugnación que conocía el Instituto Coahuilense de Acceso a la Información Pública.
+        </p>
+        <p>
+          Lo anterior con excepción de los que se tramitan a través de la Plataforma Nacional de Transparencia consistentes en la recepción y atención de las solicitudes de acceso a la información y solicitudes de acceso, rectificación, cancelación y oposición de datos personales, los cuales se tramitán conforme a las disposiciones vigentes al momento en que ingresaron su solicitud.
+        </p>
+        <p>
+          En virtud de lo anterior nos encontramos actualizando los contenidos de este sitio para cumplir con las nuevas disposiciones legales. ¡Agradecemos su comprensión!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Cabecera del Tribunal de Conciliación y Arbitraje -->
-<div class="container contenido-limite text-center mt-4">
-  <img src="cabecera.jpg" class="img-fluid" alt="Transparencia Tribunal de Conciliación y Arbitraje">
+<!-- Cabecera -->
+<div class="container contenido-limite sin-espacio-arriba mt-0">
+  <div class="text-center">
+    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Transparencia Tribunal de Conciliación y Arbitraje" style="max-width: 100%;" />
+  </div>
 </div>
 
-<!-- Nueva Ley -->
-<div class="container contenido-limite">
+<!-- Información Pública de Oficio -->
+<div class="container my-5 contenido-limite">
   <h5 class="titulo-ley">
     Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
   </h5>
-  <div class="row text-center justify-content-center">
-    <div class="col-md-4 mb-3">
-      <a href="articulo-22/">
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-4 text-center mb-3">
+      <a href="https://www.pjecz.gob.mx/transparencia-tca/articulo-22/#gsc.tab=0">
         <img class="rounded-circle shadow" src="transparencia-tca-22.png" alt="Artículo 22">
         <h5 class="mt-2">Artículo 22</h5>
       </a>
     </div>
-    <div class="col-md-4 mb-3">
-      <a href="articulo-27/">
+    <div class="col-md-4 text-center mb-3">
+      <a href="https://www.pjecz.gob.mx/transparencia-tca/articulo-27/#gsc.tab=0">
         <img class="rounded-circle shadow" src="transparencia-tca-27.png" alt="Artículo 27">
         <h5 class="mt-2">Artículo 27</h5>
       </a>
     </div>
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 text-center mb-3">
       <a href="articulo-65/">
         <img class="rounded-circle shadow" src="transparencia-tca-65.png" alt="Artículo 65">
         <h5 class="mt-2">Artículo 65</h5>
       </a>
     </div>
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 text-center mb-3">
       <a href="articulo-69/">
         <img class="rounded-circle shadow" src="transparencia-tca-69.png" alt="Artículo 69">
         <h5 class="mt-2">Artículo 69</h5>
       </a>
     </div>
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 text-center mb-3">
       <a href="articulo-77/">
         <img class="rounded-circle shadow" src="transparencia-tca-77.png" alt="Artículo 77">
         <h5 class="mt-2">Artículo 77</h5>
@@ -363,6 +390,12 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const aviso = new bootstrap.Modal(document.getElementById('modalAviso'));
+  window.addEventListener('DOMContentLoaded', () => {
+    aviso.show();
+  });
+</script>
 </body>
 <p></html></p>
 <h2>Descargar</h2>
@@ -374,54 +407,6 @@
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Formato Derechos Arco.pdf">Formato Derechos Arco.pdf</a></li>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Guía para la presentación de solicitudes de acceso a la información y de datos personales.pdf">Guía para la presentación de solicitudes de acceso a la información y de datos personales.pdf</a></li>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Solicitud de Acceso a la Información.pdf">Solicitud de Acceso a la Información.pdf</a></li>
-</ul>
-<h2>Artículo 22 NUEVO</h2>
-<h3>F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas</h3>
-<ul>
-<li><a href="articulo-22-nuevo/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/comisiones/">Comisiones</a></li>
-<li><a href="articulo-22-nuevo/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/comisiones/2025/">2025</a></li>
-<li><a href="articulo-22-nuevo/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/licencias/">Licencias</a></li>
-<li><a href="articulo-22-nuevo/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/licencias/2025/">2025</a></li>
-</ul>
-<h4>Nombramientos</h4>
-<h5>Magistrados</h5>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Magistrados/1. Magistrada Eva de la Fuente Rivas.pdf">1. Magistrada Eva de la Fuente Rivas.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Magistrados/2. Magistrado Bernardo González Morales.pdf">2. Magistrado Bernardo González Morales.pdf</a></li>
-</ul>
-<h5>Personal jurisdiccional u homólogo</h5>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/01. Roberto Alejandro Ramirez Maldonado.pdf">01. Roberto Alejandro Ramirez Maldonado.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/02. María del Refugio Luna Cézares.pdf">02. María del Refugio Luna Cézares.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/03. Sandra Tenorio Miranda.pdf">03. Sandra Tenorio Miranda.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/04. Viviana Carolina Cisneros Cárdenas.pdf">04. Viviana Carolina Cisneros Cárdenas.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/05. Elsa Fabiola Sifuentes Ortiz.pdf">05. Elsa Fabiola Sifuentes Ortiz.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/06. María Candelaria Oviedo Peña.pdf">06. María Candelaria Oviedo Peña.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/07. Mayra Alejandra Ramirez Esparza.pdf">07. Mayra Alejandra Ramirez Esparza.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/08. Jose Pablo Tobias Alaniz.pdf">08. Jose Pablo Tobias Alaniz.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/09. María de Lourdes Posada Ruiz.pdf">09. María de Lourdes Posada Ruiz.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/10. Álvaro Flores Farías.pdf">10. Álvaro Flores Farías.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/11. Liliana Pérez Muñoz.pdf">11. Liliana Pérez Muñoz.pdf</a></li>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Personal jurisdiccional u homólogo/12. Zayra Paola Castor Galvan.pdf">12. Zayra Paola Castor Galvan.pdf</a></li>
-</ul>
-<h5>Unidad de Transparencia</h5>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia TCA/Artículo 22 NUEVO/F01 Nombramientos, Comisiones y Licencias de las personas servidoras públicas/Nombramientos/Unidad de Transparencia/Liliana Ortiz Herrera.pdf">Liliana Ortiz Herrera.pdf</a></li>
-</ul>
-<h3>F02 El tipo de seguridad social con el que cuentan todas las personas servidoras públicas</h3>
-<ul>
-<li><a href="articulo-22-nuevo/f03-el-importe-por-concepto-de-viaticos-a-partir-del-jefe-de-departamento-y-en-su-caso-de-gastos-de-representacion/">F03 El importe por concepto de viáticos a partir del jefe de departamento y, en su caso, de gastos de representación</a></li>
-<li><a href="articulo-22-nuevo/f03-el-importe-por-concepto-de-viaticos-a-partir-del-jefe-de-departamento-y-en-su-caso-de-gastos-de-representacion/2025/">2025</a></li>
-<li><a href="articulo-22-nuevo/f04-todo-mecanismo-que-sirva-para-la-presentacion-directa-de-solicitudes-opiniones-quejas-denuncias-o-sugerencias/">F04 Todo mecanismo que sirva para la presentación directa de solicitudes, opiniones, quejas, denuncias, o sugerencias</a></li>
-<li><a href="articulo-22-nuevo/f05-instituciones-de-beneficencia/">F05 Instituciones de Beneficencia</a></li>
-<li><a href="articulo-22-nuevo/f06-presupuesto-asignado/">F06 Presupuesto Asignado</a></li>
-</ul>
-<h3>F07 Minutas de Reuniones Públicas</h3>
-<ul>
-<li><a href="articulo-22-nuevo/f08-actas-de-entrega-recepcion/">F08 Actas de Entrega-Recepción</a></li>
-<li><a href="articulo-22-nuevo/f09-georreferenciacion-de-obras-publicas/">F09 Georreferenciación de Obras Públicas</a></li>
-<li><a href="articulo-22-nuevo/f10-sistemas-pensionarios/">F10 Sistemas Pensionarios</a></li>
-<li><a href="articulo-22-nuevo/f11-otra-informacion/">F11 Otra Información</a></li>
 </ul>
     </div>
 </article>
