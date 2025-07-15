@@ -256,52 +256,46 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 <br>
 <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .contenido-limite {
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    /* Ocultar posibles títulos automáticos */
-    h1, .titulo-transparencia {
-      display: none !important;
+    .sin-espacio-arriba {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
 
     .justificado {
       text-align: justify;
     }
 
-    /* Reducir márgenes superiores al mínimo */
-    .sin-margen-superior {
-      margin-top: 5px !important;
-    }
-
-    /* Opcional: ajustar margen inferior si quieres que quede más compacto */
-    .sin-margen-inferior {
-      margin-bottom: 5px !important;
-    }
-
-    /* Nueva clase para los títulos de ley, igual color y estilo */
     .titulo-ley {
-      color: #198754; /* Verde bootstrap success */
-      font-weight: 600; /* fw-semibold */
+      color: #198754; /* Verde tipo Bootstrap */
+      font-weight: 600;
       text-align: center;
       margin-bottom: 1rem;
-      font-size: 1.25rem; /* equivalente a h5 */
+      font-size: 1.25rem;
     }
   </style></p>
 <p></head></p>
 <body>
 
-<!-- Imagen de cabecera arriba con margen superior mínimo -->
-<div class="container contenido-limite sin-margen-superior sin-margen-inferior">
+<!-- Cabecera alineada arriba sin espacio -->
+<div class="container contenido-limite sin-espacio-arriba">
   <div class="text-center">
-    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Encabezado" style="max-width: 100%;" />
+    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm mt-0" alt="Encabezado" style="max-width: 100%;" />
   </div>
 </div>
 
-<!-- Aviso legal con título y texto más pequeño -->
-<div class="container contenido-limite sin-margen-superior mb-4">
+<!-- Aviso legal -->
+<div class="container contenido-limite mt-3 mb-4">
   <h4 class="text-center fw-bold mb-3">Suspensión del plazo</h4>
   <div class="small">
     <p class="justificado mb-3">
@@ -316,15 +310,15 @@
   </div>
 </div>
 
-<!-- Contenido de transparencia -->
+<!-- Contenido principal -->
 <div class="container my-5 contenido-limite">
 
-  <!-- Título para Ley Anterior con formato igualado -->
+  <!-- Título Ley Anterior -->
   <h5 class="titulo-ley">
     Información Pública de Oficio conforme a la anterior Ley de Acceso a la Información Pública del Estado de Coahuila de Zaragoza
   </h5>
 
-  <!-- Botón con imagen para Ley Anterior -->
+  <!-- Botón Ley Anterior -->
   <div class="mb-4 text-center">
     <button type="button" class="btn btn-link p-0 border-0 bg-transparent" 
       data-bs-toggle="collapse" data-bs-target="#leyAnterior" 
@@ -346,7 +340,7 @@
     </div>
   </div>
 
-  <!-- Información nueva Ley con formato igualado -->
+  <!-- Título Ley Nueva -->
   <h5 class="titulo-ley">
     Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
   </h5>
