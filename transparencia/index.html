@@ -248,21 +248,42 @@
             }
         </script>
     <div class="container py-4">
-        <div class="container my-5">
+        <!DOCTYPE html>
+<p><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transparencia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<br>
+<style>
+    /* Limitar ancho para que cabecera y texto queden alineados */
+    .contenido-limite {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style></p>
+<p></head></p>
+<body>
 
-  <!-- Cabecera con imagen centrada -->
+<div class="container my-5 contenido-limite">
+
+  <!-- Cabecera con imagen centrada y alineada con el texto -->
   <div class="text-center mb-4">
-    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Transparencia" style="max-width: 1000px;">
+    <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Transparencia" style="max-width: 100%;" />
   </div>
 
-  <!-- Botón para mostrar/ocultar ley anterior -->
-  <div class="mb-4">
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#leyAnterior" aria-expanded="false" aria-controls="leyAnterior">
-      Ley Anterior - Información Pública de Oficio
+  <!-- Botón con imagen para Ley Anterior -->
+  <div class="mb-4 text-center">
+    <button type="button" class="btn btn-link p-0 border-0 bg-transparent" 
+      data-bs-toggle="collapse" data-bs-target="#leyAnterior" 
+      aria-expanded="false" aria-controls="leyAnterior">
+      <img src="ley-anterior-sin-fondo.png" alt="Ley Anterior" style="width: 150px; cursor: pointer;" />
     </button>
 
     <div class="collapse mt-3" id="leyAnterior">
-      <h5 class="fw-semibold">Información Pública de Oficio, conforme a la anterior Ley de Acceso a la Información Pública:</h5>
+      <h5 class="fw-semibold">
+        Información Pública de Oficio, conforme a la anterior Ley de Acceso a la Información Pública:
+      </h5>
       <ul class="list-unstyled ps-3">
         <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-8/#gsc.tab=0" target="_blank">Artículo 8</a></li>
         <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-18/#gsc.tab=0" target="_blank">Artículo 18</a></li>
@@ -283,13 +304,13 @@
     <div class="row justify-content-center mt-4">
       <div class="col-md-3 text-center mb-3">
         <a href="articulo-22/">
-          <img src="transparencia-22.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 22">
+          <img src="transparencia-22.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 22" />
           <h5 class="mt-2">Artículo 22</h5>
         </a>
       </div>
       <div class="col-md-3 text-center mb-3">
         <a href="articulo-27/">
-          <img src="transparencia-27.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 27">
+          <img src="transparencia-27.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 27" />
           <h5 class="mt-2">Artículo 27</h5>
         </a>
       </div>
@@ -298,8 +319,10 @@
 
 </div>
 
-<!-- Asegúrate de incluir Bootstrap JS para que funcione el colapso -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<p></html></p>
     </div>
 </article>
     </main>
