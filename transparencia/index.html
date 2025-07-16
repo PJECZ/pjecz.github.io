@@ -284,6 +284,7 @@
       font-size: 1.25rem;
     }
 
+    /* Ocultar títulos automáticos del CMS o sistema */
     h1, h1.titulo-transparencia, .page-title, .titulo-principal {
       display: none !important;
       visibility: hidden !important;
@@ -292,11 +293,15 @@
       padding: 0 !important;
     }
 
-    /* Ocultar elementos sueltos que se muestran al final */
-    body > p:last-of-type,
-    body > h3:last-of-type,
-    body > h4:last-of-type,
-    body > h5:last-of-type {
+    /* Ocultar textos sueltos al final */
+    body > .contenido-limite ~ p,
+    body > .contenido-limite ~ h3,
+    body > .contenido-limite ~ h5,
+    body > .contenido-limite ~ a {
+      display: none !important;
+    }
+
+    footer, footer * {
       display: none !important;
     }
   </style></p>
@@ -371,7 +376,7 @@
     Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
   </h5>
 
-  <!-- Círculos centrados -->
+  <!-- Botones circulares -->
   <div class="row justify-content-center mt-4">
     <div class="col-md-3 text-center mb-3">
       <a href="articulo-22-laip/" target="_blank">
@@ -400,6 +405,17 @@
 
 </body>
 <p></html></p>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const aviso = new bootstrap.Modal(document.getElementById('modalAviso'));
+  window.addEventListener('DOMContentLoaded', () => {
+    aviso.show();
+  });
+</script>
+
+<p></body>
+</html></p>
 <h2>Artículo 18</h2>
 <h2>Artículo 27 (LTAIP)</h2>
     </div>
