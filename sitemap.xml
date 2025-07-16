@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-07-16T12:17:17-00:00</lastmod>
+<lastmod>2025-07-16T12:24:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1964,21 +1964,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/comisiones/2025/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/comisiones/2025/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/licencias/2025/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/licencias/2025/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f03-el-importe-por-concepto-de-viaticos-y-gastos-de-representacion/2025/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/2025/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3413,7 +3413,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/comisiones/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/comisiones/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4239,6 +4239,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f02-funciones-de-las-unidades-jurisdiccionales-y-administrativas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4268,6 +4275,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f02-marco-normativo/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f02-tipo-de-seguridad-social/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4345,6 +4359,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27/f05-asuntos-iniciados-en-tramite-y-resueltos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27-ltaip/f05-fondo-para-el-mejoramiento-de-la-administracion-de-justicia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4436,6 +4457,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f07-listas-de-acuerdos/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f07-minutas-de-reuniones-publicas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4793,13 +4821,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f17-padron-de-beneficiarios-de-programas-sociales/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27-ltaip/f17-sistemas-pensionarios/f17-sistemas-pensionarios/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -6136,7 +6157,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias-de-las-personas-servidoras-publicas/licencias/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/licencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
