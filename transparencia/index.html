@@ -291,11 +291,19 @@
       margin: 0 !important;
       padding: 0 !important;
     }
+
+    /* Ocultar elementos sueltos que se muestran al final */
+    body > p:last-of-type,
+    body > h3:last-of-type,
+    body > h4:last-of-type,
+    body > h5:last-of-type {
+      display: none !important;
+    }
   </style></p>
 <p></head></p>
 <body>
 
-<!-- MODAL obligatorio que no se puede cerrar con la X -->
+<!-- MODAL obligatorio -->
 <div class="modal fade" id="modalAviso" tabindex="-1" aria-labelledby="modalAvisoLabel" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
@@ -366,13 +374,13 @@
   <!-- Círculos centrados -->
   <div class="row justify-content-center mt-4">
     <div class="col-md-3 text-center mb-3">
-      <a href="https://www.pjecz.gob.mx/transparencia/articulo-22-laip/" target="_blank">
+      <a href="articulo-22-laip/" target="_blank">
         <img src="transparencia-22.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 22" />
         <h5 class="mt-2">Artículo 22 (LAIP)</h5>
       </a>
     </div>
     <div class="col-md-3 text-center mb-3">
-      <a href="https://www.pjecz.gob.mx/transparencia/articulo-27-laip/" target="_blank">
+      <a href="articulo-27-laip/" target="_blank">
         <img src="transparencia-27.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 27" />
         <h5 class="mt-2">Artículo 27 (LAIP)</h5>
       </a>
