@@ -286,12 +286,14 @@
       padding: 0 !important;
     }
 
-    /* Ocultar textos sueltos al final */
+    /* Ocultar textos sueltos al final (IMPORTANTE PARA LO QUE PEDISTE) */
     body > .contenido-limite ~ p,
     body > .contenido-limite ~ h3,
     body > .contenido-limite ~ h5,
     body > .contenido-limite ~ a,
-    body > p {
+    body > p, /* Esto es clave para ocultar los párrafos "Artículo XX LTAIP" que aparecen abajo */
+    body > div.container.my-5.contenido-limite + p /* Una regla más específica para el caso */
+     {
       display: none !important;
     }
 
@@ -360,10 +362,6 @@
     Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
   </h5>
 
-  <h5 class="titulo-ley">
-    Ley General de Transparencia y Acceso a la Información
-  </h5>
-
   <div class="row justify-content-center mt-4">
     <div class="col-md-3 text-center mb-3">
       <a href="articulo-22-ltaip/" target="_blank">
@@ -378,6 +376,10 @@
       </a>
     </div>
   </div>
+
+  <h5 class="titulo-ley mt-4">
+    Ley General de Transparencia y Acceso a la Información
+  </h5>
 
   <div class="row justify-content-center mt-4">
     <div class="col-md-3 text-center mb-3">
