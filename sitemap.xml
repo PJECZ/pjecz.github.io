@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-07-18T12:32:28-00:00</lastmod>
+<lastmod>2025-07-18T12:35:04-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2917,6 +2917,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-22/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
