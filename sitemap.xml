@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-07-18T14:16:12-00:00</lastmod>
+<lastmod>2025-07-18T14:29:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2923,6 +2923,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-27-ltaip/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4197,7 +4204,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f01-estructura-jurisdiccional-y-administrativa/estructura-jurisdiccional-y-administrativa/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f01-estructura-jurisdiccional-y-administrativa/estructura-jurisdiccional-y-administrativa/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4281,7 +4288,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f01-estructura-jurisdiccional-y-administrativa/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f01-estructura-jurisdiccional-y-administrativa/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4337,7 +4344,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f02-funciones/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f02-funciones/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4407,7 +4414,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f03-directorio/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f03-directorio/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4449,7 +4456,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f04-presupuesto-asignado/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f04-presupuesto-asignado/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4477,7 +4484,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f05-fondo-para-el-mejoramiento-de-la-administracion-de-justicia/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f05-fondo-para-el-mejoramiento-de-la-administracion-de-justicia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4533,7 +4540,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f06-asuntos-iniciados-en-tramite-y-resueltos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f06-asuntos-iniciados-en-tramite-y-resueltos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4582,7 +4589,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f07-agenda-de-audiencias/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f07-agenda-de-audiencias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4680,7 +4687,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f09-calendario-de-dias-inhabiles/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f09-calendario-de-dias-inhabiles/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4771,7 +4778,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f10-ubicacion-de-los-expedientes/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4799,7 +4806,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f11-formatos-de-procedimientos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f11-formatos-de-procedimientos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4848,7 +4855,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f12-estadisticas-de-amparos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f12-estadisticas-de-amparos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4911,7 +4918,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f13-programas-cursos-y-convocatorias/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f13-programas-cursos-y-convocatorias/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4939,7 +4946,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f14-justicia-constitucional/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5002,7 +5009,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f15-resumen-de-glosa-de-debate/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-glosa-de-debate/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5030,7 +5037,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f16-lista-de-peritos/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f16-lista-de-peritos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5058,7 +5065,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f17-estado-que-guarda-el-sistema-pensionario/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f17-estado-que-guarda-el-sistema-pensionario/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -5947,14 +5954,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f06-asuntos-iniciados-en-tramite-y-resueltos/historico-informacion-2017-2024/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f06-asuntos-iniciados-en-tramite-y-resueltos/historico-informacion-2017-2024/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip-/f12-estadisticas-de-amparos/historico-informacion-2017-2024/</loc>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f12-estadisticas-de-amparos/historico-informacion-2017-2024/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
