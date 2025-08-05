@@ -273,6 +273,83 @@
 <p>Los órganos administrativos tienen a su cargo tareas relativas a la administración de los recursos humanos, materiales y económicos del Poder Judicial.</p>
 <p>De esta manera, el Poder Judicial del Estado de Coahuila cuenta con la siguiente estructura:</p>
 <h1>Estructura Orgánica</h1>
+<h2>Descargar</h2>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 65 LTAIP/F06 directorio/Directorio.xlsx">Directorio.xlsx</a></li>
+</ul>
+<p>Title: Art. 21, Fracc. I / Estructura Orgánica
+Summary: Su estructura orgánica en un formato que permita vincular por cada eslabón de la misma, nivel tabular, las facultades y responsabilidades que le corresponden de conformidad con las disposiciones aplicables, y los puestos públicos vacantes de dicha estructura, así como los requisitos para poder acceder a los mismos.El Poder Judicial del Estado de Coahuila cuenta con una estructura orgánica integrada por órganos jurisdiccionales, no jurisdiccionales y administrativos.</p>
+<h4>RESPONSABLE</h4>
+<p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
+<h4>FECHA DE VALIDACIÓN</h4>
+<p>14 de julio de 2025</p>
+<!DOCTYPE html>
+<p><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Directorio desde Excel</title>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script></p>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+<p></head></p>
+<body>
+
+  <h2>Directorio desde archivo Excel</h2>
+  <input type="file" id="input-excel" accept=".xlsx, .xls" />
+
+  <div id="tabla-directorio"></div>
+
+  <script>
+    document.getElementById('input-excel').addEventListener('change', function(e) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const data = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+
+        const sheetName = workbook.SheetNames[0]; // Primera hoja
+        const sheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+        let html = "<table><thead><tr>";
+        jsonData[0].forEach(header => {
+          html += `<th>${header}</th>`;
+        });
+        html += "</tr></thead><tbody>";
+
+        for (let i = 1; i < jsonData.length; i++) {
+          html += "<tr>";
+          jsonData[i].forEach(cell => {
+            html += `<td>${cell ?? ''}</td>`;
+          });
+          html += "</tr>";
+        }
+
+        html += "</tbody></table>";
+        document.getElementById('tabla-directorio').innerHTML = html;
+      };
+      reader.readAsArrayBuffer(e.target.files[0]);
+    });
+  </script>
+
+</body>
+<p></html></p>
     </div>
 </article>
     </main>
