@@ -266,30 +266,21 @@
 <head>
   <meta charset="UTF-8" />
   <title>Directorio Central de Actuarios</title>
-  <!-- Incluye Font Awesome para iconos --></p>
+  <!-- Bootstrap 5 --></p>
+<p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome --></p>
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <br>
 <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
       background-color: #f5f5f5;
     }
-    h2 {
-      color: #234b1c;
-      margin-top: 1em;
-    }
-    .directorio-area {
-      margin-bottom: 2em;
-    }
     .persona {
-      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #ffffff;
       border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1em;
-      margin-bottom: 1em;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-radius: 0.5rem;
     }
     .persona strong {
       display: block;
@@ -301,29 +292,43 @@
       margin-right: 0.5em;
       color: #555;
     }
+    /* Quitamos fondo y bordes de breadcrumb */
+    nav.breadcrumb-nav {
+      background: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    .breadcrumb {
+      background: none;
+      margin-bottom: 0;
+    }
+    /* Quitamos fondo y bordes de summary */
     details > summary {
       cursor: pointer;
-      padding: 0.5em 0;
-      font-size: 1.2em;
       list-style: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
     }
     details > summary:hover {
       color: #2a5d1d;
     }
   </style></p>
 <p></head></p>
-<body>
+<body class="container py-4">
 
-<nav aria-label="breadcrumb">
+<!-- Breadcrumb sin fondo -->
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="../">Central de Actuarios de Saltillo</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Directorio</li>
+    <li class="breadcrumb-item"><a href="../">Transparencia</a></li>
+    <li class="breadcrumb-item"><a href="#">Artículo 65 LTAIP</a></li>
+    <li class="breadcrumb-item active" aria-current="page">F06 Directorio</li>
   </ol>
 </nav>
 
 <!-- Área: Central de Actuarios de Saltillo -->
 <details open>
-  <summary><h2>Central de Actuarios de Saltillo</h2></summary>
+  <summary>Central de Actuarios de Saltillo</summary>
   <div class="directorio-area">
     <div class="persona">
       <strong><i class="fas fa-user icono"></i>Mtro. Rodrigo González Morales, Coordinador</strong>
@@ -331,24 +336,20 @@
       <p><i class="fas fa-phone icono"></i>(844) 777 44 51</p>
       <p><i class="fas fa-envelope icono"></i>rodrigo.gonzalez@coahuila.gob.mx</p>
     </div>
-
     <div class="persona">
       <strong><i class="fas fa-user icono"></i>Lic. Anibal Terashima Zamora, Archivista</strong>
       <p><i class="fas fa-envelope icono"></i>anibal.terashima@coahuila.gob.mx</p>
     </div>
-
     <div class="persona">
       <strong><i class="fas fa-user icono"></i>Lic. Carlos Daniel García Berlanga, Actuario</strong>
       <p><i class="fas fa-envelope icono"></i>carlos.garcia@coahuila.gob.mx</p>
     </div>
-
-    <!-- Puedes agregar más personas aquí -->
   </div>
 </details>
 
 <!-- Área: Central de Actuarios en Materia Hipotecaria Saltillo -->
 <details>
-  <summary><h2>Central de Actuarios en Materia Hipotecaria Saltillo</h2></summary>
+  <summary>Central de Actuarios en Materia Hipotecaria Saltillo</summary>
   <div class="directorio-area">
     <div class="persona">
       <strong><i class="fas fa-user icono"></i>Lic. Karla Patricia Fuentes Torres, Coordinadora</strong>
@@ -356,21 +357,15 @@
       <p><i class="fas fa-phone icono"></i>(844) 777 44 51</p>
       <p><i class="fas fa-envelope icono"></i>karla.fuentes@coahuila.gob.mx</p>
     </div>
-
     <div class="persona">
       <strong><i class="fas fa-user icono"></i>Lic. José Daniel Olvera López, Actuario</strong>
       <p><i class="fas fa-envelope icono"></i>jose.olvera@coahuila.gob.mx</p>
     </div>
-
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Lic. Laura Mónica Fuentes Flores, Actuario</strong>
-      <p><i class="fas fa-envelope icono"></i>laura.fuentes@coahuila.gob.mx</p>
-    </div>
-
-    <!-- Puedes agregar más personas aquí -->
   </div>
 </details>
 
+<!-- Bootstrap JS Bundle (opcional si no necesitas JS de Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <p></html></p>
     </div>
