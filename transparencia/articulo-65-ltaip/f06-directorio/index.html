@@ -264,108 +264,63 @@
 <!DOCTYPE html>
 <p><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Directorio Central de Actuarios</title>
-  <!-- Bootstrap 5 --></p>
+  <meta charset="UTF-8">
+  <title>Directorio F06</title>
+  <!-- Bootstrap CSS --></p>
 <p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome --></p>
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <br>
 <style>
-    body {
-      background-color: #f5f5f5;
-    }
-    .persona {
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 0.5rem;
-    }
-    .persona strong {
-      display: block;
-      font-size: 1.1em;
-      margin-bottom: 0.3em;
-      color: #333;
-    }
-    .icono {
-      margin-right: 0.5em;
-      color: #555;
-    }
-    /* Quitamos fondo y bordes de breadcrumb */
-    nav.breadcrumb-nav {
-      background: none;
+    /* Quitar recuadros blancos de los títulos */
+    .no-box {
+      background: none !important;
+      border: none !important;
+      box-shadow: none !important;
       padding: 0;
-      margin-bottom: 1rem;
-    }
-    .breadcrumb {
-      background: none;
-      margin-bottom: 0;
-    }
-    /* Quitamos fondo y bordes de summary */
-    details > summary {
-      cursor: pointer;
-      list-style: none;
-      font-size: 1.3rem;
-      font-weight: 600;
-      padding: 0.5rem 0;
-    }
-    details > summary:hover {
-      color: #2a5d1d;
+      margin: 0;
     }
   </style></p>
 <p></head></p>
-<body class="container py-4">
+<body class="bg-light">
 
-<!-- Breadcrumb sin fondo -->
-<nav class="breadcrumb-nav" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="../">Transparencia</a></li>
-    <li class="breadcrumb-item"><a href="#">Artículo 65 LTAIP</a></li>
-    <li class="breadcrumb-item active" aria-current="page">F06 Directorio</li>
-  </ol>
-</nav>
+<div class="container my-5">
 
-<!-- Área: Central de Actuarios de Saltillo -->
-<details open>
-  <summary>Central de Actuarios de Saltillo</summary>
-  <div class="directorio-area">
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Mtro. Rodrigo González Morales, Coordinador</strong>
-      <p><i class="fas fa-map-marker-alt icono"></i>Emilio Carranza (norte), número 505, Zona Centro, Saltillo, Coahuila de Zaragoza</p>
-      <p><i class="fas fa-phone icono"></i>(844) 777 44 51</p>
-      <p><i class="fas fa-envelope icono"></i>rodrigo.gonzalez@coahuila.gob.mx</p>
-    </div>
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Lic. Anibal Terashima Zamora, Archivista</strong>
-      <p><i class="fas fa-envelope icono"></i>anibal.terashima@coahuila.gob.mx</p>
-    </div>
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Lic. Carlos Daniel García Berlanga, Actuario</strong>
-      <p><i class="fas fa-envelope icono"></i>carlos.garcia@coahuila.gob.mx</p>
+  <!-- Título sin recuadro -->
+  <h2 class="no-box mb-4">Central de Actuarios de Saltillo</h2>
+  <h3 class="no-box mb-4">Central de Actuarios en Materia Hipotecaria Saltillo</h3>
+
+  <!-- Lista desplegable -->
+  <div class="accordion" id="directorioAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Directorio de Servidores Públicos
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#directorioAccordion">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Nombre:</strong> Lic. Juan Pérez<br>
+              <strong>Cargo:</strong> Actuario<br>
+              <strong>Teléfono:</strong> (844) 123-4567<br>
+              <strong>Email:</strong> juan.perez@example.com
+            </li>
+            <li class="list-group-item">
+              <strong>Nombre:</strong> Lic. María López<br>
+              <strong>Cargo:</strong> Secretaria de Acuerdos<br>
+              <strong>Teléfono:</strong> (844) 234-5678<br>
+              <strong>Email:</strong> maria.lopez@example.com
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</details>
+</div>
 
-<!-- Área: Central de Actuarios en Materia Hipotecaria Saltillo -->
-<details>
-  <summary>Central de Actuarios en Materia Hipotecaria Saltillo</summary>
-  <div class="directorio-area">
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Lic. Karla Patricia Fuentes Torres, Coordinadora</strong>
-      <p><i class="fas fa-map-marker-alt icono"></i>Calle Chiapas, esquina con Candela, número 375, planta baja, colonia República Poniente, CP 25265, Saltillo, Coahuila de Zaragoza</p>
-      <p><i class="fas fa-phone icono"></i>(844) 777 44 51</p>
-      <p><i class="fas fa-envelope icono"></i>karla.fuentes@coahuila.gob.mx</p>
-    </div>
-    <div class="persona">
-      <strong><i class="fas fa-user icono"></i>Lic. José Daniel Olvera López, Actuario</strong>
-      <p><i class="fas fa-envelope icono"></i>jose.olvera@coahuila.gob.mx</p>
-    </div>
-  </div>
-</details>
-
-<!-- Bootstrap JS Bundle (opcional si no necesitas JS de Bootstrap) -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 <p></html></p>
     </div>
