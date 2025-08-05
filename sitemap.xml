@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-08-05T14:30:42-00:00</lastmod>
+<lastmod>2025-08-05T14:34:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5576,6 +5576,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-65-lgtaip/f22-resultados-de-las-auditorias-al-ejercicio-presupuestal/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f22-unidad-de-transparencia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5619,6 +5626,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-27/f23-seleccion-de-jueces-y-magistrados/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-65-lgtaip/f24-montos-criterios-convocatorias-y-listado-de-personas-fisicas-o-morales-a-quienes-por-cualquier-motivo-se-les-asigne-o-permita-usar-recursos-publicos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
