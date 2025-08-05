@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-08-05T14:46:03-00:00</lastmod>
+<lastmod>2025-08-05T14:48:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5143,6 +5143,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-65-lgtaip/f12-unidad-de-transparencia/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-65-lgtaip/f13-convocatorias-a-concursos-para-ocupar-cargos-publicos-y-los-resultados-de-los-mismos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
