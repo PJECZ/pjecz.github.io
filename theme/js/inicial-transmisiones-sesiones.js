@@ -81,6 +81,80 @@ $(document).ready(function () {
     })
   }
 
+  // Sala Civil y Mercantil
+  var celda_scm = document.getElementById('transmisiones_sesiones_scm')
+  // Solo debe de trabajar cuando encuentra el elemento
+  if (celda_scm) {
+    fetch('feeds/sala-civil-y-mercantil.rss.xml').then((res) => {
+      res.text().then((xmlTxt) => {
+        // Cargar feed
+        var domParser = new DOMParser()
+        let doc = domParser.parseFromString(xmlTxt, 'text/xml')
+        // Obtener el primer elemento del feed
+        let feedFirst = doc.querySelector('item')
+        // Armar imagen
+        let imagen = document.createElement('img')
+        imagen.src = 'theme/images/transmisiones-sesiones-civil-mercantil.png'
+        imagen.alt = 'Sala Civil y Mercantil'
+        // Armar encabezado
+        let encabezado = document.createElement('h3')
+        encabezado.innerText = 'Sala Civil y Mercantil'
+        // Armar vinculo con imagen y encabezado
+        let vinculo = document.createElement('a')
+        vinculo.appendChild(imagen)
+        vinculo.appendChild(encabezado)
+        vinculo.href = feedFirst.querySelector('link').textContent
+        // Armar descripcion
+        let pequeno = document.createElement('small')
+        pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
+        let descripcion = document.createElement('h4')
+        descripcion.appendChild(pequeno)
+        // Agregar a la celda
+        celda_scm.appendChild(vinculo)
+        celda_scm.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_scm_spinner').hide();
+      })
+    })
+  }
+
+  // Sala Familiar
+  var celda_sf = document.getElementById('transmisiones_sesiones_sf')
+  // Solo debe de trabajar cuando encuentra el elemento
+  if (celda_sf) {
+    fetch('feeds/sala-familiar.rss.xml').then((res) => {
+      res.text().then((xmlTxt) => {
+        // Cargar feed
+        var domParser = new DOMParser()
+        let doc = domParser.parseFromString(xmlTxt, 'text/xml')
+        // Obtener el primer elemento del feed
+        let feedFirst = doc.querySelector('item')
+        // Armar imagen
+        let imagen = document.createElement('img')
+        imagen.src = 'theme/images/transmisiones-sesiones-familiar.png'
+        imagen.alt = 'Sala Familiar'
+        // Armar encabezado
+        let encabezado = document.createElement('h3')
+        encabezado.innerText = 'Sala Familiar'
+        // Armar vinculo con imagen y encabezado
+        let vinculo = document.createElement('a')
+        vinculo.appendChild(imagen)
+        vinculo.appendChild(encabezado)
+        vinculo.href = feedFirst.querySelector('link').textContent
+        // Armar descripcion
+        let pequeno = document.createElement('small')
+        pequeno.innerText = fechaEnEspanol(feedFirst.querySelector('pubDate').textContent)
+        let descripcion = document.createElement('h4')
+        descripcion.appendChild(pequeno)
+        // Agregar a la celda
+        celda_sf.appendChild(vinculo)
+        celda_sf.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_sf_spinner').hide();
+      })
+    })
+  }
+
   // Sala Penal
   var celda_sp = document.getElementById('transmisiones_sesiones_sp')
   // Solo debe de trabajar cuando encuentra el elemento
