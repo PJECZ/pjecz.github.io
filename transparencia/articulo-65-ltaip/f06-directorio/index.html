@@ -302,10 +302,11 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .persona img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
+      width: 140px; /* un poco más grande */
+      height: 140px;
+      object-fit: cover;       /* mantiene proporción y recorta */
+      object-position: center top; /* enfoca en el rostro */
+      border-radius: 50%;      /* forma circular */
       border: 2px solid #ccc;
       margin-bottom: 10px;
     }
@@ -337,7 +338,7 @@
     <div class="subtitulo">Sala Civil y Mercantil</div>
     <div class="miembros">
       <div class="persona">
-        <img src="images/maria-eugenia-galindo-hernandez.jpg" alt="maria-eugenia-galindo-hernandez.jpg">
+        <img src="images/María Eugenia Galindo Hernández.jpg" alt="María Eugenia Galindo Hernández">
         <div class="nombre">María Eugenia Galindo Hernández</div>
         <div class="cargo">Magistrada</div>
       </div>
