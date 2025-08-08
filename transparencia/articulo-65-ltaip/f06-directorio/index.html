@@ -261,6 +261,10 @@
 
 <h4>RESPONSABLE/ Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</h4>
 <h4>FECHA DE VALIDACIÓN/ 07 de julio de 2025</h4>
+<p>Title: Art. 21, Fracc. III / Directorio de Servidores Públicos
+Summary: El directorio de los servidores públicos, con nombre, cargo o nombramiento asignado, nivel tabular, fecha de alta en el cargo, fotografía, domicilio oficial, números telefónicos, y en su caso, dirección electrónica y redes sociales oficiales, con excepción de los miembros de las corporaciones policíacas;</p>
+<h4>RESPONSABLE/ Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</h4>
+<h4>FECHA DE VALIDACIÓN/ 07 de julio de 2025</h4>
 <p><html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -294,47 +298,22 @@
       justify-content: center;
     }
     .persona {
-      width: 240px;
+      width: 200px;
       text-align: center;
       background-color: #fff;
-      padding: 20px 10px;
+      padding: 10px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      position: relative;
     }
-
-    .foto-con-fondo {
-      position: relative;
-      width: 160px;
-      height: 160px;
-      margin: 0 auto 10px;
-    }
-
-    .foto-con-fondo::before {
-      content: "";
-      background-image: url('images/fondo-perfil.png');
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      z-index: 0;
-    }
-
-    .foto-con-fondo img {
-      width: 140px;
+    .persona img {
+      width: 140px; /* un poco más grande */
       height: 140px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 50%;
+      object-fit: cover;       /* mantiene proporción y recorta */
+      object-position: center top; /* enfoca en el rostro */
+      border-radius: 50%;      /* forma circular */
       border: 2px solid #ccc;
-      position: relative;
-      z-index: 1;
+      margin-bottom: 10px;
     }
-
     .nombre {
       font-weight: bold;
       color: #003366;
@@ -354,9 +333,7 @@
     <h2>Tribunal Superior de Justicia</h2>
     <div class="miembros">
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/Miguel Felipe Mery Ayup.jpg" alt="Miguel Felipe Mery Ayup">
-        </div>
+        <img src="images/Miguel Felipe Mery Ayup.jpg" alt="Miguel Felipe Mery Ayup">
         <div class="nombre">Miguel Felipe Mery Ayup</div>
         <div class="cargo">Presidente del Tribunal Superior de Justicia</div>
       </div>
@@ -365,16 +342,12 @@
     <div class="subtitulo">Sala Civil y Mercantil</div>
     <div class="miembros">
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/maria-eugenia-galindo-hernandez.jpg" alt="María Eugenia Galindo Hernández">
-        </div>
+        <img src="images/maria-eugenia-galindo-hernandez.jpg" alt="María Eugenia Galindo Hernández">
         <div class="nombre">María Eugenia Galindo Hernández</div>
         <div class="cargo">Magistrada</div>
       </div>
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/Vladimir Kaiceros Barranco.jpg" alt="Vladimir Kaiceros Barranco">
-        </div>
+        <img src="images/Vladimir Kaiceros Barranco.jpg" alt="Vladimir Kaiceros Barranco">
         <div class="nombre">Vladimir Kaiceros Barranco</div>
         <div class="cargo">Magistrado</div>
       </div>
@@ -391,9 +364,7 @@
         <div class="cargo">Magistrada</div>
       </div>
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/Adriana Del Amor Serna Calderón.jpg" alt="Adriana Del Amor Serna Calderón">
-        </div>
+        <img src="images/Adriana Del Amor Serna Calderón.jpg" alt="Adriana Del Amor Serna Calderón">
         <div class="nombre">Adriana Del Amor Serna Calderón</div>
         <div class="cargo">Magistrada</div>
       </div>
@@ -406,9 +377,7 @@
     <div class="subtitulo">Sala Penal</div>
     <div class="miembros">
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/Gricelda Elizalde Castellanos.jpg" alt="Gricelda Elizalde Castellanos">
-        </div>
+        <img src="images/Gricelda Elizalde Castellanos.jpg" alt="Gricelda Elizalde Castellanos">
         <div class="nombre">Gricelda Elizalde Castellanos</div>
         <div class="cargo">Magistrada</div>
       </div>
@@ -444,9 +413,7 @@
     <h2>Tribunal de Disciplina</h2>
     <div class="miembros">
       <div class="persona">
-        <div class="foto-con-fondo">
-          <img src="images/Dulce María Fuentes Mancillas.jpg" alt="Dulce María Fuentes Mancillas">
-        </div>
+        <img src="images/Dulce María Fuentes Mancillas.jpg" alt="Dulce María Fuentes Mancillas">
         <div class="nombre">Dulce María Fuentes Mancillas</div>
         <div class="cargo">Magistrada</div>
       </div>
