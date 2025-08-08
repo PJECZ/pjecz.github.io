@@ -263,105 +263,218 @@
 <h4>FECHA DE VALIDACIÓN/ 07 de julio de 2025</h4>
 <p><html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art. 21, Fracc. III / Directorio de Servidores Públicos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Directorio Institucional</title>
 <br>
 <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
+      margin: 40px;
+      background-color: #f8f9fa;
     }
-
-    h1 {
+    h1, h2, h3 {
+      color: #003366;
       text-align: center;
-      margin-bottom: 40px;
     }
-
-    .directorio {
+    .seccion {
+      margin-bottom: 60px;
+    }
+    .subtitulo {
+      margin: 30px 0 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+    .miembros {
       display: flex;
       flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
-      gap: 40px;
     }
-
-    .card {
-      width: 220px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .persona {
+      width: 200px;
       text-align: center;
-      padding: 20px 15px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .image-container {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 15px;
-      border: 4px solid #ccc;
+    .persona img {
+      width: 140px; /* un poco más grande */
+      height: 140px;
+      object-fit: cover;       /* mantiene proporción y recorta */
+      object-position: center top; /* enfoca en el rostro */
+      border-radius: 50%;      /* forma circular */
+      border: 2px solid #ccc;
+      margin-bottom: 10px;
     }
-
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    .nombre {
+      font-weight: bold;
+      color: #003366;
     }
-
-    .card p {
-      margin: 0;
-      font-size: 15px;
-    }
-
-    .card strong {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    @media screen and (max-width: 600px) {
-      .card {
-        width: 90%;
-      }
+    .cargo {
+      font-style: italic;
+      font-size: 0.95em;
+      color: #555;
     }
   </style></p>
 <p></head></p>
 <body>
+  <h1>Directorio Institucional</h1>
 
-  <h1>Art. 21, Fracc. III / Directorio de Servidores Públicos</h1>
-
-  <div class="directorio">
-
-    <!-- Ejemplo de tarjeta 1 -->
-    <div class="card">
-      <div class="image-container">
-        <img src="vladimir_kaiceros_fullcircle.jpg" alt="Vladimir Kaiceros Barranco">
+  <!-- Presidencia -->
+  <div class="seccion">
+    <h2>Tribunal Superior de Justicia</h2>
+    <div class="miembros">
+      <div class="persona">
+        <img src="images/Miguel Felipe Mery Ayup.jpg" alt="Miguel Felipe Mery Ayup">
+        <div class="nombre">Miguel Felipe Mery Ayup</div>
+        <div class="cargo">Presidente del Tribunal Superior de Justicia</div>
       </div>
-      <p>
-        <strong>Vladimir Kaiceros Barranco</strong>
-        Magistrado
-      </p>
     </div>
 
-    <!-- Puedes duplicar esto para más personas -->
-    <!--
-    <div class="card">
-      <div class="image-container">
-        <img src="nombre_archivo.jpg" alt="Nombre Persona">
+    <div class="subtitulo">Sala Civil y Mercantil</div>
+    <div class="miembros">
+      <div class="persona">
+        <img src="images/maria-eugenia-galindo-hernandez.jpg" alt="María Eugenia Galindo Hernández">
+        <div class="nombre">María Eugenia Galindo Hernández</div>
+        <div class="cargo">Magistrada</div>
       </div>
-      <p>
-        <strong>Nombre Persona</strong>
-        Cargo o nombramiento
-      </p>
+      <div class="persona">
+        <img src="images/Vladimir Kaiceros Barranco.jpg" alt="Vladimir Kaiceros Barranco">
+        <div class="nombre">Vladimir Kaiceros Barranco</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Valeriano Valdés Cabello</div>
+        <div class="cargo">Magistrado</div>
+      </div>
     </div>
-    -->
 
+    <div class="subtitulo">Sala Familiar</div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="nombre">María del Carmen Galván Tello</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <img src="images/Adriana Del Amor Serna Calderón.jpg" alt="Adriana Del Amor Serna Calderón">
+        <div class="nombre">Adriana Del Amor Serna Calderón</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Jesús Homero Flores Mier</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+    </div>
+
+    <div class="subtitulo">Sala Penal</div>
+    <div class="miembros">
+      <div class="persona">
+        <img src="images/Gricelda Elizalde Castellanos.jpg" alt="Gricelda Elizalde Castellanos">
+        <div class="nombre">Gricelda Elizalde Castellanos</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Luis Efrén Ríos Vega</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Isadora De Lourdes Rodríguez Garza</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
+
+    <div class="subtitulo">Sala Regional</div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="nombre">José Ignacio Máynez Varela</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">María Luisa Valencia García</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Yezka Garza Ramírez</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
   </div>
 
+  <!-- Tribunal de Disciplina -->
+  <div class="seccion">
+    <h2>Tribunal de Disciplina</h2>
+    <div class="miembros">
+      <div class="persona">
+        <img src="images/Dulce María Fuentes Mancillas.jpg" alt="Dulce María Fuentes Mancillas">
+        <div class="nombre">Dulce María Fuentes Mancillas</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Rodolfo Rabágo Rabágo</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Rebeca Villarreal Gómez</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Órgano de Administración Judicial -->
+  <div class="seccion">
+    <h2>Órgano de Administración Judicial</h2>
+    <div class="miembros">
+      <div class="persona">
+        <div class="nombre">José Manuel Gil Navarro</div>
+        <div class="cargo">Integrante del OAJ</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Miguel Felipe Mery Ayup</div>
+        <div class="cargo">Integrante del Pleno del TSJ</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Dulce María Fuentes Mancillas</div>
+        <div class="cargo">Integrante del TDJ</div>
+      </div>
+    </div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="nombre">Alejandro Luna Fernández</div>
+        <div class="cargo">Representante del Titular del Ejecutivo</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Tamara Garza Garza</div>
+        <div class="cargo">Representante del Legislativo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comisión de Transición -->
+  <div class="seccion">
+    <h2>Comisión de Transición</h2>
+    <div class="miembros">
+      <div class="persona">
+        <div class="nombre">Miguel Felipe Mery Ayup</div>
+        <div class="cargo">Presidente del Pleno del TSJ</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Luis Efrén Ríos Vega</div>
+        <div class="cargo">Magistrado integrante del Pleno del TSJ</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Blas José Flores González</div>
+        <div class="cargo">Jefe de Gabinete y Proyectos Estratégicos</div>
+      </div>
+      <div class="persona">
+        <div class="nombre">Luz Elena Guadalupe Morales Nuñez</div>
+        <div class="cargo">Presidenta de la Junta de Gobierno del Congreso</div>
+      </div>
+    </div>
+  </div>
 </body>
 <p></html></p>
     </div>
