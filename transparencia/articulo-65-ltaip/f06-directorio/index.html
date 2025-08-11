@@ -267,6 +267,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Directorio Institucional</title>
+  <!-- Font Awesome CDN para íconos --></p>
+<p><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 <br>
 <style>
     body {
@@ -350,12 +357,12 @@
     /* Tooltip container */
     .tooltip-text {
       visibility: hidden;
-      width: 250px;
+      width: 270px;
       background-color: #fefefe;
       color: #333;
       text-align: left;
       border-radius: 8px;
-      padding: 10px;
+      padding: 12px 14px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.25);
       position: absolute;
       z-index: 10;
@@ -365,7 +372,7 @@
       opacity: 0;
       transition: opacity 0.3s;
       font-size: 0.9em;
-      line-height: 1.3em;
+      line-height: 1.4em;
       pointer-events: none;
       box-sizing: border-box;
     }
@@ -387,6 +394,18 @@
       opacity: 1;
       pointer-events: auto;
     }
+    /* Iconos en la info */
+    .tooltip-text strong {
+      display: inline-block;
+      width: 150px;
+      font-weight: 600;
+    }
+    .tooltip-text i {
+      color: #005a9c;
+      margin-right: 8px;
+      width: 16px;
+      text-align: center;
+    }
   </style></p>
 <p></head></p>
 <body>
@@ -396,178 +415,183 @@
   <details>
     <summary>Tribunal Superior de Justicia</summary>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
         <div class="nombre">Miguel Felipe Mery Ayup</div>
         <div class="cargo">Presidente del Tribunal Superior de Justicia</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01011<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/01/2019<br/>
-          <strong>Teléfono:</strong> 844-777-4498<br/>
-          <strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01011 - 01/01/2019</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-777-4498</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
 
     <div class="subtitulo">Sala Civil y Mercantil</div>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/maria-eugenia-galindo-hernandez.png" alt="María Eugenia Galindo Hernández" />
         <div class="nombre">María Eugenia Galindo Hernández</div>
         <div class="cargo">Magistrada Presidenta</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01012<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 15/03/2018<br/>
-          <strong>Teléfono:</strong> 844-777-4499<br/>
-          <strong>Correo electrónico:</strong> maria.galindo@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Avenida Siempre Viva 742, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01012 - 02/02/2020</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-123-4567</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> maria.galindo@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Principal 456, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Vladimir Kaiceros Barranco.png" alt="Vladimir Kaiceros Barranco" />
         <div class="nombre">Vladimir Kaiceros Barranco</div>
         <div class="cargo">Magistrado</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01013<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 20/07/2017<br/>
-          <strong>Teléfono:</strong> 844-777-4500<br/>
-          <strong>Correo electrónico:</strong> vladimir.kaiceros@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Jardín 50, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01013 - 03/03/2021</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-234-5678</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> vladimir.kaiceros@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Secundaria 789, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Valeriano Valdes Cabello.png" alt="Valeriano Valdés Cabello" />
         <div class="nombre">Valeriano Valdés Cabello</div>
         <div class="cargo">Magistrado</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01014<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 10/11/2016<br/>
-          <strong>Teléfono:</strong> 844-777-4501<br/>
-          <strong>Correo electrónico:</strong> valeriano.valdes@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Magnolia 234, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01014 - 04/04/2022</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-345-6789</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> valeriano.valdes@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Central 101, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
 
     <div class="subtitulo">Sala Familiar</div>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Maria del Carmen Galvan Tello.png" alt="María del Carmen Galván Tello" />
         <div class="nombre">María del Carmen Galván Tello</div>
         <div class="cargo">Magistrada Presidenta</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01015<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 05/05/2015<br/>
-          <strong>Teléfono:</strong> 844-777-4502<br/>
-          <strong>Correo electrónico:</strong> maria.galvan@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Lirio 321, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01015 - 05/05/2018</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-456-7890</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> maria.carmen@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Familia 202, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Adriana Del Amor Serna Calderon.png" alt="Adriana Del Amor Serna Calderón" />
         <div class="nombre">Adriana Del Amor Serna Calderón</div>
         <div class="cargo">Magistrada</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01016<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 22/08/2016<br/>
-          <strong>Teléfono:</strong> 844-777-4503<br/>
-          <strong>Correo electrónico:</strong> adriana.serna@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Cedro 455, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01016 - 06/06/2017</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-567-8901</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> adriana.serna@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Justicia 303, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Jesus Homero Flores Mier.png" alt="Jesús Homero Flores Mier" />
         <div class="nombre">Jesús Homero Flores Mier</div>
         <div class="cargo">Magistrado</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01017<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 18/02/2017<br/>
-          <strong>Teléfono:</strong> 844-777-4504<br/>
-          <strong>Correo electrónico:</strong> jesus.flores@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Olivo 123, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01017 - 07/07/2016</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-678-9012</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> jesus.flores@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Justicia 404, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
 
     <div class="subtitulo">Sala Penal</div>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Gricelda Elizalde Castellanos.png" alt="Gricelda Elizalde Castellanos" />
         <div class="nombre">Gricelda Elizalde Castellanos</div>
         <div class="cargo">Magistrada Presidenta</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01018<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 12/01/2014<br/>
-          <strong>Teléfono:</strong> 844-777-4505<br/>
-          <strong>Correo electrónico:</strong> gricelda.elizalde@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Jacaranda 78, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01018 - 08/08/2015</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-789-0123</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> gricelda.elizalde@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Penal 505, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Luis Efren Rios Vega.png" alt="Luis Efrén Ríos Vega" />
         <div class="nombre">Luis Efrén Ríos Vega</div>
         <div class="cargo">Magistrado</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01019<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 09/09/2013<br/>
-          <strong>Teléfono:</strong> 844-777-4506<br/>
-          <strong>Correo electrónico:</strong> luis.rios@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Pino 66, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01019 - 09/09/2014</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-890-1234</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> luis.rios@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Penal 606, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Isadora de Lourdes.png" alt="Isadora De Lourdes Rodríguez Garza" />
         <div class="nombre">Isadora De Lourdes Rodríguez Garza</div>
         <div class="cargo">Magistrada</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01020<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 25/06/2015<br/>
-          <strong>Teléfono:</strong> 844-777-4507<br/>
-          <strong>Correo electrónico:</strong> isadora.rodriguez@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Abeto 102, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01020 - 10/10/2013</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-901-2345</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> isadora.rodriguez@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Lourdes 707, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
 
     <div class="subtitulo">Sala Regional</div>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Jose Ignacio Maynez.png" alt="José Ignacio Máynez Varela" />
         <div class="nombre">José Ignacio Máynez Varela</div>
         <div class="cargo">Magistrado Presidente</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01021<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 11/11/2012<br/>
-          <strong>Teléfono:</strong> 844-777-4508<br/>
-          <strong>Correo electrónico:</strong> jose.maynez@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Ciprés 456, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01021 - 11/11/2012</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-012-3456</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> jose.maynez@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Regional 808, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Maria Luisa Valencia.png" alt="María Luisa Valencia García" />
         <div class="nombre">María Luisa Valencia García</div>
         <div class="cargo">Magistrada</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01022<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 30/07/2016<br/>
-          <strong>Teléfono:</strong> 844-777-4509<br/>
-          <strong>Correo electrónico:</strong> maria.valencia@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Abedul 789, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01022 - 12/12/2011</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-123-4567</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> maria.valencia@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Regional 909, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Yezka Garza.png" alt="Yezka Garza Ramírez" />
         <div class="nombre">Yezka Garza Ramírez</div>
         <div class="cargo">Magistrada</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM01023<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 17/08/2017<br/>
-          <strong>Teléfono:</strong> 844-777-4510<br/>
-          <strong>Correo electrónico:</strong> yezka.garza@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Magnolia 555, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01023 - 13/01/2010</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-234-5678</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> yezka.garza@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Ramírez 1010, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
   </details>
 
@@ -575,42 +599,43 @@
   <details>
     <summary>Tribunal de Disciplina Judicial</summary>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Dulce Maria Fuentes Mancillas.png" alt="Dulce María Fuentes Mancillas" />
         <div class="nombre">Dulce María Fuentes Mancillas</div>
         <div class="cargo">Magistrada Presidenta</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM02001<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/02/2014<br/>
-          <strong>Teléfono:</strong> 844-777-4511<br/>
-          <strong>Correo electrónico:</strong> dulce.fuentes@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Rosas 321, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01024 - 14/02/2014</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-345-6789</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> dulce.fuentes@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Disciplina 111, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Rodolfo Rabago.png" alt="Rodolfo Rabágo Rabágo" />
         <div class="nombre">Rodolfo Rabágo Rabágo</div>
         <div class="cargo">Magistrado</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM02002<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 10/06/2015<br/>
-          <strong>Teléfono:</strong> 844-777-4512<br/>
-          <strong>Correo electrónico:</strong> rodolfo.rabago@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Olmos 222, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01025 - 15/03/2013</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-456-7890</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> rodolfo.rabago@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Disciplina 222, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Rebeca Villarreal.png" alt="Rebeca Villarreal Gómez" />
         <div class="nombre">Rebeca Villarreal Gómez</div>
         <div class="cargo">Magistrada</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM02003<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 15/09/2016<br/>
-          <strong>Teléfono:</strong> 844-777-4513<br/>
-          <strong>Correo electrónico:</strong> rebeca.villarreal@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Olivo 300, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01026 - 16/04/2012</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-567-8901</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> rebeca.villarreal@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Disciplina 333, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
   </details>
 
@@ -618,68 +643,70 @@
   <details>
     <summary>Órgano de Administración Judicial</summary>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Manuel Gil.png" alt="José Manuel Gil Navarro" />
         <div class="nombre">José Manuel Gil Navarro</div>
         <div class="cargo">Integrante del OAJ</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM03001<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 05/03/2017<br/>
-          <strong>Teléfono:</strong> 844-777-4514<br/>
-          <strong>Correo electrónico:</strong> manuel.gil@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Pino 450, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01027 - 17/05/2011</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-678-9012</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> jose.gil@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Administración 444, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
         <div class="nombre">Miguel Felipe Mery Ayup</div>
         <div class="cargo">Integrante del Pleno del TSJ</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM03002<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/01/2019<br/>
-          <strong>Teléfono:</strong> 844-777-4498<br/>
-          <strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01028 - 18/06/2010</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-789-0123</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Administración 555, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Dulce Maria Fuentes Mancillas.png" alt="Dulce María Fuentes Mancillas" />
         <div class="nombre">Dulce María Fuentes Mancillas</div>
         <div class="cargo">Integrante del TDJ</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM03003<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/02/2014<br/>
-          <strong>Teléfono:</strong> 844-777-4511<br/>
-          <strong>Correo electrónico:</strong> dulce.fuentes@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Rosas 321, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01029 - 19/07/2009</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-890-1234</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> dulce.fuentes@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Administración 666, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Alejandro Luna.png" alt="Alejandro Luna Fernández" />
         <div class="nombre">Alejandro Luna Fernández</div>
         <div class="cargo">Representante del Titular del Ejecutivo</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM03004<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 12/12/2018<br/>
-          <strong>Teléfono:</strong> 844-777-4515<br/>
-          <strong>Correo electrónico:</strong> alejandro.luna@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Cedro 333, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01030 - 20/08/2008</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-901-2345</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> alejandro.luna@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Ejecutivo 777, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Tamara Garza.png" alt="Tamara Garza Garza" />
         <div class="nombre">Tamara Garza Garza</div>
         <div class="cargo">Representante del Legislativo</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM03005<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 22/07/2017<br/>
-          <strong>Teléfono:</strong> 844-777-4516<br/>
-          <strong>Correo electrónico:</strong> tamara.garza@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Roble 99, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01031 - 21/09/2007</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-012-3456</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> tamara.garza@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Legislativo 888, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
   </details>
 
@@ -687,57 +714,57 @@
   <details>
     <summary>Comisión de Transición</summary>
     <div class="miembros">
+
       <div class="persona">
         <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
         <div class="nombre">Miguel Felipe Mery Ayup</div>
         <div class="cargo">Presidente del Pleno del TSJ</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM04001<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/01/2019<br/>
-          <strong>Teléfono:</strong> 844-777-4498<br/>
-          <strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01032 - 22/10/2016</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-123-4567</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Transición 111, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Luis Efren Rios Vega.png" alt="Luis Efrén Ríos Vega" />
         <div class="nombre">Luis Efrén Ríos Vega</div>
         <div class="cargo">Magistrado integrante del Pleno del TSJ</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM04002<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 09/09/2013<br/>
-          <strong>Teléfono:</strong> 844-777-4506<br/>
-          <strong>Correo electrónico:</strong> luis.rios@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Pino 66, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01033 - 23/11/2015</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-234-5678</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> luis.rios@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Transición 222, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Blas Fores.png" alt="Blas José Flores González" />
         <div class="nombre">Blas José Flores González</div>
         <div class="cargo">Jefe de Gabinete y Proyectos Estratégicos</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM04003<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 11/11/2015<br/>
-          <strong>Teléfono:</strong> 844-777-4517<br/>
-          <strong>Correo electrónico:</strong> blas.flores@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Cedro 123, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01034 - 24/12/2014</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-345-6789</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> blas.flores@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Blvd. Transición 333, Saltillo, Coahuila</div>
         </div>
       </div>
+
       <div class="persona">
         <img src="images/Luz Elena Morales.png" alt="Luz Elena Guadalupe Morales Nuñez" />
         <div class="nombre">Luz Elena Guadalupe Morales Nuñez</div>
         <div class="cargo">Presidenta de la Junta de Gobierno del Congreso</div>
         <div class="tooltip-text">
-          <strong>Nivel Tabular:</strong> TM04004<br/>
-          <strong>Fecha de ingreso al Poder Judicial:</strong> 01/03/2016<br/>
-          <strong>Teléfono:</strong> 844-777-4518<br/>
-          <strong>Correo electrónico:</strong> luz.morales@coahuila.gob.mx<br/>
-          <strong>Dirección:</strong> Calle Roble 456, Saltillo, Coahuila
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01035 - 25/01/2013</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-456-7890</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> luz.morales@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Congreso 444, Saltillo, Coahuila</div>
         </div>
       </div>
+
     </div>
   </details>
-
 </body>
 <p></html></p>
     </div>
