@@ -318,30 +318,7 @@
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .tooltip-container {
       position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-    .tooltip-info {
-      display: none;
-      position: absolute;
-      top: 150%; /* debajo de la imagen */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 260px;
-      background-color: #003366;
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 10;
-      font-size: 0.9em;
-      text-align: left;
-    }
-    .tooltip-container:hover .tooltip-info {
-      display: block;
     }
     .persona img {
       width: 140px;
@@ -351,6 +328,7 @@
       border-radius: 50%;
       border: 2px solid #ccc;
       margin-bottom: 10px;
+      cursor: pointer;
       transition: transform 0.2s ease;
     }
     .persona img:hover {
@@ -365,6 +343,50 @@
       font-style: italic;
       font-size: 0.95em;
       color: #555;
+      margin-bottom: 5px;
+    }
+    /* Tooltip container */
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    /* Tooltip text */
+    .tooltip-info {
+      visibility: hidden;
+      width: 220px;
+      background-color: #003366cc;
+      color: #fff;
+      text-align: left;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%; /* Position above the image */
+      left: 50%;
+      margin-left: -110px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      font-size: 0.9em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    /* Tooltip arrow */
+    .tooltip-info::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #003366cc transparent transparent transparent;
+    }
+    /* Show the tooltip text when hovering over the container */
+    .tooltip-container:hover .tooltip-info {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
     }
   </style></p>
 <p></head></p>
@@ -377,15 +399,12 @@
     <div class="miembros">
       <div class="persona">
         <div class="tooltip-container">
-          <a href="miguel-mery/" title="Ver más información de Miguel Felipe Mery Ayup">
+          <a href="miguel-mery/" title="Ver más información de Miguel Felipe Mery Ayup" target="_blank">
             <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
           </a>
           <div class="tooltip-info">
             <strong>Nombre:</strong> Miguel Felipe Mery Ayup<br/>
-            <strong>Cargo:</strong> Presidente del Tribunal Superior de Justicia<br/>
-            <strong>Fecha de alta:</strong> 01/01/2023<br/>
-            <strong>Teléfono:</strong> (123) 456-7890<br/>
-            <strong>Email:</strong> miguel.mery@ejemplo.gob.mx
+            <strong>Cargo:</strong> Presidente del Tribunal Superior de Justicia
           </div>
         </div>
         <div class="nombre">Miguel Felipe Mery Ayup</div>
@@ -402,10 +421,7 @@
           </a>
           <div class="tooltip-info">
             <strong>Nombre:</strong> María Eugenia Galindo Hernández<br/>
-            <strong>Cargo:</strong> Magistrada Presidenta<br/>
-            <strong>Fecha de alta:</strong> 15/02/2023<br/>
-            <strong>Teléfono:</strong> (321) 654-0987<br/>
-            <strong>Email:</strong> maria.galindo@ejemplo.gob.mx
+            <strong>Cargo:</strong> Magistrada Presidenta
           </div>
         </div>
         <div class="nombre">María Eugenia Galindo Hernández</div>
@@ -418,10 +434,7 @@
           </a>
           <div class="tooltip-info">
             <strong>Nombre:</strong> Vladimir Kaiceros Barranco<br/>
-            <strong>Cargo:</strong> Magistrado<br/>
-            <strong>Fecha de alta:</strong> 20/03/2023<br/>
-            <strong>Teléfono:</strong> (987) 654-3210<br/>
-            <strong>Email:</strong> vladimir.kaiceros@ejemplo.gob.mx
+            <strong>Cargo:</strong> Magistrado
           </div>
         </div>
         <div class="nombre">Vladimir Kaiceros Barranco</div>
@@ -434,10 +447,7 @@
           </a>
           <div class="tooltip-info">
             <strong>Nombre:</strong> Valeriano Valdés Cabello<br/>
-            <strong>Cargo:</strong> Magistrado<br/>
-            <strong>Fecha de alta:</strong> 10/04/2023<br/>
-            <strong>Teléfono:</strong> (456) 123-7890<br/>
-            <strong>Email:</strong> valeriano.valdes@ejemplo.gob.mx
+            <strong>Cargo:</strong> Magistrado
           </div>
         </div>
         <div class="nombre">Valeriano Valdés Cabello</div>
@@ -445,7 +455,6 @@
       </div>
     </div>
 
-    <!-- Sigue con las demás personas igual -->
     <div class="subtitulo">Sala Familiar</div>
     <div class="miembros">
       <div class="persona">
@@ -455,24 +464,308 @@
           </a>
           <div class="tooltip-info">
             <strong>Nombre:</strong> María del Carmen Galván Tello<br/>
-            <strong>Cargo:</strong> Magistrada Presidenta<br/>
-            <strong>Fecha de alta:</strong> 05/05/2023<br/>
-            <strong>Teléfono:</strong> (123) 987-6543<br/>
-            <strong>Email:</strong> m.carmen.galvan@ejemplo.gob.mx
+            <strong>Cargo:</strong> Magistrada Presidenta
           </div>
         </div>
         <div class="nombre">María del Carmen Galván Tello</div>
         <div class="cargo">Magistrada Presidenta</div>
       </div>
-      <!-- Continúa agregando tooltip para las demás personas igual -->
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Adriana Del Amor Serna Calderón">
+            <img src="images/Adriana Del Amor Serna Calderon.png" alt="Adriana Del Amor Serna Calderón" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Adriana Del Amor Serna Calderón<br/>
+            <strong>Cargo:</strong> Magistrada
+          </div>
+        </div>
+        <div class="nombre">Adriana Del Amor Serna Calderón</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Jesús Homero Flores Mier">
+            <img src="images/Jesus Homero Flores Mier.png" alt="Jesús Homero Flores Mier" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Jesús Homero Flores Mier<br/>
+            <strong>Cargo:</strong> Magistrado
+          </div>
+        </div>
+        <div class="nombre">Jesús Homero Flores Mier</div>
+        <div class="cargo">Magistrado</div>
+      </div>
     </div>
 
-    <!-- Resto del código igual, con tooltip-container y tooltip-info para cada persona -->
+    <div class="subtitulo">Sala Penal</div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Gricelda Elizalde Castellanos">
+            <img src="images/Gricelda Elizalde Castellanos.png" alt="Gricelda Elizalde Castellanos" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Gricelda Elizalde Castellanos<br/>
+            <strong>Cargo:</strong> Magistrada Presidenta
+          </div>
+        </div>
+        <div class="nombre">Gricelda Elizalde Castellanos</div>
+        <div class="cargo">Magistrada Presidenta</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Luis Efrén Ríos Vega">
+            <img src="images/Luis Efren Rios Vega.png" alt="Luis Efrén Ríos Vega" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Luis Efrén Ríos Vega<br/>
+            <strong>Cargo:</strong> Magistrado
+          </div>
+        </div>
+        <div class="nombre">Luis Efrén Ríos Vega</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Isadora De Lourdes Rodríguez Garza">
+            <img src="images/Isadora de Lourdes.png" alt="Isadora De Lourdes Rodríguez Garza" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Isadora De Lourdes Rodríguez Garza<br/>
+            <strong>Cargo:</strong> Magistrada
+          </div>
+        </div>
+        <div class="nombre">Isadora De Lourdes Rodríguez Garza</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
 
+    <div class="subtitulo">Sala Regional</div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de José Ignacio Máynez Varela">
+            <img src="images/Jose Ignacio Maynez.png" alt="José Ignacio Máynez Varela" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> José Ignacio Máynez Varela<br/>
+            <strong>Cargo:</strong> Magistrado Presidente
+          </div>
+        </div>
+        <div class="nombre">José Ignacio Máynez Varela</div>
+        <div class="cargo">Magistrado Presidente</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de María Luisa Valencia García">
+            <img src="images/Maria Luisa Valencia.png" alt="María Luisa Valencia García" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> María Luisa Valencia García<br/>
+            <strong>Cargo:</strong> Magistrada
+          </div>
+        </div>
+        <div class="nombre">María Luisa Valencia García</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Yezka Garza Ramírez">
+            <img src="images/Yezka Garza.png" alt="Yezka Garza Ramírez" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Yezka Garza Ramírez<br/>
+            <strong>Cargo:</strong> Magistrada
+          </div>
+        </div>
+        <div class="nombre">Yezka Garza Ramírez</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
   </details>
 
-  <!-- Puedes seguir agregando los demás detalles y personas siguiendo la misma estructura -->
+  <!-- Tribunal de Disciplina Judicial -->
+  <details>
+    <summary>Tribunal de Disciplina Judicial</summary>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="Miguel Felipe Mery Ayup/" target="_blank" title="Ver más información de Dulce María Fuentes Mancillas">
+            <img src="images/Dulce Maria Fuentes Mancillas.png" alt="Dulce María Fuentes Mancillas" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Dulce María Fuentes Mancillas<br/>
+            <strong>Cargo:</strong> Magistrada Presidenta
+          </div>
+        </div>
+        <div class="nombre">Dulce María Fuentes Mancillas</div>
+        <div class="cargo">Magistrada Presidenta</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Rodolfo Rabágo Rabágo">
+            <img src="images/Rodolfo Rabago.png" alt="Rodolfo Rabágo Rabágo" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Rodolfo Rabágo Rabágo<br/>
+            <strong>Cargo:</strong> Magistrado
+          </div>
+        </div>
+        <div class="nombre">Rodolfo Rabágo Rabágo</div>
+        <div class="cargo">Magistrado</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Rebeca Villarreal Gómez">
+            <img src="images/Rebeca Villarreal.png" alt="Rebeca Villarreal Gómez" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Rebeca Villarreal Gómez<br/>
+            <strong>Cargo:</strong> Magistrada
+          </div>
+        </div>
+        <div class="nombre">Rebeca Villarreal Gómez</div>
+        <div class="cargo">Magistrada</div>
+      </div>
+    </div>
+  </details>
 
+  <!-- Órgano de Administración Judicial -->
+  <details>
+    <summary>Órgano de Administración Judicial</summary>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de José Manuel Gil Navarro">
+            <img src="images/Manuel Gil.png" alt="José Manuel Gil Navarro" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> José Manuel Gil Navarro<br/>
+            <strong>Cargo:</strong> Integrante del OAJ
+          </div>
+        </div>
+        <div class="nombre">José Manuel Gil Navarro</div>
+        <div class="cargo">Integrante del OAJ</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Miguel Felipe Mery Ayup">
+            <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Miguel Felipe Mery Ayup<br/>
+            <strong>Cargo:</strong> Integrante del Pleno del TSJ
+          </div>
+        </div>
+        <div class="nombre">Miguel Felipe Mery Ayup</div>
+        <div class="cargo">Integrante del Pleno del TSJ</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Dulce María Fuentes Mancillas">
+            <img src="images/Dulce Maria Fuentes Mancillas.png" alt="Dulce María Fuentes Mancillas" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Dulce María Fuentes Mancillas<br/>
+            <strong>Cargo:</strong> Integrante del TDJ
+          </div>
+        </div>
+        <div class="nombre">Dulce María Fuentes Mancillas</div>
+        <div class="cargo">Integrante del TDJ</div>
+      </div>
+    </div>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Alejandro Luna Fernández">
+            <img src="images/Alejandro Luna.png" alt="Alejandro Luna Fernández" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Alejandro Luna Fernández<br/>
+            <strong>Cargo:</strong> Representante del Titular del Ejecutivo
+          </div>
+        </div>
+        <div class="nombre">Alejandro Luna Fernández</div>
+        <div class="cargo">Representante del Titular del Ejecutivo</div>
+      </div>
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Tamara Garza Garza">
+            <img src="images/Tamara Garza.png" alt="Tamara Garza Garza" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Tamara Garza Garza<br/>
+            <strong>Cargo:</strong> Representante del Legislativo
+          </div>
+        </div>
+        <div class="nombre">Tamara Garza Garza</div>
+        <div class="cargo">Representante del Legislativo</div>
+      </div>
+    </div>
+  </details>
+
+  <!-- Comisión de Transición -->
+  <details>
+    <summary>Comisión de Transición</summary>
+    <div class="miembros">
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Miguel Felipe Mery Ayup">
+            <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Miguel Felipe Mery Ayup<br/>
+            <strong>Cargo:</strong> Presidente del Pleno del TSJ
+          </div>
+        </div>
+        <div class="nombre">Miguel Felipe Mery Ayup</div>
+        <div class="cargo">Presidente del Pleno del TSJ</div>
+      </div>
+
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Luis Efrén Ríos Vega">
+            <img src="images/Luis Efren Rios Vega.png" alt="Luis Efrén Ríos Vega" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Luis Efrén Ríos Vega<br/>
+            <strong>Cargo:</strong> Magistrado integrante del Pleno del TSJ
+          </div>
+        </div>
+        <div class="nombre">Luis Efrén Ríos Vega</div>
+        <div class="cargo">Magistrado integrante del Pleno del TSJ</div>
+      </div>
+
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Blas José Flores González">
+            <img src="images/Blas Fores.png" alt="Blas José Flores González" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Blas José Flores González<br/>
+            <strong>Cargo:</strong> Jefe de Gabinete y Proyectos Estratégicos
+          </div>
+        </div>
+        <div class="nombre">Blas José Flores González</div>
+        <div class="cargo">Jefe de Gabinete y Proyectos Estratégicos</div>
+      </div>
+
+      <div class="persona">
+        <div class="tooltip-container">
+          <a href="miguel-mery/" target="_blank" title="Ver más información de Luz Elena Guadalupe Morales Nuñez">
+            <img src="images/Luz Elena Morales.png" alt="Luz Elena Guadalupe Morales Nuñez" />
+          </a>
+          <div class="tooltip-info">
+            <strong>Nombre:</strong> Luz Elena Guadalupe Morales Nuñez<br/>
+            <strong>Cargo:</strong> Presidenta de la Junta de Gobierno del Congreso
+          </div>
+        </div>
+        <div class="nombre">Luz Elena Guadalupe Morales Nuñez</div>
+        <div class="cargo">Presidenta de la Junta de Gobierno del Congreso</div>
+      </div>
+    </div>
+  </details>
 </body>
 <p></html></p>
     </div>
