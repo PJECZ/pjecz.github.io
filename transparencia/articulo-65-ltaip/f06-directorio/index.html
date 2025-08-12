@@ -326,7 +326,6 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
       position: relative;
-      cursor: default;
     }
     .persona img {
       width: 140px;
@@ -336,6 +335,7 @@
       border-radius: 50%;
       border: 2px solid #ccc;
       margin-bottom: 10px;
+      cursor: pointer;
       transition: transform 0.2s ease;
     }
     .persona img:hover {
@@ -357,7 +357,7 @@
     /* Tooltip container */
     .tooltip-text {
       visibility: hidden;
-      width: 280px;
+      width: 270px;
       background-color: #fefefe;
       color: #333;
       text-align: left;
@@ -375,7 +375,6 @@
       line-height: 1.4em;
       pointer-events: none;
       box-sizing: border-box;
-      white-space: normal;
     }
     .tooltip-text::after {
       content: "";
@@ -417,49 +416,57 @@
     <summary>Tribunal Superior de Justicia</summary>
     <div class="miembros">
 
-      <div class="persona">
+<div class="persona">
         <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" />
         <div class="nombre">Miguel Felipe Mery Ayup</div>
         <div class="cargo">Presidente del Tribunal Superior de Justicia</div>
         <div class="tooltip-text">
-          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular:</strong> TM01011</div>
-          <div><i class="fa-solid fa-calendar"></i><strong>Fecha de ingreso:</strong> 01/01/2019</div>
-          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-777-4498</div>
-          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx</div>
-          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila</div>
+        <div class="tooltip-text">
+  <div>
+    <i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular:</strong> TM01011
+  </div>
+  <div>
+    <i class="fa-solid fa-calendar"></i><strong>Fecha de ingreso:</strong> 01/01/2019
+  </div>
+  <div>
+    <i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-777-4498
+  </div>
+  <div>
+    <i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> miguel.mery@coahuila.gob.mx
+  </div>
+  <div>
+    <i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Falsa 123, Saltillo, Coahuila
+  </div>
+</div>
+
+    </div>
+
+    <div class="subtitulo">Sala Civil y Mercantil</div>
+    <div class="miembros">
+
+      <div class="persona">
+        <img src="images/maria-eugenia-galindo-hernandez.png" alt="María Eugenia Galindo Hernández" />
+        <div class="nombre">María Eugenia Galindo Hernández</div>
+        <div class="cargo">Magistrada Presidenta</div>
+        <div class="tooltip-text">
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01012 - 02/02/2020</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-123-4567</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> maria.galindo@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Principal 456, Saltillo, Coahuila</div>
         </div>
       </div>
 
-    </div>
-  </details>
-
-  <!-- Sala Civil y Mercantil -->
-  <div class="subtitulo">Sala Civil y Mercantil</div>
-  <div class="miembros">
-
-    <div class="persona">
-      <img src="images/maria-eugenia-galindo-hernandez.png" alt="María Eugenia Galindo Hernández" />
-      <div class="nombre">María Eugenia Galindo Hernández</div>
-      <div class="cargo">Magistrada Presidenta</div>
-      <div class="tooltip-text">
-        <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01012 - 02/02/2020</div>
-        <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-123-4567</div>
-        <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> maria.galindo@coahuila.gob.mx</div>
-        <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Av. Principal 456, Saltillo, Coahuila</div>
+      <div class="persona">
+        <img src="images/Vladimir Kaiceros Barranco.png" alt="Vladimir Kaiceros Barranco" />
+        <div class="nombre">Vladimir Kaiceros Barranco</div>
+        <div class="cargo">Magistrado</div>
+        <div class="tooltip-text">
+          <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01013 - 03/03/2021</div>
+          <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-234-5678</div>
+          <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> vladimir.kaiceros@coahuila.gob.mx</div>
+          <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Secundaria 789, Saltillo, Coahuila</div>
+        </div>
       </div>
-    </div>
-
-    <div class="persona">
-      <img src="images/Vladimir Kaiceros Barranco.png" alt="Vladimir Kaiceros Barranco" />
-      <div class="nombre">Vladimir Kaiceros Barranco</div>
-      <div class="cargo">Magistrado</div>
-      <div class="tooltip-text">
-        <div><i class="fa-solid fa-scale-balanced"></i><strong>Nivel Tabular y Fecha de ingreso:</strong> TM01013 - 03/03/2021</div>
-        <div><i class="fa-solid fa-phone"></i><strong>Teléfono:</strong> 844-234-5678</div>
-        <div><i class="fa-solid fa-envelope"></i><strong>Correo electrónico:</strong> vladimir.kaiceros@coahuila.gob.mx</div>
-        <div><i class="fa-solid fa-location-dot"></i><strong>Dirección:</strong> Calle Secundaria 789, Saltillo, Coahuila</div>
-      </div>
-    </div>
 
       <div class="persona">
         <img src="images/Valeriano Valdes Cabello.png" alt="Valeriano Valdés Cabello" />
