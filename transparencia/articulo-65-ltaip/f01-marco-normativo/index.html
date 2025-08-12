@@ -268,36 +268,65 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Listado Desplegable de Documentos</title></p>
+<!-- Font Awesome para iconos -->
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" /></p>
 <style>
   body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    color: #49545E;
+    background-color: #fff;
   }
   button.accordion {
     background-color: #eee;
     cursor: pointer;
-    padding: 12px;
+    padding: 12px 15px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     font-size: 16px;
     margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    color: #49545E;
   }
-  button.accordion.active,
-  button.accordion:hover {
-    background-color: #ccc;
+  button.accordion:hover,
+  button.accordion.active {
+    background-color: #BDB9A6;
+    color: #49545E;
+  }
+  button.accordion .icon-left {
+    width: 20px;
+    text-align: center;
+    color: #49545E;
+  }
+  button.accordion .arrow {
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: #49545E;
+  }
+  button.accordion.active .arrow {
+    transform: rotate(180deg);
   }
   div.panel {
-    padding: 0 15px;
+    padding: 0 15px 10px 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background-color: #f9f9f9;
+    background-color: #BDB9A6;
+    border-left: 2px solid #49545E;
+    margin-bottom: 10px;
+    color: #49545E;
   }
   div.panel ul {
     list-style: none;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     margin: 0;
   }
   div.panel ul li {
@@ -305,7 +334,7 @@
   }
   div.panel ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color: #49545E;
   }
   div.panel ul li a:hover {
     text-decoration: underline;
@@ -316,7 +345,11 @@
 
 <h2>Documentos</h2>
 
-<button class="accordion">Constituciones</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-scroll"></i></span>
+  Constituciones
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/constitucion-federal.pdf" target="_blank">Constitución Federal</a></li>
@@ -324,7 +357,11 @@
   </ul>
 </div>
 
-<button class="accordion">Leyes</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-gavel"></i></span>
+  Leyes
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/ley-transparencia.pdf" target="_blank">Ley de Transparencia</a></li>
@@ -332,7 +369,11 @@
   </ul>
 </div>
 
-<button class="accordion">Códigos</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-book"></i></span>
+  Códigos
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/codigo-civil.pdf" target="_blank">Código Civil</a></li>
@@ -340,49 +381,77 @@
   </ul>
 </div>
 
-<button class="accordion">Reglamentos</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-file-contract"></i></span>
+  Reglamentos
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/reglamento-interno.pdf" target="_blank">Reglamento Interno</a></li>
   </ul>
 </div>
 
-<button class="accordion">Decretos</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-scroll-old"></i></span>
+  Decretos
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/decreto-123.pdf" target="_blank">Decreto N° 123</a></li>
   </ul>
 </div>
 
-<button class="accordion">Manuales Administrativos</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-file-alt"></i></span>
+  Manuales Administrativos
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/manual-procedimientos.pdf" target="_blank">Manual de Procedimientos</a></li>
   </ul>
 </div>
 
-<button class="accordion">Reglas de Operación</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-cogs"></i></span>
+  Reglas de Operación
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/reglas-operacion-2025.pdf" target="_blank">Reglas de Operación 2025</a></li>
   </ul>
 </div>
 
-<button class="accordion">Lineamientos</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-list-alt"></i></span>
+  Lineamientos
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/lineamientos-acceso-informacion.pdf" target="_blank">Lineamientos para el Acceso a la Información</a></li>
   </ul>
 </div>
 
-<button class="accordion">Normativa Internacional</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-globe"></i></span>
+  Normativa Internacional
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/convencion-ddhh.pdf" target="_blank">Convención de Derechos Humanos</a></li>
   </ul>
 </div>
 
-<button class="accordion">Protocolos de Actuación</button>
+<button class="accordion">
+  <span class="icon-left"><i class="fas fa-handshake"></i></span>
+  Protocolos de Actuación
+  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+</button>
 <div class="panel">
   <ul>
     <li><a href="ruta/protocolo-actuacion.pdf" target="_blank">Protocolo de Actuación Judicial</a></li>
@@ -406,10 +475,6 @@
 
 </body>
 <p></html></p>
-<h2>Descargar</h2>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 65 LTAIP/F01 marco normativo/coa37.docx">coa37.docx</a></li>
-</ul>
     </div>
 </article>
     </main>
