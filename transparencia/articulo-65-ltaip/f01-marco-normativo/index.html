@@ -265,240 +265,142 @@
 <h4>FECHA DE VALIDACIÓN</h4>
 <p><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Documentos Institucionales</title>
-  <!-- Fuente e Iconos --></p>
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-<br>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Listado Desplegable de Documentos</title></p>
 <style>
-    :root {
-      --primary-color: #005b96;
-      --secondary-color: #444;
-      --bg-color: #f5f5f5;
-      --panel-bg: #ffffff;
-      --border-color: #ddd;
-      --accent-color: #007bff;
-    }
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: var(--bg-color);
-      margin: 0;
-      padding: 0;
-      color: var(--secondary-color);
-    }
-    header {
-      background-color: var(--primary-color);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    header img {
-      height: 50px;
-      margin-right: 15px;
-    }
-    header h1 {
-      font-size: 22px;
-      margin: 0;
-    }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    /* Buscador */
-    .search-box {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .search-box input {
-      padding: 8px;
-      width: 100%;
-      max-width: 400px;
-      font-size: 16px;
-      border: 1px solid var(--border-color);
-      border-radius: 5px;
-    }
-    .accordion {
-      background: var(--panel-bg);
-      color: var(--primary-color);
-      border: 1px solid var(--border-color);
-      padding: 15px;
-      width: 100%;
-      text-align: left;
-      font-size: 18px;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 5px;
-      user-select: none;
-    }
-    .accordion:hover {
-      background: var(--primary-color);
-      color: #fff;
-    }
-    .accordion::after {
-      content: '\25BC';
-      font-size: 14px;
-      transition: transform 0.3s;
-    }
-    .accordion.active::after {
-      transform: rotate(180deg);
-    }
-    .panel {
-      background: var(--panel-bg);
-      border: 1px solid var(--border-color);
-      border-top: none;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-      margin-bottom: 10px;
-    }
-    .panel ul {
-      list-style: none;
-      padding: 10px 20px;
-      margin: 0;
-    }
-    .panel li {
-      padding: 8px 0;
-      border-bottom: 1px dashed var(--border-color);
-      display: flex;
-      align-items: center;
-    }
-    .panel li:last-child {
-      border: none;
-    }
-    .panel a {
-      text-decoration: none;
-      color: var(--accent-color);
-      flex-grow: 1;
-      margin-left: 8px;
-    }
-    .panel a:hover {
-      text-decoration: underline;
-    }
-    .icon {
-      color: var(--primary-color);
-      width: 20px;
-      text-align: center;
-    }
-  </style></p>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  button.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  button.accordion.active,
+  button.accordion:hover {
+    background-color: #ccc;
+  }
+  div.panel {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  div.panel ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  div.panel ul li {
+    padding: 5px 0;
+  }
+  div.panel ul li a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  div.panel ul li a:hover {
+    text-decoration: underline;
+  }
+</style>
 <p></head></p>
 <body>
 
-<header>
-  <img src="https://www.pjecz.gob.mx/images/logo_pjecz.png" alt="Logo PJECZ" />
-  <h1>Listado de Documentos Institucionales</h1>
-</header>
+<h2>Documentos</h2>
 
-<main>
-  <!-- Buscador -->
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Buscar documento..." aria-label="Buscar documento" />
-  </div>
+<button class="accordion">Constituciones</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/constitucion-federal.pdf" target="_blank">Constitución Federal</a></li>
+    <li><a href="ruta/constitucion-estado.pdf" target="_blank">Constitución del Estado</a></li>
+  </ul>
+</div>
 
-  <button class="accordion">Constituciones</button>
-  <div class="panel">
-    <ul>
-      <li>
-        <span class="icon"><i class="fas fa-file-pdf"></i></span>
-        <a href="ruta/constitucion-nacional.pdf" target="_blank" rel="noopener noreferrer">Constitución Federal</a>
-      </li>
-      <li>
-        <span class="icon"><i class="fas fa-file-pdf"></i></span>
-        <a href="ruta/constitucion-estado.pdf" target="_blank" rel="noopener noreferrer">Constitución del Estado</a>
-      </li>
-    </ul>
-  </div>
+<button class="accordion">Leyes</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/ley-transparencia.pdf" target="_blank">Ley de Transparencia</a></li>
+    <li><a href="ruta/ley-estatal.pdf" target="_blank">Ley Estatal</a></li>
+  </ul>
+</div>
 
-  <button class="accordion">Leyes</button>
-  <div class="panel">
-    <ul>
-      <li>
-        <span class="icon"><i class="fas fa-file-pdf"></i></span>
-        <a href="ruta/ley-transparencia.pdf" target="_blank" rel="noopener noreferrer">Ley de Transparencia</a>
-      </li>
-      <li>
-        <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-        <a href="https://www.congreso.gob.mx" target="_blank" rel="noopener noreferrer">Ley Estatal en sitio externo</a>
-      </li>
-    </ul>
-  </div>
+<button class="accordion">Códigos</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/codigo-civil.pdf" target="_blank">Código Civil</a></li>
+    <li><a href="ruta/codigo-penal.pdf" target="_blank">Código Penal</a></li>
+  </ul>
+</div>
 
-  <button class="accordion">Códigos</button>
-  <div class="panel">
-    <ul>
-      <li>
-        <span class="icon"><i class="fas fa-file-pdf"></i></span>
-        <a href="ruta/codigo-civil.pdf" target="_blank" rel="noopener noreferrer">Código Civil</a>
-      </li>
-    </ul>
-  </div>
+<button class="accordion">Reglamentos</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/reglamento-interno.pdf" target="_blank">Reglamento Interno</a></li>
+  </ul>
+</div>
 
-  <!-- Puedes agregar más categorías y documentos aquí -->
-</main>
+<button class="accordion">Decretos</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/decreto-123.pdf" target="_blank">Decreto N° 123</a></li>
+  </ul>
+</div>
+
+<button class="accordion">Manuales Administrativos</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/manual-procedimientos.pdf" target="_blank">Manual de Procedimientos</a></li>
+  </ul>
+</div>
+
+<button class="accordion">Reglas de Operación</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/reglas-operacion-2025.pdf" target="_blank">Reglas de Operación 2025</a></li>
+  </ul>
+</div>
+
+<button class="accordion">Lineamientos</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/lineamientos-acceso-informacion.pdf" target="_blank">Lineamientos para el Acceso a la Información</a></li>
+  </ul>
+</div>
+
+<button class="accordion">Normativa Internacional</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/convencion-ddhh.pdf" target="_blank">Convención de Derechos Humanos</a></li>
+  </ul>
+</div>
+
+<button class="accordion">Protocolos de Actuación</button>
+<div class="panel">
+  <ul>
+    <li><a href="ruta/protocolo-actuacion.pdf" target="_blank">Protocolo de Actuación Judicial</a></li>
+  </ul>
+</div>
 
 <script>
-  // Funcionalidad acordeón
-  document.querySelectorAll('.accordion').forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('active');
-      const panel = btn.nextElementSibling;
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
-        panel.style.maxHeight = panel.scrollHeight + 'px';
+        panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
-  });
-
-  // Buscador con apertura automática
-  document.getElementById('searchInput').addEventListener('input', function () {
-    const filter = this.value.toLowerCase();
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(acc => {
-      const panel = acc.nextElementSibling;
-      const items = panel.querySelectorAll('li');
-      let found = false;
-
-      items.forEach(li => {
-        const text = li.innerText.toLowerCase();
-        if (text.includes(filter)) {
-          li.style.display = '';
-          found = true;
-        } else {
-          li.style.display = 'none';
-        }
-      });
-
-      if (found) {
-        acc.style.display = '';
-        panel.style.display = 'block';       // For accessibility, keep display block
-        acc.classList.add('active');          // Marca el acordeón como activo
-        panel.style.maxHeight = panel.scrollHeight + 'px'; // Abre el panel
-      } else {
-        acc.style.display = filter.trim() === '' ? '' : 'none'; 
-        panel.style.display = 'none';
-        acc.classList.remove('active');
-        panel.style.maxHeight = null;
-      }
-    });
-
-    // Si el campo está vacío, cierra todos los paneles
-    if (filter.trim() === '') {
-      accordions.forEach(acc => {
-        const panel = acc.nextElementSibling;
-        acc.classList.remove('active');
-        panel.style.maxHeight = null;
-        panel.style.display = '';
-        acc.style.display = '';
-      });
-    }
   });
 </script>
 
