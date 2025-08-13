@@ -267,72 +267,59 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Listado Desplegable de Documentos</title></p>
-<!-- Font Awesome para iconos -->
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" /></p>
+<title>Normatividad</title></p>
+<!-- Font Awesome para los iconos -->
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></p>
 <style>
   body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    color: #49545E;
-    background-color: #fff;
+    background-color: #f4f4f4;
   }
   h2 {
-    font-weight: 700; /* Negritas */
-    font-size: 28px;  /* Más grande */
     color: #49545E;
+    font-size: 28px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   button.accordion {
-    background-color: #eee;
+    background-color: #49545E;
+    color: #BDB9A6;
     cursor: pointer;
     padding: 12px 15px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    position: relative;
-    color: #49545E;
+    justify-content: space-between;
+    transition: background-color 0.3s;
   }
-  button.accordion:hover,
-  button.accordion.active {
-    background-color: #BDB9A6;
-    color: #49545E;
+  button.accordion:hover {
+    background-color: #3b434a;
   }
-  button.accordion .icon-left {
-    width: 20px;
-    text-align: center;
-    color: #49545E;
+  .accordion i {
+    margin-right: 10px;
   }
-  button.accordion .arrow {
-    position: absolute;
-    right: 15px;
-    font-size: 14px;
+  .arrow {
     transition: transform 0.3s ease;
-    color: #49545E;
   }
   button.accordion.active .arrow {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
   div.panel {
-    padding: 0 15px 10px 15px;
+    padding: 0 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background-color: #BDB9A6;
-    border-left: 2px solid #49545E;
-    margin-bottom: 10px;
-    color: #49545E;
+    background-color: #f9f9f9;
   }
   div.panel ul {
     list-style: none;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
     margin: 0;
   }
   div.panel ul li {
@@ -340,7 +327,7 @@
   }
   div.panel ul li a {
     text-decoration: none;
-    color: #49545E;
+    color: #0066cc;
   }
   div.panel ul li a:hover {
     text-decoration: underline;
@@ -351,116 +338,76 @@
 
 <h2>Normatividad</h2>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-scroll"></i></span>
-  Constituciones
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-scale-balanced"></i> Constituciones</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/constitucion-federal.pdf" target="_blank">Constitución Federal</a></li>
-    <li><a href="ruta/constitucion-estado.pdf" target="_blank">Constitución del Estado</a></li>
+    <li><a href="#">Constitución Federal</a></li>
+    <li><a href="#">Constitución del Estado</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-gavel"></i></span>
-  Leyes
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-gavel"></i> Leyes</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/ley-transparencia.pdf" target="_blank">Ley de Transparencia</a></li>
-    <li><a href="ruta/ley-estatal.pdf" target="_blank">Ley Estatal</a></li>
+    <li><a href="#">Ley de Transparencia</a></li>
+    <li><a href="#">Ley Estatal</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-book"></i></span>
-  Códigos
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-book"></i> Códigos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/codigo-civil.pdf" target="_blank">Código Civil</a></li>
-    <li><a href="ruta/codigo-penal.pdf" target="_blank">Código Penal</a></li>
+    <li><a href="#">Código Civil</a></li>
+    <li><a href="#">Código Penal</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-file-contract"></i></span>
-  Reglamentos
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-file-contract"></i> Reglamentos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/reglamento-interno.pdf" target="_blank">Reglamento Interno</a></li>
+    <li><a href="#">Reglamento Interno</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-scroll-old"></i></span>
-  Decretos
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-scroll"></i> Decretos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/decreto-123.pdf" target="_blank">Decreto N° 123</a></li>
+    <li><a href="#">Decreto N° 123</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-file-alt"></i></span>
-  Manuales Administrativos
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-folder-open"></i> Manuales Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/manual-procedimientos.pdf" target="_blank">Manual de Procedimientos</a></li>
+    <li><a href="#">Manual de Procedimientos</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-cogs"></i></span>
-  Reglas de Operación
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-list-check"></i> Reglas de Operación</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/reglas-operacion-2025.pdf" target="_blank">Reglas de Operación 2025</a></li>
+    <li><a href="#">Reglas de Operación 2025</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-list-alt"></i></span>
-  Lineamientos
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-clipboard-list"></i> Lineamientos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/lineamientos-acceso-informacion.pdf" target="_blank">Lineamientos para el Acceso a la Información</a></li>
+    <li><a href="#">Lineamientos para el Acceso a la Información</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-globe"></i></span>
-  Normativa Internacional
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-globe"></i> Normativa Internacional</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/convencion-ddhh.pdf" target="_blank">Convención de Derechos Humanos</a></li>
+    <li><a href="#">Convención de Derechos Humanos</a></li>
   </ul>
 </div>
 
-<button class="accordion">
-  <span class="icon-left"><i class="fas fa-handshake"></i></span>
-  Protocolos de Actuación
-  <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-</button>
+<button class="accordion"><span><i class="fa-solid fa-user-shield"></i> Protocolos de Actuación</span><i class="fa-solid fa-chevron-right arrow"></i></button>
 <div class="panel">
   <ul>
-    <li><a href="ruta/protocolo-actuacion.pdf" target="_blank">Protocolo de Actuación Judicial</a></li>
+    <li><a href="#">Protocolo de Actuación Judicial</a></li>
   </ul>
 </div>
 
