@@ -265,167 +265,154 @@
 <h4>FECHA DE VALIDACIÓN</h4>
 <p><html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Normatividad</title></p>
-<!-- Font Awesome para iconos -->
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Normatividad</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></p>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  h2 {
-    color: #49545E;
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  button.accordion {
-    background-color: #49545E;
-    color: #BDB9A6;
-    cursor: pointer;
-    padding: 14px 15px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s;
-  }
-  button.accordion:hover {
-    background-color: #3b434a;
-  }
-  .accordion i {
-    margin-right: 10px;
-  }
-  .arrow {
-    transition: transform 0.3s ease;
-  }
-  button.accordion.active .arrow {
-    transform: rotate(90deg);
-  }
-  div.panel {
-    padding: 0 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    background-color: #f9f9f9;
-  }
-  div.panel ul {
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-  }
-  div.panel ul li {
-    padding: 5px 0;
-    font-weight: bold;
-  }
-  div.panel ul li a {
-    text-decoration: none;
-    color: #49545E;
-    font-weight: normal;
-  }
-  div.panel ul li a:hover {
-    text-decoration: underline;
-  }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 20px;
+    }
+    h1 {
+        color: #49545E;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .accordion {
+        max-width: 600px;
+        margin: auto;
+    }
+    .accordion-item {
+        border-bottom: 1px solid #49545E;
+    }
+    .accordion-button {
+        background-color: #BDB9A6;
+        color: #49545E;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .accordion-button i {
+        margin-right: 10px;
+    }
+    .accordion-button:hover {
+        background-color: #a9a58e;
+    }
+    .accordion-content {
+        display: none;
+        background-color: #fff;
+        padding: 10px 20px;
+    }
+    .accordion-content a {
+        display: block;
+        padding: 5px 0;
+        color: #49545E;
+        text-decoration: none;
+    }
+    .accordion-content a:hover {
+        text-decoration: underline;
+    }
 </style>
 <p></head></p>
 <body>
 
-<h2>Normatividad</h2>
+<h1>Normatividad</h1>
 
-<button class="accordion"><span><i class="fa-solid fa-scale-balanced"></i> Constituciones</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Constitución Federal</a></li>
-    <li><a href="#">Constitución del Estado</a></li>
-  </ul>
-</div>
+<div class="accordion">
 
-<button class="accordion"><span><i class="fa-solid fa-gavel"></i> Leyes</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Ley de Transparencia</a></li>
-    <li><a href="#">Ley Estatal</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-landmark"></i> Constituciones</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Constitución Política de los Estados Unidos Mexicanos (PDF)</a>
+            <a href="#">Constitución Política del Estado de Coahuila (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-book"></i> Códigos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Código Civil</a></li>
-    <li><a href="#">Código Penal</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-gavel"></i> Leyes</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Ley de Transparencia y Acceso a la Información Pública (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-file-contract"></i> Reglamentos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Reglamento Interno</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-book"></i> Códigos</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Código Penal del Estado de Coahuila (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-scroll"></i> Decretos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Decreto N° 123</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-scroll"></i> Reglamentos</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Reglamento Interior del Poder Judicial (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-folder-open"></i> Manuales Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Manual de Procedimientos</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-file-contract"></i> Decretos</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Decreto de Creación de la Unidad de Transparencia (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-list-check"></i> Reglas de Operación</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Reglas de Operación 2025</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-file-alt"></i> Manuales Administrativos</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Manual de Procedimientos (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-clipboard-list"></i> Lineamientos</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Lineamientos para el Acceso a la Información</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-cogs"></i> Reglas de Operación</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Reglas de Operación 2025 (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-globe"></i> Normativa Internacional</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Convención de Derechos Humanos</a></li>
-  </ul>
-</div>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-list-check"></i> Lineamientos</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Lineamientos de Transparencia (PDF)</a>
+        </div>
+    </div>
 
-<button class="accordion"><span><i class="fa-solid fa-user-shield"></i> Protocolos de Actuación</span><i class="fa-solid fa-chevron-right arrow"></i></button>
-<div class="panel">
-  <ul>
-    <li><a href="#">Protocolo de Actuación Judicial</a></li>
-  </ul>
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-globe"></i> Normativa Internacional</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Convenio de Derechos Humanos (PDF)</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button"><span><i class="fas fa-hands-helping"></i> Protocolos de Actuación</span> <i class="fas fa-chevron-down"></i></button>
+        <div class="accordion-content">
+            <a href="#">Protocolo para la Atención a Víctimas (PDF)</a>
+        </div>
+    </div>
+
 </div>
 
 <script>
-  const accordions = document.querySelectorAll(".accordion");
-  accordions.forEach(button => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("active");
-      const panel = button.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+    const buttons = document.querySelectorAll(".accordion-button");
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const content = button.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+            button.querySelector(".fa-chevron-down").classList.toggle("fa-rotate-180");
+        });
     });
-  });
 </script>
 
 </body>
