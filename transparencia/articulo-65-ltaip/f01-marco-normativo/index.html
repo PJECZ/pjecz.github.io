@@ -272,55 +272,56 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
+        background-color: #BDB9A6;
         margin: 20px;
     }
     h1 {
         color: #49545E;
-        font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
+        font-weight: bold;
     }
-    .accordion {
-        max-width: 600px;
-        margin: auto;
+    details {
+        background-color: #49545E;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
     }
-    .accordion-item {
-        border-bottom: 1px solid #49545E;
-    }
-    .accordion-button {
-        background-color: #BDB9A6;
-        color: #49545E;
+    summary {
         cursor: pointer;
         padding: 15px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        font-size: 18px;
+        font-size: 1.1em;
         font-weight: bold;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        color: white;
     }
-    .accordion-button i {
+    summary i {
         margin-right: 10px;
+        color: white;
     }
-    .accordion-button:hover {
-        background-color: #a9a58e;
+    details[open] summary .arrow {
+        transform: rotate(90deg);
     }
-    .accordion-content {
-        display: none;
-        background-color: #fff;
-        padding: 10px 20px;
+    .arrow {
+        transition: transform 0.3s ease;
+        color: white;
     }
-    .accordion-content a {
-        display: block;
+    ul {
+        list-style: none;
+        padding: 0 20px 15px 20px;
+        margin: 0;
+        background-color: white;
+    }
+    ul li {
         padding: 5px 0;
+    }
+    ul li a {
         color: #49545E;
         text-decoration: none;
     }
-    .accordion-content a:hover {
+    ul li a:hover {
         text-decoration: underline;
     }
 </style>
@@ -329,91 +330,75 @@
 
 <h1>Normatividad</h1>
 
-<div class="accordion">
+<details>
+    <summary><span><i class="fa-solid fa-scale-balanced"></i> Constituciones</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento1.pdf" target="_blank">Constitución Política de los Estados Unidos Mexicanos</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-landmark"></i> Constituciones</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Constitución Política de los Estados Unidos Mexicanos (PDF)</a>
-            <a href="#">Constitución Política del Estado de Coahuila (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-gavel"></i> Leyes</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento2.pdf" target="_blank">Ley de Transparencia</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-gavel"></i> Leyes</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Ley de Transparencia y Acceso a la Información Pública (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-book"></i> Códigos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento3.pdf" target="_blank">Código Penal</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-book"></i> Códigos</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Código Penal del Estado de Coahuila (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-scroll"></i> Reglamentos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento4.pdf" target="_blank">Reglamento Interior</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-scroll"></i> Reglamentos</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Reglamento Interior del Poder Judicial (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-file-signature"></i> Decretos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento5.pdf" target="_blank">Decreto Ejemplo</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-file-contract"></i> Decretos</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Decreto de Creación de la Unidad de Transparencia (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-clipboard-list"></i> Manuales Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento6.pdf" target="_blank">Manual de Procedimientos</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-file-alt"></i> Manuales Administrativos</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Manual de Procedimientos (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-list-check"></i> Reglas de Operación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento7.pdf" target="_blank">Reglas de Operación 2025</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-cogs"></i> Reglas de Operación</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Reglas de Operación 2025 (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-sliders"></i> Lineamientos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento8.pdf" target="_blank">Lineamientos Generales</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-list-check"></i> Lineamientos</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Lineamientos de Transparencia (PDF)</a>
-        </div>
-    </div>
+<details>
+    <summary><span><i class="fa-solid fa-globe"></i> Normativa Internacional</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento9.pdf" target="_blank">Tratado Internacional</a></li>
+    </ul>
+</details>
 
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-globe"></i> Normativa Internacional</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Convenio de Derechos Humanos (PDF)</a>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <button class="accordion-button"><span><i class="fas fa-hands-helping"></i> Protocolos de Actuación</span> <i class="fas fa-chevron-down"></i></button>
-        <div class="accordion-content">
-            <a href="#">Protocolo para la Atención a Víctimas (PDF)</a>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    const buttons = document.querySelectorAll(".accordion-button");
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            const content = button.nextElementSibling;
-            content.style.display = content.style.display === "block" ? "none" : "block";
-            button.querySelector(".fa-chevron-down").classList.toggle("fa-rotate-180");
-        });
-    });
-</script>
+<details>
+    <summary><span><i class="fa-solid fa-handshake"></i> Protocolos de Actuación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li><a href="documento10.pdf" target="_blank">Protocolo de Actuación Judicial</a></li>
+    </ul>
+</details>
 
 </body>
 <p></html></p>
