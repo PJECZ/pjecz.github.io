@@ -300,9 +300,7 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
 <p>07 de julio de 2025</p>
 <h3>Directorio Poder Judicial</h3>
 <h4>Personal Jurisdiccional</h4>
-<ul>
-<li>&lt;!DOCTYPE html&gt;
-<html lang="es">
+<p><html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -346,56 +344,58 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
       color: #555;
       font-size: 0.9em;
     }
-  </style></li>
-</ul>
+  </style></p>
 <p></head></p>
 <body>
   <h1>Directorio Institucional</h1>
-
+  <p><b>Sube tu archivo CSV exportado de Excel:</b></p>
+  <input type="file" id="fileInput" accept=".csv" />
   <div id="directorio"></div>
 
-  <!-- Librería para leer CSV -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script>
-    // Ruta al archivo exportado de Excel en CSV
-    const archivoCSV = "directorio.csv";
+    document.getElementById("fileInput").addEventListener("change", function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        Papa.parse(file, {
+          header: true,
+          complete: function(results) {
+            const data = results.data;
+            const directorio = document.getElementById("directorio");
+            directorio.innerHTML = ""; // Limpia si ya había algo
 
-    Papa.parse(archivoCSV, {
-      download: true,
-      header: true,
-      complete: function(results) {
-        const data = results.data;
-        const directorio = document.getElementById("directorio");
+            // Agrupar por área
+            const areas = {};
+            data.forEach(row => {
+              if (!row.Area) return; // Evita filas vacías
+              if (!areas[row.Area]) {
+                areas[row.Area] = [];
+              }
+              areas[row.Area].push(row);
+            });
 
-        // Agrupar por Área
-        const areas = {};
-        data.forEach(row => {
-          if (!areas[row.Area]) {
-            areas[row.Area] = [];
+            // Construir listas contraíbles
+            for (let area in areas) {
+              const details = document.createElement("details");
+              const summary = document.createElement("summary");
+              summary.textContent = area;
+              details.appendChild(summary);
+
+              const lista = document.createElement("ul");
+              areas[area].forEach(persona => {
+                const item = document.createElement("li");
+                item.innerHTML = `
+                  <span class="cargo">${persona.Nombre}</span> - ${persona.Puesto} <br>
+                  <span class="contacto">Tel: ${persona.Telefono} | Correo: ${persona.Correo}</span>
+                `;
+                lista.appendChild(item);
+              });
+
+              details.appendChild(lista);
+              directorio.appendChild(details);
+            }
           }
-          areas[row.Area].push(row);
         });
-
-        // Crear listas contraíbles
-        for (let area in areas) {
-          const details = document.createElement("details");
-          const summary = document.createElement("summary");
-          summary.textContent = area;
-          details.appendChild(summary);
-
-          const lista = document.createElement("ul");
-          areas[area].forEach(persona => {
-            const item = document.createElement("li");
-            item.innerHTML = `
-              <span class="cargo">${persona.Nombre}</span> - ${persona.Puesto} <br>
-              <span class="contacto">Tel: ${persona.Telefono} | Correo: ${persona.Correo}</span>
-            `;
-            lista.appendChild(item);
-          });
-
-          details.appendChild(lista);
-          directorio.appendChild(details);
-        }
       }
     });
   </script>
