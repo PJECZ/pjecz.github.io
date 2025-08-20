@@ -292,6 +292,58 @@
 <li><a href="https://poderjudicialcoahuila.my.canva.site/secretar-a-t-cnica">Secretaría  Técnica y de Transparencia</a></li>
 <li><a href="https://poderjudicialcoahuila.my.canva.site/unidades-administrativas">Unidades Administrativas</a></li>
 </ul>
+<div id="directorio">Cargando información...</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+  async function cargarDirectorio() {
+    try {
+      // 📌 Cambia esta ruta por la URL real de tu Excel subido en WordPress
+      const url = "https://www.pjecz.gob.mx/wp-content/uploads/2025/08/directorio.xlsx";
+
+      const response = await fetch(url);
+      const arrayBuffer = await response.arrayBuffer();
+
+      // Leer Excel con XLSX
+      const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+      const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+      const rows = XLSX.utils.sheet_to_json(firstSheet);
+
+      // Agrupar por área
+      const grupos = {};
+      rows.forEach(row => {
+        const area = row["DENOMINACION DEL AREA"];
+        if (!grupos[area]) grupos[area] = [];
+        grupos[area].push(row);
+      });
+
+      // Generar HTML
+      const container = document.getElementById("directorio");
+      container.innerHTML = "";
+      for (const area in grupos) {
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.textContent = area;
+        details.appendChild(summary);
+
+        const ul = document.createElement("ul");
+        grupos[area].forEach(persona => {
+          const li = document.createElement("li");
+          li.textContent = `${persona["NOMBRE"]} - ${persona["CARGO"] || ""} - ${persona["EXTENSION"] || ""}`;
+          ul.appendChild(li);
+        });
+
+        details.appendChild(ul);
+        container.appendChild(details);
+      }
+    } catch (error) {
+      document.getElementById("directorio").innerHTML = "❌ No se pudo cargar el archivo.";
+      console.error(error);
+    }
+  }
+
+  cargarDirectorio();
+</script>
 <h2>Descargar</h2>
 <ul>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F03 Directorio de Servidores Públicos/directorios.xlsx">directorios.xlsx</a></li>
