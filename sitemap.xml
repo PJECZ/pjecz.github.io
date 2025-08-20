@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-08-20T13:47:24-00:00</lastmod>
+<lastmod>2025-08-20T14:53:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9034,6 +9034,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/segunda-sesion-ordinaria/</loc>
+<lastmod>2025-08-21T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/segunda-sesion-ordinaria/</loc>
+<lastmod>2025-08-21T09:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/primera-sesion-ordinaria/</loc>
 <lastmod>2025-08-07T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -10030,6 +10044,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/segunda-sesion-ordinaria/</loc>
 <lastmod>2025-01-16T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/segunda-sesion-ordinaria-anterior/</loc>
+<lastmod>2025-01-15T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
