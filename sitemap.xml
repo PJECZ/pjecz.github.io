@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-08-22T11:42:46-00:00</lastmod>
+<lastmod>2025-08-22T12:04:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -152,13 +152,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/sabias-que/03-marzo/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f16-informacion-curricuar/03-sala-colegiada-penal/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3098,6 +3091,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-69-ltaip/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-8/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -5598,6 +5598,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia-tca/articulo-21/f16-beneficiarios-de-los-programas-de-subsidio/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f16-informacion-curricuar/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
