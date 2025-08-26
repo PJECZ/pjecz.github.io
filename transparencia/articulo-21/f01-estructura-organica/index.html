@@ -294,7 +294,7 @@
         font-weight: bold;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start; /* texto junto al ícono */
         background-color: #49545E;
         color: white;
     }
@@ -306,6 +306,7 @@
         transform: rotate(90deg);
     }
     .arrow {
+        margin-left: auto; /* flecha a la derecha */
         transition: transform 0.3s ease;
         color: white;
     }
@@ -332,12 +333,12 @@
 
 <!-- ESTRUCTURA JURISDICCIONAL -->
 <details>
-    <summary><i class="fa-solid fa-sitemap"></i> Estructura Jurisdiccional</summary>
+    <summary><i class="fa-solid fa-sitemap"></i> Estructura Jurisdiccional <i class="fa-solid fa-chevron-right arrow"></i></summary>
     <ul>
         <!-- Tribunal Superior -->
         <li>
             <details>
-                <summary><i class="fa-solid fa-landmark"></i> Tribunal Superior</summary>
+                <summary><i class="fa-solid fa-landmark"></i> Tribunal Superior <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>📂 Presidencia</li>
                     <li>📂 Pleno</li>
@@ -351,7 +352,7 @@
         <!-- Tribunales Distritales -->
         <li>
             <details>
-                <summary><i class="fa-solid fa-building-columns"></i> Tribunales Distritales</summary>
+                <summary><i class="fa-solid fa-building-columns"></i> Tribunales Distritales <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>📂 Primer Tribunal Distrital Saltillo</li>
                     <li>📂 Segundo Tribunal Distrital Torreón</li>
@@ -364,11 +365,11 @@
         <!-- Juzgados de Primera Instancia -->
         <li>
             <details>
-                <summary><i class="fa-solid fa-gavel"></i> Juzgados de Primera Instancia</summary>
+                <summary><i class="fa-solid fa-gavel"></i> Juzgados de Primera Instancia <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>
                         <details>
-                            <summary>Civiles</summary>
+                            <summary>Civiles <i class="fa-solid fa-chevron-right arrow"></i></summary>
                             <ul>
                                 <li>📂 Administración Juzgados Hipotecarios</li>
                             </ul>
@@ -382,14 +383,14 @@
 
 <!-- ESTRUCTURA NO JURISDICCIONAL -->
 <details>
-    <summary><i class="fa-solid fa-sitemap"></i> Estructura No Jurisdiccional</summary>
+    <summary><i class="fa-solid fa-sitemap"></i> Estructura No Jurisdiccional <i class="fa-solid fa-chevron-right arrow"></i></summary>
     <ul>
         <li>📂 Instituto de Especialización Judicial</li>
 
         <!-- Centro de Medios Alternos -->
         <li>
             <details>
-                <summary>📂 Centro de Medios Alternos de Solución de Controversias</summary>
+                <summary>📂 Centro de Medios Alternos de Solución de Controversias <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>CEMASC Delegación Acuña</li>
                     <li>CEMASC Delegación Monclova</li>
@@ -404,7 +405,7 @@
         <!-- Instituto Estatal de Defensoría Pública -->
         <li>
             <details>
-                <summary>📂 Instituto Estatal de Defensoría Pública</summary>
+                <summary>📂 Instituto Estatal de Defensoría Pública <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Delegación Acuña</li>
                     <li>Delegación Monclova</li>
@@ -426,7 +427,7 @@
         <!-- Centro de Evaluación Psicosocial -->
         <li>
             <details>
-                <summary>📂 Centro de Evaluación Psicosocial</summary>
+                <summary>📂 Centro de Evaluación Psicosocial <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Unidad del Centro de Evaluación Psicosocial Acuña</li>
                     <li>Unidad del Centro de Evaluación Psicosocial Laguna</li>
@@ -441,7 +442,7 @@
         <!-- Oficialías de Partes -->
         <li>
             <details>
-                <summary>📂 Oficialías de Partes</summary>
+                <summary>📂 Oficialías de Partes <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Oficialía de Partes de Monclova</li>
                     <li>Oficialía de Partes de Piedras Negras</li>
@@ -459,12 +460,12 @@
 
 <!-- ESTRUCTURA ADMINISTRATIVA -->
 <details>
-    <summary><i class="fa-solid fa-building"></i> Estructura Administrativa</summary>
+    <summary><i class="fa-solid fa-building"></i> Estructura Administrativa <i class="fa-solid fa-chevron-right arrow"></i></summary>
     <ul>
         <!-- Presidencia -->
         <li>
             <details>
-                <summary>📂 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza</summary>
+                <summary>📂 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Secretaría Técnica y de Transparencia</li>
                     <li>Auditoría Interna</li>
@@ -483,7 +484,7 @@
         <!-- Consejo de la Judicatura -->
         <li>
             <details>
-                <summary>📂 Consejo de la Judicatura</summary>
+                <summary>📂 Consejo de la Judicatura <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Consejo de la Judicatura</li>
                 </ul>
@@ -493,7 +494,7 @@
         <!-- Oficialía Mayor -->
         <li>
             <details>
-                <summary>📂 Oficialía Mayor</summary>
+                <summary>📂 Oficialía Mayor <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Dirección de Informática de la Oficialía Mayor del Poder Judicial</li>
                     <li>Dirección de Infraestructura Física</li>
@@ -511,7 +512,7 @@
         <!-- Unidades Administrativas -->
         <li>
             <details>
-                <summary>📂 Unidades Administrativas</summary>
+                <summary>📂 Unidades Administrativas <i class="fa-solid fa-chevron-right arrow"></i></summary>
                 <ul>
                     <li>Centro de Justicia de Saltillo</li>
                     <li>Unidad Administrativa de la Región Carbonífera</li>
