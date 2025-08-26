@@ -266,115 +266,84 @@
 <p>14 de julio de 2025</p>
 <p><html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Estructura del Poder Judicial</title>
-<br>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estructura Orgánica</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></p>
 <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 20px;
     }
     h1 {
-      color: #222;
+        color: #49545E;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
     }
     details {
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px 15px;
-      background: #f9f9f9;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #ccc;
     }
     summary {
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1.1em;
-      color: #333;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 1.1em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #49545E;
+        color: white;
+    }
+    summary i {
+        margin-right: 10px;
+        color: white;
+    }
+    details[open] summary .arrow {
+        transform: rotate(90deg);
+    }
+    .arrow {
+        transition: transform 0.3s ease;
+        color: white;
     }
     ul {
-      margin: 10px 0 0 20px;
+        list-style: none;
+        padding: 0 20px 15px 20px;
+        margin: 0;
+        background-color: white;
     }
-    li {
-      margin: 6px 0;
+    ul li {
+        padding: 10px 0;
     }
-    a {
-      text-decoration: none;
-      color: #0066cc;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style></p>
+</style>
 <p></head></p>
 <body>
 
-  <h1>Estructura del Poder Judicial</h1>
+<h1>Estructura Orgánica</h1>
 
-  <!-- Estructura Jurisdiccional -->
-  <details>
-    <summary>Estructura Jurisdiccional</summary>
-
-    <!-- Subdivisión Tribunal Superior -->
-    <div style="margin-left:20px;">
-      <details>
-        <summary>Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza</summary>
-        <ul>
-          <li><a href="01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Pleno.pptx">Pleno del Tribunal</a></li>
-          <li><a href="archivos/jurisdiccional2.pptx" target="_blank">Salas Colegiadas</a></li>
-          <li><a href="archivos/jurisdiccional3.pptx" target="_blank">Juzgados de Primera Instancia</a></li>
-        </ul>
-      </details>
-    </div>
-
-    <!-- Puedes agregar más subdivisiones dentro de Jurisdiccional aquí -->
-
-  </details>
-
-  <!-- Estructura No Jurisdiccional -->
-  <details>
-    <summary>Estructura No Jurisdiccional</summary>
-    <div style="margin-left:20px;">
-      <details>
-        <summary>Unidad de Derechos Humanos</summary>
-        <ul>
-          <li><a href="archivos/no_jurisdiccional1.pptx" target="_blank">Informe Anual</a></li>
-          <li><a href="archivos/no_jurisdiccional2.pptx" target="_blank">Plan de Acción</a></li>
-        </ul>
-      </details>
-      <details>
-        <summary>Contraloría Interna</summary>
-        <ul>
-          <li><a href="archivos/no_jurisdiccional3.pptx" target="_blank">Auditorías</a></li>
-        </ul>
-      </details>
-    </div>
-  </details>
-
-  <!-- Estructura Administrativa -->
-  <details>
-    <summary>Estructura Administrativa</summary>
-    <div style="margin-left:20px;">
-      <details>
-        <summary>Dirección de Recursos Humanos</summary>
-        <ul>
-          <li><a href="archivos/administrativa1.pptx" target="_blank">Manual de Procedimientos</a></li>
-          <li><a href="archivos/administrativa2.pptx" target="_blank">Organigrama</a></li>
-        </ul>
-      </details>
-      <details>
-        <summary>Dirección de Finanzas</summary>
-        <ul>
-          <li><a href="archivos/administrativa3.pptx" target="_blank">Presupuestos</a></li>
-        </ul>
-      </details>
-      <details>
-        <summary>Dirección de Informática</summary>
-        <ul>
-          <li><a href="archivos/administrativa4.pptx" target="_blank">Plan de Sistemas</a></li>
-        </ul>
-      </details>
-    </div>
-  </details>
+<details>
+    <summary><span><i class="fa-solid fa-sitemap"></i> Estructura Jurisdiccional</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+    <ul>
+        <li>
+            <details>
+                <summary><span><i class="fa-solid fa-landmark"></i> Tribunal Superior</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+                <ul>
+                    <li>
+                        📂 Archivos de la carpeta "Tribunal Superior":
+                        <br><br>
+                        <!-- Sustituye el ID_DE_LA_CARPETA por el ID real de tu carpeta en Google Drive -->
+                        <iframe src="https://drive.google.com/embeddedfolderview?id=ID_DE_LA_CARPETA#grid" 
+                                style="width:100%; height:600px; border:0;"></iframe>
+                    </li>
+                </ul>
+            </details>
+        </li>
+    </ul>
+</details>
 
 </body>
 <p></html></p>
