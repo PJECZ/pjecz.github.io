@@ -296,11 +296,18 @@
         align-items: center;
         justify-content: space-between;
         background-color: #49545E;
-        color: white;
+        color: white; /* 🔹 Texto blanco */
     }
     summary i {
         margin-right: 10px;
-        color: white;
+        color: white; /* 🔹 Iconos blancos */
+    }
+    summary a {
+        color: white;             /* 🔹 Enlaces blancos */
+        text-decoration: none;
+    }
+    summary a:hover {
+        text-decoration: underline;
     }
     details[open] summary .arrow {
         transform: rotate(90deg);
@@ -320,7 +327,7 @@
     }
     a {
         text-decoration: none;
-        color: #333;
+        color: #333; /* 🔹 Links dentro de carpetas en negro */
     }
     a:hover {
         text-decoration: underline;
@@ -362,7 +369,11 @@
       <details>
         <summary><span>📂 Juzgados de Primera Instancia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-          <li>📂 <a href="URL_FAMILIARES" target="_blank">Civiles</a></li>
+          <li>📂 <a href="URL_CIVILES" target="_blank">Civiles</a>
+            <ul>
+              <li>📂 <a href="URL_HIPOTECARIOS" target="_blank">Administración Juzgados Hipotecarios</a></li>
+            </ul>
+          </li>
           <li>📂 <a href="URL_FAMILIARES" target="_blank">Familiares</a></li>
           <li>📂 <a href="URL_LETRADOS" target="_blank">Letrados</a></li>
           <li>📂 <a href="URL_MIXTOS" target="_blank">Mixtos</a></li>
@@ -370,7 +381,6 @@
           <li>📂 <a href="URL_MERCANTILES" target="_blank">Mercantiles, en jurisdicción concurrente</a></li>
           <li>📂 <a href="URL_PENALES" target="_blank">Penales</a></li>
           <li>📂 <a href="URL_ACTUARIOS" target="_blank">Central de Actuarios</a></li>
-          <li>📂 <a href="URL_ACTUARIOS" target="_blank">Administración Juzgados Hipotecarios</a></li>
         </ul>
       </details>
     </li>
@@ -396,7 +406,6 @@
         </ul>
       </details>
     </li>
-    <!-- Igual puedes anidar Delegaciones de Defensoría y Evaluación Psicosocial -->
   </ul>
 </details>
 
