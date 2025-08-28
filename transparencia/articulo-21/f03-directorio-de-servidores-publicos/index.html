@@ -335,31 +335,28 @@
         transform: rotate(90deg);
     }
 
-    /* Contenedor de personas */
     .directorio {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 15px;
         padding: 15px;
         background: #f9f9f9;
     }
-
-    /* Tarjeta horizontal de persona */
     .persona {
         background: #ffffff;
         border: 1px solid #ddd;
         border-radius: 10px;
-        padding: 15px 20px;
-        margin-bottom: 15px;
+        padding: 15px;
         box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        display: flex;
-        flex-direction: column; /* cada dato en línea nueva */
     }
     .persona h3 {
-        margin: 0 0 8px;
+        margin: 0 0 10px;
         color: #333;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .persona p {
-        margin: 4px 0;
-        font-size: 0.95em;
+        margin: 5px 0;
+        font-size: 0.9em;
         color: #555;
     }
     .persona i {
@@ -372,42 +369,122 @@
 
 <h1>Directorio de Personal</h1>
 
-<!-- Ejemplo con varias personas -->
-<details open>
-  <summary><i class="fa-solid fa-scale-balanced"></i> Presidencia <i class="fa-solid fa-chevron-right"></i></summary>
-  <div class="directorio">
+<!-- ================== PERSONAL JURISDICCIONAL ================== -->
+<details>
+  <summary><i class="fa-solid fa-scale-balanced"></i> Personal Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
 
-    <div class="persona">
-        <h3>Juan Pérez López</h3>
+  <!-- Presidencia -->
+  <details>
+    <summary>Presidencia <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <div class="persona">
+        <h3>Ejemplo Nombre</h3>
         <p><i class="fa-solid fa-user-tie"></i> Cargo: Magistrado Presidente</p>
         <p><i class="fa-solid fa-layer-group"></i> Nivel Tabular: 12</p>
         <p><i class="fa-solid fa-calendar-check"></i> Ingreso: 15/03/2010</p>
-        <p><i class="fa-solid fa-envelope"></i> Correo: juan.perez@poderjudicial.gob.mx</p>
+        <p><i class="fa-solid fa-envelope"></i> Correo: ejemplo@poderjudicial.gob.mx</p>
         <p><i class="fa-solid fa-building"></i> Domicilio: Palacio de Justicia, Saltillo</p>
+      </div>
     </div>
+  </details>
 
-    <div class="persona">
-        <h3>María Gómez Hernández</h3>
-        <p><i class="fa-solid fa-user-tie"></i> Cargo: Secretaria Técnica</p>
-        <p><i class="fa-solid fa-layer-group"></i> Nivel Tabular: 9</p>
-        <p><i class="fa-solid fa-calendar-check"></i> Ingreso: 22/08/2015</p>
-        <p><i class="fa-solid fa-envelope"></i> Correo: maria.gomez@poderjudicial.gob.mx</p>
-        <p><i class="fa-solid fa-building"></i> Domicilio: Palacio de Justicia, Saltillo</p>
-    </div>
+  <details><summary>Sala Civil y Familiar <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Sala Penal <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Sala Regional <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Pleno <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Consejo de la Judicatura <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Tribunales Distritales <i class="fa-solid fa-chevron-right"></i></summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
 
-    <div class="persona">
-        <h3>Carlos Ramírez Torres</h3>
-        <p><i class="fa-solid fa-user-tie"></i> Cargo: Secretario Auxiliar</p>
-        <p><i class="fa-solid fa-layer-group"></i> Nivel Tabular: 7</p>
-        <p><i class="fa-solid fa-calendar-check"></i> Ingreso: 05/11/2020</p>
-        <p><i class="fa-solid fa-envelope"></i> Correo: carlos.ramirez@poderjudicial.gob.mx</p>
-        <p><i class="fa-solid fa-building"></i> Domicilio: Palacio de Justicia, Saltillo</p>
-    </div>
+  <!-- Juzgados Civiles -->
+  <details>
+    <summary>Juzgados Civiles <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
 
-  </div>
+  <!-- Juzgados Mixtos -->
+  <details>
+    <summary>Juzgados Mixtos <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
+  <!-- Juzgados Familiares -->
+  <details>
+    <summary>Juzgados Familiares <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
+  <!-- Juzgados Mercantiles -->
+  <details>
+    <summary>Juzgados Mercantiles <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
+  <!-- Juzgados Letrados -->
+  <details>
+    <summary>Juzgados Letrados <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
+  <!-- Juzgados Penales -->
+  <details>
+    <summary>Juzgados Penales <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
+  <!-- Tribunales Laborales -->
+  <details>
+    <summary>Tribunales Laborales <i class="fa-solid fa-chevron-right"></i></summary>
+    <details><summary>Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  </details>
+
 </details>
 
-<!-- Aquí seguirían todas las demás áreas igual -->
+<!-- ================== PERSONAL NO JURISDICCIONAL ================== -->
+<details>
+  <summary><i class="fa-solid fa-users"></i> Personal No Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
+  <details><summary>Visitaduría Judicial General</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Instituto de Especialización Judicial</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Instituto Estatal de Defensoría Pública</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Centro de Evaluación Psicosocial</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+  <details><summary>Centro de Medios Alternos de Solución de Controversias</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+</details>
+
+<!-- ================== PERSONAL ADMINISTRATIVO ================== -->
+<details>
+  <summary><i class="fa-solid fa-briefcase"></i> Personal Administrativo <i class="fa-solid fa-chevron-right"></i></summary>
+
+  <details><summary>Secretaría Técnica y de Transparencia</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+
+  <!-- Oficialía Mayor -->
+  <details><summary>Oficialía Mayor</summary>
+    <!-- Direcciones -->
+    <details><summary>Dirección de Innovación</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Informática</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Recursos Humanos</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Recursos Financieros</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Pago</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Infraestructura Física</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Dirección de Recursos Materiales</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+
+    <!-- Unidades Administrativas -->
+    <details><summary>Unidad de Apoyo a lo Jurisdiccional</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Archivo General del Poder Judicial</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Auditoría Interna</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Unidad Administrativa Saltillo</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Unidad Administrativa Torreón</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Unidad Administrativa Monclova</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+    <details><summary>Unidad Administrativa Región Carbonífera</summary><div class="directorio"><div class="persona"><h3>Ejemplo</h3></div></div></details>
+
+  </details>
+</details>
+
 </body>
 <p></html></p>
 <h2>Descargar</h2>
