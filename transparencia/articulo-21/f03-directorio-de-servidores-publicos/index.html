@@ -295,283 +295,407 @@
 </ul>
 <p><html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Directorio de Personal</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<br>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    margin: 20px;
-}
-h1 {
-    color: #49545E;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-details {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-}
-summary {
-    cursor: pointer;
-    padding: 12px;
-    font-size: 1.1em;
-    font-weight: bold;
-    background-color: #49545E;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-summary i {
-    transition: transform 0.3s ease;
-}
-details[open] summary i {
-    transform: rotate(90deg);
-}
-.directorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 15px;
-    background: #f9f9f9;
-}
-.archivo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #49545E;
-}
-.archivo:hover {
-    text-decoration: underline;
-}
-</style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 20px;
+      color: #49545E;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .details-container details {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .details-container summary {
+      cursor: pointer;
+      padding: 12px;
+      font-size: 1.1em;
+      font-weight: bold;
+      background-color: #bdbfb6;
+      color: #49545E;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .details-container summary i {
+      transition: transform 0.3s ease;
+    }
+    .details-container details[open] summary i {
+      transform: rotate(90deg);
+    }
+    /* Cada grupo de enlaces se despliega verticalmente */
+    .directorio {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px;
+      background-color: #f9f9f9;
+    }
+    .archivo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #49545E;
+    }
+    .archivo:hover {
+      text-decoration: underline;
+    }
+  </style></p>
 <p></head></p>
 <body>
+<div class="details-container">
+<h1>Directorios</h1>
 
-<h1>Directorio de Personal</h1>
-
-<!-- ================== PERSONAL JURISDICCIONAL ================== -->
+<!-- ================= ESTRUCTURA JURISDICCIONAL ================= -->
 <details>
-  <summary>Personal Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
+  <summary>Estructura Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
 
-  <!-- Presidencia -->
+  <!-- Tribunal Superior -->
   <details>
-    <summary>Presidencia <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="https://drive.google.com/file/d/1hUoV2J7RRGZOqEj1l_mBCFRtA9GKFsVe/view?usp=sharing" class="archivo" target="_blank">📂 Directorio Presidencia</a>
-    </div>
+    <summary>Tribunal Superior <i class="fa-solid fa-chevron-right"></i></summary>
+
+    <details>
+      <summary>Presidencia <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Presidencia</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Pleno <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Pleno</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Sala Colegiada Civil y Familiar <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Sala Colegiada Civil y Familiar</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Sala Colegiada Penal <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Sala Colegiada Penal</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Sala Regional Torreón <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Sala Regional Torreón</a>
+      </div>
+    </details>
   </details>
 
-  <!-- Salas -->
+  <!-- Tribunales Distritales -->
   <details>
-  <summary>Sala Civil y Familiar <i class="fa-solid fa-chevron-right"></i></summary>
-  <div class="directorio">
-    <a href="https://tusitio.com/archivos/sala-civil.pdf" class="archivo" target="_blank">📂 Directorio Sala Civil y Familiar</a>
-  </div>
- </details>
+    <summary>Tribunales Distritales <i class="fa-solid fa-chevron-right"></i></summary>
 
-  <details><summary>Sala Penal <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Sala Penal</a>
-    </div>
+    <details>
+      <summary>Primer Tribunal Distrital Saltillo <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Primer Tribunal Distrital Saltillo</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Segundo Tribunal Distrital Torreón <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Segundo Tribunal Distrital Torreón</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Tercer Tribunal Distrital Monclova <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Tercer Tribunal Distrital Monclova</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cuarto Tribunal Distrital Piedras Negras <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Cuarto Tribunal Distrital Piedras Negras</a>
+      </div>
+    </details>
   </details>
 
-  <details><summary>Sala Regional <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Sala Regional</a>
-    </div>
-  </details>
-
-  <details><summary>Pleno <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Pleno</a>
-    </div>
-  </details>
-
-  <details><summary>Consejo de la Judicatura <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Consejo de la Judicatura</a>
-    </div>
-  </details>
-
-  <details><summary>Tribunales Distritales <i class="fa-solid fa-chevron-right"></i></summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Tribunales Distritales</a>
-    </div>
-  </details>
-
-  <!-- Juzgados Civiles -->
+  <!-- Juzgados de Primera Instancia -->
   <details>
-    <summary>Juzgados Civiles <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <summary>Juzgados de Primera Instancia <i class="fa-solid fa-chevron-right"></i></summary>
 
-  <!-- Juzgados Mixtos -->
-  <details>
-    <summary>Juzgados Mixtos <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Civiles -->
+    <details>
+      <summary>Civiles <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Civiles Piedras Negras</a>
+      </div>
+    </details>
 
-  <!-- Juzgados Familiares -->
-  <details>
-    <summary>Juzgados Familiares <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Familiares -->
+    <details>
+      <summary>Familiares <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Familiares Piedras Negras</a>
+      </div>
+    </details>
 
-  <!-- Juzgados Mercantiles -->
-  <details>
-    <summary>Juzgados Mercantiles <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Letrados -->
+    <details>
+      <summary>Letrados <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Letrados Piedras Negras</a>
+      </div>
+    </details>
 
-  <!-- Juzgados Letrados -->
-  <details>
-    <summary>Juzgados Letrados <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Mercantiles -->
+    <details>
+      <summary>Mercantiles <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mercantiles Piedras Negras</a>
+      </div>
+    </details>
 
-  <!-- Juzgados Penales -->
-  <details>
-    <summary>Juzgados Penales <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Mixtos -->
+    <details>
+      <summary>Mixtos <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Mixtos Piedras Negras</a>
+      </div>
+    </details>
 
-  <!-- Tribunales Laborales -->
-  <details>
-    <summary>Tribunales Laborales <i class="fa-solid fa-chevron-right"></i></summary>
-    <details><summary>Saltillo</summary><div class="directorio"><p>Archivo Saltillo</p></div></details>
-    <details><summary>Torreón</summary><div class="directorio"><p>Archivo Torreón</p></div></details>
-  </details>
+    <!-- Penales -->
+    <details>
+      <summary>Penales <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Penales Piedras Negras</a>
+      </div>
+    </details>
 
-<!-- ================== PERSONAL NO JURISDICCIONAL ================== -->
+    <!-- Laborales -->
+    <details>
+      <summary>Laborales <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Laborales Piedras Negras</a>
+      </div>
+    </details>
+
+    <!-- Central de Actuarios -->
+    <details>
+      <summary>Central de Actuarios <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Directorio Central de Actuarios Piedras Negras</a>
+      </div>
+    </details>
+
+  </details><!-- Fin Juzgados de Primera Instancia -->
+
+</details><!-- Fin Jurisdiccional -->
+
+<!-- ================= ESTRUCTURA NO JURISDICCIONAL ================= -->
 <details>
-  <summary>Personal No Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
-  <details><summary>Visitaduría Judicial General</summary>
+  <summary>Estructura no Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
+
+  <!-- Instituto de Especialización Judicial -->
+  <details>
+    <summary>Instituto de Especialización Judicial <i class="fa-solid fa-chevron-right"></i></summary>
     <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Visitaduría</a>
-    </div>
-  </details>
-  <details><summary>Instituto de Especialización Judicial</summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Instituto de Especialización</a>
-    </div>
-  </details>
-  <details><summary>Instituto Estatal de Defensoría Pública</summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Defensoría Pública</a>
-    </div>
-  </details>
-  <details><summary>Centro de Evaluación Psicosocial</summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Centro de Evaluación</a>
-    </div>
-  </details>
-  <details><summary>Centro de Medios Alternos de Solución de Controversias</summary>
-    <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Centro de Medios Alternos</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Instituto de Especialización Judicial</a>
     </div>
   </details>
 
-<!-- ================== PERSONAL ADMINISTRATIVO ================== -->
+  <!-- Centro de Medios Alternos de Solución de Controversias -->
+  <details>
+    <summary>Centro de Medios Alternos de Solución de Controversias <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Centro de Medios Alternos de Solución de Controversias</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC Piedras Negras</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC Sabinas</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio CEMASC San Pedro</a>
+    </div>
+  </details>
+
+  <!-- Instituto Estatal de Defensoría Pública -->
+  <details>
+    <summary>Instituto Estatal de Defensoría Pública <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Instituto Estatal de Defensoría Pública</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación Piedras Negras</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación Sabinas</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Delegación San Pedro</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Saltillo</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Piedras Negras</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema Sabinas</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Nuevo Sistema San Pedro</a>
+    </div>
+  </details>
+
+  <!-- Centro de Evaluación Psicosocial -->
+  <details>
+    <summary>Centro de Evaluación Psicosocial <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Centro de Evaluación Psicosocial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Laguna</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Región Norte</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Región Centro</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Región Carbonífera</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad San Pedro</a>
+    </div>
+  </details>
+
+  <!-- Oficialías de Partes -->
+  <details>
+    <summary>Oficialías de Partes <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Oficialía de Partes Saltillo</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Oficialía de Partes Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Oficialía de Partes Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Oficialía de Partes Piedras Negras</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Oficialía de Partes Región Carbonífera</a>
+    </div>
+  </details>
+
+  <!-- Visitaduría Judicial General -->
+  <details>
+    <summary>Visitaduría Judicial General <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Visitaduría Judicial General</a>
+    </div>
+  </details>
+
+</details><!-- Fin Estructura No Jurisdiccional -->
+
+<!-- ================= ESTRUCTURA ADMINISTRATIVA ================= -->
 <details>
-  <summary>Personal Administrativo <i class="fa-solid fa-chevron-right"></i></summary>
+  <summary>Estructura Administrativa <i class="fa-solid fa-chevron-right"></i></summary>
 
-  <details><summary>Secretaría Técnica y de Transparencia</summary>
+  <!-- Presidencia del TSJ -->
+  <details>
+    <summary>Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza <i class="fa-solid fa-chevron-right"></i></summary>
     <div class="directorio">
-      <a href="#" class="archivo" target="_blank">📂 Archivo Secretaría Técnica</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Secretaría Técnica y de Transparencia</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad de Apoyo a lo Jurisdiccional</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Auditoría Interna</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo General del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo Regional de Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo Regional de Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo Regional de Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo Regional de Río Grande</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Archivo Único del Centro de Justicia Región Carbonífera</a>
+    </div>
+  </details>
+
+  <!-- Consejo de la Judicatura -->
+  <details>
+    <summary>Consejo de la Judicatura <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Consejo de la Judicatura</a>
     </div>
   </details>
 
   <!-- Oficialía Mayor -->
-  <details><summary>Oficialía Mayor</summary>
-    <!-- Direcciones -->
-    <details><summary>Dirección de Innovación</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Dirección Innovación</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Informática</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Dirección Informática</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Recursos Humanos</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Recursos Humanos</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Recursos Financieros</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Recursos Financieros</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Pago</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Dirección de Pago</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Infraestructura Física</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Infraestructura Física</a>
-      </div>
-    </details>
-    <details><summary>Dirección de Recursos Materiales</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Recursos Materiales</a>
-      </div>
-    </details>
+  <details>
+    <summary>Oficialía Mayor <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Innovación de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Informática de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Infraestructura Física de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Dirección de Pago de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad de Nóminas</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Jurídica</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Centro de Control y Vigilancia</a>
+    </div>
+  </details>
 
-    <!-- Unidades Administrativas -->
-    <details><summary>Unidad de Apoyo a lo Jurisdiccional</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Apoyo Jurisdiccional</a>
-      </div>
-    </details>
-    <details><summary>Archivo General del Poder Judicial</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo General</a>
-      </div>
-    </details>
-    <details><summary>Auditoría Interna</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo Auditoría Interna</a>
-      </div>
-    </details>
-    <details><summary>Unidad Administrativa Saltillo</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo UA Saltillo</a>
-      </div>
-    </details>
-    <details><summary>Unidad Administrativa Torreón</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo UA Torreón</a>
-      </div>
-    </details>
-    <details><summary>Unidad Administrativa Monclova</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo UA Monclova</a>
-      </div>
-    </details>
-    <details><summary>Unidad Administrativa Región Carbonífera</summary>
-      <div class="directorio">
-        <a href="#" class="archivo" target="_blank">📂 Archivo UA Región Carbonífera</a>
-      </div>
-    </details>
+  <!-- Unidades Administrativas -->
+  <details>
+    <summary>Unidades Administrativas <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Directorio Centro de Justicia de Saltillo</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Administrativa Torreón-San Pedro</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Administrativa de la Región Carbonífera</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Administrativa del Distrito Judicial de Acuña</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Administrativa del Distrito Judicial de Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Directorio Unidad Administrativa de la Río Grande</a>
+    </div>
+  </details>
+
+</details><!-- Fin Estructura Administrativa -->
+
+</div><!-- Fin details-container -->
 </body>
+<p></html></p>
 <h2>Descargar</h2>
 <ul>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F03 Directorio de Servidores Públicos/Directorio de la Presidencia.pdf">Directorio de la Presidencia.pdf</a></li>
