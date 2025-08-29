@@ -278,7 +278,11 @@
     margin: 20px;
     color: #49545E;
   }
-  h1 { text-align: center; margin-bottom: 20px; font-weight: bold; }
+  h1 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+  }
 
   .details-container details {
     margin-bottom: 10px;
@@ -303,17 +307,21 @@
   .details-container details[open] summary i {
     transform: rotate(90deg);
   }
+
+  /* Ajuste para que cada grupo de enlaces se despliegue verticalmente */
   .directorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 10px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
     background-color: #f9f9f9;
   }
+
   .archivo {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 0.95em;
     font-weight: bold;
     text-decoration: none;
     color: #49545E;
@@ -545,7 +553,7 @@
       <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Torreón</a>
       <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Monclova</a>
       <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Acuña</a>
-      <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Piedras Negras</a>
+      <a href="#" class "archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Piedras Negras</a>
       <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública Sabinas</a>
       <a href="#" class="archivo" target="_blank">📂 Nuevo Sistema de Defensoría Pública San Pedro</a>
     </div>
@@ -624,7 +632,7 @@
       <a href="#" class="archivo" target="_blank">📂 Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial</a>
       <a href="#" class="archivo" target="_blank">📂 Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial</a>
       <a href="#" class="archivo" target="_blank">📂 Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial</a>
-      <a href="#" class="archivo" target="_blank">📂 Dirección de Infraestructura Física de la Oficialía Mayor del Poder Judicial</a>
+      <a href="#" class "archivo" target="_blank">📂 Dirección de Infraestructura Física de la Oficialía Mayor del Poder Judicial</a>
       <a href="#" class="archivo" target="_blank">📂 Dirección de Pago de la Oficialía Mayor del Poder Judicial</a>
       <a href="#" class="archivo" target="_blank">📂 Unidad de Nóminas</a>
       <a href="#" class="archivo" target="_blank">📂 Unidad de Jurídica</a>
