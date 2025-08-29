@@ -266,553 +266,333 @@
 <p>07 de Julio de 2025</p>
 <p><html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estructura Orgánica</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></p>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    margin: 20px;
-}
-h1 {
-    color: #49545E;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-details {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-}
-summary {
-    cursor: pointer;
-    padding: 12px;
-    font-size: 1.1em;
-    font-weight: bold;
-    background-color: #49545E;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-summary i {
-    transition: transform 0.3s ease;
-}
-details[open] summary i {
-    transform: rotate(90deg);
-}
-.directorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 15px;
-    background: #f9f9f9;
-}
-.archivo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #49545E;
-}
-.archivo:hover {
-    text-decoration: underline;
-}
-</style>
-<p></head></p>
-<body><html lang="es">
-<head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estructura Orgánica</title>
-  <style>
-    ul {
-      list-style-type: none;
-      padding-left: 20px;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<br>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 20px;
     }
-    li {
-      margin: 5px 0;
-    }
-    .toggle {
-      cursor: pointer;
+    h1 {
+      color: #49545E;
+      text-align: center;
+      margin-bottom: 20px;
       font-weight: bold;
-      color: #2a4d8f;
     }
-    .nested {
-      display: none;
+    details {
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      overflow: hidden;
     }
-    .active {
-      display: block;
+    summary {
+      cursor: pointer;
+      padding: 12px;
+      font-size: 1.1em;
+      font-weight: bold;
+      background-color: #49545E;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    a {
-      color: #007bff;
+    summary i {
+      transition: transform 0.3s ease;
+    }
+    details[open] summary i {
+      transform: rotate(90deg);
+    }
+    .directorio {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 15px;
+      background: #f9f9f9;
+    }
+    .archivo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
       text-decoration: none;
-      margin-left: 10px;
+      color: #49545E;
     }
-    a:hover {
+    .archivo:hover {
       text-decoration: underline;
     }
-  </style>
-</head>
+  </style></p>
+<p></head></p>
 <body>
 
-<h2>Estructura Orgánica</h2>
+<h1>Estructura Orgánica</h1>
+
+<!-- Estructura Jurisdiccional -->
+<details>
+  <summary>Estructura Jurisdiccional <i class="fa-solid fa-chevron-right"></i></summary>
+
+  <details>
+    <summary>Tribunal Superior <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Presidencia</a>
+      <a href="#" class="archivo" target="_blank">📂 Pleno</a>
+      <a href="#" class="archivo" target="_blank">📂 Sala Colegiada Civil y Familiar</a>
+      <a href="#" class="archivo" target="_blank">📂 Sala Colegiada Penal</a>
+      <a href="#" class="archivo" target="_blank">📂 Sala Regional Torreón</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Tribunales Distritales <i class="fa-solid fa-chevron-right"></i></summary>
+    <div class="directorio">
+      <a href="#" class="archivo" target="_blank">📂 Primer Tribunal Distrital Saltillo</a>
+      <a href="#" class="archivo" target="_blank">📂 Segundo Tribunal Distrital Torreón</a>
+      <a href="#" class="archivo" target="_blank">📂 Tercer Tribunal Distrital Monclova</a>
+      <a href="#" class="archivo" target="_blank">📂 Cuarto Tribunal Distrital Piedras Negras</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Juzgados de Primera Instancia <i class="fa-solid fa-chevron-right"></i></summary>
+
+    <!-- Repite este bloque para cada tipo de juzgado -->
+    <details><summary>Civiles <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Piedras Negras</a>
+      </div>
+    </details>
+     <details><summary>Familiares <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Piedras Negras</a>
+      </div>
+    </details>
+     <details><summary>Civiles <i class="fa-solid fa-chevron-right"></i></summary>
+      <div class="directorio">
+        <a href="#" class="archivo" target="_blank">📂 Saltillo</a>
+        <a href="#" class="archivo" target="_blank">📂 Torreón</a>
+        <a href="#" class="archivo" target="_blank">📂 Acuña</a>
+        <a href="#" class="archivo" target="_blank">📂 Monclova</a>
+        <a href="#" class="archivo" target="_blank">📂 Sabinas</a>
+        <a href="#" class="archivo" target="_blank">📂 Piedras Negras</a>
+      </div>
+    </details>
+    </body>
+<p></html></p>
+<h3>1- Estructura Jurisdiccional</h3>
 <ul>
-  <li><span class="toggle">Estructura Jurisdiccional</span>
-    <ul class="nested">
-      <li><span class="toggle">Tribunal Superior</span>
-        <ul class="nested">
-          <li>Presidencia <a href="#">📄</a></li>
-          <li>Pleno <a href="#">📄</a></li>
-          <li>Sala Colegiada Civil y Familiar <a href="#">📄</a></li>
-          <li>Sala Colegiada Penal <a href="#">📄</a></li>
-          <li>Sala Regional Torreón <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Tribunales Distritales</span>
-        <ul class="nested">
-          <li>Primer Tribunal Distrital Saltillo <a href="#">📄</a></li>
-          <li>Segundo Tribunal Distrital Torreón <a href="#">📄</a></li>
-          <li>Tercer Tribunal Distrital Monclova <a href="#">📄</a></li>
-          <li>Cuarto Tribunal Distrital Piedras Negras <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Juzgados de Primera Instancia</span>
-        <ul class="nested">
-          <li><span class="toggle">Civiles</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Familiares</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Letrados</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Mercantiles</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Mixtos</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Penales</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Laborales</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-          <li><span class="toggle">Central de Actuarios</span>
-            <ul class="nested">
-              <li>Saltillo <a href="#">📄</a></li>
-              <li>Torreón <a href="#">📄</a></li>
-              <li>Acuña <a href="#">📄</a></li>
-              <li>Monclova <a href="#">📄</a></li>
-              <li>Sabinas <a href="#">📄</a></li>
-              <li>Piedras Negras <a href="#">📄</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-
-  <li><span class="toggle">Estructura no Jurisdiccional</span>
-    <ul class="nested">
-      <li><span class="toggle">Instituto de Especialización Judicial</span>
-        <ul class="nested">
-          <li>Instituto de Especialización Judicial <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Centro de Medios Alternos</span>
-        <ul class="nested">
-          <li>CEMASC Torreón <a href="#">📄</a></li>
-          <li>CEMASC Monclova <a href="#">📄</a></li>
-          <li>CEMASC Acuña <a href="#">📄</a></li>
-          <li>CEMASC Piedras Negras <a href="#">📄</a></li>
-          <li>CEMASC Sabinas <a href="#">📄</a></li>
-          <li>CEMASC San Pedro <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Defensoría Pública</span>
-        <ul class="nested">
-          <li>Delegación Torreón <a href="#">📄</a></li>
-          <li>Delegación Monclova <a href="#">📄</a></li>
-          <li>Delegación Acuña <a href="#">📄</a></li>
-          <li>Delegación Piedras Negras <a href="#">📄</a></li>
-          <li>Delegación Sabinas <a href="#">📄</a></li>
-          <li>Delegación San Pedro <a href="#">📄</a></li>
-          <li>Nuevo Sistema Saltillo <a href="#">
-          <li>Nuevo Sistema Saltillo <a href="#">📄</a></li>
-          <li>Nuevo Sistema Torreón <a href="#">📄</a></li>
-          <li>Nuevo Sistema Monclova <a href="#">📄</a></li>
-          <li>Nuevo Sistema Acuña <a href="#">📄</a></li>
-          <li>Nuevo Sistema Piedras Negras <a href="#">📄</a></li>
-          <li>Nuevo Sistema Sabinas <a href="#">📄</a></li>
-          <li>Nuevo Sistema San Pedro <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Centro de Evaluación Psicosocial</span>
-        <ul class="nested">
-          <li>Unidad Laguna <a href="#">📄</a></li>
-          <li>Unidad Región Norte <a href="#">📄</a></li>
-          <li>Unidad Región Centro <a href="#">📄</a></li>
-          <li>Unidad Región Carbonífera <a href="#">📄</a></li>
-          <li>Unidad Acuña <a href="#">📄</a></li>
-          <li>Unidad San Pedro <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Oficialías de Partes</span>
-        <ul class="nested">
-          <li>Saltillo <a href="#">📄</a></li>
-          <li>Torreón <a href="#">📄</a></li>
-          <li>Monclova <a href="#">📄</a></li>
-          <li>Piedras Negras <a href="#">📄</a></li>
-          <li>Región Carbonífera <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Visitaduría Judicial General</span>
-        <ul class="nested">
-          <li>Visitaduría Judicial General <a href="#">📄</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-
-  <li><span class="toggle">Estructura Administrativa</span>
-    <ul class="nested">
-      <li><span class="toggle">Presidencia del Tribunal Superior</span>
-        <ul class="nested">
-          <li>Secretaría Técnica y de Transparencia <a href="#">📄</a></li>
-          <li>Unidad de Apoyo a lo Jurisdiccional <a href="#">📄</a></li>
-          <li>Auditoría Interna <a href="#">📄</a></li>
-          <li>Archivo General del Poder Judicial <a href="#">📄</a></li>
-          <li>Archivo Regional Torreón <a href="#">📄</a></li>
-          <li>Archivo Regional Monclova <a href="#">📄</a></li>
-          <li>Archivo Regional Acuña <a href="#">📄</a></li>
-          <li>Archivo Regional Río Grande <a href="#">📄</a></li>
-          <li>Archivo Único Región Carbonífera <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Consejo de la Judicatura</span>
-        <ul class="nested">
-          <li>Consejo de la Judicatura <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Oficialía Mayor</span>
-        <ul class="nested">
-          <li>Dirección de Innovación <a href="#">📄</a></li>
-          <li>Dirección de Informática <a href="#">📄</a></li>
-          <li>Dirección de Recursos Humanos <a href="#">📄</a></li>
-          <li>Dirección de Recursos Financieros <a href="#">📄</a></li>
-          <li>Dirección de Recursos Materiales <a href="#">📄</a></li>
-          <li>Dirección de Infraestructura Física <a href="#">📄</a></li>
-          <li>Dirección de Pago <a href="#">📄</a></li>
-          <li>Unidad de Nóminas <a href="#">📄</a></li>
-          <li>Unidad Jurídica <a href="#">📄</a></li>
-          <li>Centro de Control y Vigilancia <a href="#">📄</a></li>
-        </ul>
-      </li>
-      <li><span class="toggle">Unidades Administrativas</span>
-        <ul class="nested">
-          <li>Centro de Justicia Saltillo <a href="#">📄</a></li>
-          <li>Unidad Torreón-San Pedro <a href="#">📄</a></li>
-          <li>Unidad Región Carbonífera <a href="#">📄</a></li>
-          <li>Unidad Distrito Judicial Acuña <a href="#">📄</a></li>
-          <li>Unidad Distrito Judicial Monclova <a href="#">📄</a></li>
-          <li>Unidad Río Grande <a href="#">📄</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+<li><a href="1--estructura-jurisdiccional/01-tribunal-superior-de-justicia-del-estado-de-coahuila-de-zaragoza/">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza</a></li>
 </ul>
-
-<script>
-  document.querySelectorAll('.toggle').forEach(function(toggle) {
-    toggle.addEventListener('click', function() {
-      this.nextElementSibling.classList.toggle('active');
-    });
-  });
-</script>
-
-</body>
-
-### 1- Estructura Jurisdiccional
-
-- [01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza](1--estructura-jurisdiccional/01-tribunal-superior-de-justicia-del-estado-de-coahuila-de-zaragoza/)
-
-#### 02 Tribunales Distritales
-
-- [01 Primer Tribunal Distrital Saltillo.pdf](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/01 Primer Tribunal Distrital Saltillo.pdf)
-- [01 Primer Tribunal Distrital Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/01 Primer Tribunal Distrital Saltillo.pptx)
-- [02 Segundo Tribunal Distrital Torreón.pdf](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/02 Segundo Tribunal Distrital Torreón.pdf)
-- [02 Segundo Tribunal Distrital Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/02 Segundo Tribunal Distrital Torreón.pptx)
-- [03 Tercer Tribunal Distrital Monclova.pdf](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/03 Tercer Tribunal Distrital Monclova.pdf)
-- [03 Tercer Tribunal Distrital Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/03 Tercer Tribunal Distrital Monclova.pptx)
-- [04 Cuarto Tribunal Distrital Piedras Negras.pdf](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/04 Cuarto Tribunal Distrital Piedras Negras.pdf)
-- [04 Cuarto Tribunal Distrital Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/04 Cuarto Tribunal Distrital Piedras Negras.pptx)
-
-
-#### 03 Juzgados de Primera Instancia
-
-
-##### Central de Actuarios
-
-- [Actuarios Itinerantes Distrito Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Actuarios Itinerantes Distrito Saltillo.pptx)
-- [Central de Actuarios Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios Saltillo.pptx)
-- [Central de Actuarios Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios Torreón.pptx)
-- [Central de Actuarios en Materia Hipotecaria Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios en Materia Hipotecaria Saltillo.pptx)
-
-
-##### Civiles
-
-- [Administración Juzgados Hipotecarios.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Administración Juzgados Hipotecarios.pptx)
-- [Juzgado Auxiliar Civil con Especializacion Ambiental.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Auxiliar Civil con Especializacion Ambiental.pptx)
-- [Juzgado Civil Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Civil Acuña.pptx)
-- [Juzgado Civil Sabinas.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Civil Sabinas.pptx)
-- [Juzgado Cuarto Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Cuarto Civil Saltillo.pptx)
-- [Juzgado Cuarto Civil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Cuarto Civil Torreón.pptx)
-- [Juzgado Primero Civil Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Monclova.pptx)
-- [Juzgado Primero Civil Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Piedras Negras.pptx)
-- [Juzgado Primero Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Saltillo.pptx)
-- [Juzgado Primero Civil Torreon.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Torreon.pptx)
-- [Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx)
-- [Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx)
-- [Juzgado Segundo Civil Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Monclova.pptx)
-- [Juzgado Segundo Civil Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Piedras Negras.pptx)
-- [Juzgado Segundo Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Saltillo.pptx)
-- [Juzgado Segundo Civil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Torreón.pptx)
-- [Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx)
-- [Juzgado Tercero Civil Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Monclova.pptx)
-- [Juzgado Tercero Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Saltillo.pptx)
-- [Juzgado Tercero Civil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Torreón.pptx)
-- [Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx)
-
-
-##### Familiares
-
-- [Juzgado Auxiliar Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Auxiliar Familiar Saltillo.pptx)
-- [Juzgado Cuarto Familiar Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Monclova.pptx)
-- [Juzgado Cuarto Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Saltillo.pptx)
-- [Juzgado Cuarto Familiar Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Torreón.pptx)
-- [Juzgado Familiar Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar Acuña.pptx)
-- [Juzgado Familiar Sabinas.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar Sabinas.pptx)
-- [Juzgado Familiar San Pedro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar San Pedro.pptx)
-- [Juzgado Primero Familiar Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Monclova.pptx)
-- [Juzgado Primero Familiar Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Piedras Negras.pptx)
-- [Juzgado Primero Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Saltillo.pptx)
-- [Juzgado Primero Familiar Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Torreón.pptx)
-- [Juzgado Quinto Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Quinto Familiar Saltillo.pptx)
-- [Juzgado Quinto Familiar Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Quinto Familiar Torreón.pptx)
-- [Juzgado Segundo Familiar Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Monclova.pptx)
-- [Juzgado Segundo Familiar Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Piedras Negras.pptx)
-- [Juzgado Segundo Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Saltillo.pptx)
-- [Juzgado Segundo Familiar Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Torreón.pptx)
-- [Juzgado Tercero Familiar Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Monclova.pptx)
-- [Juzgado Tercero Familiar Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Saltillo.pptx)
-- [Juzgado Tercero Familiar Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Torreón.pptx)
-
-
-##### Juzgados Letrados
-
-- [Juzgado Primero Letrado Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Primero Letrado Civil Saltillo.pptx)
-- [Juzgado Segundo Letrado Civil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Segundo Letrado Civil Saltillo.pptx)
-- [Juzgado Segundo Letrado Civil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Segundo Letrado Civil Torreón.pptx)
-- [Juzgado Tercero Letrado Civil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Tercero Letrado Civil Torreón.pptx)
-
-
-##### Juzgados Mixtos
-
-- [Juzgado Civil y Familiar Parras de la Fuente.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Mixtos/Juzgado Civil y Familiar Parras de la Fuente.pptx)
-- [Juzgado Civil y Familiar San Pedro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Mixtos/Juzgado Civil y Familiar San Pedro.pptx)
-
-
-##### Materia Penal del Sistema Acusatorio y Oral
-
-- [Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx)
-- [Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx)
-- [Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx)
-- [Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx)
-- [Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx)
-- [Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx)
-- [Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx)
-- [Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx)
-
-
-##### Mercantiles, en jurisdicción concurrente
-
-- [Juzgado Primero Mercantil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Primero Mercantil Saltillo.pptx)
-- [Juzgado Primero Mercantil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Primero Mercantil Torreón.pptx)
-- [Juzgado Segundo Mercantil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Segundo Mercantil Saltillo.pptx)
-- [Juzgado Segundo Mercantil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Segundo Mercantil Torreón.pptx)
-- [Juzgado Tercero Mercantil Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Tercero Mercantil Saltillo.pptx)
-- [Juzgado Tercero Mercantil Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Tercero Mercantil Torreón.pptx)
-- [Juzgados Mercantiles.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgados Mercantiles.pptx)
-
-
-##### Penales
-
-- [Juzgado Primero Penal Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Penales/Juzgado Primero Penal Saltillo.pptx)
-
-
-### 2-Estructura no Jurisdiccional
-
-
-#### 01 Instituto de Especialización Judicial
-
-- [Instituto de Especialización Judicial.pdf](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/01 Instituto de Especialización Judicial/Instituto de Especialización Judicial.pdf)
-- [Instituto de Especialización Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/01 Instituto de Especialización Judicial/Instituto de Especialización Judicial.pptx)
-
-
-#### 02 Centro de Medios Alternos de Solución de Controversias
-
-- [CEMASC Delegación San Pedro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/CEMASC Delegación San Pedro.pptx)
-- [CEMASC Delegación Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/CEMASC Delegación Torreón.pptx)
-- [Cemasc Delegación Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Acuña.pptx)
-- [Cemasc Delegación Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Monclova.pptx)
-- [Cemasc Delegación Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Piedras Negras.pptx)
-- [Cemasc Delegación Sabinas.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Sabinas.pptx)
-- [Centro de Medios Alternos de Solución de Controversias.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Centro de Medios Alternos de Solución de Controversias.pptx)
-
-
-#### 03 Instituto Estatal de Defensoría Pública
-
-- [Delegacion Piedras Negras del Instituto Defensoria Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegacion Piedras Negras del Instituto Defensoria Publica.pptx)
-- [Delegación Acuña Instituto Estatal de Defensoría Pública.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Acuña Instituto Estatal de Defensoría Pública.pptx)
-- [Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx)
-- [Delegación Parras del Instituto Estatal de Defensoría Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Parras del Instituto Estatal de Defensoría Publica.pptx)
-- [Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx)
-- [Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx)
-- [Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx)
-- [Instituto Estatal de Defensoria Publica.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Instituto Estatal de Defensoria Publica.pptx)
-- [Nuevo Sistema Defensoria Sabinas.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Sabinas.pptx)
-- [Nuevo Sistema Defensoria Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Saltillo.pptx)
-- [Nuevo Sistema Defensoria Torreon.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Torreon.pptx)
-- [Nuevo Sistema Defensoría Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Acuña.pptx)
-- [Nuevo Sistema Defensoría Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Monclova.pptx)
-- [Nuevo Sistema Defensoría Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Piedras Negras.pptx)
-
-
-#### 04 Centro de Evaluación Psicosocial
-
-- [Centro de Evaluación Psicosocial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Centro de Evaluación Psicosocial.pptx)
-- [Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx)
-- [Unidad del Centro de Evaluación Psicosocial Laguna.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Laguna.pptx)
-- [Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx)
-- [Unidad del Centro de Evaluación Psicosocial Región Centro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Región Centro.pptx)
-- [Unidad del Centro de Evaluación Psicosocial San Pedro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial San Pedro.pptx)
-- [Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx)
-
-
-#### 05 Oficialías de Partes
-
-- [Oficialía de Partes Región Carbonífera.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes Región Carbonífera.pptx)
-- [Oficialía de Partes Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes Saltillo.pptx)
-- [Oficialía de Partes de Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Monclova.pptx)
-- [Oficialía de Partes de Piedras Negras.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Piedras Negras.pptx)
-- [Oficialía de Partes de Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Torreón.pptx)
-
-
-#### 06 Visitaduría Judicial General
-
-- [Visitaduría Judicial General.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/06 Visitaduría Judicial General/Visitaduría Judicial General.pptx)
-
-
-### 3-Estructura Administrativa
-
-
-#### 01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza
-
-- [Archivo General del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo General del Poder Judicial.pptx)
-- [Archivo Regional de Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Acuña.pptx)
-- [Archivo Regional de Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Monclova.pptx)
-- [Archivo Regional de Río Grande.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Río Grande.pptx)
-- [Archivo Regional de Torreón.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Torreón.pptx)
-- [Archivo Único del Centro de Justicia Región Carbonífera.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Único del Centro de Justicia Región Carbonífera.pptx)
-- [Auditoría Interna.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Auditoría Interna.pptx)
-- [Secretaría Técnica y de Transparencia.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Secretaría Técnica y de Transparencia.pptx)
-- [Unidad de Apoyo a lo Juridiccional.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Unidad de Apoyo a lo Juridiccional.pptx)
-
-
-#### 02 Consejo de la Judicatura
-
-- [Consejo de la Judicatura.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/02 Consejo de la Judicatura/Consejo de la Judicatura.pptx)
-
-
-#### 03 Oficialía Mayor
-
-- [Centro de Control de Vigilancia.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Centro de Control de Vigilancia.pptx)
-- [Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx)
-- [Dirección de Infraestructura Física.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Infraestructura Física.pptx)
-- [Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx)
-- [Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx)
-- [Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx)
-- [Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx)
-- [Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx)
-- [Oficialía Mayor.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Oficialía Mayor.pptx)
-- [Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx)
-- [Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx)
-
-
-#### 04 Unidades Administrativas
-
-- [Centro de Justicia de Saltillo.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Centro de Justicia de Saltillo.pptx)
-- [Unidad Administrativa Del Distrito Judicial De Acuña.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa Del Distrito Judicial De Acuña.pptx)
-- [Unidad Administrativa Torreón - San Pedro.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa Torreón - San Pedro.pptx)
-- [Unidad Administrativa de la Región Carbonífera.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa de la Región Carbonífera.pptx)
-- [Unidad Administrativa del Distrito Judicial de Monclova.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Monclova.pptx)
-- [Unidad Administrativa del Distrito Judicial de Río Grande.pptx](https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Río Grande.pptx)
+<h4>02 Tribunales Distritales</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/01 Primer Tribunal Distrital Saltillo.pdf">01 Primer Tribunal Distrital Saltillo.pdf</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/01 Primer Tribunal Distrital Saltillo.pptx">01 Primer Tribunal Distrital Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/02 Segundo Tribunal Distrital Torreón.pdf">02 Segundo Tribunal Distrital Torreón.pdf</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/02 Segundo Tribunal Distrital Torreón.pptx">02 Segundo Tribunal Distrital Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/03 Tercer Tribunal Distrital Monclova.pdf">03 Tercer Tribunal Distrital Monclova.pdf</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/03 Tercer Tribunal Distrital Monclova.pptx">03 Tercer Tribunal Distrital Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/04 Cuarto Tribunal Distrital Piedras Negras.pdf">04 Cuarto Tribunal Distrital Piedras Negras.pdf</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/02 Tribunales Distritales/04 Cuarto Tribunal Distrital Piedras Negras.pptx">04 Cuarto Tribunal Distrital Piedras Negras.pptx</a></li>
+</ul>
+<h4>03 Juzgados de Primera Instancia</h4>
+<h5>Central de Actuarios</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Actuarios Itinerantes Distrito Saltillo.pptx">Actuarios Itinerantes Distrito Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios Saltillo.pptx">Central de Actuarios Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios Torreón.pptx">Central de Actuarios Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Central de Actuarios/Central de Actuarios en Materia Hipotecaria Saltillo.pptx">Central de Actuarios en Materia Hipotecaria Saltillo.pptx</a></li>
+</ul>
+<h5>Civiles</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Administración Juzgados Hipotecarios.pptx">Administración Juzgados Hipotecarios.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Auxiliar Civil con Especializacion Ambiental.pptx">Juzgado Auxiliar Civil con Especializacion Ambiental.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Civil Acuña.pptx">Juzgado Civil Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Civil Sabinas.pptx">Juzgado Civil Sabinas.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Cuarto Civil Saltillo.pptx">Juzgado Cuarto Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Cuarto Civil Torreón.pptx">Juzgado Cuarto Civil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Monclova.pptx">Juzgado Primero Civil Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Piedras Negras.pptx">Juzgado Primero Civil Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Saltillo.pptx">Juzgado Primero Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Primero Civil Torreon.pptx">Juzgado Primero Civil Torreon.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx">Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx">Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Monclova.pptx">Juzgado Segundo Civil Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Piedras Negras.pptx">Juzgado Segundo Civil Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Saltillo.pptx">Juzgado Segundo Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Segundo Civil Torreón.pptx">Juzgado Segundo Civil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx">Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Monclova.pptx">Juzgado Tercero Civil Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Saltillo.pptx">Juzgado Tercero Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado Tercero Civil Torreón.pptx">Juzgado Tercero Civil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Civiles/Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx">Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx</a></li>
+</ul>
+<h5>Familiares</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Auxiliar Familiar Saltillo.pptx">Juzgado Auxiliar Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Monclova.pptx">Juzgado Cuarto Familiar Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Saltillo.pptx">Juzgado Cuarto Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Cuarto Familiar Torreón.pptx">Juzgado Cuarto Familiar Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar Acuña.pptx">Juzgado Familiar Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar Sabinas.pptx">Juzgado Familiar Sabinas.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Familiar San Pedro.pptx">Juzgado Familiar San Pedro.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Monclova.pptx">Juzgado Primero Familiar Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Piedras Negras.pptx">Juzgado Primero Familiar Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Saltillo.pptx">Juzgado Primero Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Primero Familiar Torreón.pptx">Juzgado Primero Familiar Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Quinto Familiar Saltillo.pptx">Juzgado Quinto Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Quinto Familiar Torreón.pptx">Juzgado Quinto Familiar Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Monclova.pptx">Juzgado Segundo Familiar Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Piedras Negras.pptx">Juzgado Segundo Familiar Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Saltillo.pptx">Juzgado Segundo Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Segundo Familiar Torreón.pptx">Juzgado Segundo Familiar Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Monclova.pptx">Juzgado Tercero Familiar Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Saltillo.pptx">Juzgado Tercero Familiar Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Familiares/Juzgado Tercero Familiar Torreón.pptx">Juzgado Tercero Familiar Torreón.pptx</a></li>
+</ul>
+<h5>Juzgados Letrados</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Primero Letrado Civil Saltillo.pptx">Juzgado Primero Letrado Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Segundo Letrado Civil Saltillo.pptx">Juzgado Segundo Letrado Civil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Segundo Letrado Civil Torreón.pptx">Juzgado Segundo Letrado Civil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Letrados/Juzgado Tercero Letrado Civil Torreón.pptx">Juzgado Tercero Letrado Civil Torreón.pptx</a></li>
+</ul>
+<h5>Juzgados Mixtos</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Mixtos/Juzgado Civil y Familiar Parras de la Fuente.pptx">Juzgado Civil y Familiar Parras de la Fuente.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Juzgados Mixtos/Juzgado Civil y Familiar San Pedro.pptx">Juzgado Civil y Familiar San Pedro.pptx</a></li>
+</ul>
+<h5>Materia Penal del Sistema Acusatorio y Oral</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx">Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx">Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx">Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx">Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx">Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx">Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx">Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Materia Penal del Sistema Acusatorio y Oral/Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx">Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx</a></li>
+</ul>
+<h5>Mercantiles, en jurisdicción concurrente</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Primero Mercantil Saltillo.pptx">Juzgado Primero Mercantil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Primero Mercantil Torreón.pptx">Juzgado Primero Mercantil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Segundo Mercantil Saltillo.pptx">Juzgado Segundo Mercantil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Segundo Mercantil Torreón.pptx">Juzgado Segundo Mercantil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Tercero Mercantil Saltillo.pptx">Juzgado Tercero Mercantil Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgado Tercero Mercantil Torreón.pptx">Juzgado Tercero Mercantil Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Mercantiles, en jurisdicción concurrente/Juzgados Mercantiles.pptx">Juzgados Mercantiles.pptx</a></li>
+</ul>
+<h5>Penales</h5>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/1- Estructura Jurisdiccional/03 Juzgados de Primera Instancia/Penales/Juzgado Primero Penal Saltillo.pptx">Juzgado Primero Penal Saltillo.pptx</a></li>
+</ul>
+<h3>2-Estructura no Jurisdiccional</h3>
+<h4>01 Instituto de Especialización Judicial</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/01 Instituto de Especialización Judicial/Instituto de Especialización Judicial.pdf">Instituto de Especialización Judicial.pdf</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/01 Instituto de Especialización Judicial/Instituto de Especialización Judicial.pptx">Instituto de Especialización Judicial.pptx</a></li>
+</ul>
+<h4>02 Centro de Medios Alternos de Solución de Controversias</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/CEMASC Delegación San Pedro.pptx">CEMASC Delegación San Pedro.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/CEMASC Delegación Torreón.pptx">CEMASC Delegación Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Acuña.pptx">Cemasc Delegación Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Monclova.pptx">Cemasc Delegación Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Piedras Negras.pptx">Cemasc Delegación Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Cemasc Delegación Sabinas.pptx">Cemasc Delegación Sabinas.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/02 Centro de Medios Alternos de Solución de Controversias/Centro de Medios Alternos de Solución de Controversias.pptx">Centro de Medios Alternos de Solución de Controversias.pptx</a></li>
+</ul>
+<h4>03 Instituto Estatal de Defensoría Pública</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegacion Piedras Negras del Instituto Defensoria Publica.pptx">Delegacion Piedras Negras del Instituto Defensoria Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Acuña Instituto Estatal de Defensoría Pública.pptx">Delegación Acuña Instituto Estatal de Defensoría Pública.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx">Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Parras del Instituto Estatal de Defensoría Publica.pptx">Delegación Parras del Instituto Estatal de Defensoría Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx">Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx">Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx">Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Instituto Estatal de Defensoria Publica.pptx">Instituto Estatal de Defensoria Publica.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Sabinas.pptx">Nuevo Sistema Defensoria Sabinas.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Saltillo.pptx">Nuevo Sistema Defensoria Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoria Torreon.pptx">Nuevo Sistema Defensoria Torreon.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Acuña.pptx">Nuevo Sistema Defensoría Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Monclova.pptx">Nuevo Sistema Defensoría Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/03 Instituto Estatal de Defensoría Pública/Nuevo Sistema Defensoría Piedras Negras.pptx">Nuevo Sistema Defensoría Piedras Negras.pptx</a></li>
+</ul>
+<h4>04 Centro de Evaluación Psicosocial</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Centro de Evaluación Psicosocial.pptx">Centro de Evaluación Psicosocial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx">Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Laguna.pptx">Unidad del Centro de Evaluación Psicosocial Laguna.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx">Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial Región Centro.pptx">Unidad del Centro de Evaluación Psicosocial Región Centro.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial San Pedro.pptx">Unidad del Centro de Evaluación Psicosocial San Pedro.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/04 Centro de Evaluación Psicosocial/Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx">Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx</a></li>
+</ul>
+<h4>05 Oficialías de Partes</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes Región Carbonífera.pptx">Oficialía de Partes Región Carbonífera.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes Saltillo.pptx">Oficialía de Partes Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Monclova.pptx">Oficialía de Partes de Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Piedras Negras.pptx">Oficialía de Partes de Piedras Negras.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/05 Oficialías de Partes/Oficialía de Partes de Torreón.pptx">Oficialía de Partes de Torreón.pptx</a></li>
+</ul>
+<h4>06 Visitaduría Judicial General</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/2-Estructura no Jurisdiccional/06 Visitaduría Judicial General/Visitaduría Judicial General.pptx">Visitaduría Judicial General.pptx</a></li>
+</ul>
+<h3>3-Estructura Administrativa</h3>
+<h4>01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo General del Poder Judicial.pptx">Archivo General del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Acuña.pptx">Archivo Regional de Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Monclova.pptx">Archivo Regional de Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Río Grande.pptx">Archivo Regional de Río Grande.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Regional de Torreón.pptx">Archivo Regional de Torreón.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Archivo Único del Centro de Justicia Región Carbonífera.pptx">Archivo Único del Centro de Justicia Región Carbonífera.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Auditoría Interna.pptx">Auditoría Interna.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Secretaría Técnica y de Transparencia.pptx">Secretaría Técnica y de Transparencia.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/01 Presidencia del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza/Unidad de Apoyo a lo Juridiccional.pptx">Unidad de Apoyo a lo Juridiccional.pptx</a></li>
+</ul>
+<h4>02 Consejo de la Judicatura</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/02 Consejo de la Judicatura/Consejo de la Judicatura.pptx">Consejo de la Judicatura.pptx</a></li>
+</ul>
+<h4>03 Oficialía Mayor</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Centro de Control de Vigilancia.pptx">Centro de Control de Vigilancia.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Infraestructura Física.pptx">Dirección de Infraestructura Física.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx">Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Oficialía Mayor.pptx">Oficialía Mayor.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx">Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/03 Oficialía Mayor/Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx">Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx</a></li>
+</ul>
+<h4>04 Unidades Administrativas</h4>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Centro de Justicia de Saltillo.pptx">Centro de Justicia de Saltillo.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa Del Distrito Judicial De Acuña.pptx">Unidad Administrativa Del Distrito Judicial De Acuña.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa Torreón - San Pedro.pptx">Unidad Administrativa Torreón - San Pedro.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa de la Región Carbonífera.pptx">Unidad Administrativa de la Región Carbonífera.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Monclova.pptx">Unidad Administrativa del Distrito Judicial de Monclova.pptx</a></li>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Río Grande.pptx">Unidad Administrativa del Distrito Judicial de Río Grande.pptx</a></li>
+</ul>
     </div>
 </article>
     </main>
