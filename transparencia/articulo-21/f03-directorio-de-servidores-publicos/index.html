@@ -715,7 +715,6 @@
 </ul>
 <p>Title: Art. 21, Fracc. III / Directorio de Servidores Públicos
 Summary: El directorio de los servidores públicos, con nombre, cargo o nombramiento asignado, nivel tabular, fecha de alta en el cargo, fotografía, domicilio oficial, números telefónicos, y en su caso, dirección electrónica y redes sociales oficiales, con excepción de los miembros de las corporaciones policíacas;</p>
-<!doctype html>
 <p><html lang="es">
 <head>
   <meta charset="utf-8">
@@ -745,7 +744,7 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     .btn{ border:1px solid var(--borde); background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer; }
     .meta{ margin-left:auto; font-size:12px; color:#56626b; }
     .table-wrap{ margin-top:12px; border:1px solid var(--borde); border-radius:14px; overflow-x:auto !important; }
-    table{ width:100%; border-collapse:collapse; font-size:14px; min-width:1200px; table-layout:auto; }
+    table{ width:100%; border-collapse:collapse; font-size:14px; min-width:1100px; table-layout:auto; }
     thead th{
       position:sticky; top:0; z-index:1; background:#fafafa; color:#3b4750;
       text-align:left; padding:10px 12px; border-bottom:1px solid var(--borde); white-space:nowrap;
@@ -754,7 +753,8 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     tbody td{ padding:10px 12px; border-bottom:1px solid #efefef; vertical-align:top; }
     tbody tr:hover{ background:#fafafa; }
     #grid th, #grid td{ white-space: nowrap; }
-    #grid td:nth-child(5){ white-space: normal; } /* columna CARGO */
+    /* CARGO puede saltar de línea (ahora es la columna 3) */
+    #grid td:nth-child(3){ white-space: normal; }
     .tag{ display:inline-block; padding:2px 8px; border-radius:999px; background:var(--gris-claro); color:#364047; font-size:12px; }
     .pagination{
       display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 12px; background:#fafafa;
@@ -791,9 +791,7 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
       <thead>
       <tr>
         <th class="sortable" data-key="AREA">AREA</th>
-        <th class="sortable" data-key="NOMBRE">NOMBRE</th>
-        <th class="sortable" data-key="PRIMER APELLIDO">PRIMER APELLIDO</th>
-        <th class="sortable" data-key="SEGUNDO APELLIDO">SEGUNDO APELLIDO</th>
+        <th class="sortable" data-key="NOMBRE COMPLETO">NOMBRE COMPLETO</th>
         <th class="sortable" data-key="CARGO">CARGO</th>
         <th class="sortable" data-key="CLAVE DEL PUESTO">CLAVE DEL PUESTO</th>
         <th class="sortable" data-key="FECHA INGRESO PODER JUDICIAL">FECHA INGRESO PODER JUDICIAL</th>
@@ -828,9 +826,18 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
   const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_QJH9862W4R-BBg0Byj3KFON_Wi1eWcmJdJa-FOJ1Qa69Rh_0UO_Sj-LIPQobKDPKzj--BH2O-SEH/pub?gid=0&single=true&output=csv';
 
   const state = { rows: [], filtered: [], sortKey:'AREA', sortDir:'asc', page:1, pageSize:25, area:'', query:'' };
+
   const norm = (v)=> (v ?? '').toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'');
   const parseDate = (s)=>{ if(!s) return null; if(/^\d{2}\/\d{2}\/\d{4}$/.test(s)){ const [d,m,y]=s.split('/'); return new Date(+y,+m-1,+d);} const dt=new Date(s); return isNaN(dt)?null:dt; };
   const PHONE_KEYS = ['Télefono','Teléfono','TELEFONO','Telefono'];
+
+  // Construye el nombre completo a partir de las tres columnas
+  function fullName(r){
+    return [r['NOMBRE'], r['PRIMER APELLIDO'], r['SEGUNDO APELLIDO']]
+      .map(x => (x||'').toString().trim())
+      .filter(Boolean)
+      .join(' ');
+  }
 
   function render(){
     const qNeedles = norm(state.query).split(/\s+/).filter(Boolean);
@@ -838,15 +845,18 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
       const areaOk = !state.area || (r['AREA']||'')===state.area;
       if(!areaOk) return false;
       if(!qNeedles.length) return true;
-      const haystack = norm(Object.values(r).join(' '));
+      const haystack = norm(Object.values(r).join(' ')); // incluye nombre y apellidos por separado
       return qNeedles.every(n=>haystack.includes(n));
     });
 
     const key=state.sortKey, dir=state.sortDir==='asc'?1:-1;
     filtered.sort((a,b)=>{
+      if(key==='NOMBRE COMPLETO'){
+        return norm(fullName(a)).localeCompare(norm(fullName(b))) * dir;
+      }
       const av=a[key], bv=b[key];
       if(key.includes('FECHA')){ const ad=parseDate(av), bd=parseDate(bv); if(ad&&bd) return (ad-bd)*dir; }
-      return norm(av).localeCompare(norm(bv))*dir;
+      return norm(av).localeCompare(norm(bv)) * dir;
     });
 
     state.filtered=filtered;
@@ -864,11 +874,10 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
       const mail=(r['CORREO ELECTRONICO OFICIAL']||'').toString().trim();
       const mailHtml=mail?`<a class="link" href="mailto:${mail}"><i class="fa-solid fa-envelope"></i> ${mail}</a>`:'<span class="muted">–</span>';
       const domicilio=[r['TIPO DE VIALIDAD'],r['NOMBRE DE LA VIALIDAD'],r['NUMERO EXTERIOR'],r['TIPO DE ASENTAMIENTO'],r['NOMBRE DEL ASENTAMIENTO'],r['NOMBRE DE LA LOCALIDAD']].filter(Boolean).join(' ');
+
       return `<tr>
         <td>${r['AREA']||''}</td>
-        <td>${r['NOMBRE']||''}</td>
-        <td>${r['PRIMER APELLIDO']||''}</td>
-        <td>${r['SEGUNDO APELLIDO']||''}</td>
+        <td>${fullName(r)}</td>
         <td>${r['CARGO']||''}</td>
         <td>${r['CLAVE DEL PUESTO']||''}</td>
         <td>${r['FECHA INGRESO PODER JUDICIAL']||''}</td>
@@ -889,11 +898,11 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
 
   // --- Exportar CSV y Excel ---
   function getDataForExport(){
-    const headers=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Teléfono','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
+    const headers=['AREA','NOMBRE COMPLETO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Teléfono','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
     const phoneKey=PHONE_KEYS.find(k=>state.rows.length&&(k in state.rows[0]))||'Télefono';
     const rows=state.filtered.map(r=>{
       const domicilio=[r['TIPO DE VIALIDAD'],r['NOMBRE DE LA VIALIDAD'],r['NUMERO EXTERIOR'],r['TIPO DE ASENTAMIENTO'],r['NOMBRE DEL ASENTAMIENTO'],r['NOMBRE DE LA LOCALIDAD']].filter(Boolean).join(' ');
-      return [r['AREA'],r['NOMBRE'],r['PRIMER APELLIDO'],r['SEGUNDO APELLIDO'],r['CARGO'],r['CLAVE DEL PUESTO'],r['FECHA INGRESO PODER JUDICIAL'],r[phoneKey],r['CORREO ELECTRONICO OFICIAL'],domicilio];
+      return [r['AREA'], fullName(r), r['CARGO'], r['CLAVE DEL PUESTO'], r['FECHA INGRESO PODER JUDICIAL'], r[phoneKey], r['CORREO ELECTRONICO OFICIAL'], domicilio];
     });
     return {headers, rows};
   }
@@ -909,8 +918,9 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     const {headers,rows}=getDataForExport();
     const wb=XLSX.utils.book_new();
     const ws=XLSX.utils.aoa_to_sheet([headers,...rows]);
-    // Auto filtros y anchos
+    // Auto filtro en encabezados
     ws['!autofilter']={ref:XLSX.utils.encode_range({s:{r:0,c:0}, e:{r:0,c:headers.length-1}})};
+    // Ancho de columnas
     ws['!cols']=headers.map(()=>({wch:25}));
     XLSX.utils.book_append_sheet(wb,ws,"Directorio");
     XLSX.writeFile(wb,"directorio_vista.xlsx");
@@ -921,7 +931,12 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     Papa.parse(CSV_URL,{download:true,header:true,skipEmptyLines:true,
       complete:(res)=>{
         const keys=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL','TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR','TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'];
-        state.rows=res.data.map(row=>{const copy={...row}; keys.forEach(k=>{if(!(k in copy)) copy[k]='';}); if(!copy['Télefono']&&(row['Teléfono']||row['TELEFONO']||row['Telefono'])) copy['Télefono']=row['Teléfono']||row['TELEFONO']||row['Telefono']||''; return copy;});
+        state.rows=res.data.map(row=>{
+          const copy={...row};
+          keys.forEach(k=>{if(!(k in copy)) copy[k]='';});
+          if(!copy['Télefono']&&(row['Teléfono']||row['TELEFONO']||row['Telefono'])) copy['Télefono']=row['Teléfono']||row['TELEFONO']||row['Telefono']||'';
+          return copy;
+        });
         populateAreaFilter(state.rows); state.filtered=[...state.rows]; render();
       }});
     document.getElementById('q').addEventListener('input',e=>{state.query=e.target.value;state.page=1;render();});
