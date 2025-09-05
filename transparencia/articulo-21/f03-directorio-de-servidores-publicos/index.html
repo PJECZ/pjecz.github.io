@@ -715,12 +715,6 @@
 </ul>
 <p>Title: Art. 21, Fracc. III / Directorio de Servidores Públicos
 Summary: El directorio de los servidores públicos, con nombre, cargo o nombramiento asignado, nivel tabular, fecha de alta en el cargo, fotografía, domicilio oficial, números telefónicos, y en su caso, dirección electrónica y redes sociales oficiales, con excepción de los miembros de las corporaciones policíacas;</p>
-<h4>RESPONSABLE</h4>
-<p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
-<h4>FECHA DE VALIDACIÓN</h4>
-<p>07 de julio de 2025</p>
-<h3>Directorio Poder Judicial</h3>
-<h4>Personal Jurisdiccional</h4>
 <!doctype html>
 <p><html lang="es">
 <head>
@@ -729,16 +723,15 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Iconos --></p>
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- PapaParse para leer CSV --></p>
+  <!-- PapaParse (leer CSV) --></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
+<!-- SheetJS (exportar .xlsx) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
 
 <style>
-    :root{
-      --gris:#43555f; --gris-claro:#e9e9d8; --arena:#b5b49f;
-      --borde:#d9d9d9; --bg:#fff;
-    }
+    :root{ --gris:#43555f; --gris-claro:#e9e9d8; --borde:#d9d9d9; --bg:#fff; }
     body{ font-family:system-ui, Arial, sans-serif; background:var(--bg); color:#2a2f33; margin:16px; }
-    .wrap{ max-width:1280px; margin:0 auto; }
+    .wrap{ max-width:100% !important; margin:0 auto; }
     h1{ color:var(--gris); margin:0 0 10px; font-weight:700; }
     .toolbar{
       display:flex; gap:10px; align-items:center; flex-wrap:wrap;
@@ -751,8 +744,8 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     .search input, .select select{ border:none; outline:none; font-size:14px; }
     .btn{ border:1px solid var(--borde); background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer; }
     .meta{ margin-left:auto; font-size:12px; color:#56626b; }
-    .table-wrap{ margin-top:12px; border:1px solid var(--borde); border-radius:14px; overflow:hidden; }
-    table{ width:100%; border-collapse:collapse; font-size:14px; }
+    .table-wrap{ margin-top:12px; border:1px solid var(--borde); border-radius:14px; overflow-x:auto !important; }
+    table{ width:100%; border-collapse:collapse; font-size:14px; min-width:1200px; table-layout:auto; }
     thead th{
       position:sticky; top:0; z-index:1; background:#fafafa; color:#3b4750;
       text-align:left; padding:10px 12px; border-bottom:1px solid var(--borde); white-space:nowrap;
@@ -760,8 +753,8 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
     thead th.sortable{ cursor:pointer; }
     tbody td{ padding:10px 12px; border-bottom:1px solid #efefef; vertical-align:top; }
     tbody tr:hover{ background:#fafafa; }
-    .hide-md{ display:table-cell; }
-    @media (max-width: 1100px){ .hide-md{ display:none; } }
+    #grid th, #grid td{ white-space: nowrap; }
+    #grid td:nth-child(5){ white-space: normal; } /* columna CARGO */
     .tag{ display:inline-block; padding:2px 8px; border-radius:999px; background:var(--gris-claro); color:#364047; font-size:12px; }
     .pagination{
       display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 12px; background:#fafafa;
@@ -788,7 +781,8 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
       </select>
     </div>
     <button id="btn-clear" class="btn"><i class="fa-solid fa-eraser"></i> Limpiar</button>
-    <button id="btn-export" class="btn"><i class="fa-solid fa-file-arrow-down"></i> Exportar vista (CSV)</button>
+    <button id="btn-export-csv" class="btn"><i class="fa-solid fa-file-csv"></i> Exportar CSV</button>
+    <button id="btn-export-xlsx" class="btn"><i class="fa-solid fa-file-excel"></i> Exportar Excel</button>
     <div class="meta"><span id="count"></span></div>
   </div>
 
@@ -801,16 +795,11 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
         <th class="sortable" data-key="PRIMER APELLIDO">PRIMER APELLIDO</th>
         <th class="sortable" data-key="SEGUNDO APELLIDO">SEGUNDO APELLIDO</th>
         <th class="sortable" data-key="CARGO">CARGO</th>
-        <th class="sortable hide-md" data-key="CLAVE DEL PUESTO">CLAVE DEL PUESTO</th>
+        <th class="sortable" data-key="CLAVE DEL PUESTO">CLAVE DEL PUESTO</th>
         <th class="sortable" data-key="FECHA INGRESO PODER JUDICIAL">FECHA INGRESO PODER JUDICIAL</th>
         <th class="sortable" data-key="Télefono">Teléfono</th>
         <th class="sortable" data-key="CORREO ELECTRONICO OFICIAL">CORREO ELECTRONICO OFICIAL</th>
-        <th class="sortable hide-md" data-key="TIPO DE VIALIDAD">TIPO DE VIALIDAD</th>
-        <th class="sortable hide-md" data-key="NOMBRE DE LA VIALIDAD">NOMBRE DE LA VIALIDAD</th>
-        <th class="sortable hide-md" data-key="NUMERO EXTERIOR">NUMERO EXTERIOR</th>
-        <th class="sortable hide-md" data-key="TIPO DE ASENTAMIENTO">TIPO DE ASENTAMIENTO</th>
-        <th class="sortable hide-md" data-key="NOMBRE DEL ASENTAMIENTO">NOMBRE DEL ASENTAMIENTO</th>
-        <th class="sortable hide-md" data-key="NOMBRE DE LA LOCALIDAD">NOMBRE DE LA LOCALIDAD</th>
+        <th data-key="DOMICILIO">DOMICILIO</th>
       </tr>
       </thead>
       <tbody></tbody>
@@ -835,181 +824,115 @@ Summary: El directorio de los servidores públicos, con nombre, cargo o nombrami
 </div>
 
 <script>
-  // ====== CONFIGURA AQUÍ la ruta a tu CSV ======
+  // === TU HOJA PUBLICADA COMO CSV ===
   const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_QJH9862W4R-BBg0Byj3KFON_Wi1eWcmJdJa-FOJ1Qa69Rh_0UO_Sj-LIPQobKDPKzj--BH2O-SEH/pub?gid=0&single=true&output=csv';
 
-  // Estado
-  const state = {
-    rows: [],
-    filtered: [],
-    sortKey: 'AREA',
-    sortDir: 'asc',
-    page: 1,
-    pageSize: 25,
-    area: '',
-    query: ''
-  };
-
-  // Utilidades
-  const norm = (v)=> (v ?? '').toString().toLowerCase()
-    .normalize('NFD').replace(/\p{Diacritic}/gu,'');
-  const parseDate = (s)=> {
-    if(!s) return null;
-    if(/^\d{2}\/\d{2}\/\d{4}$/.test(s)){ const [d,m,y]=s.split('/'); return new Date(+y,+m-1,+d); }
-    const dt = new Date(s); return isNaN(dt) ? null : dt;
-  };
-  // algunas hojas ponen "Teléfono" o "Télefono"; mapeo flexible
+  const state = { rows: [], filtered: [], sortKey:'AREA', sortDir:'asc', page:1, pageSize:25, area:'', query:'' };
+  const norm = (v)=> (v ?? '').toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'');
+  const parseDate = (s)=>{ if(!s) return null; if(/^\d{2}\/\d{2}\/\d{4}$/.test(s)){ const [d,m,y]=s.split('/'); return new Date(+y,+m-1,+d);} const dt=new Date(s); return isNaN(dt)?null:dt; };
   const PHONE_KEYS = ['Télefono','Teléfono','TELEFONO','Telefono'];
 
-  // Render principal
   function render(){
-    // filtros
     const qNeedles = norm(state.query).split(/\s+/).filter(Boolean);
     const filtered = state.rows.filter(r=>{
-      const areaOk = !state.area || (r['AREA']||'') === state.area;
+      const areaOk = !state.area || (r['AREA']||'')===state.area;
       if(!areaOk) return false;
       if(!qNeedles.length) return true;
       const haystack = norm(Object.values(r).join(' '));
-      return qNeedles.every(n => haystack.includes(n));
+      return qNeedles.every(n=>haystack.includes(n));
     });
 
-    // ordenar
-    const key = state.sortKey, dir = state.sortDir==='asc'?1:-1;
+    const key=state.sortKey, dir=state.sortDir==='asc'?1:-1;
     filtered.sort((a,b)=>{
       const av=a[key], bv=b[key];
-      if(key.includes('FECHA')){
-        const ad=parseDate(av), bd=parseDate(bv);
-        if(ad && bd) return (ad-bd)*dir;
-      }
+      if(key.includes('FECHA')){ const ad=parseDate(av), bd=parseDate(bv); if(ad&&bd) return (ad-bd)*dir; }
       return norm(av).localeCompare(norm(bv))*dir;
     });
 
-    // paginar
-    state.filtered = filtered;
-    const total = filtered.length;
-    const pages = Math.max(1, Math.ceil(total / state.pageSize));
-    state.page = Math.min(state.page, pages);
-    const ini = (state.page-1)*state.pageSize;
-    const pageRows = filtered.slice(ini, ini+state.pageSize);
+    state.filtered=filtered;
+    const total=filtered.length;
+    const pages=Math.max(1,Math.ceil(total/state.pageSize));
+    state.page=Math.min(state.page,pages);
+    const ini=(state.page-1)*state.pageSize;
+    const pageRows=filtered.slice(ini,ini+state.pageSize);
 
-    // pintar cuerpo
-    const tbody = document.querySelector('#grid tbody');
-    tbody.innerHTML = pageRows.map(r=>{
-      // telefono: toma la primera clave que exista
-      const phoneKey = PHONE_KEYS.find(k => k in r) || 'Télefono';
-      const tel = (r[phoneKey]||'').toString().trim();
-      const telHref = tel ? `tel:${tel.replace(/\D+/g,'')}` : '';
-      const telHtml = tel ? `<a class="link" href="${telHref}"><i class="fa-solid fa-phone"></i> ${tel}</a>` : '<span class="muted">–</span>';
-      const mail = (r['CORREO ELECTRONICO OFICIAL']||'').toString().trim();
-      const mailHtml = mail ? `<a class="link" href="mailto:${mail}"><i class="fa-solid fa-envelope"></i> ${mail}</a>` : '<span class="muted">–</span>';
-
+    const tbody=document.querySelector('#grid tbody');
+    tbody.innerHTML=pageRows.map(r=>{
+      const phoneKey=PHONE_KEYS.find(k=>k in r)||'Télefono';
+      const tel=(r[phoneKey]||'').toString().trim();
+      const telHtml=tel?`<a class="link" href="tel:${tel.replace(/\D+/g,'')}"><i class="fa-solid fa-phone"></i> ${tel}</a>`:'<span class="muted">–</span>';
+      const mail=(r['CORREO ELECTRONICO OFICIAL']||'').toString().trim();
+      const mailHtml=mail?`<a class="link" href="mailto:${mail}"><i class="fa-solid fa-envelope"></i> ${mail}</a>`:'<span class="muted">–</span>';
+      const domicilio=[r['TIPO DE VIALIDAD'],r['NOMBRE DE LA VIALIDAD'],r['NUMERO EXTERIOR'],r['TIPO DE ASENTAMIENTO'],r['NOMBRE DEL ASENTAMIENTO'],r['NOMBRE DE LA LOCALIDAD']].filter(Boolean).join(' ');
       return `<tr>
         <td>${r['AREA']||''}</td>
         <td>${r['NOMBRE']||''}</td>
         <td>${r['PRIMER APELLIDO']||''}</td>
         <td>${r['SEGUNDO APELLIDO']||''}</td>
         <td>${r['CARGO']||''}</td>
-        <td class="hide-md">${r['CLAVE DEL PUESTO']||''}</td>
+        <td>${r['CLAVE DEL PUESTO']||''}</td>
         <td>${r['FECHA INGRESO PODER JUDICIAL']||''}</td>
         <td>${telHtml}</td>
         <td>${mailHtml}</td>
-        <td class="hide-md">${r['TIPO DE VIALIDAD']||''}</td>
-        <td class="hide-md">${r['NOMBRE DE LA VIALIDAD']||''}</td>
-        <td class="hide-md">${r['NUMERO EXTERIOR']||''}</td>
-        <td class="hide-md">${r['TIPO DE ASENTAMIENTO']||''}</td>
-        <td class="hide-md">${r['NOMBRE DEL ASENTAMIENTO']||''}</td>
-        <td class="hide-md">${r['NOMBRE DE LA LOCALIDAD']||''}</td>
+        <td>${domicilio||'<span class="muted">–</span>'}</td>
       </tr>`;
     }).join('');
 
-    // meta + paginación
-    document.getElementById('count').textContent =
-      `${total.toLocaleString('es-MX')} registros • mostrando ${pageRows.length.toLocaleString('es-MX')}`;
-    document.getElementById('pageInfo').textContent = `Página ${state.page} de ${pages}`;
+    document.getElementById('count').textContent=`${total} registros • mostrando ${pageRows.length}`;
+    document.getElementById('pageInfo').textContent=`Página ${state.page} de ${pages}`;
   }
 
   function populateAreaFilter(rows){
-    const areas = Array.from(new Set(rows.map(r=> r['AREA']).filter(Boolean))).sort((a,b)=> a.localeCompare(b,'es'));
-    const sel = document.getElementById('areaFilter');
-    areas.forEach(a=>{
-      const opt = document.createElement('option');
-      opt.value = a; opt.textContent = a; sel.appendChild(opt);
-    });
+    const areas=Array.from(new Set(rows.map(r=>r['AREA']).filter(Boolean))).sort((a,b)=>a.localeCompare(b,'es'));
+    const sel=document.getElementById('areaFilter'); areas.forEach(a=>{ const opt=document.createElement('option'); opt.value=a; opt.textContent=a; sel.appendChild(opt); });
   }
 
-  // Exportar CSV de la vista actual
-  function exportView(){
-    const headers = [
-      'AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO',
-      'FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL',
-      'TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR',
-      'TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'
-    ];
-    const phoneKey = PHONE_KEYS.find(k => state.rows.length && (k in state.rows[0])) || 'Télefono';
-    const hdrs = headers.map(h => h==='Télefono' ? phoneKey : h);
+  // --- Exportar CSV y Excel ---
+  function getDataForExport(){
+    const headers=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Teléfono','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
+    const phoneKey=PHONE_KEYS.find(k=>state.rows.length&&(k in state.rows[0]))||'Télefono';
+    const rows=state.filtered.map(r=>{
+      const domicilio=[r['TIPO DE VIALIDAD'],r['NOMBRE DE LA VIALIDAD'],r['NUMERO EXTERIOR'],r['TIPO DE ASENTAMIENTO'],r['NOMBRE DEL ASENTAMIENTO'],r['NOMBRE DE LA LOCALIDAD']].filter(Boolean).join(' ');
+      return [r['AREA'],r['NOMBRE'],r['PRIMER APELLIDO'],r['SEGUNDO APELLIDO'],r['CARGO'],r['CLAVE DEL PUESTO'],r['FECHA INGRESO PODER JUDICIAL'],r[phoneKey],r['CORREO ELECTRONICO OFICIAL'],domicilio];
+    });
+    return {headers, rows};
+  }
 
-    const rows = state.filtered.map(r => hdrs.map(h => r[h] ?? ''));
-    const csv = [hdrs.join(','), ...rows.map(r => r.map(v=>{
-      const s = (v??'').toString();
-      return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
-    }).join(','))].join('\n');
+  function exportCSV(){
+    const {headers,rows}=getDataForExport();
+    const csv=[headers.join(','),...rows.map(r=>r.map(v=>{const s=(v??'').toString();return /[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;}).join(','))].join('\n');
+    const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}); const url=URL.createObjectURL(blob);
+    const a=document.createElement('a'); a.href=url; a.download='directorio_vista.csv'; document.body.appendChild(a); a.click(); URL.revokeObjectURL(url); a.remove();
+  }
 
-    const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = 'directorio_vista.csv';
-    document.body.appendChild(a); a.click();
-    URL.revokeObjectURL(url); a.remove();
+  function exportXLSX(){
+    const {headers,rows}=getDataForExport();
+    const wb=XLSX.utils.book_new();
+    const ws=XLSX.utils.aoa_to_sheet([headers,...rows]);
+    // Auto filtros y anchos
+    ws['!autofilter']={ref:XLSX.utils.encode_range({s:{r:0,c:0}, e:{r:0,c:headers.length-1}})};
+    ws['!cols']=headers.map(()=>({wch:25}));
+    XLSX.utils.book_append_sheet(wb,ws,"Directorio");
+    XLSX.writeFile(wb,"directorio_vista.xlsx");
   }
 
   // Listeners
-  window.addEventListener('DOMContentLoaded', ()=>{
-    Papa.parse(CSV_URL, {
-      download: true, header: true, skipEmptyLines: true,
-      complete: (res)=>{
-        // Garantiza que todas las claves existan
-        const keys = ['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL','TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR','TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'];
-        state.rows = res.data.map(row=>{
-          const copy = {...row};
-          keys.forEach(k => { if(!(k in copy)) copy[k]=''; });
-          // si vino "Teléfono" en vez de "Télefono", mueve el valor
-          if(!copy['Télefono'] && (row['Teléfono']||row['TELEFONO']||row['Telefono'])) {
-            copy['Télefono'] = row['Teléfono']||row['TELEFONO']||row['Telefono']||'';
-          }
-          return copy;
-        });
-        populateAreaFilter(state.rows);
-        state.filtered = [...state.rows];
-        render();
-      },
-      error: (err)=> alert('No se pudo cargar el CSV: ' + err)
-    });
-
-    document.getElementById('q').addEventListener('input', e=>{ state.query = e.target.value; state.page=1; render(); });
-    document.getElementById('areaFilter').addEventListener('change', e=>{ state.area = e.target.value; state.page=1; render(); });
-    document.getElementById('btn-clear').addEventListener('click', ()=>{
-      document.getElementById('q').value=''; document.getElementById('areaFilter').value='';
-      state.query=''; state.area=''; state.page=1; render();
-    });
-    document.getElementById('btn-export').addEventListener('click', exportView);
-
-    document.querySelectorAll('thead th.sortable').forEach(th=>{
-      th.addEventListener('click', ()=>{
-        const key = th.dataset.key;
-        if(state.sortKey === key){ state.sortDir = (state.sortDir==='asc')?'desc':'asc'; }
-        else { state.sortKey = key; state.sortDir='asc'; }
-        render();
-      });
-    });
-
-    document.getElementById('prev').addEventListener('click', ()=>{ if(state.page>1){ state.page--; render(); } });
-    document.getElementById('next').addEventListener('click', ()=>{
-      const pages = Math.max(1, Math.ceil(state.filtered.length/state.pageSize));
-      if(state.page<pages){ state.page++; render(); }
-    });
-    document.getElementById('pageSize').addEventListener('change', e=>{
-      state.pageSize = parseInt(e.target.value,10)||25; state.page=1; render();
-    });
+  window.addEventListener('DOMContentLoaded',()=>{
+    Papa.parse(CSV_URL,{download:true,header:true,skipEmptyLines:true,
+      complete:(res)=>{
+        const keys=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL','TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR','TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'];
+        state.rows=res.data.map(row=>{const copy={...row}; keys.forEach(k=>{if(!(k in copy)) copy[k]='';}); if(!copy['Télefono']&&(row['Teléfono']||row['TELEFONO']||row['Telefono'])) copy['Télefono']=row['Teléfono']||row['TELEFONO']||row['Telefono']||''; return copy;});
+        populateAreaFilter(state.rows); state.filtered=[...state.rows]; render();
+      }});
+    document.getElementById('q').addEventListener('input',e=>{state.query=e.target.value;state.page=1;render();});
+    document.getElementById('areaFilter').addEventListener('change',e=>{state.area=e.target.value;state.page=1;render();});
+    document.getElementById('btn-clear').addEventListener('click',()=>{document.getElementById('q').value='';document.getElementById('areaFilter').value='';state.query='';state.area='';state.page=1;render();});
+    document.getElementById('btn-export-csv').addEventListener('click',exportCSV);
+    document.getElementById('btn-export-xlsx').addEventListener('click',exportXLSX);
+    document.querySelectorAll('thead th.sortable').forEach(th=>{th.addEventListener('click',()=>{const key=th.dataset.key;if(state.sortKey===key){state.sortDir=(state.sortDir==='asc')?'desc':'asc';}else{state.sortKey=key;state.sortDir='asc';}render();});});
+    document.getElementById('prev').addEventListener('click',()=>{if(state.page>1){state.page--;render();}});
+    document.getElementById('next').addEventListener('click',()=>{const pages=Math.max(1,Math.ceil(state.filtered.length/state.pageSize));if(state.page<pages){state.page++;render();}});
+    document.getElementById('pageSize').addEventListener('change',e=>{state.pageSize=parseInt(e.target.value,10)||25;state.page=1;render();});
   });
 </script>
 </body>
