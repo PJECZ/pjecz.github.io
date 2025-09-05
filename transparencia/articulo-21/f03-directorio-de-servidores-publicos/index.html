@@ -264,7 +264,7 @@
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>FECHA DE VALIDACIÓN</h4>
 <p>07 de Julio de 2025</p>
-<section id="art21-dir" aria-label="Art. 21, Fracc. III / Directorio de Servidores Públicos">
+<section id="art21-dir" aria-label="Art. 21, Fracc. III / Directorios">
   <div id="pj-dir">
     <div class="pj-wrap">
       <div class="pj-toolbar">
@@ -287,16 +287,16 @@
       <div class="pj-table-wrap">
         <table id="pj-grid" aria-describedby="pj-count">
           <thead>
-            <tr>
-              <th class="pj-sortable" data-key="AREA">AREA</th>
-              <th class="pj-sortable" data-key="NOMBRE COMPLETO">NOMBRE COMPLETO</th>
-              <th class="pj-sortable" data-key="CARGO">CARGO</th>
-              <th class="pj-sortable" data-key="CLAVE DEL PUESTO">CLAVE DEL PUESTO</th>
-              <th class="pj-sortable" data-key="FECHA INGRESO PODER JUDICIAL">FECHA INGRESO PODER JUDICIAL</th>
-              <th class="pj-sortable" data-key="Télefono">TELÉFONO</th>
-              <th class="pj-sortable" data-key="CORREO ELECTRONICO OFICIAL">CORREO ELECTRONICO OFICIAL</th>
-              <th data-key="DOMICILIO">DOMICILIO</th>
-            </tr>
+          <tr>
+            <th class="pj-sortable" data-key="AREA">AREA</th>
+            <th class="pj-sortable" data-key="NOMBRE COMPLETO">NOMBRE COMPLETO</th>
+            <th class="pj-sortable" data-key="CARGO">CARGO</th>
+            <th class="pj-sortable" data-key="CLAVE DEL PUESTO">CLAVE DEL PUESTO</th>
+            <th class="pj-sortable" data-key="FECHA INGRESO PODER JUDICIAL">FECHA INGRESO PODER JUDICIAL</th>
+            <th class="pj-sortable" data-key="Télefono">Teléfono</th>
+            <th class="pj-sortable" data-key="CORREO ELECTRONICO OFICIAL">CORREO ELECTRONICO OFICIAL</th>
+            <th data-key="DOMICILIO">DOMICILIO</th>
+          </tr>
           </thead>
           <tbody></tbody>
         </table>
@@ -317,16 +317,34 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Librerías -->
+<!-- Librerías necesarias (sin Font Awesome) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 <style>
-#pj-dir{ --pj-gris:#43555f; --pj-gris-claro:#e9e9d8; --pj-borde:#d9d9d9; margin-top:20px; font-family:Arial,sans-serif; color:#2a2f33; }
+/* ====== Estilos encapsulados ====== */
+#art21-dir { font-family: Arial, sans-serif; color:#49545E; margin:20px 0; }
+
+/* --- Acordeón --- */
+#art21-dir .details-container details { margin-bottom:10px; border:1px solid #ccc; border-radius:6px; overflow:hidden; background:#fff; }
+#art21-dir .details-container summary {
+  cursor:pointer; padding:12px; font-size:1.05em; font-weight:700;
+  background:#bdbfb6; color:#49545E; display:flex; align-items:center; gap:.5rem;
+}
+#art21-dir .details-container summary .chev::before { content:"▸"; display:inline-block; transition: transform .25s ease; }
+#art21-dir .details-container details[open] > summary .chev::before { transform: rotate(90deg); }
+#art21-dir .directorio { display:flex; flex-direction:column; gap:8px; padding:12px; background:#f9f9f9; }
+#art21-dir .archivo { display:flex; align-items:center; gap:8px; font-size:.97em; font-weight:bold; color:#49545E; text-decoration:none; }
+#art21-dir .archivo:hover { text-decoration:underline; }
+
+/* --- Directorio Personal --- */
+#pj-dir{ --pj-gris:#43555f; --pj-gris-claro:#e9e9d8; --pj-borde:#d9d9d9; --pj-bg:#fff; margin-top:20px; }
+#pj-dir .pj-wrap{ max-width:100%; margin:0 auto; font-family:inherit; color:#2a2f33; }
 #pj-dir .pj-toolbar{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; background:var(--pj-gris-claro); padding:10px; border-radius:12px; }
 #pj-dir .pj-search, #pj-dir .pj-select{ display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--pj-borde); border-radius:10px; padding:8px 10px; }
 #pj-dir .pj-search input, #pj-dir .pj-select select{ border:none; outline:none; font-size:14px; background:transparent; }
@@ -334,9 +352,12 @@
 #pj-dir .pj-meta{ margin-left:auto; font-size:12px; color:#56626b; }
 #pj-dir .pj-table-wrap{ margin-top:12px; border:1px solid var(--pj-borde); border-radius:14px; overflow-x:auto; }
 #pj-dir table{ width:100%; border-collapse:collapse; font-size:14px; min-width:1100px; }
-#pj-dir thead th{ position:sticky; top:0; background:#fafafa; color:#3b4750; text-align:left; padding:10px 12px; border-bottom:1px solid var(--pj-borde); white-space:nowrap; cursor:pointer; }
+#pj-dir thead th{ position:sticky; top:0; z-index:1; background:#fafafa; color:#3b4750; text-align:left; padding:10px 12px; border-bottom:1px solid var(--pj-borde); white-space:nowrap; }
+#pj-dir thead th.pj-sortable{ cursor:pointer; }
 #pj-dir tbody td{ padding:10px 12px; border-bottom:1px solid #efefef; vertical-align:top; }
 #pj-dir tbody tr:hover{ background:#fafafa; }
+#pj-dir #pj-grid th, #pj-dir #pj-grid td{ white-space:nowrap; }
+#pj-dir #pj-grid td:nth-child(3){ white-space:normal; } /* CARGO multilinea */
 #pj-dir .pj-tag{ display:inline-block; padding:2px 8px; border-radius:999px; background:var(--pj-gris-claro); color:#364047; font-size:12px; }
 #pj-dir .pj-pagination{ display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 12px; background:#fafafa; border-top:1px solid var(--pj-borde); }
 #pj-dir .pj-pagination button, #pj-dir select#pj-pageSize{ border:1px solid var(--pj-borde); background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer; }
@@ -348,61 +369,86 @@
 </style>
 
 <script>
+/* ====== JS del Directorio de Personal ====== */
 const PJ_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_QJH9862W4R-BBg0Byj3KFON_Wi1eWcmJdJa-FOJ1Qa69Rh_0UO_Sj-LIPQobKDPKzj--BH2O-SEH/pub?gid=0&single=true&output=csv';
+
 const pjState = { rows: [], filtered: [], sortKey:'AREA', sortDir:'asc', page:1, pageSize:25, area:'', query:'' };
 const PJ_PHONE_KEYS = ['Télefono','Teléfono','TELEFONO','Telefono'];
 const pjNorm = v => (v ?? '').toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'');
 const pjDate = s => { if(!s) return null; if(/^\d{2}\/\d{2}\/\d{4}$/.test(s)){const [d,m,y]=s.split('/'); return new Date(+y,+m-1,+d);} const dt=new Date(s); return isNaN(dt)?null:dt; };
 
-function pjFullName(r){ return [r['NOMBRE'], r['PRIMER APELLIDO'], r['SEGUNDO APELLIDO']].map(x => (x||'').trim()).filter(Boolean).join(' '); }
-const svgPhone=`<svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>`;
-const svgMail=`<svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
-const svgPin=`<svg class="icon" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`;
-
-function pjBuildAddress(r){
-  const tipoV=(r['TIPO DE VIALIDAD']||'').trim();
-  const nombreV=(r['NOMBRE DE LA VIALIDAD']||'').trim();
-  let numExt=(r['NUMERO EXTERIOR']||'').trim();
-  const tipoAs=(r['TIPO DE ASENTAMIENTO']||'').trim();
-  const nombreAs=(r['NOMBRE DEL ASENTAMIENTO']||'').trim();
-  const loc=(r['NOMBRE DE LA LOCALIDAD']||'').trim();
-  if(!numExt) numExt='s/n';
-  return [tipoV,nombreV,numExt,tipoAs,nombreAs,loc].filter(Boolean).join(' ');
+function pjFullName(r){
+  return [r['NOMBRE'], r['PRIMER APELLIDO'], r['SEGUNDO APELLIDO']]
+    .map(x => (x||'').toString().trim()).filter(Boolean).join(' ');
 }
-function pjMapsUrl(addr){ return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr+', Coahuila, México')}`; }
+
+/* Iconos SVG inline */
+const svgPhone = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>`;
+const svgMail  = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
+const svgPin   = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`;
+
+/* Construye address; si falta número exterior, agrega 's/n' */
+function pjBuildAddress(r){
+  const tipoV    = (r['TIPO DE VIALIDAD']||'').toString().trim();
+  const nombreV  = (r['NOMBRE DE LA VIALIDAD']||'').toString().trim();
+  let numExt     = (r['NUMERO EXTERIOR']||'').toString().trim();
+  const tipoAs   = (r['TIPO DE ASENTAMIENTO']||'').toString().trim();
+  const nombreAs = (r['NOMBRE DEL ASENTAMIENTO']||'').toString().trim();
+  const loc      = (r['NOMBRE DE LA LOCALIDAD']||'').toString().trim();
+
+  if (!numExt) numExt = 's/n';
+
+  return [tipoV, nombreV, numExt, tipoAs, nombreAs, loc].filter(Boolean).join(' ');
+}
+
+/* URL de Google Maps con contexto para mayor precisión */
+function pjMapsUrl(addr){
+  const contexto = 'Coahuila, México';
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr + ', ' + contexto)}`;
+}
 
 function pjRender(){
-  const qNeedles=pjNorm(pjState.query).split(/\s+/).filter(Boolean);
-  const filtered=pjState.rows.filter(r=>{
-    const areaOk=!pjState.area||(r['AREA']||'')===pjState.area;
-    if(!areaOk)return false;
-    if(!qNeedles.length)return true;
-    const haystack=pjNorm(Object.values(r).join(' '));
+  const qNeedles = pjNorm(pjState.query).split(/\s+/).filter(Boolean);
+  const filtered = pjState.rows.filter(r=>{
+    const areaOk = !pjState.area || (r['AREA']||'')===pjState.area;
+    if(!areaOk) return false;
+    if(!qNeedles.length) return true;
+    const haystack = pjNorm(Object.values(r).join(' '));
     return qNeedles.every(n=>haystack.includes(n));
   });
-  const key=pjState.sortKey,dir=pjState.sortDir==='asc'?1:-1;
-  filtered.sort((a,b)=>{
-    if(key==='NOMBRE COMPLETO')return pjNorm(pjFullName(a)).localeCompare(pjNorm(pjFullName(b)))*dir;
-    const av=a[key],bv=b[key];
-    if(key.includes('FECHA')){const ad=pjDate(av),bd=pjDate(bv);if(ad&&bd)return(ad-bd)*dir;}
-    return pjNorm(av).localeCompare(pjNorm(bv))*dir;
-  });
-  pjState.filtered=filtered;
-  const total=filtered.length;
-  const pages=Math.max(1,Math.ceil(total/pjState.pageSize));
-  pjState.page=Math.min(pjState.page,pages);
-  const ini=(pjState.page-1)*pjState.pageSize;
-  const pageRows=filtered.slice(ini,ini+pjState.pageSize);
 
-  const tbody=document.querySelector('#pj-grid tbody');
-  tbody.innerHTML=pageRows.map(r=>{
-    const phoneKey=PJ_PHONE_KEYS.find(k=>k in r)||'Télefono';
-    const tel=(r[phoneKey]||'').trim();
-    const telHtml=tel?`<a class="cell-icon" href="tel:${tel.replace(/\D+/g,'')}">${svgPhone} ${tel}</a>`:'<span class="pj-muted">–</span>';
-    const mail=(r['CORREO ELECTRONICO OFICIAL']||'').trim();
-    const mailHtml=mail?`<a class="cell-icon" href="mailto:${mail}">${svgMail} ${mail}</a>`:'<span class="pj-muted">–</span>';
-    const domicilioStr=pjBuildAddress(r);
-    const domicilioHtml=domicilioStr?`<a class="cell-icon" href="${pjMapsUrl(domicilioStr)}" target="_blank" rel="noopener">${svgPin} ${domicilioStr}</a>`:'<span class="pj-muted">–</span>`;
+  const key=pjState.sortKey, dir=pjState.sortDir==='asc'?1:-1;
+  filtered.sort((a,b)=>{
+    if(key==='NOMBRE COMPLETO'){
+      return pjNorm(pjFullName(a)).localeCompare(pjNorm(pjFullName(b))) * dir;
+    }
+    const av=a[key], bv=b[key];
+    if(key.includes('FECHA')){ const ad=pjDate(av), bd=pjDate(bv); if(ad&&bd) return (ad-bd)*dir; }
+    return pjNorm(av).localeCompare(pjNorm(bv)) * dir;
+  });
+
+  pjState.filtered = filtered;
+  const total = filtered.length;
+  const pages = Math.max(1, Math.ceil(total / pjState.pageSize));
+  pjState.page = Math.min(pjState.page, pages);
+  const ini = (pjState.page-1) * pjState.pageSize;
+  const pageRows = filtered.slice(ini, ini + pjState.pageSize);
+
+  const tbody = document.querySelector('#pj-grid tbody');
+  tbody.innerHTML = pageRows.map(r=>{
+    const phoneKey = PJ_PHONE_KEYS.find(k => k in r) || 'Télefono';
+    const tel = (r[phoneKey]||'').toString().trim();
+    const telHtml = tel ? `<a class="cell-icon" href="tel:${tel.replace(/\D+/g,'')}">${svgPhone} ${tel}</a>` : '<span class="pj-muted">–</span>';
+    const mail = (r['CORREO ELECTRONICO OFICIAL']||'').toString().trim();
+    const mailHtml = mail ? `<a class="cell-icon" href="mailto:${mail}">${svgMail} ${mail}</a>` : '<span class="pj-muted">–</span>';
+
+    const domicilioStr  = pjBuildAddress(r);
+    const domicilioHtml = domicilioStr
+      ? `<a class="cell-icon" href="${pjMapsUrl(domicilioStr)}" target="_blank" rel="noopener" title="Ver en Google Maps">
+           ${svgPin} ${domicilioStr}
+         </a>`
+      : '<span class="pj-muted">–</span>';
+
     return `<tr>
       <td>${r['AREA']||''}</td>
       <td>${pjFullName(r)}</td>
@@ -414,70 +460,89 @@ function pjRender(){
       <td>${domicilioHtml}</td>
     </tr>`;
   }).join('');
-  document.getElementById('pj-count').textContent=`${total} registros • mostrando ${pageRows.length}`;
-  document.getElementById('pj-pageInfo').textContent=`Página ${pjState.page} de ${pages}`;
+
+  document.getElementById('pj-count').textContent = `${total} registros • mostrando ${pageRows.length}`;
+  document.getElementById('pj-pageInfo').textContent = `Página ${pjState.page} de ${pages}`;
 }
 
 function pjPopulateArea(rows){
-  const areas=[...new Set(rows.map(r=>r['AREA']).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
-  const sel=document.getElementById('pj-areaFilter');
-  areas.forEach(a=>{const opt=document.createElement('option');opt.value=a;opt.textContent=a;sel.appendChild(opt);});
+  const areas = Array.from(new Set(rows.map(r=> r['AREA']).filter(Boolean))).sort((a,b)=> a.localeCompare(b,'es'));
+  const sel = document.getElementById('pj-areaFilter');
+  areas.forEach(a=>{ const opt=document.createElement('option'); opt.value=a; opt.textContent=a; sel.appendChild(opt); });
 }
 
 function pjGetExportData(){
-  const headers=['AREA','NOMBRE COMPLETO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','TELÉFONO','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
-  const phoneKey=PJ_PHONE_KEYS.find(k=>pjState.rows.length&&(k in pjState.rows[0]))||'Télefono';
-  const rows=pjState.filtered.map(r=>[r['AREA'],pjFullName(r),r['CARGO'],r['CLAVE DEL PUESTO'],r['FECHA INGRESO PODER JUDICIAL'],r[phoneKey],r['CORREO ELECTRONICO OFICIAL'],pjBuildAddress(r)]);
-  return {headers,rows};
-}
-function pjExportCSV(){
-  const {headers,rows}=pjGetExportData();
-  const csv=[headers.join(','),...rows.map(r=>r.map(v=>{const s=(v??'').toString();return/[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;}).join(','))].join('\n');
-  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');a.href=url;a.download='directorio_vista.csv';document.body.appendChild(a);a.click();URL.revokeObjectURL(url);a.remove();
-}
-function pjExportXLSX(){
-  const {headers,rows}=pjGetExportData();
-  const wb=XLSX.utils.book_new();
-  const ws=XLSX.utils.aoa_to_sheet([headers,...rows]);
-  ws['!autofilter']={ref:XLSX.utils.encode_range({s:{r:0,c:0},e:{r:0,c:headers.length-1}})};
-  ws['!cols']=headers.map(()=>({wch:25}));
-  XLSX.utils.book_append_sheet(wb,ws,'Directorio');
-  XLSX.writeFile(wb,'directorio_vista.xlsx');
+  const headers=['AREA','NOMBRE COMPLETO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Teléfono','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
+  const phoneKey = PJ_PHONE_KEYS.find(k => pjState.rows.length && (k in pjState.rows[0])) || 'Télefono';
+  const rows = pjState.filtered.map(r=>{
+    const domicilioTxt = pjBuildAddress(r);
+    return [r['AREA'], pjFullName(r), r['CARGO'], r['CLAVE DEL PUESTO'], r['FECHA INGRESO PODER JUDICIAL'], r[phoneKey], r['CORREO ELECTRONICO OFICIAL'], domicilioTxt];
+  });
+  return {headers, rows};
 }
 
-document.addEventListener('DOMContentLoaded',()=>{
-  Papa.parse(PJ_CSV_URL,{download:true,header:true,skipEmptyLines:true,complete:(res)=>{
-    const keys=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL','TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR','TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'];
-    pjState.rows=res.data.map(row=>{
-      const copy={...row};keys.forEach(k=>{if(!(k in copy))copy[k]='';});
-      if(!copy['Télefono']&&(row['Teléfono']||row['TELEFONO']||row['Telefono']))copy['Télefono']=row['Teléfono']||row['TELEFONO']||row['Telefono']||'';
-      return copy;
-    });
-    pjPopulateArea(pjState.rows);
-    pjState.filtered=[...pjState.rows];
-    pjRender();
-  }});
-  document.getElementById('pj-q').addEventListener('input',e=>{pjState.query=e.target.value;pjState.page=1;pjRender();});
-  document.getElementById('pj-areaFilter').addEventListener('change',e=>{pjState.area=e.target.value;pjState.page=1;pjRender();});
-  document.getElementById('pj-btn-clear').addEventListener('click',()=>{document.getElementById('pj-q').value='';document.getElementById('pj-areaFilter').value='';pjState.query='';pjState.area='';pjState.page=1;pjRender();});
-  document.getElementById('pj-btn-export-csv').addEventListener('click',pjExportCSV);
-  document.getElementById('pj-btn-export-xlsx').addEventListener('click',pjExportXLSX);
+function pjExportCSV(){
+  const {headers, rows} = pjGetExportData();
+  const csv = [headers.join(','), ...rows.map(r=> r.map(v=>{
+    const s=(v??'').toString(); return /[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;
+  }).join(','))].join('\n');
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download='directorio_vista.csv';
+  document.body.appendChild(a); a.click(); URL.revokeObjectURL(url); a.remove();
+}
+
+function pjExportXLSX(){
+  const {headers, rows} = pjGetExportData();
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
+  ws['!autofilter'] = {ref: XLSX.utils.encode_range({s:{r:0,c:0}, e:{r:0,c:headers.length-1}})};
+  ws['!cols'] = headers.map(()=>({wch:25}));
+  XLSX.utils.book_append_sheet(wb, ws, 'Directorio');
+  XLSX.writeFile(wb, 'directorio_vista.xlsx');
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  Papa.parse(PJ_CSV_URL, {
+    download:true, header:true, skipEmptyLines:true,
+    complete:(res)=>{
+      const keys=['AREA','NOMBRE','PRIMER APELLIDO','SEGUNDO APELLIDO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Télefono','CORREO ELECTRONICO OFICIAL','TIPO DE VIALIDAD','NOMBRE DE LA VIALIDAD','NUMERO EXTERIOR','TIPO DE ASENTAMIENTO','NOMBRE DEL ASENTAMIENTO','NOMBRE DE LA LOCALIDAD'];
+      pjState.rows = res.data.map(row=>{
+        const copy={...row}; keys.forEach(k=>{ if(!(k in copy)) copy[k]=''; });
+        if(!copy['Télefono'] && (row['Teléfono']||row['TELEFONO']||row['Telefono'])) copy['Télefono']=row['Teléfono']||row['TELEFONO']||row['Telefono']||'';
+        return copy;
+      });
+      pjPopulateArea(pjState.rows);
+      pjState.filtered=[...pjState.rows];
+      pjRender();
+    }
+  });
+
+  document.getElementById('pj-q').addEventListener('input', e=>{ pjState.query=e.target.value; pjState.page=1; pjRender(); });
+  document.getElementById('pj-areaFilter').addEventListener('change', e=>{ pjState.area=e.target.value; pjState.page=1; pjRender(); });
+  document.getElementById('pj-btn-clear').addEventListener('click', ()=>{
+    document.getElementById('pj-q').value='';
+    document.getElementById('pj-areaFilter').value='';
+    pjState.query=''; pjState.area=''; pjState.page=1; pjRender();
+  });
+  document.getElementById('pj-btn-export-csv').addEventListener('click', pjExportCSV);
+  document.getElementById('pj-btn-export-xlsx').addEventListener('click', pjExportXLSX);
   document.querySelectorAll('#pj-dir thead th.pj-sortable').forEach(th=>{
-    th.addEventListener('click',()=>{
+    th.addEventListener('click', ()=>{
       const key=th.dataset.key;
       if(pjState.sortKey===key){ pjState.sortDir=(pjState.sortDir==='asc')?'desc':'asc'; }
       else { pjState.sortKey=key; pjState.sortDir='asc'; }
       pjRender();
     });
   });
-  document.getElementById('pj-prev').addEventListener('click',()=>{ if(pjState.page>1){ pjState.page--; pjRender(); } });
-  document.getElementById('pj-next').addEventListener('click',()=>{
+  document.getElementById('pj-prev').addEventListener('click', ()=>{
+    if(pjState.page>1){ pjState.page--; pjRender(); }
+  });
+  document.getElementById('pj-next').addEventListener('click', ()=>{
     const pages=Math.max(1,Math.ceil(pjState.filtered.length/pjState.pageSize));
     if(pjState.page<pages){ pjState.page++; pjRender(); }
   });
-  document.getElementById('pj-pageSize').addEventListener('change',e=>{
+  document.getElementById('pj-pageSize').addEventListener('change', e=>{
     pjState.pageSize=parseInt(e.target.value,10)||25; pjState.page=1; pjRender();
   });
 });
