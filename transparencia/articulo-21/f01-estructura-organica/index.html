@@ -882,6 +882,247 @@
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Monclova.pptx">Unidad Administrativa del Distrito Judicial de Monclova.pptx</a></li>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F01 Estructura Orgánica/3-Estructura Administrativa/04 Unidades Administrativas/Unidad Administrativa del Distrito Judicial de Río Grande.pptx">Unidad Administrativa del Distrito Judicial de Río Grande.pptx</a></li>
 </ul>
+<p>Title: Art. 21, Fracc. I / Estructura Orgánica
+Summary: Su estructura orgánica en un formato que permita vincular por cada eslabón de la misma, nivel tabular, las facultades y responsabilidades que le corresponden de conformidad con las disposiciones aplicables, y los puestos públicos vacantes de dicha estructura, así como los requisitos para poder acceder a los mismos.El Poder Judicial del Estado de Coahuila cuenta con una estructura orgánica integrada por órganos jurisdiccionales, no jurisdiccionales y administrativos.</p>
+<h4>RESPONSABLE</h4>
+<p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
+<h4>FECHA DE VALIDACIÓN</h4>
+<p>07 de Julio de 2025</p>
+<section id="org-container" aria-label="Organigramas del Poder Judicial">
+  <div class="org-toolbar">
+    <label for="org-area">Área:</label>
+    <select id="org-area">
+      <option value="">Cargando áreas…</option>
+    </select>
+    <button id="org-expand-all" type="button">Expandir todo</button>
+    <button id="org-collapse-all" type="button">Colapsar todo</button>
+  </div>
+  <div id="org-chart" class="org-chart"></div>
+  <div id="org-meta" class="org-meta"></div>
+</section>
+
+<!-- PapaParse para leer CSV publicado -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
+<!-- Google Charts (OrgChart) -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer></script>
+
+<style>
+/* ===== Estilo scopeado ===== */
+#org-container { font-family: system-ui, Arial, sans-serif; color:#2a2f33; }
+#org-container .org-toolbar{
+  display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+  background:#eef2f5; padding:10px; border-radius:12px; margin-bottom:10px;
+}
+#org-container select, #org-container button{
+  border:1px solid #d0d7de; background:#fff; border-radius:8px;
+  padding:8px 10px; font-size:14px; cursor:pointer;
+}
+#org-container .org-chart{ overflow:auto; border:1px solid #e5e7eb; border-radius:12px; background:#fff; padding:8px; }
+#org-container .org-meta{ font-size:12px; color:#667085; margin-top:6px; }
+
+/* Caja de persona (renderizada dentro de celdas del organigrama) */
+.org-card{
+  display:block; min-width:180px; max-width:240px;
+  padding:10px 12px; background:#ffffff; border:1px solid #dfe3e6; border-radius:12px;
+  box-shadow: 0 1px 0 rgba(22,27,29,0.04);
+}
+.org-card .org-name{
+  font-weight:700; font-size:14px; color:#1f2937; line-height:1.2; margin-bottom:4px;
+  word-wrap:break-word;
+}
+.org-card .org-role{
+  font-weight:600; font-size:12px; color:#334155; line-height:1.2; margin-bottom:2px;
+  word-wrap:break-word;
+}
+.org-card .org-key{
+  font-size:12px; color:#64748b; line-height:1.2;
+  word-wrap:break-word;
+}
+
+/* Mejora legibilidad de enlaces (si algún día haces clics internos) */
+.org-card a{ color:#1f5ea8; text-decoration:none; }
+.org-card a:hover{ text-decoration:underline; }
+</style>
+
+<script>
+/* ========= CONFIG =========
+ * Publica tu Google Sheet como CSV y pega aquí el enlace (output=csv).
+ * Archivo con columnas: AREA, ID, JEFE_ID, NOMBRE, CARGO, CLAVE_SUELDO
+ */
+const PJ_ORG_CSV_URL = '<<Pega_aquí_tu_URL_publicada_como_CSV>>';
+
+/* Estado en memoria */
+const ORG = {
+  rows: [],            // filas crudas del CSV
+  byArea: new Map(),   // area -> filas de esa área
+  chart: null,         // instancia de Google Charts
+  dataTable: null,     // DataTable para el área actual
+  collapsed: false     // estado global para colapsar/expandir
+};
+
+/* Normaliza texto (para ordenar/filtrar si lo necesitas) */
+const norm = s => (s ?? '').toString().trim();
+
+/* Devuelve HTML de la tarjeta para un nodo (Nombre, Cargo, Clave) */
+function renderCard({nombre, cargo, clave}){
+  const safe = s => String(s??'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return `
+    <div class="org-card">
+      <div class="org-name">${safe(nombre)}</div>
+      <div class="org-role">${safe(cargo)}</div>
+      <div class="org-key">${safe(clave)}</div>
+    </div>
+  `;
+}
+
+/* Construye DataTable (Google Charts) para un área */
+function buildDataTableForArea(area){
+  const rows = ORG.byArea.get(area) || [];
+
+  // Google OrgChart espera columnas:
+  // 0: Name  (puede ser {v:"ID", f:"HTML a renderizar"})
+  // 1: Manager (valor "ID" del jefe o null)
+  // 2: Tooltip (opcional)
+  const data = new google.visualization.DataTable();
+  data.addColumn('string', 'Name');
+  data.addColumn('string', 'Manager');
+  data.addColumn('string', 'ToolTip');
+
+  // Validaciones básicas
+  const ids = new Set();
+  rows.forEach(r=>{
+    const id = norm(r.ID);
+    if(!id) console.warn('Fila sin ID:', r);
+    if(ids.has(id)) console.warn('ID duplicado:', id);
+    ids.add(id);
+  });
+
+  // Agrega filas
+  const tableRows = rows.map(r=>{
+    const id    = norm(r.ID);
+    const boss  = norm(r.JEFE_ID) || '';
+    const areaR = norm(r.AREA);
+    const nombre= norm(r.NOMBRE);
+    const cargo = norm(r.CARGO);
+    const clave = norm(r.CLAVE_SUELDO);
+
+    const display = { v: id, f: renderCard({nombre, cargo, clave}) };
+    const manager = boss || null;
+    const tooltip = `${nombre} • ${cargo}${clave ? ' • ' + clave : ''} — ${areaR}`;
+
+    return [ display, manager, tooltip ];
+  });
+
+  data.addRows(tableRows);
+  return data;
+}
+
+/* Dibuja el organigrama del área seleccionada */
+function draw(area){
+  if(!google || !google.visualization){ console.error('Google Charts no cargó'); return; }
+  ORG.dataTable = buildDataTableForArea(area);
+
+  // Crea instancia si no existe
+  if(!ORG.chart){
+    ORG.chart = new google.visualization.OrgChart(document.getElementById('org-chart'));
+  }
+
+  // draw(data, {allowHtml:true, size:'large', allowCollapse:true});
+  ORG.chart.draw(ORG.dataTable, {
+    allowHtml: true,     // para que se rendericen las tarjetas HTML
+    allowCollapse: true, // permite colapsar/expandir nodos
+    size: 'large'        // tamaño de nodos/espaciado
+  });
+
+  // Meta
+  const total = ORG.dataTable.getNumberOfRows();
+  document.getElementById('org-meta').textContent = `${area}: ${total} personas`;
+}
+
+/* Llena el selector de áreas y engancha eventos */
+function populateAreaSelect(){
+  const sel = document.getElementById('org-area');
+  sel.innerHTML = '';
+  const areas = Array.from(ORG.byArea.keys()).sort((a,b)=> a.localeCompare(b,'es'));
+
+  areas.forEach(a=>{
+    const opt = document.createElement('option');
+    opt.value = a; opt.textContent = a;
+    sel.appendChild(opt);
+  });
+
+  sel.addEventListener('change', ()=>{
+    draw(sel.value);
+  });
+
+  // Primer área (si existe)
+  if(areas.length){
+    sel.value = areas[0];
+    draw(areas[0]);
+  }else{
+    document.getElementById('org-chart').innerHTML = '<p>No hay áreas en los datos.</p>';
+  }
+}
+
+/* Colapsar/Expandir (aplica a todos los nodos del chart actual) */
+function setCollapsed(allCollapsed){
+  // Hack: vuelve a dibujar y luego simula click sobre triángulos según estado.
+  // Google OrgChart no expone API pública para “colapsar todo”,
+  // pero podemos intentar colapsar/expandir a partir de la raíz.
+  // Aquí optamos por re-dibujar (ya que allowCollapse:true deja al usuario controlar).
+  ORG.collapsed = !!allCollapsed;
+  // Redibuja el área actual
+  const selArea = document.getElementById('org-area').value;
+  draw(selArea);
+
+  // Si quieres “forzar” colapso: puedes simular clics en triángulos .google-visualization-orgchart-collapse
+  // tras un pequeño timeout. Lo dejo comentado por si lo necesitas más adelante.
+  // setTimeout(()=>{
+  //   const toggles = document.querySelectorAll('#org-chart .google-visualization-orgchart-nodesel .google-visualization-orgchart-collapse');
+  //   toggles.forEach(t => t.click());
+  // }, 50);
+}
+
+/* Carga CSV, separa por área y arma todo */
+function loadAndInit(){
+  Papa.parse(PJ_ORG_CSV_URL, {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: (res)=>{
+      ORG.rows = res.data.map(r=>({
+        AREA: norm(r['AREA']),
+        ID: norm(r['ID']),
+        JEFE_ID: norm(r['JEFE_ID']),
+        NOMBRE: norm(r['NOMBRE']),
+        CARGO: norm(r['CARGO']),
+        CLAVE_SUELDO: norm(r['CLAVE_SUELDO'])
+      }));
+
+      // Agrupar por área
+      ORG.byArea = new Map();
+      ORG.rows.forEach(r=>{
+        if(!r.AREA) return;
+        if(!ORG.byArea.has(r.AREA)) ORG.byArea.set(r.AREA, []);
+        ORG.byArea.get(r.AREA).push(r);
+      });
+
+      populateAreaSelect();
+    }
+  });
+}
+
+/* Arranque: primero Google Charts, luego CSV */
+window.addEventListener('DOMContentLoaded', ()=>{
+  // Cargar Google Charts
+  google.charts.load('current', {packages:['orgchart']});
+  google.charts.setOnLoadCallback(loadAndInit);
+
+  // Botones de colapso/expandir
+  document.getElementById('org-expand-all').addEventListener('click', ()=> setCollapsed(false));
+  document.getElementById('org-collapse-all').addEventListener('click', ()=> setCollapsed(true));
+});
+</script>
     </div>
 </article>
     </main>
