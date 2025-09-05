@@ -290,7 +290,6 @@
   <!-- ====== Directorio de Personal Dinámico ====== -->
   <div id="pj-dir">
     <div class="pj-wrap">
-
       <div class="pj-toolbar">
         <div class="pj-search">
           <span aria-hidden="true">🔎</span>
@@ -389,10 +388,11 @@
 #pj-dir .pj-muted{ color:#8a8f94; }
 #pj-dir .icon{ width:1em; height:1em; vertical-align:middle; }
 #pj-dir .cell-icon{ display:inline-flex; align-items:center; gap:.25rem; }
+#pj-dir .cell-icon:hover { text-decoration: underline; }
 </style>
 
 <script>
-/* ====== JS del Directorio de Personal (sin Font Awesome) ====== */
+/* ====== JS del Directorio de Personal ====== */
 const PJ_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_QJH9862W4R-BBg0Byj3KFON_Wi1eWcmJdJa-FOJ1Qa69Rh_0UO_Sj-LIPQobKDPKzj--BH2O-SEH/pub?gid=0&single=true&output=csv';
 
 const pjState = { rows: [], filtered: [], sortKey:'AREA', sortDir:'asc', page:1, pageSize:25, area:'', query:'' };
@@ -405,8 +405,30 @@ function pjFullName(r){
     .map(x => (x||'').toString().trim()).filter(Boolean).join(' ');
 }
 
+/* Iconos SVG inline */
 const svgPhone = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>`;
 const svgMail  = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
+const svgPin   = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`;
+
+/* Construye address; si falta número exterior, agrega 's/n' */
+function pjBuildAddress(r){
+  const tipoV    = (r['TIPO DE VIALIDAD']||'').toString().trim();
+  const nombreV  = (r['NOMBRE DE LA VIALIDAD']||'').toString().trim();
+  let numExt     = (r['NUMERO EXTERIOR']||'').toString().trim();
+  const tipoAs   = (r['TIPO DE ASENTAMIENTO']||'').toString().trim();
+  const nombreAs = (r['NOMBRE DEL ASENTAMIENTO']||'').toString().trim();
+  const loc      = (r['NOMBRE DE LA LOCALIDAD']||'').toString().trim();
+
+  if (!numExt) numExt = 's/n';
+
+  return [tipoV, nombreV, numExt, tipoAs, nombreAs, loc].filter(Boolean).join(' ');
+}
+
+/* URL de Google Maps con contexto para mayor precisión */
+function pjMapsUrl(addr){
+  const contexto = 'Coahuila, México';
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr + ', ' + contexto)}`;
+}
 
 function pjRender(){
   const qNeedles = pjNorm(pjState.query).split(/\s+/).filter(Boolean);
@@ -442,10 +464,13 @@ function pjRender(){
     const telHtml = tel ? `<a class="cell-icon" href="tel:${tel.replace(/\D+/g,'')}">${svgPhone} ${tel}</a>` : '<span class="pj-muted">–</span>';
     const mail = (r['CORREO ELECTRONICO OFICIAL']||'').toString().trim();
     const mailHtml = mail ? `<a class="cell-icon" href="mailto:${mail}">${svgMail} ${mail}</a>` : '<span class="pj-muted">–</span>';
-    const domicilio = [
-      r['TIPO DE VIALIDAD'], r['NOMBRE DE LA VIALIDAD'], r['NUMERO EXTERIOR'],
-      r['TIPO DE ASENTAMIENTO'], r['NOMBRE DEL ASENTAMIENTO'], r['NOMBRE DE LA LOCALIDAD']
-    ].filter(Boolean).join(' ');
+
+    const domicilioStr  = pjBuildAddress(r);
+    const domicilioHtml = domicilioStr
+      ? `<a class="cell-icon" href="${pjMapsUrl(domicilioStr)}" target="_blank" rel="noopener" title="Ver en Google Maps">
+           ${svgPin} ${domicilioStr}
+         </a>`
+      : '<span class="pj-muted">–</span>';
 
     return `<tr>
       <td>${r['AREA']||''}</td>
@@ -455,7 +480,7 @@ function pjRender(){
       <td>${r['FECHA INGRESO PODER JUDICIAL']||''}</td>
       <td>${telHtml}</td>
       <td>${mailHtml}</td>
-      <td>${domicilio || '<span class="pj-muted">–</span>'}</td>
+      <td>${domicilioHtml}</td>
     </tr>`;
   }).join('');
 
@@ -473,8 +498,8 @@ function pjGetExportData(){
   const headers=['AREA','NOMBRE COMPLETO','CARGO','CLAVE DEL PUESTO','FECHA INGRESO PODER JUDICIAL','Teléfono','CORREO ELECTRONICO OFICIAL','DOMICILIO'];
   const phoneKey = PJ_PHONE_KEYS.find(k => pjState.rows.length && (k in pjState.rows[0])) || 'Télefono';
   const rows = pjState.filtered.map(r=>{
-    const domicilio = [r['TIPO DE VIALIDAD'], r['NOMBRE DE LA VIALIDAD'], r['NUMERO EXTERIOR'], r['TIPO DE ASENTAMIENTO'], r['NOMBRE DEL ASENTAMIENTO'], r['NOMBRE DE LA LOCALIDAD']].filter(Boolean).join(' ');
-    return [r['AREA'], pjFullName(r), r['CARGO'], r['CLAVE DEL PUESTO'], r['FECHA INGRESO PODER JUDICIAL'], r[phoneKey], r['CORREO ELECTRONICO OFICIAL'], domicilio];
+    const domicilioTxt = pjBuildAddress(r);
+    return [r['AREA'], pjFullName(r), r['CARGO'], r['CLAVE DEL PUESTO'], r['FECHA INGRESO PODER JUDICIAL'], r[phoneKey], r['CORREO ELECTRONICO OFICIAL'], domicilioTxt];
   });
   return {headers, rows};
 }
