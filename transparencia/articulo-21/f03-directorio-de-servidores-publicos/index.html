@@ -264,6 +264,7 @@
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>FECHA DE VALIDACIÓN</h4>
 <p>07 de Julio de 2025</p>
+<!-- ====== Bloque 1: Art. 65, Fracc. VI / Directorio de Servidores Públicos ====== -->
 <section id="dir65" aria-label="Art. 65, Fracc. VI / Directorio de Servidores Públicos">
   <div class="dir65-wrap">
     <h1 class="dir65-title">Directorio Institucional</h1>
@@ -619,56 +620,28 @@
 </section>
 
 <style>
-  /* ====== Estilos ENCAPSULADOS para no afectar el resto del sitio ====== */
+  /* ====== Estilos ENCAPSULADOS #dir65 ====== */
   #dir65 { position: relative; }
   #dir65 .dir65-wrap { font-family: Arial, sans-serif; margin: 0; background: transparent; }
   #dir65 .dir65-title { color:#003366; text-align:center; margin: 0 0 12px; }
-
-  #dir65 .dir65-details { 
-    margin-bottom: 20px; border:1px solid #ccc; border-radius: 8px; overflow:hidden; background:#fff;
-  }
-  #dir65 .dir65-summary {
-    background-color:#BDB9A6; color:#fff; padding:12px; font-size:1.05rem; font-weight:700; cursor:pointer;
-  }
+  #dir65 .dir65-details { margin-bottom: 20px; border:1px solid #ccc; border-radius: 8px; overflow:hidden; background:#fff; }
+  #dir65 .dir65-summary { background-color:#BDB9A6; color:#fff; padding:12px; font-size:1.05rem; font-weight:700; cursor:pointer; }
   #dir65 .dir65-summary:hover { background:#49545E; }
-
-  #dir65 .dir65-subtitulo { 
-    margin:16px 0 8px; font-size:1rem; font-weight:700; color:#333; text-align:center;
-  }
-
-  #dir65 .dir65-miembros {
-    display:flex; flex-wrap:wrap; gap:20px; justify-content:center; padding:15px;
-    background:#fff;
-  }
-  #dir65 .dir65-persona {
-    width:200px; text-align:center; background:#fff; padding:10px; border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,0.05); position:relative;
-  }
-  #dir65 .dir65-persona img {
-    width:140px; height:140px; object-fit:cover; object-position:center top;
-    border-radius:50%; border:2px solid #ccc; margin-bottom:10px; cursor:pointer; transition: transform .2s ease, border-color .2s ease;
-  }
+  #dir65 .dir65-subtitulo { margin:16px 0 8px; font-size:1rem; font-weight:700; color:#333; text-align:center; }
+  #dir65 .dir65-miembros { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; padding:15px; background:#fff; }
+  #dir65 .dir65-persona { width:200px; text-align:center; background:#fff; padding:10px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.05); position:relative; }
+  #dir65 .dir65-persona img { width:140px; height:140px; object-fit:cover; object-position:center top; border-radius:50%; border:2px solid #ccc; margin-bottom:10px; cursor:pointer; transition: transform .2s ease, border-color .2s ease; }
   #dir65 .dir65-persona img:hover { transform: scale(1.05); border-color:#005a9c; }
   #dir65 .dir65-nombre { font-weight:700; color:#003366; cursor:pointer; display:inline-block; }
   #dir65 .dir65-cargo { font-style:italic; font-size:.95em; color:#555; }
-
-  /* Tooltip */
-  #dir65 .dir65-tooltip{
-    visibility:hidden; width:250px; background:#fefefe; color:#333; text-align:left; border-radius:8px; padding:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.25); position:absolute; z-index:1; /* z-index bajo para no tapar header */
-    top:50%; left:110%; transform:translateY(-50%); opacity:0; transition:opacity .25s; font-size:.9em; line-height:1.3em; pointer-events:none;
-  }
-  #dir65 .dir65-tooltip::after{
-    content:""; position:absolute; top:50%; left:0; transform:translateY(-50%);
-    border-width:6px; border-style:solid; border-color: transparent #fefefe transparent transparent;
-  }
+  #dir65 .dir65-tooltip{ visibility:hidden; width:250px; background:#fefefe; color:#333; text-align:left; border-radius:8px; padding:10px; box-shadow:0 2px 8px rgba(0,0,0,0.25); position:absolute; z-index:1; top:50%; left:110%; transform:translateY(-50%); opacity:0; transition:opacity .25s; font-size:.9em; line-height:1.3em; pointer-events:none; }
+  #dir65 .dir65-tooltip::after{ content:""; position:absolute; top:50%; left:0; transform:translateY(-50%); border-width:6px; border-style:solid; border-color: transparent #fefefe transparent transparent; }
   #dir65 .dir65-persona:hover .dir65-tooltip,
   #dir65 .dir65-persona img:hover + .dir65-tooltip,
-  #dir65 .dir65-nombre:hover + .dir65-tooltip { 
-    visibility:visible; opacity:1; pointer-events:auto;
-  }
+  #dir65 .dir65-nombre:hover + .dir65-tooltip { visibility:visible; opacity:1; pointer-events:auto; }
 </style>
 
+<!-- ====== Bloque 2: Art. 21, Fracc. III / Directorios (Tabla Dinámica) ====== -->
 <section id="art21-dir" aria-label="Art. 21, Fracc. III / Directorios">
   <div id="pj-dir">
     <div class="pj-wrap">
@@ -727,27 +700,21 @@
   </div>
 </section>
 
-<!-- Librerías necesarias (sin Font Awesome) -->
+<!-- Librerías necesarias (una sola vez) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 <style>
-/* ====== Estilos encapsulados ====== */
+/* ====== Estilos encapsulados #art21-dir ====== */
 #art21-dir { font-family: Arial, sans-serif; color:#49545E; margin:20px 0; }
-
-/* --- Acordeón --- */
 #art21-dir .details-container details { margin-bottom:10px; border:1px solid #ccc; border-radius:6px; overflow:hidden; background:#fff; }
-#art21-dir .details-container summary {
-  cursor:pointer; padding:12px; font-size:1.05em; font-weight:700;
-  background:#bdbfb6; color:#49545E; display:flex; align-items:center; gap:.5rem;
-}
+#art21-dir .details-container summary { cursor:pointer; padding:12px; font-size:1.05em; font-weight:700; background:#bdbfb6; color:#49545E; display:flex; align-items:center; gap:.5rem; }
 #art21-dir .details-container summary .chev::before { content:"▸"; display:inline-block; transition: transform .25s ease; }
 #art21-dir .details-container details[open] > summary .chev::before { transform: rotate(90deg); }
 #art21-dir .directorio { display:flex; flex-direction:column; gap:8px; padding:12px; background:#f9f9f9; }
 #art21-dir .archivo { display:flex; align-items:center; gap:8px; font-size:.97em; font-weight:bold; color:#49545E; text-decoration:none; }
 #art21-dir .archivo:hover { text-decoration:underline; }
 
-/* --- Directorio Personal --- */
 #pj-dir{ --pj-gris:#43555f; --pj-gris-claro:#e9e9d8; --pj-borde:#d9d9d9; --pj-bg:#fff; margin-top:20px; }
 #pj-dir .pj-wrap{ max-width:100%; margin:0 auto; font-family:inherit; color:#2a2f33; }
 #pj-dir .pj-toolbar{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; background:var(--pj-gris-claro); padding:10px; border-radius:12px; }
@@ -762,7 +729,7 @@
 #pj-dir tbody td{ padding:10px 12px; border-bottom:1px solid #efefef; vertical-align:top; }
 #pj-dir tbody tr:hover{ background:#fafafa; }
 #pj-dir #pj-grid th, #pj-dir #pj-grid td{ white-space:nowrap; }
-#pj-dir #pj-grid td:nth-child(3){ white-space:normal; } /* CARGO multilinea */
+#pj-dir #pj-grid td:nth-child(3){ white-space:normal; }
 #pj-dir .pj-tag{ display:inline-block; padding:2px 8px; border-radius:999px; background:var(--pj-gris-claro); color:#364047; font-size:12px; }
 #pj-dir .pj-pagination{ display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 12px; background:#fafafa; border-top:1px solid var(--pj-borde); }
 #pj-dir .pj-pagination button, #pj-dir select#pj-pageSize{ border:1px solid var(--pj-borde); background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer; }
@@ -774,7 +741,7 @@
 </style>
 
 <script>
-/* ====== JS del Directorio de Personal ====== */
+/* ====== JS del Directorio de Personal (encapsulado) ====== */
 const PJ_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_QJH9862W4R-BBg0Byj3KFON_Wi1eWcmJdJa-FOJ1Qa69Rh_0UO_Sj-LIPQobKDPKzj--BH2O-SEH/pub?gid=0&single=true&output=csv';
 
 const pjState = { rows: [], filtered: [], sortKey:'AREA', sortDir:'asc', page:1, pageSize:25, area:'', query:'' };
@@ -787,12 +754,10 @@ function pjFullName(r){
     .map(x => (x||'').toString().trim()).filter(Boolean).join(' ');
 }
 
-/* Iconos SVG inline */
 const svgPhone = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>`;
 const svgMail  = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
 const svgPin   = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`;
 
-/* Construye address; si falta número exterior, agrega 's/n' */
 function pjBuildAddress(r){
   const tipoV    = (r['TIPO DE VIALIDAD']||'').toString().trim();
   const nombreV  = (r['NOMBRE DE LA VIALIDAD']||'').toString().trim();
@@ -800,13 +765,10 @@ function pjBuildAddress(r){
   const tipoAs   = (r['TIPO DE ASENTAMIENTO']||'').toString().trim();
   const nombreAs = (r['NOMBRE DEL ASENTAMIENTO']||'').toString().trim();
   const loc      = (r['NOMBRE DE LA LOCALIDAD']||'').toString().trim();
-
   if (!numExt) numExt = 's/n';
-
   return [tipoV, nombreV, numExt, tipoAs, nombreAs, loc].filter(Boolean).join(' ');
 }
 
-/* URL de Google Maps con contexto para mayor precisión */
 function pjMapsUrl(addr){
   const contexto = 'Coahuila, México';
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr + ', ' + contexto)}`;
