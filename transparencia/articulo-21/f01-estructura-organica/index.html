@@ -888,6 +888,520 @@ Summary: Su estructura orgánica en un formato que permita vincular por cada esl
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>FECHA DE VALIDACIÓN</h4>
 <p>07 de Julio de 2025</p>
+<p><html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Organigrama PJECZ – Excel/CSV + Descargas</title></p>
+<!-- Librerías -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+<!-- leer xlsx y generar xlsx --><script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" defer></script>
+<!-- leer CSV por URL --><style>
+  :root{ --prim:#43555f; --sec:#bdbfb6; --bg:#e9e9d8; --card:#fff; --text:#2f3b43; --muted:#6b7a86; }
+  *{box-sizing:border-box}
+  body{margin:24px; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--text); background:#f7f7f4}
+  h1{ text-align:center; color:var(--prim); margin:0 0 6px; font-weight:800 }
+  .sub{ text-align:center; color:var(--muted); margin:0 0 18px }
+
+  .bar{ display:grid; grid-template-columns: 1fr 1fr auto; gap:10px; align-items:center; margin-bottom:12px }
+  .pane{ background:var(--bg); padding:10px; border:1px solid #dadccf; border-radius:12px; display:flex; gap:8px; flex-wrap:wrap; align-items:center }
+  .pane label{ font-weight:700; color:#2f3b43 }
+  input[type="file"], input[type="url"], input[type="text"], select, button{
+    padding:9px 12px; border-radius:10px; border:1px solid #cfd9df; background:#fff
+  }
+  button{ background:var(--prim); color:#fff; border:none; cursor:pointer; font-weight:700 }
+  button.secondary{ background:#fff; color:#2f3b43; border:1px solid #cfd9df }
+  button:hover{ filter:brightness(1.05) }
+
+  .mapper{ display:grid; grid-template-columns: repeat(4,minmax(180px,1fr)); gap:10px; margin:10px 0 0 }
+  .box{ background:#fff; border:1px solid #e3e6ea; border-radius:12px; padding:10px }
+  .box h4{ margin:0 0 8px; color:var(--prim); font-size:.95rem }
+  .hidden{ display:none !important }
+
+  details{ border:1px solid #ddd; border-radius:14px; background:#fff; margin:12px 0; overflow:hidden }
+  summary{ list-style:none; cursor:pointer; padding:12px 14px; background:var(--sec); font-weight:800; color:#24313a; display:flex; align-items:center; gap:8px }
+  summary::-webkit-details-marker{ display:none }
+  .summary-actions{ margin-left:auto; display:flex; gap:6px }
+  .summary-actions button{ padding:6px 8px; font-size:.85rem }
+
+  .content{ padding:12px 14px 16px; background:#fcfcf9 }
+  .lvl{ margin-left:0 } .l2{ margin-left:16px } .l3{ margin-left:32px } .l4{ margin-left:48px } .l5{ margin-left:64px }
+
+  .cards{ display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:12px }
+  .card{ background:var(--card); border:1px solid #e1e6eb; border-radius:14px; padding:14px }
+  .nombre{ font-weight:800; color:#1f2a30; margin-bottom:4px }
+  .cargo{ color:#3a4a56; font-weight:600; margin-bottom:2px }
+  .clave{ color:#5a6a76; font-family:ui-monospace,Menlo,Consolas,monospace }
+
+  .filters{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:12px 0 }
+  .pill{ background:#fff; border:1px solid #e0e6ea; border-radius:999px; padding:6px 10px; font-size:.9rem }
+  .right{ margin-left:auto }
+</style>
+<p></head></p>
+<body>
+  <h1>Organigrama PJECZ</h1>
+  <p class="sub">https://docs.google.com/spreadsheets/d/e/2PACX-1vRIJWkpis9C4RmutYikWMfLt9qbOENlIvFjgrlqVVOlT3DmRHvjWZR0fhmnoUnhOPbGNoqH0ig7RB9Q/pubhtml?gid=0&single=true</p>
+
+  <div class="bar">
+    <div class="pane">
+      <label>Excel:</label>
+      <input id="file" type="file" accept=".xlsx,.xls" />
+      <span class="pill">Procesa local en tu navegador</span>
+    </div>
+    <div class="pane">
+      <label>CSV URL:</label>
+      <input id="csvUrl" type="url" placeholder="https://.../export?format=csv&gid=..." style="flex:1" />
+      <button id="btnLoadCsv">Cargar CSV</button>
+    </div>
+    <div class="pane">
+      <input id="q" type="text" placeholder="Buscar nombre/cargo/clave…" />
+      <button id="btnClear" class="secondary">Limpiar</button>
+      <button id="btnDownloadAll">Descargar todo (XLSX)</button>
+      <button id="btnDownloadAllCsv" class="secondary">Todo (CSV)</button>
+      <button id="btnDownloadView" class="secondary">Vista filtrada (XLSX)</button>
+    </div>
+  </div>
+
+  <!-- Mapeo columnas -->
+  <div id="mapper" class="mapper hidden">
+    <div class="box">
+      <h4>Niveles</h4>
+      <label>Nivel1<br><select id="selNivel1"></select></label><br/>
+      <label>Nivel2<br><select id="selNivel2"></select></label><br/>
+      <label>Nivel3<br><select id="selNivel3"></select></label><br/>
+      <label>Nivel4<br><select id="selNivel4"></select></label>
+    </div>
+    <div class="box">
+      <h4>Ubicación</h4>
+      <label>Ciudad<br><select id="selCiudad"></select></label>
+    </div>
+    <div class="box">
+      <h4>Persona</h4>
+      <label>Nombre (completo o partes)<br><select id="selNombre"></select></label><br/>
+      <label>Primer Apellido (opcional)<br><select id="selAP"></select></label><br/>
+      <label>Segundo Apellido (opcional)<br><select id="selAM"></select></label>
+    </div>
+    <div class="box">
+      <h4>Puesto</h4>
+      <label>Cargo<br><select id="selCargo"></select></label><br/>
+      <label>Clave<br><select id="selClave"></select></label><br/>
+      <label>Jerarquia (1 = más alto)<br><select id="selJerarquia"></select></label><br/>
+      <button id="btnBuild">Generar acordeón</button>
+      <p style="font-size:.9rem;color:#566572;margin:8px 0 0">
+        Si tu Excel es el de “Plantilla de Personal…”, puedes mapear:
+        <em>DENOMINACION DEL AREA (CATALOGO) → niveles</em>,
+        <em>NOMBRE/PRIMER APELLIDO/SEGUNDO APELLIDO → persona</em>,
+        <em>CARGO</em> y <em>CLAVE DEL PUESTO</em>.
+      </p>
+    </div>
+  </div>
+
+  <div id="out"></div>
+
+<script>
+(function(){
+  // Preferencias y reglas
+  const EXPECTED = {
+    nivel1: ['Nivel1','DENOMINACION DEL AREA (CATALOGO)'],
+    nivel2: ['Nivel2','DENOMINACION DEL AREA (CATALOGO)'],
+    nivel3: ['Nivel3','DENOMINACION DEL AREA (CATALOGO)'],
+    nivel4: ['Nivel4','DENOMINACION DEL AREA (CATALOGO)'],
+    ciudad: ['Ciudad','NOMBRE DE LA LOCALIDAD','Localidad','Municipio'],
+    nombre: ['Nombre','NOMBRE','Nombre Completo','Servidor Público'],
+    ap:     ['PRIMER APELLIDO'],
+    am:     ['SEGUNDO APELLIDO'],
+    cargo:  ['Cargo','CARGO','Puesto','Nombramiento'],
+    clave:  ['Clave','CLAVE DEL PUESTO','Código','Cód.','Cve'],
+    jerarquia: ['Jerarquia','Jerarquía','Orden','Rank','NivelPuesto']
+  };
+
+  const NIVEL1_ORDER = ['Estructura Jurisdiccional','Tribunales Distritales','Juzgados de Primera Instancia'];
+
+  const CARGO_RANK = [
+    [/^presidente(a)?\b/i,                     1],
+    [/^magistrad(o|a)( presidente)?\b/i,       2],
+    [/^consejer(o|a)\b/i,                      3],
+    [/^jue(z|za)\b.*(primera instancia|distrital)?/i, 4],
+    [/^titular\b|^director(a)?\b/i,            4],
+    [/^subdirector(a)?\b/i,                    5],
+    [/^secretari[oa].*(acuerdos|estudio y cuenta)/i, 5],
+    [/^jef(e|a) de departamento\b/i,           6],
+    [/^proyectist(a|o)\b/i,                    6],
+    [/^actuari[oa]\b/i,                        7],
+    [/^oficial\b/i,                            8],
+    [/^auxiliar\b/i,                           9],
+  ].map(([re, n]) => ({re, n}));
+
+  // Estado
+  let rawRows = [];      // filas tal cual del archivo
+  let headers = [];      // nombres de columnas
+  let mapped = [];       // filas normalizadas para organigrama
+  let lastGroupsCache = new Map(); // para descargas por sección
+
+  // DOM
+  const $ = id => document.getElementById(id);
+  const fileEl = $('file'), csvUrlEl = $('csvUrl'), btnLoadCsv = $('btnLoadCsv');
+  const mapperEl = $('mapper'), outEl = $('out');
+  const qEl = $('q'), btnClear = $('btnClear');
+  const btnBuild = $('btnBuild'), btnDownloadAll = $('btnDownloadAll'), btnDownloadAllCsv = $('btnDownloadAllCsv'), btnDownloadView = $('btnDownloadView');
+
+  const S = {
+    nivel1:$('selNivel1'), nivel2:$('selNivel2'), nivel3:$('selNivel3'), nivel4:$('selNivel4'),
+    ciudad:$('selCiudad'),
+    nombre:$('selNombre'), ap:$('selAP'), am:$('selAM'),
+    cargo:$('selCargo'), clave:$('selClave'), jerarquia:$('selJerarquia')
+  };
+
+  // Utilidades
+  const n = x => (x===undefined||x===null) ? '' : String(x).trim();
+  const uniq = arr => Array.from(new Set(arr));
+  const cmp = (a,b) => String(a||'').localeCompare(String(b||''),'es',{sensitivity:'base'});
+  const escapeHtml = s => String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+
+  function toNumber(x){ const num = parseFloat(String(x||'').replace(',','.')); return Number.isFinite(num)?num:NaN; }
+  function rankFromCargo(cargo){
+    if(!cargo) return 999;
+    for(const it of CARGO_RANK){ if(it.re.test(cargo)) return it.n; }
+    return 999;
+  }
+
+  // ---- Carga Excel
+  fileEl.addEventListener('change', async (e)=>{
+    const f = e.target.files?.[0];
+    if(!f) return;
+    const data = await f.arrayBuffer();
+    const wb = XLSX.read(data, {type:'array'});
+    // Tomamos la primera hoja con más columnas
+    let bestName = wb.SheetNames[0], bestCols = 0;
+    for(const nm of wb.SheetNames){
+      const sheet = wb.Sheets[nm];
+      const json = XLSX.utils.sheet_to_json(sheet, {header:1, defval:''});
+      const cols = (json[0]||[]).length;
+      if(cols > bestCols){ bestCols = cols; bestName = nm; }
+    }
+    const ws = wb.Sheets[bestName];
+    let jsonRows = XLSX.utils.sheet_to_json(ws, {defval:'', raw:false});
+    // Si el archivo tiene una fila de encabezados interna, intenta detectar columnas conocidas
+    rawRows = jsonRows;
+    headers = Object.keys(rawRows[0]||{});
+    prepareMapper();
+  });
+
+  // ---- Carga CSV por URL
+  btnLoadCsv.addEventListener('click', async ()=>{
+    const url = csvUrlEl.value.trim();
+    if(!url) return alert('Pega una URL CSV pública.');
+    mapperEl.classList.add('hidden');
+    outEl.innerHTML = '';
+    Papa.parse(url, {
+      download:true, header:true, skipEmptyLines:true,
+      complete: res => {
+        rawRows = res.data || [];
+        if(!rawRows.length) return alert('El CSV no tiene filas.');
+        headers = Object.keys(rawRows[0]);
+        prepareMapper();
+      },
+      error: err => alert('No se pudo cargar el CSV: ' + (err?.message||err))
+    });
+  });
+
+  // ---- Rellenar selects de mapeo
+  function prepareMapper(){
+    const opts = headers.map(h=>`<option value="${h}">${h}</option>`).join('');
+    Object.values(S).forEach(sel => sel.innerHTML = `<option value="">(vacío)</option>${opts}`);
+
+    // Autodetecta encabezados
+    const findHeader = aliases => headers.find(h => aliases.some(a => a.toLowerCase()===String(h).toLowerCase())) || '';
+    S.nivel1.value = findHeader(EXPECTED.nivel1) || '';
+    S.nivel2.value = findHeader(EXPECTED.nivel2) || '';
+    S.nivel3.value = findHeader(EXPECTED.nivel3) || '';
+    S.nivel4.value = findHeader(EXPECTED.nivel4) || '';
+    S.ciudad.value = findHeader(EXPECTED.ciudad) || '';
+    S.nombre.value = findHeader(EXPECTED.nombre) || '';
+    S.ap.value      = findHeader(EXPECTED.ap) || '';
+    S.am.value      = findHeader(EXPECTED.am) || '';
+    S.cargo.value   = findHeader(EXPECTED.cargo) || '';
+    S.clave.value   = findHeader(EXPECTED.clave) || '';
+    S.jerarquia.value = findHeader(EXPECTED.jerarquia) || '';
+
+    mapperEl.classList.remove('hidden');
+  }
+
+  // ---- Construcción de filas normalizadas
+  function buildMapped(){
+    mapped = rawRows.map(r => {
+      // nombre puede venir en una sola columna o separada en 3
+      const nombre =
+        (S.nombre.value && n(r[S.nombre.value])) ||
+        [n(r[S.nombre.value]), n(r[S.ap.value]), n(r[S.am.value])].filter(Boolean).join(' ').trim() ||
+        [n(r['NOMBRE']), n(r['PRIMER APELLIDO']), n(r['SEGUNDO APELLIDO'])].filter(Boolean).join(' ').trim();
+
+      const cargo = n(r[S.cargo.value]);
+      const clave = n(r[S.clave.value]) || '—';
+      const jerRaw = n(r[S.jerarquia.value]);
+      const jerNum = toNumber(jerRaw);
+      let nivel1 = n(r[S.nivel1.value]), nivel2 = n(r[S.nivel2.value]), nivel3 = n(r[S.nivel3.value]), nivel4 = n(r[S.nivel4.value]);
+      const ciudad = n(r[S.ciudad.value]);
+
+      // Si faltan niveles, no descartamos: mandamos a “Sin clasificar”
+      if(!nivel1) nivel1 = 'Sin clasificar';
+      if(!nivel2) nivel2 = 'Sin clasificar';
+
+      return {
+        Nivel1: nivel1, Nivel2: nivel2, Nivel3: nivel3, Nivel4: nivel4,
+        Ciudad: ciudad, Nombre: nombre, Cargo: cargo, Clave: clave,
+        Jerarquia: Number.isFinite(jerNum) ? jerNum : rankFromCargo(cargo)
+      };
+    });
+  }
+
+  // ---- Render tarjetas y acordeón
+  function render(){
+    // Búsqueda
+    const q = qEl.value.trim().toLowerCase();
+    const rows = q ? mapped.filter(p =>
+      [p.Nombre,p.Cargo,p.Clave,p.Nivel1,p.Nivel2,p.Nivel3,p.Nivel4,p.Ciudad]
+        .some(x => String(x||'').toLowerCase().includes(q))) : mapped;
+
+    // Agrupar
+    lastGroupsCache.clear();
+    const g1 = groupBy(rows, ['Nivel1']);
+    const keys1 = sortNivel1([...g1.keys()]);
+    let html = `
+      <div class="filters">
+        <span class="pill">Registros: ${rows.length}</span>
+        ${q?`<span class="pill">Filtro: “${escapeHtml(q)}”</span>`:''}
+        <span class="right"></span>
+      </div>
+    `;
+
+    for(const k1 of keys1){
+      const r1 = g1.get(k1);
+      const g2 = groupBy(r1, ['Nivel1','Nivel2']);
+      const keys2 = sortBy(g2.keys(), (_,k)=> titleFrom(k,1));
+      const key1Title = titleFrom(k1,0);
+      const sectionKey1 = `L1::${key1Title}`;
+      lastGroupsCache.set(sectionKey1, r1);
+
+      html += openDetails(key1Title, sectionKey1);
+      for(const k2 of keys2){
+        const r2 = g2.get(k2);
+        const g3 = groupBy(r2, ['Nivel1','Nivel2','Nivel3']);
+        const keys3 = sortBy(g3.keys(), (_,k)=> titleFrom(k,2));
+        const key2Title = titleFrom(k2,1);
+        const sectionKey2 = `L2::${key1Title}::${key2Title}`;
+        lastGroupsCache.set(sectionKey2, r2);
+
+        html += openDetails(key2Title, sectionKey2, 'l2');
+        for(const k3 of keys3){
+          const r3 = g3.get(k3);
+          const g4 = groupBy(r3, ['Nivel1','Nivel2','Nivel3','Nivel4']);
+          const keys4 = sortBy(g4.keys(), (_,k)=> titleFrom(k,3));
+          const key3Title = titleFrom(k3,2);
+          const sectionKey3 = `L3::${key1Title}::${key2Title}::${key3Title}`;
+          lastGroupsCache.set(sectionKey3, r3);
+
+          html += openDetails(key3Title||'—', sectionKey3, 'l3');
+          if(keys4.length===1 && !titleFrom(keys4[0],3)){
+            html += renderCards(r3);
+          } else {
+            for(const k4 of keys4){
+              const r4 = g4.get(k4);
+              const byCity = groupBy(r4, ['Ciudad']);
+              const cityKeys = sortBy(byCity.keys(), (a)=>a);
+              const key4Title = titleFrom(k4,3) || '—';
+              const sectionKey4 = `L4::${key1Title}::${key2Title}::${key3Title}::${key4Title}`;
+              lastGroupsCache.set(sectionKey4, r4);
+
+              html += openDetails(key4Title, sectionKey4, 'l4');
+              if(cityKeys.length===1 && !cityKeys[0]){
+                html += renderCards(r4);
+              } else {
+                for(const ck of cityKeys){
+                  const rc = byCity.get(ck);
+                  const cityTitle = ck || 'Sin ciudad';
+                  const sectionKeyC = `LC::${key1Title}::${key2Title}::${key3Title}::${key4Title}::${cityTitle}`;
+                  lastGroupsCache.set(sectionKeyC, rc);
+                  html += openDetails(cityTitle, sectionKeyC, 'l5');
+                  html += renderCards(rc);
+                  html += closeDetails();
+                }
+              }
+              html += closeDetails();
+            }
+          }
+          html += closeDetails();
+        }
+        html += closeDetails();
+      }
+      html += closeDetails();
+    }
+
+    outEl.innerHTML = html || `<p class="pill">No hay resultados.</p>`;
+    // Vincular botones de descarga por sección
+    hookSectionDownloadButtons();
+  }
+
+  // Helpers de agrupado/render
+  function groupBy(rows, keys){
+    const m = new Map();
+    for(const r of rows){
+      const key = keys.map(k=>String(r[k]||'').toLowerCase()).join(' | ');
+      if(!m.has(key)) m.set(key, []);
+      m.get(key).push(r);
+    }
+    return m;
+  }
+  function titleFrom(key, idx=0){
+    const parts = String(key||'').split(' | ');
+    return (parts[idx]||'').trim();
+  }
+  function sortNivel1(keys){
+    return [...keys].sort((a,b)=>{
+      const A = titleFrom(a,0), B = titleFrom(b,0);
+      const ai = NIVEL1_ORDER.findIndex(x => x.toLowerCase()===A.toLowerCase());
+      const bi = NIVEL1_ORDER.findIndex(x => x.toLowerCase()===B.toLowerCase());
+      if(ai>-1 && bi>-1) return ai-bi;
+      if(ai>-1) return -1;
+      if(bi>-1) return 1;
+      return A.localeCompare(B,'es',{sensitivity:'base'});
+    });
+  }
+  function sortBy(keys, getter){
+    return [...keys].sort((a,b)=> String(getter(a)||'').localeCompare(String(getter(b)||''),'es',{sensitivity:'base'}));
+  }
+
+  function openDetails(title, sectionKey, cls='l1'){
+    const safeTitle = escapeHtml(title || '—');
+    const btns = `
+      <span class="summary-actions">
+        <button class="secondary btn-csv" data-section="${escapeHtml(sectionKey)}">CSV</button>
+        <button class="btn-xlsx" data-section="${escapeHtml(sectionKey)}">XLSX</button>
+      </span>`;
+    return `<details class="lvl ${cls}"><summary>${safeTitle}${btns}</summary><div class="content">`;
+  }
+  function closeDetails(){ return `</div></details>`; }
+
+  function renderCards(rows){
+    // Orden: Jerarquía → Cargo → Nombre (todos incluidos aunque falte clave)
+    const sorted = [...rows].sort((a,b)=>{
+      const ra = Number.isFinite(a.Jerarquia)?a.Jerarquia:999;
+      const rb = Number.isFinite(b.Jerarquia)?b.Jerarquia:999;
+      if(ra!==rb) return ra-rb;
+      const c = cmp(a.Cargo,b.Cargo); if(c) return c;
+      return cmp(a.Nombre,b.Nombre);
+    });
+    return `<div class="cards">${sorted.map(p=>`
+      <div class="card">
+        <div class="nombre">${escapeHtml(p.Nombre||'')}</div>
+        <div class="cargo">${escapeHtml(p.Cargo||'')}</div>
+        <div class="clave">${escapeHtml(p.Clave||'—')}</div>
+      </div>`).join('')}</div>`;
+  }
+
+  // ---- Botones globales
+  qEl.addEventListener('input', ()=> mapped.length && render());
+  btnClear.addEventListener('click', ()=> { qEl.value=''; mapped.length && render(); });
+
+  btnBuild.addEventListener('click', ()=>{
+    if(!rawRows.length) return alert('Primero carga un Excel o un CSV.');
+    if(!S.cargo.value || !S.clave.value){
+      // Permitimos seguir, pero advertimos: las tarjetas quedarán con “—” si falta
+      console.warn('No se mapeó Cargo/Clave; se mostrarán vacíos si no existen.');
+    }
+    buildMapped();
+    render();
+    // abrir por defecto ramas típicas si existen
+    openCanonical();
+  });
+
+  btnDownloadAll.addEventListener('click', ()=> downloadXlsx(mapped, 'organigrama_completo.xlsx'));
+  btnDownloadAllCsv.addEventListener('click', ()=> downloadCsv(mapped, 'organigrama_completo.csv'));
+  btnDownloadView.addEventListener('click', ()=>{
+    const q = qEl.value.trim().toLowerCase();
+    const rows = q ? mapped.filter(p =>
+      [p.Nombre,p.Cargo,p.Clave,p.Nivel1,p.Nivel2,p.Nivel3,p.Nivel4,p.Ciudad]
+        .some(x => String(x||'').toLowerCase().includes(q))) : mapped;
+    downloadXlsx(rows, 'organigrama_vista.xlsx');
+  });
+
+  // ---- Descargas por sección
+  function hookSectionDownloadButtons(){
+    document.querySelectorAll('.btn-csv').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        const key = e.currentTarget.getAttribute('data-section');
+        const rows = lastGroupsCache.get(key) || [];
+        downloadCsv(rows, sanitizeFileName(key)+'.csv');
+      });
+    });
+    document.querySelectorAll('.btn-xlsx').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        const key = e.currentTarget.getAttribute('data-section');
+        const rows = lastGroupsCache.get(key) || [];
+        downloadXlsx(rows, sanitizeFileName(key)+'.xlsx');
+      });
+    });
+  }
+
+  function sanitizeFileName(s){ return String(s||'').replace(/[^\w\-\.]+/g,'_').slice(0,120) || 'seccion'; }
+
+  // ---- Export helpers
+  function downloadXlsx(rows, filename='datos.xlsx'){
+    const ws = XLSX.utils.json_to_sheet(rows);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Organigrama');
+    XLSX.writeFile(wb, filename);
+  }
+  function downloadCsv(rows, filename='datos.csv'){
+    if(!rows || !rows.length){ alert('No hay datos para descargar.'); return; }
+    const headers = Object.keys(rows[0]);
+    const lines = [headers.join(',')].concat(
+      rows.map(r => headers.map(h => csvEscape(r[h])).join(','))
+    );
+    const blob = new Blob([lines.join('\n')], {type:'text/csv;charset=utf-8;'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+  function csvEscape(v){
+    const s = String(v===undefined||v===null?'':v);
+    if(/[",\n]/.test(s)) return '"' + s.replace(/"/g,'""') + '"';
+    return s;
+  }
+
+  // Abrir caminos “clásicos” si existen
+  function openCanonical(){
+    const labels = [
+      'Estructura Jurisdiccional',
+      'Tribunales Distritales',
+      'Juzgados de Primera Instancia',
+      'Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza',
+      'Pleno','Presidencia',
+      'Sala Colegiada Civil y Familiar del Tribunal Superior de Justicia',
+      'Sala Colegiada Penal del Tribunal Superior de Justicia',
+      'Sala Regional Torreón',
+      'Civiles','Familiares','Mercantiles','Penales','Letrados','Mixtos',
+      'Saltillo','Torreón','Piedras Negras','Acuña','Sabinas','San Pedro','Parras','Monclova'
+    ];
+    const sums = Array.from(document.querySelectorAll('summary'));
+    labels.forEach(t=>{
+      const s = sums.find(x => x.firstChild?.nodeValue?.trim().toLowerCase()===t.toLowerCase());
+      if(s) s.parentElement.open = true;
+    });
+  }
+})();
+</script>
+</body>
+<p>Title: Art. 21, Fracc. I / Estructura Orgánica
+Summary: Su estructura orgánica en un formato que permita vincular por cada eslabón de la misma, nivel tabular, las facultades y responsabilidades que le corresponden de conformidad con las disposiciones aplicables, y los puestos públicos vacantes de dicha estructura, así como los requisitos para poder acceder a los mismos.El Poder Judicial del Estado de Coahuila cuenta con una estructura orgánica integrada por órganos jurisdiccionales, no jurisdiccionales y administrativos.</p>
+<h4>RESPONSABLE</h4>
+<p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
+<h4>FECHA DE VALIDACIÓN</h4>
+<p>07 de Julio de 2025</p>
 <section id="org-container" aria-label="Organigramas del Poder Judicial">
   <div class="org-toolbar">
     <label for="org-area">Área:</label>
