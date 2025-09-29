@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-09-25T11:11:03-00:00</lastmod>
+<lastmod>2025-09-29T06:39:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9300,6 +9300,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/octava-sesion-ordinaria/</loc>
+<lastmod>2025-09-30T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/cuarta-sesion-ordinaria/</loc>
 <lastmod>2025-09-30T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9308,7 +9315,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/septima-sesion-ordinaria/</loc>
-<lastmod>2025-09-25T12:00:00-05:00</lastmod>
+<lastmod>2025-09-25T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
