@@ -499,175 +499,72 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <h4>Responsable</h4>
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>Fecha de validación</h4>
-<p>10 de octubre de 2025</p>
-<p><html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructuras Orgánicas Desplegables</title>
-    <style>
-        /<em> ====================================
-           ESTILOS CSS
-           ==================================== </em>/
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-wrap: wrap; /<em> Permite que los botones salten de línea en pantallas pequeñas </em>/
-            justify-content: center; /<em> Centra horizontalmente el contenedor de botones </em>/
-            align-items: flex-start;
-            min-height: 100vh;
-            margin: 20px;
-            background-color: #f4f4f4;
-            gap: 20px; /<em> Espacio entre los botones </em>/
-        }</p>
-<div class="highlight"><pre><span></span><code>    <span class="c">/* Contenedor principal para cada botón y su menú */</span>
-    <span class="p">.</span><span class="nc">dropdown</span> <span class="p">{</span>
-        <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="p">}</span>
+<p>10 de septiembre de 2025</p>
+<p>
+    <strong>Consulta la Estructura Orgánica:</strong>
+    <br>
+    <em>Haz clic en la sección para ver los archivos disponibles.</em>
+</p>
 
-    <span class="c">/* Estilo general del botón */</span>
-    <span class="p">.</span><span class="nc">dropdown-button</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#3f51b5</span><span class="p">;</span> <span class="c">/* Azul institucional */</span>
-        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">background-color</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">,</span> <span class="k">transform</span> <span class="mf">0.1</span><span class="kt">s</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">);</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">min-width</span><span class="p">:</span> <span class="mi">220</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Ancho para botones legibles */</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="p">.</span><span class="nc">dropdown-button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#303f9f</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Estilo para el icono */</span>
-    <span class="p">.</span><span class="nc">button-icon</span> <span class="p">{</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-right</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Contenido del menú desplegable */</span>
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="c">/* Oculto por defecto */</span>
-        <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
-        <span class="k">min-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-        <span class="k">z-index</span><span class="p">:</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-        <span class="c">/* Posicionamiento: centrado debajo del botón */</span>
-        <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateX</span><span class="p">(</span><span class="nv">-50</span><span class="err">%</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Muestra el menú cuando el contenedor tiene la clase &#39;show&#39; */</span>
-    <span class="p">.</span><span class="nc">dropdown</span><span class="p">.</span><span class="nc">show</span> <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Estilo de los enlaces PDF */</span>
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span> <span class="p">{</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#eee</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">background-color</span> <span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">last-child</span> <span class="p">{</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e8eaf6</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#3f51b5</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></div>
-
-<p></head></p>
-<body>
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
     <div class="dropdown" id="jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
             <span class="button-icon">⚖️</span>
             Estructura Jurisdiccional
         </button>
-        <div class="dropdown-content">
-            <a href="ruta/a/juris_2024.pdf" target="_blank">Estructura 2024 (PDF)</a>
-            <a href="ruta/a/juris_2023.pdf" target="_blank">Estructura 2023 (PDF)</a>
-            <a href="ruta/a/acuerdo_creacion.pdf" target="_blank">Acuerdo de Creación (PDF)</a>
+        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
+            <a href="ruta/a/juris_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2024 (PDF)</a>
+            <a href="ruta/a/juris_2023.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2023 (PDF)</a>
+            <a href="ruta/a/acuerdo_creacion.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Acuerdo de Creación (PDF)</a>
         </div>
     </div>
-
     <div class="dropdown" id="no-jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
             <span class="button-icon">🤝</span>
             Estructura No Jurisdiccional
         </button>
-        <div class="dropdown-content">
-            <a href="ruta/a/no_juris_2024.pdf" target="_blank">Estructura 2024 (PDF)</a>
-            <a href="ruta/a/comite_transparencia.pdf" target="_blank">Comité de Transparencia (PDF)</a>
+        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
+            <a href="ruta/a/no_juris_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2024 (PDF)</a>
+            <a href="ruta/a/comite_transparencia.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Comité de Transparencia (PDF)</a>
         </div>
     </div>
-
     <div class="dropdown" id="administrativa-dropdown">
-        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
             <span class="button-icon">⚙️</span>
             Estructura Administrativa
         </button>
-        <div class="dropdown-content">
-            <a href="ruta/a/admin_2024.pdf" target="_blank">Organigrama 2024 (PDF)</a>
-            <a href="ruta/a/manual_organizacion.pdf" target="_blank">Manual de Organización (PDF)</a>
-            <a href="ruta/a/nombramientos.pdf" target="_blank">Nombramientos (PDF)</a>
+        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
+            <a href="ruta/a/admin_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Organigrama 2024 (PDF)</a>
+            <a href="ruta/a/manual_organizacion.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Manual de Organización (PDF)</a>
+            <a href="ruta/a/nombramientos.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Nombramientos (PDF)</a>
         </div>
     </div>
-    <script>
-        // Función para mostrar/ocultar el menú específico
-        function toggleDropdown(dropdownId) {
-            const dropdown = document.getElementById(dropdownId);
-            // Cierra cualquier otro menú que esté abierto
-            closeAllDropdowns(dropdownId);
-            // Alterna la clase 'show' en el menú que se hizo clic
-            dropdown.classList.toggle("show");
-        }
+</div>
 
-        // Función para cerrar todos los menús excepto el actual
-        function closeAllDropdowns(excludeId) {
-            const dropdowns = document.getElementsByClassName("dropdown");
-            for (let i = 0; i < dropdowns.length; i++) {
-                const openDropdown = dropdowns[i];
-                // Si el menú está abierto y no es el que se hizo clic, lo cierra
-                if (openDropdown.classList.contains('show') && openDropdown.id !== excludeId) {
-                    openDropdown.classList.remove('show');
-                }
+<script>
+    // Este script DEBE ser copiado en la sección <script> de tu página HTML, no funcionará solo en el .md
+    function toggleDropdown(dropdownId) {
+        const dropdown = document.getElementById(dropdownId);
+        closeAllDropdowns(dropdownId);
+        dropdown.classList.toggle("show");
+    }
+
+    function closeAllDropdowns(excludeId) {
+        const dropdowns = document.getElementsByClassName("dropdown");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && openDropdown.id !== excludeId) {
+                openDropdown.classList.remove('show');
             }
         }
+    }
 
-        // Cierra los menús si el usuario hace clic fuera de ellos
-        window.onclick = function(event) {
-            // Verifica si el clic no fue en un botón que tiene la clase 'dropdown-button'
-            if (!event.target.matches('.dropdown-button')) {
-                // Si el clic no fue en un botón, cierra todos los menús (pasando 'null' para que no excluya a ninguno)
-                closeAllDropdowns(null); 
-            }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            closeAllDropdowns(null); 
         }
-    </script>
-</body>
-<p></html></p>
+    }
+</script>
     </div>
 </article>
     </main>
