@@ -499,7 +499,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <h4>Responsable</h4>
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>Fecha de validación</h4>
-<p>10 de septiembre de 2025</p>
+<p>10 de octubre de 2025</p>
 <style>
     /* Estilos esenciales para el cuerpo del contenedor (flexible y centrado) */
     .contenedor-principal {
@@ -534,11 +534,13 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
     .dropdown-button:hover {
         border-color: #3f51b5;
     }
-    /* Estilo para la imagen dentro del botón */
+    /* Estilo para la imagen dentro del botón (AJUSTADO) */
     .button-image {
-        width: 80px; /* Tamaño de la imagen dentro del botón */
-        height: 80px;
-        object-fit: contain; /* Asegura que la imagen se vea completa */
+        max-width: 90%;   /* La imagen no excederá el 90% del ancho del botón */
+        max-height: 90%;  /* La imagen no excederá el 90% de la altura del botón */
+        width: auto;      /* Ancho automático para mantener proporción */
+        height: auto;     /* Alto automático para mantener proporción */
+        object-fit: contain; /* ¡Clave! La imagen se ajusta sin ser cortada */
         margin-bottom: 8px;
     }
     /* Estilo para el texto debajo del círculo */
