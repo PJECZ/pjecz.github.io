@@ -500,71 +500,310 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>Fecha de validación</h4>
 <p>10 de septiembre de 2025</p>
-<p>
-    <strong>Consulta la Estructura Orgánica:</strong>
-    <br>
-    <em>Haz clic en la sección para ver los archivos disponibles.</em>
-</p>
+<!DOCTYPE html>
+<p><html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras Orgánicas Detalladas</title>
+    <style>
+        /<em> ====================================
+           ESTILOS CSS: BOTONES REDONDOS
+           ==================================== </em>/
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 20px;
+            background-color: #f4f4f4;
+            gap: 40px;
+        }</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">.</span><span class="nc">dropdown</span> <span class="p">{</span>
+        <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">160</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Ancho ajustado para el botón y texto */</span>
+    <span class="p">}</span>
 
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <span class="p">.</span><span class="nc">dropdown-button</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f0f0f0</span><span class="p">;</span> 
+        <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span> 
+        <span class="k">width</span><span class="p">:</span> <span class="mi">150</span><span class="kt">px</span><span class="p">;</span> 
+        <span class="k">height</span><span class="p">:</span> <span class="mi">150</span><span class="kt">px</span><span class="p">;</span> 
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span> 
+        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+        <span class="k">transition</span><span class="p">:</span> <span class="k">border-color</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">,</span> <span class="k">box-shadow</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+        <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span> 
+        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span> 
+        <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span> 
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span> 
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Espacio para el texto de abajo */</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown-button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+        <span class="k">border-color</span><span class="p">:</span> <span class="mh">#007bff</span><span class="p">;</span> 
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">12</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span> 
+        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="nv">-2px</span><span class="p">);</span> 
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">button-image</span> <span class="p">{</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">80</span><span class="kt">px</span><span class="p">;</span> 
+        <span class="k">height</span><span class="p">:</span> <span class="mi">80</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">object-fit</span><span class="p">:</span> <span class="kc">contain</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">button-text-label</span> <span class="p">{</span> <span class="c">/* Nuevo estilo para el texto de abajo */</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span> 
+        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> 
+        <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+        <span class="k">min-width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Ancho ampliado para nombres largos de archivos */</span>
+        <span class="k">max-height</span><span class="p">:</span> <span class="mi">400</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Altura máxima para scroll */</span>
+        <span class="k">overflow-y</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/* Scroll si la lista es muy larga */</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
+        <span class="k">z-index</span><span class="p">:</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> 
+        <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateX</span><span class="p">(</span><span class="nv">-50</span><span class="err">%</span><span class="p">);</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown</span><span class="p">.</span><span class="nc">show</span> <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span> <span class="p">{</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Padding reducido para listas largas */</span>
+        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#eee</span><span class="p">;</span>
+        <span class="k">transition</span><span class="p">:</span> <span class="k">background-color</span> <span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Fuente reducida para listas largas */</span>
+        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">last-child</span> <span class="p">{</span>
+        <span class="k">border-bottom</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e8eaf6</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#3f51b5</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<p></head></p>
+<body>
     <div class="dropdown" id="jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
-            <span class="button-icon">⚖️</span>
-            Estructura Jurisdiccional
+        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button">
+            <img src="ruta/a/tu_imagen_juris.png" alt="Icono Jurisdiccional" class="button-image">
         </button>
-        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
-            <a href="ruta/a/juris_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2024 (PDF)</a>
-            <a href="ruta/a/juris_2023.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2023 (PDF)</a>
-            <a href="ruta/a/acuerdo_creacion.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Acuerdo de Creación (PDF)</a>
+        <div class="button-text-label">Estructura Jurisdiccional</div>
+        <div class="dropdown-content">
+            <a href="ruta/a/Pleno.pptx" target="_blank">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza - Pleno</a>
+            <a href="ruta/a/Presidencia.pptx" target="_blank">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza - Presidencia</a>
+            <a href="ruta/a/Sala Colegiada Civil y Familiar del Tribunal Superior de Justicia.pptx" target="_blank">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza - Sala Colegiada Civil y Familiar</a>
+            <a href="ruta/a/Sala Colegiada Penal del Tribunal Superior de Justicia.pptx" target="_blank">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza - Sala Colegiada Penal</a>
+            <a href="ruta/a/Sala Regional Torreón.pptx" target="_blank">01 Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza - Sala Regional Torreón</a>
+            <a href="ruta/a/01 Primer Tribunal Distrital Saltillo.pptx" target="_blank">02 Tribunales Distritales - Primer Tribunal Distrital Saltillo</a>
+            <a href="ruta/a/02 Segundo Tribunal Distrital Torreón.pptx" target="_blank">02 Tribunales Distritales - Segundo Tribunal Distrital Torreón</a>
+            <a href="ruta/a/03 Tercer Tribunal Distrital Monclova.pptx" target="_blank">02 Tribunales Distritales - Tercer Tribunal Distrital Monclova</a>
+            <a href="ruta/a/04 Cuarto Tribunal Distrital Piedras Negras.pptx" target="_blank">02 Tribunales Distritales - Cuarto Tribunal Distrital Piedras Negras</a>
+            <a href="ruta/a/Actuarios Itinerantes Distrito Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Itinerantes Distrito Saltillo</a>
+            <a href="ruta/a/Central de Actuarios Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Saltillo</a>
+            <a href="ruta/a/Central de Actuarios Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Torreón</a>
+            <a href="ruta/a/Central de Actuarios en Materia Hipotecaria Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Hipotecaria Saltillo</a>
+            <a href="ruta/a/Administración Juzgados Hipotecarios.pptx" target="_blank">03 Juzgados de Primera Instancia - Administración Juzgados Hipotecarios</a>
+            <a href="ruta/a/Juzgado Auxiliar Civil con Especializacion Ambiental.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Auxiliar Civil con Especializacion Ambiental</a>
+            <a href="ruta/a/Juzgado Civil Acuña.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Civil Acuña</a>
+            <a href="ruta/a/Juzgado Civil Sabinas.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Civil Sabinas</a>
+            <a href="ruta/a/Juzgado Cuarto Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Cuarto Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Civil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Cuarto Civil Torreón</a>
+            <a href="ruta/a/Juzgado Primero Civil Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Civil Monclova</a>
+            <a href="ruta/a/Juzgado Primero Civil Piedras Negras.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Civil Piedras Negras</a>
+            <a href="ruta/a/Juzgado Primero Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Civil Torreon.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Civil Torreon</a>
+            <a href="ruta/a/Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Quinto Civil Hipotecaria Saltillo</a>
+            <a href="ruta/a/Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Quinto Civil Hipotecaria Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Civil Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Civil Monclova</a>
+            <a href="ruta/a/Juzgado Segundo Civil Piedras Negras.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Civil Piedras Negras</a>
+            <a href="ruta/a/Juzgado Segundo Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Civil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Civil Torreón</a>
+            <a href="ruta/a/Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Sexto Civil Hipotecaria Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Civil Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Civil Monclova</a>
+            <a href="ruta/a/Juzgado Tercero Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Civil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Civil Torreón</a>
+            <a href="ruta/a/Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Auxiliar en Materia Civil</a>
+            <a href="ruta/a/Juzgado Auxiliar Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Auxiliar Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Cuarto Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Cuarto Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Cuarto Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Familiar Acuña.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Familiar Acuña</a>
+            <a href="ruta/a/Juzgado Familiar Sabinas.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Familiar Sabinas</a>
+            <a href="ruta/a/Juzgado Familiar San Pedro.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Familiar San Pedro</a>
+            <a href="ruta/a/Juzgado Primero Familiar Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Primero Familiar Piedras Negras.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Familiar Piedras Negras</a>
+            <a href="ruta/a/Juzgado Primero Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Familiar Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Quinto Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Quinto Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Quinto Familiar Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Quinto Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Piedras Negras.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Familiar Piedras Negras</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Monclova.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Primero Letrado Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Letrado Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Letrado Civil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Letrado Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Letrado Civil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Letrado Civil Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Letrado Civil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Letrado Civil Torreón</a>
+            <a href="ruta/a/Juzgado Civil y Familiar Parras de la Fuente.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Civil y Familiar Parras de la Fuente</a>
+            <a href="ruta/a/Juzgado Civil y Familiar San Pedro.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Civil y Familiar San Pedro</a>
+            <a href="ruta/a/Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx" target="_blank">03 Juzgados de Primera Instancia - Administración General Juzgados Penales Sistema Acusatorio y Oral</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio Y Oral Acuña</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio Y Oral Frontera</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio Y Oral Piedras Negras</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio Y Oral Sabinas</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio Y Oral Torreon</a>
+            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio y Oral Saltillo</a>
+            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Penal Sistema Acusatorio y Oral San Pedro</a>
+            <a href="ruta/a/Juzgado Primero Mercantil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Mercantil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Mercantil Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Mercantil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Mercantil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Segundo Mercantil Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Mercantil Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Mercantil Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Tercero Mercantil Torreón</a>
+            <a href="ruta/a/Juzgados Mercantiles.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgados Mercantiles (General)</a>
+            <a href="ruta/a/Juzgado Primero Penal Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Juzgado Primero Penal Saltillo</a>
         </div>
     </div>
+
     <div class="dropdown" id="no-jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
-            <span class="button-icon">🤝</span>
-            Estructura No Jurisdiccional
+        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button">
+            <img src="ruta/a/tu_imagen_no_juris.png" alt="Icono No Jurisdiccional" class="button-image">
         </button>
-        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
-            <a href="ruta/a/no_juris_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Estructura 2024 (PDF)</a>
-            <a href="ruta/a/comite_transparencia.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Comité de Transparencia (PDF)</a>
+        <div class="button-text-label">Estructura No Jurisdiccional</div>
+        <div class="dropdown-content">
+            <a href="ruta/a/Instituto de Especialización Judicial.pptx" target="_blank">01 Instituto de Especialización Judicial</a>
+            <a href="ruta/a/CEMASC Delegación San Pedro.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación San Pedro</a>
+            <a href="ruta/a/CEMASC Delegación Torreón.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación Torreón</a>
+            <a href="ruta/a/Cemasc Delegación Acuña.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación Acuña</a>
+            <a href="ruta/a/Cemasc Delegación Monclova.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación Monclova</a>
+            <a href="ruta/a/Cemasc Delegación Piedras Negras.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación Piedras Negras</a>
+            <a href="ruta/a/Cemasc Delegación Sabinas.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias - Delegación Sabinas</a>
+            <a href="ruta/a/Centro de Medios Alternos de Solución de Controversias.pptx" target="_blank">02 Centro de Medios Alternos de Solución de Controversias (General)</a>
+            <a href="ruta/a/Delegacion Piedras Negras del Instituto Defensoria Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Piedras Negras</a>
+            <a href="ruta/a/Delegación Acuña Instituto Estatal de Defensoría Pública.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Acuña</a>
+            <a href="ruta/a/Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Monclova</a>
+            <a href="ruta/a/Delegación Parras del Instituto Estatal de Defensoría Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Parras</a>
+            <a href="ruta/a/Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Sabinas</a>
+            <a href="ruta/a/Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación San Pedro</a>
+            <a href="ruta/a/Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Delegación Torreon</a>
+            <a href="ruta/a/Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública (General)</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Sabinas.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoria Sabinas</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Saltillo.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoria Saltillo</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Torreon.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoria Torreon</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Acuña.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoría Acuña</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Monclova.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoría Monclova</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Piedras Negras.pptx" target="_blank">03 Instituto Estatal de Defensoría Pública - Nuevo Sistema Defensoría Piedras Negras</a>
+            <a href="ruta/a/Centro de Evaluación Psicosocial.pptx" target="_blank">04 Centro de Evaluación Psicosocial (General)</a>
+            <a href="ruta/a/Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad Acuña</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Laguna.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad Laguna</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad Región Carbonífera</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Centro.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad Región Centro</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial San Pedro.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad San Pedro</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx" target="_blank">04 Centro de Evaluación Psicosocial - Unidad Región Norte</a>
+            <a href="ruta/a/Oficialía de Partes Región Carbonífera.pptx" target="_blank">05 Oficialías de Partes - Región Carbonífera</a>
+            <a href="ruta/a/Oficialía de Partes Saltillo.pptx" target="_blank">05 Oficialías de Partes - Saltillo</a>
+            <a href="ruta/a/Oficialía de Partes de Monclova.pptx" target="_blank">05 Oficialías de Partes - Monclova</a>
+            <a href="ruta/a/Oficialía de Partes de Piedras Negras.pptx" target="_blank">05 Oficialías de Partes - Piedras Negras</a>
+            <a href="ruta/a/Oficialía de Partes de Torreón.pptx" target="_blank">05 Oficialías de Partes - Torreón</a>
+            <a href="ruta/a/Visitaduría Judicial General.pptx" target="_blank">06 Visitaduría General - Visitaduría Judicial General</a>
         </div>
     </div>
+
     <div class="dropdown" id="administrativa-dropdown">
-        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button" style="background-color: #3f51b5; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); display: flex; align-items: center; min-width: 220px; justify-content: center; text-transform: uppercase;">
-            <span class="button-icon">⚙️</span>
-            Estructura Administrativa
+        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button">
+            <img src="ruta/a/tu_imagen_admin.png" alt="Icono Administrativo" class="button-image">
         </button>
-        <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 10; border-radius: 5px; margin-top: 5px; left: 50%; transform: translateX(-50%);">
-            <a href="ruta/a/admin_2024.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Organigrama 2024 (PDF)</a>
-            <a href="ruta/a/manual_organizacion.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left; border-bottom: 1px solid #eee;">Manual de Organización (PDF)</a>
-            <a href="ruta/a/nombramientos.pdf" target="_blank" style="color: #333; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Nombramientos (PDF)</a>
+        <div class="button-text-label">Estructura Administrativa</div>
+        <div class="dropdown-content">
+            <a href="ruta/a/Archivo General del Poder Judicial.pptx" target="_blank">01 Presidencia - Archivo General del Poder Judicial</a>
+            <a href="ruta/a/Archivo Regional de Acuña.pptx" target="_blank">01 Presidencia - Archivo Regional de Acuña</a>
+            <a href="ruta/a/Archivo Regional de Monclova.pptx" target="_blank">01 Presidencia - Archivo Regional de Monclova</a>
+            <a href="ruta/a/Archivo Regional de Río Grande.pptx" target="_blank">01 Presidencia - Archivo Regional de Río Grande</a>
+            <a href="ruta/a/Archivo Regional de Torreón.pptx" target="_blank">01 Presidencia - Archivo Regional de Torreón</a>
+            <a href="ruta/a/Archivo Único del Centro de Justicia Región Carbonífera.pptx" target="_blank">01 Presidencia - Archivo Único del Centro de Justicia Región Carbonífera</a>
+            <a href="ruta/a/Auditoría Interna.pptx" target="_blank">01 Presidencia - Auditoría Interna</a>
+            <a href="ruta/a/Secretaría Técnica y de Transparencia.pptx" target="_blank">01 Presidencia - Secretaría Técnica y de Transparencia</a>
+            <a href="ruta/a/Unidad de Apoyo a lo Juridiccional.pptx" target="_blank">01 Presidencia - Unidad de Apoyo a lo Juridiccional</a>
+            <a href="ruta/a/Consejo de la Judicatura.pptx" target="_blank">02 Consejo de la Judicatura</a>
+            <a href="ruta/a/Centro de Control de Vigilancia.pptx" target="_blank">02 Consejo de la Judicatura - Centro de Control de Vigilancia</a>
+            <a href="ruta/a/Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Informática</a>
+            <a href="ruta/a/Dirección de Infraestructura Física.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Infraestructura Física</a>
+            <a href="ruta/a/Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Innovación</a>
+            <a href="ruta/a/Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Pago</a>
+            <a href="ruta/a/Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Recursos Financieros</a>
+            <a href="ruta/a/Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Recursos Humanos</a>
+            <a href="ruta/a/Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Dirección de Recursos Materiales</a>
+            <a href="ruta/a/Oficialía Mayor.pptx" target="_blank">02 Consejo de la Judicatura - Oficialía Mayor (General)</a>
+            <a href="ruta/a/Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Jurídica</a>
+            <a href="ruta/a/Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 Consejo de la Judicatura - Unidad de Nóminas</a>
+            <a href="ruta/a/Centro de Justicia de Saltillo.pptx" target="_blank">02 Consejo de la Judicatura - Centro de Justicia de Saltillo</a>
+            <a href="ruta/a/Unidad Administrativa Del Distrito Judicial De Acuña.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Administrativa Distrito Judicial De Acuña</a>
+            <a href="ruta/a/Unidad Administrativa Torreón - San Pedro.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Administrativa Torreón - San Pedro</a>
+            <a href="ruta/a/Unidad Administrativa de la Región Carbonífera.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Administrativa Región Carbonífera</a>
+            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Monclova.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Administrativa Distrito Judicial de Monclova</a>
+            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Río Grande.pptx" target="_blank">02 Consejo de la Judicatura - Unidad Administrativa Distrito Judicial de Río Grande</a>
         </div>
     </div>
-</div>
 
-<script>
-    // Este script DEBE ser copiado en la sección <script> de tu página HTML, no funcionará solo en el .md
-    function toggleDropdown(dropdownId) {
-        const dropdown = document.getElementById(dropdownId);
-        closeAllDropdowns(dropdownId);
-        dropdown.classList.toggle("show");
-    }
+    <script>
+        // Funciones JavaScript para el menú desplegable (Mantiene la funcionalidad de un solo menú abierto)
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            closeAllDropdowns(dropdownId);
+            dropdown.classList.toggle("show");
+        }
 
-    function closeAllDropdowns(excludeId) {
-        const dropdowns = document.getElementsByClassName("dropdown");
-        for (let i = 0; i < dropdowns.length; i++) {
-            const openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show') && openDropdown.id !== excludeId) {
-                openDropdown.classList.remove('show');
+        function closeAllDropdowns(excludeId) {
+            const dropdowns = document.getElementsByClassName("dropdown");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show') && openDropdown.id !== excludeId) {
+                    openDropdown.classList.remove('show');
+                }
             }
         }
-    }
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropdown-button')) {
-            closeAllDropdowns(null); 
+        // Cierra los menús si el clic fue fuera del botón redondo (imagen, texto o el área del botón)
+        window.onclick = function(event) {
+            // Verifica si el clic NO fue en el botón, la imagen, ni el texto del botón
+            if (!event.target.closest('.dropdown-button') && !event.target.matches('.button-text-label')) {
+                closeAllDropdowns(null); 
+            }
         }
-    }
-</script>
+    </script>
+</body>
+<p></html></p>
     </div>
 </article>
     </main>
