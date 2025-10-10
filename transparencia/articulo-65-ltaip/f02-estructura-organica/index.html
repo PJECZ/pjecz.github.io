@@ -501,7 +501,9 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <h4>Fecha de validación</h4>
 <p>10 de octubre de 2025</p>
 <style>
-    /* Estilos esenciales para el cuerpo del contenedor (flexible y centrado) */
+    /* ====================================
+       ESTILOS CSS
+       ==================================== */
     .contenedor-principal {
         display: flex;
         justify-content: center;
@@ -509,7 +511,6 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         gap: 30px;
         margin: 20px 0;
     }
-    /* Estilos del botón redondo */
     .dropdown {
         position: relative;
         display: inline-block;
@@ -521,29 +522,31 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         border: 2px solid #ccc;
         width: 150px;
         height: 150px;
-        border-radius: 50%; /* Lo hace redondo */
+        border-radius: 50%;
         cursor: pointer;
         transition: all 0.2s;
         display: flex;
-        flex-direction: column;
+        /* Centra el contenido (la imagen) */
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         padding: 5px;
+        overflow: hidden; /* Recorta cualquier cosa que se salga del círculo */
     }
     .dropdown-button:hover {
         border-color: #3f51b5;
     }
-    /* Estilo para la imagen dentro del botón (AJUSTADO) */
+
+    /* ESTILO CLAVE: Ajusta la imagen para que quepa y esté centrada */
     .button-image {
-        max-width: 90%;   /* La imagen no excederá el 90% del ancho del botón */
-        max-height: 90%;  /* La imagen no excederá el 90% de la altura del botón */
-        width: auto;      /* Ancho automático para mantener proporción */
-        height: auto;     /* Alto automático para mantener proporción */
-        object-fit: contain; /* ¡Clave! La imagen se ajusta sin ser cortada */
-        margin-bottom: 8px;
+        max-width: 70%;  /* Reducimos el tamaño para que no pegue en los bordes */
+        max-height: 70%; 
+        width: auto;
+        height: auto;
+        object-fit: contain; /* Asegura que la imagen se vea completa sin recortar */
+        display: block; /* Importante para la alineación */
     }
-    /* Estilo para el texto debajo del círculo */
+
     .button-text-label {
         color: #333;
         font-size: 14px;
@@ -589,7 +592,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button">
             <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
         </button>
-        <div class="button-text-label">Estructura Jurisdiccional</div>
+        <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
         <div class="dropdown-content">
             <a href="ruta/a/Pleno.pptx" target="_blank">01 T. Superior de Justicia - Pleno</a>
             <a href="ruta/a/Presidencia.pptx" target="_blank">01 T. Superior de Justicia - Presidencia</a>
@@ -769,7 +772,6 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
     }
 
     window.onclick = function(event) {
-        // Verifica si el clic no fue en el botón, la imagen ni el texto de la etiqueta
         if (!event.target.closest('.dropdown-button') && !event.target.matches('.button-text-label')) {
             closeAllDropdowns(null); 
         }
