@@ -526,25 +526,24 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         cursor: pointer;
         transition: all 0.2s;
         display: flex;
-        /* Centra el contenido (la imagen) */
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 5px;
+        /* padding: 5px;  Este padding puede hacer que la imagen no ocupe el 100%, lo removemos */
         overflow: hidden; /* Recorta cualquier cosa que se salga del círculo */
     }
     .dropdown-button:hover {
         border-color: #3f51b5;
     }
 
-    /* ESTILO CLAVE: Ajusta la imagen para que quepa y esté centrada */
+    /* ESTILO CLAVE: Ajusta la imagen para que abarque todo el círculo */
     .button-image {
-        max-width: 70%;  /* Reducimos el tamaño para que no pegue en los bordes */
-        max-height: 70%; 
-        width: auto;
-        height: auto;
-        object-fit: contain; /* Asegura que la imagen se vea completa sin recortar */
-        display: block; /* Importante para la alineación */
+        width: 100%;     /* Ocupa el 100% del ancho de su padre (el botón) */
+        height: 100%;    /* Ocupa el 100% de la altura de su padre (el botón) */
+        object-fit: cover; /* ¡Clave! La imagen se ajusta para cubrir completamente, recortando los excesos */
+        border-radius: 50%; /* ¡CLAVE! Hace que la imagen misma sea circular */
+        display: block;  /* Asegura que la imagen se comporte como un bloque */
+        margin: 0;       /* Elimina cualquier margen residual */
     }
 
     .button-text-label {
