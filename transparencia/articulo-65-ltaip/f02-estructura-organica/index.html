@@ -501,7 +501,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <h4>Fecha de validación</h4>
 <p>10 de septiembre de 2025</p>
 <style>
-    /* Estilos esenciales para el cuerpo (puede que no funcionen en todos los .md) */
+    /* Estilos esenciales para el cuerpo del contenedor (flexible y centrado) */
     .contenedor-principal {
         display: flex;
         justify-content: center;
@@ -521,7 +521,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         border: 2px solid #ccc;
         width: 150px;
         height: 150px;
-        border-radius: 50%;
+        border-radius: 50%; /* Lo hace redondo */
         cursor: pointer;
         transition: all 0.2s;
         display: flex;
@@ -534,10 +534,14 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
     .dropdown-button:hover {
         border-color: #3f51b5;
     }
-    .button-icon {
-        font-size: 50px;
+    /* Estilo para la imagen dentro del botón */
+    .button-image {
+        width: 80px; /* Tamaño de la imagen dentro del botón */
+        height: 80px;
+        object-fit: contain; /* Asegura que la imagen se vea completa */
         margin-bottom: 8px;
     }
+    /* Estilo para el texto debajo del círculo */
     .button-text-label {
         color: #333;
         font-size: 14px;
@@ -581,7 +585,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <div class="contenedor-principal">
     <div class="dropdown" id="jurisdiccional-dropdown">
         <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button">
-            <span class="button-icon">⚖️</span>
+            <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
         </button>
         <div class="button-text-label">Estructura Jurisdiccional</div>
         <div class="dropdown-content">
@@ -666,7 +670,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 
     <div class="dropdown" id="no-jurisdiccional-dropdown">
         <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button">
-            <span class="button-icon">📚</span>
+            <img src="fondo.jpeg" alt="Icono No Jurisdiccional" class="button-image">
         </button>
         <div class="button-text-label">Estructura No Jurisdiccional</div>
         <div class="dropdown-content">
@@ -710,7 +714,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 
     <div class="dropdown" id="administrativa-dropdown">
         <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button">
-            <span class="button-icon">🏢</span>
+            <img src="fondo.jpeg" alt="Icono Administrativo" class="button-image">
         </button>
         <div class="button-text-label">Estructura Administrativa</div>
         <div class="dropdown-content">
@@ -763,6 +767,7 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
     }
 
     window.onclick = function(event) {
+        // Verifica si el clic no fue en el botón, la imagen ni el texto de la etiqueta
         if (!event.target.closest('.dropdown-button') && !event.target.matches('.button-text-label')) {
             closeAllDropdowns(null); 
         }
