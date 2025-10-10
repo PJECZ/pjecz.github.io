@@ -500,32 +500,21 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
 <h4>Fecha de validación</h4>
 <p>10 de septiembre de 2025</p>
-<p style="text-align: justify;">
-La función jurisdiccional se ejerce por magistrados y jueces independientes, imparciales, responsables y sometidos únicamente al imperio de la ley, no existiendo entre ellos relación jerárquica de supra o de subordinación.
-
-El Poder Judicial esta integrado: el Tribunal Superior de Justicia, Tribunales Distritales,Juzgados de Primera Instancia; Tribunal de Disciplina Judicial y, el Órgano de Adminsitración Judcial.
-
-El Tribunal Superior de Justicia se integra por trece magistraturas, en el ámbito de su competencia, es el máximo órgano jurisdiccional del Poder Judicial con residencia en Saltillo,funciona en Pleno o en Salas. Las facultades del Pleno del Tribunal Superior de Justicia son en materia normativa, jurisdiccional y gobierno interno.
-
-Al Tribunal de Disciplina Judicial corresponde la vigilancia, disciplina, evaluación y contraloría de todo el personal de los Juzgados de Primera Instancia, cualquiera que sea su denominación, así como de los demás órganos y dependencias del Poder Judicial, con excepción del Tribunal Superior de Justicia..
-
-Al Órgano de Adminsitración Judicial será responsable de la administración, de la carrera judicial, del servicio profesional, así como de los demás servicios no jurisdiccionales del Poder Judicial.
-</p>
-
-<p><strong>En atención al proceso electoral judicial 2025, el Poder Judicial del Estado de Coahuila de Zaragoza se encuentra en fase de reestructuración, por lo que, conforme se genere la información por las áreas competentes, ésta se publicara en el apartado correspondiente.</strong></p>
-<p>De esta manera, el Poder Judicial del Estado de Coahuila cuenta con la siguiente estructura:</p>
 <p><html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructuras Orgánicas</title>
+    <title>Estructuras Orgánicas Desplegables</title>
     <style>
-        /<em> ESTILOS CSS </em>/
+        /<em> ====================================
+           ESTILOS CSS
+           ==================================== </em>/
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-wrap: wrap; /<em> Permite que los botones salten de línea en pantallas pequeñas </em>/
             justify-content: center; /<em> Centra horizontalmente el contenedor de botones </em>/
-            align-items: flex-start; /<em> Alinea los elementos al inicio del eje vertical </em>/
+            align-items: flex-start;
             min-height: 100vh;
             margin: 20px;
             background-color: #f4f4f4;
@@ -552,7 +541,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">);</span>
         <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
         <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">min-width</span><span class="p">:</span> <span class="mi">220</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Ancho para botones largos */</span>
+        <span class="k">min-width</span><span class="p">:</span> <span class="mi">220</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Ancho para botones legibles */</span>
         <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
         <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
     <span class="p">}</span>
@@ -561,7 +550,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         <span class="k">background-color</span><span class="p">:</span> <span class="mh">#303f9f</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="c">/* Estilo para el icono (opcional) */</span>
+    <span class="c">/* Estilo para el icono */</span>
     <span class="p">.</span><span class="nc">button-icon</span> <span class="p">{</span>
         <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
         <span class="k">margin-right</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
@@ -572,7 +561,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="c">/* Oculto por defecto */</span>
         <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
         <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
-        <span class="k">min-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* El menú toma el ancho del botón */</span>
+        <span class="k">min-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
         <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
         <span class="k">z-index</span><span class="p">:</span> <span class="mi">10</span><span class="p">;</span>
         <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
@@ -604,7 +593,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e8eaf6</span><span class="p">;</span> <span class="c">/* Azul claro para hover */</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e8eaf6</span><span class="p">;</span>
         <span class="k">color</span><span class="p">:</span> <span class="mh">#3f51b5</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
@@ -646,10 +635,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
             <a href="ruta/a/nombramientos.pdf" target="_blank">Nombramientos (PDF)</a>
         </div>
     </div>
-
     <script>
-        /* FUNCIÓN JAVASCRIPT */
-
         // Función para mostrar/ocultar el menú específico
         function toggleDropdown(dropdownId) {
             const dropdown = document.getElementById(dropdownId);
@@ -673,8 +659,9 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 
         // Cierra los menús si el usuario hace clic fuera de ellos
         window.onclick = function(event) {
+            // Verifica si el clic no fue en un botón que tiene la clase 'dropdown-button'
             if (!event.target.matches('.dropdown-button')) {
-                // Si el clic no fue en un botón, cierra todos los menús
+                // Si el clic no fue en un botón, cierra todos los menús (pasando 'null' para que no excluya a ninguno)
                 closeAllDropdowns(null); 
             }
         }
