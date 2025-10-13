@@ -493,8 +493,8 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 <p>Title: Artículo 65, fracción I. Estructura orgánica.</p>
 <style>
     /* ====================================
-       ESTILOS CSS
-       ==================================== */
+        ESTILOS CSS
+        ==================================== */
     .contenedor-principal {
         display: flex;
         justify-content: center;
@@ -745,6 +745,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 <script>
     function toggleDropdown(dropdownId) {
         const dropdown = document.getElementById(dropdownId);
+        // Cierra otros menús antes de abrir este
         closeAllDropdowns(dropdownId);
         dropdown.classList.toggle("show");
     }
@@ -759,8 +760,11 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         }
     }
 
+    // ⭐ LA CORRECCIÓN CLAVE ESTÁ AQUÍ ⭐
     window.onclick = function(event) {
-        if (!event.target.closest('.dropdown-button') && !event.target.matches('.button-text-label')) {
+        // Cierra los menús solo si el clic es fuera de CUALQUIER elemento con la clase 'dropdown'.
+        // Esto incluye el botón, el texto y, lo más importante, el contenido desplegado.
+        if (!event.target.closest('.dropdown')) {
             closeAllDropdowns(null); 
         }
     }
