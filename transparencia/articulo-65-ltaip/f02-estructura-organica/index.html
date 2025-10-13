@@ -529,21 +529,19 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        /* padding: 5px;  Este padding puede hacer que la imagen no ocupe el 100%, lo removemos */
-        overflow: hidden; /* Recorta cualquier cosa que se salga del círculo */
+        overflow: hidden; 
     }
     .dropdown-button:hover {
         border-color: #3f51b5;
     }
 
-    /* ESTILO CLAVE: Ajusta la imagen para que abarque todo el círculo */
     .button-image {
-        width: 100%;     /* Ocupa el 100% del ancho de su padre (el botón) */
-        height: 100%;    /* Ocupa el 100% de la altura de su padre (el botón) */
-        object-fit: cover; /* ¡Clave! La imagen se ajusta para cubrir completamente, recortando los excesos */
-        border-radius: 50%; /* ¡CLAVE! Hace que la imagen misma sea circular */
-        display: block;  /* Asegura que la imagen se comporte como un bloque */
-        margin: 0;       /* Elimina cualquier margen residual */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: 0;
     }
 
     .button-text-label {
@@ -588,167 +586,167 @@ Su estructura orgánica completa, en un formato que permita vincular cada parte 
 
 <div class="contenedor-principal">
     <div class="dropdown" id="jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
         </button>
         <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
         <div class="dropdown-content">
-            <a href="ruta/a/Pleno.pptx" target="_blank">01 T. Superior de Justicia - Pleno</a>
-            <a href="ruta/a/Presidencia.pptx" target="_blank">01 T. Superior de Justicia - Presidencia</a>
-            <a href="ruta/a/Sala Colegiada Civil y Familiar del Tribunal Superior de Justicia.pptx" target="_blank">01 T. S. J. - Sala Colegiada Civil y Familiar</a>
-            <a href="ruta/a/Sala Colegiada Penal del Tribunal Superior de Justicia.pptx" target="_blank">01 T. S. J. - Sala Colegiada Penal</a>
-            <a href="ruta/a/Sala Regional Torreón.pptx" target="_blank">01 T. S. J. - Sala Regional Torreón</a>
-            <a href="ruta/a/01 Primer Tribunal Distrital Saltillo.pptx" target="_blank">02 Tribunales Distritales - Primer Tribunal Saltillo</a>
-            <a href="ruta/a/02 Segundo Tribunal Distrital Torreón.pptx" target="_blank">02 Tribunales Distritales - Segundo Tribunal Torreón</a>
-            <a href="ruta/a/03 Tercer Tribunal Distrital Monclova.pptx" target="_blank">02 Tribunales Distritales - Tercer Tribunal Monclova</a>
-            <a href="ruta/a/04 Cuarto Tribunal Distrital Piedras Negras.pptx" target="_blank">02 Tribunales Distritales - Cuarto Tribunal Piedras Negras</a>
-            <a href="ruta/a/Actuarios Itinerantes Distrito Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Actuarios Itinerantes Saltillo</a>
-            <a href="ruta/a/Central de Actuarios Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Saltillo</a>
-            <a href="ruta/a/Central de Actuarios Torreón.pptx" target="_blank">03 Juzgados de Primera Instancia - Central de Actuarios Torreón</a>
-            <a href="ruta/a/Central de Actuarios en Materia Hipotecaria Saltillo.pptx" target="_blank">03 Juzgados de Primera Instancia - Actuarios Hipotecaria Saltillo</a>
-            <a href="ruta/a/Administración Juzgados Hipotecarios.pptx" target="_blank">03 J. P. I. - Administración Juzgados Hipotecarios</a>
-            <a href="ruta/a/Juzgado Auxiliar Civil con Especializacion Ambiental.pptx" target="_blank">03 J. P. I. - Auxiliar Civil Ambiental</a>
-            <a href="ruta/a/Juzgado Civil Acuña.pptx" target="_blank">03 J. P. I. - Civil Acuña</a>
-            <a href="ruta/a/Juzgado Civil Sabinas.pptx" target="_blank">03 J. P. I. - Civil Sabinas</a>
-            <a href="ruta/a/Juzgado Cuarto Civil Saltillo.pptx" target="_blank">03 J. P. I. - Cuarto Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Cuarto Civil Torreón.pptx" target="_blank">03 J. P. I. - Cuarto Civil Torreón</a>
-            <a href="ruta/a/Juzgado Primero Civil Monclova.pptx" target="_blank">03 J. P. I. - Primero Civil Monclova</a>
-            <a href="ruta/a/Juzgado Primero Civil Piedras Negras.pptx" target="_blank">03 J. P. I. - Primero Civil Piedras Negras</a>
-            <a href="ruta/a/Juzgado Primero Civil Saltillo.pptx" target="_blank">03 J. P. I. - Primero Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Primero Civil Torreon.pptx" target="_blank">03 J. P. I. - Primero Civil Torreon</a>
-            <a href="ruta/a/Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx" target="_blank">03 J. P. I. - Quinto Civil Hipotecaria Saltillo</a>
-            <a href="ruta/a/Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">03 J. P. I. - Quinto Civil Hipotecaria Torreón</a>
-            <a href="ruta/a/Juzgado Segundo Civil Monclova.pptx" target="_blank">03 J. P. I. - Segundo Civil Monclova</a>
-            <a href="ruta/a/Juzgado Segundo Civil Piedras Negras.pptx" target="_blank">03 J. P. I. - Segundo Civil Piedras Negras</a>
-            <a href="ruta/a/Juzgado Segundo Civil Saltillo.pptx" target="_blank">03 J. P. I. - Segundo Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Segundo Civil Torreón.pptx" target="_blank">03 J. P. I. - Segundo Civil Torreón</a>
-            <a href="ruta/a/Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">03 J. P. I. - Sexto Civil Hipotecaria Torreón</a>
-            <a href="ruta/a/Juzgado Tercero Civil Monclova.pptx" target="_blank">03 J. P. I. - Tercero Civil Monclova</a>
-            <a href="ruta/a/Juzgado Tercero Civil Saltillo.pptx" target="_blank">03 J. P. I. - Tercero Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Tercero Civil Torreón.pptx" target="_blank">03 J. P. I. - Tercero Civil Torreón</a>
-            <a href="ruta/a/Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx" target="_blank">03 J. P. I. - Auxiliar en Materia Civil</a>
-            <a href="ruta/a/Juzgado Auxiliar Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Auxiliar Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Cuarto Familiar Monclova.pptx" target="_blank">03 J. P. I. - Cuarto Familiar Monclova</a>
-            <a href="ruta/a/Juzgado Cuarto Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Cuarto Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Cuarto Familiar Torreón.pptx" target="_blank">03 J. P. I. - Cuarto Familiar Torreón</a>
-            <a href="ruta/a/Juzgado Familiar Acuña.pptx" target="_blank">03 J. P. I. - Familiar Acuña</a>
-            <a href="ruta/a/Juzgado Familiar Sabinas.pptx" target="_blank">03 J. P. I. - Familiar Sabinas</a>
-            <a href="ruta/a/Juzgado Familiar San Pedro.pptx" target="_blank">03 J. P. I. - Familiar San Pedro</a>
-            <a href="ruta/a/Juzgado Primero Familiar Monclova.pptx" target="_blank">03 J. P. I. - Primero Familiar Monclova</a>
-            <a href="ruta/a/Juzgado Primero Familiar Piedras Negras.pptx" target="_blank">03 J. P. I. - Primero Familiar Piedras Negras</a>
-            <a href="ruta/a/Juzgado Primero Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Primero Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Primero Familiar Torreón.pptx" target="_blank">03 J. P. I. - Primero Familiar Torreón</a>
-            <a href="ruta/a/Juzgado Quinto Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Quinto Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Quinto Familiar Torreón.pptx" target="_blank">03 J. P. I. - Quinto Familiar Torreón</a>
-            <a href="ruta/a/Juzgado Segundo Familiar Monclova.pptx" target="_blank">03 J. P. I. - Segundo Familiar Monclova</a>
-            <a href="ruta/a/Juzgado Segundo Familiar Piedras Negras.pptx" target="_blank">03 J. P. I. - Segundo Familiar Piedras Negras</a>
-            <a href="ruta/a/Juzgado Segundo Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Segundo Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Segundo Familiar Torreón.pptx" target="_blank">03 J. P. I. - Segundo Familiar Torreón</a>
-            <a href="ruta/a/Juzgado Tercero Familiar Monclova.pptx" target="_blank">03 J. P. I. - Tercero Familiar Monclova</a>
-            <a href="ruta/a/Juzgado Tercero Familiar Saltillo.pptx" target="_blank">03 J. P. I. - Tercero Familiar Saltillo</a>
-            <a href="ruta/a/Juzgado Tercero Familiar Torreón.pptx" target="_blank">03 J. P. I. - Tercero Familiar Torreón</a>
-            <a href="ruta/a/Juzgado Primero Letrado Civil Saltillo.pptx" target="_blank">03 J. P. I. - Primero Letrado Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Segundo Letrado Civil Saltillo.pptx" target="_blank">03 J. P. I. - Segundo Letrado Civil Saltillo</a>
-            <a href="ruta/a/Juzgado Segundo Letrado Civil Torreón.pptx" target="_blank">03 J. P. I. - Segundo Letrado Civil Torreón</a>
-            <a href="ruta/a/Juzgado Tercero Letrado Civil Torreón.pptx" target="_blank">03 J. P. I. - Tercero Letrado Civil Torreón</a>
-            <a href="ruta/a/Juzgado Civil y Familiar Parras de la Fuente.pptx" target="_blank">03 J. P. I. - Civil y Familiar Parras</a>
-            <a href="ruta/a/Juzgado Civil y Familiar San Pedro.pptx" target="_blank">03 J. P. I. - Civil y Familiar San Pedro</a>
-            <a href="ruta/a/Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx" target="_blank">03 J. P. I. - Admón. Gral. Juzgados Penales S. A. O.</a>
-            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Acuña</a>
-            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Frontera</a>
-            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Piedras Negras</a>
-            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Sabinas</a>
-            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Torreon</a>
-            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx" target="_blank">03 J. P. I. - Penal S. A. O. Saltillo</a>
-            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx" target="_blank">03 J. P. I. - Penal S. A. O. San Pedro</a>
-            <a href="ruta/a/Juzgado Primero Mercantil Saltillo.pptx" target="_blank">03 J. P. I. - Primero Mercantil Saltillo</a>
-            <a href="ruta/a/Juzgado Primero Mercantil Torreón.pptx" target="_blank">03 J. P. I. - Primero Mercantil Torreón</a>
-            <a href="ruta/a/Juzgado Segundo Mercantil Saltillo.pptx" target="_blank">03 J. P. I. - Segundo Mercantil Saltillo</a>
-            <a href="ruta/a/Juzgado Segundo Mercantil Torreón.pptx" target="_blank">03 J. P. I. - Segundo Mercantil Torreón</a>
-            <a href="ruta/a/Juzgado Tercero Mercantil Saltillo.pptx" target="_blank">03 J. P. I. - Tercero Mercantil Saltillo</a>
-            <a href="ruta/a/Juzgado Tercero Mercantil Torreón.pptx" target="_blank">03 J. P. I. - Tercero Mercantil Torreón</a>
-            <a href="ruta/a/Juzgados Mercantiles.pptx" target="_blank">03 J. P. I. - Juzgados Mercantiles (General)</a>
-            <a href="ruta/a/Juzgado Primero Penal Saltillo.pptx" target="_blank">03 J. P. I. - Primero Penal Saltillo</a>
+            <a href="ruta/a/Pleno.pptx" target="_blank">T. Superior de Justicia - Pleno</a>
+            <a href="ruta/a/Presidencia.pptx" target="_blank">T. Superior de Justicia - Presidencia</a>
+            <a href="ruta/a/Sala Colegiada Civil y Familiar del Tribunal Superior de Justicia.pptx" target="_blank">T. S. J. - Sala Colegiada Civil y Familiar</a>
+            <a href="ruta/a/Sala Colegiada Penal del Tribunal Superior de Justicia.pptx" target="_blank">T. S. J. - Sala Colegiada Penal</a>
+            <a href="ruta/a/Sala Regional Torreón.pptx" target="_blank">T. S. J. - Sala Regional Torreón</a>
+            <a href="ruta/a/01 Primer Tribunal Distrital Saltillo.pptx" target="_blank">Tribunales Distritales - Primer Tribunal Saltillo</a>
+            <a href="ruta/a/02 Segundo Tribunal Distrital Torreón.pptx" target="_blank">Tribunales Distritales - Segundo Tribunal Torreón</a>
+            <a href="ruta/a/03 Tercer Tribunal Distrital Monclova.pptx" target="_blank">Tribunales Distritales - Tercer Tribunal Monclova</a>
+            <a href="ruta/a/04 Cuarto Tribunal Distrital Piedras Negras.pptx" target="_blank">Tribunales Distritales - Cuarto Tribunal Piedras Negras</a>
+            <a href="ruta/a/Actuarios Itinerantes Distrito Saltillo.pptx" target="_blank">Juzgados de Primera Instancia - Actuarios Itinerantes Saltillo</a>
+            <a href="ruta/a/Central de Actuarios Saltillo.pptx" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Saltillo</a>
+            <a href="ruta/a/Central de Actuarios Torreón.pptx" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Torreón</a>
+            <a href="ruta/a/Central de Actuarios en Materia Hipotecaria Saltillo.pptx" target="_blank">Juzgados de Primera Instancia - Actuarios Hipotecaria Saltillo</a>
+            <a href="ruta/a/Administración Juzgados Hipotecarios.pptx" target="_blank">J. P. I. - Administración Juzgados Hipotecarios</a>
+            <a href="ruta/a/Juzgado Auxiliar Civil con Especializacion Ambiental.pptx" target="_blank">J. P. I. - Auxiliar Civil Ambiental</a>
+            <a href="ruta/a/Juzgado Civil Acuña.pptx" target="_blank">J. P. I. - Civil Acuña</a>
+            <a href="ruta/a/Juzgado Civil Sabinas.pptx" target="_blank">J. P. I. - Civil Sabinas</a>
+            <a href="ruta/a/Juzgado Cuarto Civil Saltillo.pptx" target="_blank">J. P. I. - Cuarto Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Civil Torreón.pptx" target="_blank">J. P. I. - Cuarto Civil Torreón</a>
+            <a href="ruta/a/Juzgado Primero Civil Monclova.pptx" target="_blank">J. P. I. - Primero Civil Monclova</a>
+            <a href="ruta/a/Juzgado Primero Civil Piedras Negras.pptx" target="_blank">J. P. I. - Primero Civil Piedras Negras</a>
+            <a href="ruta/a/Juzgado Primero Civil Saltillo.pptx" target="_blank">J. P. I. - Primero Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Civil Torreon.pptx" target="_blank">J. P. I. - Primero Civil Torreon</a>
+            <a href="ruta/a/Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo.pptx" target="_blank">J. P. I. - Quinto Civil Hipotecaria Saltillo</a>
+            <a href="ruta/a/Juzgado Quinto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">J. P. I. - Quinto Civil Hipotecaria Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Civil Monclova.pptx" target="_blank">J. P. I. - Segundo Civil Monclova</a>
+            <a href="ruta/a/Juzgado Segundo Civil Piedras Negras.pptx" target="_blank">J. P. I. - Segundo Civil Piedras Negras</a>
+            <a href="ruta/a/Juzgado Segundo Civil Saltillo.pptx" target="_blank">J. P. I. - Segundo Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Civil Torreón.pptx" target="_blank">J. P. I. - Segundo Civil Torreón</a>
+            <a href="ruta/a/Juzgado Sexto Civil con Especialización Hipotecaria Torreón.pptx" target="_blank">J. P. I. - Sexto Civil Hipotecaria Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Civil Monclova.pptx" target="_blank">J. P. I. - Tercero Civil Monclova</a>
+            <a href="ruta/a/Juzgado Tercero Civil Saltillo.pptx" target="_blank">J. P. I. - Tercero Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Civil Torreón.pptx" target="_blank">J. P. I. - Tercero Civil Torreón</a>
+            <a href="ruta/a/Juzgado de Primera Instancia Auxiliar en Materia Civil.pptx" target="_blank">J. P. I. - Auxiliar en Materia Civil</a>
+            <a href="ruta/a/Juzgado Auxiliar Familiar Saltillo.pptx" target="_blank">J. P. I. - Auxiliar Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Monclova.pptx" target="_blank">J. P. I. - Cuarto Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Saltillo.pptx" target="_blank">J. P. I. - Cuarto Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Cuarto Familiar Torreón.pptx" target="_blank">J. P. I. - Cuarto Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Familiar Acuña.pptx" target="_blank">J. P. I. - Familiar Acuña</a>
+            <a href="ruta/a/Juzgado Familiar Sabinas.pptx" target="_blank">J. P. I. - Familiar Sabinas</a>
+            <a href="ruta/a/Juzgado Familiar San Pedro.pptx" target="_blank">J. P. I. - Familiar San Pedro</a>
+            <a href="ruta/a/Juzgado Primero Familiar Monclova.pptx" target="_blank">J. P. I. - Primero Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Primero Familiar Piedras Negras.pptx" target="_blank">J. P. I. - Primero Familiar Piedras Negras</a>
+            <a href="ruta/a/Juzgado Primero Familiar Saltillo.pptx" target="_blank">J. P. I. - Primero Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Familiar Torreón.pptx" target="_blank">J. P. I. - Primero Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Quinto Familiar Saltillo.pptx" target="_blank">J. P. I. - Quinto Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Quinto Familiar Torreón.pptx" target="_blank">J. P. I. - Quinto Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Monclova.pptx" target="_blank">J. P. I. - Segundo Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Piedras Negras.pptx" target="_blank">J. P. I. - Segundo Familiar Piedras Negras</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Saltillo.pptx" target="_blank">J. P. I. - Segundo Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Familiar Torreón.pptx" target="_blank">J. P. I. - Segundo Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Monclova.pptx" target="_blank">J. P. I. - Tercero Familiar Monclova</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Saltillo.pptx" target="_blank">J. P. I. - Tercero Familiar Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Familiar Torreón.pptx" target="_blank">J. P. I. - Tercero Familiar Torreón</a>
+            <a href="ruta/a/Juzgado Primero Letrado Civil Saltillo.pptx" target="_blank">J. P. I. - Primero Letrado Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Letrado Civil Saltillo.pptx" target="_blank">J. P. I. - Segundo Letrado Civil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Letrado Civil Torreón.pptx" target="_blank">J. P. I. - Segundo Letrado Civil Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Letrado Civil Torreón.pptx" target="_blank">J. P. I. - Tercero Letrado Civil Torreón</a>
+            <a href="ruta/a/Juzgado Civil y Familiar Parras de la Fuente.pptx" target="_blank">J. P. I. - Civil y Familiar Parras</a>
+            <a href="ruta/a/Juzgado Civil y Familiar San Pedro.pptx" target="_blank">J. P. I. - Civil y Familiar San Pedro</a>
+            <a href="ruta/a/Administración General de los Juzgados Penales del Sistema Acusatorio y Oral.pptx" target="_blank">J. P. I. - Admón. Gral. Juzgados Penales S. A. O.</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Acuña.pptx" target="_blank">J. P. I. - Penal S. A. O. Acuña</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Frontera.pptx" target="_blank">J. P. I. - Penal S. A. O. Frontera</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras.pptx" target="_blank">J. P. I. - Penal S. A. O. Piedras Negras</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas.pptx" target="_blank">J. P. I. - Penal S. A. O. Sabinas</a>
+            <a href="ruta/a/Juzgado Penal Del Sistema Acusatorio Y Oral Torreon.pptx" target="_blank">J. P. I. - Penal S. A. O. Torreon</a>
+            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral Saltillo.pptx" target="_blank">J. P. I. - Penal S. A. O. Saltillo</a>
+            <a href="ruta/a/Juzgado Penal del Sistema Acusatorio y Oral San Pedro de las Colonias.pptx" target="_blank">J. P. I. - Penal S. A. O. San Pedro</a>
+            <a href="ruta/a/Juzgado Primero Mercantil Saltillo.pptx" target="_blank">J. P. I. - Primero Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Primero Mercantil Torreón.pptx" target="_blank">J. P. I. - Primero Mercantil Torreón</a>
+            <a href="ruta/a/Juzgado Segundo Mercantil Saltillo.pptx" target="_blank">J. P. I. - Segundo Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Segundo Mercantil Torreón.pptx" target="_blank">J. P. I. - Segundo Mercantil Torreón</a>
+            <a href="ruta/a/Juzgado Tercero Mercantil Saltillo.pptx" target="_blank">J. P. I. - Tercero Mercantil Saltillo</a>
+            <a href="ruta/a/Juzgado Tercero Mercantil Torreón.pptx" target="_blank">J. P. I. - Tercero Mercantil Torreón</a>
+            <a href="ruta/a/Juzgados Mercantiles.pptx" target="_blank">J. P. I. - Juzgados Mercantiles (General)</a>
+            <a href="ruta/a/Juzgado Primero Penal Saltillo.pptx" target="_blank">J. P. I. - Primero Penal Saltillo</a>
         </div>
     </div>
 
     <div class="dropdown" id="no-jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono No Jurisdiccional" class="button-image">
         </button>
-        <div class="button-text-label">Estructura No Jurisdiccional</div>
+        <div class="button-text-label">ESTRUCTURA NO JURISDICCIONAL</div>
         <div class="dropdown-content">
-            <a href="ruta/a/Instituto de Especialización Judicial.pptx" target="_blank">01 Instituto de Especialización Judicial</a>
-            <a href="ruta/a/CEMASC Delegación San Pedro.pptx" target="_blank">02 CEMASC Delegación San Pedro</a>
-            <a href="ruta/a/CEMASC Delegación Torreón.pptplx" target="_blank">02 CEMASC Delegación Torreón</a>
-            <a href="ruta/a/Cemasc Delegación Acuña.pptx" target="_blank">02 CEMASC Delegación Acuña</a>
-            <a href="ruta/a/Cemasc Delegación Monclova.pptx" target="_blank">02 CEMASC Delegación Monclova</a>
-            <a href="ruta/a/Cemasc Delegación Piedras Negras.pptx" target="_blank">02 CEMASC Delegación Piedras Negras</a>
-            <a href="ruta/a/Cemasc Delegación Sabinas.pptx" target="_blank">02 CEMASC Delegación Sabinas</a>
-            <a href="ruta/a/Centro de Medios Alternos de Solución de Controversias.pptx" target="_blank">02 CEMASC (General)</a>
-            <a href="ruta/a/Delegacion Piedras Negras del Instituto Defensoria Publica.pptx" target="_blank">03 I. E. Defensoría Pública - Piedras Negras</a>
-            <a href="ruta/a/Delegación Acuña Instituto Estatal de Defensoría Pública.pptx" target="_blank">03 I. E. Defensoría Pública - Acuña</a>
-            <a href="ruta/a/Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 I. E. Defensoría Pública - Monclova</a>
-            <a href="ruta/a/Delegación Parras del Instituto Estatal de Defensoría Publica.pptx" target="_blank">03 I. E. Defensoría Pública - Parras</a>
-            <a href="ruta/a/Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx" target="_blank">03 I. E. Defensoría Pública - Sabinas</a>
-            <a href="ruta/a/Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 I. E. Defensoría Pública - San Pedro</a>
-            <a href="ruta/a/Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 I. E. Defensoría Pública - Torreon</a>
-            <a href="ruta/a/Instituto Estatal de Defensoria Publica.pptx" target="_blank">03 I. E. Defensoría Pública (General)</a>
-            <a href="ruta/a/Nuevo Sistema Defensoria Sabinas.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoria Sabinas</a>
-            <a href="ruta/a/Nuevo Sistema Defensoria Saltillo.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoria Saltillo</a>
-            <a href="ruta/a/Nuevo Sistema Defensoria Torreon.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoria Torreon</a>
-            <a href="ruta/a/Nuevo Sistema Defensoría Acuña.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoría Acuña</a>
-            <a href="ruta/a/Nuevo Sistema Defensoría Monclova.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoría Monclova</a>
-            <a href="ruta/a/Nuevo Sistema Defensoría Piedras Negras.pptx" target="_blank">03 I. E. D. P. - N. S. Defensoría Piedras Negras</a>
-            <a href="ruta/a/Centro de Evaluación Psicosocial.pptx" target="_blank">04 Centro de Evaluación Psicosocial (General)</a>
-            <a href="ruta/a/Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx" target="_blank">04 C. E. P. - Unidad Acuña</a>
-            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Laguna.pptx" target="_blank">04 C. E. P. - Unidad Laguna</a>
-            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx" target="_blank">04 C. E. P. - Unidad Región Carbonífera</a>
-            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Centro.pptx" target="_blank">04 C. E. P. - Unidad Región Centro</a>
-            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial San Pedro.pptx" target="_blank">04 C. E. P. - Unidad San Pedro</a>
-            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx" target="_blank">04 C. E. P. - Unidad Región Norte</a>
-            <a href="ruta/a/Oficialía de Partes Región Carbonífera.pptx" target="_blank">05 Oficialías de Partes - Región Carbonífera</a>
-            <a href="ruta/a/Oficialía de Partes Saltillo.pptx" target="_blank">05 Oficialías de Partes - Saltillo</a>
-            <a href="ruta/a/Oficialía de Partes de Monclova.pptx" target="_blank">05 Oficialías de Partes - Monclova</a>
-            <a href="ruta/a/Oficialía de Partes de Piedras Negras.pptx" target="_blank">05 Oficialías de Partes - Piedras Negras</a>
-            <a href="ruta/a/Oficialía de Partes de Torreón.pptx" target="_blank">05 Oficialías de Partes - Torreón</a>
-            <a href="ruta/a/Visitaduría Judicial General.pptx" target="_blank">06 Visitaduría Judicial General</a>
+            <a href="ruta/a/Instituto de Especialización Judicial.pptx" target="_blank">Instituto de Especialización Judicial</a>
+            <a href="ruta/a/CEMASC Delegación San Pedro.pptx" target="_blank">CEMASC Delegación San Pedro</a>
+            <a href="ruta/a/CEMASC Delegación Torreón.pptplx" target="_blank">CEMASC Delegación Torreón</a>
+            <a href="ruta/a/Cemasc Delegación Acuña.pptx" target="_blank">CEMASC Delegación Acuña</a>
+            <a href="ruta/a/Cemasc Delegación Monclova.pptx" target="_blank">CEMASC Delegación Monclova</a>
+            <a href="ruta/a/Cemasc Delegación Piedras Negras.pptx" target="_blank">CEMASC Delegación Piedras Negras</a>
+            <a href="ruta/a/Cemasc Delegación Sabinas.pptx" target="_blank">CEMASC Delegación Sabinas</a>
+            <a href="ruta/a/Centro de Medios Alternos de Solución de Controversias.pptx" target="_blank">CEMASC (General)</a>
+            <a href="ruta/a/Delegacion Piedras Negras del Instituto Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública - Piedras Negras</a>
+            <a href="ruta/a/Delegación Acuña Instituto Estatal de Defensoría Pública.pptx" target="_blank">I. E. Defensoría Pública - Acuña</a>
+            <a href="ruta/a/Delegación Monclova del Instituto Estatal de Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública - Monclova</a>
+            <a href="ruta/a/Delegación Parras del Instituto Estatal de Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública - Parras</a>
+            <a href="ruta/a/Delegación Sabinas Instituto Estatal de Defensoría Pública.pptx" target="_blank">I. E. Defensoría Pública - Sabinas</a>
+            <a href="ruta/a/Delegación San Pedro del Instituto Estatal de Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública - San Pedro</a>
+            <a href="ruta/a/Delegación Torreon del Instituto Estatal de Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública - Torreon</a>
+            <a href="ruta/a/Instituto Estatal de Defensoria Publica.pptx" target="_blank">I. E. Defensoría Pública (General)</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Sabinas.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoria Sabinas</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Saltillo.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoria Saltillo</a>
+            <a href="ruta/a/Nuevo Sistema Defensoria Torreon.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoria Torreon</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Acuña.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoría Acuña</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Monclova.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoría Monclova</a>
+            <a href="ruta/a/Nuevo Sistema Defensoría Piedras Negras.pptx" target="_blank">I. E. D. P. - Nuevo Sistema Defensoría Piedras Negras</a>
+            <a href="ruta/a/Centro de Evaluación Psicosocial.pptx" target="_blank">Centro de Evaluación Psicosocial (General)</a>
+            <a href="ruta/a/Unidad Del Centro De Evaluacion Psicosocial Acuña.pptx" target="_blank">C. E. P. - Unidad Acuña</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Laguna.pptx" target="_blank">C. E. P. - Unidad Laguna</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Carbonífera.pptx" target="_blank">C. E. P. - Unidad Región Carbonífera</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial Región Centro.pptx" target="_blank">C. E. P. - Unidad Región Centro</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial San Pedro.pptx" target="_blank">C. E. P. - Unidad San Pedro</a>
+            <a href="ruta/a/Unidad del Centro de Evaluación Psicosocial, Región Norte.pptx" target="_blank">C. E. P. - Unidad Región Norte</a>
+            <a href="ruta/a/Oficialía de Partes Región Carbonífera.pptx" target="_blank">Oficialías de Partes - Región Carbonífera</a>
+            <a href="ruta/a/Oficialía de Partes Saltillo.pptx" target="_blank">Oficialías de Partes - Saltillo</a>
+            <a href="ruta/a/Oficialía de Partes de Monclova.pptx" target="_blank">Oficialías de Partes - Monclova</a>
+            <a href="ruta/a/Oficialía de Partes de Piedras Negras.pptx" target="_blank">Oficialías de Partes - Piedras Negras</a>
+            <a href="ruta/a/Oficialía de Partes de Torreón.pptx" target="_blank">Oficialías de Partes - Torreón</a>
+            <a href="ruta/a/Visitaduría Judicial General.pptx" target="_blank">Visitaduría Judicial General</a>
         </div>
     </div>
 
     <div class="dropdown" id="administrativa-dropdown">
-        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button">
+        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Administrativo" class="button-image">
         </button>
-        <div class="button-text-label">Estructura Administrativa</div>
+        <div class="button-text-label">ESTRUCTURA ADMINISTRATIVA</div>
         <div class="dropdown-content">
-            <a href="ruta/a/Archivo General del Poder Judicial.pptx" target="_blank">01 Presidencia - Archivo General</a>
-            <a href="ruta/a/Archivo Regional de Acuña.pptx" target="_blank">01 Presidencia - Archivo Regional de Acuña</a>
-            <a href="ruta/a/Archivo Regional de Monclova.pptx" target="_blank">01 Presidencia - Archivo Regional de Monclova</a>
-            <a href="ruta/a/Archivo Regional de Río Grande.pptx" target="_blank">01 Presidencia - Archivo Regional de Río Grande</a>
-            <a href="ruta/a/Archivo Regional de Torreón.pptx" target="_blank">01 Presidencia - Archivo Regional de Torreón</a>
-            <a href="ruta/a/Archivo Único del Centro de Justicia Región Carbonífera.pptx" target="_blank">01 Presidencia - Archivo Único Carbonífera</a>
-            <a href="ruta/a/Auditoría Interna.pptx" target="_blank">01 Presidencia - Auditoría Interna</a>
-            <a href="ruta/a/Secretaría Técnica y de Transparencia.pptx" target="_blank">01 Presidencia - Secretaría Técnica y de Transparencia</a>
-            <a href="ruta/a/Unidad de Apoyo a lo Juridiccional.pptx" target="_blank">01 Presidencia - Unidad de Apoyo Juridiccional</a>
-            <a href="ruta/a/Consejo de la Judicatura.pptx" target="_blank">02 Consejo de la Judicatura</a>
-            <a href="ruta/a/Centro de Control de Vigilancia.pptx" target="_blank">02 C. J. - Centro de Control de Vigilancia</a>
-            <a href="ruta/a/Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Informática</a>
-            <a href="ruta/a/Dirección de Infraestructura Física.pptx" target="_blank">02 C. J. - Dirección de Infraestructura Física</a>
-            <a href="ruta/a/Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Innovación</a>
-            <a href="ruta/a/Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Pago</a>
-            <a href="ruta/a/Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Recursos Financieros</a>
-            <a href="ruta/a/Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Recursos Humanos</a>
-            <a href="ruta/a/Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Dirección de Recursos Materiales</a>
-            <a href="ruta/a/Oficialía Mayor.pptx" target="_blank">02 C. J. - Oficialía Mayor (General)</a>
-            <a href="ruta/a/Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Unidad Jurídica</a>
-            <a href="ruta/a/Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">02 C. J. - Unidad de Nóminas</a>
-            <a href="ruta/a/Centro de Justicia de Saltillo.pptx" target="_blank">02 C. J. - Centro de Justicia de Saltillo</a>
-            <a href="ruta/a/Unidad Administrativa Del Distrito Judicial De Acuña.pptx" target="_blank">02 C. J. - U. A. Distrito Judicial De Acuña</a>
-            <a href="ruta/a/Unidad Administrativa Torreón - San Pedro.pptx" target="_blank">02 C. J. - U. A. Torreón - San Pedro</a>
-            <a href="ruta/a/Unidad Administrativa de la Región Carbonífera.pptx" target="_blank">02 C. J. - U. A. Región Carbonífera</a>
-            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Monclova.pptx" target="_blank">02 C. J. - U. A. Distrito Judicial de Monclova</a>
-            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Río Grande.pptx" target="_blank">02 C. J. - U. A. Distrito Judicial de Río Grande</a>
+            <a href="ruta/a/Archivo General del Poder Judicial.pptx" target="_blank">Presidencia - Archivo General</a>
+            <a href="ruta/a/Archivo Regional de Acuña.pptx" target="_blank">Presidencia - Archivo Regional de Acuña</a>
+            <a href="ruta/a/Archivo Regional de Monclova.pptx" target="_blank">Presidencia - Archivo Regional de Monclova</a>
+            <a href="ruta/a/Archivo Regional de Río Grande.pptx" target="_blank">Presidencia - Archivo Regional de Río Grande</a>
+            <a href="ruta/a/Archivo Regional de Torreón.pptx" target="_blank">Presidencia - Archivo Regional de Torreón</a>
+            <a href="ruta/a/Archivo Único del Centro de Justicia Región Carbonífera.pptx" target="_blank">Presidencia - Archivo Único Carbonífera</a>
+            <a href="ruta/a/Auditoría Interna.pptx" target="_blank">Presidencia - Auditoría Interna</a>
+            <a href="ruta/a/Secretaría Técnica y de Transparencia.pptx" target="_blank">Presidencia - Secretaría Técnica y de Transparencia</a>
+            <a href="ruta/a/Unidad de Apoyo a lo Juridiccional.pptx" target="_blank">Presidencia - Unidad de Apoyo Juridiccional</a>
+            <a href="ruta/a/Consejo de la Judicatura.pptx" target="_blank">Consejo de la Judicatura</a>
+            <a href="ruta/a/Centro de Control de Vigilancia.pptx" target="_blank">C. J. - Centro de Control de Vigilancia</a>
+            <a href="ruta/a/Dirección de Informática de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Informática</a>
+            <a href="ruta/a/Dirección de Infraestructura Física.pptx" target="_blank">C. J. - Dirección de Infraestructura Física</a>
+            <a href="ruta/a/Dirección de Innovación de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Innovación</a>
+            <a href="ruta/a/Dirección de Pago de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Pago</a>
+            <a href="ruta/a/Dirección de Recursos Financieros de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Recursos Financieros</a>
+            <a href="ruta/a/Dirección de Recursos Humanos de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Recursos Humanos</a>
+            <a href="ruta/a/Dirección de Recursos Materiales de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Dirección de Recursos Materiales</a>
+            <a href="ruta/a/Oficialía Mayor.pptx" target="_blank">C. J. - Oficialía Mayor (General)</a>
+            <a href="ruta/a/Unidad Jurídica de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Unidad Jurídica</a>
+            <a href="ruta/a/Unidad de Nóminas de la Oficialía Mayor del Poder Judicial.pptx" target="_blank">C. J. - Unidad de Nóminas</a>
+            <a href="ruta/a/Centro de Justicia de Saltillo.pptx" target="_blank">C. J. - Centro de Justicia de Saltillo</a>
+            <a href="ruta/a/Unidad Administrativa Del Distrito Judicial De Acuña.pptx" target="_blank">C. J. - U. A. Distrito Judicial De Acuña</a>
+            <a href="ruta/a/Unidad Administrativa Torreón - San Pedro.pptx" target="_blank">C. J. - U. A. Torreón - San Pedro</a>
+            <a href="ruta/a/Unidad Administrativa de la Región Carbonífera.pptx" target="_blank">C. J. - U. A. Región Carbonífera</a>
+            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Monclova.pptx" target="_blank">C. J. - U. A. Distrito Judicial de Monclova</a>
+            <a href="ruta/a/Unidad Administrativa del Distrito Judicial de Río Grande.pptx" target="_blank">C. J. - U. A. Distrito Judicial de Río Grande</a>
         </div>
     </div>
 </div>
