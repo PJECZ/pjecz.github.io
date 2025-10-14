@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-10-14T15:43:21-00:00</lastmod>
+<lastmod>2025-10-14T15:44:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9328,6 +9328,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-tercera-sesion-ordinaria/</loc>
+<lastmod>2025-10-08T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2025/2025-10-02-acuerdo-remesa-juzgados-auxiliares-2025-septiembre/</loc>
 <lastmod>2025-10-02T14:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9349,6 +9356,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-segunda-sesion-ordinaria/</loc>
+<lastmod>2025-09-30T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/septima-sesion-ordinaria/</loc>
 <lastmod>2025-09-25T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9357,6 +9371,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/cuarta-sesion-ordinaria/</loc>
+<lastmod>2025-09-25T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-primera-sesion-ordinaria/</loc>
 <lastmod>2025-09-25T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
