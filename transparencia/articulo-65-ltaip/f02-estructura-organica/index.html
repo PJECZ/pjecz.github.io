@@ -502,93 +502,133 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         /<em> ====================================
            ESTILOS CSS
            ==================================== </em>/
-        .contenedor-principal {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin: 20px 0;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            text-align: center;
-            width: 150px;
-        }
-        .dropdown-button {
-            background-color: #f0f0f0;
-            border: 2px solid #ccc;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden; 
-        }
-        .dropdown-button:hover {
-            border-color: #3f51b5;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }</p>
-<div class="highlight"><pre><span></span><code>    <span class="p">.</span><span class="nc">button-image</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">.</span><span class="n">contenedor</span><span class="o">-</span><span class="n">principal</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">flex</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">justify</span><span class="o">-</span><span class="nl">content</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">flex</span><span class="o">-</span><span class="nl">wrap</span><span class="p">:</span><span class="w"> </span><span class="n">wrap</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="n">px</span><span class="w"> </span><span class="mi">20</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">position</span><span class="err">:</span><span class="w"> </span><span class="k">relative</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">align</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">button</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/* Color de fondo para que el botón se vea aunque la imagen falle */</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#e3f2fd</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="n">px</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="n">#ccc</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">height</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">cursor</span><span class="err">:</span><span class="w"> </span><span class="n">pointer</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">transition</span><span class="p">:</span><span class="w"> </span><span class="ow">all</span><span class="w"> </span><span class="mf">0.2</span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">flex</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">justify</span><span class="o">-</span><span class="nl">content</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">align</span><span class="o">-</span><span class="nl">items</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">box</span><span class="o">-</span><span class="nl">shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">4</span><span class="n">px</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="w"> </span><span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="nl">overflow</span><span class="p">:</span><span class="w"> </span><span class="n">hidden</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="nl">button</span><span class="p">:</span><span class="n">hover</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#3f51b5</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#c5e1ff</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
 
-    <span class="p">.</span><span class="nc">button-text-label</span> <span class="p">{</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
-        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c">/* Estilos del menú desplegable */</span>
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
-        <span class="k">min-width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">max-height</span><span class="p">:</span> <span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">overflow-y</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-        <span class="k">z-index</span><span class="p">:</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateX</span><span class="p">(</span><span class="nv">-50</span><span class="err">%</span><span class="p">);</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="p">.</span><span class="nc">dropdown</span><span class="p">.</span><span class="nc">show</span> <span class="p">.</span><span class="nc">dropdown-content</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span> <span class="p">{</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#eee</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="p">.</span><span class="nc">dropdown-content</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e8eaf6</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="cm">/* Estilos del ícono/texto de respaldo (fallback) */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">button</span><span class="w"> </span><span class="p">.</span><span class="n">fallback</span><span class="o">-</span><span class="n">icon</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mi">50</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#3f51b5</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">line</span><span class="o">-</span><span class="nl">height</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/* Se asegura que se muestre por defecto */</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">block</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">.</span><span class="n">button</span><span class="o">-</span><span class="nc">image</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">object</span><span class="o">-</span><span class="nl">fit</span><span class="p">:</span><span class="w"> </span><span class="n">cover</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/* Por defecto se oculta */</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"> </span>
+<span class="w">        </span><span class="nl">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* 💡 Si la imagen carga (tiene un &#39;src&#39; que no está vacío), se muestra y se oculta el ícono. */</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* Nota: La pseudoclase :has() es moderna, si tu navegador no la soporta, solo verás el ícono de respaldo. */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="nl">button</span><span class="p">:</span><span class="n">has</span><span class="p">(.</span><span class="n">button</span><span class="o">-</span><span class="nc">image</span><span class="o">[</span><span class="n">src</span><span class="o">]</span><span class="err">:</span><span class="ow">not</span><span class="p">(</span><span class="o">[</span><span class="n">src=&quot;&quot;</span><span class="o">]</span><span class="p">))</span><span class="w"> </span><span class="p">.</span><span class="n">button</span><span class="o">-</span><span class="nc">image</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">block</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="nl">button</span><span class="p">:</span><span class="n">has</span><span class="p">(.</span><span class="n">button</span><span class="o">-</span><span class="nc">image</span><span class="o">[</span><span class="n">src</span><span class="o">]</span><span class="err">:</span><span class="ow">not</span><span class="p">(</span><span class="o">[</span><span class="n">src=&quot;&quot;</span><span class="o">]</span><span class="p">))</span><span class="w"> </span><span class="p">.</span><span class="n">fallback</span><span class="o">-</span><span class="n">icon</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="p">.</span><span class="n">button</span><span class="o">-</span><span class="nc">text</span><span class="o">-</span><span class="n">label</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#333</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mi">14</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="nl">weight</span><span class="p">:</span><span class="w"> </span><span class="n">bold</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">align</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">transform</span><span class="p">:</span><span class="w"> </span><span class="n">uppercase</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="k">top</span><span class="err">:</span><span class="w"> </span><span class="mi">10</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nf">max</span><span class="o">-</span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* Estilos del menú desplegable */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">position</span><span class="err">:</span><span class="w"> </span><span class="k">absolute</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#ffffff</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nf">min</span><span class="o">-</span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nf">max</span><span class="o">-</span><span class="nl">height</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">overflow</span><span class="o">-</span><span class="nl">y</span><span class="p">:</span><span class="w"> </span><span class="n">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">box</span><span class="o">-</span><span class="nl">shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="n">px</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="w"> </span><span class="mi">16</span><span class="n">px</span><span class="w"> </span><span class="mi">0</span><span class="n">px</span><span class="w"> </span><span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">z</span><span class="o">-</span><span class="k">index</span><span class="err">:</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="k">top</span><span class="err">:</span><span class="w"> </span><span class="mi">10</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nf">left</span><span class="err">:</span><span class="w"> </span><span class="mi">50</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">transform</span><span class="p">:</span><span class="w"> </span><span class="n">translateX</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="o">%</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">align</span><span class="p">:</span><span class="w"> </span><span class="nf">left</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">px</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="n">#ddd</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="p">.</span><span class="n">show</span><span class="w"> </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">block</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#333</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="w"> </span><span class="mi">16</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">decoration</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">block</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">px</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="n">#eee</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mi">12</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">transition</span><span class="p">:</span><span class="w"> </span><span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="w"> </span><span class="mf">0.2</span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="nl">a</span><span class="p">:</span><span class="k">last</span><span class="o">-</span><span class="n">child</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">dropdown</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="nl">a</span><span class="p">:</span><span class="n">hover</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#e8eaf6</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div>
 
 <p></head></p>
 <body>
 
 <div class="contenedor-principal">
+
     <div class="dropdown" id="jurisdiccional-dropdown">
         <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
+            <span class="fallback-icon">⚖️</span>
         </button>
         <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
         <div class="dropdown-content">
@@ -643,6 +683,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Piedras Negras</a>
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Saltillo</a>
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Torreón</a>
+            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Sexto Familiar Torreón</a>
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Monclova</a>
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Saltillo</a>
             <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Torreón</a>
@@ -674,6 +715,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     <div class="dropdown" id="no-jurisdiccional-dropdown">
         <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono No Jurisdiccional" class="button-image">
+            <span class="fallback-icon">🛠️</span>
         </button>
         <div class="button-text-label">ESTRUCTURA NO JURISDICCIONAL</div>
         <div class="dropdown-content">
@@ -718,6 +760,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     <div class="dropdown" id="administrativa-dropdown">
         <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Administrativo" class="button-image">
+            <span class="fallback-icon">💼</span>
         </button>
         <div class="button-text-label">ESTRUCTURA ADMINISTRATIVA</div>
         <div class="dropdown-content">
@@ -770,11 +813,9 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         }
     }
 
-    // ⭐ LA CORRECCIÓN CLAVE PARA EVITAR EL CIERRE INESPERADO ⭐
+    // Cierra los menús desplegables si se hace clic fuera de ellos
     window.onclick = function(event) {
         // Cierra los menús solo si el clic es fuera de CUALQUIER elemento con la clase 'dropdown'.
-        // Esto permite hacer clic en los enlaces (<a>) y en el contenido (.dropdown-content)
-        // sin que se cierren, ya que son parte del contenedor '.dropdown'.
         if (!event.target.closest('.dropdown')) {
             closeAllDropdowns(null); 
         }
