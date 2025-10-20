@@ -281,8 +281,9 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         display:flex; align-items:center; justify-content:space-between;
         background-color:#49545E; color:#fff;
     }
-    /* Estilo para los íconos principales (dentro de summary) */
-    .remuneracion summary i { margin-right:10px; color:#fff; } 
+    /* Estilo para los íconos principales (dentro de summary) - NO ES NECESARIO CON EMOJIS, PERO SE MANTIENE EL MARGIN */
+    .remuneracion summary span { margin-right:10px; } /* Ajuste el margen al span que contiene el emoji */
+    .remuneracion summary i { color:#fff; } /* Mantiene el color blanco para la flecha */
     /* Estilo para la flecha de expansión */
     .remuneracion .arrow { transition:transform .3s ease; color:#fff; }
     .remuneracion details[open] summary .arrow { transform:rotate(90deg); }
@@ -292,9 +293,9 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         position: relative;
         padding-left: 20px;
     }
-    /* Pseudo-elemento para el ícono de documento en cada elemento de la lista */
+    /* Pseudo-elemento para el ícono de documento en cada elemento de la lista (Mantuve Font Awesome por ser más limpio que el emoji de documento) */
     .remuneracion li::before {
-        content: "\f0f6"; /* Icono de documento (fa-file-lines) */
+        content: "\f0f6"; /* Icono de documento (fa-file-lines) de Font Awesome */
         font-family: "Font Awesome 6 Free"; 
         font-weight: 900;
         position: absolute;
@@ -310,49 +311,49 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
     <h1>Tabuladores</h1>
 
     <details>
-        <summary><span><i class="fa-solid fa-gavel"></i> Tabulador Magistrados</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>⚖️ Tabulador Magistrados</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1izwvofffgRW6BAWn9ElcYghm9m0vdccn/view?usp=sharing" target="_blank">Tabulador de Sueldos y Salarios - Magistrados</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-scale-balanced"></i> Tabulador Judiciales u Homólogos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👨‍💻 Tabulador Judiciales u Homólogos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1yRkfLwzuJPSnf6FU6PJSIWM2p4IcB2qY/view?usp=sharing" target="_blank">Tabulador de Sueldos - Jurisdiccionales y Homólogos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-briefcase"></i> Tabulador Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🏢 Tabulador Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1_fsyBsdfX1dJVbLlAVU_S2sEg2RO3zOi/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Administrativo</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-shield-halved"></i> Tabulador Defensoría</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🛡️ Tabulador Defensoría</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1HgLIvJjmaHPjW0qs2JmiCr2R68aWXDPO/view?usp=sharing" target="_blank">Tabulador Salarial - Defensores Públicos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-users"></i> Tabulador SUTGE</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👷 Tabulador SUTGE</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1U1Tpgg6ZpmABDmImRdYI8bkp78dXRr-P/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Sindicalizado (SUTGE)</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-graduation-cap"></i> Fomento a la Educación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🎓 Fomento a la Educación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1nrWOPXOc_rh_ZM1lpiqhJzjfF2iOKr8e/view?usp=sharing" target="_blank">Programa de Fomento a la Educación</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span><i class="fa-solid fa-house-user"></i> Fomento a la Familia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👨‍👩‍👧‍👦 Fomento a la Familia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1LZgD-sjFi3bM5bQlg1fhhcbxJPcGqp0C/view?usp=sharing" target="_blank">Programa de Fomento a la Familia</a></li>
         </ul>
