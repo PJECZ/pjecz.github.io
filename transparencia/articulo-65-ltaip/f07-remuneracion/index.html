@@ -268,6 +268,7 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
 <h4>Fecha de validación</h4>
 <p>10 de octubre de 2025</p>
 <style>
+    /* Estilos para la sección de remuneración */
     .remuneracion { font-family: Arial, sans-serif; }
     .remuneracion h1 {
         color:#49545E; text-align:center; margin:20px 0; font-weight:bold;
@@ -280,7 +281,9 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         display:flex; align-items:center; justify-content:space-between;
         background-color:#49545E; color:#fff;
     }
+    /* Estilo para los íconos principales (dentro de summary) */
     .remuneracion summary i { margin-right:10px; color:#fff; } 
+    /* Estilo para la flecha de expansión */
     .remuneracion .arrow { transition:transform .3s ease; color:#fff; }
     .remuneracion details[open] summary .arrow { transform:rotate(90deg); }
     .remuneracion ul { list-style:none; padding:0 20px 15px 20px; margin:0; background:#fff; }
@@ -289,7 +292,7 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         position: relative;
         padding-left: 20px;
     }
-    /* Pseudo-elemento para el ícono de documento en la lista */
+    /* Pseudo-elemento para el ícono de documento en cada elemento de la lista */
     .remuneracion li::before {
         content: "\f0f6"; /* Icono de documento de Font Awesome */
         font-family: "Font Awesome 6 Free"; 
