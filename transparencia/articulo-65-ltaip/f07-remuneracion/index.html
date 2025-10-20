@@ -278,7 +278,10 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
     }
     .remuneracion summary {
         cursor:pointer; padding:15px; font-size:1.1em; font-weight:bold;
-        display:flex; align-items:center; justify-content:space-between;
+        display:flex; align-items:center; 
+
+        /* Aseguramos espacio a la derecha para la flecha */
+        justify-content:space-between; 
 
         /* Color beige de fondo */
         background-color:#D4C4A3; 
@@ -286,6 +289,21 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         color:#49545E;
 
         transition: background-color 0.3s ease, color 0.3s ease; 
+        position: relative; /* Necesario para posicionar la flecha */
+        list-style: none; /* Oculta la flecha por defecto del navegador */
+    }
+
+    /* 🚨 LA FLECHA DE EXPANSION AHORA ES UN CARACTER UNICODE 🚨 */
+    .remuneracion summary::after {
+        content: '▶'; /* Carácter Unicode de flecha */
+        font-size: 0.8em;
+        margin-left: 10px;
+        transition: transform .3s ease, color 0.3s ease;
+        color: #49545E; /* Color de la flecha en estado normal */
+    }
+    .remuneracion details[open] summary::after {
+        transform: rotate(90deg);
+        color: #fff; /* Color de la flecha al abrir */
     }
 
     /* Estilo al pasar el ratón (Hover) */
@@ -293,27 +311,19 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         background-color:#49545E; /* Fondo azul oscuro */
         color:#fff; /* Texto blanco */
     }
-
-    /* Estilo para los íconos/emojis principales (dentro de summary) */
-    .remuneracion summary span { margin-right:10px; } 
-
-    /* Color de la flecha en estado normal */
-    .remuneracion summary i { color:#49545E; } 
-
-    /* Color de la flecha al pasar el ratón */
-    .remuneracion summary:hover i { color:#fff; }
+    /* La flecha también debe ser blanca al pasar el ratón */
+    .remuneracion summary:hover::after {
+        color: #fff;
+    }
 
     /* Estilo al estar abierto */
     .remuneracion details[open] summary {
         background-color:#49545E; 
         color:#fff;
     }
-    .remuneracion details[open] summary .arrow { 
-        transform:rotate(90deg);
-        color:#fff; 
-    }
 
-    .remuneracion .arrow { transition:transform .3s ease; }
+    /* Estilo para los íconos/emojis principales (dentro de summary) */
+    .remuneracion summary span { margin-right:10px; } 
 
     .remuneracion ul { list-style:none; padding:0 20px 15px 20px; margin:0; background:#fff; }
     .remuneracion li { 
@@ -329,49 +339,49 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
     <h1>Tabuladores</h1>
 
     <details>
-        <summary><span>⚖️ Tabulador Magistrados</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>⚖️ Tabulador Magistrados</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1izwvofffgRW6BAWn9ElcYghm9m0vdccn/view?usp=sharing" target="_blank">Tabulador de Sueldos y Salarios - Magistrados</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>👨‍💻 Tabulador Judiciales u Homólogos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👨‍💻 Tabulador Judiciales u Homólogos</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1yRkfLwzuJPSnf6FU6PJSIWM2p4IcB2qY/view?usp=sharing" target="_blank">Tabulador de Sueldos - Jurisdiccionales y Homólogos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🏢 Tabulador Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🏢 Tabulador Administrativos</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1_fsyBsdfX1dJVbLlAVU_S2sEg2RO3zOi/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Administrativo</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🛡️ Tabulador Defensoría</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🛡️ Tabulador Defensoría</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1HgLIvJjmaHPjW0qs2JmiCr2R68aWXDPO/view?usp=sharing" target="_blank">Tabulador Salarial - Defensores Públicos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>👷 Tabulador SUTGE</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👷 Tabulador SUTGE</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1U1Tpgg6ZpmABDmImRdYI8bkp78dXRr-P/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Sindicalizado (SUTGE)</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🎓 Fomento a la Educación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>🎓 Fomento a la Educación</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1nrWOPXOc_rh_ZM1lpiqhJzjfF2iOKr8e/view?usp=sharing" target="_blank">Programa de Fomento a la Educación</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>👨‍👩‍👧‍👦 Fomento a la Familia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span>👨‍👩‍👧‍👦 Fomento a la Familia</span></summary>
         <ul>
             <li><a href="https://drive.google.com/file/d/1LZgD-sjFi3bM5bQlg1fhhcbxJPcGqp0C/view?usp=sharing" target="_blank">Programa de Fomento a la Familia</a></li>
         </ul>
