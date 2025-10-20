@@ -278,10 +278,10 @@ Summary: La remuneración bruta y neta de todas las personas servidoras pública
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Tabuladores de Remuneraciones</title>
+    <title>Tabuladores de Remuneración (Acordeón)</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
     <style>
-        /<em> Estilos heredados y adaptados del código original </em>/
+        /<em> Estilos base </em>/
         body {
             font-family: Arial, sans-serif;
             background-color: #fff;
@@ -290,110 +290,181 @@ Summary: La remuneración bruta y neta de todas las personas servidoras pública
         }
         h1 {
             text-align: center;
-            margin-bottom: 20px;
             font-weight: bold;
+            margin-bottom: 20px;
         }</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">.</span><span class="n">details</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">details</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cm">/* Estilos para el Responsable y Fecha */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">metadata</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mf">0.9</span><span class="n">em</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">align</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* Contenedor principal para simular la estructura de la imagen */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">normatividad</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="o">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nf">max</span><span class="o">-</span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">900</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* Estilo para los elementos del Acordeón (similar a Normatividad) */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">normatividad</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">details</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="nl">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">px</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="n">#ccc</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="nl">overflow</span><span class="p">:</span><span class="w"> </span><span class="n">hidden</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">.</span><span class="n">details</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">.</span><span class="n">normatividad</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
 <span class="w">        </span><span class="nc">cursor</span><span class="err">:</span><span class="w"> </span><span class="n">pointer</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mf">1.1</span><span class="n">em</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="n">px</span><span class="w"> </span><span class="mi">20</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mf">1.05</span><span class="n">em</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="nl">weight</span><span class="p">:</span><span class="w"> </span><span class="n">bold</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#bdbfb6</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Color de fondo para el título */</span><span class="w"></span>
-<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#49545E</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#49545E</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Fondo oscuro del título */</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#fff</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Texto blanco del título */</span><span class="w"></span>
 <span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">flex</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="n">justify</span><span class="o">-</span><span class="nl">content</span><span class="p">:</span><span class="w"> </span><span class="nf">space</span><span class="o">-</span><span class="ow">between</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="n">align</span><span class="o">-</span><span class="nl">items</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">list</span><span class="o">-</span><span class="nl">style</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Oculta el triángulo nativo del summary */</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">.</span><span class="n">details</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* Ajuste para que el icono del Font Awesome simule la flecha */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">normatividad</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">fa</span><span class="o">-</span><span class="n">chevron</span><span class="o">-</span><span class="nf">right</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
 <span class="w">        </span><span class="nl">transition</span><span class="p">:</span><span class="w"> </span><span class="n">transform</span><span class="w"> </span><span class="mf">0.3</span><span class="n">s</span><span class="w"> </span><span class="n">ease</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">.</span><span class="n">details</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">details</span><span class="o">[</span><span class="n">open</span><span class="o">]</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
-<span class="w">        </span><span class="nl">transform</span><span class="p">:</span><span class="w"> </span><span class="n">rotate</span><span class="p">(</span><span class="mi">90</span><span class="n">deg</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">.</span><span class="n">normatividad</span><span class="o">-</span><span class="n">container</span><span class="w"> </span><span class="n">details</span><span class="o">[</span><span class="n">open</span><span class="o">]</span><span class="w"> </span><span class="n">summary</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">fa</span><span class="o">-</span><span class="n">chevron</span><span class="o">-</span><span class="nf">right</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">transform</span><span class="p">:</span><span class="w"> </span><span class="n">rotate</span><span class="p">(</span><span class="mi">90</span><span class="n">deg</span><span class="p">);</span><span class="w"> </span><span class="cm">/* Gira la flecha al abrir */</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
 
-<span class="w">    </span><span class="p">.</span><span class="n">archivo</span><span class="o">-</span><span class="n">link</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="cm">/* Clase específica para el contenido del enlace */</span><span class="w"></span>
-<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">flex</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">flex</span><span class="o">-</span><span class="nl">direction</span><span class="p">:</span><span class="w"> </span><span class="k">column</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="nl">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#f9f9f9</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Color de fondo para el contenido desplegado */</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* Contenido desplegado (el enlace del archivo) */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">acordeon</span><span class="o">-</span><span class="n">content</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="n">px</span><span class="w"> </span><span class="mi">20</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#f5f5f5</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Fondo más claro para el contenido */</span><span class="w"></span>
+<span class="w">        </span><span class="n">border</span><span class="o">-</span><span class="k">top</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="n">px</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="n">#ccc</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
 
-<span class="w">    </span><span class="p">.</span><span class="n">archivo</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
-<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">flex</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">align</span><span class="o">-</span><span class="nl">items</span><span class="p">:</span><span class="w"> </span><span class="n">center</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="nl">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="k">size</span><span class="err">:</span><span class="w"> </span><span class="mf">0.95</span><span class="n">em</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="nl">weight</span><span class="p">:</span><span class="w"> </span><span class="n">bold</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* Estilo del enlace del archivo */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">archivo</span><span class="o">-</span><span class="n">link</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nl">display</span><span class="p">:</span><span class="w"> </span><span class="n">block</span><span class="p">;</span><span class="w"></span>
 <span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">decoration</span><span class="p">:</span><span class="w"> </span><span class="k">none</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#1a0dab</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Un color más de enlace para el archivo */</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#1a0dab</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">font</span><span class="o">-</span><span class="nl">weight</span><span class="p">:</span><span class="w"> </span><span class="n">normal</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nf">left</span><span class="err">:</span><span class="w"> </span><span class="mi">10</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="err">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">.</span><span class="nl">archivo</span><span class="p">:</span><span class="n">hover</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="nc">text</span><span class="o">-</span><span class="nl">decoration</span><span class="p">:</span><span class="w"> </span><span class="n">underline</span><span class="p">;</span><span class="w"> </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">archivo</span><span class="o">-</span><span class="nl">link</span><span class="p">:</span><span class="n">hover</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="nc">text</span><span class="o">-</span><span class="nl">decoration</span><span class="p">:</span><span class="w"> </span><span class="n">underline</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="k">file</span><span class="o">-</span><span class="n">icon</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nf">right</span><span class="err">:</span><span class="w"> </span><span class="mi">8</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nl">color</span><span class="p">:</span><span class="w"> </span><span class="n">#49545E</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/* Estilo para el ícono principal en el summary (el libro en tu imagen) */</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">summary</span><span class="o">-</span><span class="n">icon</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">margin</span><span class="o">-</span><span class="nf">right</span><span class="err">:</span><span class="w"> </span><span class="mi">15</span><span class="n">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+
 <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div>
 
 <p></head></p>
 <body>
-<div class='details-container'>
-    <h1>Tabuladores de Remuneraciones</h1>
-    <p>A continuación se presentan los tabuladores de remuneraciones por división:</p>
+    <div class="metadata">
+        Maestro Rodrigo González Morales, Secretario Técnico y de Planeación<br>
+        Fecha de validación<br>
+        10 de octubre de 2025
+    </div>
 
-    <details>
-        <summary>Tabulador Magistrados <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Magistrados</a>
-        </div>
-    </details>
+    <h1>Tabuladores de Remuneración</h1>
 
-    <details>
-        <summary>Tabulador Jurisdiccionales y Homólogos <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Jurisdiccionales y Homólogos</a>
-        </div>
-    </details>
+    <div class='normatividad-container'>
 
-    <details>
-        <summary>Tabulador Administrativos <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Administrativos</a>
-        </div>
-    </details>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Magistrados</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Magistrados.xls
+                </a>
+            </div>
+        </details>
 
-    <details>
-        <summary>Tabulador Defensoría <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Defensoría</a>
-        </div>
-    </details>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Jurisdiccionales y Homólogos</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Jurisdiccionales y Homólogos.xls
+                </a>
+            </div>
+        </details>
 
-    <details>
-        <summary>Tabulador SUTGE <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador SUTGE</a>
-        </div>
-    </details>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Administrativos</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Administrativos.xls
+                </a>
+            </div>
+        </details>
 
-    <details>
-        <summary>Tabulador Fomento a la Educación <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Fomento a la Educación</a>
-        </div>
-    </details>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Defensoría</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Defensoría.xls
+                </a>
+            </div>
+        </details>
 
-    <details>
-        <summary>Tabulador Fomento a la Familia <i class="fa-solid fa-chevron-right"></i></summary>
-        <div class="archivo-link">
-            <a href="#" class="archivo" target="_blank">📂 Archivo: Tabulador Fomento a la Familia</a>
-        </div>
-    </details>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador SUTGE</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador SUTGE.xls
+                </a>
+            </div>
+        </details>
 
-</div>
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Fomento a la Educación</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Fomento a la Educación.xls
+                </a>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <div><i class="fa-solid fa-book summary-icon"></i> Tabulador Fomento a la Familia</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </summary>
+            <div class="acordeon-content">
+                <a href="#" class="archivo-link" target="_blank">
+                    <i class="fa-solid fa-file-excel file-icon"></i> Descargar: Tabulador Fomento a la Familia.xls
+                </a>
+            </div>
+        </details>
+
+    </div>
 </body>
 <p></html></p>
     </div>
