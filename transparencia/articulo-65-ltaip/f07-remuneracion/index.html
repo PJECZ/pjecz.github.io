@@ -280,15 +280,15 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         cursor:pointer; padding:15px; font-size:1.1em; font-weight:bold;
         display:flex; align-items:center; justify-content:space-between;
 
-        /* 🎨 CAMBIO CLAVE 1: Color beige de fondo */
+        /* Color beige de fondo */
         background-color:#D4C4A3; 
-        /* 🎨 CAMBIO CLAVE 2: Texto en color oscuro (el azul que usábamos) */
+        /* Texto en color oscuro */
         color:#49545E;
 
-        transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+        transition: background-color 0.3s ease, color 0.3s ease; 
     }
 
-    /* 🎨 CAMBIO CLAVE 3: Estilo al pasar el ratón (Hover) */
+    /* Estilo al pasar el ratón (Hover) */
     .remuneracion summary:hover {
         background-color:#49545E; /* Fondo azul oscuro */
         color:#fff; /* Texto blanco */
@@ -296,20 +296,21 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
 
     /* Estilo para los íconos/emojis principales (dentro de summary) */
     .remuneracion summary span { margin-right:10px; } 
-    /* El color de la flecha y el emoji debe coincidir con el texto */
-    .remuneracion summary i { color:#49545E; } /* Flecha en estado normal */
 
-    /* Estilo para la flecha al pasar el ratón */
+    /* Color de la flecha en estado normal */
+    .remuneracion summary i { color:#49545E; } 
+
+    /* Color de la flecha al pasar el ratón */
     .remuneracion summary:hover i { color:#fff; }
 
-    /* Estilo para la flecha al estar abierto (open) - mantiene el estilo hover si está abierta */
+    /* Estilo al estar abierto */
     .remuneracion details[open] summary {
         background-color:#49545E; 
         color:#fff;
     }
     .remuneracion details[open] summary .arrow { 
         transform:rotate(90deg);
-        color:#fff; /* Asegura que la flecha sea blanca al estar abierto */
+        color:#fff; 
     }
 
     .remuneracion .arrow { transition:transform .3s ease; }
