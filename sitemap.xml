@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-10-17T15:12:25-00:00</lastmod>
+<lastmod>2025-10-20T06:49:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9300,6 +9300,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/sexta-sesion-ordinaria/</loc>
+<lastmod>2025-10-31T12:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/sexta-sesion-ordinaria/</loc>
+<lastmod>2025-10-30T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-primera-sesion-ordinaria/</loc>
+<lastmod>2025-10-23T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-sesion-ordinaria/</loc>
 <lastmod>2025-10-16T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -10359,13 +10380,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2025/sexta-sesion-ordinaria/</loc>
 <lastmod>2025-02-11T14:00:00-06:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/sexta-sesion-ordinaria/</loc>
-<lastmod>2025-02-10T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
