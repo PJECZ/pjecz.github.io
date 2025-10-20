@@ -268,105 +268,94 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
 <h4>Fecha de validación</h4>
 <p>10 de octubre de 2025</p>
 <style>
-    /* El CSS se mantiene para la apariencia general */
-    .normatividad { font-family: Arial, sans-serif; }
-    .normatividad h1 {
+    .remuneracion { font-family: Arial, sans-serif; }
+    .remuneracion h1 {
         color:#49545E; text-align:center; margin:20px 0; font-weight:bold;
     }
-    .normatividad details {
+    .remuneracion details {
         margin-bottom:10px; border-radius:5px; overflow:hidden; border:1px solid #ccc;
     }
-    .normatividad summary {
+    .remuneracion summary {
         cursor:pointer; padding:15px; font-size:1.1em; font-weight:bold;
         display:flex; align-items:center; justify-content:space-between;
         background-color:#49545E; color:#fff;
     }
-    .normatividad summary i { margin-right:10px; color:#fff; }
-    .normatividad .arrow { transition:transform .3s ease; color:#fff; }
-    .normatividad details[open] summary .arrow { transform:rotate(90deg); }
-    .normatividad ul { list-style:none; padding:0 20px 15px 20px; margin:0; background:#fff; }
-    .normatividad li { 
+    .remuneracion summary i { margin-right:10px; color:#fff; } 
+    .remuneracion .arrow { transition:transform .3s ease; color:#fff; }
+    .remuneracion details[open] summary .arrow { transform:rotate(90deg); }
+    .remuneracion ul { list-style:none; padding:0 20px 15px 20px; margin:0; background:#fff; }
+    .remuneracion li { 
         padding: 5px 0;
-        /* Estilo añadido para el icono de documento en cada elemento de la lista (opcional) */
         position: relative;
         padding-left: 20px;
     }
-    /* Pseudo-elemento para añadir un ícono de documento (simulado) a cada enlace */
-    .normatividad li::before {
-        content: "📄"; /* Simulación de ícono de documento con emoji */
-        /* Si se usaran iconos de Font Awesome, sería: */
-        /* content: "\f0f6"; font-family: "Font Awesome 6 Free"; font-weight: 900; */
+    /* Pseudo-elemento para el ícono de documento en la lista */
+    .remuneracion li::before {
+        content: "\f0f6"; /* Icono de documento de Font Awesome */
+        font-family: "Font Awesome 6 Free"; 
+        font-weight: 900;
         position: absolute;
         left: 0;
-        color: #49545E; /* Color del texto del cuerpo */
+        color: #49545E;
         font-size: 0.9em;
     }
-    .normatividad a { color:#49545E; text-decoration:none; }
-    .normatividad a:hover { text-decoration:underline; }
+    .remuneracion a { color:#49545E; text-decoration:none; }
+    .remuneracion a:hover { text-decoration:underline; }
 </style>
 
-<div class="normatividad">
+<div class="remuneracion">
     <h1>Tabuladores</h1>
 
     <details>
-        <summary><span>🧑‍⚖️ Tabulador Magistrados</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-gavel"></i> Tabulador Magistrados</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Tabulador de Sueldos y Salarios - Magistrados (Ejemplo 2025)</a></li>
-            <li><a href="#" target="_blank">Tabulador de Remuneraciones - Magistrados</a></li>
+            <li><a href="https://drive.google.com/file/d/1izwvofffgRW6BAWn9ElcYghm9m0vdccn/view?usp=sharing" target="_blank">Tabulador de Sueldos y Salarios - Magistrados</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>👨‍💻 Tabulador Judiciales u Homólogos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-scale-balanced"></i> Tabulador Judiciales u Homólogos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Tabulador de Sueldos - Jueces y Secretarios</a></li>
-            <li><a href="#" target="_blank">Tabulador de Peritos Judiciales</a></li>
+            <li><a href="https://drive.google.com/file/d/1yRkfLwzuJPSnf6FU6PJSIWM2p4IcB2qY/view?usp=sharing" target="_blank">Tabulador de Sueldos - Jurisdiccionales y Homólogos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🏢 Tabulador Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-briefcase"></i> Tabulador Administrativos</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Tabulador de Sueldos - Personal Administrativo</a></li>
-            <li><a href="#" target="_blank">Remuneraciones de Mandos Medios</a></li>
+            <li><a href="https://drive.google.com/file/d/1_fsyBsdfX1dJVbLlAVU_S2sEg2RO3zOi/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Administrativo</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🛡️ Tabulador Defensoría</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-shield-halved"></i> Tabulador Defensoría</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Tabulador Salarial - Defensores Públicos</a></li>
-            <li><a href="#" target="_blank">Listado de Remuneraciones - Defensoría</a></li>
+            <li><a href="https://drive.google.com/file/d/1HgLIvJjmaHPjW0qs2JmiCr2R68aWXDPO/view?usp=sharing" target="_blank">Tabulador Salarial - Defensores Públicos</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🛠️ Tabulador SUTGE</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-users"></i> Tabulador SUTGE</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Tabulador de Sueldos - Personal Sindicalizado (SUTGE)</a></li>
+            <li><a href="https://drive.google.com/file/d/1U1Tpgg6ZpmABDmImRdYI8bkp78dXRr-P/view?usp=sharing" target="_blank">Tabulador de Sueldos - Personal Sindicalizado (SUTGE)</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>🎓 Fomento a la Educación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-graduation-cap"></i> Fomento a la Educación</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Bases para el Otorgamiento de Becas</a></li>
+            <li><a href="https://drive.google.com/file/d/1nrWOPXOc_rh_ZM1lpiqhJzjfF2iOKr8e/view?usp=sharing" target="_blank">Programa de Fomento a la Educación</a></li>
         </ul>
     </details>
 
     <details>
-        <summary><span>👨‍👩‍👧‍👦 Fomento a la Familia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
+        <summary><span><i class="fa-solid fa-house-user"></i> Fomento a la Familia</span><i class="fa-solid fa-chevron-right arrow"></i></summary>
         <ul>
-            <li><a href="#" target="_blank">Programa de Apoyo Familiar 2025</a></li>
-            <li><a href="#" target="_blank">Lineamientos de Prestaciones Familiares</a></li>
+            <li><a href="https://drive.google.com/file/d/1LZgD-sjFi3bM5bQlg1fhhcbxJPcGqp0C/view?usp=sharing" target="_blank">Programa de Fomento a la Familia</a></li>
         </ul>
     </details>
 
-    </div>
-<h2>Descargar</h2>
-<ul>
-<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 65 LTAIP/F07 remuneracion/Tabulador.xls">Tabulador.xls</a></li>
-</ul>
+</div>
     </div>
 </article>
     </main>
