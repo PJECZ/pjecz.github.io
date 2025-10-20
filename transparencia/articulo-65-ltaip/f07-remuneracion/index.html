@@ -281,9 +281,8 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         display:flex; align-items:center; justify-content:space-between;
         background-color:#49545E; color:#fff;
     }
-    /* Estilo para los íconos principales (dentro de summary) - NO ES NECESARIO CON EMOJIS, PERO SE MANTIENE EL MARGIN */
-    .remuneracion summary span { margin-right:10px; } /* Ajuste el margen al span que contiene el emoji */
-    .remuneracion summary i { color:#fff; } /* Mantiene el color blanco para la flecha */
+    /* Estilo para los íconos principales (emojis) */
+    .remuneracion summary span { margin-right:10px; } 
     /* Estilo para la flecha de expansión */
     .remuneracion .arrow { transition:transform .3s ease; color:#fff; }
     .remuneracion details[open] summary .arrow { transform:rotate(90deg); }
@@ -291,11 +290,13 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
     .remuneracion li { 
         padding: 5px 0;
         position: relative;
-        padding-left: 20px;
+        /* Eliminar el padding-left porque ya no hay ícono aquí */
+        /* padding-left: 20px; */ 
     }
-    /* Pseudo-elemento para el ícono de documento en cada elemento de la lista (Mantuve Font Awesome por ser más limpio que el emoji de documento) */
+    /* Pseudo-elemento para el ícono de documento en cada elemento de la lista - ¡ELIMINADO! */
+    /*
     .remuneracion li::before {
-        content: "\f0f6"; /* Icono de documento (fa-file-lines) de Font Awesome */
+        content: "\f0f6"; 
         font-family: "Font Awesome 6 Free"; 
         font-weight: 900;
         position: absolute;
@@ -303,6 +304,7 @@ La remuneración bruta y neta de todas las personas servidoras públicas de base
         color: #49545E;
         font-size: 0.9em;
     }
+    */
     .remuneracion a { color:#49545E; text-decoration:none; }
     .remuneracion a:hover { text-decoration:underline; }
 </style>
