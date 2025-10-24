@@ -500,7 +500,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 50px; /* Separación ajustada entre botones */
         margin: 20px 0;
     }
     .dropdown {
@@ -577,9 +577,8 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 </style>
 
 <div class="contenedor-principal">
-
     <div class="dropdown" id="jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('jurisdiccional-dropdown')" class="dropdown-button" type="button">
+        <button onclick="toggleDropdownHandler('jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
         </button>
         <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
@@ -664,7 +663,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     </div>
 
     <div class="dropdown" id="no-jurisdiccional-dropdown">
-        <button onclick="toggleDropdown('no-jurisdiccional-dropdown')" class="dropdown-button" type="button">
+        <button onclick="toggleDropdownHandler('no-jurisdiccional-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono No Jurisdiccional" class="button-image">
         </button>
         <div class="button-text-label">ESTRUCTURA NO JURISDICCIONAL</div>
@@ -708,7 +707,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     </div>
 
     <div class="dropdown" id="administrativa-dropdown">
-        <button onclick="toggleDropdown('administrativa-dropdown')" class="dropdown-button" type="button">
+        <button onclick="toggleDropdownHandler('administrativa-dropdown')" class="dropdown-button" type="button">
             <img src="fondo.jpeg" alt="Icono Administrativo" class="button-image">
         </button>
         <div class="button-text-label">ESTRUCTURA ADMINISTRATIVA</div>
@@ -745,10 +744,44 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 </div>
 
 <script>
-    function toggleDropdown(dropdownId) {
+    /* * Funciones JavaScript para la estabilidad del menú */
+    function toggleDropdownHandler(dropdownId) {
         const dropdown = document.getElementById(dropdownId);
+
+        // Cierra los otros menús
         closeAllDropdowns(dropdownId);
+
+        // Alterna la visibilidad del menú actual
         dropdown.classList.toggle("show");
+
+        // Añade el listener de cierre después de un breve retraso (para estabilidad)
+        if (dropdown.classList.contains('show')) {
+            setTimeout(() => {
+                document.addEventListener('click', closeDropdownOnOutsideClick, true);
+            }, 0);
+        } else {
+            // Remueve el listener cuando el menú se está cerrando
+            document.removeEventListener('click', closeDropdownOnOutsideClick, true);
+        }
+    }
+
+    function closeDropdownOnOutsideClick(event) {
+        const dropdowns = document.getElementsByClassName("dropdown");
+
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+
+            if (openDropdown.classList.contains('show')) {
+                const button = openDropdown.querySelector('.dropdown-button');
+                const content = openDropdown.querySelector('.dropdown-content');
+
+                // Verifica si el clic NO fue dentro del botón ni dentro del contenido
+                if (!button.contains(event.target) && !content.contains(event.target)) {
+                    openDropdown.classList.remove('show');
+                    document.removeEventListener('click', closeDropdownOnOutsideClick, true);
+                }
+            }
+        }
     }
 
     function closeAllDropdowns(excludeId) {
@@ -758,12 +791,6 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
             if (openDropdown.classList.contains('show') && openDropdown.id !== excludeId) {
                 openDropdown.classList.remove('show');
             }
-        }
-    }
-
-    window.onclick = function(event) {
-        if (!event.target.closest('.dropdown-button') && !event.target.matches('.button-text-label')) {
-            closeAllDropdowns(null); 
         }
     }
 </script>
