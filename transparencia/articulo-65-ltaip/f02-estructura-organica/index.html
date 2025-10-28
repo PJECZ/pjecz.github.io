@@ -505,28 +505,45 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     }
     .dropdown {
         position: relative;
-        display: inline-block;
+        display: block; /* Debe ser block para contener details */
         text-align: center;
         width: 150px;
     }
-    .dropdown-button {
+
+    /* El elemento 'summary' se convierte en el botón circular */
+    details > summary {
+        /* Reset de estilos nativos para que parezca un botón real */
+        list-style: none;
+        cursor: pointer;
+        display: block; 
+
+        /* Estilo Circular */
         background-color: #f0f0f0;
         border: 2px solid #ccc;
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        cursor: pointer;
         transition: all 0.2s;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+
+        /* Centrado de la imagen */
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        overflow: hidden; 
+
+        margin: 0 auto; /* Centra el botón circular dentro de su div.dropdown */
     }
-    .dropdown-button:hover {
+
+    details > summary::-webkit-details-marker {
+        display: none; /* Oculta el triángulo predeterminado de Chrome/Safari */
+    }
+
+    details > summary:hover {
         border-color: #3f51b5;
     }
 
+    /* La imagen dentro del botón */
     .button-image {
         width: 100%;
         height: 100%;
@@ -543,123 +560,125 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         text-align: center;
         text-transform: uppercase;
         margin-top: 5px;
+        margin-bottom: 20px; /* Espacio para que no toque la lista */
     }
-    /* Estilos del menú desplegable */
-    .dropdown-content {
-        display: none;
-        position: absolute;
+
+    /* Estilos del contenido desplegable (el texto de details) */
+    .dropdown-content-details {
         background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        position: absolute; /* Lo hace aparecer encima del contenido */
+        z-index: 10;
         min-width: 300px;
         max-height: 400px;
         overflow-y: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 10;
-        border-radius: 5px;
-        margin-top: 10px;
         left: 50%;
         transform: translateX(-50%);
         text-align: left;
     }
-    .dropdown.show .dropdown-content {
-        display: block;
-    }
-    .dropdown-content a {
+    .dropdown-content-details a {
         color: #333;
-        padding: 8px 16px;
+        padding: 5px 0;
         text-decoration: none;
         display: block;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px dotted #eee;
         font-size: 12px;
     }
-    .dropdown-content a:hover {
-        background-color: #e8eaf6;
+    .dropdown-content-details a:hover {
+        color: #3f51b5;
     }
 </style>
 
 <div class="contenedor-principal">
     <div class="dropdown" id="jurisdiccional-dropdown">
-        <button onclick="toggleDropdownHandler('jurisdiccional-dropdown')" class="dropdown-button" type="button">
-            <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
-        </button>
-        <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
-        <div class="dropdown-content">
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. Superior de Justicia - Pleno</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. Superior de Justicia - Presidencia</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Colegiada Civil y Familiar</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Colegiada Penal</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Regional Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Primer Tribunal Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Segundo Tribunal Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Tercer Tribunal Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Cuarto Tribunal Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Actuarios Itinerantes Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Actuarios Hipotecaria Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Administración Juzgados Hipotecarios</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar Civil Ambiental</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil Acuña</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil Sabinas</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Civil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Torreon</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Civil Hipotecaria Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Civil Hipotecaria Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Sexto Civil Hipotecaria Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar en Materia Civil</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar Acuña</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar Sabinas</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar San Pedro</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Familiar Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Monclova</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Letrado Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Letrado Civil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Letrado Civil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Letrado Civil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil y Familiar Parras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil y Familiar San Pedro</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Admón. Gral. Juzgados Penales S. A. O.</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Acuña</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Frontera</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Piedras Negras</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Sabinas</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Torreon</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. San Pedro</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Mercantil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Mercantil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Mercantil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Mercantil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Mercantil Saltillo</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Mercantil Torreón</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Juzgados Mercantiles (General)</a>
-            <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Penal Saltillo</a>
-        </div>
+        <details>
+            <summary>
+                <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
+            </summary>
+            <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
+            <div class="dropdown-content-details">
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. Superior de Justicia - Pleno</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. Superior de Justicia - Presidencia</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Colegiada Civil y Familiar</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Colegiada Penal</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">T. S. J. - Sala Regional Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Primer Tribunal Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Segundo Tribunal Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Tercer Tribunal Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Tribunales Distritales - Cuarto Tribunal Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Actuarios Itinerantes Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Central de Actuarios Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">Juzgados de Primera Instancia - Actuarios Hipotecaria Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Administración Juzgados Hipotecarios</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar Civil Ambiental</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil Acuña</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil Sabinas</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Civil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Civil Torreon</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Civil Hipotecaria Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Civil Hipotecaria Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Civil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Sexto Civil Hipotecaria Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Civil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar en Materia Civil</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Auxiliar Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Cuarto Familiar Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar Acuña</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar Sabinas</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Familiar San Pedro</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Familiar Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Quinto Familiar Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Familiar Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Monclova</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Familiar Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Letrado Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Letrado Civil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Letrado Civil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Letrado Civil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil y Familiar Parras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Civil y Familiar San Pedro</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Admón. Gral. Juzgados Penales S. A. O.</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Acuña</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Frontera</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Piedras Negras</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Sabinas</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Torreon</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Penal S. A. O. San Pedro</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Mercantil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Mercantil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Mercantil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Segundo Mercantil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Mercantil Saltillo</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Tercero Mercantil Torreón</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Juzgados Mercantiles (General)</a>
+                <a href="https://drive.google.com/uc?export=download&id=REEMPLAZAR_CON_TU_ID_AQUÍ" target="_blank">J. P. I. - Primero Penal Saltillo</a>
+            </div>
+        </details>
     </div>
 
     <div class="dropdown" id="no-jurisdiccional-dropdown">
@@ -748,19 +767,15 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     function toggleDropdownHandler(dropdownId) {
         const dropdown = document.getElementById(dropdownId);
 
-        // Cierra los otros menús
         closeAllDropdowns(dropdownId);
 
-        // Alterna la visibilidad del menú actual
         dropdown.classList.toggle("show");
 
-        // Añade el listener de cierre después de un breve retraso (para estabilidad)
         if (dropdown.classList.contains('show')) {
             setTimeout(() => {
                 document.addEventListener('click', closeDropdownOnOutsideClick, true);
             }, 0);
         } else {
-            // Remueve el listener cuando el menú se está cerrando
             document.removeEventListener('click', closeDropdownOnOutsideClick, true);
         }
     }
@@ -775,7 +790,6 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
                 const button = openDropdown.querySelector('.dropdown-button');
                 const content = openDropdown.querySelector('.dropdown-content');
 
-                // Verifica si el clic NO fue dentro del botón ni dentro del contenido
                 if (!button.contains(event.target) && !content.contains(event.target)) {
                     openDropdown.classList.remove('show');
                     document.removeEventListener('click', closeDropdownOnOutsideClick, true);
