@@ -508,6 +508,8 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         display: block; 
         text-align: center;
         width: 150px;
+        /* IMPORTANTE: Añadimos un margen inferior para que la lista desplegable tenga espacio debajo del texto */
+        margin-bottom: 100px; 
     }
 
     /* El elemento 'summary' se convierte en el botón circular */
@@ -518,7 +520,6 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         justify-content: center;
         align-items: center;
 
-        /* Estilo Circular del Botón */
         background-color: #f0f0f0;
         border: 2px solid #ccc;
         width: 150px;
@@ -531,7 +532,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
     }
 
     details > summary::-webkit-details-marker {
-        display: none; /* Oculta el triángulo nativo */
+        display: none; 
     }
 
     details > summary:hover {
@@ -546,16 +547,15 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         margin: 0;
     }
 
-    /* La etiqueta del nombre de la estructura que va debajo del círculo */
-    .button-text-label {
+    /* ESTILO PARA EL TEXTO FIJO DEBAJO DEL BOTÓN */
+    .button-text-fixed {
         color: #333;
         font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
         margin-top: 5px;
-        margin-bottom: 5px; 
-        display: block; /* Asegura que ocupe su propio espacio */
+        display: block;
     }
 
     /* Contenido de la lista desplegable */
@@ -567,9 +567,8 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
-        /* Posicionamiento para flotar sobre el contenido si es posible */
         position: absolute; 
-        z-index: 100; /* Asegura que esté al frente */
+        z-index: 100; 
         min-width: 300px;
         max-height: 400px;
         overflow-y: auto;
@@ -596,7 +595,6 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
             <summary>
                 <img src="fondo.jpeg" alt="Icono Jurisdiccional" class="button-image">
             </summary>
-            <div class="button-text-label">ESTRUCTURA JURISDICCIONAL</div>
             <div class="dropdown-content-details">
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">T. Superior de Justicia - Pleno</a>
                 <a href="https://drive.google.com/file/d/1pF8mLZrOzLg2C7c67cvyVPYOXEmcn5o1/preview" target="_blank">T. Superior de Justicia - Presidencia</a>
@@ -685,7 +683,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
             </summary>
             <div class="button-text-label">ESTRUCTURA NO JURISDICCIONAL</div>
             <div class="dropdown-content-details">
-                            <a href="https://drive.google.com/file/d/1xE4Eo8mZc_6g0GYX_lpIQzQDzgqEH9qs/preview" target="_blank">Tribunal de Disciplina Judicial</a>
+            <a href="https://drive.google.com/file/d/1xE4Eo8mZc_6g0GYX_lpIQzQDzgqEH9qs/preview" target="_blank">Tribunal de Disciplina Judicial</a>
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Instituto de Especialización Judicial</a>
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">CEMASC Delegación San Pedro</a>
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">CEMASC Delegación Torreón</a>
@@ -720,7 +718,7 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Oficialías de Partes - Monclova</a>
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Oficialías de Partes - Piedras Negras</a>
                 <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Oficialías de Partes - Torreón</a>
-                <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Visitaduría Judicial General</a>
+                <a href="https://drive.google.com/file/d/1g5OX0__ZDxqRfiSP6TQ99G8JIa6c_HVZ/preview" target="_blank">Visitaduría Judicial General</a>
             </div>
         </details>
     </div>
@@ -766,7 +764,6 @@ Al Órgano de Adminsitración Judicial será responsable de la administración, 
 
 <script>
     function toggleDropdownHandler(dropdownId) {
-        // La funcionalidad de desplegable está ahora en el tag <details> nativo de HTML.
         console.log("Usando funcionalidad nativa de HTML details.");
     }
 </script>
