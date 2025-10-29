@@ -307,245 +307,234 @@ Summary: Cualquier otra información que sea de utilidad o se considere relevant
 <p>Maestro Rodrigo González Morales, Secretario Técnico y de Planeación</p>
 <h4>Fecha de validación</h4>
 <p>10 de octubre de 2025</p>
-<p><html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparencia - Tabuladores y Enlaces</title></p>
-<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
-    <span class="c">/* Estilos Globales */</span>
-    <span class="nt">body</span> <span class="p">{</span>
-        <span class="k">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f4f4f4</span><span class="p">;</span> <span class="c">/* Fondo gris claro */</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
+<style>
+    /* Estilos Globales */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; 
+        margin: 0;
+        padding: 0;
+    }
 
-    <span class="p">.</span><span class="nc">pagina-contenedor</span> <span class="p">{</span>
-        <span class="k">max-width</span><span class="p">:</span> <span class="mi">900</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
-    <span class="p">}</span>
+    .pagina-contenedor {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-    <span class="c">/* Cabecera (Parte superior de la imagen) */</span>
-    <span class="p">.</span><span class="nc">cabecera</span> <span class="p">{</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#555</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Cabecera (Similar a Imagen 2) */
+    .cabecera {
+        padding: 10px 20px;
+        text-align: left;
+        color: #555;
+        font-size: 14px;
+    }
 
-    <span class="p">.</span><span class="nc">cabecera</span> <span class="nt">p</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span> <span class="p">{</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
+    .cabecera p:nth-child(1) {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-    <span class="nt">h1</span> <span class="p">{</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
-    <span class="p">}</span>
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin: 30px 0;
+        font-weight: normal;
+    }
 
-    <span class="c">/* Estilos para la lista de Tabuladores (Imagen 1) */</span>
-    <span class="p">.</span><span class="nc">lista-tabuladores</span> <span class="p">{</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Estilos para la lista de Tabuladores (Imagen 2) */
+    .lista-tabuladores {
+        padding: 0 20px;
+    }
 
-    <span class="p">.</span><span class="nc">btn-tabulador</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#c0c0c0</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">background-color</span> <span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
-    <span class="p">}</span>
+    .btn-tabulador {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: 1px solid #c0c0c0;
+        transition: background-color 0.2s;
+    }
 
-    <span class="c">/* Estilo del primer botón (Tabulador Magistrados) */</span>
-    <span class="p">.</span><span class="nc">btn-tabulador</span><span class="p">.</span><span class="nc">dark-bg</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#4a5568</span><span class="p">;</span> <span class="c">/* Gris oscuro/azul oscuro */</span>
-        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-        <span class="k">border-color</span><span class="p">:</span> <span class="mh">#4a5568</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Estilo del primer botón (Tabulador Magistrados) */
+    .btn-tabulador.dark-bg {
+        background-color: #4a5568; 
+        color: white;
+        border-color: #4a5568;
+    }
 
-    <span class="c">/* Estilo de los otros botones */</span>
-    <span class="p">.</span><span class="nc">btn-tabulador</span><span class="p">.</span><span class="nc">light-bg</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#d1d1c1</span><span class="p">;</span> <span class="c">/* Gris arena/claro similar al de la imagen */</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">border-color</span><span class="p">:</span> <span class="mh">#a0a090</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Estilo de los otros botones */
+    .btn-tabulador.light-bg {
+        background-color: #d1d1c1; 
+        color: #333;
+        border-color: #a0a090;
+    }
 
-    <span class="p">.</span><span class="nc">btn-tabulador</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">;</span>
-    <span class="p">}</span>
+    .btn-tabulador:hover {
+        opacity: 0.9;
+    }
 
-    <span class="c">/* Indicador de flecha a la derecha */</span>
-    <span class="p">.</span><span class="nc">flecha-indicadora</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> 
-        <span class="k">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> 
-        <span class="k">border-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">transparent</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">transparent</span><span class="p">;</span>
-        <span class="k">border-left</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span> <span class="c">/* La &quot;punta&quot; de la flecha */</span>
-        <span class="k">margin-left</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Indicador de flecha a la derecha */
+    .flecha-indicadora {
+        width: 0; 
+        height: 0; 
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid; 
+        margin-left: 10px;
+    }
 
-    <span class="p">.</span><span class="nc">dark-bg</span> <span class="p">.</span><span class="nc">flecha-indicadora</span> <span class="p">{</span>
-        <span class="k">border-left-color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-    <span class="p">}</span>
+    .dark-bg .flecha-indicadora {
+        border-left-color: white;
+    }
 
-    <span class="p">.</span><span class="nc">light-bg</span> <span class="p">.</span><span class="nc">flecha-indicadora</span> <span class="p">{</span>
-        <span class="k">border-left-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-    <span class="p">}</span>
+    .light-bg .flecha-indicadora {
+        border-left-color: #333;
+    }
 
 
-    <span class="c">/* Sección de Vínculos (Contenido de la Imagen 2) */</span>
-    <span class="p">.</span><span class="nc">seccion-vinculos</span> <span class="p">{</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Sección de Vínculos (Contenido de la Imagen 1) */
+    .seccion-vinculos {
+        padding: 20px;
+        font-size: 14px;
+        color: #333;
+    }
 
-    <span class="p">.</span><span class="nc">fecha-valid-enlaces</span> <span class="p">{</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
+    .fecha-valid-enlaces {
+        margin-bottom: 5px;
+    }
 
-    <span class="p">.</span><span class="nc">lista-enlaces</span> <span class="p">{</span>
-        <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
-    <span class="p">}</span>
+    .lista-enlaces {
+        list-style: none;
+        padding: 0;
+        line-height: 1.5;
+    }
 
-    <span class="p">.</span><span class="nc">lista-enlaces</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
+    .lista-enlaces li a {
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding: 2px 0;
+    }
 
-    <span class="p">.</span><span class="nc">lista-enlaces</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#369</span><span class="p">;</span>
-    <span class="p">}</span>
+    .lista-enlaces li a:hover {
+        text-decoration: underline;
+        color: #369;
+    }
 
 
-    <span class="c">/* Pie de Página (Mapa del Sitio) */</span>
-    <span class="p">.</span><span class="nc">mapa-sitio</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#4a5568</span><span class="p">;</span> <span class="c">/* Mismo color del botón oscuro de arriba */</span>
-        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></div>
+    /* Pie de Página (Mapa del Sitio) */
+    .mapa-sitio {
+        background-color: #4a5568; 
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+</style>
 
-<p></head></p>
-<body>
-    <div class="pagina-contenedor">
+<div class="pagina-contenedor">
 
-        <header class="cabecera">
-            <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
-            <p>Fecha de validación</p>
-            <p>10 de octubre de 2025</p>
-        </header>
+    <header class="cabecera">
+        <p>Lic. Myriam Fuentes Pedraza, Directora de Recursos Humanos</p>
+        <p>Fecha de validación</p>
+        <p>10 de octubre de 2025</p>
+    </header>
 
-        <h1>Tabuladores</h1>
+    <h1>Tabuladores</h1>
 
-        <div class="lista-tabuladores">
-            <a href="URL_Tabulador_Magistrados" class="btn-tabulador dark-bg">
-                <span>Tabulador Magistrados</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Tabulador_Judiciales" class="btn-tabulador light-bg">
-                <span>Tabulador Judiciales u Homólogos</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Tabulador_Administrativos" class="btn-tabulador light-bg">
-                <span>Tabulador Administrativos</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Tabulador_Defensoria" class="btn-tabulador light-bg">
-                <span>Tabulador Defensoría</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Tabulador_SUTGE" class="btn-tabulador light-bg">
-                <span>Tabulador SUTGE</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Fomento_Educacion" class="btn-tabulador light-bg">
-                <span>Fomento a la Educación</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-            <a href="URL_Fomento_Familia" class="btn-tabulador light-bg">
-                <span>Fomento a la Familia</span>
-                <span class="flecha-indicadora"></span>
-            </a>
-        </div>
-
-        <br><br>
-
-        <div class="seccion-vinculos">
-            <p class="fecha-valid-enlaces">Fecha de validación</p>
-            <p class="fecha-valid-enlaces">10 de octubre de 2025</p>
-
-            <ul class="lista-enlaces">
-                <li><a href="URL_Mensajes_y_Ponencias">Mensajes y Ponencias del Magistrado Miguel Felipe Mery Ayup</a></li>
-                <li><a href="URL_Acuerdos_Consejo">Acuerdos del Consejo de la Judicatura</a></li>
-                <li><a href="URL_Armonizacion_Contable">Armonización Contable</a></li>
-                <li><a href="URL_Aviso_de_Privacidad">Aviso de Privacidad</a></li>
-                <li><a href="URL_Transparencia_Proactiva">Transparencia Proactiva</a></li>
-                <li><a href="URL_Calendario_de_Laborales">Calendario de Labores</a></li>
-                <li><a href="URL_Edictos_en_Linea">Edictos en Línea</a></li>
-                <li><a href="URL_Expediente_Virtual">Expediente Virtual</a></li>
-                <li><a href="URL_Peritos_Auxiliares">Peritos Auxiliares de la Administración de Justicia</a></li>
-                <li><a href="URL_Presentacion_de_Quejas">Presentación de Quejas</a></li>
-                <li><a href="URL_Sesiones">Sesiones</a></li>
-                <li><a href="URL_Boletines_Judiciales">Boletines Judiciales</a></li>
-                <li><a href="URL_Version_Publica_Sentencias">Versión Pública de Sentencias</a></li>
-                <li><a href="URL_News_Letters">News Letters</a></li>
-                <li><a href="URL_Acuerdos_del_Pleno">Acuerdos del Pleno</a></li>
-                <li><a href="URL_Comunicados">Comunicados</a></li>
-                <li><a href="URL_Convocatorias">Convocatorias del Pleno del Tribunal Superior de Justicia</a></li>
-                <li><a href="URL_Derechos_Humanos_Genero">Derechos Humanos e Igualdad de Género</a></li>
-                <li><a href="URL_Noticias">Noticias</a></li>
-                <li><a href="URL_Fuentes_RSS">Fuentes RSS</a></li>
-                <li><a href="URL_Podcast">Podcast Poder Judicial al Aire</a></li>
-                <li><a href="URL_Politica_Estatal_Anticorrupcion">Política Estatal Anticorrupción Coahuila</a></li>
-                <li><a href="URL_Certificacion_Mediacion_Conciliacion">Procedimientos de Certificación para Facilitadores en Mediación y Conciliación</a></li>
-                <li><a href="URL_Transmisiones_en_Vivo">Tabla con las Transmisiones de las Sesiones en Vivo</a></li>
-                <li><a href="URL_Tabla_Acuerdos">Tabla con los Acuerdos del Consejo y del Pleno</a></li>
-                <li><a href="URL_Juzgados_por_Materia">Juzgados por Materia</a></li>
-                <li><a href="URL_Juzgados_por_Distrito">Juzgados por Distrito</a></li>
-                <li><a href="URL_Tabla_Aplicabilidad_LGTAIP">Tabla de Aplicabilidad - Artículo 27 LGTAIP</a></li>
-                <li><a href="URL_Tabla_Actualizacion_LGTAIP">Tabla de Actualización y Conservación - Artículo 70 LGTAIP</a></li>
-                <li><a href="URL_Procedimiento_Certificacion">Procedimiento de Certificación para facilitadores en mediación y conciliación</a></li>
-                <li><a href="URL_Lista_Personas_Certificadas">Listado de personas certificadas vigentes como facilitadores privados en mediación</a></li>
-                <li><a href="URL_Registro_Titulos">Registro de Títulos Profesionales</a></li>
-                <li><a href="URL_Examen_Meritos">Examen de Méritos</a></li>
-                <li><a href="URL_REDAM">Registro Estatal de Deudores Alimentarios Morosos (REDAM)</a></li>
-                <li><a href="URL_REPSVM">Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres (REPSVM)</a></li>
-                <li><a href="URL_Abogados_Registrados">Abogados Registrados</a></li>
-            </ul>
-        </div>
-
-        <div class="mapa-sitio">
-            Mapa del Sitio
-        </div>
-
+    <div class="lista-tabuladores">
+        <a href="URL_Tabulador_Magistrados" class="btn-tabulador dark-bg">
+            <span>Tabulador Magistrados</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Tabulador_Judiciales" class="btn-tabulador light-bg">
+            <span>Tabulador Judiciales u Homólogos</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Tabulador_Administrativos" class="btn-tabulador light-bg">
+            <span>Tabulador Administrativos</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Tabulador_Defensoria" class="btn-tabulador light-bg">
+            <span>Tabulador Defensoría</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Tabulador_SUTGE" class="btn-tabulador light-bg">
+            <span>Tabulador SUTGE</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Fomento_Educacion" class="btn-tabulador light-bg">
+            <span>Fomento a la Educación</span>
+            <span class="flecha-indicadora"></span>
+        </a>
+        <a href="URL_Fomento_Familia" class="btn-tabulador light-bg">
+            <span>Fomento a la Familia</span>
+            <span class="flecha-indicadora"></span>
+        </a>
     </div>
 
-</body>
-<p></html></p>
+    <br><br>
+
+    <div class="seccion-vinculos">
+        <p class="fecha-valid-enlaces">Fecha de validación</p>
+        <p class="fecha-valid-enlaces">10 de octubre de 2025</p>
+
+        <ul class="lista-enlaces">
+            <li><a href="URL_Mensajes_y_Ponencias">Mensajes y Ponencias del Magistrado Miguel Felipe Mery Ayup</a></li>
+            <li><a href="URL_Acuerdos_Consejo">Acuerdos del Consejo de la Judicatura</a></li>
+            <li><a href="URL_Armonizacion_Contable">Armonización Contable</a></li>
+            <li><a href="URL_Aviso_de_Privacidad">Aviso de Privacidad</a></li>
+            <li><a href="URL_Transparencia_Proactiva">Transparencia Proactiva</a></li>
+            <li><a href="URL_Calendario_de_Laborales">Calendario de Labores</a></li>
+            <li><a href="URL_Edictos_en_Linea">Edictos en Línea</a></li>
+            <li><a href="URL_Expediente_Virtual">Expediente Virtual</a></li>
+            <li><a href="URL_Peritos_Auxiliares">Peritos Auxiliares de la Administración de Justicia</a></li>
+            <li><a href="URL_Presentacion_de_Quejas">Presentación de Quejas</a></li>
+            <li><a href="URL_Sesiones">Sesiones</a></li>
+            <li><a href="URL_Boletines_Judiciales">Boletines Judiciales</a></li>
+            <li><a href="URL_Version_Publica_Sentencias">Versión Pública de Sentencias</a></li>
+            <li><a href="URL_News_Letters">News Letters</a></li>
+            <li><a href="URL_Acuerdos_del_Pleno">Acuerdos del Pleno</a></li>
+            <li><a href="URL_Comunicados">Comunicados</a></li>
+            <li><a href="URL_Convocatorias">Convocatorias del Pleno del Tribunal Superior de Justicia</a></li>
+            <li><a href="URL_Derechos_Humanos_Genero">Derechos Humanos e Igualdad de Género</a></li>
+            <li><a href="URL_Noticias">Noticias</a></li>
+            <li><a href="URL_Fuentes_RSS">Fuentes RSS</a></li>
+            <li><a href="URL_Podcast">Podcast Poder Judicial al Aire</a></li>
+            <li><a href="URL_Politica_Estatal_Anticorrupcion">Política Estatal Anticorrupción Coahuila</a></li>
+            <li><a href="URL_Certificacion_Mediacion_Conciliacion">Procedimientos de Certificación para Facilitadores en Mediación y Conciliación</a></li>
+            <li><a href="URL_Transmisiones_en_Vivo">Tabla con las Transmisiones de las Sesiones en Vivo</a></li>
+            <li><a href="URL_Tabla_Acuerdos">Tabla con los Acuerdos del Consejo y del Pleno</a></li>
+            <li><a href="URL_Juzgados_por_Materia">Juzgados por Materia</a></li>
+            <li><a href="URL_Juzgados_por_Distrito">Juzgados por Distrito</a></li>
+            <li><a href="URL_Tabla_Aplicabilidad_LGTAIP">Tabla de Aplicabilidad - Artículo 27 LGTAIP</a></li>
+            <li><a href="URL_Tabla_Actualizacion_LGTAIP">Tabla de Actualización y Conservación - Artículo 70 LGTAIP</a></li>
+            <li><a href="URL_Procedimiento_Certificacion">Procedimiento de Certificación para facilitadores en mediación y conciliación</a></li>
+            <li><a href="URL_Lista_Personas_Certificadas">Listado de personas certificadas vigentes como facilitadores privados en mediación</a></li>
+            <li><a href="URL_Registro_Titulos">Registro de Títulos Profesionales</a></li>
+            <li><a href="URL_Examen_Meritos">Examen de Méritos</a></li>
+            <li><a href="URL_REDAM">Registro Estatal de Deudores Alimentarios Morosos (REDAM)</a></li>
+            <li><a href="URL_REPSVM">Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres (REPSVM)</a></li>
+            <li><a href="URL_Abogados_Registrados">Abogados Registrados</a></li>
+        </ul>
+    </div>
+
+    <div class="mapa-sitio">
+        Mapa del Sitio
+    </div>
+
+</div>
     </div>
 </article>
     </main>
