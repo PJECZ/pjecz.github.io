@@ -293,11 +293,16 @@
         /* Configuración para dos columnas */
         display: grid;
         grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-        gap: 5px 15px; /* Espacio vertical (5px) y horizontal (15px) */
+
+        /* 🔥 Bloque Contínuo (Sin espacios entre botones) 🔥 */
+        gap: 0; 
+        border: 1px solid #a0a090; /* Borde exterior al bloque completo */
+        border-radius: 4px; /* Esquinas redondeadas al bloque completo */
+        overflow: hidden; /* Importante para el radio de borde */
     }
     .lista-botones li {
         margin-bottom: 0; 
-        border-radius: 4px;
+        border-radius: 0; 
     }
     .btn-enlace {
         display: flex;
@@ -308,15 +313,23 @@
         text-decoration: none;
         font-size: 16px;
         font-weight: 500;
-        border-radius: 4px;
         box-sizing: border-box;
 
         /* Color uniforme gris claro */
         background-color: #d1d1c1; 
         color: #333;
-        border: 1px solid #a0a090;
+
+        /* Líneas divisorias internas */
+        border: none;
+        border-bottom: 1px solid #a0a090; /* Separación horizontal */
+        border-radius: 0;
         transition: background-color 0.2s;
     }
+    /* Línea divisoria vertical para los botones de la columna izquierda (posiciones impares) */
+    .lista-botones li:nth-child(odd) .btn-enlace {
+        border-right: 1px solid #a0a090;
+    }
+
     .btn-enlace:hover {
         background-color: #c0c0b0; 
     }
@@ -334,7 +347,7 @@
 
 <div class="pagina-contenedor">
 
-    <h2>Vínculos de Transparencia</h2>
+    <h2>Otra información que sea de utilidad</h2>
 
     <ul class="lista-botones">
         <li>
