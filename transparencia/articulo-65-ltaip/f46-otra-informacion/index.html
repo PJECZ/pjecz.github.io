@@ -310,12 +310,14 @@ Summary: Cualquier otra información que sea de utilidad o se considere relevant
 <style>
     /* Estilos Generales y Contenedor */
     .pagina-contenedor {
+        /* SOLUCIÓN 2: Eliminamos el recuadro blanco para que el contenido se muestre sobre el fondo */
         max-width: 900px;
         margin: 20px auto; 
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
+        background-color: transparent; 
+        box-shadow: none; 
+        padding: 0; 
     }
+
     h2 {
         font-family: Arial, sans-serif;
         font-size: 24px;
@@ -326,9 +328,10 @@ Summary: Cualquier otra información que sea de utilidad o se considere relevant
 
     /* Estilos de la Lista y los Botones */
     .lista-botones {
-        list-style: none; /* Quita los puntos de la lista */
-        padding: 0;
-        margin: 0;
+        list-style: none;
+        padding: 0 20px; 
+        margin: 0 auto;
+        max-width: 860px; 
         font-family: Arial, sans-serif;
     }
     .lista-botones li {
@@ -347,7 +350,7 @@ Summary: Cualquier otra información que sea de utilidad o se considere relevant
         border-radius: 4px;
         box-sizing: border-box;
 
-        /* Colores del botón claro ("Tabulador Judiciales...") */
+        /* SOLUCIÓN 1: Color gris claro estándar para TODOS los botones */
         background-color: #d1d1c1; 
         color: #333;
         border: 1px solid #a0a090;
@@ -355,16 +358,6 @@ Summary: Cualquier otra información que sea de utilidad o se considere relevant
     }
     .btn-enlace:hover {
         background-color: #c0c0b0; 
-    }
-
-    /* Estilo del Botón Oscuro (para el primer elemento, si se desea el contraste) */
-    .lista-botones li:first-child .btn-enlace {
-         background-color: #4a5568; 
-         color: white;
-         border-color: #4a5568;
-    }
-    .lista-botones li:first-child .flecha-indicadora {
-         border-left-color: white;
     }
 
     /* Estilo de la Flecha Indicadora */
