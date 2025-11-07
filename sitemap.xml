@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-11-04T16:03:50-00:00</lastmod>
+<lastmod>2025-11-07T10:24:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9307,6 +9307,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/septima-sesion-ordinaria/</loc>
+<lastmod>2025-11-13T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/septima-sesion-ordinaria/</loc>
 <lastmod>2025-11-11T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9316,6 +9323,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-tercera-sesion-ordinaria/</loc>
 <lastmod>2025-11-05T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-septima-sesion-ordinaria/</loc>
+<lastmod>2025-11-05T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -9342,8 +9356,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-sexta-sesion-ordinaria/</loc>
+<lastmod>2025-10-29T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-primera-sesion-ordinaria/</loc>
 <lastmod>2025-10-23T11:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-quinta-sesion-ordinaria/</loc>
+<lastmod>2025-10-22T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -9386,6 +9414,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-pleno/2025/2025-10-15-acuerdo-facultatr-consejo-transparencia/</loc>
 <lastmod>2025-10-15T14:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2025-10-15T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
