@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-11-14T13:13:00-00:00</lastmod>
+<lastmod>2025-11-18T08:59:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9307,6 +9307,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/octava-sesion-ordinaria/</loc>
+<lastmod>2025-11-28T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/octava-sesion-ordinaria/</loc>
+<lastmod>2025-11-27T14:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-quinta-sesion-ordinaria/</loc>
+<lastmod>2025-11-19T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/acuerdos-del-pleno/2025/2025-11-13-acuerdo-representante-ante-la-comision-de-archivo/</loc>
 <lastmod>2025-11-13T14:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9315,7 +9336,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/septima-sesion-ordinaria/</loc>
-<lastmod>2025-11-13T10:00:00-06:00</lastmod>
+<lastmod>2025-11-13T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -10420,7 +10441,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/octava-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/octava-sesion-ordinaria-anterior/</loc>
 <lastmod>2025-02-26T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
