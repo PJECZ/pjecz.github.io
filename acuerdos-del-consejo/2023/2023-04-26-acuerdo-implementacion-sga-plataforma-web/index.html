@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Pelican Static Site Generator, Powered by Python">     <meta name="description" content="Mediante el cual se aprueba la implementación del Sistema Digital de Gestión de Documentos de Archivo (SIGDDA) y que funcionará como un módulo adicional en la Plataforma Web. Fecha de publicación 26 de abril de 2023.">
+    <meta name="author" content="PJECZ">
+    <!-- Facebook open graph -->
+    <meta property="og:title" content="Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-04-26-acuerdo-implementacion-sga-plataforma-web/">
+    <meta property="og:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
+    <meta property="og:description" content="Mediante el cual se aprueba la implementación del Sistema Digital de Gestión de Documentos de Archivo (SIGDDA) y que funcionará como un módulo adicional en la Plataforma Web. Fecha de publicación 26 de abril de 2023.">
+    <meta property="og:site_name" content="Poder Judicial del Estado de Coahuila de Zaragoza">
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PJCoah">
+    <meta name="twitter:title" content="Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza">
+    <meta name="twitter:description" content="Mediante el cual se aprueba la implementación del Sistema Digital de Gestión de Documentos de Archivo (SIGDDA) y que funcionará como un módulo adicional en la Plataforma Web. Fecha de publicación 26 de abril de 2023.">
+    <meta name="twitter:image" content="https://www.pjecz.gob.mx/theme/images/generic.jpg">
+    <title>Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza - Poder Judicial del Estado de Coahuila de Zaragoza</title>
+    <!-- Iconos -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.pjecz.gob.mx/favicon.ico">
+    <link rel="icon" href="https://www.pjecz.gob.mx/theme/images/icon-hires.png" sizes="192x192">
+    <link rel="icon" href="https://www.pjecz.gob.mx/theme/images/icon-normal.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="https://www.pjecz.gob.mx/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://www.pjecz.gob.mx/theme/images/apple-touch-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="https://www.pjecz.gob.mx/theme/images/apple-touch-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="https://www.pjecz.gob.mx/theme/images/apple-touch-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="https://www.pjecz.gob.mx/theme/images/apple-touch-icon-180x180.png" sizes="180x180">
+    <!-- RSS feeds -->
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/all.rss.xml" type="application/rss+xml" title="PJECZ Todos" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-consejo.rss.xml" type="application/rss+xml" title="PJECZ Acuerdos del Consejo" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-pleno.rss.xml" type="application/rss+xml" title="PJECZ Acuerdos del Pleno" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/comunicados.rss.xml" type="application/rss+xml" title="PJECZ Comunicados" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/entrevistas.rss.xml" type="application/rss+xml" title="PJECZ Entrevistas" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/news-letters.rss.xml" type="application/rss+xml" title="PJECZ News Letters" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/noticias.rss.xml" type="application/rss+xml" title="PJECZ Noticias" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/pleno-del-tribunal-superior-de-justicia.rss.xml" type="application/rss+xml" title="PJECZ Pleno del Tribunal Superior de Justicia" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sala-civil-y-familiar.rss.xml" type="application/rss+xml" title="PJECZ Sala Civil y Familiar" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sala-civil-y-mercantil.rss.xml" type="application/rss+xml" title="PJECZ Sala Civil y Mercantil" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sala-familiar.rss.xml" type="application/rss+xml" title="PJECZ Sala Familiar" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sala-penal.rss.xml" type="application/rss+xml" title="PJECZ Sala Penal" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sala-regional.rss.xml" type="application/rss+xml" title="PJECZ Sala Regional" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/sesiones.rss.xml" type="application/rss+xml" title="PJECZ Sesiones" />
+    <link rel="alternate" href="https://www.pjecz.gob.mx/feeds/tribunal-constitucional.rss.xml" type="application/rss+xml" title="PJECZ Tribunal Constitucional" />
+    <!-- Twitter Bootstrap 4.6 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"/>
+    <!-- Datatables.net -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.1/css/dataTables.dateTime.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/af111b85f5.js"></script>
+    <!-- Stylesheets del tema -->
+    <link rel="stylesheet" href="https://www.pjecz.gob.mx/theme/css/pjecz.css">
+    <!-- Stylesheets del tema accesibilidades -->
+    <link rel="stylesheet" href="https://www.pjecz.gob.mx/theme/css/accesibilidades.css">
+    <!-- Stylesheets individuales -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164475591-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-164475591-1');</script></head>
+
+<body>
+    <header>
+<!-- Navegacion Logotipo y Redes -->
+<nav id="navegacion_logo" class="navbar navbar-expand-md py-2">
+    <div class="container">
+        <a class="navbar-brand" href="https://www.pjecz.gob.mx"><img src="https://www.pjecz.gob.mx/theme/images/navegacion-logotipo-noviembre.png" alt="PJECZ" width="340px"></a>
+        <div class="collapse navbar-collapse" id="navbarsNavegacionIconos">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link navegacion_icon" href="https://twitter.com/PJCoah" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navegacion_icon" href="https://www.facebook.com/pjcoah" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navegacion_icon" href="https://vimeo.com/user103229504" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-vimeo fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navegacion_icon" href="https://www.youtube.com/channel/UCJ7eJJ-uE-J3yoreEDqLvHg" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><!-- Navegacion Menu -->
+<nav id="navegacion_menu" class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsNavegacion" aria-controls="navbarsNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsNavegacion">
+            <ul class="navbar-nav mr-auto">
+                <!-- CONOCENOS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConocenos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Conócenos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownConocenos">
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/conocenos/quienes-somos/">¿Quiénes Somos?</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/conocenos/estructura/">Estructura</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/observatorio-judicial/">Observatorio Judicial</a></li>
+                    </ul>
+                </li>
+                <!-- CONSULTAS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConsultas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Consultas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownConsultas">
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo1.html">Acuerdos del Consejo</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/acuerdos-del-pleno1.html">Acuerdos del Pleno</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/agenda-audiencias/">Agenda de Audiencias</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/citas/">Citas</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/edictos/">Edictos en Línea</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/">Listas de Acuerdos</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/poder-en-linea/">Poder en Línea</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/tesis-jurisprudencias/">Tesis y Jurisprudencias</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/tramites-y-servicios/">Trámites y Servicios</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/sentencias/">Versión Pública de Sentencias</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/consultas/">Más...</a></li>
+                    </ul>
+                </li>
+                <!-- SALA DE PRENSA -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownSalaDePrensa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sala de Prensa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSalaDePrensa">
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/boletines-judiciales/">Boletines Judiciales</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/calendario-de-labores/">Calendario de Labores</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/comunicados1.html">Comunicados</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/entrevistas1.html">Entrevistas</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/noticias1.html">Noticias</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/news-letters1.html">News Letters</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdownSesiones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sesiones</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownSesiones">
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/pleno-del-tribunal-superior-de-justicia1.html">Pleno del TSJ</a></li>
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/sala-civil-y-mercantil1.html">Sala Civil y Mercantil</a></li>
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/sala-familiar1.html">Sala Familiar</a></li>
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/sala-penal1.html">Sala Penal</a></li>
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/sala-regional1.html">Sala Regional</a></li>
+                                <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/category/tribunal-constitucional1.html">Tribunal Constitucional</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- TRANSPARENCIA -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownTransparencia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transparencia</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownTransparencia">
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/transparencia/">Transparencia</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/transparencia-tca/">Transparencia TCA</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/transparencia-proactiva/">Transparencia Proactiva</a></li>
+                        <li><a class="dropdown-item" href="https://www.pjecz.gob.mx/armonizacion-contable/">Armonización Contable</a></li>
+                    </ul>
+                </li>
+                <!-- JUSTICIA PARA TI -->
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="https://www.pjecz.gob.mx/justicia-para-ti/">Estudiantes</a>
+                </li>
+            </ul>
+            <div class="navbar-form navbar-right" style="min-width: 300px;">
+                <!-- Google busqueda programable -->
+                <script async src="https://cse.google.com/cse.js?cx=175cec5e233bb0464"></script>
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+    </div>
+</nav><!-- Boton regresar al inicio -->   
+<div>
+    <button class="boton-flotante"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+</div>
+<!-- Botones de accesibilidades -->
+<div class="accessibility-bar">
+    <ul class="accessibility-barList">
+        <li class="accessibility-barItem">
+            <button id="toggle-theme-btn" onclick="cambiarModo()"><i id="icono-tema" class="fa fa-moon-o" aria-hidden="true"></i></button>
+        </li>
+        <li class="accessibility-barItem">
+            <button id="increase-font-size" onclick="increaseFontSize()">A+</button>
+        </li>
+        <li class="accessibility-barItem">
+            <button id="decrease-font-size" onclick="decreaseFontSize()">A-</button>
+        </li>
+    </ul>
+</div>    <!-- Encabezado -->
+    <div class="py-2">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-4 mt-5 mb-2">Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza</h1>
+                    <p class="lead mb-5">Mediante el cual se aprueba la implementación del Sistema Digital de Gestión de Documentos de Archivo (SIGDDA) y que funcionará como un módulo adicional en la Plataforma Web. Fecha de publicación 26 de abril de 2023.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+    <!-- Contenido -->
+    <article>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Article",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Poder Judicial del Estado de Coahuila de Zaragoza",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.pjecz.gob.mx/theme/images/pjecz.png"
+                    },
+                    "url": "https://www.pjecz.gob.mx"
+                },
+                "author": "PJECZ",
+                "name": "Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza",
+                "headline": "Acuerdo C-069/2023 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza",
+                "description": "Mediante el cual se aprueba la implementación del Sistema Digital de Gestión de Documentos de Archivo (SIGDDA) y que funcionará como un módulo adicional en la Plataforma Web. Fecha de publicación 26 de abril de 2023.",
+                "dateCreated": "2023-04-26 15:30:00-05:00",
+                "datePublished": "2023-04-26 15:30:00-05:00",
+                "dateModified": "2023-04-26 15:30:00-05:00",
+                "image": "https://www.pjecz.gob.mx/theme/images/generic.jpg",                "url": "https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-04-26-acuerdo-implementacion-sga-plataforma-web/"
+            }
+        </script>
+        <div class="container py-4">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../../">Acuerdos del Consejo</a></li>
+<li class="breadcrumb-item"><a href="../">2023</a></li>
+<li class="breadcrumb-item active" aria-current="page">2023-04-26 Acuerdo implementación SGA Plataforma web</li>
+</ol>
+</nav>
+
+<p>Key: AC20230426</p>
+<p>Consejero Presidente: Miguel Felipe Mery Ayup.</p>
+<p>Secretaria de Estudio y Cuenta: Erika Nohemí Hernández Dávila.</p>
+<p><strong>Resumen.</strong> En este acuerdo se aprueba la implementación del Sistema Digital de Gestión de Archivo (SIGDDA), a través de la adición del módulo Archivo en la Plataforma Web. Se describen las funciones que tendrán las personas que operarán el SIGDDA, así como las mejoras que habrá con su operación. Además, en este acuerdo se aprueba la fecha en la que iniciará el periodo de prueba del SIGDDA. Finalmente, se instruye a las autoridades competentes para el debido cumplimiento del acuerdo.</p>
+<p>Saltillo, Coahuila de Zaragoza. Acuerdo correspondiente a la sesión del 25 de abril de 2023.</p>
+<h2>I. CONSIDERACIONES</h2>
+<p><strong>1. Antecedentes</strong></p>
+<p>El Consejo de la Judicatura el 29 de octubre de 2020, emitió el acuerdo C-127/2020, en el que se implementó el Sistema Integral de Búsqueda de Expedientes y Digitalización (en adelante “SIBED”).</p>
+<p>El SIBED, es una herramienta que tras su implementación formó parte del sistema digital confiable al que se refiere el artículo 154 de la Constitución Local. El SIBED, se integró al sistema Poder en línea, el cual se conforma a su vez, de otros mecanismos como el Buzón Electrónico de Demandas y Promociones (BEDP), el Sistema de Cita en Línea (SCL) y el Expediente Virtual 2.0 (EV2.0).</p>
+<p>El SIBED es una herramienta tecnológica que, permite a los órganos jurisdiccionales y al Archivo Judicial General visualizar, buscar, enviar, recibir, acomodar y consultar digitalmente los datos de los expedientes y documentos administrativos del Poder Judicial del Estado.</p>
+<p>El SIBED se implementó con la finalidad de facilitar la búsqueda y consulta de expedientes para las personas usuarias.</p>
+<p>Asimismo, el Consejo de la Judicatura, en sesión celebrada el 15 de junio de 2021, emitió el acuerdo C-096/2021 mediante el cual se da seguimiento a la implementación del SIBED.</p>
+<p>En este acuerdo el Consejo de la Judicatura, aprobó la propuesta de la segunda etapa de implementación del SIBED, conforme a los términos establecidos y se autorizó ampliar el proceso de digitalización de expedientes de los distritos judiciales de Saltillo y Torreón para abarcar aquellos relativos a los años 2010 y 2014.</p>
+<p>El SIBED ha estado en funciones en el Poder Judicial de Estado de Coahuila durante más de 2 años, bajo la modalidad señalada en los respectivos acuerdos del Consejo de la Judicatura.</p>
+<p>En la actualidad la Oficialía Mayor a través de la Dirección de Informática y la Dirección de Innovación, cuenta con personal con los conocimientos necesarios y las herramientas adecuadas para desarrollar sistemas informáticos eficientes de calidad, sin que genere un costo adicional por su desarrollo y mantenimiento.</p>
+<p>En ese sentido, el Consejo de la Judicatura estima pertinente sustituir el SIBED con la implementación del Sistema de Gestión Digital de Documentos de Archivo (en adelante “SIGDDA”), como un módulo adicional en la Plataforma Web.</p>
+<p>El SIGDDA beneficiará al interior en el Poder Judicial, en el manejo de la documentación digital, se podrá contar con inventarios confiables, será posible la reducción del uso de hojas y como es un programa desarrollado por el propio personal de la Oficialía Mayor, no generará un gasto económico a esta institución.</p>
+<p><strong>2. Facultades del Consejo de la Judicatura para emitir el presente acuerdo</strong></p>
+<p>El Consejo de la Judicatura es el órgano de administración, vigilancia y disciplina del Poder Judicial del Estado de Coahuila de Zaragoza, según lo establece el artículo 143 de la Constitución Política del Estado de Coahuila de Zaragoza.</p>
+<p>De acuerdo con el artículo 57, fracciones VIII y XI de la Ley Orgánica del Poder Judicial del Estado de Coahuila de Zaragoza (en adelante “LOPJECZ”), el Consejo tiene las siguientes atribuciones: supervisar el funcionamiento de los órganos que integran este poder público, así como el desempeño de sus servidores públicos y dictar las providencias necesarias para el mejoramiento de la administración de justicia; y expedir los acuerdos que sean necesarios para regular el funcionamiento del Poder Judicial y de sus órganos.</p>
+<p>El Archivo Judicial General (en adelante “AJG”) es un órgano administrativo del Poder Judicial del Estado de Coahuila de Zaragoza encargado de la recepción, deposito, resguardo, conservación, orden y clasificación de expedientes y documentos generados por los órganos judiciales y dependencias administrativas del Poder Judicial, así como a proporcionar servicios de consulta a los abogados y público en general que lo requiera1.</p>
+<p>Ahora bien, el Consejo de la Judicatura, es un órgano de administración encargado de emitir las providencias necesarias para el adecuado funcionamiento de los órganos que integran el Poder Judicial del Estado de Coahuila de Zaragoza, todo ello encaminado a contribuir con el mejoramiento de la administración de justicia.</p>
+<p>El 29 de octubre de 2020 el Consejo de la Judicatura del Estado emitió el acuerdo C-127/2020, mediante el cual aprobó la implementación del SIBED. Y en la sesión celebrada el 15 de julio de 202, mediante el acuerdo C-096/2021 el Consejo da seguimiento a la implementación del SIBED.</p>
+<p>En conclusión, el Consejo de la Judicatura tiene las facultades necesarias para aprobar la implementación del Sistema Digital de Gestión de  Documentos de Archivo, que tiene como último fin fortalecer el mecanismo eficiente de intercambio documental interno del Poder Judicial del Estado de Coahuila de Zaragoza, el mejoramiento de la administración de justicia y la regulación de sus órganos, principalmente los juzgados y el AJG.</p>
+<p><strong>3. Justificación para la implementación Sistema de Gestión Digital de Documentos de Archivo (SIGDDA)</strong></p>
+<p>El artículo 154, de la Constitución Política local, prevé como forma de acceso a la justicia de las personas ciudadanas del Estado de Coahuila de Zaragoza, un sistema digital confiable.</p>
+<p>En la actualidad el Consejo de la Judicatura del Estado de Coahuila de Zaragoza, a través de las políticas públicas gestionadas por el Consejero Presidente, que están encaminadas a la modernización e innovación en la forma de impartir justicia en este poder público, ha implementado diversas herramientas digitales que han permitido a las personas usuarias tener un acceso sencillo y rápido a los servicios que se ofrecen en el Poder Judicial del Estado de Coahuila de Zaragoza.</p>
+<p>El Poder en Línea es parte del sistema digital confiable ya referido, y se conforma por el BEDP, SCL, EV2.0, y el SIBED.</p>
+<p>Tales herramientas digitales han permitido que las personas usuarias hagan uso de sistemas informáticos que facilitan el acceso a la justicia. Asimismo, tales herramientas les permiten a estas personas usuarias reducir el tiempo de consulta en el local de los órganos jurisdiccionales.</p>
+<p>En cuanto a la información que se controla dentro de los órganos del Poder Judicial del Estado de Coahuila de Zaragoza, la Oficialía Mayor, a través de las Direcciones de Informática e Innovación ha desarrollado la Plataforma Web.</p>
+<p>La Plataforma Web es un mecanismo eficiente de información en el interior del Poder Judicial, que facilita las actividades jurisdiccionales, como lo son la publicación oportuna de listas de acuerdo, la publicación de las versiones públicas de sentencias definitivas, la publicación de edictos, y la publicación de los demás documentos jurisdiccionales que se emiten en los órganos jurisdiccionales.</p>
+<p>En ese sentido, el Consejo de la Judicatura pone de manifiesto que el SIBED, fue desarrollado por una empresa externa al Poder Judicial del Estado de Coahuila de Zaragoza, por lo tanto su gestión está cargo de un una persona intermediaria, lo que generó y sigue generando un costo adicional para esta institución.</p>
+<p>El Consejo de la Judicatura, pone de manifiesto que el Consejero Presidente ha implementado políticas públicas encaminadas a modernizar la forma en la que se imparte justicia, buscando siempre la innovación y mejoramiento de los servicios que se presentan.</p>
+<p>Como parte de estas políticas públicas, desde el mes de octubre de 2022, en la Oficialía Mayor, de forma específica en la Dirección de Informática y la Dirección de Innovación, desarrollan un sistema que sustituya al SIBED. Este sistema es el SIGDDA y funcionará con la implementación del módulo de Archivo en la Plataforma Web.</p>
+<p>Esto es posible ya que la Dirección de Informática y la Dirección de Innovación de la Oficialía Mayor, hoy en día cuentan con personal debidamente capacitado, que tiene los conocimientos informáticos necesarios para hacer posible el desarrollo de sistemas internos que sean útiles y eficientes, aprovechando al máximo los recursos humanos propios.</p>
+<p>Asimismo, en el desarrollo e implementación de este sistema también ha participado personal del AJG, con la finalidad de tener una perspectiva mucho más amplia de los alcances y los procesos al interior de dicho órgano no jurisdiccional.</p>
+<p>El Consejo de la Judicatura propone el siguiente cronograma de implementación del SIGDDA:</p>
+<p><img src="tabla.png" class="img-fluid"></p>
+<p>De esta manera, este Consejo de la Judicatura estima oportuno sustituir al Sistema Integral de Búsqueda de Expedientes y Digitalización (SIBED) implementado mediante acuerdo C-127/2020, por el Sistema de Gestión Digital de Documentos de Archivo (SIGDDA).</p>
+<p>El SIGDDA consiste en el desarrollo de un módulo adicional en la Plataforma Web, de tal modo que no requiere instalación en los equipos de cómputo utilizados por el personal del Poder Judicial del Estado de Coahuila de Zaragoza. Además que la información y los procesos están almacenados en un servidor propio para que de este modo esté segura la información, y con ello cubrir las necesidades que existen al interior en este poder público.</p>
+<p>La entrega del módulo de Plataforma Web – Archivo, por parte del personal de la Oficialía Mayor, al Archivo Judicial General fue el 30 de marzo de la presente anualidad.</p>
+<p><strong>4. Mejoras con la implementación del SIGDDA</strong></p>
+<p>El Archivo Judicial General, de conformidad con el Reglamento Interior del Archivo Judicial General, los Archivos Distritales y Únicos del Poder Judicial del Estado de Coahuila de Zaragoza, es el órgano del Poder Judicial en el que se depositan y resguardan la documentación jurisdiccional y los legajos administrativos de concentración, así como los archivos históricos que producen las áreas generadoras.</p>
+<p>Dentro del Archivo Judicial General, existen procesos de gestión documental, que están en constante mejora para cumplir con los estándares que demanda la materia archivística.</p>
+<p>De esta manera, la implementación del SIGDDA beneficiará de manera considerable al Archivo Judicial General y los órganos jurisdiccionales en los procesos de trámite, abonando en el tema de resguardo y organización de expedientes al interior del Poder Judicial.</p>
+<p>De este modo al sustituir el SIBED con el SIGDDA, se cubrirán las deficiencias que existen actualmente en la operación del SIBED, pues el personal de la Dirección de Informática y la Dirección de Innovación trabajaron en la creación del sistema para hacer más eficientes los procesos de solicitud de gestión y remesas de documentos al interior del Poder Judicial, y con ello, continuar sumando a la justicia innovadora propuesta por el Magistrado Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Estado.</p>
+<p>Ya que se busca potencializar el uso adecuado de las herramientas tecnológicas y la adopción de nuevos procesos que se desarrollen dentro de la institución, haciendo mucho más sencillo el acceso a los servicios, garantizando a la ciudadanía el acceso a una justicia pronta y expedita.</p>
+<p>Además, con la implementación y desarrollo del SIGDDA por el propio personal de la Oficialía Mayor, no será necesario la operación y mantenimiento a través de un intermediario, y con ello se ahorrará recurso económico del presupuesto, el cual se podrá invertir en otras políticas públicas que beneficien tanto al personal del Poder Judicial del Estado de Coahuila de Zaragoza, como a las personas usuarias.</p>
+<p>Con la implementación de este módulo de Archivo en la Plataforma Web se alcanzarán una serie de objetivos como es la mejora en los procesos de gestión documental y la mejora en los envíos de las remesas, además de contar con inventarios confiables y el uso de procesos informáticos sencillos y adecuados, con los que se busca hacer más eficientes los procesos que se manejan al interior de la Dirección del Archivo Judicial General.</p>
+<p>De igual manera beneficiará al personal de los juzgados, ya que se les facilitará la solicitud de documentos jurisdiccionales y legajos administrativos que están en resguardo del Archivo General, los Archivos Distritales y Únicos.</p>
+<p>El Archivo Judicial General tendrá las siguientes mejoras operativas con la implementación del SIGDDA:</p>
+<div class="highlight"><pre><span></span><code>• Se optimizará el tiempo de trabajo.
+
+• Existirá un mejor control de las personas usuarias.
+
+• El Archivo Judicial General, contará con inventarios confiables y actualizados.
+
+• Habrá una mejora en la administración en las tareas que estén pendientes de realizar.
+
+• Mejora en la gestión documental.
+
+• Fortalecer el mecanismo eficiente de información que ya opera dentro del Poder Judicial.
+
+• Reducción del uso de papel.
+
+• El módulo Archivo, en la Plataforma Web, permitirá al Archivo Judicial General, generar de manera automática las estadísticas solicitadas por la Visitaduría Judicial General.
+
+• Se evitarán retrasos y acumulaciones de trabajo, pues los usuarios de este módulo de Archivo podrán revisar a través de una bandeja de entrada, las tareas que se encuentran pendientes.
+
+• Se contarán con historiales precisos de los movimientos que ha tenido cada expediente.
+</code></pre></div>
+
+<p>Todo ello será posible ya que de conformidad a los datos proporcionados por la Dirección de Informática y la Dirección de Innovación de la Oficialía Mayor, el sistema desarrollado cuenta con las siguientes capacidades:</p>
+<div class="highlight"><pre><span></span><code>• Acceso a través de Plataforma Web, con cuentas individuales.
+
+• Vincular el archivo ubicado en los juzgados con el del Archivo  General.
+
+• Realizar solicitudes de expedientes.
+
+• Registrar el envío de remesas.
+
+• Almacenamiento de un amplio historial de cada movimiento hecho dentro de la Plataforma Web- Archivo
+</code></pre></div>
+
+<p><strong>5. Personal que operará el módulo de Archivo en la Plataforma Web</strong></p>
+<p>El flujo de operaciones del módulo Archivo, tendrá dos actividades esenciales:</p>
+<div class="highlight"><pre><span></span><code>a) Solicitud de expedientes.
+
+b) Envío de remesas.
+</code></pre></div>
+
+<p>Para que sea posible este flujo de operación del módulo de Archivo en la Plataforma Web, será necesaria la colaboración de tres personas:</p>
+<p>-Solicitante: que será la persona que designe el titular del órgano jurisdiccional. Está persona deberá contar con conocimientos en materia archivística y gestión documental.</p>
+<p>-Jefe de remesas: la persona que designe la Dirección del Archivo Judicial General o personal encargado de los Archivos Distritales y Únicos.</p>
+<p>-Archivista: la persona que labore en el Archivo Judicial General, en el Archivo Distrital o en el Archivo Único.</p>
+<p>Estas personas serán capacitadas para el arranque y operación del módulo,  por el personal de la Dirección de Informática  y la Dirección de Innovación de la Oficialía Mayor.</p>
+<p>Asimismo, la Dirección del Archivo Judicial General, colaborará con las dependencias administrativas antes mencionadas con la capacitación del personal que operará el SIGDDA, a través de la Plataforma Web – Archivo.</p>
+<p>Además, en el desarrollo de sus funciones el personal que operará el sistema, podrá auxiliarse de los manuales de usuario de operación que para tal efecto sean expedidos por la Dirección de Informática en conjunto con la Dirección de Innovación, ambas de la Oficialía Mayor.</p>
+<p>Cada una de las personas operadoras del sistema, tendrá funciones específicas.</p>
+<p><strong>5.1.  Funciones de las personas operadoras del módulo de Archivo en la Plataforma Web</strong></p>
+<p>Por su parte la persona solicitante, tendrá como tareas las siguientes:</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">)</span> <span class="n">Realizar</span> <span class="n">la</span> <span class="n">búsqueda</span> <span class="n">de</span> <span class="n">expedientes</span><span class="p">.</span>
+
+<span class="n">b</span><span class="p">)</span> <span class="n">Registrar</span> <span class="n">un</span> <span class="n">nuevo</span> <span class="n">documento</span><span class="p">.</span>
+
+<span class="n">c</span><span class="p">)</span> <span class="n">Editar</span> <span class="n">los</span> <span class="n">documentos</span> <span class="n">dentro</span> <span class="n">del</span> <span class="n">sistema</span><span class="p">.</span>
+
+<span class="n">d</span><span class="p">)</span> <span class="n">Agregar</span> <span class="n">las</span> <span class="n">observaciones</span> <span class="n">pertinentes</span> <span class="n">en</span> <span class="n">los</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">e</span><span class="p">)</span> <span class="n">Realizar</span> <span class="n">la</span> <span class="n">solicitud</span> <span class="n">de</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">f</span><span class="p">)</span> <span class="n">Cancelar</span> <span class="n">las</span> <span class="n">solicitudes</span> <span class="n">de</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">g</span><span class="p">)</span> <span class="n">Recepción</span> <span class="n">de</span> <span class="n">los</span> <span class="n">documentos</span> <span class="n">solicitados</span><span class="p">.</span>
+
+<span class="n">h</span><span class="p">)</span> <span class="n">Envío</span> <span class="n">de</span> <span class="n">remesas</span><span class="p">.</span>
+
+<span class="n">i</span><span class="p">)</span> <span class="n">Impresión</span> <span class="n">de</span> <span class="n">listado</span> <span class="n">de</span> <span class="n">remesas</span><span class="p">.</span>
+
+<span class="n">j</span><span class="p">)</span> <span class="n">Cancelar</span> <span class="n">Remesas</span><span class="p">.</span>
+
+<span class="n">k</span><span class="p">)</span> <span class="n">Pasar</span> <span class="n">al</span> <span class="n">historial</span> <span class="n">solicitudes</span><span class="p">.</span>
+
+<span class="n">l</span><span class="p">)</span> <span class="n">Visualizar</span> <span class="n">la</span> <span class="n">historia</span> <span class="n">de</span> <span class="n">solicitudes</span> <span class="n">y</span> <span class="n">envío</span> <span class="n">de</span> <span class="n">remesas</span> <span class="n">del</span> <span class="n">juzgado</span> <span class="n">respectivo</span><span class="p">.</span>
+
+<span class="n">m</span><span class="p">)</span> <span class="n">Visualizar</span> <span class="n">el</span> <span class="n">detalle</span> <span class="n">de</span> <span class="n">cada</span> <span class="n">documento</span><span class="p">.</span>
+</code></pre></div>
+
+<p>Es importante recalcar que la persona que funja como solicitante en el módulo Archivo de la Plataforma Web, deberá ser una persona del juzgado que designe la persona titular y deberá contar preferentemente con conocimientos en la materia archivística y gestión documental.</p>
+<p>Por parte del Archivo Judicial General, los Archivos Distritales y Únicos, dos personas colaborarán en la operación del módulo Archivo de la Plataforma Web y serán: jefe de remesas y archivista.</p>
+<p>El Jefe de remesas tendrá como funciones operativas las siguientes:</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">)</span> <span class="n">Realizar</span> <span class="n">búsqueda</span> <span class="n">de</span> <span class="n">expedientes</span><span class="p">.</span>
+
+<span class="n">b</span><span class="p">)</span> <span class="n">Registrar</span> <span class="n">un</span> <span class="n">nuevo</span> <span class="n">documento</span><span class="p">.</span>
+
+<span class="n">c</span><span class="p">)</span> <span class="n">Editar</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">d</span><span class="p">)</span> <span class="n">Agregar</span> <span class="n">observaciones</span> <span class="n">a</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">e</span><span class="p">)</span> <span class="n">Cambiar</span> <span class="n">ubicación</span> <span class="n">de</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">f</span><span class="p">)</span> <span class="n">Recepción</span> <span class="n">de</span> <span class="n">solicitudes</span><span class="p">.</span>
+
+<span class="n">g</span><span class="p">)</span> <span class="n">Asignación</span> <span class="n">de</span> <span class="n">solicitudes</span> <span class="n">a</span> <span class="n">archivistas</span><span class="p">.</span>
+
+<span class="n">h</span><span class="p">)</span> <span class="n">Reasignación</span> <span class="n">de</span> <span class="n">solicitudes</span><span class="p">.</span>
+
+<span class="n">i</span><span class="p">)</span> <span class="n">Envío</span> <span class="n">de</span> <span class="n">documentos</span><span class="p">.</span>
+
+<span class="n">j</span><span class="p">)</span> <span class="n">Recepción</span> <span class="n">de</span> <span class="n">remesas</span><span class="p">.</span>
+
+<span class="n">k</span><span class="p">)</span> <span class="n">Asignación</span> <span class="n">de</span> <span class="n">remesa</span> <span class="n">a</span> <span class="n">archivistas</span><span class="p">.</span>
+
+<span class="n">l</span><span class="p">)</span> <span class="n">Imprimir</span> <span class="n">listado</span> <span class="n">de</span> <span class="n">remesas</span><span class="p">.</span>
+
+<span class="n">m</span><span class="p">)</span> <span class="n">Visualizar</span> <span class="n">el</span> <span class="n">historial</span> <span class="n">de</span> <span class="n">solicitudes</span> <span class="n">y</span> <span class="n">envío</span> <span class="n">de</span> <span class="n">Remesas</span> <span class="n">de</span> <span class="n">su</span> <span class="n">juzgado</span><span class="p">.</span>
+
+<span class="n">n</span><span class="p">)</span> <span class="n">Visualizar</span> <span class="n">el</span> <span class="n">detalle</span> <span class="n">de</span> <span class="n">cada</span> <span class="n">documento</span><span class="p">.</span>
+</code></pre></div>
+
+<p>El archivista, tendrá las siguientes actividades:</p>
+<div class="highlight"><pre><span></span><code>a) Realizar búsqueda de expedientes.
+
+b) Recepción de solicitudes.
+
+c) Cambiar el estado de las solicitudes.
+
+d) Procesar remesas.
+
+e) Visualizar el historial de solicitudes y envío de Remesas de su juzgado.
+
+f) Visualizar el detalle de cada documento.
+</code></pre></div>
+
+<p><strong>6. Periodo de prueba en el Juzgado Primero de Primera Instancia en Materia Mercantil del Distrito Judicial de Saltillo y el Juzgado Quinto de Primera Instancia en Materia Familiar del Distrito Judicial de Saltillo</strong></p>
+<p>El Consejo de la Judicatura, reitera que el SIGDDA operará en la Plataforma Web, como un módulo adicional a dicha plataforma y se identificará como Archivo. Como se adelantó, será manejado por una persona del juzgado que tenga conocimientos en materia archivística y gestión documental, así como por personal del AJG y los Archivos Distritales y Únicos.</p>
+<p>La implementación del módulo Archivo en la Plataforma Web, será de forma gradual en los órganos jurisdiccionales del Poder Judicial del Estado de Coahuila de Zaragoza. Esta gradualidad se implementará de acuerdo al cronograma propuesto en el punto considerando anterior y a la propuesta que en su momento plantee el AJG.</p>
+<p>Sin embargo, el AJG propuso que para que el SIGDDA pueda empezar a funcionar en todos los órganos jurisdiccionales del Poder Judicial del Estado, es necesario que de forma primaria, se realice un periodo de prueba en dos órganos jurisdiccionales del distrito judicial de Saltillo.</p>
+<p>El periodo de prueba será durante lo que resta del mes de abril y durante el mes de mayo de 2023, y lo ideal es que se realice en órganos jurisdiccionales del distrito judicial de Saltillo, que es uno de los distritos judiciales del Poder Judicial que cuenta con un mayor número de juzgados y una gran cantidad expedientes en trámite y expedientes de concentración depositados en el AJG.</p>
+<p>Este Consejo de la Judicatura estima pertinente que este periodo de prueba del SIGDDA a través de la Plataforma Web - Archivo, se realice en los Juzgados Primero de Primera Instancia en Materia Mercantil y Quinto de Primera Instancia en Materia Familiar del Distrito Judicial de Saltillo.</p>
+<p>El Juzgado Quinto de Primera Instancia en Materia Familiar del Distrito Judicial de Saltillo, el primero de diciembre de 2022, se incorporó al modelo de justicia familiar oral.</p>
+<p>Estos juzgados conocen de documentos jurisdiccionales que fueron radicados  y substanciados en otros juzgados, por lo tanto, son documentos con un historial extenso y complejo, lo que resulta ideal para probar el sistema informático desarrollado para la solicitud de expedientes y el envío de remesas al AJG.</p>
+<p>Además, toda vez que las herramientas tecnológicas y los sistemas informáticos pueden ser perfectibles conforme al uso que se dé por parte de las personas operadoras, es probable que el periodo de prueba pueda prolongarse después de concluido el mes de mayo.</p>
+<p>Por ello, este Consejo de la Judicatura estima pertinente que al finalizar el referido mes, el AJG en coordinación con la Dirección de Informática y la Dirección de Innovación de la Oficialía Mayor, emita un informe de los resultados obtenidos del periodo de prueba y con base a tal información, realice la propuesta a este órgano colegiado  para  pronunciarse respecto al inicio de operaciones del SIGDDA a través del módulo Archivo en la Plataforma Web, en los demás distritos judiciales del Poder Judicial del Estado.</p>
+<p>Con esta implementación el Poder Judicial del Estado de Coahuila de Zaragoza, reafirma su compromiso en la modernización e innovación en la forma de impartir justicia, con la finalidad de brindar un servicio eficiente y de calidad, cumpliendo con la demanda social y lo establecido por la Constitución General y las demás disposiciones aplicables.</p>
+<h2>II. DECISIONES</h2>
+<p>Por lo anteriormente expuesto, quienes integran el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza deciden lo siguiente:</p>
+<p><strong>Primero.</strong> Se aprueba la implementación del Sistema de Gestión Digital de Documentos de Archivos (SIGDDA), en los términos a que se refiere el presente acuerdo y de conformidad con el cronograma propuesto por este Consejo de la Judicatura.</p>
+<p>El SIGDDA operará como un módulo en la Plataforma Web del Poder Judicial del Estado de Coahuila de Zaragoza y se identificará como Archivo.</p>
+<p>La implementación del SIGDDA iniciará con un periodo de prueba durante lo que reste de este mes de abril y durante el mes de mayo de 2023, en el Juzgado Primero de Primera Instancia en Materia Mercantil y en el Juzgado Quinto de Primera Instancia en Materia Familiar del Distrito Judicial de Saltillo.</p>
+<p><strong>Segundo.</strong> El Archivo Judicial General en coordinación con la Dirección de Informática y la Dirección de Innovación de la Oficialía Mayor, al finalizar el mes de mayo de 2023, rendirá un informe al Consejo de la Judicatura sobre el resultado del periodo de prueba del SIGDDA en los órganos jurisdiccionales referidos en el punto decisorio anterior.</p>
+<p>En el informe el Archivo Judicial General señalará si ya es posible la implementación del SIGDDA en los demás órganos jurisdiccionales del distrito judicial de Saltillo y propondrá una fecha de inicio de operaciones en los demás distritos judiciales del Poder Judicial del Estado de Coahuila de Zaragoza.</p>
+<p><strong>Tercero.</strong> Se dejan sin efectos las disposiciones legales y los acuerdos del Consejo de la Judicatura que se opongan a lo decidido en este acuerdo.</p>
+<p><strong>Cuarto.</strong> El Pleno del Consejo, o su Presidente, en su caso, resolverán cualquier cuestión o duda en el ámbito administrativo que surja con motivo de la aplicación del presente acuerdo.</p>
+<p><strong>Quinto.</strong> Se instruye a la Dirección del Archivo Judicial General, a la Oficialía Mayor a través de la Dirección de Informática y la Dirección de Innovación y a los órganos jurisdiccionales referidos en el punto decisorio anterior, para que lleven a cabo las gestiones pertinentes para la aplicación del presente acuerdo.</p>
+<p><strong>Sexto.</strong> Se instruye a la Secretaría de Acuerdo y Trámite del Consejo de la Judicatura del Estado de Coahuila de Zaragoza para que realice las gestiones necesarias para la debida publicación del presente acuerdo en el sitio web oficial del Poder Judicial del Estado, y en los medios que se estimen conducentes.</p>
+<h2>Descargar</h2>
+<ul>
+<li><a href="https://storage.googleapis.com/pjecz-gob-mx/Acuerdos del Consejo/2023/2023-04-26 Acuerdo implementación SGA Plataforma web/Acuerdo_implementación_SGA_Plataforma_web.pdf">Acuerdo_implementación_SGA_Plataforma_web.pdf</a></li>
+</ul>
+        </div>
+    </article>
+    <!-- Compartir en redes sociales -->
+    <div class="container py-4">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+        <div class="fb-share-button" data-href="https://www.pjecz.gob.mx/acuerdos-del-consejo/2023/2023-04-26-acuerdo-implementacion-sga-plataforma-web/index.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+        <div id="fb-root"></div>
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
+    </main>
+<footer>
+    <!-- Mapa del sitio -->
+    <div class="footer-dark">
+        <div class="container">
+            <h2 class="text-center">Mapa del Sitio</h2>
+            <div class="accordion" id="accordionFooter">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h3 class="my-0">
+                            <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Tribunal Superior de Justicia
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFooter">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 mb-2">
+                                    <h4>Quiénes Somos</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/quienes-somos/bienvenida/">Bienvenida</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/quienes-somos/un-nuevo-modelo-de-justicia/">Un nuevo modelo de Justicia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/magistrados/">Nuestros Magistrados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <h4>Presidencia</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/presidencia/">Presidencia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/secretaria-tecnica-y-de-transparencia/">Secretaría Técnica y de Transparencia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/auditoria-interna/">Auditoría Interna</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/presidencia/archivo/">Archivo Judicial General</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <h4>Órganos Jurisdiccionales</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/central-de-actuarios/">Central de Actuarios</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-distrito/">Juzgados por Distrito</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-materia/">Juzgados por Materia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/pleno/">Pleno</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/salas/">Salas</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunal-constitucional/">Tribunal Constitucional</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-distritales/">Tribunales Distritales</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/tribunales-especializados/">Tribunales Especializados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <h4>Órganos No Jurisdiccionales</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-evaluacion-psicosocial/">Centro de Evaluación Psicosocial</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/">Centro de Medios Alternos de Solución de Controversias</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/">Instituto de Especialización Judicial</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-estatal-de-defensoria-publica/">Instituto Estatal de Defensoría Pública</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/oficialia-de-partes/">Oficialía de Partes</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/visitaduria-judicial-general/">Visitaduría Judicial General</a></li>
+                                    </ul>
+                                    <h4>Órganos Administrativos</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/tribunal-superior-de-justicia/administrativos/oficialia-mayor/">Oficialía Mayor</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h3 class="my-0">
+                            <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Consejo de la Judicatura
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFooter">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <h4>Consejo</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/directorio-general/consejeros/">Consejeros</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/directorio/">Directorio</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <h4>Consulta</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo1.html">Acuerdos del Consejo</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/articulos/acuerdos/">Acuerdos del Consejo (tabla)</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/atribuciones/">Atribuciones</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/funciones/">Funciones</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/manuales/">Manuales</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/marco-juridico/">Marco Jurídico</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/proceso-de-seleccion-de-jueces-y-magistrados-distritales/">Proceso de Selección
+                                                de Jueces</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <h4>Labor Disciplinaria</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/sanciones-a-servidores-publicos/">Sanciones a Servidores Públicos</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/presentacion-de-quejas/">Presentación de Quejas</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h3 class="my-0">
+                            <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Consultas, Información, Trámites y Servicios
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFooter">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <h4 id="footerConsultas">Consultas</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/abogados-registrados/">Abogados registrados</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/articulos/acuerdos/">Acuerdos (tabla)</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/acuerdos-del-consejo1.html">Acuerdos del Consejo</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/acuerdos-del-pleno1.html">Acuerdos del Pleno</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/abogados-registrados/">Abogados Registrados</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/agenda-audiencias/">Agenda de Audiencias</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/citas/">Citas</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/edictos/">Edictos en Línea</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/">Edictos de Declaración de Ausencia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/fuentes-rss/">Fuentes RSS</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/glosas/">Glosas</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/">Listas de Acuerdos</a>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/peritos/">Peritos</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/poder-en-linea/">Poder en Línea (Expediente Virtual 2.0, Buzón Electrónico, Citas y Boletas)</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/redam/">REDAM</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/repsvm/">REPSVM</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/tesis-jurisprudencias/">Tesis y Jurisprudencias</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/tramites-y-servicios/">Trámites y Servicios</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/ubicaciones-expedientes/">Ubicación de Expedientes</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/sentencias/">Versión Pública de Sentencias</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <h4>Sala de Prensa</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/boletines-judiciales/">Boletines Judiciales</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/calendario-de-labores/">Calendario de Labores</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/comunicados1.html">Comunicados</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/articulos/comunicados-noticias/">Comunicados, Noticias y Entrevistas (tabla)</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/entrevistas1.html">Entrevistas</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/noticias1.html">Noticias</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/podcasts/poder-judicial-al-aire/">Podcast "Poder Judicial al Aire"</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/news-letters1.html">News Letters</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/">Sesiones (tabla)</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/pleno-del-tribunal-superior-de-justicia1.html">Sesiones del TSJ</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/sala-civil-y-familiar1.html">Sesiones de la Sala Civil y Familiar</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/sala-penal1.html">Sesiones de la Sala Penal</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/sala-regional1.html">Sesiones de la Sala Regional</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/category/tribunal-constitucional1.html">Sesiones del Tribunal Constitucional</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/sesiones/votos-disidentes/">Sentencias con Votos Disidentes</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/sesiones/votos-particulares/">Sentencias con Votos Particulares</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <h4>Legalidad</h4>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a href="https://www.pjecz.gob.mx/armonizacion-contable/">Armonización Contable</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                                        <li><a href="https://forms.gle/8ui9uS5inoKdez9y7" target="_blank">Buzón de Sugerencias</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/licencias/agpl/">Licencia de Software AGPL</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/politicas-de-uso/terminos-de-uso-de-la-informacion/">Términos de Uso de la Información</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/politicas-de-uso/terminos-de-uso-del-sitio-web/">Términos de Uso del Sitio Web</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/transparencia/">Transparencia</a></li>
+                                        <li><a href="https://www.pjecz.gob.mx/transparencia-tca/">Transparencia TCA</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logotipo PJECZ -->
+    <div class="footer-light">
+        <div class="container">
+            <p class="text-center">
+                <img class="img-fluid" src="https://www.pjecz.gob.mx/theme/images/poder-judicial-410x180.png" alt="PJECZ">
+            </p>
+            <p class="text-center">
+                Blvd. Francisco Coss #945. Zona Centro. Saltillo, Coahuila de Zaragoza, México.<br>
+                <a href="mailto:poderjudicialcoahuila@pjecz.gob.mx">poderjudicialcoahuila@pjecz.gob.mx</a><br>
+                Teléfono 844 777 4498<br>
+                &copy; 2025 Todos los derechos reservados. <a href="https://www.pjecz.gob.mx/politicas-de-uso/terminos-de-uso-del-sitio-web/">Términos y condiciones.</a>
+            </p>
+        </div>
+    </div>
+</footer>    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Twitter Bootstrap 4.6 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Moment.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+    <!-- Datatables.net -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.1/js/dataTables.dateTime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.js"></script>
+    <!-- JavaScripts del tema -->
+    <script src="https://www.pjecz.gob.mx/theme/js/navegacion.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/cambiar-tablas.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/inicial-transmisiones-sesiones.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/inicial-noticias-eventos.js"></script>
+    <script src="https://www.pjecz.gob.mx/theme/js/accesibilidades.js"></script>
+    <!-- JavaScripts individuales -->
+</body>
+
+</html>
