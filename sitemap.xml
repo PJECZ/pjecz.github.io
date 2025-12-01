@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-12-01T12:18:45-00:00</lastmod>
+<lastmod>2025-12-01T13:04:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -8320,13 +8320,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f02-estructura-organica/pleno/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
 <loc>https://www.pjecz.gob.mx/poder-en-linea/</loc>
 <lastmod>2023-04-24T12:40:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -8433,13 +8426,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f08-perfil-de-puestos-y-curriculum-vitae/presidencia/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f02-estructura-organica/presidencia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -8797,13 +8783,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/transparencia/articulo-21/f01-estructura-organica/salas/</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-
-<url>
-<loc>https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f02-estructura-organica/salas/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
