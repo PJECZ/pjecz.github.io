@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-12-01T16:26:22-00:00</lastmod>
+<lastmod>2025-12-03T11:58:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9309,6 +9309,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2025/decima-septima-sesion-ordinaria/</loc>
 <lastmod>2025-12-03T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2025/audiencia-constitucional-expediente-ail-1-2025-y-sus-acumulados-ail-2-2025-ail-3-2025-ail-4-2025-ail-5-2025-ail-6-2025-y-ail-7-2025/</loc>
+<lastmod>2025-12-03T11:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
