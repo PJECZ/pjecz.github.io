@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2025-12-18T15:12:29-00:00</lastmod>
+<lastmod>2025-12-19T14:48:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9363,6 +9363,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/12-diciembre/</loc>
+<lastmod>2025-12-01T10:30:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2025/octava-sesion-ordinaria/</loc>
 <lastmod>2025-11-28T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9456,6 +9463,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/trigesima-septima-sesion-ordinaria/</loc>
 <lastmod>2025-11-05T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/news-letters/2025/11-noviembre/</loc>
+<lastmod>2025-11-01T10:30:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
