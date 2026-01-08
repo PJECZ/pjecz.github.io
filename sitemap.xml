@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-01-07T15:15:46-00:00</lastmod>
+<lastmod>2026-01-08T09:24:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9335,6 +9335,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/cuadragesima-primera-sesion-ordinaria/</loc>
+<lastmod>2025-12-18T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal-2025-12-18/</loc>
+<lastmod>2025-12-18T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2025/decima-sesion-ordinaria/</loc>
 <lastmod>2025-12-17T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9379,6 +9393,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2025/audiencia-constitucional-expediente-ail-1-2025-y-sus-acumulados-ail-2-2025-ail-3-2025-ail-4-2025-ail-5-2025-ail-6-2025-y-ail-7-2025/</loc>
 <lastmod>2025-12-03T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2025/cuadragesima-sesion-ordinaria/</loc>
+<lastmod>2025-12-02T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
