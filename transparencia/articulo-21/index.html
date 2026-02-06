@@ -316,6 +316,198 @@
 <p>LI. <a href="f51-mecanismos-que-midan-el-impacto-ambiental-social-demografico-y-economico/">Mecanismos que midan el impacto ambiental, social, demográfico y económico</a></p>
 <p>LII. <a href="f52-resultados-de-evaluaciones">Resultados de Evaluaciones</a></p>
 <p>LIII. <a href="f53-otra-informacion/">Otra Información</a></p>
+<p>Title: Artículo 21
+Summary: Transparencia</p>
+<h3>RESPONSABLE</h3>
+<p>Maestro Rodrigo González Morales, Secretario Técnico y de Transparencia</p>
+<p>Los sujetos obligados deberán mantener impresa para consulta directa y difundir, además de la contenida en el artículo 70 de la Ley General, a través de los sitios de internet y de la Plataforma Nacional de Transparencia, la siguiente información adicional de interés público:</p>
+<style>
+    .seccion-transparencia {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        padding: 20px;
+    }
+
+    /* Botón con efecto dinámico */
+    .btn-rubro {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+    }
+
+    .btn-rubro:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-color: #007bff;
+    }
+
+    .btn-rubro img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .btn-rubro span {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        color: #444;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    /* Ventana Modal */
+    .modal-transparencia {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal-contenido {
+        background: white;
+        width: 90%;
+        max-width: 850px;
+        border-radius: 8px;
+        overflow: hidden;
+        animation: aparecer 0.3s ease-out;
+    }
+
+    @keyframes aparecer {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-header {
+        background: #f8f9fa;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-cerrar { font-size: 24px; cursor: pointer; border: none; background: none; color: #999; }
+
+    .modal-body { padding: 20px; max-height: 70vh; overflow-y: auto; }
+    .tabla-datos { width: 100%; border-collapse: collapse; }
+    .tabla-datos th { background: #34495e; color: white; padding: 12px; font-size: 13px; text-align: center; }
+    .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; }
+
+    .icon-link { text-decoration: none; font-size: 20px; margin: 0 5px; }
+    .view-color { color: #28a745; }
+    .download-color { color: #007bff; }
+</style>
+
+<div class="seccion-transparencia" id="contenedor-botones">
+    </div>
+
+<div class="modal-transparencia" id="modalMaestra">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <strong id="titulo-modal">Cargando...</strong>
+            <span class="btn-cerrar" onclick="cerrarModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Periodo</th>
+                        <th>Nombre del Archivo</th>
+                        <th>Visualizar</th>
+                        <th>Descargar</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Lista de todos tus rubros
+    const rubros = [
+        "I. Estructura Orgánica", "II. Marco Normativo", "III. Directorio de Servidores Públicos", "IV. Nombramientos, Comisiones y Licencias",
+        "V. Remuneración Mensual por Puesto", "VI. Declaración Patrimonial", "VII. Viáticos y Gastos de Representación", "VIII. Perfil de Puestos y Currículum Vitae",
+        "IX. Convenios de Colaboración y Contratos", "X. Condiciones Generales de Trabajo", "XI. Planes, Programas o Proyectos con Indicadores de Gestión", "XII. Servicios y Trámites",
+        "XIII. Mecanismo de Solicitudes, Opiniones, Quejas, Denuncias o Sugerencias", "XIV. Mecanismo de Participación Ciudadana", "XV. Programas de Subsidio", "XVI. Beneficiarios de los Programas de Subsidio",
+        "XVII. Padrón de Beneficiarios de Programas Sociales", "XVIII. Listado de Personas que Reciben Recursos Públicos", "XIX. Instituciones de Beneficencia", "XX. Presupuesto Asignado",
+        "XXI. Calendario de Reuniones Públicas", "XXII. Unidad de Transparencia", "XXIII. Catálogos Documentales de Archivos", "XXIV. Solicitudes de Información y Respuestas",
+        "XXV. Balances y Estados Financieros", "XXVI. Deuda Pública", "XXVII. Auditorías Practicadas y Concluídas", "XXVIII. Padrón de Proveedores", "XXIX. Inspectores y Visitadores",
+        "XXX. Adjudicaciones", "XXXI. Agenda Mensual", "XXXII. Actas de Entrega-Recepción", "XXXIII. Georreferenciación de Obras Públicas", "XXXIV. Índices de Información Reservada",
+        "XXXV. Guía Simple de Archivos", "XXXVI. Concesiones, Licencias, Permisos y Autorizaciones", "XXXVII. Concesiones de Transporte Público", "XXXVIII. Entrega de Recursos Públicos",
+        "XXXIX. Sistemas Pensionarios", "XL. Informe Anual de Actividades", "XLI. Estadísticas sobre los Ingresos", "XLII. Información Desclasificada", "XLIII. Preguntas Frecuentes y sus Respuestas",
+        "XLIV. Catálogo de Información Adicional", "XLV. Informe sobre Acciones Realizadas durante Contingencias", "XLVI. Aportaciones a Municipios en Emergencia o Desastre",
+        "XLVII. Listado de Servidores Públicos Sancionados", "XLVIII. Listado del Parque Vehicular", "XLIX. Información Catastral", "L. Proceso Catastral de Valuación",
+        "LI. Mecanismos que midan el impacto ambiental, social, demográfico y económico", "LII. Resultados de Evaluaciones", "LIII. Otra Información"
+    ];
+
+    const contenedor = document.getElementById('contenedor-botones');
+
+    // Generar botones automáticamente
+    rubros.forEach((nombre, index) => {
+        const boton = document.createElement('div');
+        boton.className = 'btn-rubro';
+        boton.onclick = () => abrirModal(nombre);
+        boton.innerHTML = `
+            <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Icono">
+            <span>${nombre}</span>
+        `;
+        contenedor.appendChild(boton);
+    });
+
+    function abrirModal(titulo) {
+        document.getElementById('titulo-modal').innerText = titulo;
+        const tabla = document.getElementById('cuerpo-tabla');
+
+        // Limpiamos la tabla antes de poner nuevos datos
+        tabla.innerHTML = "";
+
+        // AQUÍ ES DONDE AGREGARÁS TUS FILAS. 
+        // Ejemplo de cómo se vería una fila (puedes repetir esto para cada año que tengas en Drive)
+        for (let anio = 2025; anio >= 2020; anio--) {
+            const fila = `
+                <tr>
+                    <td style="color: #f39c12;">★</td>
+                    <td>${anio}</td>
+                    <td>Información correspondiente al rubro - ${anio}</td>
+                    <td><a href="URL_DE_TU_DRIVE" target="_blank" class="icon-link view-color">📄</a></td>
+                    <td><a href="URL_DE_TU_DRIVE" target="_blank" class="icon-link download-color">📥</a></td>
+                </tr>
+            `;
+            tabla.innerHTML += fila;
+        }
+
+        document.getElementById('modalMaestra').style.display = 'flex';
+    }
+
+    function cerrarModal() {
+        document.getElementById('modalMaestra').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        let modal = document.getElementById('modalMaestra');
+        if (event.target == modal) { cerrarModal(); }
+    }
+</script>
     </div>
 </article>
     </main>
