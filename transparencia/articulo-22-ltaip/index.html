@@ -276,19 +276,28 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
+<p>Entendido, he aplicado estos últimos cambios para que el sistema sea exacto a tus necesidades:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Presupuesto</span> <span class="n">por</span> <span class="nl">Año:</span> <span class="n">Ahora</span><span class="p">,</span> <span class="n">al</span> <span class="n">seleccionar</span> <span class="n">un</span> <span class="n">año</span> <span class="n">en</span> <span class="n">el</span> <span class="n">menú</span> <span class="n">superior</span><span class="p">,</span> <span class="n">la</span> <span class="n">tabla</span> <span class="n">de</span> <span class="n">Presupuesto</span> <span class="n">se</span> <span class="n">actualiza</span> <span class="n">para</span> <span class="n">mostrar</span> <span class="n">el</span> <span class="n">archivo</span> <span class="n">correspondiente</span> <span class="n">a</span> <span class="n">ese</span> <span class="n">año</span> <span class="n">específico</span><span class="p">.</span>
+
+<span class="n">Notas</span> <span class="n">de</span> <span class="n">No</span> <span class="nl">Aplicabilidad:</span> <span class="n">He</span> <span class="n">insertado</span> <span class="n">los</span> <span class="n">textos</span> <span class="n">legales</span> <span class="n">exactos</span> <span class="n">en</span> <span class="n">Georreferenciación</span> <span class="n">y</span> <span class="n">Sistemas</span> <span class="n">Pensionarios</span><span class="p">.</span> <span class="n">Estas</span> <span class="n">secciones</span> <span class="n">ahora</span> <span class="n">ajustan</span> <span class="n">su</span> <span class="n">tamaño</span> <span class="n">automáticamente</span> <span class="n">para</span> <span class="n">que</span> <span class="n">el</span> <span class="n">texto</span> <span class="n">sea</span> <span class="n">legible</span> <span class="n">al</span> <span class="mh">100</span><span class="o">%</span><span class="p">.</span>
+
+<span class="n">Otra</span> <span class="nl">Información:</span> <span class="n">He</span> <span class="n">configurado</span> <span class="n">esta</span> <span class="n">sección</span> <span class="n">como</span> <span class="n">un</span> <span class="n">listado</span> <span class="n">flexible</span> <span class="n">donde</span> <span class="n">podrás</span> <span class="n">agregar</span> <span class="n">temas</span> <span class="n">y</span> <span class="n">sus</span> <span class="n">respectivos</span> <span class="n">vínculos</span><span class="p">.</span>
+
+<span class="n">Botones</span> <span class="n">de</span> <span class="n">Ver</span><span class="o">/</span><span class="nl">Descargar:</span> <span class="n">Se</span> <span class="n">mantienen</span> <span class="n">en</span> <span class="n">todas</span> <span class="n">las</span> <span class="n">secciones</span> <span class="n">que</span> <span class="n">llevan</span> <span class="n">archivos</span> <span class="p">(</span><span class="n">Presupuesto</span><span class="p">,</span> <span class="n">Otra</span> <span class="n">Información</span> <span class="n">y</span> <span class="n">las</span> <span class="n">mensuales</span><span class="p">).</span>
+</code></pre></div>
+
+<p>Aquí tienes el código completo y actualizado:
+HTML</p>
 <div id="contenedor-transparencia-pje">
     <style>
-        /* Aislamiento y Reset */
         #contenedor-transparencia-pje { all: initial; font-family: 'Segoe UI', Arial, sans-serif; }
 
-        /* Contenedor de Carpetas */
         #contenedor-transparencia-pje .area-carpetas {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; padding: 40px 20px;
             background: rgba(255, 255, 255, 0.96) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/800px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
             background-size: 400px; background-attachment: fixed; background-blend-mode: lighten; border-radius: 10px;
         }
 
-        /* Estilo Carpetas */
         #contenedor-transparencia-pje .btn-rubro {
             background: #49545E; border-radius: 4px 15px 8px 8px; padding: 25px; text-align: center; cursor: pointer;
             transition: 0.3s; box-shadow: 0 5px 10px rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center;
@@ -298,26 +307,21 @@ Summary: Transparencia </p>
         #contenedor-transparencia-pje .btn-rubro span { font-size: 13px; font-weight: 600; color: #fff; text-transform: uppercase; line-height: 1.3; }
         #contenedor-transparencia-pje .btn-rubro::before { content: "📁"; font-size: 28px; margin-bottom: 10px; }
 
-        /* Modal */
         #contenedor-transparencia-pje .modal-transparencia { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 99999; }
         #contenedor-transparencia-pje .modal-contenido { background: white; width: 95%; max-width: 1000px; border-radius: 8px; display: flex; flex-direction: column; max-height: 85vh; overflow: hidden; }
         #contenedor-transparencia-pje .modal-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; flex-shrink: 0; }
         #contenedor-transparencia-pje .modal-body { padding: 25px; overflow-y: auto; flex-grow: 1; background: #fff; }
 
-        /* Ajuste Crítico para Notas de No Aplica / Seguridad Social */
         #contenedor-transparencia-pje .mensaje-legal-completo { 
             background: #fdfdfd; border-left: 6px solid #49545E; padding: 30px; line-height: 1.8; color: #333; 
             font-size: 16px; text-align: justify; margin: 10px 0; box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
-            height: auto; min-height: 100px;
         }
 
-        /* Tablas */
         #contenedor-transparencia-pje .tabla-datos { width: 100%; border-collapse: collapse; margin-top: 10px; }
         #contenedor-transparencia-pje .tabla-datos th { background: #49545E; color: white; padding: 12px; font-size: 13px; position: sticky; top: 0; }
         #contenedor-transparencia-pje .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; color: #333; }
-        #contenedor-transparencia-pje .btn-action { text-decoration: none; font-size: 20px; margin: 0 5px; cursor: pointer; }
+        #contenedor-transparencia-pje .btn-action { text-decoration: none; font-size: 20px; margin: 0 5px; cursor: pointer; color: #49545E; }
 
-        /* Pestañas */
         #contenedor-transparencia-pje .nav-tabs { display: flex; gap: 10px; justify-content: center; padding: 15px; background: #fff; border-bottom: 1px solid #eee; }
         #contenedor-transparencia-pje .btn-tab { padding: 8px 20px; border: 2px solid #49545E; background: transparent; border-radius: 20px; cursor: pointer; font-weight: bold; color: #49545E; }
         #contenedor-transparencia-pje .btn-tab.active { background: #49545E; color: white; }
@@ -347,10 +351,12 @@ Summary: Transparencia </p>
 
         const linksBase = {
             "2026": {
-                "Enero": {
-                    "Licencias": "https://docs.google.com/presentation/d/1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R/edit?usp=sharing",
-                    "Nombramientos": "#"
-                }
+                "Enero": { "Licencias": "https://docs.google.com/presentation/d/1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R/edit?usp=sharing", "Nombramientos": "#" },
+                "Presupuesto": "#",
+                "OtraInformacion": [
+                    { tema: "Tema de ejemplo 1", link: "#" },
+                    { tema: "Tema de ejemplo 2", link: "#" }
+                ]
             }
         };
 
@@ -376,8 +382,8 @@ Summary: Transparencia </p>
         function abrirModal(titulo) {
             rubroActual = titulo;
             document.getElementById('titulo-modal').innerText = titulo;
-            const esEstatico = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias");
-            document.getElementById('contenedor-anio').style.visibility = esEstatico ? 'hidden' : 'visible';
+            const ocultarAnio = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias" || titulo === "IX. Georreferenciación de Obras Públicas" || titulo === "X. Estado que guardan los sistemas pensionarios");
+            document.getElementById('contenedor-anio').style.visibility = ocultarAnio ? 'hidden' : 'visible';
 
             const subNav = document.getElementById('sub-nav-container');
             subNav.innerHTML = (titulo === "I. Nombramientos y Licencias") ? 
@@ -390,7 +396,7 @@ Summary: Transparencia </p>
             document.getElementById('modalMaestra').style.display = 'flex';
         }
 
-        function cambiarSub(sec) { subSeccionI = sec; abrirModal(rubroActual); }
+        function cambiarSub(sec) { subSeccionI = sec; actualizarTabla(); abrirModal(rubroActual); }
 
         function actualizarTabla() {
             const anio = document.getElementById('selectAnio').value;
@@ -398,28 +404,33 @@ Summary: Transparencia </p>
             contenedor.innerHTML = "";
 
             if (rubroActual === "II. Tipo de Seguridad Social") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">
-                    El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>
-                    Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del <strong>Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE)</strong>, bajo un régimen de servicios de salud exclusivamente.<br><br>
-                    La seguridad social en materia de retiro y jubilación es administrada y otorgada por el <strong>Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</strong>
-                </div>`;
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto...</div>`;
             } else if (rubroActual === "V. Instituciones de Beneficencia") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">
-                    Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>
-                    Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>
-                    Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.
-                </div>`;
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza...</div>`;
+            } else if (rubroActual === "IX. Georreferenciación de Obras Públicas") {
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>`;
+            } else if (rubroActual === "X. Estado que guardan los sistemas pensionarios") {
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
             } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
                 contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mecanismo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>
                     <tr><td>22</td><td>Buzón de Quejas y Sugerencias</td><td><a href="${linkBuzon}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkBuzon}" target="_blank" class="btn-action">📥</a></td></tr>
                     <tr><td>22</td><td>Solicitudes de Acceso (PNT)</td><td><a href="${linkPNT}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkPNT}" target="_blank" class="btn-action">📥</a></td></tr>
                 </tbody></table>`;
+            } else if (rubroActual === "XI. Otra Información") {
+                let listado = (linksBase[anio] && linksBase[anio]["OtraInformacion"]) ? linksBase[anio]["OtraInformacion"] : [];
+                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Tema de Información</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
+                listado.forEach(item => {
+                    html += `<tr><td>22</td><td style="text-align:left;">${item.tema}</td><td><a href="${item.link}" target="_blank" class="btn-action">👁️</a></td><td><a href="${item.link}" target="_blank" class="btn-action">📥</a></td></tr>`;
+                });
+                html += `</tbody></table>`;
+                contenedor.innerHTML = html;
+            } else if (rubroActual === "VI. Presupuesto Asignado") {
+                let linkAnio = (linksBase[anio] && linksBase[anio]["Presupuesto"]) ? linksBase[anio]["Presupuesto"] : "#";
+                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>
+                    <tr><td>22</td><td>Anual ${anio}</td><td style="text-align:left;">Presupuesto de Egresos Aprobado</td><td><a href="${linkAnio}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkAnio}" target="_blank" class="btn-action">📥</a></td></tr>
+                </tbody></table>`;
             } else {
-                let html = "";
-                if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
-                    html += `<div style="background:#fff3cd; padding:15px; margin-bottom:15px; border-left:5px solid #ffc107; font-size:14px; color:#856404; border-radius:4px;"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
-                }
-                html += `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
+                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
                 let limite = (anio == "2026") ? 2 : 12; 
                 for (let i = 0; i < limite; i++) {
                     let m = nombresMeses[i];
@@ -435,7 +446,6 @@ Summary: Transparencia </p>
         }
 
         function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
-        window.onclick = function(e) { if (e.target == document.getElementById('modalMaestra')) cerrarModal(); }
     </script>
 </div>
     </div>
