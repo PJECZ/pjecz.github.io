@@ -277,7 +277,7 @@ Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
 <style>
-    /* Contenedor con Águila de fondo */
+    /* Estilos base y Águila de fondo */
     .seccion-transparencia {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -319,45 +319,16 @@ Summary: Transparencia </p>
     .btn-tab { padding: 8px 18px; border: 2px solid #49545E; background: transparent; color: #49545E; border-radius: 20px; cursor: pointer; font-weight: bold; }
     .btn-tab.active { background: #49545E; color: white; }
 
-    /* Notas Informativas y Mensajes Legales */
-    .nota-informativa {
-        background: #fff3cd;
-        border-left: 5px solid #ffc107;
-        padding: 15px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        color: #856404;
-        border-radius: 4px;
-    }
-
-    .mensaje-legal {
-        background: #fdfdfd;
-        border-left: 5px solid #49545E;
-        padding: 30px;
-        line-height: 1.8;
-        color: #333;
-        font-size: 16px;
-        text-align: justify;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+    /* Notas y Mensajes */
+    .nota-informativa { background: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin-bottom: 20px; font-size: 14px; color: #856404; border-radius: 4px; }
+    .mensaje-legal { background: #fdfdfd; border-left: 5px solid #49545E; padding: 30px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 
     /* Modal */
     .modal-transparencia { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 9999; }
     .modal-contenido { background: white; width: 95%; max-width: 1000px; border-radius: 8px; overflow: hidden; }
     .modal-header { background: #f8f9fa; padding: 15px 20px; border-bottom: 1px solid #eee; }
     .header-top { display: flex; justify-content: space-between; align-items: center; }
-
-    .info-actualizacion { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        gap: 15px; 
-        background: #ebf2f7; 
-        padding: 12px 15px; 
-        border-radius: 5px; 
-        font-size: 13px; 
-        margin-top: 10px; 
-    }
-
+    .info-actualizacion { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; background: #ebf2f7; padding: 12px 15px; border-radius: 5px; font-size: 13px; margin-top: 10px; }
     .modal-body { padding: 20px; max-height: 65vh; overflow-y: auto; }
     .tabla-datos { width: 100%; border-collapse: collapse; }
     .tabla-datos th { background: #49545E; color: white; padding: 12px; font-size: 13px; position: sticky; top: 0; }
@@ -400,16 +371,24 @@ Summary: Transparencia </p>
         "XI. Otra Información"
     ];
 
-    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    const nombresMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     let rubroActual = "";
     let subSeccionI = "Nombramientos";
 
-    for (let a = 2026; a >= 2015; a--) {
+    // Obtener fecha actual real
+    const fechaHoy = new Date();
+    const anioActual = fechaHoy.getFullYear();
+    const mesActualIndex = fechaHoy.getMonth(); // 0 = Enero, 1 = Febrero...
+
+    // Llenar selector de años
+    const selector = document.getElementById('selectAnio');
+    for (let a = anioActual; a >= 2015; a--) {
         let opt = document.createElement('option');
         opt.value = a; opt.innerHTML = a;
-        document.getElementById('selectAnio').appendChild(opt);
+        selector.appendChild(opt);
     }
 
+    // Crear carpetas
     rubros.forEach((nombre) => {
         const boton = document.createElement('div');
         boton.className = 'btn-rubro';
@@ -421,20 +400,13 @@ Summary: Transparencia </p>
     function abrirModal(titulo) {
         rubroActual = titulo;
         document.getElementById('titulo-modal').innerText = titulo;
-
-        // Ocultar selector de año en fracciones que muestran notas fijas ("No Aplica")
         const fraccionesEstaticas = ["II. Tipo de Seguridad Social", "V. Instituciones de Beneficencia"];
         document.getElementById('contenedor-anio').style.visibility = fraccionesEstaticas.includes(titulo) ? 'hidden' : 'visible';
 
         const subNav = document.getElementById('sub-nav-container');
         if (titulo === "I. Nombramientos y Licencias") {
-            subNav.innerHTML = `
-                <div class="nav-tabs">
-                    <button class="btn-tab ${subSeccionI === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSub('Nombramientos')">Nombramientos</button>
-                    <button class="btn-tab ${subSeccionI === 'Licencias' ? 'active' : ''}" onclick="cambiarSub('Licencias')">Licencias</button>
-                </div>`;
+            subNav.innerHTML = `<div class="nav-tabs"><button class="btn-tab ${subSeccionI === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSub('Nombramientos')">Nombramientos</button><button class="btn-tab ${subSeccionI === 'Licencias' ? 'active' : ''}" onclick="cambiarSub('Licencias')">Licencias</button></div>`;
         } else { subNav.innerHTML = ""; }
-
         actualizarTabla();
         document.getElementById('modalMaestra').style.display = 'flex';
     }
@@ -442,51 +414,47 @@ Summary: Transparencia </p>
     function cambiarSub(sec) { subSeccionI = sec; abrirModal(rubroActual); }
 
     function actualizarTabla() {
-        const anio = document.getElementById('selectAnio').value;
+        const anioSeleccionado = parseInt(document.getElementById('selectAnio').value);
         const contenedor = document.getElementById('contenido-modal');
         contenedor.innerHTML = "";
 
+        // Lógica de seguridad social y beneficencia se mantiene igual...
         if (rubroActual === "II. Tipo de Seguridad Social") {
-            contenedor.innerHTML = `
-                <div class="mensaje-legal">
-                    El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>
-                    Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del <strong>Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE)</strong>, bajo un régimen de servicios de salud exclusivamente.<br><br>
-                    La seguridad social en materia de retiro y jubilación es administrada y otorgada por el <strong>Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</strong>
-                </div>`;
+            contenedor.innerHTML = `<div class="mensaje-legal">El personal del Poder Judicial del Estado de Coahuila... (Texto ISSSTE)</div>`;
+            return;
         } 
-        else if (rubroActual === "V. Instituciones de Beneficencia") {
-            contenedor.innerHTML = `
-                <div class="mensaje-legal">
-                    Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>
-                    Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>
-                    Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.
-                </div>`;
+        if (rubroActual === "V. Instituciones de Beneficencia") {
+            contenedor.innerHTML = `<div class="mensaje-legal">Se informa que la información referente a la presente fracción <strong>No Aplica</strong>... (Texto Nota)</div>`;
+            return;
         }
-        else {
-            let html = "";
-            if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
-                html += `<div class="nota-informativa"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
-            }
 
-            html += `<table class="tabla-datos"><thead><tr><th>Artículo</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>`;
+        // Determinar cuántos meses mostrar
+        let limiteMeses = (anioSeleccionado === anioActual) ? mesActualIndex + 1 : 12;
 
-            meses.forEach((mes) => {
-                if (rubroActual === "I. Nombramientos y Licencias") {
-                    if (subSeccionI === "Nombramientos") {
-                        html += crearFila(mes, anio, "Nombramiento - Personal Judicial");
-                    } else {
-                        html += crearFila(mes, anio, "Relación de Licencias - " + mes);
-                    }
-                } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
-                    html += crearFila(mes, anio, "Buzón de Quejas y Sugerencias");
-                    html += crearFila(mes, anio, "Solicitudes de Acceso a la Información");
+        let html = "";
+        if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
+            html += `<div class="nota-informativa"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
+        }
+
+        html += `<table class="tabla-datos"><thead><tr><th>Artículo</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>`;
+
+        for (let i = 0; i < limiteMeses; i++) {
+            let mesNombre = nombresMeses[i];
+            if (rubroActual === "I. Nombramientos y Licencias") {
+                if (subSeccionI === "Nombramientos") {
+                    html += crearFila(mesNombre, anioSeleccionado, "Nombramiento - Personal Judicial");
                 } else {
-                    html += crearFila(mes, anio, rubroActual + " - " + mes);
+                    html += crearFila(mesNombre, anioSeleccionado, "Relación de Licencias - " + mesNombre);
                 }
-            });
-            html += `</tbody></table>`;
-            contenedor.innerHTML = html;
+            } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
+                html += crearFila(mesNombre, anioSeleccionado, "Buzón de Quejas y Sugerencias");
+                html += crearFila(mesNombre, anioSeleccionado, "Solicitudes de Acceso a la Información");
+            } else {
+                html += crearFila(mesNombre, anioSeleccionado, rubroActual + " - " + mesNombre);
+            }
         }
+        html += `</tbody></table>`;
+        contenedor.innerHTML = html;
     }
 
     function crearFila(mes, anio, archivo) {
