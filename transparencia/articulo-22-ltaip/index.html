@@ -276,22 +276,11 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
-<p>Sí, es el código completo y mejorado. Solo necesitas copiar y pegar ese bloque entero en tu sitio.</p>
-<p>Para tu seguridad, me aseguré de incluir tres cosas clave que me pediste:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Encapsulado</span><span class="o">:</span> <span class="n">Tiene</span> <span class="n">el</span> <span class="n">ID</span> <span class="err">#</span><span class="n">contenedor</span><span class="o">-</span><span class="n">transparencia</span><span class="o">-</span><span class="n">pje</span> <span class="n">para</span> <span class="n">que</span> <span class="n">el</span> <span class="n">diseño</span> <span class="o">(</span><span class="n">colores</span><span class="o">,</span> <span class="n">fondos</span><span class="o">,</span> <span class="err">á</span><span class="n">guila</span><span class="o">)</span> <span class="n">no</span> <span class="n">afecte</span> <span class="n">el</span> <span class="n">resto</span> <span class="n">de</span> <span class="n">tu</span> <span class="n">página</span><span class="o">.</span>
-
-<span class="n">Textos</span> <span class="err">Í</span><span class="n">ntegros</span><span class="o">:</span> <span class="n">El</span> <span class="n">texto</span> <span class="n">de</span> <span class="n">Seguridad</span> <span class="n">Social</span> <span class="n">y</span> <span class="n">de</span> <span class="n">Beneficencia</span> <span class="n">está</span> <span class="n">escrito</span> <span class="n">palabra</span> <span class="n">por</span> <span class="n">palabra</span> <span class="n">y</span> <span class="n">tiene</span> <span class="n">activado</span> <span class="n">el</span> <span class="s2">&quot;scroll&quot;</span> <span class="n">para</span> <span class="n">que</span> <span class="n">el</span> <span class="n">usuario</span> <span class="n">pueda</span> <span class="n">leerlo</span> <span class="n">todo</span> <span class="n">sin</span> <span class="n">que</span> <span class="n">se</span> <span class="n">corte</span><span class="o">.</span>
-
-<span class="n">Enlace</span> <span class="n">de</span> <span class="n">Ejemplo</span><span class="o">:</span> <span class="n">Ya</span> <span class="n">dejé</span> <span class="n">puesto</span> <span class="n">el</span> <span class="n">link</span> <span class="n">de</span> <span class="n">Google</span> <span class="n">Drive</span> <span class="n">que</span> <span class="n">me</span> <span class="n">pasaste</span> <span class="n">en</span> <span class="n">la</span> <span class="n">sección</span> <span class="n">de</span> <span class="n">Licencias</span> <span class="n">de</span> <span class="n">Enero</span> <span class="mi">2026</span><span class="o">.</span>
-</code></pre></div>
-
-<p>Aquí tienes el código listo para usar:
-HTML</p>
 <div id="contenedor-transparencia-pje">
     <style>
-        /* Aislamiento de Estilos para no afectar tu página externa */
+        /* Aislamiento de Estilos */
         #contenedor-transparencia-pje {
-            all: initial; /* Resetea herencias externas */
+            all: initial;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #contenedor-transparencia-pje .area-carpetas {
@@ -327,7 +316,6 @@ HTML</p>
         #contenedor-transparencia-pje .btn-rubro span { display: block; font-size: 13px; font-weight: 600; color: #ffffff; text-transform: uppercase; line-height: 1.4; pointer-events: none; }
         #contenedor-transparencia-pje .btn-rubro::before { content: "📁"; font-size: 28px; margin-bottom: 10px; }
 
-        /* Estilos del Modal */
         #contenedor-transparencia-pje .modal-transparencia { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 99999; }
         #contenedor-transparencia-pje .modal-contenido { background: white; width: 95%; max-width: 1000px; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; max-height: 90vh; }
         #contenedor-transparencia-pje .modal-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; }
@@ -365,15 +353,20 @@ HTML</p>
         </div>
     </div>
     <script>
+        /* CONFIGURACIÓN DE ENLACES PERMANENTES */
+        const linkPNT = "https://www.plataformadetransparencia.org.mx/Inicio";
+        const linkBuzon = "#"; // Pega aquí el link de tu buzón cuando lo tengas
+
         const linksBase = {
             "2026": {
                 "Enero": {
                     "Licencias": "https://docs.google.com/presentation/d/1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R/edit?usp=sharing",
-                    "PNT": "https://www.plataformadetransparencia.org.mx/Inicio",
-                    "Buzon": "#"
-                }
+                    "Nombramientos": "#"
+                },
+                "Presupuesto": "#"
             }
         };
+
         const rubros = ["I. Nombramientos y Licencias", "II. Tipo de Seguridad Social", "III. Viáticos y gastos de representación", "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", "V. Instituciones de Beneficencia", "VI. Presupuesto Asignado", "VII. Minutas de Sesiones Públicas", "VIII. Actas de Entrega-Recepción", "IX. Georreferenciación de Obras Públicas", "X. Estado que guardan los sistemas pensionarios", "XI. Otra Información"];
         const nombresMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
@@ -386,6 +379,7 @@ HTML</p>
             opt.value = a; opt.innerHTML = a;
             selector.appendChild(opt);
         }
+
         rubros.forEach((nombre) => {
             const boton = document.createElement('div');
             boton.className = 'btn-rubro';
@@ -393,10 +387,11 @@ HTML</p>
             boton.innerHTML = `<span>${nombre}</span>`;
             document.getElementById('grid-botones').appendChild(boton);
         });
+
         function abrirModal(titulo) {
             rubroActual = titulo;
             document.getElementById('titulo-modal').innerText = titulo;
-            const esEstatico = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia");
+            const esEstatico = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias");
             document.getElementById('contenedor-anio').style.visibility = esEstatico ? 'hidden' : 'visible';
 
             const subNav = document.getElementById('sub-nav-container');
@@ -414,20 +409,28 @@ HTML</p>
             const anio = document.getElementById('selectAnio').value;
             const contenedor = document.getElementById('contenido-modal');
             contenedor.innerHTML = "";
+
             if (rubroActual === "II. Tipo de Seguridad Social") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del <strong>Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE)</strong>, bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el <strong>Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</strong></div>`;
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... (Texto ISSSTE)</div>`;
             } else if (rubroActual === "V. Instituciones de Beneficencia") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>`;
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">Se informa que la información referente a la presente fracción <strong>No Aplica</strong>... (Texto Legal)</div>`;
+            } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
+                // TABLA FIJA PARA MECANISMOS
+                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mecanismo</th><th>Plataforma</th><th>Ver</th></tr></thead><tbody>
+                    <tr><td>22</td><td>Buzón de Quejas y Sugerencias</td><td>Sistema Interno</td><td><a href="${linkBuzon}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>
+                    <tr><td>22</td><td>Solicitudes de Acceso a la Información</td><td>Plataforma Nacional (PNT)</td><td><a href="${linkPNT}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>
+                </tbody></table>`;
+            } else if (rubroActual === "VI. Presupuesto Asignado") {
+                const lAnual = (linksBase[anio] && linksBase[anio]["Presupuesto"]) ? linksBase[anio]["Presupuesto"] : "#";
+                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos Aprobado</td><td><a href="${lAnual}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr></tbody></table>`;
             } else {
-                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th></tr></thead><tbody>`;
+                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th></tr></thead><tbody>`;
                 let limite = (anio == "2026") ? 2 : 12; 
                 for (let i = 0; i < limite; i++) {
                     let m = nombresMeses[i];
                     let link = "#";
                     if (subSeccionI === "Licencias" && m === "Enero" && anio == "2026") link = linksBase["2026"]["Enero"]["Licencias"];
-                    if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias" && m === "Enero" && anio == "2026") link = linksBase["2026"]["Enero"]["PNT"];
-
-                    html += `<tr><td>22</td><td>${m} ${anio}</td><td style="text-align:left;">${rubroActual}</td><td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>`;
+                    html += `<tr><td>22</td><td>${m} ${anio}</td><td style="text-align:left;">${rubroActual} - ${m}</td><td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>`;
                 }
                 html += `</tbody></table>`;
                 contenedor.innerHTML = html;
@@ -435,6 +438,7 @@ HTML</p>
         }
 
         function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
+        window.onclick = function(e) { if (e.target == document.getElementById('modalMaestra')) cerrarModal(); }
     </script>
 </div>
     </div>
