@@ -319,7 +319,7 @@ Summary: Transparencia </p>
     .btn-tab { padding: 8px 18px; border: 2px solid #49545E; background: transparent; color: #49545E; border-radius: 20px; cursor: pointer; font-weight: bold; }
     .btn-tab.active { background: #49545E; color: white; }
 
-    /* Notas Informativas */
+    /* Notas Informativas y Mensajes Legales */
     .nota-informativa {
         background: #fff3cd;
         border-left: 5px solid #ffc107;
@@ -330,7 +330,7 @@ Summary: Transparencia </p>
         border-radius: 4px;
     }
 
-    .mensaje-seguridad-social {
+    .mensaje-legal {
         background: #fdfdfd;
         border-left: 5px solid #49545E;
         padding: 30px;
@@ -338,6 +338,7 @@ Summary: Transparencia </p>
         color: #333;
         font-size: 16px;
         text-align: justify;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
     /* Modal */
@@ -421,8 +422,9 @@ Summary: Transparencia </p>
         rubroActual = titulo;
         document.getElementById('titulo-modal').innerText = titulo;
 
-        // Mostrar/Ocultar solo el selector de año, pero mantener la barra
-        document.getElementById('contenedor-anio').style.visibility = (titulo === "II. Tipo de Seguridad Social") ? 'hidden' : 'visible';
+        // Ocultar selector de año en fracciones que muestran notas fijas ("No Aplica")
+        const fraccionesEstaticas = ["II. Tipo de Seguridad Social", "V. Instituciones de Beneficencia"];
+        document.getElementById('contenedor-anio').style.visibility = fraccionesEstaticas.includes(titulo) ? 'hidden' : 'visible';
 
         const subNav = document.getElementById('sub-nav-container');
         if (titulo === "I. Nombramientos y Licencias") {
@@ -446,12 +448,21 @@ Summary: Transparencia </p>
 
         if (rubroActual === "II. Tipo de Seguridad Social") {
             contenedor.innerHTML = `
-                <div class="mensaje-seguridad-social">
+                <div class="mensaje-legal">
                     El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>
                     Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del <strong>Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE)</strong>, bajo un régimen de servicios de salud exclusivamente.<br><br>
                     La seguridad social en materia de retiro y jubilación es administrada y otorgada por el <strong>Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</strong>
                 </div>`;
-        } else {
+        } 
+        else if (rubroActual === "V. Instituciones de Beneficencia") {
+            contenedor.innerHTML = `
+                <div class="mensaje-legal">
+                    Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>
+                    Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>
+                    Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.
+                </div>`;
+        }
+        else {
             let html = "";
             if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
                 html += `<div class="nota-informativa"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
