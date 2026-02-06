@@ -330,7 +330,6 @@ Summary: Transparencia</p>
         padding: 20px;
     }
 
-    /* Botón con efecto dinámico */
     .btn-rubro {
         background: #ffffff;
         border: 1px solid #e0e0e0;
@@ -344,31 +343,19 @@ Summary: Transparencia</p>
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 150px;
+        min-height: 160px;
     }
 
     .btn-rubro:hover {
         transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         border-color: #007bff;
     }
 
-    .btn-rubro img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 12px;
-    }
+    .btn-rubro img { width: 65px; height: 65px; margin-bottom: 12px; object-fit: contain; }
+    .btn-rubro span { display: block; font-size: 11px; font-weight: 600; color: #444; text-transform: uppercase; }
 
-    .btn-rubro span {
-        display: block;
-        font-size: 12px;
-        font-weight: 600;
-        color: #444;
-        line-height: 1.2;
-        text-transform: uppercase;
-    }
-
-    /* Ventana Modal */
+    /* Modal */
     .modal-transparencia {
         position: fixed;
         top: 0; left: 0;
@@ -382,131 +369,185 @@ Summary: Transparencia</p>
 
     .modal-contenido {
         background: white;
-        width: 90%;
-        max-width: 850px;
+        width: 95%;
+        max-width: 1000px;
         border-radius: 8px;
         overflow: hidden;
         animation: aparecer 0.3s ease-out;
     }
 
-    @keyframes aparecer {
-        from { opacity: 0; transform: scale(0.9); }
-        to { opacity: 1; transform: scale(1); }
+    @keyframes aparecer { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+    .modal-header { background: #f8f9fa; padding: 15px 20px; border-bottom: 1px solid #eee; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+
+    /* Nueva barra de info de actualización */
+    .info-actualizacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        background: #ebf2f7;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 13px;
+        color: #2c3e50;
     }
 
-    .modal-header {
-        background: #f8f9fa;
-        padding: 15px 20px;
-        border-bottom: 1px solid #eee;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    .info-actualizacion strong { color: #007bff; }
 
-    .btn-cerrar { font-size: 24px; cursor: pointer; border: none; background: none; color: #999; }
-
-    .modal-body { padding: 20px; max-height: 70vh; overflow-y: auto; }
+    .modal-body { padding: 20px; max-height: 60vh; overflow-y: auto; }
     .tabla-datos { width: 100%; border-collapse: collapse; }
-    .tabla-datos th { background: #34495e; color: white; padding: 12px; font-size: 13px; text-align: center; }
+    .tabla-datos th { background: #34495e; color: white; padding: 12px; font-size: 13px; }
     .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; }
 
-    .icon-link { text-decoration: none; font-size: 20px; margin: 0 5px; }
-    .view-color { color: #28a745; }
-    .download-color { color: #007bff; }
+    .btn-cerrar { font-size: 24px; cursor: pointer; border: none; background: none; color: #999; }
 </style>
 
-<div class="seccion-transparencia" id="contenedor-botones">
-    </div>
+<div class="seccion-transparencia" id="contenedor-botones"></div>
 
 <div class="modal-transparencia" id="modalMaestra">
     <div class="modal-contenido">
         <div class="modal-header">
-            <strong id="titulo-modal">Cargando...</strong>
-            <span class="btn-cerrar" onclick="cerrarModal()">&times;</span>
+            <div class="header-top">
+                <strong id="titulo-modal" style="font-size: 1.1rem;">Cargando...</strong>
+                <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
+            </div>
+
+            <div class="info-actualizacion">
+                <div><strong>Año de consulta:</strong> 
+                    <select id="selectAnio" onchange="actualizarTabla()" style="padding:2px 5px;"></select>
+                </div>
+                <div><strong>Responsable:</strong> <span id="resp-nombre">Unidad Administrativa</span></div>
+                <div><strong>Actualización:</strong> <span id="fecha-upd">00/00/0000</span></div>
+            </div>
         </div>
+
         <div class="modal-body">
             <table class="tabla-datos">
                 <thead>
                     <tr>
-                        <th>Tipo</th>
-                        <th>Periodo</th>
-                        <th>Nombre del Archivo</th>
+                        <th>Artículo</th>
+                        <th>Mes</th>
+                        <th>Archivo</th>
                         <th>Visualizar</th>
                         <th>Descargar</th>
                     </tr>
                 </thead>
-                <tbody id="cuerpo-tabla">
-                    </tbody>
+                <tbody id="cuerpo-tabla"></tbody>
             </table>
         </div>
     </div>
 </div>
 
 <script>
-    // Lista de todos tus rubros
-    const rubros = [
-        "I. Estructura Orgánica", "II. Marco Normativo", "III. Directorio de Servidores Públicos", "IV. Nombramientos, Comisiones y Licencias",
-        "V. Remuneración Mensual por Puesto", "VI. Declaración Patrimonial", "VII. Viáticos y Gastos de Representación", "VIII. Perfil de Puestos y Currículum Vitae",
-        "IX. Convenios de Colaboración y Contratos", "X. Condiciones Generales de Trabajo", "XI. Planes, Programas o Proyectos con Indicadores de Gestión", "XII. Servicios y Trámites",
-        "XIII. Mecanismo de Solicitudes, Opiniones, Quejas, Denuncias o Sugerencias", "XIV. Mecanismo de Participación Ciudadana", "XV. Programas de Subsidio", "XVI. Beneficiarios de los Programas de Subsidio",
-        "XVII. Padrón de Beneficiarios de Programas Sociales", "XVIII. Listado de Personas que Reciben Recursos Públicos", "XIX. Instituciones de Beneficencia", "XX. Presupuesto Asignado",
-        "XXI. Calendario de Reuniones Públicas", "XXII. Unidad de Transparencia", "XXIII. Catálogos Documentales de Archivos", "XXIV. Solicitudes de Información y Respuestas",
-        "XXV. Balances y Estados Financieros", "XXVI. Deuda Pública", "XXVII. Auditorías Practicadas y Concluídas", "XXVIII. Padrón de Proveedores", "XXIX. Inspectores y Visitadores",
-        "XXX. Adjudicaciones", "XXXI. Agenda Mensual", "XXXII. Actas de Entrega-Recepción", "XXXIII. Georreferenciación de Obras Públicas", "XXXIV. Índices de Información Reservada",
-        "XXXV. Guía Simple de Archivos", "XXXVI. Concesiones, Licencias, Permisos y Autorizaciones", "XXXVII. Concesiones de Transporte Público", "XXXVIII. Entrega de Recursos Públicos",
-        "XXXIX. Sistemas Pensionarios", "XL. Informe Anual de Actividades", "XLI. Estadísticas sobre los Ingresos", "XLII. Información Desclasificada", "XLIII. Preguntas Frecuentes y sus Respuestas",
-        "XLIV. Catálogo de Información Adicional", "XLV. Informe sobre Acciones Realizadas durante Contingencias", "XLVI. Aportaciones a Municipios en Emergencia o Desastre",
-        "XLVII. Listado de Servidores Públicos Sancionados", "XLVIII. Listado del Parque Vehicular", "XLIX. Información Catastral", "L. Proceso Catastral de Valuación",
-        "LI. Mecanismos que midan el impacto ambiental, social, demográfico y económico", "LII. Resultados de Evaluaciones", "LIII. Otra Información"
-    ];
+    // Mismo mapa de iconos anterior
+    const iconosRubros = {
+        "I. Estructura Orgánica": "https://cdn-icons-png.flaticon.com/512/1665/1665731.png",
+        "II. Marco Normativo": "https://cdn-icons-png.flaticon.com/512/1048/1048953.png",
+        "III. Directorio de Servidores Públicos": "https://cdn-icons-png.flaticon.com/512/3135/3135702.png",
+        "IV. Nombramientos, Comisiones y Licencias": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+        "V. Remuneración Mensual por Puesto": "https://cdn-icons-png.flaticon.com/512/2454/2454291.png",
+        "VI. Declaración Patrimonial": "https://cdn-icons-png.flaticon.com/512/2942/2942261.png",
+        "VII. Viáticos y Gastos de Representación": "https://cdn-icons-png.flaticon.com/512/2454/2454282.png",
+        "VIII. Perfil de Puestos y Currículum Vitae": "https://cdn-icons-png.flaticon.com/512/942/942799.png",
+        "IX. Convenios de Colaboración y Contratos": "https://cdn-icons-png.flaticon.com/512/3503/3503827.png",
+        "X. Condiciones Generales de Trabajo": "https://cdn-icons-png.flaticon.com/512/2666/2666505.png",
+        "XI. Planes, Programas o Proyectos con Indicadores de Gestión": "https://cdn-icons-png.flaticon.com/512/2666/2666461.png",
+        "XII. Servicios y Trámites": "https://cdn-icons-png.flaticon.com/512/1063/1063376.png",
+        "XIII. Mecanismo de Solicitudes, Opiniones, Quejas, Denuncias o Sugerencias": "https://cdn-icons-png.flaticon.com/512/1250/1250615.png",
+        "XIV. Mecanismo de Participación Ciudadana": "https://cdn-icons-png.flaticon.com/512/3161/3161158.png",
+        "XV. Programas de Subsidio": "https://cdn-icons-png.flaticon.com/512/2454/2454314.png",
+        "XVI. Beneficiarios de los Programas de Subsidio": "https://cdn-icons-png.flaticon.com/512/3126/3126647.png",
+        "XVII. Padrón de Beneficiarios de Programas Sociales": "https://cdn-icons-png.flaticon.com/512/432/432314.png",
+        "XVIII. Listado de Personas que Reciben Recursos Públicos": "https://cdn-icons-png.flaticon.com/512/3126/3126649.png",
+        "XIX. Instituciones de Beneficencia": "https://cdn-icons-png.flaticon.com/512/2513/2513035.png",
+        "XX. Presupuesto Asignado": "https://cdn-icons-png.flaticon.com/512/2489/2489756.png",
+        "XXI. Calendario de Reuniones Públicas": "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
+        "XXII. Unidad de Transparencia": "https://cdn-icons-png.flaticon.com/512/1250/1250604.png",
+        "XXIII. Catálogos Documentales de Archivos": "https://cdn-icons-png.flaticon.com/512/2991/2991148.png",
+        "XXIV. Solicitudes de Información y Respuestas": "https://cdn-icons-png.flaticon.com/512/1250/1250592.png",
+        "XXV. Balances y Estados Financieros": "https://cdn-icons-png.flaticon.com/512/2666/2666436.png",
+        "XXVI. Deuda Pública": "https://cdn-icons-png.flaticon.com/512/2454/2454269.png",
+        "XXVII. Auditorías Practicadas y Concluídas": "https://cdn-icons-png.flaticon.com/512/2666/2666456.png",
+        "XXVIII. Padrón de Proveedores": "https://cdn-icons-png.flaticon.com/512/3126/3126644.png",
+        "XXIX. Inspectores y Visitadores": "https://cdn-icons-png.flaticon.com/512/3135/3135707.png",
+        "XXX. Adjudicaciones": "https://cdn-icons-png.flaticon.com/512/3503/3503786.png",
+        "XXXI. Agenda Mensual": "https://cdn-icons-png.flaticon.com/512/3652/3652213.png",
+        "XXXII. Actas de Entrega-Recepción": "https://cdn-icons-png.flaticon.com/512/2991/2991108.png",
+        "XXXIII. Georreferenciación de Obras Públicas": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+        "XXXIV. Índices de Información Reservada": "https://cdn-icons-png.flaticon.com/512/2991/2991112.png",
+        "XXXV. Guía Simple de Archivos": "https://cdn-icons-png.flaticon.com/512/2991/2991152.png",
+        "XXXVI. Concesiones, Licencias, Permisos y Autorizaciones": "https://cdn-icons-png.flaticon.com/512/2666/2666450.png",
+        "XXXVII. Concesiones de Transporte Público": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png",
+        "XXXVIII. Entrega de Recursos Públicos": "https://cdn-icons-png.flaticon.com/512/2454/2454277.png",
+        "XXXIX. Sistemas Pensionarios": "https://cdn-icons-png.flaticon.com/512/2454/2454308.png",
+        "XL. Informe Anual de Actividades": "https://cdn-icons-png.flaticon.com/512/2666/2666461.png",
+        "XLI. Estadísticas sobre los Ingresos": "https://cdn-icons-png.flaticon.com/512/2489/2489745.png",
+        "XLII. Información Desclasificada": "https://cdn-icons-png.flaticon.com/512/2991/2991124.png",
+        "XLIII. Preguntas Frecuentes y sus Respuestas": "https://cdn-icons-png.flaticon.com/512/1250/1250597.png",
+        "XLIV. Catálogo de Información Adicional": "https://cdn-icons-png.flaticon.com/512/2991/2991146.png",
+        "XLV. Informe sobre Acciones Realizadas durante Contingencias": "https://cdn-icons-png.flaticon.com/512/2666/2666497.png",
+        "XLVI. Aportaciones a Municipios en Emergencia o Desastre": "https://cdn-icons-png.flaticon.com/512/2454/2454318.png",
+        "XLVII. Listado de Servidores Públicos Sancionados": "https://cdn-icons-png.flaticon.com/512/3135/3135721.png",
+        "XLVIII. Listado del Parque Vehicular": "https://cdn-icons-png.flaticon.com/512/3063/3063825.png",
+        "XLIX. Información Catastral": "https://cdn-icons-png.flaticon.com/512/854/854904.png",
+        "L. Proceso Catastral de Valuación": "https://cdn-icons-png.flaticon.com/512/2666/2666487.png",
+        "LI. Mecanismos que midan el impacto ambiental, social, demográfico y económico": "https://cdn-icons-png.flaticon.com/512/2666/2666501.png",
+        "LII. Resultados de Evaluaciones": "https://cdn-icons-png.flaticon.com/512/2666/2666453.png",
+        "LIII. Otra Información": "https://cdn-icons-png.flaticon.com/512/2991/2991155.png"
+    };
 
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    let rubroActual = "";
     const contenedor = document.getElementById('contenedor-botones');
+    const selectAnio = document.getElementById('selectAnio');
 
-    // Generar botones automáticamente
-    rubros.forEach((nombre, index) => {
+    // Llenar selector de años
+    for (let a = 2026; a >= 2015; a--) {
+        let opt = document.createElement('option');
+        opt.value = a; opt.innerHTML = a;
+        selectAnio.appendChild(opt);
+    }
+
+    // Dibujar botones
+    Object.keys(iconosRubros).forEach((nombre) => {
         const boton = document.createElement('div');
         boton.className = 'btn-rubro';
         boton.onclick = () => abrirModal(nombre);
-        boton.innerHTML = `
-            <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Icono">
-            <span>${nombre}</span>
-        `;
+        boton.innerHTML = `<img src="${iconosRubros[nombre]}"><span>${nombre}</span>`;
         contenedor.appendChild(boton);
     });
 
     function abrirModal(titulo) {
+        rubroActual = titulo;
         document.getElementById('titulo-modal').innerText = titulo;
-        const tabla = document.getElementById('cuerpo-tabla');
 
-        // Limpiamos la tabla antes de poner nuevos datos
-        tabla.innerHTML = "";
+        // Simulación de datos dinámicos de ejemplo
+        document.getElementById('resp-nombre').innerText = "Dirección de Administración";
+        document.getElementById('fecha-upd').innerText = "05/02/2026";
 
-        // AQUÍ ES DONDE AGREGARÁS TUS FILAS. 
-        // Ejemplo de cómo se vería una fila (puedes repetir esto para cada año que tengas en Drive)
-        for (let anio = 2025; anio >= 2020; anio--) {
-            const fila = `
-                <tr>
-                    <td style="color: #f39c12;">★</td>
-                    <td>${anio}</td>
-                    <td>Información correspondiente al rubro - ${anio}</td>
-                    <td><a href="URL_DE_TU_DRIVE" target="_blank" class="icon-link view-color">📄</a></td>
-                    <td><a href="URL_DE_TU_DRIVE" target="_blank" class="icon-link download-color">📥</a></td>
-                </tr>
-            `;
-            tabla.innerHTML += fila;
-        }
-
+        actualizarTabla();
         document.getElementById('modalMaestra').style.display = 'flex';
     }
 
-    function cerrarModal() {
-        document.getElementById('modalMaestra').style.display = 'none';
+    function actualizarTabla() {
+        const anio = selectAnio.value;
+        const tabla = document.getElementById('cuerpo-tabla');
+        tabla.innerHTML = "";
+        meses.forEach((mes) => {
+            tabla.innerHTML += `
+                <tr>
+                    <td style="font-weight:bold;">21</td>
+                    <td>${mes} ${anio}</td>
+                    <td>${rubroActual} - ${mes}</td>
+                    <td><a href="#" target="_blank" style="text-decoration:none; color:#28a745; font-size:20px;">👁️</a></td>
+                    <td><a href="#" target="_blank" style="text-decoration:none; color:#007bff; font-size:20px;">📥</a></td>
+                </tr>`;
+        });
     }
 
-    window.onclick = function(event) {
-        let modal = document.getElementById('modalMaestra');
-        if (event.target == modal) { cerrarModal(); }
-    }
+    function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
+    window.onclick = function(event) { if (event.target == document.getElementById('modalMaestra')) cerrarModal(); }
 </script>
     </div>
 </article>
