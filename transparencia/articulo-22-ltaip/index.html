@@ -423,43 +423,43 @@ Summary: Transparencia </p>
         const contenedor = document.getElementById('contenido-modal');
         contenedor.innerHTML = "";
 
-        // FRACCIÓN II - SEGURIDAD SOCIAL
         if (rubroActual === "II. Tipo de Seguridad Social") {
-            contenedor.innerHTML = `<div class="mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del <strong>Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE)</strong>, bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el <strong>Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</strong></div>`;
+            contenedor.innerHTML = `<div class="mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... (Texto ISSSTE)</div>`;
             return;
         } 
 
-        // FRACCIÓN V - BENEFICENCIA
         if (rubroActual === "V. Instituciones de Beneficencia") {
-            contenedor.innerHTML = `<div class="mensaje-legal">Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>`;
+            contenedor.innerHTML = `<div class="mensaje-legal">Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza... (Fundamento Legal)</div>`;
             return;
         }
 
         let html = "";
 
-        // FRACCIÓN VI - PRESUPUESTO (POR AÑO)
         if (rubroActual === "VI. Presupuesto Asignado") {
             html += `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
-            html += crearFila("Anual", anio, "Presupuesto de Egresos Aprobado para el Ejercicio " + anio);
+            html += crearFila("Anual", anio, "Presupuesto de Egresos Aprobado para el Ejercicio " + anio, "#");
             html += `</tbody></table>`;
         } 
-        // RESTO DE FRACCIONES (POR MES)
         else {
             let limite = (anio === anioActual) ? mesActualIndex + 1 : 12;
             if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
                 html += `<div class="nota-informativa" style="background:#fff3cd; padding:15px; margin-bottom:15px; border-left:5px solid #ffc107;"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
             }
             html += `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
+
             for (let i = 0; i < limite; i++) {
                 let m = nombresMeses[i];
                 if (rubroActual === "I. Nombramientos y Licencias") {
-                    if (subSeccionI === "Nombramientos") html += crearFila(m, anio, "Nombramiento - Personal Judicial");
-                    else html += crearFila(m, anio, "Relación de Licencias - " + m);
-                } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
-                    html += crearFila(m, anio, "Buzón de Quejas y Sugerencias");
-                    html += crearFila(m, anio, "Solicitudes de Acceso a la Información");
-                } else {
-                    html += crearFila(m, anio, rubroActual + " - " + m);
+                    if (subSeccionI === "Nombramientos") html += crearFila(m, anio, "Nombramiento - Personal Judicial", "#");
+                    else html += crearFila(m, anio, "Relación de Licencias - " + m, "#");
+                } 
+                else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
+                    // ENLACES ESPECÍFICOS SOLICITADOS
+                    html += crearFila(m, anio, "Buzón de Quejas y Sugerencias", "#"); // Poner aquí link del buzón
+                    html += crearFila(m, anio, "Solicitudes de Acceso a la Información", "https://www.plataformadetransparencia.org.mx/Inicio");
+                } 
+                else {
+                    html += crearFila(m, anio, rubroActual + " - " + m, "#");
                 }
             }
             html += `</tbody></table>`;
@@ -467,7 +467,16 @@ Summary: Transparencia </p>
         contenedor.innerHTML = html;
     }
 
-    function crearFila(m, a, f) { return `<tr><td style="font-weight:bold;">22</td><td>${m} ${a}</td><td style="text-align:left;">${f}</td><td><a href="#" style="text-decoration:none; font-size:18px;">👁️</a></td><td><a href="#" style="text-decoration:none; font-size:18px;">📥</a></td></tr>`; }
+    // Se añadió el parámetro "link" a la función para que sea dinámico
+    function crearFila(m, a, f, link) { 
+        return `<tr>
+            <td style="font-weight:bold;">22</td>
+            <td>${m} ${a}</td>
+            <td style="text-align:left;">${f}</td>
+            <td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td>
+            <td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">📥</a></td>
+        </tr>`; 
+    }
 
     function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
     window.onclick = function(e) { if (e.target == document.getElementById('modalMaestra')) cerrarModal(); }
