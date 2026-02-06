@@ -330,8 +330,8 @@ Summary: Transparencia </p>
         #contenedor-transparencia-pje .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; color: #333; }
         #contenedor-transparencia-pje .btn-cerrar { font-size: 30px; cursor: pointer; border: none; background: none; color: #999; }
 
-        #contenedor-transparencia-pje .nav-tabs { display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; }
-        #contenedor-transparencia-pje .btn-tab { padding: 8px 18px; border: 2px solid #49545E; background: transparent; border-radius: 20px; cursor: pointer; font-weight: bold; color: #49545E; }
+        #contenedor-transparencia-pje .nav-tabs { display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; padding-top: 15px; background: #fff; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        #contenedor-transparencia-pje .btn-tab { padding: 8px 18px; border: 2px solid #49545E; background: transparent; border-radius: 20px; cursor: pointer; font-weight: bold; color: #49545E; transition: 0.3s; }
         #contenedor-transparencia-pje .btn-tab.active { background: #49545E; color: white; }
     </style>
     <div class="area-carpetas" id="grid-botones"></div>
@@ -342,7 +342,7 @@ Summary: Transparencia </p>
                     <strong id="titulo-modal" style="color: #49545E; font-size: 1.3rem;"></strong>
                     <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; background: #ebf2f7; padding: 10px; font-size: 12px; margin-top: 10px; border-radius: 5px; color: #333;">
+                <div id="controles-superiores" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; background: #ebf2f7; padding: 10px; font-size: 12px; margin-top: 10px; border-radius: 5px; color: #333;">
                     <div id="contenedor-anio"><strong>Año:</strong> <select id="selectAnio" onchange="actualizarTabla()"></select></div>
                     <div><strong>Responsable:</strong> Unidad Administrativa</div>
                     <div><strong>Actualización:</strong> 06/02/2026</div>
@@ -353,17 +353,16 @@ Summary: Transparencia </p>
         </div>
     </div>
     <script>
-        /* CONFIGURACIÓN DE ENLACES PERMANENTES */
+        /* CONFIGURACIÓN DE ENLACES */
         const linkPNT = "https://www.plataformadetransparencia.org.mx/Inicio";
-        const linkBuzon = "#"; // Pega aquí el link de tu buzón cuando lo tengas
+        const linkBuzon = "#"; 
 
         const linksBase = {
             "2026": {
                 "Enero": {
                     "Licencias": "https://docs.google.com/presentation/d/1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R/edit?usp=sharing",
                     "Nombramientos": "#"
-                },
-                "Presupuesto": "#"
+                }
             }
         };
 
@@ -391,19 +390,31 @@ Summary: Transparencia </p>
         function abrirModal(titulo) {
             rubroActual = titulo;
             document.getElementById('titulo-modal').innerText = titulo;
-            const esEstatico = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias");
-            document.getElementById('contenedor-anio').style.visibility = esEstatico ? 'hidden' : 'visible';
 
+            // Mostrar/Ocultar Selector de Año
+            const ocultarAnio = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias");
+            document.getElementById('contenedor-anio').style.visibility = ocultarAnio ? 'hidden' : 'visible';
+
+            // Generar Pestañas para Fracción I
             const subNav = document.getElementById('sub-nav-container');
             if (titulo === "I. Nombramientos y Licencias") {
-                subNav.innerHTML = `<div class="nav-tabs" style="padding-top:10px;"><button class="btn-tab ${subSeccionI === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSub('Nombramientos')">Nombramientos</button><button class="btn-tab ${subSeccionI === 'Licencias' ? 'active' : ''}" onclick="cambiarSub('Licencias')">Licencias</button></div>`;
-            } else { subNav.innerHTML = ""; }
+                subNav.innerHTML = `
+                    <div class="nav-tabs">
+                        <button class="btn-tab ${subSeccionI === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSub('Nombramientos')">Nombramientos</button>
+                        <button class="btn-tab ${subSeccionI === 'Licencias' ? 'active' : ''}" onclick="cambiarSub('Licencias')">Licencias</button>
+                    </div>`;
+            } else {
+                subNav.innerHTML = "";
+            }
 
             actualizarTabla();
             document.getElementById('modalMaestra').style.display = 'flex';
         }
 
-        function cambiarSub(sec) { subSeccionI = sec; actualizarTabla(); abrirModal(rubroActual); }
+        function cambiarSub(sec) {
+            subSeccionI = sec;
+            abrirModal(rubroActual); // Recarga el modal con la pestaña activa
+        }
 
         function actualizarTabla() {
             const anio = document.getElementById('selectAnio').value;
@@ -411,26 +422,34 @@ Summary: Transparencia </p>
             contenedor.innerHTML = "";
 
             if (rubroActual === "II. Tipo de Seguridad Social") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... (Texto ISSSTE)</div>`;
+                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social... (Texto ISSSTE)</div>`;
             } else if (rubroActual === "V. Instituciones de Beneficencia") {
                 contenedor.innerHTML = `<div class="mensaje-legal-completo">Se informa que la información referente a la presente fracción <strong>No Aplica</strong>... (Texto Legal)</div>`;
             } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
-                // TABLA FIJA PARA MECANISMOS
                 contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mecanismo</th><th>Plataforma</th><th>Ver</th></tr></thead><tbody>
                     <tr><td>22</td><td>Buzón de Quejas y Sugerencias</td><td>Sistema Interno</td><td><a href="${linkBuzon}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>
                     <tr><td>22</td><td>Solicitudes de Acceso a la Información</td><td>Plataforma Nacional (PNT)</td><td><a href="${linkPNT}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>
                 </tbody></table>`;
-            } else if (rubroActual === "VI. Presupuesto Asignado") {
-                const lAnual = (linksBase[anio] && linksBase[anio]["Presupuesto"]) ? linksBase[anio]["Presupuesto"] : "#";
-                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos Aprobado</td><td><a href="${lAnual}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr></tbody></table>`;
             } else {
-                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th></tr></thead><tbody>`;
+                let html = "";
+                // Nota para Licencias
+                if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Licencias") {
+                    html += `<div style="background:#fff3cd; padding:15px; margin-bottom:15px; border-left:5px solid #ffc107; font-size:14px; color:#856404;"><strong>Nota:</strong> A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>`;
+                }
+
+                html += `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th></tr></thead><tbody>`;
                 let limite = (anio == "2026") ? 2 : 12; 
                 for (let i = 0; i < limite; i++) {
                     let m = nombresMeses[i];
                     let link = "#";
-                    if (subSeccionI === "Licencias" && m === "Enero" && anio == "2026") link = linksBase["2026"]["Enero"]["Licencias"];
-                    html += `<tr><td>22</td><td>${m} ${anio}</td><td style="text-align:left;">${rubroActual} - ${m}</td><td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>`;
+                    let nombreDoc = rubroActual + " - " + m;
+
+                    if (rubroActual === "I. Nombramientos y Licencias") {
+                        nombreDoc = (subSeccionI === "Nombramientos") ? "Nombramiento Judicial - " + m : "Relación de Licencias - " + m;
+                        try { link = linksBase[anio][m][subSeccionI] || "#"; } catch(e) { link = "#"; }
+                    }
+
+                    html += `<tr><td>22</td><td>${m} ${anio}</td><td style="text-align:left;">${nombreDoc}</td><td><a href="${link}" target="_blank" style="text-decoration:none; font-size:18px;">👁️</a></td></tr>`;
                 }
                 html += `</tbody></table>`;
                 contenedor.innerHTML = html;
@@ -438,7 +457,6 @@ Summary: Transparencia </p>
         }
 
         function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
-        window.onclick = function(e) { if (e.target == document.getElementById('modalMaestra')) cerrarModal(); }
     </script>
 </div>
     </div>
