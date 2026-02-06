@@ -297,83 +297,147 @@ Summary: El importe por concepto de viáticos a partir del jefe de departamento 
 <p><html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Botones Dinámicos Estilo Portal</title>
+    <title>Botones con Ventana Modal</title>
     <style>
-        /<em> Contenedor principal </em>/
+        /<em> 1. ESTILO DE LAS TARJETAS (Botones principales) </em>/
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
             padding: 20px;
-            font-family: sans-serif;
+            font-family: 'Segoe UI', sans-serif;
         }</p>
-<div class="highlight"><pre><span></span><code>    <span class="c">/* Estilo base de la tarjeta (botón) */</span>
-    <span class="p">.</span><span class="nc">card</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#e0e0e0</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span> <span class="c">/* Esto genera la suavidad del movimiento */</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.05</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>    <span class="o">.</span><span class="n">card</span> <span class="p">{</span>
+        <span class="n">background</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+        <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#ddd;</span>
+        <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+        <span class="n">padding</span><span class="p">:</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span>
+        <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+        <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+        <span class="n">transition</span><span class="p">:</span> <span class="n">all</span> <span class="mf">0.3</span><span class="n">s</span> <span class="nb">ease</span><span class="p">;</span>
+        <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="n">px</span> <span class="mi">6</span><span class="n">px</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.05</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="c">/* EFECTO DINÁMICO AL PASAR EL CURSOR (HOVER) */</span>
-    <span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="nv">-10px</span><span class="p">);</span> <span class="c">/* Se mueve hacia arriba */</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.15</span><span class="p">);</span> <span class="c">/* Sombra más profunda */</span>
-        <span class="k">border-color</span><span class="p">:</span> <span class="mh">#0056b3</span><span class="p">;</span> <span class="c">/* Cambia el color del borde */</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f8f9fa</span><span class="p">;</span>
+    <span class="o">.</span><span class="n">card</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span>
+        <span class="n">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="n">px</span><span class="p">);</span>
+        <span class="n">border</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#007bff;</span>
+        <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">8</span><span class="n">px</span> <span class="mi">15</span><span class="n">px</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="c">/* Estilo del icono (puedes usar imágenes o SVGs) */</span>
-    <span class="p">.</span><span class="nc">card</span> <span class="nt">img</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">filter</span><span class="p">:</span> <span class="nb">grayscale</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="p">);</span> <span class="c">/* Efecto visual opcional */</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">filter</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
+    <span class="o">.</span><span class="n">card</span> <span class="n">img</span> <span class="p">{</span> <span class="n">width</span><span class="p">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span> <span class="n">margin</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="o">/*</span> <span class="mf">2.</span> <span class="n">ESTILO</span> <span class="n">DE</span> <span class="n">LA</span> <span class="n">VENTANA</span> <span class="n">MODAL</span> <span class="p">(</span><span class="n">Oculta</span> <span class="n">por</span> <span class="n">defecto</span><span class="p">)</span> <span class="o">*/</span>
+    <span class="o">.</span><span class="n">modal</span><span class="o">-</span><span class="n">overlay</span> <span class="p">{</span>
+        <span class="n">position</span><span class="p">:</span> <span class="n">fixed</span><span class="p">;</span>
+        <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+        <span class="n">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+        <span class="n">display</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Se</span> <span class="n">activa</span> <span class="n">con</span> <span class="n">JS</span> <span class="o">*/</span>
+        <span class="n">justify</span><span class="o">-</span><span class="n">content</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+        <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+        <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span> <span class="nt">img</span> <span class="p">{</span>
-        <span class="k">filter</span><span class="p">:</span> <span class="nb">grayscale</span><span class="p">(</span><span class="mi">0</span><span class="kt">%</span><span class="p">);</span> <span class="c">/* El icono cobra color al pasar el cursor */</span>
+    <span class="o">.</span><span class="n">modal</span><span class="o">-</span><span class="n">content</span> <span class="p">{</span>
+        <span class="n">background</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+        <span class="n">width</span><span class="p">:</span> <span class="mi">90</span><span class="o">%</span><span class="p">;</span>
+        <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">600</span><span class="n">px</span><span class="p">;</span>
+        <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">12</span><span class="n">px</span><span class="p">;</span>
+        <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+        <span class="n">animation</span><span class="p">:</span> <span class="n">slideIn</span> <span class="mf">0.3</span><span class="n">s</span> <span class="nb">ease</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="c">/* Texto del botón */</span>
-    <span class="p">.</span><span class="nc">card</span> <span class="nt">span</span> <span class="p">{</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">;</span>
+    <span class="err">@</span><span class="n">keyframes</span> <span class="n">slideIn</span> <span class="p">{</span>
+        <span class="n">from</span> <span class="p">{</span> <span class="n">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="mi">20</span><span class="n">px</span><span class="p">);</span> <span class="n">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">to</span> <span class="p">{</span> <span class="n">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="n">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="p">}</span>
     <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+
+    <span class="o">/*</span> <span class="n">Cabecera</span> <span class="n">de</span> <span class="n">la</span> <span class="n">modal</span> <span class="o">*/</span>
+    <span class="o">.</span><span class="n">modal</span><span class="o">-</span><span class="n">header</span> <span class="p">{</span>
+        <span class="n">padding</span><span class="p">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+        <span class="n">background</span><span class="p">:</span> <span class="c1">#f8f9fa;</span>
+        <span class="n">border</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#eee;</span>
+        <span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+        <span class="n">justify</span><span class="o">-</span><span class="n">content</span><span class="p">:</span> <span class="n">space</span><span class="o">-</span><span class="n">between</span><span class="p">;</span>
+        <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="o">/*</span> <span class="n">Tabla</span> <span class="n">dentro</span> <span class="n">de</span> <span class="n">la</span> <span class="n">modal</span> <span class="o">*/</span>
+    <span class="o">.</span><span class="n">modal</span><span class="o">-</span><span class="n">body</span> <span class="p">{</span> <span class="n">padding</span><span class="p">:</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">table</span> <span class="p">{</span>
+        <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+        <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">th</span> <span class="p">{</span> <span class="n">background</span><span class="p">:</span> <span class="c1">#343a40; color: white; padding: 10px; font-size: 14px; }</span>
+    <span class="n">td</span> <span class="p">{</span> <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span> <span class="n">border</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#eee; text-align: center; font-size: 13px; }</span>
+
+    <span class="o">.</span><span class="n">btn</span><span class="o">-</span><span class="n">download</span> <span class="p">{</span> <span class="n">color</span><span class="p">:</span> <span class="c1">#007bff; text-decoration: none; font-size: 20px; }</span>
+
+    <span class="o">/*</span> <span class="n">Botón</span> <span class="n">cerrar</span> <span class="o">*/</span>
+    <span class="o">.</span><span class="n">close</span><span class="o">-</span><span class="n">btn</span> <span class="p">{</span> <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span> <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">24</span><span class="n">px</span><span class="p">;</span> <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span> <span class="n">background</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
 </code></pre></div>
 
 <p></head></p>
 <body>
+    <div class="grid-container">
+        <div class="card" onclick="openModal('Seguridad Social')">
+            <img src="https://cdn-icons-png.flaticon.com/512/3076/3076753.png" alt="Icono">
+            <br><span>Seguridad Social</span>
+        </div>
+        </div>
+    <div class="modal-overlay" id="myModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <strong id="modalTitle">Artículo 22, Fracción II</strong>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Periodo</th>
+                            <th>Nombre</th>
+                            <th>Archivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025/12</td>
+                            <td>Seguridad Social Diciembre</td>
+                            <td><a href="#" class="btn-download">📄</a></td>
+                        </tr>
+                        <tr>
+                            <td>2025/11</td>
+                            <td>Seguridad Social Noviembre</td>
+                            <td><a href="#" class="btn-download">📄</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Funciones para abrir y cerrar
+        function openModal(titulo) {
+            document.getElementById('modalTitle').innerText = titulo;
+            document.getElementById('myModal').style.display = 'flex';
+        }
 
-<div class="grid-container">
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
 
-    <a href="archivo1.pdf" class="card" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono">
-        <span>Nombramientos y Licencias</span>
-    </a>
-
-    <a href="enlace_presupuesto.html" class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2652/2652234.png" alt="Icono">
-        <span>Presupuesto Anual</span>
-    </a>
-
-    <a href="documento.docx" class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Icono">
-        <span>Obras Públicas</span>
-    </a>
-
-</div>
+        // Cerrar si el usuario hace clic fuera de la ventana blanca
+        window.onclick = function(event) {
+            let modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
 
 </body>
 <p></html></p>
