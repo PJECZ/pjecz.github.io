@@ -272,6 +272,216 @@
 <p>IX. <a href="f09-georreferenciacion-de-obras-publicas/">Georreferenciación de Obras Públicas</a></p>
 <p>X. <a href="f10-estado-que-guardan-los-sistemas-pensionarios/">Estado que guardan los sistemas pensionarios</a></p>
 <p>XI. <a href="f11-otra-informacion/">Otra Información</a></p>
+<p>Title: Artículo 22
+Summary: Transparencia </p>
+<p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
+<h2>Fracciones</h2>
+<style>
+    /* Contenedor principal con el Águila de fondo */
+    .seccion-transparencia {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        font-family: 'Segoe UI', sans-serif;
+        padding: 50px 20px;
+        /* Imagen del águila de fondo */
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/800px-Coat_of_arms_of_Mexico.svg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: 500px; /* Tamaño del águila ajustado */
+        background-color: rgba(255, 255, 255, 0.92);
+        background-blend-mode: lighten;
+    }
+
+    /* Estilo de Carpeta Color #49545E */
+    .btn-rubro {
+        background: #49545E;
+        border-radius: 4px 15px 8px 8px;
+        padding: 30px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 140px;
+        border-top: 12px solid #363e46; /* Pestaña superior */
+        position: relative;
+    }
+
+    .btn-rubro:hover {
+        transform: translateY(-8px);
+        background: #5a6773;
+        box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Texto de las carpetas */
+    .btn-rubro span {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+    }
+
+    /* Icono de carpeta blanca */
+    .btn-rubro::before {
+        content: "📁";
+        font-size: 28px;
+        margin-bottom: 10px;
+        opacity: 0.9;
+    }
+
+    /* Modal */
+    .modal-transparencia {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal-contenido {
+        background: white;
+        width: 95%;
+        max-width: 1000px;
+        border-radius: 8px;
+        overflow: hidden;
+        animation: aparecer 0.3s ease-out;
+    }
+
+    @keyframes aparecer { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+    .modal-header { background: #f8f9fa; padding: 15px 20px; border-bottom: 1px solid #eee; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+
+    .info-actualizacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        background: #ebf2f7;
+        padding: 12px 15px;
+        border-radius: 5px;
+        font-size: 13px;
+        color: #2c3e50;
+    }
+
+    .info-actualizacion strong { color: #49545E; }
+
+    .modal-body { padding: 20px; max-height: 65vh; overflow-y: auto; }
+    .tabla-datos { width: 100%; border-collapse: collapse; }
+    .tabla-datos th { background: #49545E; color: white; padding: 12px; font-size: 13px; }
+    .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; }
+
+    .btn-cerrar { font-size: 30px; cursor: pointer; border: none; background: none; color: #999; line-height: 1; }
+    .btn-cerrar:hover { color: #333; }
+</style>
+
+<div class="seccion-transparencia" id="contenedor-botones"></div>
+
+<div class="modal-transparencia" id="modalMaestra">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <div class="header-top">
+                <strong id="titulo-modal" style="font-size: 1.1rem; color: #49545E;">Cargando...</strong>
+                <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
+            </div>
+            <div class="info-actualizacion">
+                <div><strong>Año:</strong> 
+                    <select id="selectAnio" onchange="actualizarTabla()" style="padding:2px 5px; cursor:pointer;"></select>
+                </div>
+                <div><strong>Responsable:</strong> <span id="resp-nombre">Unidad Administrativa</span></div>
+                <div><strong>Actualización:</strong> <span id="fecha-upd">06/02/2026</span></div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Mes</th>
+                        <th>Archivo</th>
+                        <th>Visualizar</th>
+                        <th>Descargar</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Listado actualizado de las 11 fracciones solicitadas
+    const rubros = [
+        "I. Nombramientos, Comisiones y Licencias",
+        "II. Tipo de Seguridad Social",
+        "III. Viáticos y gastos de representación",
+        "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias",
+        "V. Instituciones de Beneficencia",
+        "VI. Presupuesto Asignado",
+        "VII. Minutas de Sesiones Públicas",
+        "VIII. Actas de Entrega-Recepción",
+        "IX. Georreferenciación de Obras Públicas",
+        "X. Estado que guardan los sistemas pensionarios",
+        "XI. Otra Información"
+    ];
+
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    let rubroActual = "";
+    const contenedor = document.getElementById('contenedor-botones');
+    const selectAnio = document.getElementById('selectAnio');
+
+    // Generar años desde el actual hasta 2015
+    for (let a = 2026; a >= 2015; a--) {
+        let opt = document.createElement('option');
+        opt.value = a; opt.innerHTML = a;
+        selectAnio.appendChild(opt);
+    }
+
+    // Crear botones de carpetas
+    rubros.forEach((nombre) => {
+        const boton = document.createElement('div');
+        boton.className = 'btn-rubro';
+        boton.onclick = () => abrirModal(nombre);
+        boton.innerHTML = `<span>${nombre}</span>`;
+        contenedor.appendChild(boton);
+    });
+
+    function abrirModal(titulo) {
+        rubroActual = titulo;
+        document.getElementById('titulo-modal').innerText = titulo;
+        actualizarTabla();
+        document.getElementById('modalMaestra').style.display = 'flex';
+    }
+
+    function actualizarTabla() {
+        const anio = selectAnio.value;
+        const tabla = document.getElementById('cuerpo-tabla');
+        tabla.innerHTML = "";
+        meses.forEach((mes) => {
+            tabla.innerHTML += `
+                <tr>
+                    <td style="font-weight:bold; color:#49545E;">21</td>
+                    <td>${mes} ${anio}</td>
+                    <td>${rubroActual} - ${mes}</td>
+                    <td><a href="#" target="_blank" style="text-decoration:none; color:#28a745; font-size:22px;">👁️</a></td>
+                    <td><a href="#" target="_blank" style="text-decoration:none; color:#007bff; font-size:20px;">📥</a></td>
+                </tr>`;
+        });
+    }
+
+    function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
+    window.onclick = function(event) { if (event.target == document.getElementById('modalMaestra')) cerrarModal(); }
+</script>
     </div>
 </article>
     </main>
