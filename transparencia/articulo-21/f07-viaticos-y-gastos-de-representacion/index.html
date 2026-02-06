@@ -287,262 +287,159 @@
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F07 Viáticos y Gastos de Representación/2025/06 Junio.xlsx">06 Junio.xlsx</a></li>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Artículo 21/F07 Viáticos y Gastos de Representación/2025/07 Julio.xlsx">07 Julio.xlsx</a></li>
 </ul>
-<p><html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Transparencia Dinámico</title>
-    <style>
-        /<em> --- ESTILOS GENERALES --- </em>/
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 40px;
-            color: #333;
-        }</p>
-<div class="highlight"><pre><span></span><code>    <span class="nt">h2</span> <span class="p">{</span> <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
+<style>
+    /* El contenedor de tus botones */
+    .seccion-transparencia {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-family: 'Segoe UI', sans-serif;
+    }
 
-    <span class="c">/* --- CONTENEDOR DE TARJETAS --- */</span>
-    <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
-        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="nv">-fit</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="mi">180</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
-        <span class="n">gap</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">max-width</span><span class="p">:</span> <span class="mi">1100</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* El botón dinámico de Viáticos */
+    .btn-viaticos {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 20px;
+        width: 180px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
 
-    <span class="c">/* --- ESTILO DE LOS BOTONES (TARJETAS) --- */</span>
-    <span class="p">.</span><span class="nc">card</span> <span class="p">{</span>
-        <span class="k">background</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#e0e0e0</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
-        <span class="c">/* El &quot;secreto&quot; del movimiento dinámico: */</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="nb">cubic-bezier</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.05</span><span class="p">);</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Movimiento dinámico al pasar el cursor */
+    .btn-viaticos:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-color: #007bff;
+    }
 
-    <span class="c">/* EFECTO DINÁMICO AL PASAR EL CURSOR */</span>
-    <span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="nv">-10px</span><span class="p">);</span> <span class="c">/* Movimiento hacia arriba */</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span> <span class="c">/* Sombra más profunda */</span>
-        <span class="k">border-color</span><span class="p">:</span> <span class="mh">#007bff</span><span class="p">;</span>
-    <span class="p">}</span>
+    .btn-viaticos img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 12px;
+    }
 
-    <span class="p">.</span><span class="nc">card</span> <span class="nt">img</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
-    <span class="p">}</span>
+    .btn-viaticos span {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        line-height: 1.2;
+    }
 
-    <span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span> <span class="nt">img</span> <span class="p">{</span>
-        <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.1</span><span class="p">);</span> <span class="c">/* El icono crece un poquito */</span>
-    <span class="p">}</span>
+    /* Ventana Emergente (Modal) */
+    .modal-transparencia {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none; /* Se activa con el clic */
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
 
-    <span class="p">.</span><span class="nc">card</span> <span class="nt">span</span> <span class="p">{</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="mi">600</span><span class="p">;</span>
-        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#555</span><span class="p">;</span>
-    <span class="p">}</span>
+    .modal-contenido {
+        background: white;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 8px;
+        overflow: hidden;
+        animation: aparecer 0.3s ease-out;
+    }
 
-    <span class="c">/* --- VENTANA MODAL (EMERGENTE) --- */</span>
-    <span class="p">.</span><span class="nc">modal-overlay</span> <span class="p">{</span>
-        <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-        <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">background</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="c">/* Se activa con JS */</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">z-index</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
-        <span class="n">backdrop-filter</span><span class="p">:</span> <span class="nb">blur</span><span class="p">(</span><span class="mi">2</span><span class="kt">px</span><span class="p">);</span>
-    <span class="p">}</span>
+    @keyframes aparecer {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
 
-    <span class="p">.</span><span class="nc">modal-content</span> <span class="p">{</span>
-        <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">max-width</span><span class="p">:</span> <span class="mi">750</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">25</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-        <span class="k">animation</span><span class="p">:</span> <span class="n">fadeIn</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
-    <span class="p">}</span>
+    .modal-header {
+        background: #f8f9fa;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    <span class="p">@</span><span class="k">keyframes</span> <span class="nt">fadeIn</span> <span class="p">{</span>
-        <span class="nt">from</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">0.95</span><span class="p">);</span> <span class="p">}</span>
-        <span class="nt">to</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="p">}</span>
-    <span class="p">}</span>
+    .btn-cerrar { font-size: 24px; cursor: pointer; border: none; background: none; color: #999; }
 
-    <span class="c">/* Cabecera estilo Portal */</span>
-    <span class="p">.</span><span class="nc">modal-header</span> <span class="p">{</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">background</span><span class="p">:</span> <span class="mh">#f8f9fa</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#dee2e6</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="p">}</span>
+    /* Estilo de la tabla igual a tu imagen */
+    .modal-body { padding: 20px; }
+    .tabla-datos { width: 100%; border-collapse: collapse; }
+    .tabla-datos th { background: #34495e; color: white; padding: 12px; font-size: 13px; }
+    .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; }
 
-    <span class="p">.</span><span class="nc">modal-header</span> <span class="nt">h3</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span> <span class="p">}</span>
+    .icon-link { text-decoration: none; font-size: 20px; margin: 0 5px; }
+    .view-color { color: #28a745; }
+    .download-color { color: #007bff; }
+</style>
 
-    <span class="p">.</span><span class="nc">close-btn</span> <span class="p">{</span>
-        <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#999</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Tabla dentro de la modal */</span>
-    <span class="p">.</span><span class="nc">modal-body</span> <span class="p">{</span> <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
-
-    <span class="nt">table</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nt">th</span> <span class="p">{</span>
-        <span class="k">background</span><span class="p">:</span> <span class="mh">#34495e</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">13</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nt">td</span> <span class="p">{</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#eee</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c">/* Botones de acción dentro de la tabla */</span>
-    <span class="p">.</span><span class="nc">icon-btn</span> <span class="p">{</span>
-        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="p">.</span><span class="nc">icon-btn</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">;</span> <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></div>
-
-<p></head></p>
-<body>
-    <h2>Obligaciones de Transparencia</h2>
-    <div class="grid-container">
-        <div class="card" onclick="abrirModal('nombramientos')">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono">
-            <span>Nombramientos, comisiones y licencias</span>
-        </div>
-        <div class="card" onclick="abrirModal('seguridad_social')">
-            <img src="https://cdn-icons-png.flaticon.com/512/3076/3076753.png" alt="Icono">
-            <span>Seguridad Social</span>
-        </div>
-        <div class="card" onclick="abrirModal('presupuesto')">
-            <img src="https://cdn-icons-png.flaticon.com/512/2652/2652234.png" alt="Icono">
-            <span>Presupuesto</span>
-        </div>
+<div class="seccion-transparencia">
+    <div class="btn-viaticos" onclick="abrirModalViaticos()">
+        <img src="https://cdn-icons-png.flaticon.com/512/2454/2454282.png" alt="Viáticos">
+        <span>Viáticos y gastos de representación</span>
     </div>
-    <div class="modal-overlay" id="modalTransparencia">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="tituloModal">Detalle de Información</h3>
-                <button class="close-btn" onclick="cerrarModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Periodo</th>
-                            <th>Nombre</th>
-                            <th>Visualizar</th>
-                            <th>Descargar</th>
-                        </tr>
-                    </thead>
-                    <tbody id="contenidoTabla">
-                        </tbody>
-                </table>
-            </div>
+</div>
+
+<div class="modal-transparencia" id="modalViaticos">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <strong>💰 Artículo 22, Fracción VII. - Viáticos</strong>
+            <span class="btn-cerrar" onclick="cerrarModalViaticos()">&times;</span>
         </div>
-    </div>
-    <script>
-        // ESTA ES TU BASE DE DATOS DE ARCHIVOS
-        const baseDeDatos = {
-            'nombramientos': {
-                titulo: 'Artículo 22, Fracción I - Nombramientos',
-                filas: [
-                    { periodo: '2025/02', nombre: 'Nombramientos Febrero', link: 'doc1.pdf' },
-                    { periodo: '2025/01', nombre: 'Nombramientos Enero', link: 'doc2.pdf' }
-                ]
-            },
-            'seguridad_social': {
-                titulo: 'Artículo 22, Fracción II - Seguridad Social',
-                filas: [
-                    { periodo: '2025/12', nombre: 'Seguridad Social Diciembre', link: 'ss1.pdf' },
-                    { periodo: '2025/11', nombre: 'Seguridad Social Noviembre', link: 'ss2.pdf' }
-                ]
-            },
-            'presupuesto': {
-                titulo: 'Artículo 22, Fracción VI - Presupuesto',
-                filas: [
-                    { periodo: '2025', nombre: 'Presupuesto Anual 2025', link: 'pres.pdf' }
-                ]
-            }
-        };
-
-        function abrirModal(idCategoria) {
-            const info = baseDeDatos[idCategoria];
-            const tabla = document.getElementById('contenidoTabla');
-            const titulo = document.getElementById('tituloModal');
-
-            // 1. Cambiar el título
-            titulo.innerText = info.titulo;
-
-            // 2. Limpiar y llenar la tabla
-            tabla.innerHTML = '';
-            info.filas.forEach(fila => {
-                tabla.innerHTML += `
+        <div class="modal-body">
+            <table class="tabla-datos">
+                <thead>
                     <tr>
-                        <td>${fila.periodo}</td>
-                        <td>${fila.nombre}</td>
-                        <td><a href="${fila.link}" class="icon-btn">👁️</a></td>
-                        <td><a href="${fila.link}" class="icon-btn">📥</a></td>
+                        <th>Tipo</th>
+                        <th>Periodo</th>
+                        <th>Nombre</th>
+                        <th>Visualizar</th>
+                        <th>Descargar</th>
                     </tr>
-                `;
-            });
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: #f39c12;">★</td>
+                        <td>2024</td>
+                        <td>Informes de viáticos y gastos - 2024</td>
+                        <td><a href="URL_DE_TU_CARPETA_DRIVE_2024" target="_blank" class="icon-link view-color">📄</a></td>
+                        <td><a href="URL_DE_TU_CARPETA_DRIVE_2024" target="_blank" class="icon-link download-color">📥</a></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #f39c12;">★</td>
+                        <td>2025</td>
+                        <td>Informes de viáticos y gastos - 2025</td>
+                        <td><a href="URL_DE_TU_CARPETA_DRIVE_2025" target="_blank" class="icon-link view-color">📄</a></td>
+                        <td><a href="URL_DE_TU_CARPETA_DRIVE_2025" target="_blank" class="icon-link download-color">📥</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-            // 3. Mostrar la modal
-            document.getElementById('modalTransparencia').style.display = 'flex';
+<script>
+    function abrirModalViaticos() {
+        document.getElementById('modalViaticos').style.display = 'flex';
+    }
+
+    function cerrarModalViaticos() {
+        document.getElementById('modalViaticos').style.display = 'none';
+    }
+
+    // Cerrar si hacen clic fuera de la ventana
+    window.onclick = function(event) {
+        let modal = document.getElementById('modalViaticos');
+        if (event.target == modal) {
+            cerrarModalViaticos();
         }
-
-        function cerrarModal() {
-            document.getElementById('modalTransparencia').style.display = 'none';
-        }
-
-        // Cerrar al hacer clic fuera de la caja blanca
-        window.onclick = function(event) {
-            const modal = document.getElementById('modalTransparencia');
-            if (event.target == modal) {
-                cerrarModal();
-            }
-        }
-    </script>
-
-</body>
-<p></html></p>
+    }
+</script>
     </div>
 </article>
     </main>
