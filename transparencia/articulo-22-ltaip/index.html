@@ -277,6 +277,7 @@ Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
 <style>
+    /* Estilos base del portal */
     .seccion-transparencia {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -306,13 +307,37 @@ Summary: Transparencia </p>
         justify-content: center;
         min-height: 140px;
         border-top: 12px solid #363e46;
-        position: relative;
     }
 
     .btn-rubro:hover { transform: translateY(-8px); background: #5a6773; }
     .btn-rubro span { display: block; font-size: 13px; font-weight: 600; color: #ffffff; text-transform: uppercase; line-height: 1.4; }
     .btn-rubro::before { content: "📁"; font-size: 28px; margin-bottom: 10px; opacity: 0.9; }
 
+    /* Estilos de Sub-navegación para Nombramientos */
+    .nav-nombramientos {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .btn-sub {
+        padding: 10px 20px;
+        border: 2px solid #49545E;
+        background: transparent;
+        color: #49545E;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn-sub.active {
+        background: #49545E;
+        color: white;
+    }
+
+    /* Modal y Tabla */
     .modal-transparencia {
         position: fixed;
         top: 0; left: 0;
@@ -341,6 +366,17 @@ Summary: Transparencia </p>
         color: #2c3e50;
     }
 
+    .mensaje-informativo {
+        background: #fdfdfd;
+        border-left: 5px solid #49545E;
+        padding: 30px;
+        margin: 20px 0;
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+        text-align: justify;
+    }
+
     .modal-body { padding: 20px; max-height: 65vh; overflow-y: auto; }
     .tabla-datos { width: 100%; border-collapse: collapse; }
     .tabla-datos th { background: #49545E; color: white; padding: 12px; font-size: 13px; position: sticky; top: 0; }
@@ -357,26 +393,13 @@ Summary: Transparencia </p>
                 <strong id="titulo-modal" style="font-size: 1.1rem; color: #49545E;">Cargando...</strong>
                 <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
             </div>
-            <div class="info-actualizacion">
+            <div class="info-actualizacion" id="barra-info">
                 <div><strong>Año:</strong> <select id="selectAnio" onchange="actualizarTabla()"></select></div>
-                <div><strong>Responsable:</strong> <span id="resp-nombre">Recursos Humanos</span></div>
+                <div><strong>Responsable:</strong> <span id="resp-nombre">Unidad Administrativa</span></div>
                 <div><strong>Actualización:</strong> <span id="fecha-upd">06/02/2026</span></div>
             </div>
         </div>
-        <div class="modal-body">
-            <table class="tabla-datos">
-                <thead>
-                    <tr>
-                        <th>Artículo</th>
-                        <th>Mes</th>
-                        <th>Nombre del Archivo / Persona</th>
-                        <th>Visualizar</th>
-                        <th>Descargar</th>
-                    </tr>
-                </thead>
-                <tbody id="cuerpo-tabla"></tbody>
-            </table>
-        </div>
+        <div id="sub-nav-container"></div> <div class="modal-body" id="contenido-modal"></div>
     </div>
 </div>
 
@@ -397,14 +420,16 @@ Summary: Transparencia </p>
 
     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     let rubroActual = "";
+    let subSeccionNombramientos = "Nombramientos"; // Estado por defecto
 
-    // Iniciar botones e interfaz
+    // Inicializar años
     for (let a = 2026; a >= 2015; a--) {
         let opt = document.createElement('option');
         opt.value = a; opt.innerHTML = a;
         document.getElementById('selectAnio').appendChild(opt);
     }
 
+    // Crear carpetas
     rubros.forEach((nombre) => {
         const boton = document.createElement('div');
         boton.className = 'btn-rubro';
@@ -416,40 +441,69 @@ Summary: Transparencia </p>
     function abrirModal(titulo) {
         rubroActual = titulo;
         document.getElementById('titulo-modal').innerText = titulo;
+        document.getElementById('barra-info').style.visibility = (titulo === "II. Tipo de Seguridad Social") ? 'hidden' : 'visible';
+
+        // Manejo de la sub-navegación para la Fracción I
+        const subNav = document.getElementById('sub-nav-container');
+        if (titulo === "I. Nombramientos, Comisiones y Licencias") {
+            subNav.innerHTML = `
+                <div class="nav-nombramientos">
+                    <button class="btn-sub ${subSeccionNombramientos === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSubSeccion('Nombramientos')">Nombramientos</button>
+                    <button class="btn-sub ${subSeccionNombramientos === 'Licencias' ? 'active' : ''}" onclick="cambiarSubSeccion('Licencias')">Licencias y Comisiones</button>
+                </div>`;
+        } else {
+            subNav.innerHTML = "";
+        }
+
         actualizarTabla();
         document.getElementById('modalMaestra').style.display = 'flex';
     }
 
-    function crearFila(mes, anio, nombreArchivo) {
-        return `<tr>
-                    <td style="font-weight:bold; color:#49545E;">22</td>
-                    <td>${mes} ${anio}</td>
-                    <td>${nombreArchivo}</td>
-                    <td><a href="#" target="_blank" style="text-decoration:none;">👁️</a></td>
-                    <td><a href="#" target="_blank" style="text-decoration:none;">📥</a></td>
-                </tr>`;
+    function cambiarSubSeccion(seccion) {
+        subSeccionNombramientos = seccion;
+        abrirModal(rubroActual); // Refrescar modal
     }
 
     function actualizarTabla() {
         const anio = document.getElementById('selectAnio').value;
-        const tabla = document.getElementById('cuerpo-tabla');
-        tabla.innerHTML = "";
+        const contenedor = document.getElementById('contenido-modal');
+        contenedor.innerHTML = "";
 
-        meses.forEach((mes) => {
-            if (rubroActual === "I. Nombramientos, Comisiones y Licencias") {
-                // AQUÍ AGREGAS LAS PERSONAS QUE NECESITES POR CADA MES
-                tabla.innerHTML += crearFila(mes, anio, "Nombramiento - Juan Pérez López");
-                tabla.innerHTML += crearFila(mes, anio, "Nombramiento - María García Ruiz");
-                tabla.innerHTML += crearFila(mes, anio, "Licencias y Comisiones del Mes");
-                // Puedes añadir más líneas de personas aquí
-            } else {
-                // Formato estándar para las demás fracciones
-                tabla.innerHTML += crearFila(mes, anio, rubroActual + " - " + mes);
-            }
-        });
+        if (rubroActual === "II. Tipo de Seguridad Social") {
+            contenedor.innerHTML = `<div class="mensaje-informativo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social... (Texto completo)</div>`;
+        } else {
+            let tablaHTML = `<table class="tabla-datos"><thead><tr><th>Artículo</th><th>Mes</th><th>Nombre del Archivo</th><th>Visualizar</th><th>Descargar</th></tr></thead><tbody>`;
+
+            meses.forEach((mes) => {
+                if (rubroActual === "I. Nombramientos, Comisiones y Licencias") {
+                    if (subSeccionNombramientos === "Nombramientos") {
+                        tablaHTML += crearFila(mes, anio, "Nombramiento - Juan Pérez");
+                        tablaHTML += crearFila(mes, anio, "Nombramiento - María García");
+                    } else {
+                        tablaHTML += crearFila(mes, anio, "Relación de Licencias - " + mes);
+                        tablaHTML += crearFila(mes, anio, "Relación de Comisiones - " + mes);
+                    }
+                } 
+                else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
+                    tablaHTML += crearFila(mes, anio, "Buzón de Quejas y Sugerencias");
+                    tablaHTML += crearFila(mes, anio, "Solicitudes de Acceso a la Información");
+                }
+                else {
+                    tablaHTML += crearFila(mes, anio, rubroActual + " - " + mes);
+                }
+            });
+
+            tablaHTML += `</tbody></table>`;
+            contenedor.innerHTML = tablaHTML;
+        }
+    }
+
+    function crearFila(mes, anio, nombreArchivo) {
+        return `<tr><td style="font-weight:bold; color:#49545E;">22</td><td>${mes} ${anio}</td><td>${nombreArchivo}</td><td><a href="#" target="_blank" style="text-decoration:none; font-size:20px;">👁️</a></td><td><a href="#" target="_blank" style="text-decoration:none; font-size:20px;">📥</a></td></tr>`;
     }
 
     function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
+    window.onclick = function(event) { if (event.target == document.getElementById('modalMaestra')) cerrarModal(); }
 </script>
     </div>
 </article>
