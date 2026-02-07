@@ -276,94 +276,179 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
-<div id="pje-main-container" style="all: initial; font-family: sans-serif;">
+<div id="pje-transparencia-final" style="all: initial; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <style>
-        /* RESET Y ESTILOS CRÍTICOS */
-        #pje-main-container { display: block; width: 100%; margin: 20px 0; }
-        .pje-toolbar { display: flex; justify-content: flex-end; padding: 10px; background: #eee; border: 1px solid #ccc; gap: 5px; }
-        .pje-btn-v { cursor: pointer; padding: 5px 15px; border: 1px solid #999; background: #fff; font-weight: bold; }
-        .pje-btn-v.active { background: #49545E !important; color: #fff !important; }
+        /* VARIABLES Y RESET */
+        #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; --pje-hover: #5a6773; }
 
-        /* CONTENEDOR DE FRACCIONES */
-        #pje-grid { 
-            display: grid; padding: 20px; gap: 15px; border: 1px solid #ccc; border-top: none;
-            background: #fff url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/150px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
-            background-attachment: fixed;
+        /* BARRA DE HERRAMIENTAS */
+        .pje-toolbar { 
+            display: flex; justify-content: flex-end; align-items: center; 
+            padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; 
+            border-radius: 8px 8px 0 0; gap: 10px;
+        }
+        .pje-toolbar-title { margin-right: auto; color: #666; font-weight: bold; font-size: 12px; letter-spacing: 1px; }
+
+        .pje-btn-vista { 
+            cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; 
+            background: #fff; font-weight: bold; color: var(--pje-color); 
+            border-radius: 4px; transition: 0.3s; font-size: 13px;
+        }
+        .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
+
+        /* AREA DE CONTENIDO PRINCIPAL */
+        #pje-contenedor-grid { 
+            display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none;
+            background: rgba(255, 255, 255, 0.97) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/450px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
+            background-attachment: fixed; background-blend-mode: lighten; min-height: 600px;
         }
 
-        /* CLASES PARA EL CAMBIO DE VISTA */
-        .v-mosaico { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-        .v-lista { grid-template-columns: 1fr; }
+        /* CONFIGURACIÓN DE VISTAS */
+        .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+        .pje-vista-lista { grid-template-columns: 1fr; }
 
-        /* ESTILO DE LOS BOTONES/CARPETAS */
-        .pje-folder { 
-            padding: 20px; text-align: center; cursor: pointer; transition: 0.2s; 
-            display: flex; align-items: center; justify-content: center; font-weight: bold;
+        /* ELEMENTOS (CARPETAS / FILAS) */
+        .pje-item { 
+            padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; 
+            display: flex; align-items: center; justify-content: center; 
+            font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4;
+            box-sizing: border-box;
         }
 
-        /* Estilo Mosaico */
-        .v-mosaico .pje-folder { background: #49545E; color: #fff; min-height: 100px; border-radius: 5px; flex-direction: column; }
-        .v-mosaico .pje-folder::before { content: "📁"; font-size: 25px; margin-bottom: 5px; }
+        /* Estilo para Mosaico */
+        .pje-vista-mosaico .pje-item { 
+            background: var(--pje-color); color: #fff; min-height: 160px; 
+            border-radius: 5px 20px 5px 5px; flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46;
+        }
+        .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: var(--pje-hover); }
+        .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
-        /* Estilo Lista */
-        .v-lista .pje-folder { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 5px solid #49545E; justify-content: flex-start; text-align: left; }
-        .v-lista .pje-folder::before { content: "📄"; margin-right: 15px; }
+        /* Estilo para Lista */
+        .pje-vista-lista .pje-item { 
+            background: #fff; color: #333; border-bottom: 1px solid #eee; 
+            border-left: 8px solid var(--pje-color); justify-content: flex-start; 
+            text-align: left; padding: 18px 30px; text-transform: none; font-size: 16px;
+        }
+        .pje-vista-lista .pje-item:hover { background: #f8f9fa; padding-left: 40px; }
+        .pje-vista-lista .pje-item::before { content: "📄"; margin-right: 20px; font-size: 24px; }
 
         /* MODAL */
-        #pje-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 10000; align-items: center; justify-content: center; }
-        .pje-modal-content { background: #fff; width: 80%; max-width: 800px; padding: 20px; border-radius: 5px; position: relative; }
-        .pje-close { position: absolute; top: 10px; right: 15px; font-size: 25px; cursor: pointer; border: none; background: none; }
+        #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .pje-modal-b { padding: 35px; overflow-y: auto; flex-grow: 1; }
+
+        /* CONTENIDO INTERNO MODAL */
+        .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 15px; font-size: 14px; text-align: center; }
+        .pje-tabla-res td { padding: 14px; border-bottom: 1px solid #eee; text-align: center; color: #444; font-size: 14px; }
+        .pje-btn-doc { text-decoration: none; font-size: 18px; color: var(--pje-color); cursor: pointer; }
+        .pje-aviso-legal { background: #f9f9f9; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; text-align: justify; color: #333; font-size: 15px; }
     </style>
     <div class="pje-toolbar">
-        <button id="btn-mosaico" class="pje-btn-v active">MOSAICO</button>
-        <button id="btn-lista" class="pje-btn-v">LISTA</button>
+        <span class="pje-toolbar-title">ARTÍCULO 22 - TRANSPARENCIA</span>
+        <button id="pje-mosaico-trigger" class="pje-btn-vista active">⊞ MOSAICO</button>
+        <button id="pje-lista-trigger" class="pje-btn-vista">≡ LISTA</button>
     </div>
-    <div id="pje-grid" class="v-mosaico">
-        </div>
-    <div id="pje-modal">
-        <div class="pje-modal-content">
-            <button class="pje-close" id="pje-close">&times;</button>
-            <h2 id="pje-modal-title"></h2>
-            <hr>
-            <div id="pje-modal-body">Contenido de transparencia...</div>
+    <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
+    <div id="pje-modal-full">
+        <div class="pje-modal-box">
+            <div class="pje-modal-h">
+                <strong id="pje-modal-title" style="color:var(--pje-color); font-size:1.3rem;"></strong>
+                <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb; line-height:1;">&times;</span>
+            </div>
+            <div class="pje-modal-b" id="pje-modal-body"></div>
         </div>
     </div>
     <script>
         (function() {
-            const data = ["I. Nombramientos", "II. Seguridad Social", "III. Viáticos", "IV. Quejas", "V. Beneficencia", "VI. Presupuesto", "XI. Otra Info"];
-            const grid = document.getElementById('pje-grid');
-            const bM = document.getElementById('btn-mosaico');
-            const bL = document.getElementById('btn-lista');
-            const mod = document.getElementById('pje-modal');
+            const fracciones = [
+                "I. Nombramientos y Licencias",
+                "II. Tipo de Seguridad Social",
+                "III. Viáticos y gastos de representación",
+                "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias",
+                "V. Instituciones de Beneficencia",
+                "VI. Presupuesto Asignado",
+                "VII. Minutas de Sesiones Públicas",
+                "VIII. Actas de Entrega-Recepción",
+                "IX. Georreferenciación de Obras Públicas",
+                "X. Estado que guardan los sistemas pensionarios",
+                "XI. Otra Información"
+            ];
 
-            // Cargar Fracciones
-            data.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'pje-folder';
-                div.innerHTML = '<span>' + item + '</span>';
-                div.onclick = function() {
-                    document.getElementById('pje-modal-title').innerText = item;
-                    mod.style.display = 'flex';
+            const grid = document.getElementById('pje-contenedor-grid');
+            const modal = document.getElementById('pje-modal-full');
+
+            // 1. Crear elementos dinámicamente
+            fracciones.forEach((texto, index) => {
+                const item = document.createElement('div');
+                item.className = 'pje-item';
+                item.innerHTML = '<span>' + texto + '</span>';
+
+                item.onclick = function() {
+                    document.getElementById('pje-modal-title').innerText = texto;
+                    const body = document.getElementById('pje-modal-body');
+
+                    // Lógica para fracciones con aviso legal (II, V, IX, X)
+                    if(/II\.|V\.|IX\.|X\./.test(texto)) {
+                        body.innerHTML = `
+                            <div class="pje-aviso-legal">
+                                <strong>AVISO DE TRANSPARENCIA:</strong><br><br>
+                                De conformidad con la Ley Orgánica del Poder Judicial y los Lineamientos Generales en materia de Transparencia, 
+                                se informa que esta fracción se mantiene actualizada para su libre consulta. Debido a la naturaleza jurídica 
+                                de este órgano, la información se presenta de manera consolidada garantizando el acceso a la información pública.
+                            </div>`;
+                    } else {
+                        // Tabla para el resto de las fracciones
+                        body.innerHTML = `
+                            <table class="pje-tabla-res">
+                                <thead>
+                                    <tr>
+                                        <th>Art.</th>
+                                        <th>Periodo 2026</th>
+                                        <th>Descripción</th>
+                                        <th>Ver</th>
+                                        <th>Descargar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Enero - Febrero</td>
+                                        <td>Información correspondiente a la Fracción ${index + 1}</td>
+                                        <td><span class="pje-btn-doc">👁️</span></td>
+                                        <td><span class="pje-btn-doc">📥</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>`;
+                    }
+                    modal.style.display = 'flex';
                 };
-                grid.appendChild(div);
+                grid.appendChild(item);
             });
 
-            // Botón Mosaico
-            bM.onclick = function() {
-                grid.className = 'v-mosaico';
-                bM.classList.add('active');
-                bL.classList.remove('active');
+            // 2. Controladores de cambio de vista
+            const btnM = document.getElementById('pje-mosaico-trigger');
+            const btnL = document.getElementById('pje-lista-trigger');
+
+            btnM.onclick = function() {
+                grid.classList.remove('pje-vista-lista');
+                grid.classList.add('pje-vista-mosaico');
+                this.classList.add('active');
+                btnL.classList.remove('active');
             };
 
-            // Botón Lista
-            bL.onclick = function() {
-                grid.className = 'v-lista';
-                bL.classList.add('active');
-                bM.classList.remove('active');
+            btnL.onclick = function() {
+                grid.classList.remove('pje-vista-mosaico');
+                grid.classList.add('pje-vista-lista');
+                this.classList.add('active');
+                btnM.classList.remove('active');
             };
 
-            // Cerrar
-            document.getElementById('pje-close').onclick = function() { mod.style.display = 'none'; };
+            // 3. Cerrar Modal
+            document.getElementById('pje-modal-cerrar').onclick = function() { modal.style.display = 'none'; };
+            window.onclick = function(e) { if (e.target == modal) modal.style.display = 'none'; };
         })();
     </script>
 </div>
