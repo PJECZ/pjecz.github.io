@@ -304,7 +304,6 @@ Summary: Transparencia </p>
         .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
-        /* PESTAÑAS PARA FRACCIÓN I */
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
         .pje-tab-btn { padding: 8px 20px; border: 2px solid var(--pje-color); background: transparent; color: var(--pje-color); border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 13px; }
         .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
@@ -314,14 +313,17 @@ Summary: Transparencia </p>
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; }
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
 
-        .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; border-radius: 0; font-size: 13px; align-items: center; justify-content: center; }
+        .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
     </style>
+
     <div class="pje-toolbar">
         <span style="margin-right:auto; color:#666; font-weight:bold; font-size:11px;">TRANSPARENCIA ART. 22</span>
         <button id="pje-mosaico-btn" class="pje-btn-vista active">⊞ MOSAICO</button>
         <button id="pje-lista-btn" class="pje-btn-vista">≡ LISTA</button>
     </div>
+
     <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
+
     <div id="pje-modal-full">
         <div class="pje-modal-box">
             <div class="pje-modal-h">
@@ -366,19 +368,19 @@ Summary: Transparencia </p>
 
                 if(texto.includes("II. Tipo")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Se informa que esta fracción se encuentra actualizada. El personal del Poder Judicial cuenta con un esquema de seguridad social que se rige conforme a la Ley Orgánica y los convenios institucionales vigentes.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción se rige bajo la Ley Orgánica. La información se presenta de forma íntegra para su consulta.</div>`;
                 } 
                 else if(texto.includes("V. Instituciones") || texto.includes("IX. Georre") || texto.includes("X. Estado")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado, toda vez que, de acuerdo con sus atribuciones constitucionales y legales, no se generan ni se administran los recursos o supuestos previstos en este rubro.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, de acuerdo con sus atribuciones constitucionales y legales, no se generan ni se administran los recursos o supuestos previstos en este rubro.</div>`;
                 }
                 else if(texto.includes("IV. Mecanismo")) {
                     filtros.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Transparencia y la Plataforma Nacional de Transparencia (PNT).</div>`;
                 }
                 else {
-                    let tituloTabla = texto.includes("I. Nombramientos") ? subSeccionI : "Información";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Tipo</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${tituloTabla}</td><td>👁️</td></tr><tr><td>22</td><td>Febrero 2026</td><td>${tituloTabla}</td><td>👁️</td></tr></tbody></table>`;
+                    let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Archivo";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td></tr></tbody></table>`;
                 }
             }
 
@@ -396,15 +398,15 @@ Summary: Transparencia </p>
 
             document.getElementById('tab-nombramientos').onclick = function() {
                 subSeccionI = "Nombramientos";
-                this.classList.add('active');
-                document.getElementById('tab-licencias').classList.remove('active');
+                this.className = 'pje-tab-btn active';
+                document.getElementById('tab-licencias').className = 'pje-tab-btn';
                 renderContenido("I. Nombramientos y Licencias");
             };
 
             document.getElementById('tab-licencias').onclick = function() {
                 subSeccionI = "Licencias";
-                this.classList.add('active');
-                document.getElementById('tab-nombramientos').classList.remove('active');
+                this.className = 'pje-tab-btn active';
+                document.getElementById('tab-nombramientos').className = 'pje-tab-btn';
                 renderContenido("I. Nombramientos y Licencias");
             };
 
