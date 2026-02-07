@@ -295,7 +295,7 @@ Summary: Transparencia </p>
         #contenedor-transparencia-pje .btn-rubro::before { content: "📁"; font-size: 28px; margin-bottom: 10px; }
 
         #contenedor-transparencia-pje .modal-transparencia { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 99999; }
-        #contenedor-transparencia-pje .modal-contenido { background: white; width: 90%; max-width: 1000px; border-radius: 8px; display: flex; flex-direction: column; max-height: 90vh; overflow: hidden; }
+        #contenedor-transparencia-pje .modal-contenido { background: white; width: 90%; max-width: 1000px; border-radius: 8px; display: flex; flex-direction: column; max-height: 90vh; overflow: hidden; position: relative; }
         #contenedor-transparencia-pje .modal-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; flex-shrink: 0; }
         #contenedor-transparencia-pje .modal-body { padding: 30px; overflow-y: auto; flex-grow: 1; background: #fff; display: block; }
 
@@ -311,7 +311,9 @@ Summary: Transparencia </p>
         #contenedor-transparencia-pje .btn-tab.active { background: #49545E; color: white; }
         #contenedor-transparencia-pje .btn-cerrar { font-size: 30px; cursor: pointer; border: none; background: none; color: #999; }
     </style>
+
     <div class="area-carpetas" id="grid-botones"></div>
+
     <div class="modal-transparencia" id="modalMaestra">
         <div class="modal-contenido">
             <div class="modal-header">
@@ -329,6 +331,7 @@ Summary: Transparencia </p>
             <div class="modal-body" id="contenido-modal"></div>
         </div>
     </div>
+
     <script>
         const linkPNT = "https://www.plataformadetransparencia.org.mx/Inicio";
         const linkBuzon = "#"; 
@@ -340,9 +343,7 @@ Summary: Transparencia </p>
                 ],
                 "Enero": { "Licencias": "https://docs.google.com/presentation/d/1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R/edit?usp=sharing" },
                 "Presupuesto": "#",
-                "OtraInformacion": [
-                    { tema: "Ejemplo de Tema", link: "#" }
-                ]
+                "OtraInformacion": []
             }
         };
 
@@ -405,7 +406,7 @@ Summary: Transparencia </p>
             } else if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Nombramientos") {
                 let lista = (linksBase[anio] && linksBase[anio]["Nombramientos"]) ? linksBase[anio]["Nombramientos"] : [];
                 let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Nombre del Servidor Público</th><th>Cargo / Área</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
-                lista.forEach(p => { html += `<tr><td>22</td><td style="text-align:left;">${p.nombre}</td><td>${p.cargo}</td><td><a href="${p.link}" class="btn-action">👁️</a></td><td><a href="${p.link}" class="btn-action">📥</a></td></tr>`; });
+                lista.forEach(p => { html += `<tr><td>22</td><td style="text-align:left;">${p.nombre}</td><td>${p.cargo}</td><td><a href="${p.link}" target="_blank" class="btn-action">👁️</a></td><td><a href="${p.link}" target="_blank" class="btn-action">📥</a></td></tr>`; });
                 html += `</tbody></table>`;
                 contenedor.innerHTML = html;
             } else if (rubroActual === "XI. Otra Información") {
@@ -440,6 +441,14 @@ Summary: Transparencia </p>
         }
 
         function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
+
+        // ESTA ES LA FUNCIÓN QUE RESTAURA EL CIERRE AL HACER CLIC FUERA
+        window.onclick = function(event) {
+            const modal = document.getElementById('modalMaestra');
+            if (event.target == modal) {
+                cerrarModal();
+            }
+        }
     </script>
 </div>
     </div>
