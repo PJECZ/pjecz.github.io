@@ -301,7 +301,7 @@ Summary: Transparencia </p>
         .pje-vista-lista .pje-item::before { content: "📄"; margin-right: 20px; font-size: 24px; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
@@ -313,9 +313,7 @@ Summary: Transparencia </p>
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; }
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
 
-        .pje-btn-accion { display: inline-block; margin-top: 10px; padding: 10px 20px; background: var(--pje-color); color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px; transition: 0.3s; }
-        .pje-btn-accion:hover { background: #5a6773; }
-
+        .pje-link-blue { color: #0056b3; text-decoration: underline; font-weight: bold; }
         .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
     </style>
 
@@ -328,7 +326,7 @@ Summary: Transparencia </p>
     <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
 
     <div id="pje-modal-full">
-        <div class="pje-modal-box">
+        <div class="pje-modal-box" id="pje-modal-content">
             <div class="pje-modal-h">
                 <strong id="pje-modal-title" style="color:var(--pje-color); font-size:1.1rem;"></strong>
                 <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb;">&times;</span>
@@ -356,6 +354,7 @@ Summary: Transparencia </p>
 
             const grid = document.getElementById('pje-contenedor-grid');
             const modal = document.getElementById('pje-modal-full');
+            const modalBox = document.getElementById('pje-modal-content');
             const selAnio = document.getElementById('pje-anio-select');
             let subSeccionI = "Nombramientos"; 
 
@@ -381,10 +380,8 @@ Summary: Transparencia </p>
                     filtros.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal">
                         Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>
-                        <div style="display:flex; gap:15px; flex-wrap:wrap;">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" class="pje-btn-accion">Buzón de Quejas</a>
-                            <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="pje-btn-accion">Solicitudes de Información</a>
-                        </div>
+                        • <strong>Buzón de Quejas:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" class="pje-link-blue">Clic aquí para ir al Buzón</a><br>
+                        • <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="pje-link-blue">Clic aquí para ir a la PNT</a>
                     </div>`;
                 }
                 else if(texto.includes("V. Instituciones") || texto.includes("IX. Georre") || texto.includes("X. Estado")) {
@@ -393,7 +390,7 @@ Summary: Transparencia </p>
                 }
                 else {
                     let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
                 }
             }
 
@@ -410,22 +407,23 @@ Summary: Transparencia </p>
             });
 
             document.getElementById('tab-nombramientos').onclick = function() {
-                subSeccionI = "Nombramientos";
-                this.className = 'pje-tab-btn active';
+                subSeccionI = "Nombramientos"; this.className = 'pje-tab-btn active';
                 document.getElementById('tab-licencias').className = 'pje-tab-btn';
                 renderContenido("I. Nombramientos y Licencias");
             };
 
             document.getElementById('tab-licencias').onclick = function() {
-                subSeccionI = "Licencias";
-                this.className = 'pje-tab-btn active';
+                subSeccionI = "Licencias"; this.className = 'pje-tab-btn active';
                 document.getElementById('tab-nombramientos').className = 'pje-tab-btn';
                 renderContenido("I. Nombramientos y Licencias");
             };
 
             document.getElementById('pje-mosaico-btn').onclick = function() { grid.className='pje-vista-mosaico'; this.classList.add('active'); document.getElementById('pje-lista-btn').classList.remove('active'); };
             document.getElementById('pje-lista-btn').onclick = function() { grid.className='pje-vista-lista'; this.classList.add('active'); document.getElementById('pje-mosaico-btn').classList.remove('active'); };
+
+            // Cerrar modal
             document.getElementById('pje-modal-cerrar').onclick = function() { modal.style.display = 'none'; };
+            window.onclick = function(event) { if (event.target == modal) { modal.style.display = 'none'; } };
         })();
     </script>
 </div>
