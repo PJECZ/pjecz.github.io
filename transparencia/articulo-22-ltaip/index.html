@@ -276,6 +276,10 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
+<p>Entendido. He configurado la Fracción VI (Presupuesto Asignado) para que sea dinámica: ahora, cuando cambies el año en el selector, la tabla mostrará automáticamente los enlaces reales que me proporcionaste para 2023, 2024 y 2025.</p>
+<p>Además, he mantenido todos los textos legales exactos de Seguridad Social, Beneficencia (No Aplica), el Buzón de Quejas y la navegación de la Fracción I.</p>
+<p>Aquí tienes el código actualizado:
+HTML</p>
 <div id="pje-transparencia-final" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
         #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; }
@@ -310,11 +314,12 @@ Summary: Transparencia </p>
 
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 14px; }
-        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; }
+        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 14px; }
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
 
         .pje-link-blue { color: #0056b3; text-decoration: underline; font-weight: bold; }
         .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
+        .pje-btn-ver { cursor: pointer; color: var(--pje-color); font-size: 18px; text-decoration: none; }
     </style>
 
     <div class="pje-toolbar">
@@ -352,18 +357,27 @@ Summary: Transparencia </p>
                 "IX. Georreferenciación de Obras Públicas", "X. Estado que guardan los sistemas pensionarios", "XI. Otra Información"
             ];
 
+            const linksPresupuesto = {
+                "2023": "https://drive.google.com/file/d/1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ/view?usp=sharing",
+                "2024": "https://drive.google.com/file/d/1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD/view?usp=sharing",
+                "2025": "https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing"
+            };
+
             const grid = document.getElementById('pje-contenedor-grid');
             const modal = document.getElementById('pje-modal-full');
-            const modalBox = document.getElementById('pje-modal-content');
             const selAnio = document.getElementById('pje-anio-select');
             let subSeccionI = "Nombramientos"; 
+            let fraccionActual = "";
 
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
+            selAnio.value = "2025"; // Año por defecto
 
             function renderContenido(texto) {
+                fraccionActual = texto;
                 const body = document.getElementById('pje-modal-body');
                 const filtros = document.getElementById('pje-modal-filtros');
                 const tabs = document.getElementById('pje-container-tabs');
+                const anio = selAnio.value;
 
                 tabs.style.display = (texto.includes("I. Nombramientos")) ? "flex" : "none";
                 filtros.style.display = "flex";
@@ -384,13 +398,28 @@ Summary: Transparencia </p>
                         • <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="pje-link-blue">Clic aquí para ir a la PNT</a>
                     </div>`;
                 }
-                else if(texto.includes("V. Instituciones") || texto.includes("IX. Georre") || texto.includes("X. Estado")) {
+                else if(texto.includes("V. Instituciones")) {
+                    filtros.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">
+                        <strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia.<br><br>
+                        Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional de impartir justicia en los asuntos de su competencia. Por lo tanto, al no existir la facultad de otorgar dichos recursos, no existe el listado referido.
+                    </div>`;
+                }
+                else if(texto.includes("IX. Georre") || texto.includes("X. Estado")) {
                     filtros.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, de acuerdo con sus atribuciones constitucionales y legales, no se generan ni se administran los recursos o supuestos previstos en este rubro.</div>`;
                 }
+                else if(texto.includes("VI. Presupuesto")) {
+                    let url = linksPresupuesto[anio] || "#";
+                    let row = (url !== "#") ? 
+                        `<tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto Egresos</td><td><a href="${url}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${url}" target="_blank" class="pje-btn-ver">📥</a></td></tr>` :
+                        `<tr><td colspan="5">Información no disponible para el año seleccionado</td></tr>`;
+
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${row}</tbody></table>`;
+                }
                 else {
                     let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero ${anio}</td><td>${colNombre} Correspondiente</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
                 }
             }
 
@@ -405,6 +434,8 @@ Summary: Transparencia </p>
                 };
                 grid.appendChild(item);
             });
+
+            selAnio.onchange = function() { renderContenido(fraccionActual); };
 
             document.getElementById('tab-nombramientos').onclick = function() {
                 subSeccionI = "Nombramientos"; this.className = 'pje-tab-btn active';
@@ -421,7 +452,6 @@ Summary: Transparencia </p>
             document.getElementById('pje-mosaico-btn').onclick = function() { grid.className='pje-vista-mosaico'; this.classList.add('active'); document.getElementById('pje-lista-btn').classList.remove('active'); };
             document.getElementById('pje-lista-btn').onclick = function() { grid.className='pje-vista-lista'; this.classList.add('active'); document.getElementById('pje-mosaico-btn').classList.remove('active'); };
 
-            // Cerrar modal
             document.getElementById('pje-modal-cerrar').onclick = function() { modal.style.display = 'none'; };
             window.onclick = function(event) { if (event.target == modal) { modal.style.display = 'none'; } };
         })();
