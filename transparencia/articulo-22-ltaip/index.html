@@ -276,162 +276,95 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
-<div id="contenedor-transparencia-pje">
+<div id="pje-main-container" style="all: initial; font-family: sans-serif;">
     <style>
-        #contenedor-transparencia-pje { all: initial; font-family: 'Segoe UI', Arial, sans-serif; }
+        /* RESET Y ESTILOS CRÍTICOS */
+        #pje-main-container { display: block; width: 100%; margin: 20px 0; }
+        .pje-toolbar { display: flex; justify-content: flex-end; padding: 10px; background: #eee; border: 1px solid #ccc; gap: 5px; }
+        .pje-btn-v { cursor: pointer; padding: 5px 15px; border: 1px solid #999; background: #fff; font-weight: bold; }
+        .pje-btn-v.active { background: #49545E !important; color: #fff !important; }
 
-        #contenedor-transparencia-pje .area-carpetas {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.96) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/800px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
-            background-size: 400px; background-attachment: fixed; background-blend-mode: lighten; border-radius: 10px;
+        /* CONTENEDOR DE FRACCIONES */
+        #pje-grid { 
+            display: grid; padding: 20px; gap: 15px; border: 1px solid #ccc; border-top: none;
+            background: #fff url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/150px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
+            background-attachment: fixed;
         }
 
-        #contenedor-transparencia-pje .btn-rubro {
-            background: #49545E; border-radius: 4px 15px 8px 8px; padding: 25px; text-align: center; cursor: pointer;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center;
-            justify-content: center; min-height: 140px; border-top: 10px solid #363e46;
-            transition: transform 0.3s ease, background 0.3s;
-        }
-        #contenedor-transparencia-pje .btn-rubro:hover { transform: scale(1.05); background: #5a6773; }
-        #contenedor-transparencia-pje .btn-rubro span { font-size: 13px; font-weight: 600; color: #fff; text-transform: uppercase; line-height: 1.3; pointer-events: none; }
-        #contenedor-transparencia-pje .btn-rubro::before { content: "📁"; font-size: 28px; margin-bottom: 10px; }
+        /* CLASES PARA EL CAMBIO DE VISTA */
+        .v-mosaico { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        .v-lista { grid-template-columns: 1fr; }
 
-        #contenedor-transparencia-pje .modal-transparencia { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 99999; }
-
-        #contenedor-transparencia-pje .modal-contenido { 
-            background: white; width: 90%; max-width: 1000px; border-radius: 8px; 
-            display: block; /* Cambiado de flex a block para evitar colapsos */
-            max-height: 95vh; overflow-y: auto; position: relative; 
+        /* ESTILO DE LOS BOTONES/CARPETAS */
+        .pje-folder { 
+            padding: 20px; text-align: center; cursor: pointer; transition: 0.2s; 
+            display: flex; align-items: center; justify-content: center; font-weight: bold;
         }
 
-        #contenedor-transparencia-pje .modal-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 10; }
+        /* Estilo Mosaico */
+        .v-mosaico .pje-folder { background: #49545E; color: #fff; min-height: 100px; border-radius: 5px; flex-direction: column; }
+        .v-mosaico .pje-folder::before { content: "📁"; font-size: 25px; margin-bottom: 5px; }
 
-        #contenedor-transparencia-pje .modal-body { padding: 30px; background: #fff; }
+        /* Estilo Lista */
+        .v-lista .pje-folder { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 5px solid #49545E; justify-content: flex-start; text-align: left; }
+        .v-lista .pje-folder::before { content: "📄"; margin-right: 15px; }
 
-        /* ESTILO REFORZADO PARA NOTAS LARGAS */
-        #contenedor-transparencia-pje .mensaje-legal-completo { 
-            background: #fdfdfd; 
-            border-left: 6px solid #49545E; 
-            padding: 30px; 
-            line-height: 1.8; 
-            color: #333; 
-            font-size: 17px; 
-            text-align: justify; 
-            margin-bottom: 30px;
-            display: block !important; 
-            height: auto !important;
-            clear: both;
-        }
-
-        #contenedor-transparencia-pje .tabla-datos { width: 100%; border-collapse: collapse; }
-        #contenedor-transparencia-pje .tabla-datos th { background: #49545E; color: white; padding: 12px; font-size: 13px; }
-        #contenedor-transparencia-pje .tabla-datos td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; }
-        #contenedor-transparencia-pje .btn-action { text-decoration: none; font-size: 20px; color: #49545E; margin: 0 5px; }
-        #contenedor-transparencia-pje .btn-cerrar { font-size: 35px; cursor: pointer; border: none; background: none; color: #999; line-height: 1; }
-        #contenedor-transparencia-pje .nav-tabs { display: flex; gap: 10px; justify-content: center; padding: 15px; background: #fff; border-bottom: 1px solid #eee; }
-        #contenedor-transparencia-pje .btn-tab { padding: 8px 20px; border: 2px solid #49545E; background: transparent; border-radius: 20px; cursor: pointer; font-weight: bold; }
-        #contenedor-transparencia-pje .btn-tab.active { background: #49545E; color: white; }
+        /* MODAL */
+        #pje-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 10000; align-items: center; justify-content: center; }
+        .pje-modal-content { background: #fff; width: 80%; max-width: 800px; padding: 20px; border-radius: 5px; position: relative; }
+        .pje-close { position: absolute; top: 10px; right: 15px; font-size: 25px; cursor: pointer; border: none; background: none; }
     </style>
-    <div class="area-carpetas" id="grid-botones"></div>
-    <div class="modal-transparencia" id="modalMaestra">
-        <div class="modal-contenido">
-            <div class="modal-header">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <strong id="titulo-modal" style="color: #49545E; font-size: 1.3rem;"></strong>
-                    <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
-                </div>
-                <div id="barra-info" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; background: #ebf2f7; padding: 10px; font-size: 12px; margin-top: 10px; border-radius: 5px;">
-                    <div id="contenedor-anio"><strong>Año:</strong> <select id="selectAnio" onchange="actualizarTabla()"></select></div>
-                    <div><strong>Responsable:</strong> Unidad Administrativa</div>
-                    <div><strong>Actualización:</strong> 06/02/2026</div>
-                </div>
-            </div>
-            <div id="sub-nav-container"></div>
-            <div class="modal-body" id="contenido-modal"></div>
+    <div class="pje-toolbar">
+        <button id="btn-mosaico" class="pje-btn-v active">MOSAICO</button>
+        <button id="btn-lista" class="pje-btn-v">LISTA</button>
+    </div>
+    <div id="pje-grid" class="v-mosaico">
+        </div>
+    <div id="pje-modal">
+        <div class="pje-modal-content">
+            <button class="pje-close" id="pje-close">&times;</button>
+            <h2 id="pje-modal-title"></h2>
+            <hr>
+            <div id="pje-modal-body">Contenido de transparencia...</div>
         </div>
     </div>
-
     <script>
-        const linkPNT = "https://www.plataformadetransparencia.org.mx/Inicio";
-        const linkBuzon = "#"; 
-        const linksBase = { "2026": { "Nombramientos": [], "Enero": {}, "Presupuesto": "#", "OtraInformacion": [] } };
-        const rubros = ["I. Nombramientos y Licencias", "II. Tipo de Seguridad Social", "III. Viáticos y gastos de representación", "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", "V. Instituciones de Beneficencia", "VI. Presupuesto Asignado", "VII. Minutas de Sesiones Públicas", "VIII. Actas de Entrega-Recepción", "IX. Georreferenciación de Obras Públicas", "X. Estado que guardan los sistemas pensionarios", "XI. Otra Información"];
-        const nombresMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        (function() {
+            const data = ["I. Nombramientos", "II. Seguridad Social", "III. Viáticos", "IV. Quejas", "V. Beneficencia", "VI. Presupuesto", "XI. Otra Info"];
+            const grid = document.getElementById('pje-grid');
+            const bM = document.getElementById('btn-mosaico');
+            const bL = document.getElementById('btn-lista');
+            const mod = document.getElementById('pje-modal');
 
-        let rubroActual = "";
-        let subSeccionI = "Nombramientos";
+            // Cargar Fracciones
+            data.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'pje-folder';
+                div.innerHTML = '<span>' + item + '</span>';
+                div.onclick = function() {
+                    document.getElementById('pje-modal-title').innerText = item;
+                    mod.style.display = 'flex';
+                };
+                grid.appendChild(div);
+            });
 
-        const selector = document.getElementById('selectAnio');
-        for (let a = 2026; a >= 2015; a--) {
-            let opt = document.createElement('option'); opt.value = a; opt.innerHTML = a; selector.appendChild(opt);
-        }
+            // Botón Mosaico
+            bM.onclick = function() {
+                grid.className = 'v-mosaico';
+                bM.classList.add('active');
+                bL.classList.remove('active');
+            };
 
-        rubros.forEach((nombre) => {
-            const boton = document.createElement('div');
-            boton.className = 'btn-rubro';
-            boton.onclick = () => abrirModal(nombre);
-            boton.innerHTML = `<span>${nombre}</span>`;
-            document.getElementById('grid-botones').appendChild(boton);
-        });
+            // Botón Lista
+            bL.onclick = function() {
+                grid.className = 'v-lista';
+                bL.classList.add('active');
+                bM.classList.remove('active');
+            };
 
-        function abrirModal(titulo) {
-            rubroActual = titulo;
-            document.getElementById('titulo-modal').innerText = titulo;
-            const esEstatico = (titulo === "II. Tipo de Seguridad Social" || titulo === "V. Instituciones de Beneficencia" || titulo === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias" || titulo === "IX. Georreferenciación de Obras Públicas" || titulo === "X. Estado que guardan los sistemas pensionarios");
-            document.getElementById('contenedor-anio').style.visibility = esEstatico ? 'hidden' : 'visible';
-            const subNav = document.getElementById('sub-nav-container');
-            subNav.innerHTML = (titulo === "I. Nombramientos y Licencias") ? 
-                `<div class="nav-tabs">
-                    <button class="btn-tab ${subSeccionI === 'Nombramientos' ? 'active' : ''}" onclick="cambiarSub('Nombramientos')">Nombramientos</button>
-                    <button class="btn-tab ${subSeccionI === 'Licencias' ? 'active' : ''}" onclick="cambiarSub('Licencias')">Licencias</button>
-                </div>` : "";
-            actualizarTabla();
-            document.getElementById('modalMaestra').style.display = 'flex';
-        }
-
-        function cambiarSub(sec) { subSeccionI = sec; actualizarTabla(); abrirModal(rubroActual); }
-
-        function actualizarTabla() {
-            const anio = document.getElementById('selectAnio').value;
-            const contenedor = document.getElementById('contenido-modal');
-            contenedor.innerHTML = "";
-
-            if (rubroActual === "II. Tipo de Seguridad Social") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>`;
-            } else if (rubroActual === "V. Instituciones de Beneficencia") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">Se informa que la información referente a la presente fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza. <br><br>Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>`;
-            } else if (rubroActual === "IX. Georreferenciación de Obras Públicas") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>`;
-            } else if (rubroActual === "X. Estado que guardan los sistemas pensionarios") {
-                contenedor.innerHTML = `<div class="mensaje-legal-completo">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
-            } else if (rubroActual === "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias") {
-                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mecanismo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>
-                    <tr><td>22</td><td>Buzón de Quejas y Sugerencias</td><td><a href="${linkBuzon}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkBuzon}" target="_blank" class="btn-action">📥</a></td></tr>
-                    <tr><td>22</td><td>Solicitudes de Acceso (PNT)</td><td><a href="${linkPNT}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkPNT}" target="_blank" class="btn-action">📥</a></td></tr>
-                </tbody></table>`;
-            } else if (rubroActual === "I. Nombramientos y Licencias" && subSeccionI === "Nombramientos") {
-                let lista = (linksBase[anio] && linksBase[anio]["Nombramientos"]) ? linksBase[anio]["Nombramientos"] : [];
-                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Nombre del Servidor Público</th><th>Cargo / Área</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
-                lista.forEach(p => { html += `<tr><td>22</td><td style="text-align:left;">${p.nombre}</td><td>${p.cargo}</td><td><a href="${p.link}" target="_blank" class="btn-action">👁️</a></td><td><a href="${p.link}" target="_blank" class="btn-action">📥</a></td></tr>`; });
-                html += `</tbody></table>`; contenedor.innerHTML = html;
-            } else if (rubroActual === "VI. Presupuesto Asignado") {
-                let linkAnio = (linksBase[anio] && linksBase[anio]["Presupuesto"]) ? linksBase[anio]["Presupuesto"] : "#";
-                contenedor.innerHTML = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Periodo</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>
-                    <tr><td>22</td><td>Anual ${anio}</td><td style="text-align:left;">Presupuesto de Egresos Aprobado</td><td><a href="${linkAnio}" target="_blank" class="btn-action">👁️</a></td><td><a href="${linkAnio}" target="_blank" class="btn-action">📥</a></td></tr>
-                </tbody></table>`;
-            } else {
-                let html = `<table class="tabla-datos"><thead><tr><th>Art.</th><th>Mes</th><th>Archivo</th><th>Ver</th><th>Desc.</th></tr></thead><tbody>`;
-                let limite = (anio == "2026") ? 2 : 12; 
-                for (let i = 0; i < limite; i++) {
-                    let m = nombresMeses[i];
-                    html += `<tr><td>22</td><td>${m} ${anio}</td><td style="text-align:left;">${rubroActual} - ${m}</td><td><a href="#" class="btn-action">👁️</a></td><td><a href="#" class="btn-action">📥</a></td></tr>`;
-                }
-                html += `</tbody></table>`; contenedor.innerHTML = html;
-            }
-        }
-
-        function cerrarModal() { document.getElementById('modalMaestra').style.display = 'none'; }
-        window.onclick = function(event) { if (event.target.className === 'modal-transparencia') { cerrarModal(); } }
+            // Cerrar
+            document.getElementById('pje-close').onclick = function() { mod.style.display = 'none'; };
+        })();
     </script>
 </div>
     </div>
