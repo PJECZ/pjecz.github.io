@@ -368,7 +368,11 @@ Summary: Transparencia </p>
 
                 if(texto.includes("II. Tipo")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción se rige bajo la Ley Orgánica. La información se presenta de forma íntegra para su consulta.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">
+                        El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>
+                        Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>
+                        La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.
+                    </div>`;
                 } 
                 else if(texto.includes("V. Instituciones") || texto.includes("IX. Georre") || texto.includes("X. Estado")) {
                     filtros.style.display = "none";
