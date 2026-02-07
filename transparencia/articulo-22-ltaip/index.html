@@ -354,11 +354,21 @@ Summary: Transparencia </p>
                 "IX. Georreferenciación de Obras Públicas", "X. Estado que guardan los sistemas pensionarios", "XI. Otra Información"
             ];
 
-            // IDS de Google Drive extraídos de tus enlaces
             const idsPresupuesto = {
                 "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ",
                 "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD",
                 "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z"
+            };
+
+            const idsLicencias = {
+                "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R",
+                "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh",
+                "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O",
+                "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm",
+                "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB",
+                "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG",
+                "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH",
+                "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J"
             };
 
             const grid = document.getElementById('pje-contenedor-grid');
@@ -369,6 +379,13 @@ Summary: Transparencia </p>
 
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
             selAnio.value = "2025";
+
+            function getDriveUrls(id) {
+                return {
+                    view: `https://docs.google.com/presentation/d/${id}/edit?usp=sharing`,
+                    download: `https://docs.google.com/presentation/d/${id}/export/pptx`
+                };
+            }
 
             function renderContenido(texto) {
                 fraccionActual = texto;
@@ -392,19 +409,21 @@ Summary: Transparencia </p>
                     filtros.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia.<br><br>Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional de impartir justicia en los asuntos de su competencia. Por lo tanto, al no existir la facultad de otorgar dichos recursos, no existe el listado referido.</div>`;
                 }
-                else if(texto.includes("IX. Georre") || texto.includes("X. Estado")) {
-                    filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, de acuerdo con sus atribuciones constitucionales y legales, no se generan ni se administran los recursos o supuestos previstos en este rubro.</div>`;
-                }
                 else if(texto.includes("VI. Presupuesto")) {
                     let fileId = idsPresupuesto[anio];
                     if(fileId) {
                         let viewUrl = `https://drive.google.com/file/d/${fileId}/view`;
                         let downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
                         body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto Egresos</td><td><a href="${viewUrl}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${downloadUrl}" class="pje-btn-descarga">📥</a></td></tr></tbody></table>`;
-                    } else {
-                        body.innerHTML = `<div style="text-align:center; padding:20px; color:#666;">Información no disponible para el año seleccionado.</div>`;
+                    } else { body.innerHTML = `<div style="text-align:center; padding:20px; color:#666;">Información no disponible para el año seleccionado.</div>`; }
+                }
+                else if(texto.includes("I. Nombramientos") && subSeccionI === "Licencias") {
+                    let rows = "";
+                    for (const [mes, id] of Object.entries(idsLicencias)) {
+                        let urls = getDriveUrls(id);
+                        rows += `<tr><td>22</td><td>${mes} ${anio}</td><td>Relación de Licencias</td><td><a href="${urls.view}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${urls.download}" class="pje-btn-descarga">📥</a></td></tr>`;
                     }
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
                 else {
                     let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
