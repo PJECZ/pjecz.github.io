@@ -309,8 +309,11 @@ Summary: Transparencia </p>
         .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
 
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 14px; }
-        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 14px; }
+        /* AJUSTE DE CENTRADO EN ENCABEZADOS */
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 14px; text-align: center !important; }
+        /* AJUSTE DE CENTRADO EN CELDAS */
+        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 14px; }
+
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
 
         .pje-link-blue { color: #0056b3; text-decoration: underline; font-weight: bold; }
@@ -343,7 +346,7 @@ Summary: Transparencia </p>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 30px; overflow-y: auto;"></div>
         </div>
-    </div>
+    </div> 
 
     <script>
         (function() {
