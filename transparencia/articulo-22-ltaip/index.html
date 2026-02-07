@@ -278,72 +278,28 @@ Summary: Transparencia </p>
 <h2>Fracciones</h2>
 <div id="pje-transparencia-final" style="all: initial; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <style>
-        /* VARIABLES Y RESET */
         #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; --pje-hover: #5a6773; }
-
-        /* BARRA DE HERRAMIENTAS */
-        .pje-toolbar { 
-            display: flex; justify-content: flex-end; align-items: center; 
-            padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; 
-            border-radius: 8px 8px 0 0; gap: 10px;
-        }
+        .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-toolbar-title { margin-right: auto; color: #666; font-weight: bold; font-size: 12px; letter-spacing: 1px; }
-
-        .pje-btn-vista { 
-            cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; 
-            background: #fff; font-weight: bold; color: var(--pje-color); 
-            border-radius: 4px; transition: 0.3s; font-size: 13px;
-        }
+        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
-
-        /* AREA DE CONTENIDO PRINCIPAL */
-        #pje-contenedor-grid { 
-            display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none;
-            background: rgba(255, 255, 255, 0.97) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/450px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
-            background-attachment: fixed; background-blend-mode: lighten; min-height: 600px;
-        }
-
-        /* CONFIGURACIÓN DE VISTAS */
+        #pje-contenedor-grid { display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none; background: rgba(255, 255, 255, 0.97) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/450px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center; background-attachment: fixed; background-blend-mode: lighten; min-height: 600px; }
         .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
         .pje-vista-lista { grid-template-columns: 1fr; }
-
-        /* ELEMENTOS (CARPETAS / FILAS) */
-        .pje-item { 
-            padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; 
-            display: flex; align-items: center; justify-content: center; 
-            font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4;
-            box-sizing: border-box;
-        }
-
-        /* Estilo para Mosaico */
-        .pje-vista-mosaico .pje-item { 
-            background: var(--pje-color); color: #fff; min-height: 160px; 
-            border-radius: 5px 20px 5px 5px; flex-direction: column;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46;
-        }
+        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; }
+        .pje-vista-mosaico .pje-item { background: var(--pje-color); color: #fff; min-height: 160px; border-radius: 5px 20px 5px 5px; flex-direction: column; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46; }
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: var(--pje-hover); }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
-
-        /* Estilo para Lista */
-        .pje-vista-lista .pje-item { 
-            background: #fff; color: #333; border-bottom: 1px solid #eee; 
-            border-left: 8px solid var(--pje-color); justify-content: flex-start; 
-            text-align: left; padding: 18px 30px; text-transform: none; font-size: 16px;
-        }
+        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 16px; }
         .pje-vista-lista .pje-item:hover { background: #f8f9fa; padding-left: 40px; }
         .pje-vista-lista .pje-item::before { content: "📄"; margin-right: 20px; font-size: 24px; }
-
-        /* MODAL */
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
         .pje-modal-b { padding: 35px; overflow-y: auto; flex-grow: 1; }
-
-        /* CONTENIDO INTERNO MODAL */
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 15px; font-size: 14px; text-align: center; }
         .pje-tabla-res td { padding: 14px; border-bottom: 1px solid #eee; text-align: center; color: #444; font-size: 14px; }
-        .pje-btn-doc { text-decoration: none; font-size: 18px; color: var(--pje-color); cursor: pointer; }
         .pje-aviso-legal { background: #f9f9f9; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; text-align: justify; color: #333; font-size: 15px; }
     </style>
     <div class="pje-toolbar">
@@ -380,7 +336,6 @@ Summary: Transparencia </p>
             const grid = document.getElementById('pje-contenedor-grid');
             const modal = document.getElementById('pje-modal-full');
 
-            // 1. Crear elementos dinámicamente
             fracciones.forEach((texto, index) => {
                 const item = document.createElement('div');
                 item.className = 'pje-item';
@@ -390,8 +345,15 @@ Summary: Transparencia </p>
                     document.getElementById('pje-modal-title').innerText = texto;
                     const body = document.getElementById('pje-modal-body');
 
-                    // Lógica para fracciones con aviso legal (II, V, IX, X)
-                    if(/II\.|V\.|IX\.|X\./.test(texto)) {
+                    // CORRECCIÓN: Lista exacta de fracciones que llevan aviso legal
+                    const fraccionesConAviso = [
+                        "II. Tipo de Seguridad Social",
+                        "V. Instituciones de Beneficencia",
+                        "IX. Georreferenciación de Obras Públicas",
+                        "X. Estado que guardan los sistemas pensionarios"
+                    ];
+
+                    if(fraccionesConAviso.includes(texto)) {
                         body.innerHTML = `
                             <div class="pje-aviso-legal">
                                 <strong>AVISO DE TRANSPARENCIA:</strong><br><br>
@@ -400,14 +362,12 @@ Summary: Transparencia </p>
                                 de este órgano, la información se presenta de manera consolidada garantizando el acceso a la información pública.
                             </div>`;
                     } else {
-                        // Tabla para el resto de las fracciones
                         body.innerHTML = `
                             <table class="pje-tabla-res">
                                 <thead>
                                     <tr>
                                         <th>Art.</th>
                                         <th>Periodo 2026</th>
-                                        <th>Descripción</th>
                                         <th>Ver</th>
                                         <th>Descargar</th>
                                     </tr>
@@ -415,10 +375,9 @@ Summary: Transparencia </p>
                                 <tbody>
                                     <tr>
                                         <td>22</td>
-                                        <td>Enero - Febrero</td>
-                                        <td>Información correspondiente a la Fracción ${index + 1}</td>
-                                        <td><span class="pje-btn-doc">👁️</span></td>
-                                        <td><span class="pje-btn-doc">📥</span></td>
+                                        <td>Enero</td>
+                                        <td><span style="cursor:pointer">👁️</span></td>
+                                        <td><span style="cursor:pointer">📥</span></td>
                                     </tr>
                                 </tbody>
                             </table>`;
@@ -428,25 +387,18 @@ Summary: Transparencia </p>
                 grid.appendChild(item);
             });
 
-            // 2. Controladores de cambio de vista
-            const btnM = document.getElementById('pje-mosaico-trigger');
-            const btnL = document.getElementById('pje-lista-trigger');
-
-            btnM.onclick = function() {
-                grid.classList.remove('pje-vista-lista');
-                grid.classList.add('pje-vista-mosaico');
+            document.getElementById('pje-mosaico-trigger').onclick = function() {
+                grid.classList.replace('pje-vista-lista', 'pje-vista-mosaico');
                 this.classList.add('active');
-                btnL.classList.remove('active');
+                document.getElementById('pje-lista-trigger').classList.remove('active');
             };
 
-            btnL.onclick = function() {
-                grid.classList.remove('pje-vista-mosaico');
-                grid.classList.add('pje-vista-lista');
+            document.getElementById('pje-lista-trigger').onclick = function() {
+                grid.classList.replace('pje-vista-mosaico', 'pje-vista-lista');
                 this.classList.add('active');
-                btnM.classList.remove('active');
+                document.getElementById('pje-mosaico-trigger').classList.remove('active');
             };
 
-            // 3. Cerrar Modal
             document.getElementById('pje-modal-cerrar').onclick = function() { modal.style.display = 'none'; };
             window.onclick = function(e) { if (e.target == modal) modal.style.display = 'none'; };
         })();
