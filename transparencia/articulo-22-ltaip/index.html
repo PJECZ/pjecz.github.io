@@ -313,6 +313,9 @@ Summary: Transparencia </p>
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; }
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
 
+        .pje-btn-accion { display: inline-block; margin-top: 10px; padding: 10px 20px; background: var(--pje-color); color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        .pje-btn-accion:hover { background: #5a6773; }
+
         .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
     </style>
 
@@ -374,17 +377,23 @@ Summary: Transparencia </p>
                         La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.
                     </div>`;
                 } 
+                else if(texto.includes("IV. Mecanismo")) {
+                    filtros.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">
+                        Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>
+                        <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" class="pje-btn-accion">Buzón de Quejas</a>
+                            <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="pje-btn-accion">Solicitudes de Información</a>
+                        </div>
+                    </div>`;
+                }
                 else if(texto.includes("V. Instituciones") || texto.includes("IX. Georre") || texto.includes("X. Estado")) {
                     filtros.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal">Esta fracción <strong>No Aplica</strong> al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, de acuerdo con sus atribuciones constitucionales y legales, no se generan ni se administran los recursos o supuestos previstos en este rubro.</div>`;
                 }
-                else if(texto.includes("IV. Mecanismo")) {
-                    filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Transparencia y la Plataforma Nacional de Transparencia (PNT).</div>`;
-                }
                 else {
-                    let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Archivo";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td></tr></tbody></table>`;
+                    let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th></tr></thead><tbody><tr><td>22</td><td>Enero 2026</td><td>${colNombre} Correspondiente</td><td>👁️</td></tr></tbody></table>`;
                 }
             }
 
