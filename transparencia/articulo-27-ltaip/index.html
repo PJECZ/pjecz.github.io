@@ -301,8 +301,10 @@
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
-        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; }
-        .pje-link-externo { font-size: 11px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; }
+        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default; }
+        .pje-item-texto-lista { cursor: pointer; flex-grow: 1; font-weight: bold; }
+        .pje-item-texto-lista:hover { color: #000; text-decoration: underline; }
+        .pje-link-externo { font-size: 11px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; cursor: pointer; display: inline-block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
@@ -388,14 +390,28 @@
                 const grid = document.getElementById('pje-contenedor-grid');
                 grid.innerHTML = "";
                 grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
+
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-                    item.innerHTML = modo === 'mosaico' ? `<span>${f.t}</span>` : `<div style="display:flex; flex-direction:column;"><strong>${f.t}</strong><a href="${f.l}" target="_blank" class="pje-link-externo">${f.l}</a></div>`;
-                    item.onclick = (e) => { if(e.target.tagName !== 'A') abrirModal(f.t); };
+
+                    if(modo === 'mosaico') {
+                        item.innerHTML = `<span>${f.t}</span>`;
+                        item.onclick = () => abrirModal(f.t);
+                    } else {
+                        item.innerHTML = `
+                            <div style="display:flex; flex-direction:column; width:100%;">
+                                <div class="pje-item-texto-lista" onclick="window.pjeAbrirModalDesdeLista('${f.t}')">${f.t}</div>
+                                <a href="${f.l}" target="_blank" class="pje-link-externo">${f.l}</a>
+                            </div>`;
+                    }
                     grid.appendChild(item);
                 });
             }
+
+            window.pjeAbrirModalDesdeLista = function(titulo) {
+                abrirModal(titulo);
+            };
 
             function abrirModal(t) {
                 fraccionActual = t;
@@ -412,62 +428,46 @@
                 tabsCont.style.display = (fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) ? "flex" : "none";
                 anioCont.style.display = "block";
 
-                // Lógica de Vínculos Directos y Notas
                 if(fraccionActual.includes("XVII. Estado que guarda")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones...</div>`;
                 }
                 else if(fraccionActual.includes("XIII. Programas")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria para ocupar algún cargo jurisdiccional por parte del órgano de control y disciplina del Poder Judicial.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria...</div>`;
                 }
-                else if(fraccionActual.includes("VII. Agenda")) {
+                else if(fraccionActual.includes("VII. Agenda") || fraccionActual.includes("X. Ubicación") || fraccionActual.includes("XV. Resumen") || fraccionActual.includes("XIV. Justicia")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar la agenda de audiencias actualizada en tiempo real, por favor diríjase al siguiente portal oficial:<br><br><a href="https://www.pjecz.gob.mx/consultas/agenda-audiencias/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Agenda de Audiencias</a></div>`;
-                }
-                else if(fraccionActual.includes("X. Ubicación")) {
-                    anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Consulta la ubicación de expedientes a través del sistema oficial:<br><br><a href="https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Ubicación de Expedientes</a></div>`;
-                }
-                else if(fraccionActual.includes("XV. Resumen de la glosa")) {
-                    anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Acceda al resumen de la glosa de debate a través del siguiente enlace:<br><br><a href="https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Ver Glosa de Debate</a></div>`;
-                }
-                else if(fraccionActual.includes("XIV. Justicia Constitucional")) {
-                    anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consulta del Tribunal Constitucional, por favor acceda al siguiente enlace:<br><br><a href="https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Justicia Constitucional</a></div>`;
+                    let link = fraccionActual.includes("VII.") ? "https://www.pjecz.gob.mx/consultas/agenda-audiencias/#gsc.tab=0" : 
+                               fraccionActual.includes("X.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/#gsc.tab=0" :
+                               fraccionActual.includes("XIV.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/#gsc.tab=0" :
+                               "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/#gsc.tab=0";
+                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar esta información, por favor acceda al siguiente enlace:<br><br><a href="${link}" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Información Oficial</a></div>`;
                 }
                 else {
-                    // TABLAS SIMPLIFICADAS (Sin mes/año si aplica)
                     let headers = "<tr><th>Art.</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
                     let rowContent = "";
 
-                    // Fracciones que SI llevan Mes/Año (V, VI, XII, IV)
                     if(["V.", "VI.", "XII.", "IV."].some(pref => fraccionActual.includes(pref))) {
                         headers = "<tr><th>Art.</th><th>Periodo</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
                         if(fraccionActual.includes("IV.")) {
                             rowContent = `<tr><td>27</td><td>Anual ${anio}</td><td>Presupuesto Asignado</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
                         } else {
                             let lista = (anio === "2026") ? ["Enero", "Febrero"] : meses;
-                            lista.forEach(m => {
-                                rowContent += `<tr><td>27</td><td>${m} ${anio}</td><td>Documento Correspondiente</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
-                            });
+                            lista.forEach(m => { rowContent += `<tr><td>27</td><td>${m} ${anio}</td><td>Documento Correspondiente</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`; });
                         }
                     } 
-                    // Fracciones de ARCHIVO ÚNICO (I, II, III, IX, XI, XVI, XVIII)
                     else {
-                        anioCont.style.display = "none"; // Ocultar filtro de año en archivos permanentes
+                        anioCont.style.display = "none";
                         let itemNombre = fraccionActual.split(' ')[1];
                         if(fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) itemNombre = subSeccionActiva;
 
                         if(fraccionActual.includes("VIII. Actas")) {
-                            rowContent = `<tr><td>27</td><td>Primera Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
-                            rowContent += `<tr><td>27</td><td>Segunda Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                            rowContent = `<tr><td>27</td><td>Primera Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr><tr><td>27</td><td>Segunda Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
                         } else {
                             rowContent = `<tr><td>27</td><td>${itemNombre}</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
                         }
                     }
-
                     body.innerHTML = `<table class="pje-tabla-res"><thead>${headers}</thead><tbody>${rowContent}</tbody></table>`;
                 }
             }
