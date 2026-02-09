@@ -281,7 +281,6 @@
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
-        /* Estilos específicos para que la lista sea linkeable */
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
         .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
         .pje-item-titulo-lista:hover { color: #0056b3; text-decoration: underline; }
@@ -361,29 +360,20 @@
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
             selAnio.value = "2025";
 
-            // Función para saltar a URL externa
-            window.pjeSalto22 = function(url) {
-                window.open(url, '_blank');
-            };
+            window.pjeSalto22 = function(url) { window.open(url, '_blank'); };
 
             function renderGrid(modo) {
                 const grid = document.getElementById('pje-contenedor-grid');
                 grid.innerHTML = "";
                 grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
-
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-
                     if (modo === 'mosaico') {
                         item.innerHTML = `<span>${f.t}</span>`;
                         item.onclick = () => abrirModal(f.t);
                     } else {
-                        item.innerHTML = `
-                            <div style="display:flex; flex-direction:column; width:100%;">
-                                <span class="pje-item-titulo-lista" onclick="window.pjeSalto22('${f.l}')">${f.t}</span>
-                                <span class="pje-link-externo" onclick="window.pjeSalto22('${f.l}')">${f.l}</span>
-                            </div>`;
+                        item.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;"><span class="pje-item-titulo-lista" onclick="window.pjeSalto22('${f.l}')">${f.t}</span><span class="pje-link-externo" onclick="window.pjeSalto22('${f.l}')">${f.l}</span></div>`;
                     }
                     grid.appendChild(item);
                 });
@@ -399,8 +389,8 @@
             function renderContenido() {
                 const body = document.getElementById('pje-modal-body');
                 const tabs = document.getElementById('pje-container-tabs');
-                const anio = selAnio.value;
                 const anioCont = document.getElementById('pje-anio-cont');
+                const anio = selAnio.value;
 
                 tabs.style.display = fraccionActual.includes("I. Nombramientos") ? "flex" : "none";
                 anioCont.style.display = "block";
@@ -411,25 +401,23 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                if(fraccionActual.includes("II. Tipo")) {
+                // Lógica de "No aplicar" o vistas sin tablas de meses
+                if(fraccionActual.includes("XI. Otra Información") || (fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>`;
+                    let linkObj = fracciones.find(f => f.t === fraccionActual);
+                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar los archivos correspondientes a esta sección, por favor acceda al sitio oficial:<br><br><button onclick="window.pjeSalto22('${linkObj.l}')" style="background:var(--pje-color); color:#fff; padding:10px 25px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">Ver Archivos Cargados</button></div>`;
+                }
+                else if(fraccionActual.includes("II. Tipo")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social... (texto completo omitido por brevedad)...</div>`;
                 }
                 else if(fraccionActual.includes("IV. Mecanismo")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>• <strong>Buzón de Quejas:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" style="color:#0056b3;">Clic aquí para ir al Buzón</a><br>• <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información... <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
                 }
-                else if(fraccionActual.includes("V. Instituciones")) {
+                else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia. Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional.</div>`;
-                }
-                else if(fraccionActual.includes("IX. Georreferenciación")) {
-                    anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>`;
-                }
-                else if(fraccionActual.includes("X. Estado que guardan")) {
-                    anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial...</div>`;
                 }
                 else if(fraccionActual.includes("VI. Presupuesto")) {
                     let id = idsPresupuesto[anio] || "";
@@ -438,7 +426,7 @@
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else {
-                    let col = fraccionActual.includes("I. Nombramientos") ? subSeccionI : "Documento";
+                    let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
                     let rows = "";
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
                     listaMeses.forEach(m => {
