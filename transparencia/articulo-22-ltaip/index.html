@@ -362,7 +362,6 @@ Summary: Transparencia </p>
             ];
 
             const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-
             const idsPresupuesto = { "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ", "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD", "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z" };
             const idsLicencias = { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" };
 
@@ -442,8 +441,8 @@ Summary: Transparencia </p>
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
                     listaMeses.forEach(m => {
                         let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "";
-                        let v = id ? `https://docs.google.com/presentation/d/${id}/edit` : "#";
-                        let d = id ? `https://docs.google.com/presentation/d/${id}/export/pptx` : "#";
+                        let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                        let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
                         rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                     });
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${col}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
