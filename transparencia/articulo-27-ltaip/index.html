@@ -280,9 +280,9 @@
 <p>XVIII. <a href="f18-otra-informacion-relevante/">Otra información relevante</a> </p>
 <p>Además de lo señalado en el artículo 69 de la Ley General y el artículo 22 de la Ley de Transparencia y Accceso a la Información local, el Poder Judicial del Estado, deberá publicar la siguiente información</p>
 <h2>Fracciones</h2>
-<div id="pje-art27-final-corregido-v7" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-art27-final-peritos-link" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-art27-final-corregido-v7 { display: block; width: 100%; --pje-color: #49545E; }
+        #pje-art27-final-peritos-link { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
@@ -320,7 +320,6 @@
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 13px; }
 
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; }
-        .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
     </style>
 
     <div class="pje-toolbar">
@@ -409,10 +408,11 @@
                         item.innerHTML = `<span>${f.t}</span>`;
                         item.onclick = () => window.pjeLanzarModal(f.t);
                     } else {
+                        let linkFinal = f.t.includes("XVI.") ? "https://www.pjecz.gob.mx/consultas/peritos/#gsc.tab=0" : f.l;
                         item.innerHTML = `
                             <div style="display:flex; flex-direction:column; width:100%;">
-                                <div class="pje-item-directo-lista" onclick="window.pjeSaltoURL(event, '${f.l}')">${f.t}</div>
-                                <div class="pje-link-texto-azul" onclick="window.pjeSaltoURL(event, '${f.l}')">${f.l}</div>
+                                <div class="pje-item-directo-lista" onclick="window.pjeSaltoURL(event, '${linkFinal}')">${f.t}</div>
+                                <div class="pje-link-texto-azul" onclick="window.pjeSaltoURL(event, '${linkFinal}')">${linkFinal}</div>
                             </div>`;
                     }
                     grid.appendChild(item);
@@ -426,7 +426,6 @@
                 tabsCont.style.display = (fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) ? "flex" : "none";
                 anioCont.style.display = "block";
 
-                // TEXTO DE PENSIONES RESTAURADO INTEGRAMENTE
                 if(fraccionActual.includes("XVII. Estado")) {
                     anioCont.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
@@ -435,23 +434,11 @@
                     anioCont.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria para ocupar algún cargo jurisdiccional o administrativo en este Poder Judicial.</div>`;
                 }
-                // PERITOS SIN MES NI AÑO
-                else if(fraccionActual.includes("XVI. Lista de Peritos")) {
+                // LÓGICA DE LINK DIRECTO PARA PERITOS, AGENDA, UBICACION, ETC.
+                else if(fraccionActual.includes("XVI. Lista de Peritos") || fraccionActual.includes("VII. Agenda") || fraccionActual.includes("X. Ubicación") || fraccionActual.includes("XV. Resumen") || fraccionActual.includes("XIV. Justicia")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `
-                        <table class="pje-tabla-res">
-                            <thead>
-                                <tr><th>Art.</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>27</td><td>Lista de Peritos Vigente</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-act" style="color:#2c7a7b;">📥</a></td></tr>
-                                <tr><td>27</td><td>Padrón de Especialistas</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-act" style="color:#2c7a7b;">📥</a></td></tr>
-                            </tbody>
-                        </table>`;
-                }
-                else if(fraccionActual.includes("VII. Agenda") || fraccionActual.includes("X. Ubicación") || fraccionActual.includes("XV. Resumen") || fraccionActual.includes("XIV. Justicia")) {
-                    anioCont.style.display = "none";
-                    let link = fraccionActual.includes("VII.") ? "https://www.pjecz.gob.mx/consultas/agenda-audiencias/" : 
+                    let link = fraccionActual.includes("XVI.") ? "https://www.pjecz.gob.mx/consultas/peritos/#gsc.tab=0" :
+                               fraccionActual.includes("VII.") ? "https://www.pjecz.gob.mx/consultas/agenda-audiencias/" : 
                                fraccionActual.includes("X.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/" :
                                fraccionActual.includes("XIV.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/" :
                                "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/";
