@@ -280,9 +280,9 @@
 <p>XVIII. <a href="f18-otra-informacion-relevante/">Otra información relevante</a> </p>
 <p>Además de lo señalado en el artículo 69 de la Ley General y el artículo 22 de la Ley de Transparencia y Accceso a la Información local, el Poder Judicial del Estado, deberá publicar la siguiente información</p>
 <h2>Fracciones</h2>
-<div id="pje-art27-blindado-v5" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-art27-directo-v6" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-art27-blindado-v5 { display: block; width: 100%; --pje-color: #49545E; }
+        #pje-art27-directo-v6 { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
@@ -302,22 +302,10 @@
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
-        .pje-item-texto-lista { cursor: pointer; flex-grow: 1; font-weight: bold; }
-        .pje-item-texto-lista:hover { color: #000; text-decoration: underline; }
+        .pje-item-directo-lista { cursor: pointer; flex-grow: 1; font-weight: bold; color: #333; transition: 0.2s; }
+        .pje-item-directo-lista:hover { color: #0056b3; text-decoration: underline; }
 
-        /* Estilo mejorado para el link externo */
-        .pje-btn-link-externo { 
-            font-size: 12px; 
-            color: #0056b3 !important; 
-            text-decoration: underline !important; 
-            background: none !important;
-            border: none !important;
-            padding: 0 !important;
-            margin-top: 5px; 
-            cursor: pointer !important; 
-            display: inline-block;
-            text-align: left;
-        }
+        .pje-link-texto-azul { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; cursor: pointer; display: inline-block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
@@ -397,15 +385,13 @@
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
             selAnio.value = "2025";
 
-            // FUNCIÓN DE BLINDAJE: Abre el link sin disparar eventos del contenedor
-            window.pjeNavegarSeguro = function(e, url) {
-                if (e.stopPropagation) e.stopPropagation();
-                if (e.preventDefault) e.preventDefault();
+            window.pjeSaltoDirecto = function(e, url) {
+                if(e) { e.preventDefault(); e.stopPropagation(); }
                 window.open(url, '_blank');
                 return false;
             };
 
-            window.pjeAbrirModalFinal = function(t) {
+            window.pjeAbrirModal = function(t) {
                 fraccionActual = t;
                 document.getElementById('pje-modal-title').innerText = t;
                 renderContenido();
@@ -422,19 +408,18 @@
                     item.className = 'pje-item';
                     if(modo === 'mosaico') {
                         item.innerHTML = `<span>${f.t}</span>`;
-                        item.onclick = () => window.pjeAbrirModalFinal(f.t);
+                        item.onclick = () => window.pjeAbrirModal(f.t);
                     } else {
                         item.innerHTML = `
                             <div style="display:flex; flex-direction:column; width:100%;">
-                                <div class="pje-item-texto-lista" onclick="window.pjeAbrirModalFinal('${f.t}')">${f.t}</div>
-                                <button type="button" class="pje-btn-link-externo" onclick="window.pjeNavegarSeguro(event, '${f.l}')">${f.l}</button>
+                                <div class="pje-item-directo-lista" onclick="window.pjeSaltoDirecto(event, '${f.l}')">${f.t}</div>
+                                <div class="pje-link-texto-azul" onclick="window.pjeSaltoDirecto(event, '${f.l}')">${f.l}</div>
                             </div>`;
                     }
                     grid.appendChild(item);
                 });
             }
 
-            // Mantenemos toda tu lógica de mosaico intacta
             function renderContenido() {
                 const body = document.getElementById('pje-modal-body');
                 const anio = selAnio.value;
@@ -456,7 +441,7 @@
                                fraccionActual.includes("X.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/" :
                                fraccionActual.includes("XIV.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/" :
                                "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/";
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar esta información, por favor acceda al enlace:<br><br><a href="${link}" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Ir al sitio oficial</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar esta información, por favor acceda al enlace oficial:<br><br><button onclick="window.pjeSaltoDirecto(event, '${link}')" style="background:var(--pje-color); color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">Ir al sitio oficial</button></div>`;
                 }
                 else {
                     let h = "<tr><th>Art.</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
