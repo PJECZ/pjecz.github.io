@@ -280,9 +280,9 @@
 <p>XVIII. <a href="f18-otra-informacion-relevante/">Otra información relevante</a> </p>
 <p>Además de lo señalado en el artículo 69 de la Ley General y el artículo 22 de la Ley de Transparencia y Accceso a la Información local, el Poder Judicial del Estado, deberá publicar la siguiente información</p>
 <h2>Fracciones</h2>
-<div id="pje-art27-final-peritos" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-art27-final-corregido-v7" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-art27-final-peritos { display: block; width: 100%; --pje-color: #49545E; }
+        #pje-art27-final-corregido-v7 { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
@@ -426,15 +426,16 @@
                 tabsCont.style.display = (fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) ? "flex" : "none";
                 anioCont.style.display = "block";
 
+                // TEXTO DE PENSIONES RESTAURADO INTEGRAMENTE
                 if(fraccionActual.includes("XVII. Estado")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones...</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
                 }
                 else if(fraccionActual.includes("XIII. Programas")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria...</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria para ocupar algún cargo jurisdiccional o administrativo en este Poder Judicial.</div>`;
                 }
-                // LÓGICA ESPECIAL PARA PERITOS (FRACCIÓN XVI)
+                // PERITOS SIN MES NI AÑO
                 else if(fraccionActual.includes("XVI. Lista de Peritos")) {
                     anioCont.style.display = "none";
                     body.innerHTML = `
