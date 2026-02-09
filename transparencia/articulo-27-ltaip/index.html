@@ -409,12 +409,10 @@
                 const anio = selAnio.value;
                 const anioCont = document.getElementById('pje-anio-cont');
 
-                // Reset de Interfaz
                 tabsCont.style.display = (fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) ? "flex" : "none";
                 anioCont.style.display = "block";
-                respHeader.innerText = "Unidad de Transparencia";
 
-                // Lógica de Contenido
+                // Lógica de Vínculos Directos y Notas
                 if(fraccionActual.includes("XVII. Estado que guarda")) {
                     anioCont.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
@@ -435,31 +433,45 @@
                     anioCont.style.display = "none";
                     body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Acceda al resumen de la glosa de debate a través del siguiente enlace:<br><br><a href="https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Ver Glosa de Debate</a></div>`;
                 }
-                else if(fraccionActual.includes("IV. Presupuesto")) {
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>27-IV</td><td>Anual ${anio}</td><td>Presupuesto Asignado</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                else if(fraccionActual.includes("XIV. Justicia Constitucional")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consulta del Tribunal Constitucional, por favor acceda al siguiente enlace:<br><br><a href="https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/#gsc.tab=0" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Justicia Constitucional</a></div>`;
                 }
                 else {
-                    // Plantilla General de Tablas
-                    let colNombre = "Archivo";
-                    if(fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) colNombre = subSeccionActiva;
-                    if(fraccionActual.includes("VIII. Actas")) colNombre = "Visita de Inspección";
+                    // TABLAS SIMPLIFICADAS (Sin mes/año si aplica)
+                    let headers = "<tr><th>Art.</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
+                    let rowContent = "";
 
-                    let rows = "";
-                    let lista = (anio === "2026") ? ["Enero", "Febrero"] : meses;
+                    // Fracciones que SI llevan Mes/Año (V, VI, XII, IV)
+                    if(["V.", "VI.", "XII.", "IV."].some(pref => fraccionActual.includes(pref))) {
+                        headers = "<tr><th>Art.</th><th>Periodo</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
+                        if(fraccionActual.includes("IV.")) {
+                            rowContent = `<tr><td>27</td><td>Anual ${anio}</td><td>Presupuesto Asignado</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        } else {
+                            let lista = (anio === "2026") ? ["Enero", "Febrero"] : meses;
+                            lista.forEach(m => {
+                                rowContent += `<tr><td>27</td><td>${m} ${anio}</td><td>Documento Correspondiente</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                            });
+                        }
+                    } 
+                    // Fracciones de ARCHIVO ÚNICO (I, II, III, IX, XI, XVI, XVIII)
+                    else {
+                        anioCont.style.display = "none"; // Ocultar filtro de año en archivos permanentes
+                        let itemNombre = fraccionActual.split(' ')[1];
+                        if(fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) itemNombre = subSeccionActiva;
 
-                    // Casos que son archivo único (Directorio, Calendario, etc)
-                    if(fraccionActual.includes("III. Directorio") || fraccionActual.includes("IX. Calendario")) {
-                        rows = `<tr><td>27</td><td>Anual ${anio}</td><td>${fraccionActual.split('.')[1]}</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
-                    } else {
-                        lista.forEach(m => {
-                            rows += `<tr><td>27</td><td>${m} ${anio}</td><td>${colNombre} Correspondiente</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
-                        });
+                        if(fraccionActual.includes("VIII. Actas")) {
+                            rowContent = `<tr><td>27</td><td>Primera Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                            rowContent += `<tr><td>27</td><td>Segunda Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        } else {
+                            rowContent = `<tr><td>27</td><td>${itemNombre}</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        }
                     }
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes/Periodo</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+
+                    body.innerHTML = `<table class="pje-tabla-res"><thead>${headers}</thead><tbody>${rowContent}</tbody></table>`;
                 }
             }
 
-            // Eventos
             renderGrid('mosaico');
             selAnio.onchange = renderContenido;
             document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
