@@ -260,9 +260,9 @@
 
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
-<div id="pje-art22-final-v1" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-transparencia-final" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-art22-final-v1 { display: block; width: 100%; --pje-color: #49545E; }
+        #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
@@ -281,20 +281,28 @@
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
-        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
-        .pje-item-directo-lista { cursor: pointer; flex-grow: 1; font-weight: bold; color: #333; transition: 0.2s; }
-        .pje-item-directo-lista:hover { color: #0056b3; text-decoration: underline; }
-        .pje-link-texto-azul { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; cursor: pointer; display: inline-block; }
+        /* Estilos específicos para que la lista sea linkeable */
+        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
+        .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
+        .pje-item-titulo-lista:hover { color: #0056b3; text-decoration: underline; }
+        .pje-link-externo { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; cursor: pointer; display: inline-block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
+        .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
+        .pje-tab-btn { padding: 8px 20px; border: 2px solid var(--pje-color); background: transparent; color: var(--pje-color); border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 13px; }
+        .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
+
         .pje-filtros { display: flex; gap: 25px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; text-align: center !important; }
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 13px; }
+
+        .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; }
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
+        .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
     </style>
 
     <div class="pje-toolbar">
@@ -311,8 +319,13 @@
                 <strong id="pje-modal-title" style="color:var(--pje-color); font-size:1.1rem;"></strong>
                 <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb;">&times;</span>
             </div>
+            <div id="pje-container-tabs" class="pje-tabs" style="display:none;">
+                <button id="tab-nombramientos" class="pje-tab-btn active">Nombramientos</button>
+                <button id="tab-licencias" class="pje-tab-btn">Licencias</button>
+            </div>
             <div id="pje-modal-filtros" class="pje-filtros">
                 <div id="pje-anio-cont"><strong>Año:</strong> <select id="pje-anio-select"></select></div>
+                <div><strong>Responsable:</strong> <span id="pje-resp-header"></span></div>
                 <div><strong>Actualización:</strong> 09/02/2026</div>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px 30px; overflow-y: auto;"></div>
@@ -322,56 +335,35 @@
     <script>
         (function() {
             const fracciones = [
-                {t: "I. Marco Normativo", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f01-marco-normativo/"},
-                {t: "II. Estructura Orgánica", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f02-estructura-organica/"},
-                {t: "III. Facultades de cada área", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f03-facultades-de-cada-area/"},
-                {t: "IV. Metas y Objetivos de las Áreas", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f04-metas-y-objetivos-de-las-areas/"},
-                {t: "V. Indicadores de interés público", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f05-indicadores-de-interes-publico/"},
-                {t: "VI. Indicadores de Resultados", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f06-indicadores-de-resultados/"},
-                {t: "VII. Directorio", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f07-directorio/"},
-                {t: "VIII. Remuneración Bruta y Neta", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f08-remuneracion-bruta-y-neta/"},
-                {t: "IX. Gastos de Representación y Viáticos", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f09-gastos-de-representacion-y-viaticos/"},
-                {t: "X. Plazas Vacantes y Ocupadas", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f10-plazas-vacantes-y-ocupadas/"},
-                {t: "XI. Contrataciones por Honorarios", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f11-contrataciones-por-honorarios/"},
-                {t: "XII. Declaraciones Patrimoniales", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f12-declaraciones-patrimoniales/"},
-                {t: "XIII. Unidad de Transparencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f13-unidad-de-transparencia/"},
-                {t: "XIV. Convocatorias a concursos u oposiciones", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f14-convocatorias-a-concursos-u-oposiciones/"},
-                {t: "XV. Subsidios, Estímulos y Apoyos", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f15-subsidios-estimulos-y-apoyos/"},
-                {t: "XVI. Condiciones Generales de Trabajo", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f16-condiciones-generales-de-trabajo/"},
-                {t: "XVII. Información Curricular", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f17-informacion-curricular/"},
-                {t: "XVIII. Sanciones Administrativas", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f18-sanciones-administrativas/"},
-                {t: "XIX. Servicios que ofrecen", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f19-servicios-que-ofrecen/"},
-                {t: "XX. Trámites, requisitos y formatos", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f20-tramites-requisitos-y-formatos/"},
-                {t: "XXI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f21-presupuesto-asignado/"},
-                {t: "XXII. Deuda Pública", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f22-deuda-publica/"},
-                {t: "XXIII. Gastos en Publicidad Oficial", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f23-gastos-en-publicidad-oficial/"},
-                {t: "XXIV. Resultados de Auditorías", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f24-resultados-de-auditorias/"},
-                {t: "XXV. Dictámenes de Estados Financieros", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f25-dictamenes-de-estados-financieros/"},
-                {t: "XXVI. Personas que usan Recursos Públicos", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f26-personas-que-usan-recursos-publicos/"},
-                {t: "XXVII. Concesiones, Licencias y Permisos", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f27-concesiones-licencias-y-permisos/"},
-                {t: "XXVIII. Licitaciones y Contrataciones", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f28-licitaciones-y-contrataciones/"},
-                {t: "XXIX. Informes de Resultados", l: "https://www.pjecz.gob.mx/transparencia/articulo-21-y-22-ltaip/f29-informes-de-resultados/"}
+                {t: "I. Nombramientos y Licencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/#gsc.tab=0"},
+                {t: "II. Tipo de Seguridad Social", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f02-tipo-de-seguridad-social/#gsc.tab=0"},
+                {t: "III. Viáticos y gastos de representación", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/#gsc.tab=0"},
+                {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f04-mecanismo-de-solicitudes/#gsc.tab=0"},
+                {t: "V. Instituciones de Beneficencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f05-instituciones-de-beneficencia/#gsc.tab=0"},
+                {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-asignado/#gsc.tab=0"},
+                {t: "VII. Minutas de Sesiones Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f07-minutas-de-sesiones-publicas/#gsc.tab=0"},
+                {t: "VIII. Actas de Entrega-Recepción", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f08-actas-de-entrega-recepcion/#gsc.tab=0"},
+                {t: "IX. Georreferenciación de Obras Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f09-georreferenciacion-de-obras-publicas/#gsc.tab=0"},
+                {t: "X. Estado que guardan los sistemas pensionarios", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f10-estado-que-guardan-los-sistemas-pensionarios/#gsc.tab=0"},
+                {t: "XI. Otra Información", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f11-otra-informacion/#gsc.tab=0"}
             ];
 
             const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            const idsPresupuesto = { "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ", "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD", "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z" };
+            const idsLicencias = { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" };
+
             const modal = document.getElementById('pje-modal-full');
             const selAnio = document.getElementById('pje-anio-select');
+            const respHeader = document.getElementById('pje-resp-header');
             let fraccionActual = "";
+            let subSeccionI = "Nombramientos";
 
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
             selAnio.value = "2025";
 
-            window.pjeSaltoURL22 = function(e, url) {
-                if(e) { e.preventDefault(); e.stopPropagation(); }
+            // Función para saltar a URL externa
+            window.pjeSalto22 = function(url) {
                 window.open(url, '_blank');
-                return false;
-            };
-
-            window.pjeAbrirModal22 = function(t) {
-                fraccionActual = t;
-                document.getElementById('pje-modal-title').innerText = t;
-                renderContenido();
-                modal.style.display = 'flex';
             };
 
             function renderGrid(modo) {
@@ -382,43 +374,89 @@
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-                    if(modo === 'mosaico') {
+
+                    if (modo === 'mosaico') {
                         item.innerHTML = `<span>${f.t}</span>`;
-                        item.onclick = () => window.pjeAbrirModal22(f.t);
+                        item.onclick = () => abrirModal(f.t);
                     } else {
                         item.innerHTML = `
                             <div style="display:flex; flex-direction:column; width:100%;">
-                                <div class="pje-item-directo-lista" onclick="window.pjeSaltoURL22(event, '${f.l}')">${f.t}</div>
-                                <div class="pje-link-texto-azul" onclick="window.pjeSaltoURL22(event, '${f.l}')">${f.l}</div>
+                                <span class="pje-item-titulo-lista" onclick="window.pjeSalto22('${f.l}')">${f.t}</span>
+                                <span class="pje-link-externo" onclick="window.pjeSalto22('${f.l}')">${f.l}</span>
                             </div>`;
                     }
                     grid.appendChild(item);
                 });
             }
 
+            function abrirModal(t) {
+                fraccionActual = t;
+                document.getElementById('pje-modal-title').innerText = t;
+                renderContenido();
+                modal.style.display = 'flex';
+            }
+
             function renderContenido() {
                 const body = document.getElementById('pje-modal-body');
+                const tabs = document.getElementById('pje-container-tabs');
                 const anio = selAnio.value;
-                let rows = "";
-                let list = (anio === "2026") ? ["Enero", "Febrero"] : meses;
+                const anioCont = document.getElementById('pje-anio-cont');
 
-                list.forEach(m => {
-                    rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Información Mensual</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-act" style="color:#2c7a7b;">📥</a></td></tr>`;
-                });
+                tabs.style.display = fraccionActual.includes("I. Nombramientos") ? "flex" : "none";
+                anioCont.style.display = "block";
 
-                body.innerHTML = `
-                    <table class="pje-tabla-res">
-                        <thead>
-                            <tr><th>Art.</th><th>Periodo</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>
-                        </thead>
-                        <tbody>${rows}</tbody>
-                    </table>`;
+                let resp = "Unidad de Transparencia";
+                if(fraccionActual.includes("I. Nombramientos")) resp = "Dirección de Recursos Humanos";
+                if(fraccionActual.includes("III. Viáticos") || fraccionActual.includes("VI. Presupuesto")) resp = "Oficialía Mayor";
+                if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
+                respHeader.innerText = resp;
+
+                if(fraccionActual.includes("II. Tipo")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>`;
+                }
+                else if(fraccionActual.includes("IV. Mecanismo")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>• <strong>Buzón de Quejas:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" style="color:#0056b3;">Clic aquí para ir al Buzón</a><br>• <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
+                }
+                else if(fraccionActual.includes("V. Instituciones")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia. Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional.</div>`;
+                }
+                else if(fraccionActual.includes("IX. Georreferenciación")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>`;
+                }
+                else if(fraccionActual.includes("X. Estado que guardan")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
+                }
+                else if(fraccionActual.includes("VI. Presupuesto")) {
+                    let id = idsPresupuesto[anio] || "";
+                    let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                    let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                }
+                else {
+                    let col = fraccionActual.includes("I. Nombramientos") ? subSeccionI : "Documento";
+                    let rows = "";
+                    let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
+                    listaMeses.forEach(m => {
+                        let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "";
+                        let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                        let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                    });
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${col}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                }
             }
 
             renderGrid('mosaico');
             selAnio.onchange = renderContenido;
-            document.getElementById('pje-mosaico-btn').onclick = () => { renderGrid('mosaico'); document.getElementById('pje-mosaico-btn').className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
-            document.getElementById('pje-lista-btn').onclick = () => { renderGrid('lista'); document.getElementById('pje-lista-btn').className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
+            document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
+            document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
+            document.getElementById('tab-nombramientos').onclick = function() { subSeccionI="Nombramientos"; this.className='pje-tab-btn active'; document.getElementById('tab-licencias').className='pje-tab-btn'; renderContenido(); };
+            document.getElementById('tab-licencias').onclick = function() { subSeccionI="Licencias"; this.className='pje-tab-btn active'; document.getElementById('tab-nombramientos').className='pje-tab-btn'; renderContenido(); };
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
         })();
     </script>
