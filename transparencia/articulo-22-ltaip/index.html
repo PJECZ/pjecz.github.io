@@ -336,7 +336,7 @@
             const fracciones = [
                 {t: "I. Nombramientos y Licencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/#gsc.tab=0"},
                 {t: "II. Tipo de Seguridad Social", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f02-tipo-de-seguridad-social/#gsc.tab=0"},
-                {t: "III. Viáticos y gastos de representación", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/#gsc.tab=0"},
+                {t: "III. Viáticos y gastos de representation", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/#gsc.tab=0"},
                 {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f04-mecanismo-de-solicitudes/#gsc.tab=0"},
                 {t: "V. Instituciones de Beneficencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f05-instituciones-de-beneficencia/#gsc.tab=0"},
                 {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-asignado/#gsc.tab=0"},
@@ -401,15 +401,13 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                // Lógica de "No aplicar" o vistas sin tablas de meses
+                // CASO ESPECIAL: Nombramientos y Otra Información (Tabla sin meses)
                 if(fraccionActual.includes("XI. Otra Información") || (fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos")) {
-                    anioCont.style.display = "none";
-                    let linkObj = fracciones.find(f => f.t === fraccionActual);
-                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar los archivos correspondientes a esta sección, por favor acceda al sitio oficial:<br><br><button onclick="window.pjeSalto22('${linkObj.l}')" style="background:var(--pje-color); color:#fff; padding:10px 25px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">Ver Archivos Cargados</button></div>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Año</th><th>Descripción</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>${anio}</td><td>Archivos de ${fraccionActual.split('.')[1]}</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("II. Tipo")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social... (texto completo omitido por brevedad)...</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social...</div>`;
                 }
                 else if(fraccionActual.includes("IV. Mecanismo")) {
                     anioCont.style.display = "none";
@@ -426,6 +424,7 @@
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else {
+                    // CASO NORMAL: Licencias y demás (Tabla con meses)
                     let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
                     let rows = "";
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
