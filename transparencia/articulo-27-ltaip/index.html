@@ -280,9 +280,9 @@
 <p>XVIII. <a href="f18-otra-informacion-relevante/">Otra información relevante</a> </p>
 <p>Además de lo señalado en el artículo 69 de la Ley General y el artículo 22 de la Ley de Transparencia y Accceso a la Información local, el Poder Judicial del Estado, deberá publicar la siguiente información</p>
 <h2>Fracciones</h2>
-<div id="pje-transparencia-art27-v3" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-transparencia-art27-final-v4" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-transparencia-art27-v3 { display: block; width: 100%; --pje-color: #49545E; }
+        #pje-transparencia-art27-final-v4 { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
         .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
         .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
@@ -304,8 +304,6 @@
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
         .pje-item-texto-lista { cursor: pointer; flex-grow: 1; font-weight: bold; }
         .pje-item-texto-lista:hover { color: #000; text-decoration: underline; }
-
-        /* El enlace tiene prioridad absoluta ahora */
         .pje-link-externo { font-size: 12px; color: #0056b3 !important; text-decoration: underline !important; margin-top: 5px; font-weight: normal; word-break: break-all; cursor: pointer !important; display: inline-block; position: relative; z-index: 10; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
@@ -323,6 +321,7 @@
 
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; }
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
+        .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
     </style>
 
     <div class="pje-toolbar">
@@ -359,7 +358,7 @@
                 {t: "I. Estructura jurisdiccional y administrativa", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f01-estructura-jurisdiccional-y-administrativa/#gsc.tab=0"},
                 {t: "II. Funciones", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f02-funciones/#gsc.tab=0"},
                 {t: "III. Directorio", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f03-directorio/#gsc.tab=0"},
-                {t: "IV. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f04-presupuesto-assigned/#gsc.tab=0"},
+                {t: "IV. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f04-presupuesto-asignado/#gsc.tab=0"},
                 {t: "V. Fondo para el Mejoramiento de la Administración de Justicia", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f05-fondo-para-el-mejoramiento-de-la-administracion-de-justicia/#gsc.tab=0"},
                 {t: "VI. Asuntos Iniciados, en Trámite y Resueltos", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f06-asuntos-iniciados-en-tramite-y-resueltos/#gsc.tab=0"},
                 {t: "VII. Agenda de Audiencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f07-agenda-de-audiencias/#gsc.tab=0"},
@@ -376,31 +375,39 @@
                 {t: "XVIII. Otra información relevante", l: "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f18-otra-informacion-relevante/#gsc.tab=0"}
             ];
 
-            const grid = document.getElementById('pje-contenedor-grid');
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             const modal = document.getElementById('pje-modal-full');
+            const selAnio = document.getElementById('pje-anio-select');
+            const respHeader = document.getElementById('pje-resp-header');
+            const tabsCont = document.getElementById('pje-container-tabs');
+            let fraccionActual = "";
+            let subSeccionActiva = "Jurisdiccional";
 
-            // FUNCIÓN CLAVE: Abre el link externo sin recargar nada más
-            window.pjeIrAlLink = function(event, url) {
-                event.preventDefault();
-                event.stopPropagation(); // Evita que el contenedor recargue la página
+            for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
+            selAnio.value = "2025";
+
+            window.pjeIrAlLink = function(e, url) {
+                e.preventDefault();
+                e.stopPropagation();
                 window.open(url, '_blank');
                 return false;
             };
 
-            window.pjeAbrirModal27 = function(titulo) {
-                document.getElementById('pje-modal-title').innerText = titulo;
-                renderContenidoModal(titulo);
+            window.pjeAbrirModal27 = function(t) {
+                fraccionActual = t;
+                document.getElementById('pje-modal-title').innerText = t;
+                renderContenido();
                 modal.style.display = 'flex';
             };
 
             function renderGrid(modo) {
+                const grid = document.getElementById('pje-contenedor-grid');
                 grid.innerHTML = "";
                 grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
 
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-
                     if(modo === 'mosaico') {
                         item.innerHTML = `<span>${f.t}</span>`;
                         item.onclick = () => window.pjeAbrirModal27(f.t);
@@ -415,17 +422,67 @@
                 });
             }
 
-            // (Aquí va la misma lógica de renderContenidoModal que ya teníamos...)
-            // Simplificado para ahorrar espacio en la respuesta:
-            function renderContenidoModal(t) {
+            function renderContenido() {
                 const body = document.getElementById('pje-modal-body');
-                body.innerHTML = `<div style="padding:20px; text-align:center;">Cargando información de ${t}...</div>`;
-                // ... (Lógica de tablas, notas y vínculos ya definida anteriormente)
+                const anio = selAnio.value;
+                const anioCont = document.getElementById('pje-anio-cont');
+
+                tabsCont.style.display = (fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) ? "flex" : "none";
+                anioCont.style.display = "block";
+
+                if(fraccionActual.includes("XVII. Estado que guarda")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones.</div>`;
+                }
+                else if(fraccionActual.includes("XIII. Programas")) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<div class="pje-mensaje-legal">A la fecha de actualización de la información, no se ha emitido programa, curso o convocatoria para ocupar algún cargo jurisdiccional...</div>`;
+                }
+                else if(fraccionActual.includes("VII. Agenda") || fraccionActual.includes("X. Ubicación") || fraccionActual.includes("XV. Resumen") || fraccionActual.includes("XIV. Justicia")) {
+                    anioCont.style.display = "none";
+                    let link = fraccionActual.includes("VII.") ? "https://www.pjecz.gob.mx/consultas/agenda-audiencias/#gsc.tab=0" : 
+                               fraccionActual.includes("X.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f10-ubicacion-de-los-expedientes/#gsc.tab=0" :
+                               fraccionActual.includes("XIV.") ? "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f14-justicia-constitucional/#gsc.tab=0" :
+                               "https://www.pjecz.gob.mx/transparencia/articulo-27-ltaip/f15-resumen-de-la-glosa-de-debate/#gsc.tab=0";
+                    body.innerHTML = `<div class="pje-mensaje-legal" style="text-align:center;">Para consultar esta información, por favor acceda al siguiente enlace:<br><br><a href="${link}" target="_blank" style="background:var(--pje-color); color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Consultar Información Oficial</a></div>`;
+                }
+                else {
+                    let headers = "<tr><th>Art.</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
+                    let rowContent = "";
+                    if(["V.", "VI.", "XII.", "IV."].some(pref => fraccionActual.includes(pref))) {
+                        headers = "<tr><th>Art.</th><th>Periodo</th><th>Concepto</th><th>Ver</th><th>Descargar</th></tr>";
+                        if(fraccionActual.includes("IV.")) {
+                            rowContent = `<tr><td>27</td><td>Anual ${anio}</td><td>Presupuesto Asignado</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        } else {
+                            let lista = (anio === "2026") ? ["Enero", "Febrero"] : meses;
+                            lista.forEach(m => { rowContent += `<tr><td>27</td><td>${m} ${anio}</td><td>Documento</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`; });
+                        }
+                    } else {
+                        anioCont.style.display = "none";
+                        let itemNombre = fraccionActual.split(' ')[1];
+                        if(fraccionActual.includes("I. Estructura") || fraccionActual.includes("II. Funciones")) itemNombre = subSeccionActiva;
+                        if(fraccionActual.includes("VIII. Actas")) {
+                            rowContent = `<tr><td>27</td><td>Primera Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr><tr><td>27</td><td>Segunda Visita</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        } else {
+                            rowContent = `<tr><td>27</td><td>${itemNombre}</td><td><a href="#" class="pje-btn-act">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                        }
+                    }
+                    body.innerHTML = `<table class="pje-tabla-res"><thead>${headers}</thead><tbody>${rowContent}</tbody></table>`;
+                }
             }
 
             renderGrid('mosaico');
+            selAnio.onchange = renderContenido;
             document.getElementById('pje-mosaico-btn').onclick = () => { renderGrid('mosaico'); document.getElementById('pje-mosaico-btn').className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
             document.getElementById('pje-lista-btn').onclick = () => { renderGrid('lista'); document.getElementById('pje-lista-btn').className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
+            document.querySelectorAll('.pje-tab-btn').forEach(btn => {
+                btn.onclick = function() {
+                    document.querySelectorAll('.pje-tab-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    subSeccionActiva = this.getAttribute('data-sub');
+                    renderContenido();
+                };
+            });
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
         })();
     </script>
