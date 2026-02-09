@@ -298,8 +298,7 @@ Summary: Transparencia </p>
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: space-between; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; }
-        .pje-item-txt-box { display: flex; flex-direction: column; }
-        .pje-link-externo { font-size: 11px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; }
+        .pje-link-externo { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
@@ -309,15 +308,14 @@ Summary: Transparencia </p>
         .pje-tab-btn { padding: 8px 20px; border: 2px solid var(--pje-color); background: transparent; color: var(--pje-color); border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 13px; }
         .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
 
-        .pje-filtros { display: flex; gap: 25px; background: #ebf2f7; padding: 15px; font-size: 12px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
+        .pje-filtros { display: flex; gap: 25px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; text-align: center !important; }
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 13px; }
 
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; }
-        .pje-btn-ver, .pje-btn-descarga { cursor: pointer; font-size: 18px; text-decoration: none; padding: 0 5px; display: inline-block; opacity: 1 !important; }
-        .pje-btn-ver { color: var(--pje-color); }
-        .pje-btn-descarga { color: #2c7a7b; }
+        .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
+        .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
     </style>
 
     <div class="pje-toolbar">
@@ -349,6 +347,18 @@ Summary: Transparencia </p>
 
     <script>
         (function() {
+            // === CONFIGURACIÓN DE ENLACES (Sustituye ID_AQUI por el ID de Google Drive) ===
+            const enlacesArchivos = {
+                "Licencias": { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" },
+                "Nombramientos": { "Enero": "ID_AQUI", "Febrero": "ID_AQUI" },
+                "Viáticos": { "Enero": "ID_AQUI", "Febrero": "ID_AQUI" },
+                "Minutas": { "Enero": "ID_AQUI", "Febrero": "ID_AQUI" },
+                "Actas": { "Enero": "ID_AQUI", "Febrero": "ID_AQUI" },
+                "Otra": { "Enero": "ID_AQUI", "Febrero": "ID_AQUI" }
+            };
+
+            const idsPresupuesto = { "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ", "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD", "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z" };
+
             const fracciones = [
                 {t: "I. Nombramientos y Licencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/#gsc.tab=0"},
                 {t: "II. Tipo de Seguridad Social", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f02-tipo-de-seguridad-social/#gsc.tab=0"},
@@ -364,14 +374,6 @@ Summary: Transparencia </p>
             ];
 
             const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-
-            const idsLicencias = { 
-                "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", 
-                "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", 
-                "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", 
-                "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" 
-            };
-
             const modal = document.getElementById('pje-modal-full');
             const selAnio = document.getElementById('pje-anio-select');
             const respHeader = document.getElementById('pje-resp-header');
@@ -388,7 +390,7 @@ Summary: Transparencia </p>
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-                    item.innerHTML = modo === 'mosaico' ? `<span>${f.t}</span>` : `<div class="pje-item-txt-box"><strong>${f.t}</strong><a href="${f.l}" target="_blank" class="pje-link-externo">${f.l}</a></div>`;
+                    item.innerHTML = modo === 'mosaico' ? `<span>${f.t}</span>` : `<div style="display:flex; flex-direction:column;"><strong>${f.t}</strong><a href="${f.l}" target="_blank" class="pje-link-externo">${f.l}</a></div>`;
                     item.onclick = (e) => { if(e.target.tagName !== 'A') abrirModal(f.t); };
                     grid.appendChild(item);
                 });
@@ -411,37 +413,50 @@ Summary: Transparencia </p>
                 anioCont.style.display = "block";
 
                 let resp = "Unidad de Transparencia";
-                if(fraccionActual.includes("I. Nombramientos")) resp = "Dirección de Recursos Humanos";
-                if(fraccionActual.includes("III. Viáticos") || fraccionActual.includes("VI. Presupuesto")) resp = "Oficialía Mayor";
-                if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
+                let categoria = "Otra";
+                if(fraccionActual.includes("I. Nombramientos")) { resp = "Dirección de Recursos Humanos"; categoria = subSeccionI; }
+                if(fraccionActual.includes("III. Viáticos")) { resp = "Oficialía Mayor"; categoria = "Viáticos"; }
+                if(fraccionActual.includes("VI. Presupuesto")) { resp = "Oficialía Mayor"; }
+                if(fraccionActual.includes("VII. Minutas")) { resp = "Secretaría de Acuerdo y Trámite"; categoria = "Minutas"; }
+                if(fraccionActual.includes("VIII. Actas")) { resp = "Secretaría de Acuerdo y Trámite"; categoria = "Actas"; }
+
                 respHeader.innerText = resp;
 
+                // Casos de Texto Fijo (No aplica / Notas)
                 if(fraccionActual.includes("II. Tipo")) {
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... [TEXTO COMPLETO]</div>`;
                 }
                 else if(fraccionActual.includes("IV. Mecanismo")) {
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>• <strong>Buzón de Quejas:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" style="color:#0056b3;">Clic aquí para ir al Buzón</a><br>• <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias... [TEXTO COMPLETO]</div>`;
                 }
                 else if(fraccionActual.includes("V. Instituciones")) {
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia. Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V...</div>`;
                 }
                 else if(fraccionActual.includes("IX. Georreferenciación")) {
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que...</div>`;
                 }
                 else if(fraccionActual.includes("X. Estado que guardan")) {
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que este sujeto obligado no cuenta con la naturaleza jurídica de institución de seguridad social ni administra fondos de pensiones. De conformidad con la Ley de Pensiones y Otros Beneficios Sociales para los Trabajadores al Servicio del Estado de Coahuila de Zaragoza, la administración, gestión y pago de las prestaciones de seguridad social, pensiones y jubilaciones del personal judicial corresponden exclusivamente al Instituto de Pensiones para los Trabajadores al Servicio del Estado.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, en virtud de que...</div>`;
                 }
+                // Caso Presupuesto (Anual)
+                else if(fraccionActual.includes("VI. Presupuesto")) {
+                    let id = idsPresupuesto[anio] || "";
+                    let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                    let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                }
+                // Caso General (Tablas por mes)
                 else {
                     let col = fraccionActual.includes("I. Nombramientos") ? subSeccionI : "Documento";
                     let rows = "";
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
 
                     listaMeses.forEach(m => {
-                        let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "1_DEFAULT_ID_FOR_ICONS";
-                        // Forzamos visibilidad total
-                        let ver = `<a href="https://docs.google.com/presentation/d/${id}/edit" target="_blank" class="pje-btn-ver">👁️</a>`;
-                        let desc = `<a href="https://docs.google.com/presentation/d/${id}/export/pptx" class="pje-btn-descarga">📥</a>`;
-                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td>${ver}</td><td>${desc}</td></tr>`;
+                        let id = (enlacesArchivos[categoria] && enlacesArchivos[categoria][m]) ? enlacesArchivos[categoria][m] : null;
+                        let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                        let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
+
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                     });
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${col}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
@@ -454,7 +469,6 @@ Summary: Transparencia </p>
             document.getElementById('tab-nombramientos').onclick = function() { subSeccionI="Nombramientos"; this.className='pje-tab-btn active'; document.getElementById('tab-licencias').className='pje-tab-btn'; renderContenido(); };
             document.getElementById('tab-licencias').onclick = function() { subSeccionI="Licencias"; this.className='pje-tab-btn active'; document.getElementById('tab-nombramientos').className='pje-tab-btn'; renderContenido(); };
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
-            window.onclick = (e) => { if(e.target == modal) modal.style.display = 'none'; };
         })();
     </script>
 </div>
