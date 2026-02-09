@@ -276,6 +276,10 @@
 Summary: Transparencia </p>
 <p>Los Sujetos obligados además de lo señalado en el artículo 65 de la Ley General, pondrán a disposición del público la información, los temas, documentos y políticas que a continuación se señalan: </p>
 <h2>Fracciones</h2>
+<p>Entendido. He realizado un ajuste estructural para que el Responsable y la Fecha de Actualización aparezcan en la misma fila superior junto al selector de Año de consulta.</p>
+<p>De esta manera, la tabla queda mucho más limpia y centrada en los documentos, mientras que la información administrativa (quién lo hizo y cuándo) es visible en todo momento para el usuario sin importar la fracción que esté consultando.</p>
+<p>Aquí tienes el código actualizado:
+HTML</p>
 <div id="pje-transparencia-final" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
         #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; }
@@ -301,7 +305,7 @@ Summary: Transparencia </p>
         .pje-vista-lista .pje-item::before { content: "📄"; margin-right: 20px; font-size: 24px; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 98%; max-width: 1300px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
@@ -309,14 +313,18 @@ Summary: Transparencia </p>
         .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
 
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 11px; text-align: center !important; text-transform: uppercase; border: 1px solid #5a6773; }
-        .pje-tabla-res td { padding: 12px; border: 1px solid #eee; text-align: center !important; color: #333; font-size: 12px; }
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 14px; text-align: center !important; }
+        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 14px; }
 
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
+
         .pje-link-blue { color: #0056b3; text-decoration: underline; font-weight: bold; }
-        .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
+        .pje-filtros { display: flex; gap: 25px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; }
         .pje-btn-ver { cursor: pointer; color: var(--pje-color); font-size: 18px; text-decoration: none; padding: 5px; }
         .pje-btn-descarga { cursor: pointer; color: #2c7a7b; font-size: 18px; text-decoration: none; padding: 5px; }
+
+        .pje-info-header { font-weight: bold; color: #444; }
+        .pje-val-header { color: #666; font-weight: normal; margin-left: 5px; }
     </style>
 
     <div class="pje-toolbar">
@@ -338,7 +346,9 @@ Summary: Transparencia </p>
                 <button id="tab-licencias" class="pje-tab-btn">Licencias</button>
             </div>
             <div id="pje-modal-filtros" class="pje-filtros">
-                <div><strong>Año de consulta:</strong> <select id="pje-anio-select" style="padding:2px; border:1px solid #ccc;"></select></div>
+                <div><span class="pje-info-header">Año de consulta:</span> <select id="pje-anio-select" style="padding:2px; border:1px solid #ccc;"></select></div>
+                <div><span class="pje-info-header">Responsable:</span> <span id="pje-resp-header" class="pje-val-header"></span></div>
+                <div><span class="pje-info-header">Actualización:</span> <span class="pje-val-header">09/02/2026</span></div>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 30px; overflow-y: auto;"></div>
         </div>
@@ -369,6 +379,7 @@ Summary: Transparencia </p>
             const grid = document.getElementById('pje-contenedor-grid');
             const modal = document.getElementById('pje-modal-full');
             const selAnio = document.getElementById('pje-anio-select');
+            const respHeader = document.getElementById('pje-resp-header');
             let subSeccionI = "Nombramientos"; 
             let fraccionActual = "";
 
@@ -388,45 +399,40 @@ Summary: Transparencia </p>
                 const filtros = document.getElementById('pje-modal-filtros');
                 const tabs = document.getElementById('pje-container-tabs');
                 const anio = selAnio.value;
-                const fechaAct = "09/02/2026"; // Fecha solicitada
 
                 tabs.style.display = (texto.includes("I. Nombramientos")) ? "flex" : "none";
                 filtros.style.display = "flex";
 
-                // Definición de responsables
-                let resp = "Unidad de Transparencia";
-                if(texto.includes("I. Nombramientos")) resp = "Dirección de Recursos Humanos";
-                if(texto.includes("VI. Presupuesto") || texto.includes("III. Viáticos")) resp = "Oficialía Mayor";
+                // Definición de responsable dinámico
+                let responsable = "Unidad de Transparencia";
+                if(texto.includes("I. Nombramientos")) responsable = "Dirección de Recursos Humanos";
+                if(texto.includes("VI. Presupuesto") || texto.includes("III. Viáticos")) responsable = "Oficialía Mayor";
+                if(texto.includes("VII. Minutas") || texto.includes("VIII. Actas")) responsable = "Secretaría de Acuerdo y Trámite";
+                respHeader.innerText = responsable;
 
-                if(texto.includes("II. Tipo")) {
+                if(texto.includes("II. Tipo") || texto.includes("IV. Mecanismo") || texto.includes("V. Instituciones")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... (Texto legal completo)</div>`;
-                } 
-                else if(texto.includes("IV. Mecanismo")) {
-                    filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias... (Texto legal completo)</div>`;
-                }
-                else if(texto.includes("V. Instituciones")) {
-                    filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con atribuciones para destinar recursos a instituciones de beneficencia... (Texto legal completo)</div>`;
+                    if(texto.includes("II. Tipo")) body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto...</div>`;
+                    if(texto.includes("IV. Mecanismo")) body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias...</div>`;
+                    if(texto.includes("V. Instituciones")) body.innerHTML = `<div class="pje-mensaje-legal">No aplica. El Poder Judicial no cuenta con atribuciones legales para destinar recursos a instituciones de beneficencia.</div>`;
                 }
                 else if(texto.includes("VI. Presupuesto")) {
                     let fileId = idsPresupuesto[anio];
-                    let row = fileId ? `<tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td>${resp}</td><td>${fechaAct}</td><td><a href="https://drive.google.com/file/d/${fileId}/view" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="https://drive.google.com/uc?export=download&id=${fileId}" class="pje-btn-descarga">📥</a></td></tr>` 
-                    : `<tr><td colspan="7">No hay información disponible para el año ${anio}</td></tr>`;
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${row}</tbody></table>`;
+                    let row = fileId ? `<tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto Egresos</td><td><a href="https://drive.google.com/file/d/${fileId}/view" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="https://drive.google.com/uc?export=download&id=${fileId}" class="pje-btn-descarga">📥</a></td></tr>` 
+                    : `<tr><td colspan="5">Información no disponible</td></tr>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${row}</tbody></table>`;
                 }
                 else if(texto.includes("I. Nombramientos") && subSeccionI === "Licencias") {
                     let rows = "";
                     for (const [mes, id] of Object.entries(idsLicencias)) {
                         let urls = getDriveUrls(id);
-                        rows += `<tr><td>22-I</td><td>${mes} ${anio}</td><td>Relación de Licencias</td><td>${resp}</td><td>${fechaAct}</td><td><a href="${urls.view}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${urls.download}" class="pje-btn-descarga">📥</a></td></tr>`;
+                        rows += `<tr><td>22-I</td><td>${mes} ${anio}</td><td>Relación de Licencias</td><td><a href="${urls.view}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${urls.download}" class="pje-btn-descarga">📥</a></td></tr>`;
                     }
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
                 else {
                     let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero ${anio}</td><td>Pendiente de carga</td><td>${resp}</td><td>${fechaAct}</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero ${anio}</td><td>Documento correspondiente</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
                 }
             }
 
