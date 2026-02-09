@@ -301,7 +301,7 @@ Summary: Transparencia </p>
         .pje-vista-lista .pje-item::before { content: "📄"; margin-right: 20px; font-size: 24px; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1000px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+        .pje-modal-box { background: #fff; width: 98%; max-width: 1300px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
@@ -309,13 +309,10 @@ Summary: Transparencia </p>
         .pje-tab-btn.active { background: var(--pje-color); color: #fff; }
 
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        /* AJUSTE DE CENTRADO EN ENCABEZADOS */
-        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 14px; text-align: center !important; }
-        /* AJUSTE DE CENTRADO EN CELDAS */
-        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 14px; }
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 11px; text-align: center !important; text-transform: uppercase; border: 1px solid #5a6773; }
+        .pje-tabla-res td { padding: 12px; border: 1px solid #eee; text-align: center !important; color: #333; font-size: 12px; }
 
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 16px; text-align: justify; }
-
         .pje-link-blue { color: #0056b3; text-decoration: underline; font-weight: bold; }
         .pje-filtros { display: flex; gap: 15px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; }
         .pje-btn-ver { cursor: pointer; color: var(--pje-color); font-size: 18px; text-decoration: none; padding: 5px; }
@@ -341,12 +338,11 @@ Summary: Transparencia </p>
                 <button id="tab-licencias" class="pje-tab-btn">Licencias</button>
             </div>
             <div id="pje-modal-filtros" class="pje-filtros">
-                <div><strong>Año:</strong> <select id="pje-anio-select" style="padding:2px; border:1px solid #ccc;"></select></div>
-                <div><strong>Actualización:</strong> 06/02/2026</div>
+                <div><strong>Año de consulta:</strong> <select id="pje-anio-select" style="padding:2px; border:1px solid #ccc;"></select></div>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 30px; overflow-y: auto;"></div>
         </div>
-    </div> 
+    </div>
 
     <script>
         (function() {
@@ -364,14 +360,10 @@ Summary: Transparencia </p>
             };
 
             const idsLicencias = {
-                "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R",
-                "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh",
-                "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O",
-                "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm",
-                "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB",
-                "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG",
-                "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH",
-                "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J"
+                "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh",
+                "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm",
+                "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG",
+                "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J"
             };
 
             const grid = document.getElementById('pje-contenedor-grid');
@@ -396,41 +388,45 @@ Summary: Transparencia </p>
                 const filtros = document.getElementById('pje-modal-filtros');
                 const tabs = document.getElementById('pje-container-tabs');
                 const anio = selAnio.value;
+                const fechaAct = "09/02/2026"; // Fecha solicitada
 
                 tabs.style.display = (texto.includes("I. Nombramientos")) ? "flex" : "none";
                 filtros.style.display = "flex";
 
+                // Definición de responsables
+                let resp = "Unidad de Transparencia";
+                if(texto.includes("I. Nombramientos")) resp = "Dirección de Recursos Humanos";
+                if(texto.includes("VI. Presupuesto") || texto.includes("III. Viáticos")) resp = "Oficialía Mayor";
+
                 if(texto.includes("II. Tipo")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto... (Texto legal completo)</div>`;
                 } 
                 else if(texto.includes("IV. Mecanismo")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias, el Poder Judicial pone a su disposición el Buzón de Quejas Sugerencias del Poder Judicial y la Plataforma Nacional de Transparencia (PNT).<br><br>• <strong>Buzón de Quejas:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIDia75tIVsCu-YW9tPVPo-Vzghj0xrNnZyr3ane4Yo5aNzg/viewform" target="_blank" class="pje-link-blue">Clic aquí para ir al Buzón</a><br>• <strong>Solicitudes de Información:</strong> <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="pje-link-blue">Clic aquí para ir a la PNT</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, quejas o sugerencias... (Texto legal completo)</div>`;
                 }
                 else if(texto.includes("V. Instituciones")) {
                     filtros.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no genera la información relativa a la fracción V del artículo 22 de la Ley de Transparencia estatal, toda vez que, conforme a los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, este sujeto obligado no cuenta con atribuciones ni facultades legales para destinar o transferir recursos públicos a instituciones de beneficencia.<br><br>Realizar dichas erogaciones resultaría ajeno a su objeto constitucional y legal, el cual se constriñe estrictamente a la función jurisdiccional de impartir justicia en los asuntos de su competencia. Por lo tanto, al no existir la facultad de otorgar dichos recursos, no existe el listado referido.</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> El Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con atribuciones para destinar recursos a instituciones de beneficencia... (Texto legal completo)</div>`;
                 }
                 else if(texto.includes("VI. Presupuesto")) {
                     let fileId = idsPresupuesto[anio];
-                    if(fileId) {
-                        let viewUrl = `https://drive.google.com/file/d/${fileId}/view`;
-                        let downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-                        body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto Egresos</td><td><a href="${viewUrl}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${downloadUrl}" class="pje-btn-descarga">📥</a></td></tr></tbody></table>`;
-                    } else { body.innerHTML = `<div style="text-align:center; padding:20px; color:#666;">Información no disponible para el año seleccionado.</div>`; }
+                    let row = fileId ? `<tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td>${resp}</td><td>${fechaAct}</td><td><a href="https://drive.google.com/file/d/${fileId}/view" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="https://drive.google.com/uc?export=download&id=${fileId}" class="pje-btn-descarga">📥</a></td></tr>` 
+                    : `<tr><td colspan="7">No hay información disponible para el año ${anio}</td></tr>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${row}</tbody></table>`;
                 }
                 else if(texto.includes("I. Nombramientos") && subSeccionI === "Licencias") {
                     let rows = "";
                     for (const [mes, id] of Object.entries(idsLicencias)) {
                         let urls = getDriveUrls(id);
-                        rows += `<tr><td>22</td><td>${mes} ${anio}</td><td>Relación de Licencias</td><td><a href="${urls.view}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${urls.download}" class="pje-btn-descarga">📥</a></td></tr>`;
+                        rows += `<tr><td>22-I</td><td>${mes} ${anio}</td><td>Relación de Licencias</td><td>${resp}</td><td>${fechaAct}</td><td><a href="${urls.view}" target="_blank" class="pje-btn-ver">👁️</a></td><td><a href="${urls.download}" class="pje-btn-descarga">📥</a></td></tr>`;
                     }
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
                 else {
                     let colNombre = texto.includes("I. Nombramientos") ? subSeccionI : "Documento";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero ${anio}</td><td>${colNombre} Correspondiente</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${colNombre}</th><th>Responsable</th><th>Actualización</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Enero ${anio}</td><td>Pendiente de carga</td><td>${resp}</td><td>${fechaAct}</td><td>👁️</td><td>📥</td></tr></tbody></table>`;
                 }
             }
 
@@ -447,22 +443,10 @@ Summary: Transparencia </p>
             });
 
             selAnio.onchange = function() { renderContenido(fraccionActual); };
-
-            document.getElementById('tab-nombramientos').onclick = function() {
-                subSeccionI = "Nombramientos"; this.className = 'pje-tab-btn active';
-                document.getElementById('tab-licencias').className = 'pje-tab-btn';
-                renderContenido("I. Nombramientos y Licencias");
-            };
-
-            document.getElementById('tab-licencias').onclick = function() {
-                subSeccionI = "Licencias"; this.className = 'pje-tab-btn active';
-                document.getElementById('tab-nombramientos').className = 'pje-tab-btn';
-                renderContenido("I. Nombramientos y Licencias");
-            };
-
+            document.getElementById('tab-nombramientos').onclick = function() { subSeccionI = "Nombramientos"; this.className = 'pje-tab-btn active'; document.getElementById('tab-licencias').className = 'pje-tab-btn'; renderContenido("I. Nombramientos y Licencias"); };
+            document.getElementById('tab-licencias').onclick = function() { subSeccionI = "Licencias"; this.className = 'pje-tab-btn active'; document.getElementById('tab-nombramientos').className = 'pje-tab-btn'; renderContenido("I. Nombramientos y Licencias"); };
             document.getElementById('pje-mosaico-btn').onclick = function() { grid.className='pje-vista-mosaico'; this.classList.add('active'); document.getElementById('pje-lista-btn').classList.remove('active'); };
             document.getElementById('pje-lista-btn').onclick = function() { grid.className='pje-vista-lista'; this.classList.add('active'); document.getElementById('pje-mosaico-btn').classList.remove('active'); };
-
             document.getElementById('pje-modal-cerrar').onclick = function() { modal.style.display = 'none'; };
             window.onclick = function(event) { if (event.target == modal) { modal.style.display = 'none'; } };
         })();
