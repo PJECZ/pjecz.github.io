@@ -349,7 +349,18 @@
 
             const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             const idsPresupuesto = { "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ", "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD", "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z" };
-            const idsLicencias = { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" };
+
+            // ACTUALIZACIÓN DE IDS DE LICENCIAS SEGÚN TU LISTA
+            const idsLicencias = { 
+                "Enero": "1lugSX6aYlvGc0uYbrzP3w4lmBndE76XT", 
+                "Febrero": "19hvzO93fyiJwkSAl6RXkOVHpV6M0UnwS", 
+                "Marzo": "1V5R-6hbXlGwCcvJ5r3W0pcx_x_0V-_bx", 
+                "Abril": "132MLzw1ddMNXXGkUBbtrEI6_wIM1_uIR", 
+                "Mayo": "1kAIaG1JiYvL8nUyjrHdFbRbvC16bTQYp", 
+                "Junio": "1Px4aLJOTFHNE54nfP6yhnVOg7G9sBJ8R", 
+                "Julio": "1ZPW7060k9XH_cPRQDAxWcX5IFiG_7Ysu", 
+                "Agosto": "1hV4NNCFlJ4sc7aSwMabfIIIny6VLqT56" 
+            };
 
             const modal = document.getElementById('pje-modal-full');
             const selAnio = document.getElementById('pje-anio-select');
@@ -401,12 +412,10 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                // CASO XI: OTRA INFORMACIÓN (TABLA DE VÍNCULOS)
                 if(fraccionActual.includes("XI. Otra Información")) {
                     anioCont.style.display = "none";
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
                 }
-                // CASO I: NOMBRAMIENTOS (TABLA DE ARCHIVOS SIN MES/AÑO)
                 else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     anioCont.style.display = "none";
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
@@ -430,7 +439,6 @@
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else {
-                    // TABLAS MENSUALES (LICENCIAS Y DEMÁS)
                     let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
                     let rows = "";
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
