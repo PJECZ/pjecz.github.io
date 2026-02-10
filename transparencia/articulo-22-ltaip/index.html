@@ -325,7 +325,7 @@
             <div id="pje-modal-filtros" class="pje-filtros">
                 <div id="pje-anio-cont"><strong>Año:</strong> <select id="pje-anio-select"></select></div>
                 <div><strong>Responsable:</strong> <span id="pje-resp-header"></span></div>
-                <div><strong>Actualización:</strong> 09/02/2026</div>
+                <div><strong>Actualización:</strong> 10/02/2026</div>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px 30px; overflow-y: auto;"></div>
         </div>
@@ -401,10 +401,15 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                // CAMBIO SOLICITADO: Nombramientos y Otra Información sin Mes ni Año
-                if(fraccionActual.includes("XI. Otra Información") || (fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos")) {
+                // CASO XI: OTRA INFORMACIÓN (TABLA DE VÍNCULOS)
+                if(fraccionActual.includes("XI. Otra Información")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento cargado correspondiente a ${fraccionActual.split('.')[1]}</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
+                }
+                // CASO I: NOMBRAMIENTOS (TABLA DE ARCHIVOS SIN MES/AÑO)
+                else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("II. Tipo")) {
                     anioCont.style.display = "none";
@@ -425,7 +430,7 @@
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else {
-                    // TODO LO DEMÁS SE RESPETA: Licencias y tablas mensuales
+                    // TABLAS MENSUALES (LICENCIAS Y DEMÁS)
                     let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
                     let rows = "";
                     let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
