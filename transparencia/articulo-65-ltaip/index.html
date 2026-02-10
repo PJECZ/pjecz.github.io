@@ -309,7 +309,152 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 <p>XLIII. <a href="f43-archivos-documentales/">Catálogo de disposición y guía de archivo documental</a></p>
 <p>XLIV. <a href="f44-actas-de-sesiones-ordinarias/">Actas de sesiones ordinarias y extraordinarias que, en su caso, emitan los consejos consultivos</a> </p>
 <p>XLV. <a href="f45-telecomunicaciones/">Listado de solicitudes a las empresas concesionarias de telecomunicaciones y proveedores de servicios o aplicaciones de Internet para la intervención de comunicaciones privadas</a></p>
-<p>XLVI. <a href="f46-otra-informacion/">Cualquier otra información que sea de utilidad o se considere relevante</a></p>
+<p>XLVI. <a href="f46-otra-informacion/">Cualquier otra información que sea de utilidad o se considere relevante</a>
+<center>
+    <p align="justify">
+Los sujetos obligados pondrán a disposición del público y mantendrán actualizada,en los respectivos medios electrónicos, de acuerdo con sus facultades, atribuciones,funciones u objeto social, según corresponda, la información, por lo menos, de los temas, documentos y políticas que a continuación se señalan:
+ </p>
+</center></p>
+<h2>Fracciones</h2>
+<div id="pje-transparencia-65" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+    <style>
+        #pje-transparencia-65 { display: block; width: 100%; --pje-color: #49545E; }
+        .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
+        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
+        .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
+
+        #pje-contenedor-grid { 
+            display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none; 
+            background: rgba(255, 255, 255, 0.97) url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coat_of_arms_of_Mexico.svg/450px-Coat_of_arms_of_Mexico.svg.png') no-repeat center center;
+            background-attachment: fixed; background-blend-mode: lighten; min-height: 600px;
+        }
+
+        .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+        .pje-vista-lista { grid-template-columns: 1fr; }
+
+        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 11px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; }
+        .pje-vista-mosaico .pje-item { background: var(--pje-color); color: #fff; min-height: 160px; border-radius: 5px 20px 5px 5px; flex-direction: column; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46; }
+        .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
+        .pje-vista-mosaico .pje-item::before { content: "📄"; font-size: 30px; margin-bottom: 12px; }
+
+        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 15px 30px; text-transform: none; font-size: 14px; cursor: default !important; }
+        .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
+        .pje-item-titulo-lista:hover { color: #0056b3; text-decoration: underline; }
+
+        #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
+        .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+
+        .pje-filtros { display: flex; gap: 25px; background: #ebf2f7; padding: 15px; font-size: 13px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
+        .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; text-align: center; }
+        .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 13px; }
+
+        .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
+        .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
+    </style>
+
+    <div class="pje-toolbar">
+        <span style="margin-right:auto; color:#666; font-weight:bold; font-size:11px;">LEY GENERAL - ARTÍCULO 65</span>
+        <button id="pje-mosaico-btn" class="pje-btn-vista active">⊞ MOSAICO</button>
+        <button id="pje-lista-btn" class="pje-btn-vista">≡ LISTA</button>
+    </div>
+
+    <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
+
+    <div id="pje-modal-full">
+        <div class="pje-modal-box">
+            <div class="pje-modal-h">
+                <strong id="pje-modal-title" style="color:var(--pje-color); font-size:1.1rem;"></strong>
+                <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb;">&times;</span>
+            </div>
+            <div id="pje-modal-filtros" class="pje-filtros">
+                <div id="pje-anio-cont"><strong>Año:</strong> <select id="pje-anio-select"></select></div>
+                <div><strong>Responsable:</strong> <span id="pje-resp-header">Unidad de Transparencia</span></div>
+                <div><strong>Actualización:</strong> 10/02/2026</div>
+            </div>
+            <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px 30px; overflow-y: auto;"></div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const fracciones = [
+                "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos",
+                "V. Indicadores de interés", "VI. Directorio", "VII. Remuneraciones", "VIII. Viáticos",
+                "IX. Plazas y personal", "X. Honorarios", "XI. Declaraciones públicas", "XII. Unidad de Transparencia",
+                "XIII. Concursos públicos", "XIV. Programas y subsidios", "XV. Condiciones de trabajo", "XVI. Currículum",
+                "XVII. Sanciones", "XVIII. Servicios y trámites", "XIX. Presupuesto", "XX. Deuda pública",
+                "XXI. Comunicación social", "XXII. Auditorías", "XXIII. Estados financieros", "XXIV. Recursos públicos",
+                "XXV. Concesiones y contratos", "XXVI. Adjudicaciones", "XXVII. Informes", "XXVIII. Estadísticas",
+                "XXIX. Avances programáticos", "XXX. Proveedores", "XXXI. Convenios social/privado", "XXXII. Inventarios",
+                "XXXIII. Recomendaciones DH", "XXXIV. Resoluciones juicios", "XXXV. Participación ciudadana", "XXXVI. Programas ofrecidos",
+                "XXXVII. Comité de Transparencia", "XXXVIII. Evaluaciones", "XXXIX. Estudios financiados", "XL. Jubilados y pensionados",
+                "XLI. Ingresos recibidos", "XLII. Donaciones", "XLIII. Catálogo de archivos", "XLIV. Actas consejos",
+                "XLV. Intervención comunicaciones", "XLVI. Utilidad pública"
+            ];
+
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            const modal = document.getElementById('pje-modal-full');
+            const selAnio = document.getElementById('pje-anio-select');
+            let fraccionActual = "";
+
+            for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
+            selAnio.value = "2025";
+
+            function renderGrid(modo) {
+                const grid = document.getElementById('pje-contenedor-grid');
+                grid.innerHTML = "";
+                grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
+                fracciones.forEach((f, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'pje-item';
+                    if (modo === 'mosaico') {
+                        item.innerHTML = `<span>${f}</span>`;
+                        item.onclick = () => abrirModal(f);
+                    } else {
+                        item.innerHTML = `<span class="pje-item-titulo-lista" onclick="abrirModal('${f}')">${f}</span>`;
+                    }
+                    grid.appendChild(item);
+                });
+            }
+
+            function abrirModal(t) {
+                fraccionActual = t;
+                document.getElementById('pje-modal-title').innerText = t;
+                renderContenido();
+                modal.style.display = 'flex';
+            }
+
+            function renderContenido() {
+                const body = document.getElementById('pje-modal-body');
+                const anioCont = document.getElementById('pje-anio-cont');
+                const anio = selAnio.value;
+
+                // Fracciones que NO llevan mes ni año (Vínculos o Archivos directos)
+                const esDirecto = ["I. Marco", "II. Estructura", "III. Facultades", "VI. Directorio", "XII. Unidad", "XLVI. Utilidad"].some(base => fraccionActual.includes(base));
+
+                if(esDirecto) {
+                    anioCont.style.display = "none";
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Acceso</th></tr></thead><tbody><tr><td>Información actualizada de ${fraccionActual}</td><td><a href="#" target="_blank" style="color:#0056b3; text-decoration:underline;">Consultar Información</a></td></tr></tbody></table>`;
+                } else {
+                    anioCont.style.display = "block";
+                    let rows = "";
+                    meses.forEach(m => {
+                        rows += `<tr><td>${m} ${anio}</td><td>Reporte Correspondiente</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr>`;
+                    });
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Mes</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                }
+            }
+
+            renderGrid('mosaico');
+            selAnio.onchange = renderContenido;
+            document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
+            document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
+            document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
+        })();
+    </script>
+</div>
     </div>
 </article>
     </main>
