@@ -298,7 +298,7 @@
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 10px; font-size: 13px; text-align: center; }
         .pje-tabla-res td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 13px; }
 
-        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; background: #fdfdfd; }
+        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 14px; text-align: justify; background: #fdfdfd; }
         .pje-ficha-tecnica { background: #f9f9f9; border: 1px solid #eee; padding: 12px 20px; margin-bottom: 15px; border-radius: 8px; font-size: 12.5px; line-height: 1.4; color: #333; text-align: justify; }
         .pje-ficha-tecnica p { margin: 3px 0; }
 
@@ -490,7 +490,7 @@
                 else if(fraccionActual.includes("V. Instituciones de Beneficencia")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
                     let f = getFicha("Fracción V", "En cumplimiento con el Artículo 22, Fracción V en esta fracción se hace constar que el Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con facultades legales ni presupuestarias para otorgar donativos o apoyos a instituciones de beneficencia, por lo que no se genera información para esta fracción en el presente periodo.");
-                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>';
                 }
                 else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
                     let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado, en este apartado se publica la información relativa a los recursos financieros autorizados para el presente ejercicio fiscal, con el fin de transparentar la administración de los recursos públicos y permitir que la ciudadanía conozca con claridad cómo se distribuye y utiliza el presupuesto destinado a la operación y proyectos de esta institución.");
@@ -506,7 +506,7 @@
                         </div>`;
                 }
                 else if(fraccionActual.includes("VIII. Actas de Entrega-Recepción")) {
-                    let f = getFicha("Fracción VIII", "En cumplimiento con el Artículo 22, Fracción VIII, en este apartado se hace pública la información relativa a las actas de entrega-recepción de los servidores públicos al finalizar un encargo o al realizarse un cambio de titularidad, asegurando con ello la continuidad de la función pública, la rendimiento de cuentas sobre los bienes institucionales y la debida formalización del proceso de transición administrativa.");
+                    let f = getFicha("Fracción VIII", "En cumplimiento con el Artículo 22, Fracción VIII, en este apartado se hace pública la información relativa a las actas de entrega-recepción de los servidores públicos al finalizar un encargo o al realizarse un cambio de titularidad, asegurando con ello la continuidad de la función pública, la rendición de cuentas sobre los bienes institucionales y la debida formalización del proceso de transición administrativa.");
                     let rows = "";
                     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
                     meses.forEach(m => { rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`; });
@@ -515,12 +515,12 @@
                 else if(fraccionActual.includes("IX. Georreferenciación")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
                     let f = getFicha("Fracción IX", "Este rubro tiene como propósito transparentar la ubicación exacta y el progreso de los proyectos de infraestructura mediante coordenadas geográficas; no obstante, se informa que esta fracción no aplica a las facultades de este Poder Judicial, toda vez que nuestra naturaleza jurídica y atribuciones legales no contemplan la planeación, ejecución o desarrollo de obras públicas de infraestructura urbana, razón por la cual no se genera información técnica ni cartográfica bajo este concepto.");
-                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza.</div>';
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en el hecho de que este Sujeto Obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial, razón por la cual existe una imposibilidad técnica y jurídica de generar la información solicitada.</div>';
                 }
                 else if(fraccionActual.includes("X. Estado que guardan")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
                     let f = getFicha("Fracción X", "Este apartado tiene como finalidad informar sobre la situación financiera, actuarial y operativa de los fondos de pensiones y jubilaciones que administran los sujetos obligados; sin embargo, se hace constar que esta fracción no aplica a este Poder Judicial, toda vez que la administración, gestión y resguardo de los fondos de seguridad social y pensiones de nuestro personal recae legalmente en una institución externa especializada (como el Instituto de Pensiones del Estado), instancia responsable de generar y publicar los informes correspondientes, por lo que no se cuenta con información propia bajo este concepto.");
-                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza.</div>';
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se hace constar que esta fracción no aplica a este Poder Judicial, toda vez que la administración, gestión y resguardo de los fondos de seguridad social y pensiones de nuestro personal recae legalmente en una institución externa especializada, instancia responsable de generar y publicar los informes correspondientes, por lo que este Sujeto Obligado no genera ni posee información propia bajo este concepto.</div>';
                 }
                 else if(fraccionActual.includes("XI. Otra Información")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
