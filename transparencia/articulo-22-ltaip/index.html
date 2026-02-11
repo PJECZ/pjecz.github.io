@@ -435,6 +435,9 @@
                     });
                     modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Información / Página</th><th style="text-align:center;">Vínculo de acceso</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
+                else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
+                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Ejercicio</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                }
                 else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
                     modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>';
