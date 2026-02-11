@@ -301,7 +301,7 @@
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
 
-        .pje-footer-modal { padding: 10px 25px; background: #f8f9fa; border-top: 1px solid #eee; font-size: 12px; color: #666; text-align: right; }
+        .pje-footer-modal { padding: 12px 25px; background: #f8f9fa; border-top: 1px solid #eee; font-size: 14px; color: #444; text-align: right; }
 
         #pje-visor-container { display: none; width: 100%; height: 75vh; background: #525659; position: relative; }
         #pje-iframe-visor { width: 100%; height: 100%; border: none; }
@@ -338,7 +338,7 @@
                 <iframe id="pje-iframe-visor"></iframe>
             </div>
             <div class="pje-footer-modal">
-                <strong>Fecha de actualización:</strong> <span id="pje-fecha-act">31/01/2026</span> | <strong>Fecha de validación:</strong> 31/01/2026
+                <strong>Fecha de actualización:</strong> <span id="pje-fecha-act">31/01/2026</span>
             </div>
         </div>
     </div>
@@ -359,6 +359,18 @@
                 {t: "XI. Otra Información", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f11-otra-informacion/#gsc.tab=0"}
             ];
 
+            // Listado de Nombramientos (Editable)
+            const listaNombramientos = [
+                { nombre: "NOMBRE DE LA PERSONA 1", id: "ID_GOOGLE_DRIVE_1" },
+                { nombre: "NOMBRE DE LA PERSONA 2", id: "ID_GOOGLE_DRIVE_2" }
+            ];
+
+            // Listado de Otra Información (Enlaces Externos Editable)
+            const listaOtrasPaginas = [
+                { nombre: "NOMBRE DE LA PÁGINA O INFORMACIÓN 1", url: "https://ejemplo.com/pagina1" },
+                { nombre: "NOMBRE DE LA PÁGINA O INFORMACIÓN 2", url: "https://ejemplo.com/pagina2" }
+            ];
+
             const idsLicencias = { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" };
 
             const modal = document.getElementById('pje-modal-full');
@@ -374,7 +386,7 @@
             selAnio.value = "2025";
 
             window.pjeVerDoc = function(url) {
-                if(!url || url === "#") return;
+                if(!url || url === "#" || url === "") return;
                 document.getElementById('pje-iframe-visor').src = url.replace("/view", "/preview");
                 modalBody.style.display = "none";
                 filtros.style.display = "none";
@@ -409,7 +421,21 @@
 
                 if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal">En cumplimiento a lo establecido por la Ley General de Transparencia y Acceso a la Información Pública y la Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza, se pone a disposición la información relativa a los nombramientos del personal del Poder Judicial.<br><br><div style="text-align:center;"><button class="pje-tab-btn active" onclick="pjeVerDoc(\'https://drive.google.com/file/d/1X3W9Z8Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z/view\')">CONSULTAR NOMBRAMIENTOS</button></div></div>';
+                    let rows = "";
+                    listaNombramientos.forEach(p => {
+                        let v = `https://drive.google.com/file/d/${p.id}/view`;
+                        let d = `https://drive.google.com/uc?export=download&id=${p.id}`;
+                        rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td>Documento de Nombramiento</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                    });
+                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:left; padding-left:20px;">Nombre del Servidor Público</th><th>Descripción</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                }
+                else if(fraccionActual.includes("XI. Otra Información")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    let rows = "";
+                    listaOtrasPaginas.forEach(p => {
+                        rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td style="text-align:left;"><a href="${p.url}" target="_blank" style="color:#0056b3; text-decoration:underline; font-size:12px;">${p.url}</a></td></tr>`;
+                    });
+                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:left; padding-left:20px;">Información / Página</th><th style="text-align:left;">Vínculo de acceso</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
                 else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
