@@ -323,6 +323,7 @@
             <div id="pje-container-tabs" class="pje-tabs" style="display:none;">
                 <button id="tab-nombramientos" class="pje-tab-btn active">Nombramientos</button>
                 <button id="tab-licencias" class="pje-tab-btn">Licencias</button>
+                <button id="tab-comisiones" class="pje-tab-btn">Comisiones</button>
             </div>
             <div id="pje-modal-filtros" class="pje-filtros">
                 <div id="pje-anio-cont"><strong>Año:</strong> <select id="pje-anio-select"></select></div>
@@ -417,15 +418,31 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
-                    document.getElementById('pje-anio-cont').style.display = "none";
-                    let rows = "";
-                    listaNombramientos.forEach(p => {
-                        let v = `https://drive.google.com/file/d/${p.id}/view`;
-                        let d = `https://drive.google.com/uc?export=download&id=${p.id}`;
-                        rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td>Documento de Nombramiento</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
-                    });
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Nombre del Servidor Público</th><th style="text-align:center;">Descripción</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                if(fraccionActual.includes("I. Nombramientos")) {
+                    if(subSeccionI === "Nombramientos") {
+                        document.getElementById('pje-anio-cont').style.display = "none";
+                        let rows = "";
+                        listaNombramientos.forEach(p => {
+                            let v = `https://drive.google.com/file/d/${p.id}/view`;
+                            let d = `https://drive.google.com/uc?export=download&id=${p.id}`;
+                            rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td>Documento de Nombramiento</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                        });
+                        modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Nombre del Servidor Público</th><th style="text-align:center;">Descripción</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    } else if(subSeccionI === "Comisiones") {
+                        document.getElementById('pje-anio-cont').style.display = "none";
+                        modalBody.innerHTML = '<div class="pje-mensaje-legal">A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>';
+                    } else {
+                        // Licencias
+                        let rows = "";
+                        const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
+                        meses.forEach(m => {
+                            let id = idsLicencias[m] || "";
+                            let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
+                            let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
+                            rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                        });
+                        modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    }
                 }
                 else if(fraccionActual.includes("XI. Otra Información")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
@@ -464,7 +481,7 @@
                     let rows = "";
                     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
                     meses.forEach(m => {
-                        let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "";
+                        let id = ""; // Otras fracciones mensuales
                         let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
                         let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
                         rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
@@ -494,8 +511,18 @@
             selAnio.onchange = renderContenido;
             document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
             document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
-            document.getElementById('tab-nombramientos').onclick = function() { subSeccionI="Nombramientos"; this.className='pje-tab-btn active'; document.getElementById('tab-licencias').className='pje-tab-btn'; renderContenido(); };
-            document.getElementById('tab-licencias').onclick = function() { subSeccionI="Licencias"; this.className='pje-tab-btn active'; document.getElementById('tab-nombramientos').className='pje-tab-btn'; renderContenido(); };
+
+            // Lógica de Tabs
+            const tabBtns = ['tab-nombramientos', 'tab-licencias', 'tab-comisiones'];
+            tabBtns.forEach(id => {
+                document.getElementById(id).onclick = function() {
+                    tabBtns.forEach(b => document.getElementById(b).className = 'pje-tab-btn');
+                    this.className = 'pje-tab-btn active';
+                    subSeccionI = id.replace('tab-', '').charAt(0).toUpperCase() + id.replace('tab-', '').slice(1);
+                    renderContenido();
+                };
+            });
+
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
         })();
     </script>
