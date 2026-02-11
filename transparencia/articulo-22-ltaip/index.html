@@ -285,7 +285,6 @@
         .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        /* El modal ahora ajusta su altura al contenido automáticamente */
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; height: auto; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
@@ -302,7 +301,6 @@
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
 
-        /* Estilos del Visor Interno */
         #pje-visor-container { display: none; width: 100%; height: 75vh; background: #525659; position: relative; }
         #pje-iframe-visor { width: 100%; height: 100%; border: none; }
         .pje-visor-bar { background: #323639; color: #fff; padding: 10px 25px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
@@ -347,20 +345,12 @@
     <script>
         (function() {
             const fracciones = [
-                {t: "I. Nombramientos y Licencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f01-nombramientos-comisiones-y-licencias/#gsc.tab=0"},
-                {t: "II. Tipo de Seguridad Social", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f02-tipo-de-seguridad-social/#gsc.tab=0"},
-                {t: "III. Viáticos y gastos de representation", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/#gsc.tab=0"},
-                {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f04-mecanismo-de-solicitudes/#gsc.tab=0"},
-                {t: "V. Instituciones de Beneficencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f05-instituciones-de-beneficencia/#gsc.tab=0"},
-                {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-asignado/#gsc.tab=0"},
-                {t: "VII. Minutas de Sesiones Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f07-minutas-de-sesiones-publicas/#gsc.tab=0"},
-                {t: "VIII. Actas de Entrega-Recepción", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f08-actas-de-entrega-recepcion/#gsc.tab=0"},
-                {t: "IX. Georreferenciación de Obras Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f09-georreferenciacion-de-obras-publicas/#gsc.tab=0"},
-                {t: "X. Estado que guardan los sistemas pensionarios", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f10-estado-que-guardan-los-sistemas-pensionarios/#gsc.tab=0"},
-                {t: "XI. Otra Información", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f11-otra-informacion/#gsc.tab=0"}
+                {t: "I. Nombramientos y Licencias"}, {t: "II. Tipo de Seguridad Social"}, {t: "III. Viáticos y gastos de representación"},
+                {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias"}, {t: "V. Instituciones de Beneficencia"},
+                {t: "VI. Presupuesto Asignado"}, {t: "VII. Minutas de Sesiones Públicas"}, {t: "VIII. Actas de Entrega-Recepción"},
+                {t: "IX. Georreferenciación de Obras Públicas"}, {t: "X. Estado que guardan los sistemas pensionarios"}, {t: "XI. Otra Información"}
             ];
 
-            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             const idsLicencias = { "Enero": "1fdVszCOfmLmTjReqemR8fw4bzvH90Q2R", "Febrero": "17CMood9_HIZqfqZdp-XRSAMElC9_9TTh", "Marzo": "1K7I3_TRF9vY9EslpA_DF_AxOGIXCru5O", "Abril": "1Zq52fOzYnKZhlt4m6aSmdZ9pIjEHqORm", "Mayo": "1q-LPpbz5UHvACGXOASOZivFakbEc-DpB", "Junio": "1Pb0npPnVZ17N0vtK6uI87vfcbmQlqjIG", "Julio": "1VAVetdrGT33HC0AGnVNNk90AMOvFgpNH", "Agosto": "1GiOoIAbwwRXC7Ys9JeXxwLXPXEqc3a7J" };
 
             const modal = document.getElementById('pje-modal-full');
@@ -417,19 +407,19 @@
 
                 if(fraccionActual.includes("XI. Otra Información")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3;">Abrir vínculo</a></td></tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Nombramientos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
-                else if(fraccionActual.includes("II. Tipo")) {
+                else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social que consiste en una pensión para el retiro, la cual es administrada por el Instituto de Servicio Social para los Trabajadores del Estado de Coahuila (ISSSTEEC).</div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Esquema de seguridad social administrado por el Instituto de Servicio Social para los Trabajadores del Estado de Coahuila.</div>`;
                 }
-                else if(fraccionActual.includes("IV. Mecanismo")) {
+                else if(fraccionActual.includes("IV. Mecanismo de solicitudes")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la Plataforma Nacional de Transparencia. <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic aquí para ir a la PNT</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información: <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Plataforma Nacional de Transparencia</a></div>`;
                 }
                 else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     anioCont.style.display = "none";
@@ -438,12 +428,12 @@
                 else {
                     let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
                     let rows = "";
-                    let listaMeses = (anio === "2026") ? ["Enero", "Febrero"] : meses;
-                    listaMeses.forEach(m => {
+                    const mesesLista = (anio === "2026") ? ["Enero", "Febrero"] : ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
+                    mesesLista.forEach(m => {
                         let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "";
                         let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
                         let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
-                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a onclick="pjeVerDoc('${v}')" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col}</td><td><a onclick="pjeVerDoc('${v}')" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                     });
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${col}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
@@ -456,12 +446,8 @@
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-                    if (modo === 'mosaico') {
-                        item.innerHTML = `<span>${f.t}</span>`;
-                        item.onclick = () => abrirModal(f.t);
-                    } else {
-                        item.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;"><span class="pje-item-titulo-lista" onclick="abrirModal('${f.t}')">${f.t}</span></div>`;
-                    }
+                    item.innerHTML = `<span>${f.t}</span>`;
+                    item.onclick = () => abrirModal(f.t);
                     grid.appendChild(item);
                 });
             }
