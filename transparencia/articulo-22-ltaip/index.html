@@ -276,18 +276,17 @@
         .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
         .pje-vista-lista { grid-template-columns: 1fr; }
 
-        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; }
+        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; white-space: normal; }
         .pje-vista-mosaico .pje-item { background: var(--pje-color); color: #fff; min-height: 160px; border-radius: 5px 20px 5px 5px; flex-direction: column; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46; }
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
         .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
-        .pje-item-titulo-lista:hover { color: #0056b3; text-decoration: underline; }
         .pje-link-externo { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; cursor: pointer; display: inline-block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 85vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
@@ -302,6 +301,11 @@
         .pje-mensaje-legal { background: #fdfdfd; border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; }
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
+
+        /* Contenedor del Visor */
+        #pje-visor-container { display: none; flex: 1; padding: 10px; background: #525659; position: relative; }
+        #pje-iframe-visor { width: 100%; height: 100%; border: none; border-radius: 4px; }
+        #pje-cerrar-visor { position: absolute; top: 15px; right: 25px; background: #ff4d4d; color: #fff; border: none; padding: 5px 15px; cursor: pointer; font-weight: bold; border-radius: 4px; z-index: 10; }
     </style>
 
     <div class="pje-toolbar">
@@ -328,6 +332,11 @@
                 <div><strong>Actualización:</strong> 10/02/2026</div>
             </div>
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px 30px; overflow-y: auto;"></div>
+
+            <div id="pje-visor-container">
+                <button id="pje-cerrar-visor">CERRAR VISTA PREVIA</button>
+                <iframe id="pje-iframe-visor"></iframe>
+            </div>
         </div>
     </div>
 
@@ -349,29 +358,32 @@
 
             const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
             const idsPresupuesto = { "2023": "1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ", "2024": "1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD", "2025": "1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z" };
-
-            // ACTUALIZACIÓN DE IDS DE LICENCIAS SEGÚN TU LISTA
-            const idsLicencias = { 
-                "Enero": "1lugSX6aYlvGc0uYbrzP3w4lmBndE76XT", 
-                "Febrero": "19hvzO93fyiJwkSAl6RXkOVHpV6M0UnwS", 
-                "Marzo": "1V5R-6hbXlGwCcvJ5r3W0pcx_x_0V-_bx", 
-                "Abril": "132MLzw1ddMNXXGkUBbtrEI6_wIM1_uIR", 
-                "Mayo": "1kAIaG1JiYvL8nUyjrHdFbRbvC16bTQYp", 
-                "Junio": "1Px4aLJOTFHNE54nfP6yhnVOg7G9sBJ8R", 
-                "Julio": "1ZPW7060k9XH_cPRQDAxWcX5IFiG_7Ysu", 
-                "Agosto": "1hV4NNCFlJ4sc7aSwMabfIIIny6VLqT56" 
-            };
+            const idsLicencias = { "Enero": "1lugSX6aYlvGc0uYbrzP3w4lmBndE76XT", "Febrero": "19hvzO93fyiJwkSAl6RXkOVHpV6M0UnwS", "Marzo": "1V5R-6hbXlGwCcvJ5r3W0pcx_x_0V-_bx", "Abril": "132MLzw1ddMNXXGkUBbtrEI6_wIM1_uIR", "Mayo": "1kAIaG1JiYvL8nUyjrHdFbRbvC16bTQYp", "Junio": "1Px4aLJOTFHNE54nfP6yhnVOg7G9sBJ8R", "Julio": "1ZPW7060k9XH_cPRQDAxWcX5IFiG_7Ysu", "Agosto": "1hV4NNCFlJ4sc7aSwMabfIIIny6VLqT56" };
 
             const modal = document.getElementById('pje-modal-full');
             const selAnio = document.getElementById('pje-anio-select');
             const respHeader = document.getElementById('pje-resp-header');
+            const visorCont = document.getElementById('pje-visor-container');
+            const iframeVisor = document.getElementById('pje-iframe-visor');
+            const modalBody = document.getElementById('pje-modal-body');
             let fraccionActual = "";
             let subSeccionI = "Nombramientos";
 
             for(let a=2026; a>=2015; a--) { let o=document.createElement('option'); o.value=a; o.text=a; selAnio.add(o); }
             selAnio.value = "2025";
 
-            window.pjeSalto22 = function(url) { window.open(url, '_blank'); };
+            window.pjeVerDoc = function(url) {
+                if(url === "#") return;
+                iframeVisor.src = url.replace("/view", "/preview");
+                modalBody.style.display = "none";
+                visorCont.style.display = "block";
+            };
+
+            document.getElementById('pje-cerrar-visor').onclick = function() {
+                visorCont.style.display = "none";
+                modalBody.style.display = "block";
+                iframeVisor.src = "";
+            };
 
             function renderGrid(modo) {
                 const grid = document.getElementById('pje-contenedor-grid');
@@ -384,7 +396,7 @@
                         item.innerHTML = `<span>${f.t}</span>`;
                         item.onclick = () => abrirModal(f.t);
                     } else {
-                        item.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;"><span class="pje-item-titulo-lista" onclick="window.pjeSalto22('${f.l}')">${f.t}</span><span class="pje-link-externo" onclick="window.pjeSalto22('${f.l}')">${f.l}</span></div>`;
+                        item.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;"><span class="pje-item-titulo-lista" onclick="window.open('${f.l}', '_blank')">${f.t}</span><span class="pje-link-externo" onclick="window.open('${f.l}', '_blank')">${f.l}</span></div>`;
                     }
                     grid.appendChild(item);
                 });
@@ -393,12 +405,14 @@
             function abrirModal(t) {
                 fraccionActual = t;
                 document.getElementById('pje-modal-title').innerText = t;
+                visorCont.style.display = "none";
+                modalBody.style.display = "block";
                 renderContenido();
                 modal.style.display = 'flex';
             }
 
             function renderContenido() {
-                const body = document.getElementById('pje-modal-body');
+                const body = modalBody;
                 const tabs = document.getElementById('pje-container-tabs');
                 const anioCont = document.getElementById('pje-anio-cont');
                 const anio = selAnio.value;
@@ -418,7 +432,7 @@
                 }
                 else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("II. Tipo")) {
                     anioCont.style.display = "none";
@@ -436,7 +450,7 @@
                     let id = idsPresupuesto[anio] || "";
                     let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
                     let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Periodo</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22-VI</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
                 }
                 else {
                     let col = (fraccionActual.includes("I. Nombramientos")) ? "Licencias" : "Documento";
@@ -446,7 +460,7 @@
                         let id = (subSeccionI === "Licencias" && idsLicencias[m]) ? idsLicencias[m] : "";
                         let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
                         let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
-                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a href="${v}" target="_blank" class="pje-btn-act">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>${col} Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                     });
                     body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>${col}</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
