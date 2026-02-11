@@ -276,7 +276,7 @@
         .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
         .pje-vista-lista { grid-template-columns: 1fr; }
 
-        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; white-space: normal; overflow: visible; }
+        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; white-space: normal; }
         .pje-vista-mosaico .pje-item { background: var(--pje-color); color: #fff; min-height: 160px; border-radius: 5px 20px 5px 5px; flex-direction: column; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46; }
         .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
@@ -285,7 +285,7 @@
         .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; transition: all 0.3s ease; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
         .pje-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #eee; padding: 10px; gap: 10px; }
@@ -297,13 +297,13 @@
         .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; text-align: center !important; }
         .pje-tabla-res td { padding: 12px; border-bottom: 1px solid #eee; text-align: center !important; color: #333; font-size: 13px; }
 
-        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 20px 30px; line-height: 1.6; color: #333; font-size: 15px; text-align: justify; margin: 10px 0; }
+        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; margin-top: 10px; background: #fdfdfd; }
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
 
-        #pje-visor-container { display: none; width: 100%; height: 70vh; background: #525659; position: relative; }
+        #pje-visor-container { display: none; width: 100%; height: 75vh; background: #525659; position: relative; }
         #pje-iframe-visor { width: 100%; height: 100%; border: none; }
-        #pje-header-visor { background: #323639; color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+        #pje-header-visor { background: #323639; color: #fff; padding: 10px 25px; display: flex; justify-content: space-between; align-items: center; }
     </style>
 
     <div class="pje-toolbar">
@@ -314,7 +314,7 @@
     <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
 
     <div id="pje-modal-full">
-        <div class="pje-modal-box" id="pje-box">
+        <div class="pje-modal-box">
             <div class="pje-modal-h">
                 <strong id="pje-modal-title" style="color:var(--pje-color); font-size:1.1rem;"></strong>
                 <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb;">&times;</span>
@@ -332,8 +332,8 @@
 
             <div id="pje-visor-container">
                 <div id="pje-header-visor">
-                    <span id="pje-visor-name">Vista Previa de Documento</span>
-                    <button id="pje-cerrar-visor" style="background:#cc0000; color:#fff; border:none; padding:4px 10px; cursor:pointer; border-radius:3px;">Cerrar Vista</button>
+                    <span>Vista previa del documento</span>
+                    <button id="pje-cerrar-visor" style="background:#cc0000; color:#fff; border:none; padding:5px 12px; cursor:pointer; border-radius:4px; font-weight:bold;">Cerrar Vista</button>
                 </div>
                 <iframe id="pje-iframe-visor"></iframe>
             </div>
@@ -348,7 +348,7 @@
                 {t: "III. Viáticos y gastos de representation", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f03-viaticos-y-gastos-de-representacion/#gsc.tab=0"},
                 {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f04-mecanismo-de-solicitudes/#gsc.tab=0"},
                 {t: "V. Instituciones de Beneficencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f05-instituciones-de-beneficencia/#gsc.tab=0"},
-                {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-assigned/#gsc.tab=0"},
+                {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-asignado/#gsc.tab=0"},
                 {t: "VII. Minutas de Sesiones Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f07-minutas-de-sesiones-publicas/#gsc.tab=0"},
                 {t: "VIII. Actas de Entrega-Recepción", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f08-actas-de-entrega-recepcion/#gsc.tab=0"},
                 {t: "IX. Georreferenciación de Obras Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f09-georreferenciacion-de-obras-publicas/#gsc.tab=0"},
@@ -364,7 +364,7 @@
             const visorCont = document.getElementById('pje-visor-container');
             const iframeVisor = document.getElementById('pje-iframe-visor');
             const modalBody = document.getElementById('pje-modal-body');
-            const filtros = document.getElementById('pje-modal-filtros');
+            const filtrosCont = document.getElementById('pje-modal-filtros');
             let fraccionActual = "";
             let subSeccionI = "Nombramientos";
 
@@ -375,14 +375,14 @@
                 if(!url || url === "#") return;
                 iframeVisor.src = url.replace("/view", "/preview");
                 modalBody.style.display = "none";
-                filtros.style.display = "none";
+                filtrosCont.style.display = "none";
                 visorCont.style.display = "block";
             };
 
             document.getElementById('pje-cerrar-visor').onclick = function() {
                 visorCont.style.display = "none";
                 modalBody.style.display = "block";
-                filtros.style.display = "flex";
+                filtrosCont.style.display = "flex";
                 iframeVisor.src = "";
             };
 
@@ -391,7 +391,7 @@
                 document.getElementById('pje-modal-title').innerText = t;
                 visorCont.style.display = "none";
                 modalBody.style.display = "block";
-                filtros.style.display = "flex";
+                filtrosCont.style.display = "flex";
                 renderContenido();
                 modal.style.display = 'flex';
             }
@@ -413,7 +413,7 @@
 
                 if(fraccionActual.includes("XI. Otra Información")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
+                    body.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     anioCont.style.display = "none";
@@ -425,7 +425,7 @@
                 }
                 else if(fraccionActual.includes("IV. Mecanismo")) {
                     anioCont.style.display = "none";
-                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la Plataforma Nacional de Transparencia. <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
+                    body.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la Plataforma Nacional de Transparencia. <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; text-decoration:underline;">Clic aquí para ir a la PNT</a></div>`;
                 }
                 else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     anioCont.style.display = "none";
