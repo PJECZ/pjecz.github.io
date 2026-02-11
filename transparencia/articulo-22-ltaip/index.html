@@ -299,7 +299,7 @@
         .pje-tabla-res td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 13px; }
 
         .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; background: #fdfdfd; }
-        .pje-ficha-tecnica { background: #f9f9f9; border: 1px solid #eee; padding: 15px 25px; margin-bottom: 15px; border-radius: 8px; font-size: 14px; line-height: 1.5; color: #333; text-align: justify; }
+        .pje-ficha-tecnica { background: #f9f9f9; border: 1px solid #eee; padding: 12px 20px; margin-bottom: 15px; border-radius: 8px; font-size: 12.5px; line-height: 1.4; color: #333; text-align: justify; }
         .pje-ficha-tecnica p { margin: 3px 0; }
 
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
@@ -411,6 +411,16 @@
                 modal.style.display = 'flex';
             }
 
+            function getFicha(rubro, desc) {
+                return `
+                <div class="pje-ficha-tecnica">
+                    <p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p>
+                    <p><strong>Disposición normativa:</strong> Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza</p>
+                    <p><strong>Rubro:</strong> Artículo 22. ${rubro}</p>
+                    <p><strong>Descripción:</strong> ${desc}</p>
+                </div>`;
+            }
+
             function renderContenido() {
                 const anio = selAnio.value;
                 document.getElementById('pje-container-tabs').style.display = fraccionActual.includes("I. Nombramientos") ? "flex" : "none";
@@ -423,14 +433,7 @@
                 respHeader.innerText = resp;
 
                 if(fraccionActual.includes("I. Nombramientos")) {
-                    let fichaHtml = `
-                        <div class="pje-ficha-tecnica">
-                            <p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p>
-                            <p><strong>Disposición normativa:</strong> LTAIPECCZ</p>
-                            <p><strong>Rubro:</strong> Artículo 22.</p>
-                            <p><strong>Descripción:</strong> Se presenta el registro de nombramientos, comisiones temporales y licencias otorgadas, detallando nombres, periodos y unidades administrativas para asegurar la rendición de cuentas sobre el capital humano.</p>
-                        </div>`;
-
+                    let fichaHtml = getFicha("", "Se presenta el registro de nombramientos, comisiones temporales y licencias otorgadas, detallando nombres, periodos y unidades administrativas para asegurar la rendición de cuentas sobre el capital humano.");
                     if(subSeccionI === "Nombramientos") {
                         document.getElementById('pje-anio-cont').style.display = "none";
                         let rows = "";
@@ -455,24 +458,24 @@
                         modalBody.innerHTML = fichaHtml + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                     }
                 }
-                else if(fraccionActual.includes("XI. Otra Información")) {
-                    document.getElementById('pje-anio-cont').style.display = "none";
-                    let rows = "";
-                    listaOtrasPaginas.forEach(p => {
-                        rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td style="text-align:left;"><a href="${p.url}" target="_blank" style="color:#0056b3; text-decoration:underline; font-size:12px;">${p.url}</a></td></tr>`;
-                    });
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Información / Página</th><th style="text-align:center;">Vínculo de acceso</th></tr></thead><tbody>${rows}</tbody></table>`;
-                }
-                else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Ejercicio</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
-                }
                 else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>';
+                    let f = getFicha("Fracción II", "En cumplimiento con el Artículo 22, Fracción II en materia de transparencia, en este apartado se hace pública la información relativa a los regímenes de seguridad social que amparan a las personas servidoras públicas de esta institución");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>';
+                }
+                else if(fraccionActual.includes("III. Viáticos")) {
+                    let f = getFicha("Fracción III", "En cumplimiento con las obligaciones de transparencia relativas a viáticos y gastos de representación, en este apartado se publica la información detallada sobre las erogaciones realizadas por las personas servidoras públicas en el desempeño de sus encargos oficiales fuera de su zona de adscripción.");
+                    let rows = "";
+                    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
+                    meses.forEach(m => {
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                    });
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
                 else if(fraccionActual.includes("IV. Mecanismo de solicitudes")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `
+                    let f = getFicha("Fracción IV", "En cumplimiento con el Artículo 22, Fracción IV, esta sección detalla los mecanismos y canales oficiales a través de los cuales la ciudadanía puede presentar solicitudes, opiniones, quejas, denuncias o sugerencias relacionadas con el desempeño institucional, disponibles para asegurar que la voz de los usuarios sea escuchada y atendida, promoviendo así una cultura de mejora continua, transparencia y participación ciudadana efectiva dentro del servicio público.");
+                    modalBody.innerHTML = f + `
                         <div class="pje-mensaje-legal">
                             Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la <strong>Plataforma Nacional de Transparencia (PNT)</strong>, a través de la cual los ciudadanos pueden ejercer sus derechos de acceso a la información. 
                             <br><br>
@@ -484,25 +487,47 @@
                             </div>
                         </div>`;
                 }
-                else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
+                else if(fraccionActual.includes("V. Instituciones de Beneficencia")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
+                    let f = getFicha("Fracción V", "En cumplimiento con el Artículo 22, Fracción V en esta fracción se hace constar que el Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con facultades legales ni presupuestarias para otorgar donativos o apoyos a instituciones de beneficencia, por lo que no se genera información para esta fracción en el presente periodo.");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
                 }
-                else if(fraccionActual.includes("VII. Minutas de Sesiones")) {
+                else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
+                    let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado, en este apartado se publica la información relativa a los recursos financieros autorizados para el presente ejercicio fiscal, con el fin de transparentar la administración de los recursos públicos y permitir que la ciudadanía conozca con claridad cómo se distribuye y utiliza el presupuesto destinado a la operación y proyectos de esta institución.");
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Ejercicio</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                }
+                else if(fraccionActual.includes("VII. Minutas de Sesiones Públicas")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `
+                    let f = getFicha("Fracción VII", "En cumplimiento con las obligaciones de transparencia sobre Minutas de Sesiones Públicas, en este apartado se facilita el acceso directo a las transmisiones en vivo y grabaciones de las sesiones celebradas por los órganos colegiados de esta institución, permitiendo la consulta del desarrollo íntegro de los debates y acuerdos; asimismo, se ponen a disposición de la ciudadanía los proyectos a discusión de cada sesión para su descarga y análisis previo, garantizando con ello el principio de máxima publicidad y permitiendo un seguimiento transparente y en tiempo real de los asuntos públicos y los procesos de toma de decisiones institucionales.");
+                    modalBody.innerHTML = f + `
                         <div style="margin-top:20px; text-align:center; padding:40px 20px; background:#fdfdfd; border-left:6px solid var(--pje-color); border-radius:4px;">
                             <p style="font-size:15px; color:#333; margin-bottom:25px; line-height:1.6;">Para consultar las transmisiones de las sesiones públicas del Poder Judicial, por favor haga clic en el botón inferior:</p>
                             <a href="https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/#gsc.tab=0" target="_blank" style="display:inline-block; padding:12px 30px; background:#d2d2c6; color:#333; text-decoration:none; font-weight:bold; border-radius:5px; font-size:14px; transition:0.3s; border:1px solid #bbb; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">📺 IR A TRANSMISIONES DE SESIONES</a>
                         </div>`;
                 }
-                else {
+                else if(fraccionActual.includes("VIII. Actas de Entrega-Recepción")) {
+                    let f = getFicha("Fracción VIII", "En cumplimiento con el Artículo 22, Fracción VIII, en este apartado se hace pública la información relativa a las actas de entrega-recepción de los servidores públicos al finalizar un encargo o al realizarse un cambio de titularidad, asegurando con ello la continuidad de la función pública, la rendimiento de cuentas sobre los bienes institucionales y la debida formalización del proceso de transición administrativa.");
                     let rows = "";
                     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
-                    meses.forEach(m => {
-                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
-                    });
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    meses.forEach(m => { rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`; });
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                }
+                else if(fraccionActual.includes("IX. Georreferenciación")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    let f = getFicha("Fracción IX", "Este rubro tiene como propósito transparentar la ubicación exacta y el progreso de los proyectos de infraestructura mediante coordenadas geográficas; no obstante, se informa que esta fracción no aplica a las facultades de este Poder Judicial, toda vez que nuestra naturaleza jurídica y atribuciones legales no contemplan la planeación, ejecución o desarrollo de obras públicas de infraestructura urbana, razón por la cual no se genera información técnica ni cartográfica bajo este concepto.");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza.</div>';
+                }
+                else if(fraccionActual.includes("X. Estado que guardan")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    let f = getFicha("Fracción X", "Este apartado tiene como finalidad informar sobre la situación financiera, actuarial y operativa de los fondos de pensiones y jubilaciones que administran los sujetos obligados; sin embargo, se hace constar que esta fracción no aplica a este Poder Judicial, toda vez que la administración, gestión y resguardo de los fondos de seguridad social y pensiones de nuestro personal recae legalmente en una institución externa especializada (como el Instituto de Pensiones del Estado), instancia responsable de generar y publicar los informes correspondientes, por lo que no se cuenta con información propia bajo este concepto.");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza.</div>';
+                }
+                else if(fraccionActual.includes("XI. Otra Información")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    let f = getFicha("Fracción XI", "Este rubro tiene como propósito publicar información adicional que, por su naturaleza, resulta relevante, útil o de interés público para la ciudadanía, más allá de las obligaciones específicas marcadas por la ley; bajo este concepto, el Poder Judicial pone a disposición datos, estadísticas, manuales o guías que facilitan el acceso a la justicia y el conocimiento de las funciones jurisdiccionales, promoviendo una transparencia proactiva que fortalece el vínculo con la sociedad y permite un mejor aprovechamiento de los servicios institucionales.");
+                    let rows = "";
+                    listaOtrasPaginas.forEach(p => { rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td style="text-align:left;"><a href="${p.url}" target="_blank" style="color:#0056b3; text-decoration:underline; font-size:12px;">${p.url}</a></td></tr>`; });
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Información / Página</th><th style="text-align:center;">Vínculo de acceso</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
             }
 
@@ -527,7 +552,6 @@
             selAnio.onchange = renderContenido;
             document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
             document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
-
             const tabBtns = ['tab-nombramientos', 'tab-licencias', 'tab-comisiones'];
             tabBtns.forEach(id => {
                 document.getElementById(id).onclick = function() {
@@ -537,7 +561,6 @@
                     renderContenido();
                 };
             });
-
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
         })();
     </script>
