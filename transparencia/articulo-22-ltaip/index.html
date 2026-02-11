@@ -301,6 +301,8 @@
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
 
+        .pje-footer-modal { padding: 10px 25px; background: #f8f9fa; border-top: 1px solid #eee; font-size: 12px; color: #666; text-align: right; }
+
         #pje-visor-container { display: none; width: 100%; height: 75vh; background: #525659; position: relative; }
         #pje-iframe-visor { width: 100%; height: 100%; border: none; }
     </style>
@@ -335,6 +337,9 @@
                 </div>
                 <iframe id="pje-iframe-visor"></iframe>
             </div>
+            <div class="pje-footer-modal">
+                <strong>Fecha de actualización:</strong> <span id="pje-fecha-act">31/01/2026</span> | <strong>Fecha de validación:</strong> 31/01/2026
+            </div>
         </div>
     </div>
 
@@ -347,7 +352,7 @@
                 {t: "IV. Mecanismo de solicitudes, opiniones, quejas, denuncias, o sugerencias", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f04-mecanismo-de-solicitudes/#gsc.tab=0"},
                 {t: "V. Instituciones de Beneficencia", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f05-instituciones-de-beneficencia/#gsc.tab=0"},
                 {t: "VI. Presupuesto Asignado", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f06-presupuesto-asignado/#gsc.tab=0"},
-                {t: "VII. Minutas de Sesiones Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f07-minutas-de-sesiones-publicas/#gsc.tab=0"},
+                {t: "VII. Minutas de Sesiones Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f07-minutas-de-sessions-publicas/#gsc.tab=0"},
                 {t: "VIII. Actas de Entrega-Recepción", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f08-actas-de-entrega-recepcion/#gsc.tab=0"},
                 {t: "IX. Georreferenciación de Obras Públicas", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f09-georreferenciacion-de-obras-publicas/#gsc.tab=0"},
                 {t: "X. Estado que guardan los sistemas pensionarios", l: "https://www.pjecz.gob.mx/transparencia/articulo-22-ltaip/f10-estado-que-guardan-los-sistemas-pensionarios/#gsc.tab=0"},
@@ -402,17 +407,31 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                if(fraccionActual.includes("II. Tipo")) {
+                if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social...</div>';
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal">En cumplimiento a lo establecido por la Ley General de Transparencia y Acceso a la Información Pública y la Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza, se pone a disposición la información relativa a los nombramientos del personal del Poder Judicial.<br><br><div style="text-align:center;"><button class="pje-tab-btn active" onclick="pjeVerDoc(\'https://drive.google.com/file/d/1X3W9Z8Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z/view\')">CONSULTAR NOMBRAMIENTOS</button></div></div>';
                 }
-                else if(fraccionActual.includes("IV. Mecanismo")) {
+                else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal">Para realizar solicitudes de información... <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>';
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>';
+                }
+                else if(fraccionActual.includes("IV. Mecanismo de solicitudes")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    modalBody.innerHTML = `
+                        <div class="pje-mensaje-legal">
+                            Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la <strong>Plataforma Nacional de Transparencia (PNT)</strong>, a través de la cual los ciudadanos pueden ejercer sus derechos de acceso a la información. 
+                            <br><br>
+                            Asimismo, para la presentación de opiniones, quejas, denuncias o sugerencias, se cuenta con el <strong>Buzón de Quejas y Sugerencias</strong> del Poder Judicial.
+                            <br><br>
+                            <div style="display: flex; gap: 20px; justify-content: center;">
+                                <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; font-weight:bold; text-decoration: underline;">Ir a la PNT</a>
+                                <a href="https://www.pjecz.gob.mx/buzon-de-quejas-y-sugerencias/" target="_blank" style="color:#0056b3; font-weight:bold; text-decoration: underline;">Ir al Buzón de Quejas</a>
+                            </div>
+                        </div>`;
                 }
                 else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial...</div>';
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
                 }
                 else {
                     let rows = "";
