@@ -298,6 +298,9 @@
         .pje-tabla-res td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 13px; }
 
         .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; background: #fdfdfd; }
+        .pje-ficha-tecnica { background: #f9f9f9; border: 1px solid #eee; padding: 20px; margin-bottom: 15px; border-radius: 8px; font-size: 14px; line-height: 1.6; color: #333; }
+        .pje-ficha-tecnica p { margin: 5px 0; }
+
         .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
         .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; cursor: pointer; }
 
@@ -419,6 +422,14 @@
                 respHeader.innerText = resp;
 
                 if(fraccionActual.includes("I. Nombramientos")) {
+                    let fichaHtml = `
+                        <div class="pje-ficha-tecnica">
+                            <p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p>
+                            <p><strong>Disposición normativa:</strong> Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza</p>
+                            <p><strong>Rubro:</strong> Artículo 22.</p>
+                            <p><strong>Descripción:</strong> En cumplimiento con el Artículo 22, Fracción I en materia de transparencia, esta sección presenta el registro oficial de los nombramientos que legitiman las funciones de los servidores públicos, las comisiones temporales asignadas fuera de sus áreas habituales y las licencias o permisos otorgados para ausentarse del cargo, detallando en cada caso los nombres, periodos de vigencia, unidades administrativas y el objeto de dichas acciones para asegurar el control y la rendición de cuentas sobre el capital humano de la institución.</p>
+                        </div>`;
+
                     if(subSeccionI === "Nombramientos") {
                         document.getElementById('pje-anio-cont').style.display = "none";
                         let rows = "";
@@ -427,12 +438,11 @@
                             let d = `https://drive.google.com/uc?export=download&id=${p.id}`;
                             rows += `<tr><td style="text-align:left; padding-left:20px;">${p.nombre}</td><td>Documento de Nombramiento</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                         });
-                        modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Nombre del Servidor Público</th><th style="text-align:center;">Descripción</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                        modalBody.innerHTML = fichaHtml + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Nombre del Servidor Público</th><th style="text-align:center;">Descripción</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                     } else if(subSeccionI === "Comisiones") {
                         document.getElementById('pje-anio-cont').style.display = "none";
-                        modalBody.innerHTML = '<div class="pje-mensaje-legal">A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>';
+                        modalBody.innerHTML = fichaHtml + '<div class="pje-mensaje-legal">A la fecha de actualización, el Poder Judicial no cuenta con personal con algún tipo de Comisión.</div>';
                     } else {
-                        // Licencias
                         let rows = "";
                         const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
                         meses.forEach(m => {
@@ -441,7 +451,7 @@
                             let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
                             rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
                         });
-                        modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
+                        modalBody.innerHTML = fichaHtml + `<table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                     }
                 }
                 else if(fraccionActual.includes("XI. Otra Información")) {
@@ -481,7 +491,7 @@
                     let rows = "";
                     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
                     meses.forEach(m => {
-                        let id = ""; // Otras fracciones mensuales
+                        let id = "";
                         let v = id ? `https://drive.google.com/file/d/${id}/view` : "#";
                         let d = id ? `https://drive.google.com/uc?export=download&id=${id}` : "#";
                         rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('${v}')">👁️</a></td><td><a href="${d}" class="pje-btn-desc">📥</a></td></tr>`;
@@ -512,7 +522,6 @@
             document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
             document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
 
-            // Lógica de Tabs
             const tabBtns = ['tab-nombramientos', 'tab-licencias', 'tab-comisiones'];
             tabBtns.forEach(id => {
                 document.getElementById(id).onclick = function() {
