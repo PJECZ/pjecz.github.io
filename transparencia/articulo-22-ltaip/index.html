@@ -488,6 +488,19 @@
                     document.getElementById('pje-anio-cont').style.display = "none";
                     modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
                 }
+                else if(fraccionActual.includes("VII. Minutas de Sesiones")) {
+                    let rows = "";
+                    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
+                    meses.forEach(m => {
+                        rows += `<tr><td>22</td><td>${m} ${anio}</td><td>Archivo Correspondiente</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr>`;
+                    });
+                    modalBody.innerHTML = `
+                        <table class="pje-tabla-res"><thead><tr><th style="text-align:center;">Art.</th><th style="text-align:center;">Mes</th><th style="text-align:center;">Documento</th><th style="text-align:center;">Ver</th><th style="text-align:center;">Descargar</th></tr></thead><tbody>${rows}</tbody></table>
+                        <div style="margin-top:25px; text-align:center; padding:15px; background:#f8f9fa; border:1px solid #eee; border-radius:8px;">
+                            <p style="font-size:14px; color:#444; margin-bottom:12px;">Para consultar las transmisiones de las sesiones públicas, haga clic en el siguiente botón:</p>
+                            <a href="https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/#gsc.tab=0" target="_blank" style="display:inline-block; padding:10px 25px; background:#d2d2c6; color:#333; text-decoration:none; font-weight:bold; border-radius:5px; font-size:13px; transition:0.3s; border:1px solid #bbb;">📺 IR A TRANSMISIONES DE SESIONES</a>
+                        </div>`;
+                }
                 else {
                     let rows = "";
                     const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"];
