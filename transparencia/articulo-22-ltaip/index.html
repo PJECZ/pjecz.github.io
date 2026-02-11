@@ -264,8 +264,8 @@
     <style>
         #pje-transparencia-final { display: block; width: 100%; --pje-color: #49545E; }
         .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
-        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; transition: 0.3s; font-size: 13px; }
-        .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; border-color: var(--pje-color); }
+        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; font-size: 13px; }
+        .pje-btn-vista.active { background: var(--pje-color) !important; color: #fff !important; }
 
         #pje-contenedor-grid { 
             display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none; 
@@ -274,15 +274,9 @@
         }
 
         .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-        .pje-vista-lista { grid-template-columns: 1fr; }
-
-        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; white-space: normal; }
+        .pje-item { padding: 25px; text-align: center; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; white-space: normal; }
         .pje-vista-mosaico .pje-item { background: var(--pje-color); color: #fff; min-height: 160px; border-radius: 5px 20px 5px 5px; flex-direction: column; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 10px solid #363e46; }
-        .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #5a6773; }
         .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
-
-        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default !important; }
-        .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; }
 
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1100px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
@@ -294,16 +288,15 @@
 
         .pje-filtros { display: flex; gap: 20px; background: #ebf2f7; padding: 12px; font-size: 13px; align-items: center; justify-content: center; border-bottom: 1px solid #ddd; }
         .pje-tabla-res { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 10px; font-size: 13px; }
+        .pje-tabla-res th { background: var(--pje-color); color: #fff; padding: 10px; font-size: 13px; text-align: center; }
         .pje-tabla-res td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; color: #333; font-size: 13px; }
 
-        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 20px; line-height: 1.6; color: #333; font-size: 14px; text-align: justify; background: #fdfdfd; }
-        .pje-btn-act { color: var(--pje-color); font-size: 18px; cursor: pointer; font-weight: bold; }
-        .pje-btn-desc { color: #2c7a7b; font-size: 18px; cursor: pointer; font-weight: bold; text-decoration: none; }
+        .pje-mensaje-legal { border-left: 6px solid var(--pje-color); padding: 25px; line-height: 1.8; color: #333; font-size: 15px; text-align: justify; background: #fdfdfd; }
+        .pje-btn-act { color: var(--pje-color); font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
+        .pje-btn-desc { color: #2c7a7b; font-size: 20px; text-decoration: none; font-weight: bold; display: inline-block; padding: 0 5px; cursor: pointer; }
 
-        #pje-visor-container { display: none; width: 100%; height: 65vh; background: #525659; }
+        #pje-visor-container { display: none; width: 100%; height: 70vh; background: #525659; position: relative; }
         #pje-iframe-visor { width: 100%; height: 100%; border: none; }
-        .pje-visor-bar { background: #323639; color: #fff; padding: 8px 20px; display: flex; justify-content: space-between; align-items: center; }
     </style>
 
     <div class="pje-toolbar">
@@ -330,9 +323,9 @@
             <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px; overflow-y: auto;"></div>
 
             <div id="pje-visor-container">
-                <div class="pje-visor-bar">
-                    <span>Vista previa</span>
-                    <button onclick="cerrarVisor()" style="background:#cc0000; color:#fff; border:none; padding:3px 10px; cursor:pointer; border-radius:3px;">Cerrar</button>
+                <div style="background:#323639; color:#fff; padding:8px 20px; display:flex; justify-content:space-between; align-items:center; font-size:13px;">
+                    <span>Vista previa del documento</span>
+                    <button onclick="cerrarVisor()" style="background:#cc0000; color:#fff; border:none; padding:3px 10px; cursor:pointer; border-radius:3px;">Cerrar Vista</button>
                 </div>
                 <iframe id="pje-iframe-visor"></iframe>
             </div>
@@ -354,9 +347,8 @@
             const selAnio = document.getElementById('pje-anio-select');
             const respHeader = document.getElementById('pje-resp-header');
             const visorCont = document.getElementById('pje-visor-container');
-            const iframeVisor = document.getElementById('pje-iframe-visor');
             const modalBody = document.getElementById('pje-modal-body');
-            const filtrosCont = document.getElementById('pje-modal-filtros');
+            const filtros = document.getElementById('pje-modal-filtros');
             let fraccionActual = "";
             let subSeccionI = "Nombramientos";
 
@@ -365,17 +357,17 @@
 
             window.pjeVerDoc = function(url) {
                 if(!url || url === "#") return;
-                iframeVisor.src = url.replace("/view", "/preview");
+                document.getElementById('pje-iframe-visor').src = url.replace("/view", "/preview");
                 modalBody.style.display = "none";
-                filtrosCont.style.display = "none";
+                filtros.style.display = "none";
                 visorCont.style.display = "block";
             };
 
             window.cerrarVisor = function() {
                 visorCont.style.display = "none";
                 modalBody.style.display = "block";
-                filtrosCont.style.display = "flex";
-                iframeVisor.src = "";
+                filtros.style.display = "flex";
+                document.getElementById('pje-iframe-visor').src = "";
             };
 
             function abrirModal(t) {
@@ -397,25 +389,17 @@
                 if(fraccionActual.includes("VII. Minutas") || fraccionActual.includes("VIII. Actas")) resp = "Secretaría de Acuerdo y Trámite";
                 respHeader.innerText = resp;
 
-                if(fraccionActual.includes("XI. Otra Información")) {
+                if(fraccionActual.includes("II. Tipo de Seguridad")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción</th><th>Vínculo</th></tr></thead><tbody><tr><td>Información de Utilidad Pública</td><td><a href="#" target="_blank" style="color:#0056b3;">Clic para abrir vínculo</a></td></tr></tbody></table>`;
-                }
-                else if(fraccionActual.includes("I. Nombramientos") && subSeccionI === "Nombramientos") {
-                    document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<table class="pje-tabla-res"><thead><tr><th>Descripción del Archivo</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>Documento de Nombramientos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('#')">👁️</a></td><td><a class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
-                }
-                else if(fraccionActual.includes("II. Tipo")) {
-                    document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social que consiste en una pensión para el retiro, la cual es administrada por el Instituto de Servicio Social para los Trabajadores del Estado de Coahuila (ISSSTEEC).</div>`;
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social que consiste en una pensión para el retiro, la cual es administrada por el Instituto de Servicio Social para los Trabajadores del Estado de Coahuila (ISSSTEEC).</div>';
                 }
                 else if(fraccionActual.includes("IV. Mecanismo")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la Plataforma Nacional de Transparencia. <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3;">Clic aquí para ir a la PNT</a></div>`;
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la Plataforma Nacional de Transparencia (PNT), a través de la cual los ciudadanos pueden ejercer sus derechos de acceso a la información. <br><br><a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; font-weight:bold;">Clic aquí para ir a la PNT</a></div>';
                 }
                 else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<div class="pje-mensaje-legal"><strong>No aplica.</strong> Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza conforme a sus atribuciones legales y normativas actuales.</div>`;
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
                 }
                 else {
                     let rows = "";
@@ -430,27 +414,20 @@
                 }
             }
 
-            function renderGrid(modo) {
+            function renderGrid() {
                 const grid = document.getElementById('pje-contenedor-grid');
                 grid.innerHTML = "";
-                grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
                 fracciones.forEach(f => {
                     const item = document.createElement('div');
                     item.className = 'pje-item';
-                    if (modo === 'mosaico') {
-                        item.innerHTML = `<span>${f.t}</span>`;
-                        item.onclick = () => abrirModal(f.t);
-                    } else {
-                        item.innerHTML = `<div><span class="pje-item-titulo-lista" onclick="abrirModal('${f.t}')">${f.t}</span></div>`;
-                    }
+                    item.innerHTML = `<span>${f.t}</span>`;
+                    item.onclick = () => abrirModal(f.t);
                     grid.appendChild(item);
                 });
             }
 
-            renderGrid('mosaico');
+            renderGrid();
             selAnio.onchange = renderContenido;
-            document.getElementById('pje-mosaico-btn').onclick = function() { renderGrid('mosaico'); this.className='pje-btn-vista active'; document.getElementById('pje-lista-btn').className='pje-btn-vista'; };
-            document.getElementById('pje-lista-btn').onclick = function() { renderGrid('lista'); this.className='pje-btn-vista active'; document.getElementById('pje-mosaico-btn').className='pje-btn-vista'; };
             document.getElementById('tab-nombramientos').onclick = function() { subSeccionI="Nombramientos"; this.className='pje-tab-btn active'; document.getElementById('tab-licencias').className='pje-tab-btn'; renderContenido(); };
             document.getElementById('tab-licencias').onclick = function() { subSeccionI="Licencias"; this.className='pje-tab-btn active'; document.getElementById('tab-nombramientos').className='pje-tab-btn'; renderContenido(); };
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
