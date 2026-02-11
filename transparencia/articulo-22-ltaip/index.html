@@ -468,15 +468,25 @@
                 }
                 else if(fraccionActual.includes("II. Tipo de Seguridad Social")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto...</div>';
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal">El personal del Poder Judicial del Estado de Coahuila de Zaragoza cuenta con un esquema de seguridad social y previsión social de carácter mixto, desglosado de la siguiente manera:<br><br>Se cuenta con la prestación de servicios médicos, hospitalarios y farmacéuticos a través del Instituto de Seguridad Social y Servicios de los Trabajadores del Estado (ISSSTE), bajo un régimen de servicios de salud exclusivamente.<br><br>La seguridad social en materia de retiro y jubilación es administrada y otorgada por el Instituto de Pensiones para los Trabajadores al Servicio del Estado de Coahuila.</div>';
                 }
                 else if(fraccionActual.includes("IV. Mecanismo de solicitudes")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = `<div class="pje-mensaje-legal">Para realizar solicitudes de información, el Poder Judicial pone a su disposición la PNT...</div>`;
+                    modalBody.innerHTML = `
+                        <div class="pje-mensaje-legal">
+                            Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la <strong>Plataforma Nacional de Transparencia (PNT)</strong>, a través de la cual los ciudadanos pueden ejercer sus derechos de acceso a la información. 
+                            <br><br>
+                            Asimismo, para la presentación de opiniones, quejas, denuncias o sugerencias, se cuenta con el <strong>Buzón de Quejas y Sugerencias</strong> del Poder Judicial.
+                            <br><br>
+                            <div style="display: flex; gap: 20px; justify-content: center;">
+                                <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; font-weight:bold; text-decoration: underline;">Ir a la PNT</a>
+                                <a href="https://www.pjecz.gob.mx/buzon-de-quejas-y-sugerencias/" target="_blank" style="color:#0056b3; font-weight:bold; text-decoration: underline;">Ir al Buzón de Quejas</a>
+                            </div>
+                        </div>`;
                 }
                 else if(fraccionActual.includes("V. Instituciones") || fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable...</div>';
+                    modalBody.innerHTML = '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Esta fracción no es aplicable al Poder Judicial del Estado de Coahuila de Zaragoza, toda vez que, conforme a lo dispuesto en la Ley Orgánica del Poder Judicial del Estado y la Constitución Política Local, este sujeto obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial.</div>';
                 }
                 else {
                     let rows = "";
@@ -523,6 +533,7 @@
             document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
         })();
     </script>
+</div>
     </div>
 </article>
     </main>
