@@ -495,8 +495,49 @@
                     modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>';
                 }
                 else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
-                    let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado, en este apartado se publica la información relativa a los recursos financieros autorizados para el presente ejercicio fiscal, con el fin de transparentar la administración de los recursos públicos y permitir que la ciudadanía conozca con claridad cómo se distribuye y utiliza el presupuesto destinado a la operación y proyectos de esta institución.");
-                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Ejercicio</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+    let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado...");
+
+    // 1. AQUÍ AGREGAS TUS LIGAS POR AÑO
+    const ligasPresupuesto = {
+        "2025": "https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing",
+        "2024": "https://drive.google.com/file/d/1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD/view?usp=sharing",
+        "2023": "AQUÍ_VA_TU_LINK_DE_2023",
+        "2022": "AQUÍ_VA_TU_LINK_DE_2022"
+    };
+
+    // 2. Buscamos la liga del año que el usuario tiene seleccionado
+    let ligaSeleccionada = ligasPresupuesto[anio] || "#"; 
+
+    // 3. Si no hay liga, mostramos un mensaje o dejamos el botón desactivado
+    let botonesHtml = "";
+    if(ligaSeleccionada !== "#") {
+        botonesHtml = `
+            <td><a class="pje-btn-act" onclick="pjeVerDoc('${ligaSeleccionada}')">👁️</a></td>
+            <td><a href="${ligaSeleccionada}" target="_blank" class="pje-btn-desc">📥</a></td>`;
+    } else {
+        botonesHtml = `<td colspan="2" style="color:gray; font-style:italic;">Información por cargar</td>`;
+    }
+
+    modalBody.innerHTML = f + `
+        <table class="pje-tabla-res">
+            <thead>
+                <tr>
+                    <th>Art.</th>
+                    <th>Ejercicio</th>
+                    <th>Documento</th>
+                    <th>Ver</th>
+                    <th>Descargar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>22</td>
+                    <td>Anual ${anio}</td>
+                    <td>Presupuesto de Egresos</td>
+                    ${botonesHtml}
+                </tr>
+            </tbody>
+        </table>`;
                 }
                 else if(fraccionActual.includes("VII. Minutas de Sesiones Públicas")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
