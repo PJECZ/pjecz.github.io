@@ -354,21 +354,7 @@
             const idsLicencias = { "Enero": "ID", "Febrero": "ID", "Marzo": "ID", "Abril": "ID", "Mayo": "ID", "Junio": "ID", "Julio": "ID", "Agosto": "ID", "Septiembre": "ID", "Octubre": "ID", "Noviembre": "ID", "Diciembre": "ID" };
             const idsViaticos = { "Enero": "1UkzzL1v-HTm5sxble5X74eRoCUNrcITF", "Febrero": "1PWY6noY-cDdkPC38AvMHf58IQ-I7PrFw", "Marzo": "1ipPNllTzVzbcL892XYKXGEqSLBcjhODl", "Abril": "1OKg6it6LtjH0xA9ITs_63ht-HhdJNeJJ", "Mayo": "1Z_k1bNDJBL5ueS5jY93Zj9YQRaY5ppOU", "Junio": "1m4eMN3zgQbsRXxHX1GkIwWtdDKC1soF3", "Julio": "1nn1OPV4zaGVv8J72iqHlygvOOUDaA-it", "Agosto": "1fY50BLm8odJbGK-avd7sdHHo8fG55O-M", "Septiembre": "1AWPscvit9Y0BKLrKTvRsjy1UMUKUbka8", "Octubre": "1ku15Ahi_TNqqHcVdEszux2ZCGEVmdLBs", "Noviembre": "1nnaCZtED1AHFdi0BC_uJTMupXdN-D9xL", "Diciembre": "1bUWZAcYB2qXx9HHm8VzaNaXHE7VNEoYd" };
             const idsActas = { "Enero": "ID", "Febrero": "ID", "Marzo": "ID", "Abril": "ID", "Mayo": "ID", "Junio": "ID", "Julio": "ID", "Agosto": "ID", "Septiembre": "ID", "Octubre": "ID", "Noviembre": "ID", "Diciembre": "ID" };
-            // --- LISTA DE LINKS PRESUPUESTO (ART. 22 FRACCIÓN VI) ---
-            const MAPA_ENLACES_PRESUPUESTO = {
-                "2026": "LINK_PENDIENTE",
-                "2025": "https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing",
-                "2024": "LINK_PENDIENTE",
-                "2023": "LINK_PENDIENTE",
-                "2022": "LINK_PENDIENTE",
-                "2021": "LINK_PENDIENTE",
-                "2020": "LINK_PENDIENTE",
-                "2019": "LINK_PENDIENTE",
-                "2018": "LINK_PENDIENTE",
-                "2017": "LINK_PENDIENTE",
-                "2016": "LINK_PENDIENTE",
-                "2015": "LINK_PENDIENTE"
-            };
+
             const todosLosMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
             const listaNombramientos = [
@@ -508,70 +494,10 @@
                     let f = getFicha("Fracción V", "En cumplimiento con el Artículo 22, Fracción V en esta fracción se hace constar que el Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con facultades legales ni presupuestarias para otorgar donativos o apoyos a instituciones de beneficencia, por lo que no se genera información para esta fracción en el presente periodo.");
                     modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>';
                 }
-      else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
-                    let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado, en este apartado se publica la información relativa a los recursos financieros autorizados para el presente ejercicio fiscal.");
-
-     // Buscamos el link en la lista que creamos arriba usando el año seleccionado
-     let linkAnio = MAPA_ENLACES_PRESUPUESTO[anio] || "LINK_PENDIENTE";
-     let htmlBotones = "";
-
-                    if (linkAnio.startsWith("http")) {
-                        htmlBotones = `
-                            <td><a class="pje-btn-act" onclick="pjeVerDoc('${linkAnio}')">👁️</a></td>
-                            <td><a href="${linkAnio}" target="_blank" class="pje-btn-desc">📥</a></td>`;
-                    } else {
-                        htmlBotones = `<td colspan="2" style="color:gray; font-size:11px; font-style:italic;">Información pendiente de actualizar</td>`;
-                    }
-
-                    modalBody.innerHTML = f + `
-                        <table class="pje-tabla-res">
-                            <thead>
-                                <tr>
-                                    <th>Art.</th>
-                                    <th>Ejercicio</th>
-                                    <th>Documento</th>
-                                    <th>Ver</th>
-                                    <th>Descargar</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>22</td>
-                                    <td>Anual ${anio}</td>
-                                    <td>Presupuesto de Egresos</td>
-                                    ${htmlBotones}
-                                </tr>
-                            </tbody>
-                        </table>`;
-                } 
-
-    // Si el link es el de texto "AQUÍ_VA...", también lo tratamos como vacío
-    let htmlLink = (linkAnio.includes("http")) 
-        ? `<td><a class="pje-btn-act" onclick="pjeVerDoc('${linkAnio}')">👁️</a></td>
-           <td><a href="${linkAnio}" target="_blank" class="pje-btn-desc">📥</a></td>`
-        : `<td colspan="2" style="color:gray; font-size:11px;">Pendiente de publicar</td>`;
-
-    modalBody.innerHTML = f + `
-        <table class="pje-tabla-res">
-            <thead>
-                <tr>
-                    <th>Art.</th>
-                    <th>Ejercicio</th>
-                    <th>Documento</th>
-                    <th>Ver</th>
-                    <th>Descargar</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>22</td>
-                    <td>Anual ${anio}</td>
-                    <td>Presupuesto de Egresos</td>
-                    ${htmlLink}
-                </tr>
-            </tbody>
-        </table>`;
-            }
+                else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
+                    let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado, en este apartado se publica la información relativa a los recursos financieros autorizados para el presente ejercicio fiscal, con el fin de transparentar la administración de los recursos públicos y permitir que la ciudadanía conozca con claridad cómo se distribuye y utiliza el presupuesto destinado a la operación y proyectos de esta institución.");
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Ejercicio</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td><td><a class="pje-btn-act" onclick="pjeVerDoc('https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing')">👁️</a></td><td><a href="#" class="pje-btn-desc">📥</a></td></tr></tbody></table>`;
+                }
                 else if(fraccionActual.includes("VII. Minutas de Sesiones Públicas")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
                     let f = getFicha("Fracción VII", "En cumplimiento con las obligaciones de transparencia sobre Minutas de Sesiones Públicas, en este apartado se facilita el acceso directo a las transmisiones en vivo y grabaciones de las sesiones celebradas por los órganos colegiados de esta institución, permitiendo la consulta del desarrollo íntegro de los debates y acuerdos; asimismo, se ponen a disposición de la ciudadanía los proyectos a discusión de cada sesión para su descarga y análisis previo, garantizando con ello el principio de máxima publicidad y permitiendo un seguimiento transparente y en tiempo real de los asuntos públicos y los procesos de toma de decisiones institucionales.");
