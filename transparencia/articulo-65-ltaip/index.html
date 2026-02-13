@@ -316,188 +316,183 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
  </p>
 </center></p>
 <h2>Fracciones</h2>
-<div id="pje-transparencia-65" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<div id="pje-art65-container" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        /* Variables y Base */
-        #pje-transparencia-65 { display: block; width: 100%; --pje-azul: #49545E; --pje-arena: #BDB9A6; }
+        #pje-art65-container { display: block; width: 100%; --pje-color: #49545E; }
+        /* Toolbar y Grid */
+        .pje-toolbar { display: flex; justify-content: flex-end; padding: 15px; background: #f1f3f4; border-radius: 8px 8px 0 0; gap: 10px; }
+        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; }
+        .pje-btn-vista.active { background: var(--pje-color); color: #fff; }
 
-        .pje-toolbar { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; background: #f1f3f4; border: 1px solid #ddd; border-radius: 8px 8px 0 0; gap: 10px; }
-
-        /* Botones en Azul */
-        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-azul); border-radius: 4px; transition: 0.3s; font-size: 13px; }
-        .pje-btn-vista.active { background: var(--pje-azul) !important; color: #fff !important; border-color: var(--pje-azul); }
-
-        #pje-contenedor-grid { 
-            display: grid; padding: 40px 25px; gap: 25px; border: 1px solid #ddd; border-top: none; 
-            background: #fff; min-height: 600px;
+        #pje-grid-65 { 
+            display: grid; padding: 30px; gap: 20px; border: 1px solid #ddd; border-top: none;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            background: #fafafa;
         }
 
-        .pje-vista-mosaico { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-        .pje-vista-lista { grid-template-columns: 1fr; }
-
-        /* Estilo de los Folders Amarillos/Arena */
-        .pje-item { padding: 25px; text-align: center; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; }
-
-        .pje-vista-mosaico .pje-item { 
-            background: var(--pje-arena); 
-            color: var(--pje-azul); 
-            min-height: 180px; 
-            border-radius: 8px 25px 8px 8px; 
-            flex-direction: column; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-            border-bottom: 6px solid rgba(0,0,0,0.1);
+        .pje-item-65 { 
+            background: var(--pje-color); color: #fff; padding: 20px; text-align: center; 
+            border-radius: 5px 20px 5px 5px; cursor: pointer; font-size: 12px; font-weight: bold;
+            text-transform: uppercase; transition: 0.3s; min-height: 120px; display: flex; align-items: center; justify-content: center;
         }
-
-        .pje-vista-mosaico .pje-item:hover { transform: translateY(-5px); background: #cac6b5; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-
-        /* Icono de Folder */
-        .pje-vista-mosaico .pje-item::before { 
-            content: "📂"; 
-            font-size: 50px; 
-            margin-bottom: 12px; 
-            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
-        }
-
-        .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-arena); justify-content: flex-start; text-align: left; padding: 15px 30px; text-transform: none; font-size: 14px; }
+        .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 
         /* Modal */
-        #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 999999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1200px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
-        .pje-modal-h { padding: 20px 30px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        #pje-modal-65 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 99999; align-items: center; justify-content: center; }
+        .pje-modal-box { background: #fff; width: 95%; max-width: 1100px; max-height: 90vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+        .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
-        /* Pestañas internas para Directorio */
-        .pje-tabs-directorio { display: flex; justify-content: center; gap: 10px; padding: 15px; background: #eee; }
-        .pje-tab-btn { padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; background: #ddd; color: #666; }
-        .pje-tab-btn.active { background: var(--pje-azul); color: #fff; }
+        /* Estilo específico Directorio (Fracción VI) */
+        .pje-dir-tabs { display: flex; justify-content: center; padding: 15px; gap: 0; background: #fff; }
+        .pje-dir-btn { padding: 10px 25px; border: none; cursor: pointer; font-weight: bold; font-size: 13px; color: #555; background: #e0e0e0; transition: 0.3s; }
+        .pje-dir-btn.active { background: #606c76; color: #fff; }
+        .pje-dir-btn:first-child { border-radius: 5px 0 0 5px; }
+        .pje-dir-btn:last-child { border-radius: 0 5px 5px 0; }
 
-        /* Estilos Directorio de Fotos (Basado en tu código) */
-        .dir65-wrap { font-family: Arial, sans-serif; }
-        .dir65-details { margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
-        .dir65-summary { background: var(--pje-arena); color: #fff; padding: 12px; font-weight: bold; cursor: pointer; list-style: none; }
-        .dir65-miembros { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px; }
-        .dir65-persona { width: 180px; text-align: center; position: relative; }
-        .dir65-persona img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #eee; transition: 0.3s; }
-        .dir65-persona:hover img { border-color: var(--pje-azul); transform: scale(1.05); }
-        .dir65-nombre { font-weight: bold; color: var(--pje-azul); font-size: 14px; margin-top: 8px; display: block; }
-        .dir65-cargo { font-size: 12px; color: #666; font-style: italic; }
+        .pje-card-dir { border: 1px solid #ccc; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; }
+        .pje-card-name { font-weight: bold; color: #333; font-size: 14px; margin-bottom: 5px; }
+        .pje-card-pos { font-style: italic; color: #777; font-size: 12px; }
 
-        .dir65-tooltip { visibility: hidden; width: 220px; background: #fff; color: #333; text-align: left; border-radius: 8px; padding: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); position: absolute; z-index: 10; bottom: 100%; left: 50%; transform: translateX(-50%); opacity: 0; transition: 0.3s; font-size: 11px; pointer-events: none; border: 1px solid #ddd; }
-        .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; bottom: 110%; }
+        .pje-tabla-65 { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .pje-tabla-65 th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; }
+        .pje-tabla-65 td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 13px; }
+
+        .pje-header-org { background: #c5c5b7; color: #fff; padding: 8px 20px; font-weight: bold; margin-top: 20px; text-align: left; }
     </style>
 
     <div class="pje-toolbar">
-        <span style="margin-right:auto; color:var(--pje-azul); font-weight:800; font-size:12px;">LEY GENERAL - ARTÍCULO 65</span>
-        <button id="pje-mosaico-btn" class="pje-btn-vista active">⊞ MOSAICO</button>
-        <button id="pje-lista-btn" class="pje-btn-vista">≡ LISTA</button>
+        <button class="pje-btn-vista active">⊞ MOSAICO</button>
+        <button class="pje-btn-vista">≡ LISTA</button>
     </div>
 
-    <div id="pje-contenedor-grid" class="pje-vista-mosaico"></div>
+    <div id="pje-grid-65"></div>
 
-    <div id="pje-modal-full">
+    <div id="pje-modal-65">
         <div class="pje-modal-box">
             <div class="pje-modal-h">
-                <strong id="pje-modal-title" style="color:var(--pje-azul); font-size:1.1rem;"></strong>
-                <span id="pje-modal-cerrar" style="font-size:40px; cursor:pointer; color:#bbb;">&times;</span>
+                <strong id="pje-title-65" style="color:var(--pje-color);"></strong>
+                <span onclick="cerrarModal65()" style="font-size:30px; cursor:pointer;">&times;</span>
             </div>
-            <div id="pje-modal-nav-container"></div> <div class="pje-modal-body" id="pje-modal-body" style="padding: 20px; overflow-y: auto;"></div>
+
+            <div id="pje-filtro-65" style="padding: 15px; background: #ebf2f7; display: flex; justify-content: center; gap: 15px; align-items: center;">
+                <strong>Año:</strong> 
+                <select id="pje-anio-65">
+                    <option>2026</option><option selected>2025</option><option>2024</option>
+                </select>
+            </div>
+
+            <div id="pje-body-65" style="padding: 25px; overflow-y: auto; text-align: center;"></div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-
     <script>
-        (function() {
-            const fracciones = [
-                "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos",
-                "V. Indicadores de interés", "VI. Directorio de Servidores Públicos", "VII. Remuneraciones", "VIII. Viáticos"
-                // ... añadir las demás
-            ];
+        const fracciones65 = [
+            "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos",
+            "V. Indicadores relacionados con temas de interés", "VI. Directorio de todas las personas servidoras públicas",
+            "VII. Remuneración bruta y neta", "VIII. Gastos de representación y viáticos",
+            "IX. Número total de las plazas", "X. Contrataciones de servicios profesionales",
+            "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia",
+            "XIII. Convocatorias a concursos", "XIV. Programas, subsidios, estímulos",
+            "XV. Condiciones generales de trabajo", "XVI. Información curricular",
+            "XVII. Listado de personas con sanciones", "XVIII. Servicios y trámites",
+            "XIX. Información financiera", "XX. Información relativa a la deuda pública",
+            "XXI. Gastos comunicación social", "XXII. Informes de auditorías",
+            "XXIII. Dictaminación estados financieros", "XXIV. Montos y personas que usan recursos públicos",
+            "XXV. Concesiones, contratos, convenios", "XXVI. Procedimientos de adjudicación",
+            "XXVII. Informes generados", "XXVIII. Estadísticas generadas",
+            "XXIX. Avances programáticos", "XXX. Padrón de proveedores",
+            "XXXI. Convenios coordinación", "XXXII. Inventario de bienes",
+            "XXXIII. Recomendaciones de DDHH", "XXXIV. Resoluciones procedimientos",
+            "XXXV. Mecanismos participación ciudadana", "XXXVI. Programas que ofrecen",
+            "XXXVII. Actas Comité de Transparencia", "XXXVIII. Evaluaciones a programas",
+            "XXXIX. Estudios financiados", "XL. Personas jubiladas y pensionadas",
+            "XLI. Ingresos recibidos", "XLII. Donaciones hechas",
+            "XLIII. Catálogo disposición documental", "XLIV. Actas de sesiones consejos",
+            "XLV. Listado de solicitudes telecomunicaciones", "XLVI. Cualquier otra información"
+        ];
 
-            const modal = document.getElementById('pje-modal-full');
-            const body = document.getElementById('pje-modal-body');
-            const navCont = document.getElementById('pje-modal-nav-container');
+        let fraccionActual65 = "";
+        let modoDirectorio = "VISUAL"; // VISUAL o TABLA
 
-            function renderGrid(modo) {
-                const grid = document.getElementById('pje-contenedor-grid');
-                grid.innerHTML = "";
-                grid.className = modo === 'mosaico' ? 'pje-vista-mosaico' : 'pje-vista-lista';
-                fracciones.forEach(f => {
-                    const item = document.createElement('div');
-                    item.className = 'pje-item';
-                    item.innerHTML = `<span>${f}</span>`;
-                    item.onclick = () => abrirModal(f);
-                    grid.appendChild(item);
-                });
-            }
+        function renderGrid65() {
+            const grid = document.getElementById('pje-grid-65');
+            grid.innerHTML = fracciones65.map(f => `
+                <div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>
+            `).join('');
+        }
 
-            function abrirModal(t) {
-                document.getElementById('pje-modal-title').innerText = t;
-                navCont.innerHTML = "";
+        function abrirModal65(titulo) {
+            fraccionActual65 = titulo;
+            document.getElementById('pje-title-65').innerText = titulo;
+            document.getElementById('pje-modal-65').style.display = 'flex';
+            renderContenido65();
+        }
 
-                if (t.includes("VI. Directorio")) {
-                    renderTabsDirectorio();
-                } else {
-                    body.innerHTML = `<div style="text-align:center; padding:40px; color:#666;">Contenido de la ${t} en proceso de carga...</div>`;
-                }
-                modal.style.display = 'flex';
-            }
+        function cerrarModal65() {
+            document.getElementById('pje-modal-65').style.display = 'none';
+        }
 
-            function renderTabsDirectorio() {
-                navCont.innerHTML = `
-                    <div class="pje-tabs-directorio">
-                        <button id="btn-dir-visual" class="pje-tab-btn active">ESTRUCTURA VISUAL (FOTOS)</button>
-                        <button id="btn-dir-tabla" class="pje-tab-btn">BUSCADOR GENERAL (TABLA)</button>
-                    </div>
-                `;
+        function renderContenido65() {
+            const body = document.getElementById('pje-body-65');
 
-                document.getElementById('btn-dir-visual').onclick = () => {
-                    document.getElementById('btn-dir-visual').classList.add('active');
-                    document.getElementById('btn-dir-tabla').classList.remove('active');
-                    mostrarDirectorioFotos();
-                };
-
-                document.getElementById('btn-dir-tabla').onclick = () => {
-                    document.getElementById('btn-dir-tabla').classList.add('active');
-                    document.getElementById('btn-dir-visual').classList.remove('active');
-                    mostrarDirectorioTabla();
-                };
-
-                mostrarDirectorioFotos();
-            }
-
-            function mostrarDirectorioFotos() {
+            // LÓGICA ESPECIAL PARA FRACCIÓN VI (DIRECTORIO)
+            if(fraccionActual65.includes("VI. Directorio")) {
                 body.innerHTML = `
-                    <div class="dir65-wrap">
-                        <details class="dir65-details" open>
-                            <summary class="dir65-summary">Tribunal Superior de Justicia</summary>
-                            <div class="dir65-miembros">
-                                <div class="dir65-persona">
-                                    <img src="images/Miguel Felipe Mery Ayup.png" alt="Miguel Felipe Mery Ayup" onerror="this.src='https://via.placeholder.com/150'">
-                                    <span class="dir65-nombre">Miguel Felipe Mery Ayup</span>
-                                    <span class="dir65-cargo">Presidente del Tribunal Superior de Justicia</span>
-                                    <div class="dir65-tooltip">
-                                        <strong>Nivel:</strong> MAG0001<br>
-                                        <strong>Ingreso:</strong> 01/01/2019<br>
-                                        <strong>Tel:</strong> 844-777-4498<br>
-                                        <strong>Email:</strong> miguel.mery@coahuila.gob.mx
-                                    </div>
-                                </div>
-                                </div>
-                        </details>
+                    <div class="pje-dir-tabs">
+                        <button class="pje-dir-btn ${modoDirectorio === 'VISUAL' ? 'active' : ''}" onclick="cambiarModoDir('VISUAL')">ESTRUCTURA VISUAL (FOTOS)</button>
+                        <button class="pje-dir-btn ${modoDirectorio === 'TABLA' ? 'active' : ''}" onclick="cambiarModoDir('TABLA')">BUSCADOR GENERAL (TABLA)</button>
+                    </div>
+                    <div id="pje-dir-content">
+                        ${renderDirectorio()}
                     </div>
                 `;
+            } else {
+                body.innerHTML = `<div style="padding:40px; color:#666;">Información disponible para el ejercicio seleccionado.</div>`;
             }
+        }
 
-            function mostrarDirectorioTabla() {
-                body.innerHTML = `<div style="text-align:center; padding:20px;">Cargando buscador de personal...</div>`;
-                // Aquí iría la lógica de PapaParse que ya tienes para la tabla dinámica
+        function cambiarModoDir(modo) {
+            modoDirectorio = modo;
+            renderContenido65();
+        }
+
+        function renderDirectorio() {
+            if(modoDirectorio === "VISUAL") {
+                return `
+                    <div class="pje-header-org">Tribunal Superior de Justicia</div>
+                    <div style="padding: 30px; background: #fff; border: 1px solid #eee;">
+                        <div class="pje-card-dir">
+                           <span style="color:#ccc; font-size:10px;">FOTO</span>
+                        </div>
+                        <div class="pje-card-name">Miguel Felipe Mery Ayup</div>
+                        <div class="pje-card-pos">Presidente del Tribunal Superior de Justicia</div>
+                    </div>
+                `;
+            } else {
+                return `
+                    <table class="pje-tabla-65">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Cargo</th>
+                                <th>Área</th>
+                                <th>Perfil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Miguel Felipe Mery Ayup</td>
+                                <td>Presidente</td>
+                                <td>Presidencia</td>
+                                <td><a href="#">👁️</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
             }
+        }
 
-            renderGrid('mosaico');
-            document.getElementById('pje-mosaico-btn').onclick = () => { renderGrid('mosaico'); document.getElementById('pje-mosaico-btn').classList.add('active'); document.getElementById('pje-lista-btn').classList.remove('active'); };
-            document.getElementById('pje-lista-btn').onclick = () => { renderGrid('lista'); document.getElementById('pje-lista-btn').classList.add('active'); document.getElementById('pje-mosaico-btn').classList.remove('active'); };
-            document.getElementById('pje-modal-cerrar').onclick = () => modal.style.display = 'none';
-        })();
+        renderGrid65();
     </script>
 </div>
     </div>
