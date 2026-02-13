@@ -318,75 +318,64 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 <h2>Fracciones</h2>
 <div id="pje-art65-container" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
     <style>
-        #pje-art65-container { display: block; width: 100%; --pje-color: #49545E; }
-        /* Toolbar y Grid */
-        .pje-toolbar { display: flex; justify-content: flex-end; padding: 15px; background: #f1f3f4; border-radius: 8px 8px 0 0; gap: 10px; }
-        .pje-btn-vista { cursor: pointer; padding: 8px 18px; border: 1px solid #bbb; background: #fff; font-weight: bold; color: var(--pje-color); border-radius: 4px; }
-        .pje-btn-vista.active { background: var(--pje-color); color: #fff; }
+        #pje-art65-container { display: block; width: 100%; --pje-oro: #BDB9A6; --pje-gris: #49545E; }
 
+        /* Mosaico Estilo Art 22 (Invertido) */
         #pje-grid-65 { 
-            display: grid; padding: 30px; gap: 20px; border: 1px solid #ddd; border-top: none;
+            display: grid; padding: 30px; gap: 20px; background: #f4f4f4;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            background: #fafafa;
         }
 
         .pje-item-65 { 
-            background: var(--pje-color); color: #fff; padding: 20px; text-align: center; 
-            border-radius: 5px 20px 5px 5px; cursor: pointer; font-size: 12px; font-weight: bold;
-            text-transform: uppercase; transition: 0.3s; min-height: 120px; display: flex; align-items: center; justify-content: center;
+            background: var(--pje-oro); color: var(--pje-gris); padding: 20px; text-align: center; 
+            border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: bold;
+            text-transform: uppercase; transition: 0.3s; min-height: 120px; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            border: 1px solid rgba(0,0,0,0.05);
         }
-        .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); background: #ada996; }
+
+        /* Icono de Carpeta */
+        .pje-item-65::before {
+            content: "📁"; font-size: 30px; margin-bottom: 10px; display: block;
+        }
 
         /* Modal */
         #pje-modal-65 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 99999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1100px; max-height: 90vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
         .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
-        /* Estilo específico Directorio (Fracción VI) */
-        .pje-dir-tabs { display: flex; justify-content: center; padding: 15px; gap: 0; background: #fff; }
-        .pje-dir-btn { padding: 10px 25px; border: none; cursor: pointer; font-weight: bold; font-size: 13px; color: #555; background: #e0e0e0; transition: 0.3s; }
-        .pje-dir-btn.active { background: #606c76; color: #fff; }
-        .pje-dir-btn:first-child { border-radius: 5px 0 0 5px; }
-        .pje-dir-btn:last-child { border-radius: 0 5px 5px 0; }
+        /* Estilos Directorio Fracción VI */
+        .dir65-summary { background-color: var(--pje-gris); color:#fff; padding:12px; font-weight:700; cursor:pointer; list-style: none; border-radius: 5px; }
+        .dir65-miembros { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; padding:20px; }
+        .dir65-persona { width:180px; text-align:center; position:relative; }
+        .dir65-persona img { 
+            width:130px; height:130px; object-fit:cover; border-radius:50%; 
+            border:3px solid var(--pje-oro); background: #eee;
+        }
 
-        .pje-card-dir { border: 1px solid #ccc; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; }
-        .pje-card-name { font-weight: bold; color: #333; font-size: 14px; margin-bottom: 5px; }
-        .pje-card-pos { font-style: italic; color: #777; font-size: 12px; }
-
-        .pje-tabla-65 { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .pje-tabla-65 th { background: var(--pje-color); color: #fff; padding: 12px; font-size: 13px; }
-        .pje-tabla-65 td { padding: 12px; border-bottom: 1px solid #eee; text-align: center; font-size: 13px; }
-
-        .pje-header-org { background: #c5c5b7; color: #fff; padding: 8px 20px; font-weight: bold; margin-top: 20px; text-align: left; }
+        .dir65-tooltip {
+            visibility:hidden; width:250px; background:#fff; color:#333; text-align:left; border-radius:8px; 
+            padding:12px; box-shadow:0 5px 20px rgba(0,0,0,0.3); position:absolute; z-index:100; 
+            top: 10%; left: 105%; opacity:0; transition: 0.3s; font-size:11px; border: 1px solid #ddd;
+        }
+        .dir65-persona:hover .dir65-tooltip { visibility:visible; opacity:1; }
     </style>
-
-    <div class="pje-toolbar">
-        <button class="pje-btn-vista active">⊞ MOSAICO</button>
-        <button class="pje-btn-vista">≡ LISTA</button>
-    </div>
 
     <div id="pje-grid-65"></div>
 
     <div id="pje-modal-65">
         <div class="pje-modal-box">
             <div class="pje-modal-h">
-                <strong id="pje-title-65" style="color:var(--pje-color);"></strong>
+                <strong id="pje-title-65" style="color: var(--pje-gris);"></strong>
                 <span onclick="cerrarModal65()" style="font-size:30px; cursor:pointer;">&times;</span>
             </div>
-
-            <div id="pje-filtro-65" style="padding: 15px; background: #ebf2f7; display: flex; justify-content: center; gap: 15px; align-items: center;">
-                <strong>Año:</strong> 
-                <select id="pje-anio-65">
-                    <option>2026</option><option selected>2025</option><option>2024</option>
-                </select>
-            </div>
-
-            <div id="pje-body-65" style="padding: 25px; overflow-y: auto; text-align: center;"></div>
+            <div id="pje-body-65" style="padding: 25px; overflow-y: auto;"></div>
         </div>
     </div>
 
     <script>
-        const fracciones65 = [
+        const fracciones = [
             "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos",
             "V. Indicadores relacionados con temas de interés", "VI. Directorio de todas las personas servidoras públicas",
             "VII. Remuneración bruta y neta", "VIII. Gastos de representación y viáticos",
@@ -395,9 +384,9 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             "XIII. Convocatorias a concursos", "XIV. Programas, subsidios, estímulos",
             "XV. Condiciones generales de trabajo", "XVI. Información curricular",
             "XVII. Listado de personas con sanciones", "XVIII. Servicios y trámites",
-            "XIX. Información financiera", "XX. Información relativa a la deuda pública",
+            "XIX. Información financiera sobre el presupuesto asignado", "XX. Información relativa a la deuda pública",
             "XXI. Gastos comunicación social", "XXII. Informes de auditorías",
-            "XXIII. Dictaminación estados financieros", "XXIV. Montos y personas que usan recursos públicos",
+            "XXIII. Resultado de la dictaminación", "XXIV. Montos y personas que usan recursos públicos",
             "XXV. Concesiones, contratos, convenios", "XXVI. Procedimientos de adjudicación",
             "XXVII. Informes generados", "XXVIII. Estadísticas generadas",
             "XXIX. Avances programáticos", "XXX. Padrón de proveedores",
@@ -405,94 +394,46 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             "XXXIII. Recomendaciones de DDHH", "XXXIV. Resoluciones procedimientos",
             "XXXV. Mecanismos participación ciudadana", "XXXVI. Programas que ofrecen",
             "XXXVII. Actas Comité de Transparencia", "XXXVIII. Evaluaciones a programas",
-            "XXXIX. Estudios financiados", "XL. Personas jubiladas y pensionadas",
+            "XXXIX. Estudios financiados", "XL. Listado de personas jubiladas",
             "XLI. Ingresos recibidos", "XLII. Donaciones hechas",
             "XLIII. Catálogo disposición documental", "XLIV. Actas de sesiones consejos",
             "XLV. Listado de solicitudes telecomunicaciones", "XLVI. Cualquier otra información"
         ];
 
-        let fraccionActual65 = "";
-        let modoDirectorio = "VISUAL"; // VISUAL o TABLA
+        const grid = document.getElementById('pje-grid-65');
+        grid.innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
 
-        function renderGrid65() {
-            const grid = document.getElementById('pje-grid-65');
-            grid.innerHTML = fracciones65.map(f => `
-                <div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>
-            `).join('');
-        }
-
-        function abrirModal65(titulo) {
-            fraccionActual65 = titulo;
-            document.getElementById('pje-title-65').innerText = titulo;
-            document.getElementById('pje-modal-65').style.display = 'flex';
-            renderContenido65();
-        }
-
-        function cerrarModal65() {
-            document.getElementById('pje-modal-65').style.display = 'none';
-        }
-
-        function renderContenido65() {
+        function abrirModal65(t) {
+            document.getElementById('pje-title-65').innerText = t;
             const body = document.getElementById('pje-body-65');
+            document.getElementById('pje-modal-65').style.display = 'flex';
 
-            // LÓGICA ESPECIAL PARA FRACCIÓN VI (DIRECTORIO)
-            if(fraccionActual65.includes("VI. Directorio")) {
+            if (t.includes("VI. Directorio")) {
+                // AQUÍ USAMOS TU ESTRUCTURA DE FOTOS
+                // IMPORTANTE: He cambiado el link a uno que sÍ funciona para mostrar fotos de Drive
                 body.innerHTML = `
-                    <div class="pje-dir-tabs">
-                        <button class="pje-dir-btn ${modoDirectorio === 'VISUAL' ? 'active' : ''}" onclick="cambiarModoDir('VISUAL')">ESTRUCTURA VISUAL (FOTOS)</button>
-                        <button class="pje-dir-btn ${modoDirectorio === 'TABLA' ? 'active' : ''}" onclick="cambiarModoDir('TABLA')">BUSCADOR GENERAL (TABLA)</button>
-                    </div>
-                    <div id="pje-dir-content">
-                        ${renderDirectorio()}
-                    </div>
-                `;
-            } else {
-                body.innerHTML = `<div style="padding:40px; color:#666;">Información disponible para el ejercicio seleccionado.</div>`;
-            }
-        }
-
-        function cambiarModoDir(modo) {
-            modoDirectorio = modo;
-            renderContenido65();
-        }
-
-        function renderDirectorio() {
-            if(modoDirectorio === "VISUAL") {
-                return `
-                    <div class="pje-header-org">Tribunal Superior de Justicia</div>
-                    <div style="padding: 30px; background: #fff; border: 1px solid #eee;">
-                        <div class="pje-card-dir">
-                           <span style="color:#ccc; font-size:10px;">FOTO</span>
+                    <details open>
+                        <summary class="dir65-summary">Tribunal Superior de Justicia</summary>
+                        <div class="dir65-miembros">
+                            <div class="dir65-persona">
+                                <img src="https://drive.google.com/thumbnail?id=1m3iWpQWlIisEa7q4D3K_p6887yG6U7Vq&sz=w500" alt="Miguel Felipe Mery Ayup">
+                                <div style="font-weight:bold; color:#003366; margin-top:10px;">Miguel Felipe Mery Ayup</div>
+                                <div style="font-size:11px; font-style:italic;">Presidente del TSJ</div>
+                                <div class="dir65-tooltip">
+                                    <strong>Nivel Tabular:</strong> MAG0001<br>
+                                    <strong>Teléfono:</strong> 844-777-4498<br>
+                                    <strong>Correo:</strong> miguel.mery@coahuila.gob.mx
+                                </div>
+                            </div>
                         </div>
-                        <div class="pje-card-name">Miguel Felipe Mery Ayup</div>
-                        <div class="pje-card-pos">Presidente del Tribunal Superior de Justicia</div>
-                    </div>
+                    </details>
                 `;
             } else {
-                return `
-                    <table class="pje-tabla-65">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Cargo</th>
-                                <th>Área</th>
-                                <th>Perfil</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Miguel Felipe Mery Ayup</td>
-                                <td>Presidente</td>
-                                <td>Presidencia</td>
-                                <td><a href="#">👁️</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                `;
+                body.innerHTML = `<p style="text-align:center; color:#666;">Contenido para la ${t} próximamente disponible.</p>`;
             }
         }
 
-        renderGrid65();
+        function cerrarModal65() { document.getElementById('pje-modal-65').style.display = 'none'; }
     </script>
 </div>
     </div>
