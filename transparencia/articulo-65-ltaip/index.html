@@ -320,32 +320,19 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     <style>
         #pje-art65-container { display: block; width: 100%; --pje-oro: #BDB9A6; --pje-gris: #49545E; --pje-azul: #003366; }
 
-        /* Mosaico Principal */
-        #pje-grid-65 { 
-            display: grid; padding: 30px; gap: 15px; background: #f4f4f4;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        }
-        .pje-item-65 { 
-            background: var(--pje-oro); color: var(--pje-gris); padding: 25px 15px; text-align: center; 
-            border-radius: 8px; cursor: pointer; font-size: 11px; font-weight: bold;
-            text-transform: uppercase; transition: 0.3s; min-height: 140px; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            border: 1px solid rgba(0,0,0,0.05); line-height: 1.3;
-        }
+        #pje-grid-65 { display: grid; padding: 30px; gap: 15px; background: #f4f4f4; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .pje-item-65 { background: var(--pje-oro); color: var(--pje-gris); padding: 25px 15px; text-align: center; border-radius: 8px; cursor: pointer; font-size: 11px; font-weight: bold; text-transform: uppercase; transition: 0.3s; min-height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.05); line-height: 1.3; }
         .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); background: #ada996; }
         .pje-item-65::before { content: "📁"; font-size: 32px; margin-bottom: 12px; display: block; opacity: 0.8; }
 
-        /* Modal */
         #pje-modal-65 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; z-index: 99999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1200px; max-height: 92vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
         .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
 
-        /* Pestañas Directorio */
         .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
         .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
         .tab-btn.active { background: var(--pje-gris); }
 
-        /* Buscador y Tabla */
         .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
         .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
         .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
@@ -357,28 +344,26 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         .pj-table th { background: #ececec; color: #333; padding: 12px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; }
         .pj-table td { padding: 10px; border-bottom: 1px solid #eee; }
 
-        /* Estilo Visual Directorio */
+        /* Estilo Visual Directorio Mejorado */
         .dir65-visual-container { padding: 20px; }
-        .dir65-details { margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+        .dir65-details { margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; overflow: visible; } /* Importante: overflow visible */
         .dir65-summary { background: var(--pje-gris); color: #fff; padding: 12px 20px; font-weight: bold; cursor: pointer; list-style: none; font-size: 14px; }
-        .dir65-summary:hover { background: var(--pje-azul); }
-        .dir65-miembros { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; padding: 30px; background: #fff; }
-        .dir65-persona { width: 200px; text-align: center; position: relative; margin-bottom: 20px; }
+        .dir65-miembros { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 40px 20px; background: #fff; overflow: visible; }
+        .dir65-persona { width: 220px; text-align: center; position: relative; margin-bottom: 20px; }
         .dir65-persona img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid var(--pje-oro); object-fit: cover; background: #f9f9f9; }
+        .dir65-nombre { font-weight: bold; margin-top: 14px; color: var(--pje-azul); font-size: 16px; line-height: 1.2; }
 
-        .dir65-nombre { font-weight: bold; margin-top: 14px; color: var(--pje-azul); font-size: 15px; line-height: 1.2; }
+        /* Ajuste Cargo */
+        .dir65-cargo { font-size: 15px; color: #333; font-style: italic; margin-top: 6px; line-height: 1.2; font-weight: 500; }
 
-        /* CARGO MÁS GRANDE */
-        .dir65-cargo { font-size: 14px; color: #444; font-style: italic; margin-top: 7px; line-height: 1.2; font-weight: 500; }
-
+        /* Tooltip Corregido (Debajo de la foto) */
         .dir65-tooltip {
-            visibility: hidden; opacity: 0; width: 260px; background: #fff; color: #333; position: absolute;
-            z-index: 100; top: 10%; left: 105%; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            border-radius: 8px; transition: 0.3s; font-size: 11px; border: 1px solid #ddd; text-align: left; line-height: 1.5;
+            visibility: hidden; opacity: 0; width: 280px; background: #fff; color: #333; 
+            position: absolute; z-index: 1000; top: 50%; left: 50%; transform: translate(-50%, 10px);
+            padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 8px; transition: 0.3s; font-size: 12px; border: 1px solid #ccc; text-align: left; line-height: 1.6;
         }
-        .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; }
-
-        @media (max-width: 1000px) { .dir65-tooltip { left: 50%; transform: translateX(-50%); top: 100%; } }
+        .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; transform: translate(-50%, 0); }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -401,25 +386,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvHXjm4h5MtHoaqQJOgD4R359NmMuQvxmC1tboLoT85Aoc7XivDKIkwwa-XljmePZCTKs-ewZ_OBCT/pub?output=csv';
         let datosFull = [];
 
-        const fracciones = [
-            "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", "V. Indicadores relacionados con temas de interés",
-            "VI. Directorio de todas las personas servidoras públicas", "VII. Remuneración bruta y neta de todas las personas servidoras públicas",
-            "VIII. Gastos de representación y viáticos", "IX. Número total de las plazas y del personal de base y confianza",
-            "X. Contrataciones de servicios profesionales por honorarios", "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia",
-            "XIII. Convocatorias a concursos para ocupar cargos públicos", "XIV. Programas, subsidios, estímulos y apoyos", "XV. Condiciones generales de trabajo",
-            "XVI. Información curricular", "XVII. Listado de personas con sanciones administrativas firmes", "XVIII. Servicios y trámites",
-            "XIX. Información financiera sobre el presupuesto asignado", "XX. Información relativa a la deuda pública", "XXI. Gastos relativos a comunicación social y publicidad oficial",
-            "XXII. Informes de resultados de las auditorías", "XXIII. Resultado de la dictaminación de los estados financieros",
-            "XXIV. Montos y listado de personas que usen recursos públicos", "XXV. Concesiones, contratos, convenios, permisos o licencias",
-            "XXVI. Resultados de los procedimientos de adjudicación", "XXVII. Informes que generen de conformidad con las disposiciones",
-            "XXVIII. Estadísticas que generen en cumplimiento de facultades", "XXIX. Informes de avances programáticos o presupuestales", "XXX. Padrón de proveedores y contratistas",
-            "XXXI. Convenios de coordinación de concertación", "XXXII. Inventario de bienes muebles e inmuebles", "XXXIII. Recomendaciones emitidas por órganos de DDHH",
-            "XXXIV. Resoluciones que se emitan en procesos en forma de juicio", "XXXV. Mecanismos de participación ciudadana", "XXXVI. Programas que ofrecen",
-            "XXXVII. Actas y resoluciones del Comité de Transparencia", "XXXVIII. Evaluaciones y encuestas a programas con recursos públicos",
-            "XXXIX. Estudios financiados con recursos públicos", "XL. Listado de personas jubiladas y pensionadas", "XLI. Ingresos recibidos por cualquier concepto",
-            "XLII. Donaciones hechas a terceros en dinero o especie", "XLIII. Catálogo de disposición y guía de archivo documental", "XLIV. Actas de sesiones de los consejos consultivos",
-            "XLV. Listado de solicitudes a empresas de telecomunicaciones", "XLVI. Cualquier otra información útil o relevante"
-        ];
+        const fracciones = ["I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", "V. Indicadores relacionados con temas de interés", "VI. Directorio de todas las personas servidoras públicas", "VII. Remuneración bruta y neta de todas las personas servidoras públicas", "VIII. Gastos de representación y viáticos", "IX. Número total de las plazas y del personal de base y confianza", "X. Contrataciones de servicios profesionales por honorarios", "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia", "XIII. Convocatorias a concursos para ocupar cargos públicos", "XIV. Programas, subsidios, estímulos y apoyos", "XV. Condiciones generales de trabajo", "XVI. Información curricular", "XVII. Listado de personas con sanciones administrativas firmes", "XVIII. Servicios y trámites", "XIX. Información financiera sobre el presupuesto asignado", "XX. Información relativa a la deuda pública", "XXI. Gastos relativos a comunicación social y publicidad oficial", "XXII. Informes de resultados de las auditorías", "XXIII. Resultado de la dictaminación de los estados financieros", "XXIV. Montos y listado de personas que usen recursos públicos", "XXV. Concesiones, contratos, convenios, permisos o licencias", "XXVI. Resultados de los procedimientos de adjudicación", "XXVII. Informes que generen de conformidad con las disposiciones", "XXVIII. Estadísticas que generen en cumplimiento de facultades", "XXIX. Informes de avances programáticos o presupuestales", "XXX. Padrón de proveedores y contratistas", "XXXI. Convenios de coordinación de concertación", "XXXII. Inventario de bienes muebles e inmuebles", "XXXIII. Recomendaciones emitidas por órganos de DDHH", "XXXIV. Resoluciones que se emitan en procesos en forma de juicio", "XXXV. Mecanismos de participación ciudadana", "XXXVI. Programas que ofrecen", "XXXVII. Actas y resoluciones del Comité de Transparencia", "XXXVIII. Evaluaciones y encuestas a programas con recursos públicos", "XXXIX. Estudios financiados con recursos públicos", "XL. Listado de personas jubiladas y pensionadas", "XLI. Ingresos recibidos por cualquier concepto", "XLII. Donaciones hechas a terceros en dinero o especie", "XLIII. Catálogo de disposición y guía de archivo documental", "XLIV. Actas de sesiones de los consejos consultivos", "XLV. Listado de solicitudes a empresas de telecomunicaciones", "XLVI. Cualquier otra información útil o relevante"];
 
         const grid = document.getElementById('pje-grid-65');
         grid.innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
@@ -429,12 +396,8 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             document.getElementById('pje-modal-65').style.display = 'flex';
             const body = document.getElementById('pje-body-65');
             const tabs = document.getElementById('pje-tabs-container');
-
             if (t.includes("VI. Directorio")) {
-                tabs.innerHTML = `<div class="dir65-tabs">
-                    <button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button>
-                    <button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button>
-                </div>`;
+                tabs.innerHTML = `<div class="dir65-tabs"><button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button><button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button></div>`;
                 setModo('VISUAL');
             } else {
                 tabs.innerHTML = '';
@@ -442,7 +405,6 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             }
         }
 
-        // Función corregida para Tooltip
         function generarTarjetaPersona(img, nombre, cargo, tabular, tel, mail, dom) {
             return `
                 <div class="dir65-persona">
@@ -450,7 +412,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
                     <div class="dir65-nombre">${nombre}</div>
                     <div class="dir65-cargo">${cargo}</div>
                     <div class="dir65-tooltip">
-                        <b style="color:var(--pje-azul)">DATOS DE CONTACTO</b><hr>
+                        <b style="color:var(--pje-azul); font-size:13px;">DATOS DE CONTACTO</b><hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
                         <strong>Nivel Tabular:</strong> ${tabular}<br>
                         <strong>Teléfono:</strong> ${tel}<br>
                         <strong>Correo:</strong> ${mail}<br>
@@ -460,17 +422,12 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         }
 
         function setModo(m) {
-            const btnVis = document.getElementById('btn-vis');
-            const btnTab = document.getElementById('btn-tab');
+            const btnVis = document.getElementById('btn-vis'), btnTab = document.getElementById('btn-tab'), body = document.getElementById('pje-body-65');
             if(btnVis) btnVis.classList.toggle('active', m === 'VISUAL');
             if(btnTab) btnTab.classList.toggle('active', m === 'TABLA');
-
-            const body = document.getElementById('pje-body-65');
-
             if (m === 'VISUAL') {
                 body.innerHTML = `
                 <div class="dir65-visual-container">
-
                     <details class="dir65-details" open>
                         <summary class="dir65-summary">Tribunal Superior de Justicia</summary>
                         <div class="dir65-miembros">
@@ -479,83 +436,20 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
                             ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
                         </div>
                     </details>
-
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Tribunal de Disciplina Judicial</summary>
-                        <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                        </div>
-                    </details>
-
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Órgano de Administración</summary>
-                        <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                        </div>
-                    </details>
-
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Centros y Áreas Especializadas</summary>
-                        <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
-                        </div>
-                    </details>
+                    <details class="dir65-details"><summary class="dir65-summary">Tribunal de Disciplina Judicial</summary><div class="dir65-miembros">${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}</div></details>
+                    <details class="dir65-details"><summary class="dir65-summary">Órgano de Administración</summary><div class="dir65-miembros">${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}</div></details>
+                    <details class="dir65-details"><summary class="dir65-summary">Centros y Áreas Especializadas</summary><div class="dir65-miembros">${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}${generarTarjetaPersona("URL_FOTO","Nombre","Cargo","Nivel","Tel","Email","Domicilio")}</div></details>
                 </div>`;
             } else {
-                body.innerHTML = `
-                <div class="pj-toolbar">
-                    <div class="pj-search-box">🔍 <input type="text" id="q-filtro" placeholder="Nombre, cargo o área..." onkeyup="filtrar()"></div>
-                    <select id="area-filtro" class="pj-btn-tool" onchange="filtrar()"><option value="">Todas las Áreas</option></select>
-                    <button class="pj-btn-tool pj-btn-excel" onclick="exportarExcel()">📊 Descargar Excel</button>
-                </div>
-                <div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE</th><th>CARGO</th><th>PUESTO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>`;
+                body.innerHTML = `<div class="pj-toolbar"><div class="pj-search-box">🔍 <input type="text" id="q-filtro" placeholder="Nombre, cargo o área..." onkeyup="filtrar()"></div><select id="area-filtro" class="pj-btn-tool" onchange="filtrar()"><option value="">Todas las Áreas</option></select><button class="pj-btn-tool pj-btn-excel" onclick="exportarExcel()">📊 Descargar Excel</button></div><div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE</th><th>CARGO</th><th>PUESTO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>`;
                 cargarCSV();
             }
         }
 
-        function cargarCSV() {
-            Papa.parse(CSV_URL, { download: true, header: true, skipEmptyLines: true,
-                complete: function(results) {
-                    datosFull = results.data;
-                    const areas = [...new Set(datosFull.map(item => item.AREA).filter(Boolean))].sort();
-                    const sel = document.getElementById('area-filtro');
-                    if(sel) {
-                        sel.innerHTML = '<option value="">Todas las Áreas</option>';
-                        areas.forEach(a => sel.add(new Option(a, a)));
-                    }
-                    renderTabla(datosFull);
-                }
-            });
-        }
-
-        function renderTabla(data) {
-            const tbody = document.getElementById('pje-tbody');
-            if(tbody) tbody.innerHTML = data.map(r => `<tr><td>${r.AREA || ''}</td><td><b>${r.NOMBRE || ''} ${r['PRIMER APELLIDO'] || ''}</b></td><td>${r.CARGO || ''}</td><td>${r['CLAVE DEL PUESTO'] || ''}</td></tr>`).join('');
-        }
-
-        function filtrar() {
-            const q = document.getElementById('q-filtro').value.toLowerCase();
-            const area = document.getElementById('area-filtro').value;
-            const filtrados = datosFull.filter(r => {
-                const full = `${r.NOMBRE} ${r['PRIMER APELLIDO']}`.toLowerCase();
-                return (full.includes(q) || (r.CARGO && r.CARGO.toLowerCase().includes(q))) && (!area || r.AREA === area);
-            });
-            renderTabla(filtrados);
-        }
-
-        function exportarExcel() {
-            const ws = XLSX.utils.json_to_sheet(datosFull);
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, "Directorio");
-            XLSX.writeFile(wb, "Directorio_PJE_Art65.xlsx");
-        }
-
+        function cargarCSV() { Papa.parse(CSV_URL, { download: true, header: true, skipEmptyLines: true, complete: function(results) { datosFull = results.data; const areas = [...new Set(datosFull.map(item => item.AREA).filter(Boolean))].sort(); const sel = document.getElementById('area-filtro'); if(sel) { sel.innerHTML = '<option value="">Todas las Áreas</option>'; areas.forEach(a => sel.add(new Option(a, a))); } renderTabla(datosFull); } }); }
+        function renderTabla(data) { const tbody = document.getElementById('pje-tbody'); if(tbody) tbody.innerHTML = data.map(r => `<tr><td>${r.AREA || ''}</td><td><b>${r.NOMBRE || ''} ${r['PRIMER APELLIDO'] || ''}</b></td><td>${r.CARGO || ''}</td><td>${r['CLAVE DEL PUESTO'] || ''}</td></tr>`).join(''); }
+        function filtrar() { const q = document.getElementById('q-filtro').value.toLowerCase(), area = document.getElementById('area-filtro').value; const filtrados = datosFull.filter(r => { const full = `${r.NOMBRE} ${r['PRIMER APELLIDO']}`.toLowerCase(); return (full.includes(q) || (r.CARGO && r.CARGO.toLowerCase().includes(q))) && (!area || r.AREA === area); }); renderTabla(filtrados); }
+        function exportarExcel() { const ws = XLSX.utils.json_to_sheet(datosFull), wb = XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, "Directorio"); XLSX.writeFile(wb, "Directorio_PJE_Art65.xlsx"); }
         function cerrarModal65() { document.getElementById('pje-modal-65').style.display = 'none'; }
     </script>
 </div>
