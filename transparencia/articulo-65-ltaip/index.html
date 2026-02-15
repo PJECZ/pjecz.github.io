@@ -365,8 +365,11 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         .dir65-miembros { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; padding: 30px; background: #fff; }
         .dir65-persona { width: 200px; text-align: center; position: relative; margin-bottom: 20px; }
         .dir65-persona img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid var(--pje-oro); object-fit: cover; background: #f9f9f9; }
+
         .dir65-nombre { font-weight: bold; margin-top: 14px; color: var(--pje-azul); font-size: 15px; line-height: 1.2; }
-        .dir65-cargo { font-size: 12px; color: #555; font-style: italic; margin-top: 5px; line-height: 1.2; }
+
+        /* CARGO MÁS GRANDE */
+        .dir65-cargo { font-size: 14px; color: #444; font-style: italic; margin-top: 7px; line-height: 1.2; font-weight: 500; }
 
         .dir65-tooltip {
             visibility: hidden; opacity: 0; width: 260px; background: #fff; color: #333; position: absolute;
@@ -375,7 +378,6 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         }
         .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; }
 
-        /* Ajuste responsivo tooltip */
         @media (max-width: 1000px) { .dir65-tooltip { left: 50%; transform: translateX(-50%); top: 100%; } }
     </style>
 
@@ -440,7 +442,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             }
         }
 
-        // Función reutilizable para generar la tarjeta de cada persona
+        // Función corregida para Tooltip
         function generarTarjetaPersona(img, nombre, cargo, tabular, tel, mail, dom) {
             return `
                 <div class="dir65-persona">
@@ -472,36 +474,36 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
                     <details class="dir65-details" open>
                         <summary class="dir65-summary">Tribunal Superior de Justicia</summary>
                         <div class="dir65-miembros">
-                            ${generarTarjetaPersona("https://lh3.googleusercontent.com/d/1m3iWpQWlIisEa7q4D3K_p6887yG6U7Vq", "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG0001", "844-777-4498", "miguel.mery@coahuila.gob.mx", "Blvd. Francisco Coss #945, Saltillo, Coah.")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Completo", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Completo", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
+                            ${generarTarjetaPersona("https://lh3.googleusercontent.com/d/1m3iWpQWlIisEa7q4D3K_p6887yG6U7Vq", "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG0001", "844-777-4498", "miguel.mery@coahuila.gob.mx", "Blvd. Francisco Coss #945, Zona Centro, Saltillo, Coah.")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
                         </div>
                     </details>
 
                     <details class="dir65-details">
                         <summary class="dir65-summary">Tribunal de Disciplina Judicial</summary>
                         <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 1", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 2", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 3", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
                         </div>
                     </details>
 
                     <details class="dir65-details">
                         <summary class="dir65-summary">Órgano de Administración</summary>
                         <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 1", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 2", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 3", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
                         </div>
                     </details>
 
                     <details class="dir65-details">
                         <summary class="dir65-summary">Centros y Áreas Especializadas</summary>
                         <div class="dir65-miembros">
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 1", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 2", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
-                            ${generarTarjetaPersona("URL_FOTO", "Nombre Integrante 3", "Cargo", "Tabular", "Teléfono", "Correo", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
+                            ${generarTarjetaPersona("URL_FOTO", "Nombre", "Cargo", "Nivel", "Tel", "Email", "Domicilio")}
                         </div>
                     </details>
                 </div>`;
