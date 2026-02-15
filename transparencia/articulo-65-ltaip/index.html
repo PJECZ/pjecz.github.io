@@ -316,212 +316,180 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
  </p>
 </center></p>
 <h2>Fracciones</h2>
-<div id="pje-art65-container" style="all: initial; font-family: 'Segoe UI', Arial, sans-serif;">
+<p><html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo</title>
     <style>
-        #pje-art65-container { display: block; width: 100%; --pje-oro: #BDB9A6; --pje-gris: #49545E; --pje-azul: #003366; }
+        /<em> --- ESTILOS VISUALES --- </em>/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+        <span class="k">max-width</span><span class="p">:</span> <span class="mi">1100</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="p">}</span>
 
-        /* Mosaico Principal Estilo Invertido Art 22 */
-        #pje-grid-65 { 
-            display: grid; padding: 30px; gap: 15px; background: #f4f4f4;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        }
-        .pje-item-65 { 
-            background: var(--pje-oro); color: var(--pje-gris); padding: 25px 15px; text-align: center; 
-            border-radius: 8px; cursor: pointer; font-size: 11px; font-weight: bold;
-            text-transform: uppercase; transition: 0.3s; min-height: 140px; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            border: 1px solid rgba(0,0,0,0.05); line-height: 1.3;
-        }
-        .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); background: #ada996; }
-        .pje-item-65::before { content: "📁"; font-size: 32px; margin-bottom: 12px; display: block; opacity: 0.8; }
+    <span class="p">.</span><span class="nc">section-title</span> <span class="p">{</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
+        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#3498db</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="p">}</span>
 
-        /* Modal */
-        #pje-modal-65 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; z-index: 99999; align-items: center; justify-content: center; }
-        .pje-modal-box { background: #fff; width: 95%; max-width: 1200px; max-height: 92vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
-        .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    <span class="c">/* Contenedor de 3 columnas */</span>
+    <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">);</span> <span class="c">/* 3 columnas iguales */</span>
+        <span class="n">gap</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+    <span class="p">}</span>
 
-        /* Pestañas Directorio */
-        .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
-        .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
-        .tab-btn.active { background: var(--pje-gris); }
+    <span class="c">/* Tarjeta de integrante */</span>
+    <span class="p">.</span><span class="nc">member-card</span> <span class="p">{</span>
+        <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
+    <span class="p">}</span>
 
-        /* Buscador y Tabla */
-        .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
-        .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
-        .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
-        .pj-btn-tool { background: #fff; border: 1px solid #ccc; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
-        .pj-btn-excel { background: #217346; color: white; border: none; }
+    <span class="p">.</span><span class="nc">member-card</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+        <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="nv">-10px</span><span class="p">);</span>
+    <span class="p">}</span>
 
-        .pj-table-wrap { overflow-x: auto; flex-grow: 1; }
-        .pj-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 900px; }
-        .pj-table th { background: #ececec; color: #333; padding: 12px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; }
-        .pj-table td { padding: 10px; border-bottom: 1px solid #eee; }
+    <span class="c">/* Espacio para la foto */</span>
+    <span class="p">.</span><span class="nc">photo-placeholder</span> <span class="p">{</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e0e0e0</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dashed</span> <span class="mh">#bbb</span><span class="p">;</span> <span class="c">/* Guía visual para saber donde poner la foto */</span>
+    <span class="p">}</span>
 
-        /* Estilo Visual Directorio (Acordeones y Fotos) */
-        .dir65-visual-container { padding: 20px; }
-        .dir65-details { margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
-        .dir65-summary { background: var(--pje-gris); color: #fff; padding: 12px 20px; font-weight: bold; cursor: pointer; list-style: none; font-size: 14px; }
-        .dir65-summary:hover { background: var(--pje-azul); }
-        .dir65-miembros { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; padding: 30px; background: #fff; }
-        .dir65-persona { width: 180px; text-align: center; position: relative; }
-        .dir65-persona img { width: 130px; height: 130px; border-radius: 50%; border: 4px solid var(--pje-oro); object-fit: cover; background: #f9f9f9; }
-        .dir65-tooltip {
-            visibility: hidden; opacity: 0; width: 250px; background: #fff; color: #333; position: absolute;
-            z-index: 100; top: 10%; left: 105%; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            border-radius: 8px; transition: 0.3s; font-size: 11px; border: 1px solid #ddd; text-align: left; line-height: 1.4;
-        }
-        .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; }
-    </style>
+    <span class="p">.</span><span class="nc">photo-placeholder</span> <span class="nt">img</span> <span class="p">{</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <span class="p">.</span><span class="nc">member-name</span> <span class="p">{</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.4</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    <div id="pje-grid-65"></div>
+    <span class="p">.</span><span class="nc">member-role</span> <span class="p">{</span>
+        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">rem</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    <div id="pje-modal-65">
-        <div class="pje-modal-box">
-            <div class="pje-modal-h">
-                <strong id="pje-title-65" style="color: var(--pje-azul);"></strong>
-                <span onclick="cerrarModal65()" style="font-size:35px; cursor:pointer; color:#999;">&times;</span>
+    <span class="p">.</span><span class="nc">member-bio</span> <span class="p">{</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.95</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c">/* Responsivo: 1 columna en celulares */</span>
+    <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+        <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span>
+            <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<p></head></p>
+<body>
+
+<div class="container">
+    <h2 class="section-title">Primer Grupo de Personas</h2>
+    <div class="team-grid">
+
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
             </div>
-            <div id="pje-tabs-container"></div>
-            <div id="pje-body-65" style="overflow-y: auto; flex-grow: 1;"></div>
+            <h3 class="member-name">Nombre Completo 1</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
         </div>
+
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
+            </div>
+            <h3 class="member-name">Nombre Completo 2</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
+            </div>
+            <h3 class="member-name">Nombre Completo 3</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
+        </div>
+
     </div>
 
-    <script>
-        // Cambia este ID por el de tu Google Sheet publicada
-        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvHXjm4h5MtHoaqQJOgD4R359NmMuQvxmC1tboLoT85Aoc7XivDKIkwwa-XljmePZCTKs-ewZ_OBCT/pub?output=csv';
-        let datosFull = [];
+    <h2 class="section-title">Segundo Grupo de Personas</h2>
+    <div class="team-grid">
 
-        const fracciones = [
-            "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", "V. Indicadores relacionados con temas de interés",
-            "VI. Directorio de todas las personas servidoras públicas", "VII. Remuneración bruta y neta de todas las personas servidoras públicas",
-            "VIII. Gastos de representación y viáticos", "IX. Número total de las plazas y del personal de base y confianza",
-            "X. Contrataciones de servicios profesionales por honorarios", "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia",
-            "XIII. Convocatorias a concursos para ocupar cargos públicos", "XIV. Programas, subsidios, estímulos y apoyos", "XV. Condiciones generales de trabajo",
-            "XVI. Información curricular", "XVII. Listado de personas con sanciones administrativas firmes", "XVIII. Servicios y trámites",
-            "XIX. Información financiera sobre el presupuesto asignado", "XX. Información relativa a la deuda pública", "XXI. Gastos relativos a comunicación social y publicidad oficial",
-            "XXII. Informes de resultados de las auditorías", "XXIII. Resultado de la dictaminación de los estados financieros",
-            "XXIV. Montos y listado de personas que usen recursos públicos", "XXV. Concesiones, contratos, convenios, permisos o licencias",
-            "XXVI. Resultados de los procedimientos de adjudicación", "XXVII. Informes que generen de conformidad con las disposiciones",
-            "XXVIII. Estadísticas que generen en cumplimiento de facultades", "XXIX. Informes de avances programáticos o presupuestales", "XXX. Padrón de proveedores y contratistas",
-            "XXXI. Convenios de coordinación de concertación", "XXXII. Inventario de bienes muebles e inmuebles", "XXXIII. Recomendaciones emitidas por órganos de DDHH",
-            "XXXIV. Resoluciones que se emitan en procesos en forma de juicio", "XXXV. Mecanismos de participación ciudadana", "XXXVI. Programas que ofrecen",
-            "XXXVII. Actas y resoluciones del Comité de Transparencia", "XXXVIII. Evaluaciones y encuestas a programas con recursos públicos",
-            "XXXIX. Estudios financiados con recursos públicos", "XL. Listado de personas jubiladas y pensionadas", "XLI. Ingresos recibidos por cualquier concepto",
-            "XLII. Donaciones hechas a terceros en dinero o especie", "XLIII. Catálogo de disposición y guía de archivo documental", "XLIV. Actas de sesiones de los consejos consultivos",
-            "XLV. Listado de solicitudes a empresas de telecomunicaciones", "XLVI. Cualquier otra información útil o relevante"
-        ];
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
+            </div>
+            <h3 class="member-name">Nombre Completo 4</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Descripción de la cuarta persona de tu código.</p>
+        </div>
 
-        const grid = document.getElementById('pje-grid-65');
-        grid.innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
+            </div>
+            <h3 class="member-name">Nombre Completo 5</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Descripción de la quinta persona de tu código.</p>
+        </div>
 
-        function abrirModal65(t) {
-            document.getElementById('pje-title-65').innerText = t;
-            document.getElementById('pje-modal-65').style.display = 'flex';
-            const body = document.getElementById('pje-body-65');
-            const tabs = document.getElementById('pje-tabs-container');
+        <div class="member-card">
+            <div class="photo-placeholder">
+                <span>[ Foto Aquí ]</span>
+            </div>
+            <h3 class="member-name">Nombre Completo 6</h3>
+            <span class="member-role">Cargo / Puesto</span>
+            <p class="member-bio">Descripción de la sexta persona de tu código.</p>
+        </div>
 
-            if (t.includes("VI. Directorio")) {
-                tabs.innerHTML = `<div class="dir65-tabs">
-                    <button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button>
-                    <button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button>
-                </div>`;
-                setModo('VISUAL');
-            } else {
-                tabs.innerHTML = '';
-                body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización conforme a la Ley de Transparencia.</div>';
-            }
-        }
+    </div>
 
-        function setModo(m) {
-            document.getElementById('btn-vis').classList.toggle('active', m === 'VISUAL');
-            document.getElementById('btn-tab').classList.toggle('active', m === 'TABLA');
-            const body = document.getElementById('pje-body-65');
-
-            if (m === 'VISUAL') {
-                body.innerHTML = `
-                <div class="dir65-visual-container">
-                    <details class="dir65-details" open>
-                        <summary class="dir65-summary">Tribunal Superior de Justicia</summary>
-                        <div class="dir65-miembros">
-                            <div class="dir65-persona">
-                                <img src="https://lh3.googleusercontent.com/d/1m3iWpQWlIisEa7q4D3K_p6887yG6U7Vq" alt="Mery">
-                                <div style="font-weight:bold; margin-top:12px; color:var(--pje-azul);">Miguel Felipe Mery Ayup</div>
-                                <div style="font-size:10px; color:#666; font-style:italic;">Magistrado Presidente</div>
-                                <div class="dir65-tooltip"><strong>DATOS DE CONTACTO</strong><hr>Nivel: MAG0001<br>Tel: 844-777-4498<br>Email: miguel.mery@coahuila.gob.mx</div>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Tribunal de Disciplina Judicial</summary>
-                        <div class="dir65-miembros">
-                            <div style="color:#888;">Agregue aquí los bloques de personas para esta área.</div>
-                        </div>
-                    </details>
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Órgano de Administración</summary>
-                        <div class="dir65-miembros">
-                            <div style="color:#888;">Agregue aquí los bloques de personas para esta área.</div>
-                        </div>
-                    </details>
-                    <details class="dir65-details">
-                        <summary class="dir65-summary">Centros y Áreas Especializadas</summary>
-                        <div class="dir65-miembros">
-                            <div style="color:#888;">Agregue aquí los bloques de personas para esta área.</div>
-                        </div>
-                    </details>
-                </div>`;
-            } else {
-                body.innerHTML = `
-                <div class="pj-toolbar">
-                    <div class="pj-search-box">🔍 <input type="text" id="q-filtro" placeholder="Nombre, cargo o área..." onkeyup="filtrar()"></div>
-                    <select id="area-filtro" class="pj-btn-tool" onchange="filtrar()"><option value="">Todas las Áreas</option></select>
-                    <button class="pj-btn-tool pj-btn-excel" onclick="exportarExcel()">📊 Descargar Excel</button>
-                </div>
-                <div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE</th><th>CARGO</th><th>PUESTO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>`;
-                cargarCSV();
-            }
-        }
-
-        function cargarCSV() {
-            Papa.parse(CSV_URL, { download: true, header: true, skipEmptyLines: true,
-                complete: function(results) {
-                    datosFull = results.data;
-                    const areas = [...new Set(datosFull.map(item => item.AREA).filter(Boolean))].sort();
-                    const sel = document.getElementById('area-filtro');
-                    if(sel) areas.forEach(a => sel.add(new Option(a, a)));
-                    renderTabla(datosFull);
-                }
-            });
-        }
-
-        function renderTabla(data) {
-            const tbody = document.getElementById('pje-tbody');
-            if(tbody) tbody.innerHTML = data.map(r => `<tr><td>${r.AREA || ''}</td><td><b>${r.NOMBRE || ''} ${r['PRIMER APELLIDO'] || ''}</b></td><td>${r.CARGO || ''}</td><td>${r['CLAVE DEL PUESTO'] || ''}</td></tr>`).join('');
-        }
-
-        function filtrar() {
-            const q = document.getElementById('q-filtro').value.toLowerCase();
-            const area = document.getElementById('area-filtro').value;
-            const filtrados = datosFull.filter(r => {
-                const full = `${r.NOMBRE} ${r['PRIMER APELLIDO']}`.toLowerCase();
-                return (full.includes(q) || (r.CARGO && r.CARGO.toLowerCase().includes(q))) && (!area || r.AREA === area);
-            });
-            renderTabla(filtrados);
-        }
-
-        function exportarExcel() {
-            const ws = XLSX.utils.json_to_sheet(datosFull);
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, "Directorio");
-            XLSX.writeFile(wb, "Directorio_PJE_Art65.xlsx");
-        }
-
-        function cerrarModal65() { document.getElementById('pje-modal-65').style.display = 'none'; }
-    </script>
 </div>
+
+</body>
+<p></html></p>
     </div>
 </article>
     </main>
