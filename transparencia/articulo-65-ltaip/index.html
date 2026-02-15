@@ -320,16 +320,14 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro Equipo</title>
+    <title>Equipo de Trabajo y Consultas</title>
     <style>
-        /<em> --- ESTILOS VISUALES --- </em>/
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
+            color: #333;
         }</p>
 <div class="highlight"><pre><span></span><code>    <span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
         <span class="k">max-width</span><span class="p">:</span> <span class="mi">1100</span><span class="kt">px</span><span class="p">;</span>
@@ -338,49 +336,54 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 
     <span class="p">.</span><span class="nc">section-title</span> <span class="p">{</span>
         <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
-        <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#3498db</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">2.2</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#1e3a8a</span><span class="p">;</span> <span class="c">/* Azul oscuro profesional */</span>
     <span class="p">}</span>
 
-    <span class="c">/* Contenedor de 3 columnas */</span>
+    <span class="p">.</span><span class="nc">section-subtitle</span> <span class="p">{</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c">/* Cuadrícula principal */</span>
     <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span>
         <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
-        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">);</span> <span class="c">/* 3 columnas iguales */</span>
+        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">);</span> 
         <span class="n">gap</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">80</span><span class="kt">px</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="c">/* Tarjeta de integrante */</span>
     <span class="p">.</span><span class="nc">member-card</span> <span class="p">{</span>
-        <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">background</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">25</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.05</span><span class="p">);</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
         <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
+        <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease</span><span class="p">;</span>
+        <span class="k">border-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#3b82f6</span><span class="p">;</span> <span class="c">/* Detalle de color */</span>
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">member-card</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
         <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="nv">-10px</span><span class="p">);</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">35</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="c">/* Espacio para la foto */</span>
+    <span class="c">/* Espacio de la foto */</span>
     <span class="p">.</span><span class="nc">photo-placeholder</span> <span class="p">{</span>
-        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#e0e0e0</span><span class="p">;</span>
-        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">120</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">height</span><span class="p">:</span> <span class="mi">120</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#edf2f7</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* Fotos circulares para este estilo */</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
         <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
         <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
         <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
         <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
-        <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dashed</span> <span class="mh">#bbb</span><span class="p">;</span> <span class="c">/* Guía visual para saber donde poner la foto */</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#3b82f6</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">photo-placeholder</span> <span class="nt">img</span> <span class="p">{</span>
@@ -390,30 +393,36 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">member-name</span> <span class="p">{</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.4</span><span class="kt">rem</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.3</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#111</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">member-role</span> <span class="p">{</span>
-        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
         <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#059669</span><span class="p">;</span> <span class="c">/* Verde para roles tipo Excel/Datos */</span>
+        <span class="k">font-weight</span><span class="p">:</span> <span class="mi">600</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.85</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
         <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">rem</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="p">.</span><span class="nc">member-bio</span> <span class="p">{</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.95</span><span class="kt">rem</span><span class="p">;</span>
-        <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">rem</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="mh">#4b5563</span><span class="p">;</span>
+        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.6</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="c">/* Responsivo: 1 columna en celulares */</span>
-    <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
-        <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span>
-            <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-        <span class="p">}</span>
+    <span class="c">/* Especial para la sección de Excel */</span>
+    <span class="p">.</span><span class="nc">excel-section</span> <span class="p">{</span>
+        <span class="k">border-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#10b981</span><span class="p">;</span> 
+    <span class="p">}</span>
+
+    <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">850px</span><span class="o">)</span> <span class="p">{</span>
+        <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span> <span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">);</span> <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">600px</span><span class="o">)</span> <span class="p">{</span>
+        <span class="p">.</span><span class="nc">team-grid</span> <span class="p">{</span> <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span> <span class="p">}</span>
     <span class="p">}</span>
 <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 </code></pre></div>
@@ -422,68 +431,69 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 <body>
 
 <div class="container">
-    <h2 class="section-title">Primer Grupo de Personas</h2>
+
+    <h2 class="section-title">Equipo de Proyecto</h2>
+    <p class="section-subtitle">Liderazgo y Gestión</p>
+
     <div class="team-grid">
-
         <div class="member-card">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 1</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
+            <h3 class="member-name">Nombre Integrante 1</h3>
+            <span class="member-role">Coordinador</span>
+            <p class="member-bio">Descripción del integrante que tenías en tu código original.</p>
         </div>
 
         <div class="member-card">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 2</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
+            <h3 class="member-name">Nombre Integrante 2</h3>
+            <span class="member-role">Especialista</span>
+            <p class="member-bio">Descripción del integrante que tenías en tu código original.</p>
         </div>
 
         <div class="member-card">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 3</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Aquí va la descripción que tenías en tu código original para esta persona.</p>
+            <h3 class="member-name">Nombre Integrante 3</h3>
+            <span class="member-role">Asistente</span>
+            <p class="member-bio">Descripción del integrante que tenías en tu código original.</p>
         </div>
-
     </div>
 
-    <h2 class="section-title">Segundo Grupo de Personas</h2>
+    <h2 class="section-title">Consultas de Excel</h2>
+    <p class="section-subtitle">Soporte y Análisis de Datos</p>
+
     <div class="team-grid">
-
-        <div class="member-card">
+        <div class="member-card excel-section">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 4</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Descripción de la cuarta persona de tu código.</p>
+            <h3 class="member-name">Nombre Integrante 4</h3>
+            <span class="member-role">Analista de Excel</span>
+            <p class="member-bio">Especialista en macros y tablas dinámicas según tu código.</p>
         </div>
 
-        <div class="member-card">
+        <div class="member-card excel-section">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 5</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Descripción de la quinta persona de tu código.</p>
+            <h3 class="member-name">Nombre Integrante 5</h3>
+            <span class="member-role">Soporte de Consultas</span>
+            <p class="member-bio">Encargado de la gestión de reportes en Excel.</p>
         </div>
 
-        <div class="member-card">
+        <div class="member-card excel-section">
             <div class="photo-placeholder">
-                <span>[ Foto Aquí ]</span>
+                <span>[ Foto ]</span>
             </div>
-            <h3 class="member-name">Nombre Completo 6</h3>
-            <span class="member-role">Cargo / Puesto</span>
-            <p class="member-bio">Descripción de la sexta persona de tu código.</p>
+            <h3 class="member-name">Nombre Integrante 6</h3>
+            <span class="member-role">Base de Datos</span>
+            <p class="member-bio">Control y validación de datos en la hoja de cálculo.</p>
         </div>
-
     </div>
 
 </div>
