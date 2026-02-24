@@ -278,40 +278,30 @@
 
         .pje-item { padding: 25px; text-align: center; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; text-transform: uppercase; line-height: 1.4; box-sizing: border-box; transition: all 0.3s ease; }
 
-        /* Estilo Mosaico (Efecto Carpeta de la imagen) */
+        /* Estilo Mosaico con efecto de levantamiento */
         .pje-vista-mosaico .pje-item { 
             background: var(--pje-beige); 
             color: #49545E; 
             min-height: 160px; 
-            border-radius: 8px; 
+            border-radius: 5px 20px 5px 5px; 
             flex-direction: column; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
         }
 
-        /* Efecto de elevación al posicionarse */
         .pje-vista-mosaico .pje-item:hover {
             background: var(--pje-beige-hover);
             transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-            color: #222;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+            color: #000;
         }
 
-        .pje-vista-mosaico .pje-item::before { 
-            content: "📁"; 
-            font-size: 45px; 
-            margin-bottom: 12px; 
-            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
-        }
+        .pje-vista-mosaico .pje-item::before { content: "📁"; font-size: 35px; margin-bottom: 12px; }
 
-        /* Estilo Lista (Se mantiene igual) */
         .pje-vista-lista .pje-item { background: #fff; color: #333; border-bottom: 1px solid #eee; border-left: 8px solid var(--pje-color); justify-content: flex-start; text-align: left; padding: 18px 30px; text-transform: none; font-size: 15px; cursor: default; }
-        .pje-vista-lista .pje-item:hover { background: #f9f9f9; }
         .pje-item-titulo-lista { cursor: pointer; font-weight: bold; color: #333; display: block; }
         .pje-item-titulo-lista:hover { text-decoration: underline; color: var(--pje-color); }
         .pje-link-externo { font-size: 12px; color: #0056b3; text-decoration: underline; margin-top: 5px; font-weight: normal; word-break: break-all; cursor: pointer; display: inline-block; }
 
-        /* Modales y Tablas */
         #pje-modal-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 999999; align-items: center; justify-content: center; }
         .pje-modal-box { background: #fff; width: 95%; max-width: 1150px; max-height: 90vh; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; }
         .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
@@ -496,10 +486,12 @@
                 }
                 else if(fraccionActual.includes("IV. Mecanismo de solicitudes")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    let f = getFicha("Fracción IV", "En cumplimiento con el Artículo 22, Fracción IV, esta sección detalla los mecanismos y canales oficiales a través de los cuales la ciudadanía puede presentar solicitudes, opiniones, quejas, denuncias o sugerencias relacionadas con el desempeño institucional.");
+                    let f = getFicha("Fracción IV", "En cumplimiento con el Artículo 22, Fracción IV, esta sección detalla los mecanismos y canales oficiales a través de los cuales la ciudadanía puede presentar solicitudes, opiniones, quejas, denuncias o sugerencias relacionadas con el desempeño institucional, disponibles para asegurar que la voz de los usuarios sea escuchada y atendida, promoviendo así una cultura de mejora continua, transparencia y participación ciudadana efectiva dentro del servicio público.");
                     modalBody.innerHTML = f + `
                         <div class="pje-mensaje-legal">
-                            Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la <strong>Plataforma Nacional de Transparencia (PNT)</strong>.
+                            Para realizar solicitudes de información, el Poder Judicial del Estado de Coahuila pone a su disposición la <strong>Plataforma Nacional de Transparencia (PNT)</strong>, a través de la cual los ciudadanos pueden ejercer sus derechos de acceso a la información. 
+                            <br><br>
+                            Asimismo, para la presentación de opiniones, quejas, denuncias o sugerencias, se cuenta con el <strong>Buzón de Quejas y Sugerencias</strong> del Poder Judicial.
                             <br><br>
                             <div style="display: flex; gap: 20px; justify-content: center;">
                                 <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" style="color:#0056b3; font-weight:bold; text-decoration: underline;">Ir a la PNT</a>
@@ -509,23 +501,23 @@
                 }
                 else if(fraccionActual.includes("V. Instituciones de Beneficencia")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    let f = getFicha("Fracción V", "El Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con facultades para otorgar donativos o apoyos a instituciones de beneficencia.");
-                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias a instituciones de beneficencia.</div>';
+                    let f = getFicha("Fracción V", "En cumplimiento con el Artículo 22, Fracción V en esta fracción se hace constar que el Poder Judicial del Estado de Coahuila de Zaragoza no cuenta con facultades legales ni presupuestarias para otorgar donativos o apoyos a instituciones de beneficencia, por lo que no se genera información para esta fracción en el presente periodo.");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en los artículos 1°, 4° y el Capítulo IV TER-A de la Ley Orgánica del Poder Judicial del Estado, de los cuales se desprende que este Sujeto Obligado no cuenta con facultades atribuidas ni atribuciones legales para realizar transferencias, donaciones o entrega de recursos públicos a instituciones de beneficencia.<br><br>Al ser la función constitucional de este Poder la impartición de justicia y no la asistencia social, no se generan actos administrativos que den origen al listado solicitado. Por tanto, ante la inexistencia de la facultad, existe una imposibilidad jurídica de generar la información en cuestión.</div>';
                 }
                 else if(fraccionActual.includes("VI. Presupuesto Asignado")) {
                     let f = getFicha("Fracción VI", "En cumplimiento con las obligaciones de transparencia en materia de Presupuesto Asignado...");
-                    const ligasPresupuesto = { "2025": "https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing", "2024": "https://drive.google.com/file/d/1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD/view?usp=sharing" };
+                    const ligasPresupuesto = { "2025": "https://drive.google.com/file/d/1KE4SUeI-tCjTerIR1kvBjx_20w8I0c9Z/view?usp=sharing", "2024": "https://drive.google.com/file/d/1RwprRhFe7vH3-mb9zfzPGfXAeYiqffsD/view?usp=sharing", "2023": "https://drive.google.com/file/d/1anunjWmo6gZzYsxYlbNK5KMu2RCB0mnQ/view?usp=sharing", "2022": "https://drive.google.com/file/d/1wLw6fTaU-ZunaWcghaEYnSvkiFw82FI8/view?usp=drive_link", "2021": "https://drive.google.com/file/d/1wLw6fTaU-ZunaWcghaEYnSvkiFw82FI8/view?usp=drive_link", "2020": "https://drive.google.com/file/d/1wLw6fTaU-ZunaWcghaEYnSvkiFw82FI8/view?usp=drive_link", "2019": "https://drive.google.com/file/d/1wLw6fTaU-ZunaWcghaEYnSvkiFw82FI8/view?usp=drive_link", "2018": "https://drive.google.com/file/d/1wLw6fTaU-ZunaWcghaEYnSvkiFw82FI8/view?usp=drive_link" };
                     let ligaSeleccionada = ligasPresupuesto[anio] || "#"; 
                     let botonesHtml = ligaSeleccionada !== "#" ? `<td><a class="pje-btn-act" onclick="pjeVerDoc('${ligaSeleccionada}')">👁️</a></td><td><a href="${ligaSeleccionada}" target="_blank" class="pje-btn-desc">📥</a></td>` : `<td colspan="2" style="color:gray;">Información por cargar</td>`;
                     modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Ejercicio</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody><tr><td>22</td><td>Anual ${anio}</td><td>Presupuesto de Egresos</td>${botonesHtml}</tr></tbody></table>`;
                 }
                 else if(fraccionActual.includes("VII. Minutas")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    let f = getFicha("Fracción VII", "Acceso directo a las transmisiones en vivo y grabaciones de las sesiones celebradas por los órganos colegiados.");
-                    modalBody.innerHTML = f + `<div style="text-align:center; padding:40px; background:#fdfdfd; border-left:6px solid var(--pje-color);"><a href="https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/" target="_blank" style="padding:12px 30px; background:#d2d2c6; color:#333; text-decoration:none; font-weight:bold; border-radius:5px; border:1px solid #bbb;">📺 IR A TRANSMISIONES</a></div>`;
+                    let f = getFicha("Fracción VII", "En cumplimiento con las obligaciones de transparencia sobre Minutas de Sesiones Públicas, en este apartado se facilita el acceso directo a las transmisiones en vivo y grabaciones de las sesiones celebradas por los órganos colegiados de esta institución...");
+                    modalBody.innerHTML = f + `<div style="text-align:center; padding:40px; background:#fdfdfd; border-left:6px solid var(--pje-color);"><a href="https://www.pjecz.gob.mx/consultas/articulos/transmisiones-sesiones/#gsc.tab=0" target="_blank" style="padding:12px 30px; background:#d2d2c6; color:#333; text-decoration:none; font-weight:bold; border-radius:5px; border:1px solid #bbb;">📺 IR A TRANSMISIONES</a></div>`;
                 }
                 else if(fraccionActual.includes("VIII. Actas de Entrega")) {
-                    let f = getFicha("Fracción VIII", "Información relativa a las actas de entrega-recepción de los servidores públicos.");
+                    let f = getFicha("Fracción VIII", "En cumplimiento con el Artículo 22, Fracción VIII, en este apartado se hace pública la información relativa a las actas de entrega-recepción de los servidores públicos al finalizar un encargo...");
                     let rows = "";
                     todosLosMeses.forEach(m => {
                         let id = idsActas[m] || "";
@@ -533,15 +525,22 @@
                     });
                     modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th>Art.</th><th>Mes</th><th>Documento</th><th>Ver</th><th>Descargar</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
-                else if(fraccionActual.includes("IX. Georreferenciación") || fraccionActual.includes("X. Estado que guardan")) {
+                else if(fraccionActual.includes("IX. Georreferenciación")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
-                    modalBody.innerHTML = getFicha("Fracción IX/X", "No aplica por naturaleza jurídica.") + '<div class="pje-mensaje-legal"><strong>No aplica</strong></div>';
+                    let f = getFicha("Fracción IX", "Este rubro tiene como propósito transparentar la ubicación exacta y el progreso de los proyectos de infraestructura mediante coordenadas geográficas; no obstante, se informa que esta fracción no aplica a las facultades de este Poder Judicial...");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se informa que la información referente a la presente fracción No Aplica al Poder Judicial del Estado de Coahuila de Zaragoza. Lo anterior tiene su fundamento en el hecho de que este Sujeto Obligado tiene como función principal la administración de justicia y no posee atribuciones de ejecución de obra pública directa de gran escala o infraestructura sectorial, razón por la cual existe una imposibilidad técnica y jurídica de generar la información solicitada.</div>';
+                }
+                else if(fraccionActual.includes("X. Estado que guardan")) {
+                    document.getElementById('pje-anio-cont').style.display = "none";
+                    let f = getFicha("Fracción X", "Este apartado tiene como finalidad informar sobre la situación financiera, actuarial y operativa de los fondos de pensiones y jubilaciones que administran los sujetos obligados; sin embargo, se hace constar que esta fracción no aplica a este Poder Judicial...");
+                    modalBody.innerHTML = f + '<div class="pje-mensaje-legal"><strong>No aplica</strong><br><br>Se hace constar que esta fracción no aplica a este Poder Judicial, toda vez que la administración, gestión y resguardo de los fondos de seguridad social y pensiones de nuestro personal recae legalmente en una institución externa especializada, instancia responsable de generar y publicar los informes correspondientes, por lo que este Sujeto Obligado no genera ni posee información propia bajo este concepto.</div>';
                 }
                 else if(fraccionActual.includes("XI. Otra Información")) {
                     document.getElementById('pje-anio-cont').style.display = "none";
+                    let f = getFicha("Fracción XI", "Este rubro tiene como propósito publicar información adicional que, por su naturaleza, resulta relevante, útil o de interés público para la ciudadanía...");
                     let rows = "";
                     listaOtrasPaginas.forEach(p => { rows += `<tr><td>${p.nombre}</td><td><a href="${p.url}" target="_blank">${p.url}</a></td></tr>`; });
-                    modalBody.innerHTML = getFicha("Fracción XI", "Información adicional de interés público.") + `<table class="pje-tabla-res"><thead><tr><th>Información</th><th>Vínculo</th></tr></thead><tbody>${rows}</tbody></table>`;
+                    modalBody.innerHTML = f + `<table class="pje-tabla-res"><thead><tr><th>Información</th><th>Vínculo</th></tr></thead><tbody>${rows}</tbody></table>`;
                 }
             }
 
