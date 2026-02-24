@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-02-24T16:05:38-00:00</lastmod>
+<lastmod>2026-02-24T16:27:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9363,8 +9363,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/cuarta-sesion-ordinaria/</loc>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/septima-sesion-ordinaria/</loc>
 <lastmod>2026-02-26T10:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/cuarta-sesion-ordinaria/</loc>
+<lastmod>2026-02-25T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
