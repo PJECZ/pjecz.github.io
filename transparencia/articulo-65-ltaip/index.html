@@ -343,7 +343,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .dir65-subtitulo-interno { font-size: 14px; font-weight: bold; color: var(--pje-azul); margin: 25px 0 15px; text-transform: uppercase; border-bottom: 2px solid #BDB9A6; display: inline-block; padding-bottom: 5px; width: 100%; text-align: left; }
     .dir65-grid-miembros { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-bottom: 30px; overflow: visible; }
 
-    /* Tarjetas Circulares */
+    /* Tarjetas */
     .dir65-persona { width: 220px; text-align: center; position: relative; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: visible; }
     .dir65-img-container { width: 140px; height: 140px; margin: 0 auto 15px; position: relative; }
     .dir65-img-container img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; z-index: 2; position: relative; background: #fff; }
@@ -351,38 +351,12 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .dir65-nombre { font-weight: 800; color: #003366; font-size: 15px; line-height: 1.2; margin-bottom: 5px; }
     .dir65-cargo { font-size: 13px; color: #555; font-style: italic; font-weight: 500; }
 
-    /* TOOLTIP CORREGIDO */
-    .dir65-tooltip { 
-        visibility: hidden; 
-        opacity: 0; 
-        width: 280px; 
-        background: #fff; 
-        color: #333; 
-        position: absolute; 
-        z-index: 9999; 
-        bottom: 100%; /* Se posiciona arriba de la tarjeta para evitar cortes */
-        left: 50%; 
-        transform: translateX(-50%) translateY(-10px); 
-        padding: 15px; 
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
-        border-radius: 8px; 
-        transition: all 0.3s ease; 
-        font-size: 12px; 
-        text-align: left; 
-        border: 1px solid #eee; 
-        pointer-events: none; 
-        line-height: 1.6;
-        height: auto; /* Permite que crezca según el texto */
-        min-height: 50px;
-    }
-    .dir65-persona:hover { z-index: 100; } /* Eleva la tarjeta sobre las demás al pasar el mouse */
-    .dir65-persona:hover .dir65-tooltip { 
-        visibility: visible; 
-        opacity: 1; 
-        transform: translateX(-50%) translateY(-20px); 
-    }
+    /* Tooltip corregido */
+    .dir65-tooltip { visibility: hidden; opacity: 0; width: 280px; background: #fff; color: #333; position: absolute; z-index: 9999; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-10px); padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-radius: 8px; transition: all 0.3s ease; font-size: 12px; text-align: left; border: 1px solid #eee; pointer-events: none; line-height: 1.6; height: auto; }
+    .dir65-persona:hover { z-index: 100; }
+    .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; transform: translateX(-50%) translateY(-20px); }
 
-    /* Buscador Tabla General */
+    /* Tabla */
     .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
     .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
     .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
@@ -457,19 +431,19 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             let pVacia = persona("URL", "Nombre", "Cargo", "Nivel", "Tel", "Mail", "Dom");
             let htmlVis = '<div style="padding:20px;">';
 
-            htmlVis += '<details class="dir65-details" open><summary class="dir65-summary">▼ Tribunal Superior de Justicia</summary><div class="dir65-miembros-wrap">';
-            htmlVis += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona("images/Miguel Felipe Mery Ayup.png", "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "844-777-4498", "miguel.mery@coahuila.gob.mx", "Blvd. Francisco Coss #945") + pVacia + pVacia + '</div>';
-            htmlVis += '<div class="dir65-subtitulo-interno">Sala Civil y Mercantil</div><div class="dir65-grid-miembros">' + persona("images/maria-eugenia-galindo-hernandez.png", "María Eugenia Galindo Hernández", "Magistrada Presidenta", "MAG01", "844-777-4498", "maria.galindo@coahuila.gob.mx", "Blvd. Francisco Coss #945") + persona("images/Vladimir Kaiceros Barranco.png", "Vladimir Kaiceros Barranco", "Magistrado", "MAG01", "844-777-4498", "vladimir.kaiceros@coahuila.gob.mx", "Blvd. Francisco Coss #945") + pVacia + '</div>';
+            // TRIBUNAL SUPERIOR - FLECHA ▶ Y FOTO DE GOOGLE DRIVE ACTUALIZADA
+            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal Superior de Justicia</summary><div class="dir65-miembros-wrap">';
+            htmlVis += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona("https://lh3.googleusercontent.com/u/0/d/1tHReK3AHgDVF__TCLdVouP91RUDF5mmb", "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "844-777-4498", "miguel.mery@coahuila.gob.mx", "Blvd. Francisco Coss #945") + pVacia + pVacia + '</div>';
+            htmlVis += '<div class="dir65-subtitulo-interno">Sala Civil y Mercantil</div><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div>';
             htmlVis += '<div class="dir65-subtitulo-interno">Sala Familiar</div><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div>';
             htmlVis += '<div class="dir65-subtitulo-interno">Sala Penal</div><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div>';
             htmlVis += '<div class="dir65-subtitulo-interno">Sala Regional</div><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div>';
             htmlVis += '</div></details>';
 
-            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal de Disciplina Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("images/Dulce Maria Fuentes Mancillas.png", "Dulce María Fuentes Mancillas", "Magistrada Presidenta", "MAG01", "844-777-4568", "dulce.fuentes@coahuila.gob.mx", "Blvd. Luis Donaldo Colosio 703") + persona("images/Rodolfo Rabago.png", "Rodolfo Rabágo Rabágo", "Magistrado", "MAG01", "844-777-4568", "rodolfo.rabago@coahuila.gob.mx", "Blvd. Luis Donaldo Colosio 703") + persona("images/Rebeca Villarreal.png", "Rebeca Villarreal Gómez", "Magistrada", "MAG01", "844-777-4568", "rebeca.villarreal@coahuila.gob.mx", "Blvd. Luis Donaldo Colosio 703") + '</div></div></details>';
-
-            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Órgano de Administración Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("images/Manuel Gil.png", "José Manuel Gil Navarro", "Integrante del OAJ", "TCA0100", "844-777-4451", "josemanuel.gil09@coahuila.gob.mx", "Blvd. Isidro Lopez Zertuche 2791") + pVacia + pVacia + '</div></div></details>';
-
-            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Comisión de Transición</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("images/Miguel Felipe Mery Ayup.png", "Miguel Felipe Mery Ayup", "Presidente del Pleno del TSJ", "MAG01", "844-777-4498", "miguel.mery@coahuila.gob.mx", "Blvd. Francisco Coss #945") + pVacia + pVacia + '</div></div></details>';
+            // RESTO DE ACORDEONES
+            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal de Disciplina Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div></div></details>';
+            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Órgano de Administración Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div></div></details>';
+            htmlVis += '<details class="dir65-details"><summary class="dir65-summary">▶ Comisión de Transición</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + pVacia + pVacia + pVacia + '</div></div></details>';
 
             htmlVis += '</div>';
             body.innerHTML = htmlVis;
