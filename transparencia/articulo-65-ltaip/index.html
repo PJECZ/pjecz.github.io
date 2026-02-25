@@ -336,7 +336,6 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; font-weight: bold; }
     .pje-table-norma td { padding: 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
     .pje-btn-act, .pje-btn-desc { font-size: 24px; text-decoration: none; cursor: pointer; display: inline-block; transition: 0.2s; }
-    .pje-btn-act:hover, .pje-btn-desc:hover { transform: scale(1.2); }
 
     /* Estilos Directorio */
     .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
@@ -355,15 +354,16 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .dir65-tooltip { visibility: hidden; opacity: 0; width: 280px; background: #fff; color: #333; position: absolute; z-index: 9999; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-10px); padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-radius: 8px; transition: 0.3s; font-size: 12px; text-align: left; border: 1px solid #eee; pointer-events: none; line-height: 1.6; }
     .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; transform: translateX(-50%) translateY(-20px); }
 
-    /* Buscador General */
+    /* Estilos Buscador General con Scroll Horizontal */
     .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
     .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
     .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
     .pj-btn-tool { background: #fff; border: 1px solid #ccc; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
-    .pj-table-wrap { overflow-x: auto; flex-grow: 1; }
+
+    .pj-table-wrap { overflow-x: auto; width: 100%; flex-grow: 1; background: #fff; }
     .pj-table { width: 100%; border-collapse: collapse; font-size: 11px; min-width: 1300px; }
-    .pj-table th { background: #ececec; color: #333; padding: 10px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; }
-    .pj-table td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .pj-table th { background: #ececec; color: #333; padding: 12px 10px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; z-index: 10; }
+    .pj-table td { padding: 10px; border-bottom: 1px solid #eee; vertical-align: top; }
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -379,29 +379,14 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         </div>
         <div id="pje-header-container"></div>
         <div id="pje-tabs-container"></div>
-        <div id="pje-body-65" style="overflow-y: auto; flex-grow: 1;"></div>
+        <div id="pje-body-65" style="overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column;"></div>
     </div>
 </div>
 
 <script>
     const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvHXjm4h5MtHoaqQJOgD4R359NmMuQvxmC1tboLoT85Aoc7XivDKIkwwa-XljmePZCTKs-ewZ_OBCT/pub?output=csv';
     let datosFull = [];
-    const fracciones = [
-        "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", "V. Indicadores relacionados con temas de interés", 
-        "VI. Directorio de todas las personas servidoras públicas", "VII. Remuneración bruta y neta", "VIII. Gastos de representación y viáticos", 
-        "IX. Número total de las plazas", "X. Contrataciones por honorarios", "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia", 
-        "XIII. Convocatorias a concursos", "XIV. Programas, subsidios, estímulos y apoyos", "XV. Condiciones generales de trabajo", "XVI. Información curricular", 
-        "XVII. Listado de personas con sanciones administrativas firmes", "XVIII. Servicios y trámites", "XIX. Información financiera sobre el presupuesto asignado", 
-        "XX. Información relativa a la deuda pública", "XXI. Gastos relativos a comunicación social y publicidad oficial", "XXII. Informes de resultados de las auditorías", 
-        "XXIII. Resultado de la dictaminación de los estados financieros", "XXIV. Montos y listado de personas que usen recursos públicos", "XXV. Concesiones, contratos, convenios, permisos o licencias", 
-        "XXVI. Resultados de los procedimientos de adjudicación", "XXVII. Informes que generen de conformidad con las disposiciones", "XXVIII. Estadísticas que generen en cumplimiento de facultades", 
-        "XXIX. Informes de avances programáticos o presupuestales", "XXX. Padrón de proveedores y contratistas", "XXXI. Convenios de coordinación de concertación", 
-        "XXXII. Inventario de bienes muebles e inmuebles", "XXXIII. Recomendaciones emitidas por órganos de DDHH", "XXXV. Mecanismos de participación ciudadana", 
-        "XXXVI. Programas que ofrecen", "XXXVII. Actas y resoluciones del Comité de Transparencia", "XXXVIII. Evaluaciones y encuestas a programas con recursos públicos", 
-        "XXXIX. Estudios financiados con recursos públicos", "XL. Listado de personas jubiladas y pensionadas", "XLI. Ingresos recibidos por cualquier concepto", 
-        "XLII. Donaciones hechas a terceros en dinero o especie", "XLIII. Catálogo de disposición y guía de archivo documental", "XLIV. Actas de sesiones de los consejos consultivos", 
-        "XLV. Listado de solicitudes a empresas de telecomunicaciones", "XLVI. Cualquier otra información útil o relevante"
-    ];
+    const fracciones = ["I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", "V. Indicadores relacionados con temas de interés", "VI. Directorio de todas las personas servidoras públicas", "VII. Remuneración bruta y neta", "VIII. Gastos de representación y viáticos", "IX. Número total de las plazas", "X. Contrataciones por honorarios", "XI. Versión pública de las declaraciones", "XII. Domicilio de la Unidad de Transparencia", "XIII. Convocatorias a concursos", "XV. Condiciones generales de trabajo", "XVI. Información curricular", "XLVI. Cualquier otra información útil o relevante"];
 
     document.getElementById('pje-grid-65').innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
 
@@ -421,57 +406,24 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         if (t.includes("VI. Directorio")) {
             tabs.innerHTML = `<div class="dir65-tabs"><button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button><button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button></div>`;
             setModo('VISUAL');
-        } 
-        else if (t.includes("I. Marco normativo")) {
+        } else if (t.includes("I. Marco normativo")) {
             tabs.innerHTML = '';
             body.innerHTML = `<div style="padding:25px;">
-                <table class="pje-table-norma"><thead><tr><th>Constituciones</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Constitución Política de los Estados Unidos Mexicanos", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}
-                    ${rowNorma("Constitución Política del Estado de Coahuila de Zaragoza", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Estándares</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Estándares Jueces Materia Penal", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Est%C3%A1ndares/Est%C3%A1ndares%20De%20Actuaci%C3%B3n%20Para%20Jueces%20de%20Primera%20Instancia%20en%20Materia%20Penal.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Normativa Internacional</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Convención Americana sobre Derechos Humanos", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Normativa%20Internacional/Convenci%C3%B3n%20Am%C3%A9ricana%20sobre%20Derechos%20Humanos%20Pacto%20San%20Jos%C3%A9%20de%20Costa%20Rica")}
-                    ${rowNorma("Convención Interamericana contra Discriminación", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Normativa%20Internacional/Convenci%C3%B3n%20Interamericana%20para%20la%20Eliminaci%C3%B3n%20de%20todas%20las%20Formas%20de%20Discriminaci%C3%B3n%20contra%20las%20Personas%20con%20Discapacidad.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Leyes Federales y Estatales</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Ley de Amparo", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf")}
-                    ${rowNorma("Ley Federal de los Trabajadores", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf")}
-                    ${rowNorma("Plan Estratégico Judicial 2021 - 2025", "https://storage.googleapis.com/pjecz-consultas/boletines-judiciales/2021/pjecz-plan-estrategico-2021-2025.pdf")}
-                    ${rowNorma("Ley Acceso Mujeres Vida Libre Violencia", "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa158.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Códigos y Reglamentos</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Código Nacional de Procedimientos Penales", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf")}
-                    ${rowNorma("Código Civil de Coahuila", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf")}
-                    ${rowNorma("Reglamento de la Función Actuarial", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Reglamentos/Reglamento%20de%20la%20Funci%C3%B3n%20Actuarial.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Protocolos, Decretos y Lineamientos</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Protocolo juzgar perspectiva de género", "https://www.scjn.gob.mx/derechos-humanos/protocolos-de-actuacion/para-juzgar-con-perspectiva-de-genero")}
-                    ${rowNorma("Protocolo acceso justicia discapacidad", "https://drive.google.com/file/d/1Ks34xlT8PIaQihGoVYNjq-K_atb5p8Vu/view")}
-                    ${rowNorma("Decretos", "http://periodico.sfpcoahuila.gob.mx/ArchivosPO/104-SS-28-DIC-2018.PDF")}
-                    ${rowNorma("Lineamientos Lenguaje Incluyente", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Lineamientos/Lineamientos%20Lenguaje%20Incluyente.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Acuerdos y Cartas</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Acuerdos del Consejo y del Pleno", "https://www.pjecz.gob.mx/consultas/articulos/acuerdos/")}
-                    ${rowNorma("Carta de Derechos Civiles", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa285.pdf")}
-                    ${rowNorma("Carta de Derechos Políticos", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa286.pdf")}
-                    ${rowNorma("Carta de Derechos Económicos y Sociales", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa287.pdf")}
-                </tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Constituciones</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>${rowNorma("Constitución Política de los Estados Unidos Mexicanos", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}${rowNorma("Constitución Política del Estado de Coahuila de Zaragoza", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}</tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Estándares</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>${rowNorma("Estándares Jueces Materia Penal", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Est%C3%A1ndares/Est%C3%A1ndares%20De%20Actuaci%C3%B3n%20Para%20Jueces%20de%20Primera%20Instancia%20en%20Materia%20Penal.pdf")}</tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Leyes Federales y Estatales</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>${rowNorma("Ley de Amparo", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf")}${rowNorma("Ley Federal de los Trabajadores al Servicio del Estado", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf")}${rowNorma("Plan Estratégico Judicial 2021 - 2025", "https://storage.googleapis.com/pjecz-consultas/boletines-judiciales/2021/pjecz-plan-estrategico-2021-2025.pdf")}${rowNorma("Ley de Acceso de las Mujeres a una Vida Libre de Violencia", "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa158.pdf")}</tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Códigos y Reglamentos</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>${rowNorma("Código Nacional de Procedimientos Penales", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf")}${rowNorma("Código Civil de Coahuila", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf")}${rowNorma("Reglamento de la Función Actuarial", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Reglamentos/Reglamento%20de%20la%20Funci%C3%B3n%20Actuarial.pdf")}</tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Protocolos y Cartas</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>${rowNorma("Protocolo juzgar perspectiva de género", "https://www.scjn.gob.mx/derechos-humanos/protocolos-de-actuacion/para-juzgar-con-perspectiva-de-genero")}${rowNorma("Carta de Derechos Civiles", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa285.pdf")}</tbody></table>
             </div>`;
-        } else {
-            tabs.innerHTML = '';
-            body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización.</div>';
-        }
+        } else { tabs.innerHTML = ''; body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización.</div>'; }
     }
 
     function persona(img, nom, car, niv, fing, tel, mail, dom) {
-        let toolHtml = '';
+        let tool = '';
         if (!["Blas José Flores González", "Luz Elena Morales Nuñez", "Alejandro Luna Fernández"].includes(nom)) {
-            toolHtml = `<div class="dir65-tooltip"><b>DATOS DE CONTACTO</b><hr style="border:0;border-top:1px solid #eee;margin:5px 0;"><strong>Nivel:</strong> ${niv}<br><strong>Ingreso:</strong> ${fing}<br><strong>Tel:</strong> ${tel}<br><strong>Email:</strong> ${mail}<br><strong>Domicilio:</strong> ${dom}</div>`;
+            tool = `<div class="dir65-tooltip"><b>DATOS DE CONTACTO</b><hr style="border:0;border-top:1px solid #eee;margin:5px 0;"><strong>Nivel:</strong> ${niv}<br><strong>Ingreso:</strong> ${fing}<br><strong>Tel:</strong> ${tel}<br><strong>Email:</strong> ${mail}<br><strong>Domicilio:</strong> ${dom}</div>`;
         }
-        return `<div class="dir65-persona"><div class="dir65-img-container"><img src="${img}"></div><div class="dir65-nombre">${nom}</div><div class="dir65-cargo">${car}</div>${toolHtml}</div>`;
+        return `<div class="dir65-persona"><div class="dir65-img-container"><img src="${img}"></div><div class="dir65-nombre">${nom}</div><div class="dir65-cargo">${car}</div>${tool}</div>`;
     }
 
     function setModo(m) {
@@ -481,42 +433,29 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         if (m === 'VISUAL') {
             const fMery = "https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Miguel%20Felipe%20Mery%20Ayup.png";
             let h = '<div style="padding:20px;"><details class="dir65-details" open><summary class="dir65-summary">▶ Tribunal Superior de Justicia</summary><div class="dir65-miembros-wrap">';
-            h += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona(fMery, "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "01/01/2019", "844-777-4498", "miguel.mery@pje.mx", "Blvd. Coss #945") + '</div>';
-            h += '<div class="dir65-subtitulo-interno">Sala Civil y Mercantil</div><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/maria-eugenia-galindo-hernandez.png", "María Eugenia Galindo Hernández", "Magistrada Presidenta", "MAG01", "16/04/1998", "844-777-4498", "maria.galindo@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Vladimir%20Kaiceros%20Barranco.png", "Vladimir Kaiceros Barranco", "Magistrado", "MAG01", "16/03/2001", "844-777-4498", "vladimir.kaiceros@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Valeriano%20Valdes%20Cabello.png", "Valeriano Valdés Cabello", "Magistrado", "MAG01", "01/08/2025", "844-777-4498", "valeriano.valdes@pje.mx", "Coss #945") + '</div>';
-            h += '<div class="dir65-subtitulo-interno">Sala Familiar</div><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Maria%20del%20Carmen%20Galvan%20Tello.png", "María del Carmen Galván Tello", "Magistrada Presidenta", "MAG01", "01/11/2019", "844-777-4498", "madelcarmen@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Adriana%20Del%20Amor%20Serna%20Calderon.png", "Adriana Del Amor Serna Calderón", "Magistrada", "MAG01", "01/01/2000", "844-777-4498", "adriana.serna@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jesus%20Homero%20Flores%20Mier.png", "Jesús Homero Flores Mier", "Magistrado", "MAG01", "01/08/2025", "844-777-4498", "jesus.flores@pje.mx", "Coss #945") + '</div>';
-            h += '<div class="dir65-subtitulo-interno">Sala Penal</div><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Gricelda%20Elizalde%20Castellanos.png", "Gricelda Elizalde Castellanos", "Magistrada Presidenta", "MAG01", "01/07/2012", "844-777-4498", "gricelda@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luis%20Efren%20Rios%20Vega.png", "Luis Efrén Ríos Vega", "Magistrado", "MAG01", "01/11/2019", "844-777-4498", "luis.rios@pje.mx", "Coss #945") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Isadora%20de%20Lourdes.png", "Isadora De Lourdes Rodríguez Garza", "Magistrada", "MAG01", "01/08/2025", "844-777-4498", "isadora@pje.mx", "Coss #945") + '</div>';
-            h += '<div class="dir65-subtitulo-interno">Sala Regional (Torreón)</div><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jose%20Ignacio%20Maynez.png", "José Ignacio Máynez Varela", "Magistrado Presidente", "MAG01", "01/11/2017", "871-880-4575", "jose.maynez@pje.mx", "Torreón") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Maria%20Luisa%20Valencia.png", "María Luisa Valencia García", "Magistrada", "MAG01", "01/02/1991", "871-880-4575", "maria.valencia@pje.mx", "Torreón") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Yezka%20Garza.png", "Yezka Garza Ramírez", "Magistrada", "MAG01", "01/08/2025", "871-880-4575", "yezka.garza@pje.mx", "Torreón") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona(fMery, "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "01/01/2019", "844-777-4498", "miguel.mery@pje.mx", "Francisco Coss #945") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Sala Civil y Mercantil</div><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/maria-eugenia-galindo-hernandez.png", "María Eugenia Galindo Hernández", "Magistrada Presidenta", "MAG01", "16/04/1998", "844-777-4498", "maria@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Vladimir%20Kaiceros%20Barranco.png", "Vladimir Kaiceros Barranco", "Magistrado", "MAG01", "16/03/2001", "844-777-4498", "vladimir@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Valeriano%20Valdes%20Cabello.png", "Valeriano Valdés Cabello", "Magistrado", "MAG01", "01/08/2025", "844-777-4498", "valeriano@pje.mx", "Saltillo") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Sala Familiar</div><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Maria%20del%20Carmen%20Galvan%20Tello.png", "María del Carmen Galván Tello", "Magistrada Presidenta", "MAG01", "01/11/2019", "844-777-4498", "carmen@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Adriana%20Del%20Amor%20Serna%20Calderon.png", "Adriana Del Amor Serna Calderón", "Magistrada", "MAG01", "01/01/2000", "844-777-4498", "adriana@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jesus%20Homero%20Flores%20Mier.png", "Jesús Homero Flores Mier", "Magistrado", "MAG01", "01/08/2025", "844-777-4498", "jesus@pje.mx", "Saltillo") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Sala Penal</div><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Gricelda%20Elizalde%20Castellanos.png", "Gricelda Elizalde Castellanos", "Magistrada Presidenta", "MAG01", "01/07/2012", "844-777-4498", "gricelda@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luis%20Efren%20Rios%20Vega.png", "Luis Efrén Ríos Vega", "Magistrado", "MAG01", "01/11/2019", "844-777-4498", "rios@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Isadora%20de%20Lourdes.png", "Isadora De Lourdes Rodríguez Garza", "Magistrada", "MAG01", "01/08/2025", "844-777-4498", "isadora@pje.mx", "Saltillo") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Sala Regional</div><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jose%20Ignacio%20Maynez.png", "José Ignacio Máynez Varela", "Magistrado Presidente", "MAG01", "01/11/2017", "871-880-4575", "maynez@pje.mx", "Torreón") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Maria%20Luisa%20Valencia.png", "María Luisa Valencia García", "Magistrada", "MAG01", "01/02/1991", "871-880-4575", "luisa@pje.mx", "Torreón") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Yezka%20Garza.png", "Yezka Garza Ramírez", "Magistrada", "MAG01", "01/08/2025", "871-880-4575", "yezka@pje.mx", "Torreón") + '</div>';
             h += '</div></details>';
-            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal de Disciplina Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png", "Dulce María Fuentes Mancillas", "Presidenta", "MAG01", "01/08/2025", "844-777-4568", "dulce@pje.mx", "Colosio 703") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Rodolfo%20Rabago.png", "Rodolfo Rabágo Rabágo", "Magistrado", "MAG01", "01/08/2025", "844-777-4568", "rodolfo@pje.mx", "Colosio 703") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Rebeca%20Villarreal.png", "Rebeca Villarreal Gómez", "Magistrada", "MAG01", "01/08/2025", "844-777-4568", "rebeca@pje.mx", "Colosio 703") + '</div></div></details>';
-            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Órgano de Administración Judicial</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Manuel%20Gil.png", "José Manuel Gil Navarro", "Integrante", "TCA0100", "01/11/2019", "844-777-4451", "manuel@pje.mx", "Saltillo") + 
-                 persona(fMery, "Miguel Felipe Mery Ayup", "Integrante", "MAG01", "01/01/2019", "844-777-4498", "mery@pje.mx", "Saltillo") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png", "Dulce María Fuentes Mancillas", "Integrante", "MAG01", "01/08/2025", "844-777-4568", "dulce@pje.mx", "Saltillo") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Alejandro%20Luna.png", "Alejandro Luna Fernández", "Rep. Ejecutivo", "-", "-", "-", "-") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Tamara%20Garza.png", "Tamara Garza Garza", "Rep. Legislativo", "TCA0202", "01/08/2025", "844-777-4451", "tamara@pje.mx", "Saltillo") + '</div></div></details>';
-            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Comisión de Transición</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + 
-                 persona(fMery, "Miguel Felipe Mery Ayup", "Presidente", "MAG01", "01/01/2019", "844-777-4498", "mery@pje.mx", "Saltillo") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luis%20Efren%20Rios%20Vega.png", "Luis Efrén Ríos Vega", "Magistrado", "MAG01", "01/11/2019", "844-777-4498", "rios@pje.mx", "Saltillo") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Blas%20Fores.png", "Blas José Flores González", "Jefe Gabinete", "-", "-", "-", "-") + 
-                 persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luz%20Elena%20Morales.png", "Luz Elena Morales Nuñez", "Presidenta Congreso", "-", "-", "-", "-") + '</div></div></details></div>';
+            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal de Disciplina</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png", "Dulce María Fuentes Mancillas", "Presidenta", "MAG01", "01/08/2025", "844-777-4568", "dulce@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Rodolfo%20Rabago.png", "Rodolfo Rabágo Rabágo", "Magistrado", "MAG01", "01/08/2025", "844-777-4568", "rodolfo@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Rebeca%20Villarreal.png", "Rebeca Villarreal Gómez", "Magistrada", "MAG01", "01/08/2025", "844-777-4568", "rebeca@pje.mx", "Saltillo") + '</div></div></details>';
+            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Órgano de Administración</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Manuel%20Gil.png", "José Manuel Gil Navarro", "OAJ", "TCA0100", "01/11/2019", "844-777-4451", "manuel@pje.mx", "Saltillo") + persona(fMery, "Miguel Felipe Mery Ayup", "Integrante", "MAG01", "01/01/2019", "844-777-4498", "mery@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Alejandro%20Luna.png", "Alejandro Luna Fernández", "Representante", "-", "-", "-", "-") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Tamara%20Garza.png", "Tamara Garza Garza", "Representante", "TCA0202", "01/08/2025", "844-777-4451", "tamara@pje.mx", "Saltillo") + '</div></div></details>';
+            h += '<details class="dir65-details"><summary class="dir65-summary">▶ Comisión de Transición</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona(fMery, "Miguel Felipe Mery Ayup", "Presidente", "MAG01", "01/01/2019", "844-777-4498", "mery@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luis%20Efren%20Rios%20Vega.png", "Luis Efrén Ríos Vega", "Magistrado", "MAG01", "01/11/2019", "844-777-4498", "rios@pje.mx", "Saltillo") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Blas%20Fores.png", "Blas José Flores González", "Jefe", "-", "-", "-", "-") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luz%20Elena%20Morales.png", "Luz Elena Morales Nuñez", "Diputada", "-", "-", "-", "-") + '</div></div></details></div>';
             body.innerHTML = h;
         } else {
-            body.innerHTML = '<div class="pj-toolbar"><div class="pj-search-box"> 🔍 <input type="text" id="q-filtro65" placeholder="Nombre, cargo o área..." onkeyup="filtrar65()"></div><button class="pj-btn-tool" onclick="exportarExcel()"> 📊 Excel</button></div><div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE COMPLETO</th><th>CARGO</th><th>INGRESO</th><th>TELÉFONO</th><th>CORREO</th><th>DOMICILIO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>';
+            body.innerHTML = `
+                <div class="pj-toolbar">
+                    <div class="pj-search-box">🔍 <input type="text" id="q65" placeholder="Nombre, cargo..." onkeyup="filtrar65()"></div>
+                    <select id="area65" class="pj-btn-tool" onchange="filtrar65()"><option value="">Todas las Áreas</option></select>
+                    <button class="pj-btn-tool" onclick="exportarExcel()">📊 Excel</button>
+                </div>
+                <div class="pj-table-wrap">
+                    <table class="pj-table">
+                        <thead><tr><th>ÁREA</th><th>NOMBRE COMPLETO</th><th>CARGO</th><th>INGRESO</th><th>TELÉFONO</th><th>CORREO</th><th>DOMICILIO</th></tr></thead>
+                        <tbody id="pje-tbody"></tbody>
+                    </table>
+                </div>`;
             cargarCSV();
         }
     }
@@ -524,7 +463,13 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     function cargarCSV() { 
         Papa.parse(CSV_URL, { 
             download: true, header: true, skipEmptyLines: true,
-            complete: function(r) { datosFull = r.data; renderTabla(r.data); } 
+            complete: function(r) { 
+                datosFull = r.data; 
+                const areas = [...new Set(r.data.map(i => i.AREA).filter(Boolean))].sort();
+                const sel = document.getElementById('area65');
+                if(sel) areas.forEach(a => sel.add(new Option(a, a)));
+                renderTabla(r.data); 
+            } 
         }); 
     }
 
@@ -542,12 +487,15 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     }
 
     function filtrar65() {
-        const q = document.getElementById('q-filtro65').value.toLowerCase();
-        const f = datosFull.filter(r => {
+        const q = document.getElementById('q65').value.toLowerCase();
+        const area = document.getElementById('area65').value;
+        const filt = datosFull.filter(r => {
             const nom = `${r.NOMBRE} ${r['PRIMER APELLIDO']} ${r['SEGUNDO APELLIDO']}`.toLowerCase();
-            return nom.includes(q) || (r.CARGO||'').toLowerCase().includes(q) || (r.AREA||'').toLowerCase().includes(q);
+            const matchQ = nom.includes(q) || (r.CARGO||'').toLowerCase().includes(q);
+            const matchArea = !area || r.AREA === area;
+            return matchQ && matchArea;
         });
-        renderTabla(f);
+        renderTabla(filt);
     }
 
     function exportarExcel() {
