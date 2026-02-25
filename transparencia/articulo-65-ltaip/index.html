@@ -331,14 +331,20 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .pje-encabezado-info { background: #fdfdfd; padding: 20px 25px; border-bottom: 1px solid #eee; font-size: 13px; line-height: 1.6; color: #333; }
     .pje-encabezado-info strong { color: var(--pje-azul); min-width: 160px; display: inline-block; }
 
-    /* Estilos de Tabla Normatividad */
+    /* Estilos de Tabla e Iconos según código de referencia */
     .pje-table-norma { width: 100%; border-collapse: collapse; margin-bottom: 25px; font-size: 13px; border: 1px solid #eee; }
-    .pje-table-norma thead th { background: #f4f4f4; color: #333; padding: 12px; text-align: left; border-bottom: 2px solid #ddd; font-weight: bold; }
+    .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; font-weight: bold; }
     .pje-table-norma td { padding: 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
-    .pje-btn-view { color: #333; font-size: 20px; text-decoration: none; margin-right: 10px; }
-    .pje-btn-down { color: var(--pje-azul); font-size: 20px; text-decoration: none; }
 
-    /* Estilos Directorio */
+    /* Iconos exactos del código: pje-btn-act (Ver) y pje-btn-desc (Descargar) */
+    .pje-btn-act { font-size: 18px; color: #444; text-decoration: none; margin: 0 5px; cursor: pointer; }
+    .pje-btn-act::before { content: "\1f441"; } /* Ojo circular */
+
+    .pje-btn-desc { font-size: 18px; color: #007bff; text-decoration: none; margin: 0 5px; cursor: pointer; }
+    .pje-btn-desc::before { content: "\2601\fe0f"; color: #007bff; } /* Nube */
+    .pje-btn-desc::after { content: "\2b07\fe0f"; color: #dc3545; font-size: 12px; margin-left: -8px; vertical-align: bottom; } /* Flecha roja */
+
+    /* Resto de estilos del Directorio (Fracción VI) se mantienen intactos */
     .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
     .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
     .tab-btn.active { background: var(--pje-gris); }
@@ -347,15 +353,13 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .dir65-miembros-wrap { padding: 30px 20px; background: #f9f9f9; text-align: center; border: 1px solid #eee; overflow: visible; }
     .dir65-subtitulo-interno { font-size: 14px; font-weight: bold; color: var(--pje-azul); margin: 25px 0 15px; text-transform: uppercase; border-bottom: 2px solid #BDB9A6; display: inline-block; width: 100%; text-align: left; }
     .dir65-grid-miembros { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-bottom: 30px; overflow: visible; }
-    .dir65-persona { width: 220px; text-align: center; position: relative; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: visible; }
+    .dir65-persona { width: 220px; text-align: center; position: relative; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
     .dir65-img-container img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; }
     .dir65-nombre { font-weight: 800; color: #003366; font-size: 15px; line-height: 1.2; margin-bottom: 5px; }
     .dir65-cargo { font-size: 13px; color: #555; font-style: italic; }
     .dir65-tooltip { visibility: hidden; opacity: 0; width: 280px; background: #fff; color: #333; position: absolute; z-index: 9999; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-10px); padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-radius: 8px; transition: 0.3s; font-size: 12px; text-align: left; border: 1px solid #eee; pointer-events: none; line-height: 1.6; height: auto; }
-    .dir65-persona:hover { z-index: 100; }
     .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; transform: translateX(-50%) translateY(-20px); }
 
-    /* Buscador General */
     .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
     .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
     .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
@@ -364,10 +368,6 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .pj-table th { background: #ececec; color: #333; padding: 10px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; }
     .pj-table td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
 </style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 <div id="pje-grid-65"></div>
 
@@ -391,7 +391,11 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     document.getElementById('pje-grid-65').innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
 
     function rowNorma(nombre, url) {
-        return `<tr><td style="font-weight:bold;">${nombre}</td><td style="text-align:center;"><a href="${url}" target="_blank" class="pje-btn-view"><i class="fa-regular fa-eye"></i></a></td><td style="text-align:center;"><a href="${url}" target="_blank" class="pje-btn-down"><i class="fa-solid fa-download"></i></a></td></tr>`;
+        return `<tr>
+            <td style="font-weight:bold;">${nombre}</td>
+            <td style="text-align:center;"><a href="${url}" target="_blank" class="pje-btn-act"></a></td>
+            <td style="text-align:center;"><a href="${url}" target="_blank" class="pje-btn-desc"></a></td>
+        </tr>`;
     }
 
     function abrirModal65(t) {
@@ -401,8 +405,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         const header = document.getElementById('pje-header-container');
         const tabs = document.getElementById('pje-tabs-container');
 
-        let numFraccion = t.split('.')[0];
-        header.innerHTML = `<div class="pje-encabezado-info"><p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p><p><strong>Disposición normativa:</strong> Ley General de Transparencia y Acceso a la Información Pública</p><p><strong>Rubro:</strong> Artículo 65. Fracción ${numFraccion}</p><p><strong>Descripción:</strong> Información correspondiente a ${t.split('. ')[1]}</p></div>`;
+        header.innerHTML = `<div class="pje-encabezado-info"><p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p><p><strong>Disposición normativa:</strong> Ley General de Transparencia y Acceso a la Información Pública</p><p><strong>Rubro:</strong> Artículo 65. Fracción ${t.split('.')[0]}</p><p><strong>Descripción:</strong> Información correspondiente a ${t.split('. ')[1]}</p></div>`;
 
         if (t.includes("VI. Directorio")) {
             tabs.innerHTML = `<div class="dir65-tabs"><button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button><button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button></div>`;
@@ -411,20 +414,67 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         else if (t.includes("I. Marco normativo")) {
             tabs.innerHTML = '';
             body.innerHTML = `<div style="padding:25px;">
-                <table class="pje-table-norma"><thead><tr><th>Constituciones</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Constitución Política de los Estados Unidos Mexicanos", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}
-                    ${rowNorma("Constitución Política del Estado de Coahuila de Zaragoza", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Leyes Federales</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Ley de Amparo", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf")}
-                    ${rowNorma("Ley Federal de los Trabajadores al Servicio del Estado", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf")}
-                </tbody></table>
-                <table class="pje-table-norma"><thead><tr><th>Leyes Estatales</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Plan Estratégico Judicial 2021 - 2025", "https://storage.googleapis.com/pjecz-consultas/boletines-judiciales/2021/pjecz-plan-estrategico-2021-2025.pdf")}
-                    ${rowNorma("Ley de Acceso de las Mujeres a una Vida Libre de Violencia", "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa158.pdf")}
-                </tbody></table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Constituciones</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Constitución Política de los Estados Unidos Mexicanos", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}
+                        ${rowNorma("Constitución Política del Estado de Coahuila de Zaragoza", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Estándares</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Estándares De Actuación Para Jueces de Primera Instancia en Materia Penal", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Est%C3%A1ndares/Est%C3%A1ndares%20De%20Actuaci%C3%B3n%20Para%20Jueces%20de%20Primera%20Instancia%20en%20Materia%20Penal.pdf")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Normativa Internacional</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Convención Americana sobre Derechos Humanos Pacto San José de Costa Rica", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Normativa%20Internacional/Convenci%C3%B3n%20Am%C3%A9ricana%20sobre%20Derechos%20Humanos%20Pacto%20San%20Jos%C3%A9%20de%20Costa%20Rica")}
+                        ${rowNorma("Convención Interamericana contra la Discriminación a Personas con Discapacidad", "https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Art%C3%ADculo%2021/F02%20Marco%20Normativo/Normativa%20Internacional/Convenci%C3%B3n%20Interamericana%20para%20la%20Eliminaci%C3%B3n%20de%20todas%20las%20Formas%20de%20Discriminaci%C3%B3n%20contra%20las%20Personas%20con%20Discapacidad.pdf")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Leyes Federales</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Ley de Amparo", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf")}
+                        ${rowNorma("Ley Federal de los Trabajadores al Servicio del Estado", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Leyes Estatales</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Plan Estratégico Judicial 2021 - 2025", "https://storage.googleapis.com/pjecz-consultas/boletines-judiciales/2021/pjecz-plan-estrategico-2021-2025.pdf")}
+                        ${rowNorma("Ley de Acceso de las Mujeres a una Vida Libre de Violencia", "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa158.pdf")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Códigos</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Código Nacional de Procedimientos Penales", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf")}
+                        ${rowNorma("Código Civil de Coahuila", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Protocolos de Actuación</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Protocolo para juzgar con perspectiva de género", "https://www.scjn.gob.mx/derechos-humanos/protocolos-de-actuacion/para-juzgar-con-perspectiva-de-genero")}
+                        ${rowNorma("Protocolo de actuacion para personas con discapacidad", "https://drive.google.com/file/d/1Ks34xlT8PIaQihGoVYNjq-K_atb5p8Vu/view")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Cartas de Derechos</th><th style="width:80px; text-align:center;">Ver</th><th style="width:80px; text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowNorma("Carta de Derechos Civiles", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa285.pdf")}
+                        ${rowNorma("Carta de Derechos Políticos", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa286.pdf")}
+                        ${rowNorma("Carta de Derechos Económicos, Sociales y Culturales", "https://congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa287.pdf")}
+                    </tbody>
+                </table>
             </div>`;
-        } else { tabs.innerHTML = ''; body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización.</div>'; }
+        } else {
+            tabs.innerHTML = '';
+            body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización.</div>';
+        }
     }
 
     function persona(img, nom, car, niv, fing, tel, mail, dom) {
@@ -477,15 +527,20 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
                        persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luis%20Efren%20Rios%20Vega.png", "Luis Efrén Ríos Vega", "Magistrado del TSJ", "MAG01", "01/11/2019", "844-777-4498", "luis.rios@coahuila.gob.mx", "Blvd. Francisco Coss #945") + 
                        persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Blas%20Fores.png", "Blas José Flores González", "Jefe de Gabinete", "-", "-", "-", "-") + '</div><div class="dir65-grid-miembros">' + 
                        persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Luz%20Elena%20Morales.png", "Luz Elena Morales Nuñez", "Presidenta del Congreso", "-", "-", "-", "-") + '</div></div></details>';
-            htmlVis += '</div>'; body.innerHTML = htmlVis;
+            htmlVis += '</div>';
+            body.innerHTML = htmlVis;
         } else {
-            body.innerHTML = '<div class="pj-toolbar"><div class="pj-search-box"> 🔍 <input type="text" id="q-filtro" placeholder="Nombre o área..." onkeyup="filtrar()"></div><button class="pj-btn-tool" onclick="exportarExcel()"> 📊 Excel</button></div><div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE COMPLETO</th><th>CARGO</th><th>TELÉFONO</th><th>CORREO</th><th>DOMICILIO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>';
+            body.innerHTML = '<div class="pj-toolbar"><div class="pj-search-box"> 🔍 <input type="text" id="q-filtro" placeholder="Nombre o área..." onkeyup="filtrar()"></div></div><div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE COMPLETO</th><th>CARGO</th><th>FECHA INGRESO</th><th>TELÉFONO</th><th>CORREO</th><th>DOMICILIO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>';
             cargarCSV();
         }
     }
 
     function cargarCSV() { Papa.parse(CSV_URL, { download: true, header: true, complete: function(results) { datosFull = results.data; renderTabla(datosFull); } }); }
-    function renderTabla(data) { const tbody = document.getElementById('pje-tbody'); if(tbody) tbody.innerHTML = data.map(r => `<tr><td>${r.AREA || ''}</td><td>${r.NOMBRE || ''}</td><td>${r.CARGO || ''}</td><td>${r['Télefono'] || ''}</td><td>${r['CORREO ELECTRONICO OFICIAL'] || ''}</td><td>Coahuila, México</td></tr>`).join(''); }
+    function renderTabla(data) {
+        const tbody = document.getElementById('pje-tbody');
+        if(tbody) tbody.innerHTML = data.map(r => `<tr><td>${r.AREA || ''}</td><td><b>${r.NOMBRE || ''} ${r['PRIMER APELLIDO'] || ''}</b></td><td>${r.CARGO || ''}</td><td>${r['FECHA INGRESO PODER JUDICIAL'] || ''}</td><td>${r['Télefono'] || ''}</td><td><a href="mailto:${r['CORREO ELECTRONICO OFICIAL']}">${r['CORREO ELECTRONICO OFICIAL'] || ''}</a></td><td>${r['NOMBRE DE LA LOCALIDAD'] || 'Coahuila'}</td></tr>`).join('');
+    }
+    function filtrar() { const q = document.getElementById('q-filtro').value.toLowerCase(); const filtrados = datosFull.filter(r => { const full = `${r.NOMBRE} ${r['PRIMER APELLIDO']}`.toLowerCase(); return full.includes(q) || (r.AREA && r.AREA.toLowerCase().includes(q)); }); renderTabla(filtrados); }
     function cerrarModal65() { document.getElementById('pje-modal-65').style.display = 'none'; }
 </script>
 </div>
