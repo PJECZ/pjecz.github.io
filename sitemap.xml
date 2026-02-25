@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-02-25T11:17:35-00:00</lastmod>
+<lastmod>2026-02-25T12:06:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9372,6 +9372,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/cuarta-sesion-ordinaria/</loc>
 <lastmod>2026-02-25T13:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/tribunal-constitucional/2026/audiencia-incidental-del-expediente-ail-1-2024-2026-02-25/</loc>
+<lastmod>2026-02-25T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
