@@ -331,13 +331,25 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .pje-encabezado-info { background: #fdfdfd; padding: 20px 25px; border-bottom: 1px solid #eee; font-size: 13px; line-height: 1.6; color: #333; }
     .pje-encabezado-info strong { color: var(--pje-azul); min-width: 160px; display: inline-block; }
 
-    /* Tablas de Documentos e Iconos Emoji */
     .pje-table-norma { width: 100%; border-collapse: collapse; margin-bottom: 25px; font-size: 13px; border: 1px solid #eee; }
     .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; font-weight: bold; }
     .pje-table-norma td { padding: 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
     .pje-btn-act, .pje-btn-desc { font-size: 24px; text-decoration: none; cursor: pointer; display: inline-block; transition: 0.2s; }
 
-    /* Estilos Directorio */
+    /* ESTILOS ESTRUCTURA ORGÁNICA (FRACCIÓN II) */
+    .pje-organica-wrap { padding: 25px; color: #333; }
+    .pje-contenedor-principal { display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; margin: 20px 0; }
+    .pje-dropdown { position: relative; display: block; text-align: center; width: 150px; margin-bottom: 100px; }
+    .pje-dropdown details > summary { list-style: none; cursor: pointer; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; border: 2px solid #ccc; width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; margin: 0 auto; }
+    .pje-dropdown details > summary::-webkit-details-marker { display: none; }
+    .pje-dropdown details > summary:hover { border-color: #3f51b5; }
+    .pje-button-image { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; margin: 0; }
+    .pje-button-text-fixed { color: #333; font-size: 14px; font-weight: bold; text-align: center; text-transform: uppercase; margin-top: 5px; display: block; }
+    .pje-dropdown-content-details { background-color: #ffffff; border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: absolute; z-index: 100; min-width: 300px; max-height: 400px; overflow-y: auto; left: 50%; transform: translateX(-50%); text-align: left; }
+    .pje-dropdown-content-details a { color: #333; padding: 5px 0; text-decoration: none; display: block; border-bottom: 1px dotted #eee; font-size: 12px; }
+    .pje-dropdown-content-details a:hover { color: #3f51b5; }
+
+    /* ESTILOS DIRECTORIO (FRACCIÓN VI) */
     .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
     .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
     .tab-btn.active { background: var(--pje-gris); }
@@ -354,12 +366,10 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .dir65-tooltip { visibility: hidden; opacity: 0; width: 280px; background: #fff; color: #333; position: absolute; z-index: 9999; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-10px); padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-radius: 8px; transition: 0.3s; font-size: 12px; text-align: left; border: 1px solid #eee; pointer-events: none; line-height: 1.6; }
     .dir65-persona:hover .dir65-tooltip { visibility: visible; opacity: 1; transform: translateX(-50%) translateY(-20px); }
 
-    /* Estilos Buscador General con Scroll Horizontal */
     .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
     .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
     .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
     .pj-btn-tool { background: #fff; border: 1px solid #ccc; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
-
     .pj-table-wrap { overflow-x: auto; width: 100%; flex-grow: 1; background: #fff; }
     .pj-table { width: 100%; border-collapse: collapse; font-size: 11px; min-width: 1300px; }
     .pj-table th { background: #ececec; color: #333; padding: 12px 10px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; z-index: 10; }
@@ -403,7 +413,195 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 
         header.innerHTML = `<div class="pje-encabezado-info"><p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p><p><strong>Disposición normativa:</strong> Ley General de Transparencia y Acceso a la Información Pública</p><p><strong>Rubro:</strong> Artículo 65. Fracción ${t.split('.')[0]}</p><p><strong>Descripción:</strong> Información correspondiente a ${t.split('. ')[1]}</p></div>`;
 
-        if (t.includes("VI. Directorio")) {
+        if (t.includes("II. Estructura orgánica")) {
+            tabs.innerHTML = '';
+            body.innerHTML = `
+            <div class="pje-organica-wrap">
+                <p style="text-align: justify;">
+                    La función jurisdiccional se ejerce por magistrados y jueces independientes, imparciales, responsables y sometidos únicamente al imperio de la ley, no existiendo entre ellos relación jerárquica de supra o de subordinación.
+                    <br><br>
+                    El Poder Judicial esta integrado: el Tribunal Superior de Justicia, Tribunales Distritales, Juzgados de Primera Instancia; Tribunal de Disciplina Judicial y, el Órgano de Administración Judicial.
+                    <br><br>
+                    El Tribunal Superior de Justicia se integra por trece magistraturas, en el ámbito de su competencia, es el máximo órgano jurisdiccional del Poder Judicial con residencia en Saltillo, funciona en Pleno o en Salas. Las facultades del Pleno del Tribunal Superior de Justicia son en materia normativa, jurisdiccional y gobierno interno.
+                    <br><br>
+                    Al Tribunal de Disciplina Judicial corresponde la vigilancia, disciplina, evaluación y contraloría de todo el personal de los Juzgados de Primera Instancia, cualquiera que sea su denominación, así como de los demás órganos y dependencias del Poder Judicial, con excepción del Tribunal Superior de Justicia.
+                    <br><br>
+                    Al Órgano de Administración Judicial será responsable de la administración, de la carrera judicial, del servicio profesional, así como de los demás servicios no jurisdiccionales del Poder Judicial.
+                </p>
+                <p style="text-align: center;"><strong>En atención al proceso electoral judicial 2025, el Poder Judicial del Estado de Coahuila de Zaragoza se encuentra en fase de reestructuración, por lo que, conforme se genere la información por las áreas competentes, ésta se publicara en el apartado correspondiente.</strong></p>
+                <p>De esta manera, el Poder Judicial del Estado de Coahuila cuenta con la siguiente estructura:</p>
+
+                <div class="pje-contenedor-principal">
+                    <div class="pje-dropdown">
+                        <details>
+                            <summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Miguel%20Felipe%20Mery%20Ayup.png" class="pje-button-image"></summary>
+                            <div class="pje-dropdown-content-details">
+                                <a href="https://drive.google.com/file/d/1c3Bj9pIHguwkthEC0AMXdK2D2pjapB8a/preview" target="_blank">Pleno</a>
+                                <a href="https://drive.google.com/file/d/1yGslR0RvaNGhZqv59brHPBt02TfjIYx_/preview" target="_blank">Presidencia</a>
+                                <a href="https://drive.google.com/file/d/1LqdsDfyLsPOiTllM1rvuhJ4ZSwzUMsyh/preview" target="_blank">Sala Familiar</a>
+                                <a href="https://drive.google.com/file/d/1Ev_Sp8DmbfHGwwDNIHhaOoXvnNi8s03u/preview" target="_blank">Sala Penal</a>
+                                <a href="https://drive.google.com/file/d/REEMPLAZAR_CON_TU_ID_AQUÍ/preview" target="_blank">Sala Regional Torreón</a>
+                                <a href="https://drive.google.com/file/d/1T3zI4n2_c_29OjlOrxKBVXlKNu5D43te/preview" target="_blank">Primer Tribunal Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1vqIgTTTRBS6Xf03rJj4-CVY20u15YoPo/preview" target="_blank">Segundo Tribunal Torreón</a>
+                                <a href="https://drive.google.com/file/d/1eGzko5DK6-UTUr9mRAXa08_fHZO0--pg/preview" target="_blank">Tercer Tribunal Monclova</a>
+                                <a href="https://drive.google.com/file/d/1ddbR8g0xlWb_YR5HxrwHs0zV1_VGuV2Z/preview" target="_blank">Cuarto Tribunal Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1a0Tp8UaVMB68qqKrrAy3vj_K-ZHJzXun/preview" target="_blank">Actuarios Itinerantes Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1b6ENQKINblfaZkx4SncPvSfVMW4J4N_8/preview" target="_blank">Central de Actuarios Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1bWSfaetTdRk4QLmIqGJkde98yR6Tyaap/preview" target="_blank">Central de Actuarios Torreón</a>
+                                <a href="https://drive.google.com/file/d/1mPSPBhicMrWZwQlqkm3hRVM-Pf499ove/preview" target="_blank">Actuarios Hipotecarios Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1QdaG2D1gdTs5FZbuLsegVvnGlshsMZ3P/preview" target="_blank">Juzgado Primero Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1rw3wSmxWbmnIMWyKNBBVOXs4VcsNKSvD/preview" target="_blank">Juzgado Segundo Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/15aLTsZ4_cNVWYvYw2GpwYdF9V-xsqXf3/preview" target="_blank">Juzgado Tercero Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/13KJR2CQdlEn1QHgyyPumuHg-4GFDbX73/preview" target="_blank">Juzgado Cuarto Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1pAIbrd42q7NLvWG8GOx09Y5_fsfY8m9Y/preview" target="_blank">Juzgado Quinto Civil con Especializacion Hipotecaria Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1D2AxCS9pD9D2SBMSUotL67HTZZtudA7F/preview" target="_blank">Juzgado Auxiliar Civil con Especializacion Ambiental</a>
+                                <a href="https://drive.google.com/file/d/1CK6BSEurHLGfdc87u04ZmjiYIaBeN9bE/preview" target="_blank">Juzgado Auxiliar Civil del Estado de Coahuila</a>
+                                <a href="https://drive.google.com/file/d/1WdOP-4NyClDNkVE3wvIQEZaqv7Zm1neT/preview" target="_blank">Juzgado Primero Mercantil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1Ah19dgiVLGG8uhCapDGsUkLraNvU_4IF/preview" target="_blank">Juzgado Segundo Mercantil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/18ezw3gbJsIFJnw19UQupLm0K_87-7FG9/preview" target="_blank">Juzgado Tercero Mercantil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1ph11E8mziH4wMelwegJP3HCRISvcJTVQ/preview" target="_blank">Juzgado Primero Familiar Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1B5LmzV9f-VZfhfNmpNeAqeg6DmC83Ekw/preview" target="_blank">Juzgado Segundo Familiar Saltillo</a>
+                                <a href="https://drive.google.com/file/d/17yBrL4DeLxZeK9GdySc03AFQWoCf2R-2/preview" target="_blank">Juzgado Tercero Familiar Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1OwogqvjmcVIMcfX0UlO9n-WY6F5A3D5X/preview" target="_blank">Juzgado Cuarto Familiar Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1cvYJstF9heOfKRxPcr-5Nihuk2vYXzrT/preview" target="_blank">Juzgado Quinto Familiar Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1RFX0BvvtDf2X3bYtJ20vERzNiWg0OziI/preview" target="_blank">Juzgado Primero Letrado Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1qgGT_Y7psEIEi6LorhwH8oZ7KqYa916C/preview" target="_blank">Juzgado Segundo Letrado Civil Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1jR2IdP0ifXgo37NQWtIGnSac7bkQ3t6F/preview" target="_blank">Juzgado Primero Penal Saltillo</a>
+                                <a href="https://drive.google.com/file/d/13EQ5sXING8hKHhGn9krbFISRQznjPLQw/preview" target="_blank">Juzgado Penal Del Sistema Acusatorio Y Oral Saltillo</a>
+                                <a href="https://drive.google.com/file/d/196fJzNrhcys9CEDzUoHtWYfd_NDcmDuHpreview" target="_blank">Juzgado Primero Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1CK6BSEurHLGfdc87u04ZmjiYIaBeN9bE/preview" target="_blank">Juzgado Segundo Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/10SzZvKs45XAFmlZUjC43RVN4KAU9FFDB/preview" target="_blank">Juzgado Tercero Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1MrN6siQOtXNWe1LvESP-YEIt-ot2Jszb/preview" target="_blank">Juzgado Cuarto Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1dxWe75Cy4XkTJgxgS8-6fqwd2eKe5StN/preview" target="_blank">Juzgado Quinto Civil con Especialización Hipotecaria Torreón</a>
+                                <a href="https://drive.google.com/file/d/1bd41sjkn6_qKbB2WqEi_Qx9UIWhb42hm/preview" target="_blank">Juzgado Sexto Civil con Especialización Hipotecaria Torreón</a>
+                                <a href="https://drive.google.com/file/d/1T_OT4ty_cml3gBUZe7Drp6KuP1wbR-Gc/preview" target="_blank">Juzgado Primero Mercantil Torreón</a>
+                                <a href="https://drive.google.com/file/d/19gKGgaV8-CXU9Klg_XFD59YP4ntY0Ujx/preview" target="_blank">Juzgado Segundo Mercantil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1EXwb_t8OhhgXNZa4oe7gomT5LzwZzYSZ/preview" target="_blank">Juzgado Tercero Mercantil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1mUC_BQCBEoj6jLGT7xrPyCwtltx00amf/preview" target="_blank">Juzgado Primero Familiar Torreón</a>
+                                <a href="https://drive.google.com/file/d/13UKcr6KAE1yYsL0O0iC63ibu3b210sHI/preview" target="_blank">Juzgado Segundo Familiar Torreón</a>
+                                <a href="https://drive.google.com/file/d/1ptjn7xB_GJxj2AYhrCNkJ6Wq7ve-vJ6Q/preview" target="_blank">Juzgado Tercero Familiar Torreón</a>
+                                <a href="https://drive.google.com/file/d/1kpXmww0AwlGz8TvGuiya6WAQl1eC87Xr/preview" target="_blank">Juzgado Cuarto Familiar Torreón</a>
+                                <a href="https://drive.google.com/file/d/19rJauD7Zc4sUrSnlOccXeYKfaZqWqSmi/preview" target="_blank">Juzgado Quinto Familiar Torreón</a>
+                                <a href="https://drive.google.com/file/d/1Hn8D58OjsEXaeJgtyP5Bt7B2wwTEp-5Q/preview" target="_blank">Juzgado Auxiliar Familiar del Estado de Coahuila</a>
+                                <a href="https://drive.google.com/file/d/1NOoBunZETdYfmiV3WkdsgPG2idqFxEx_/preview" target="_blank">Juzgado Segundo Letrado Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1Dvh8hwI5Z7RWLvJONPkzcDZf2FJJhS79/preview" target="_blank">Juzgado Tercero Letrado Civil Torreón</a>
+                                <a href="https://drive.google.com/file/d/1LBgk-dXkiPzcqdblEvvWrQr_moOqV6FQ/preview" target="_blank">Juzgado Penal Del Sistema Acusatorio Y Oral Torreón</a>
+                                <a href="https://drive.google.com/file/d/1prSsUcu9Mh_dNy8-9Ccrx1SP85yCs_Gy/preview" target="_blank">Juzgado Civil Y Familiar San Pedro</a>
+                                <a href="https://drive.google.com/file/d/16A-tGCm1GPn2guQcD7yRrj2xfB-lJ9Z2/preview" target="_blank">Juzgado Familiar San Pedro</a>
+                                <a href="https://drive.google.com/file/d/1fn6mi7GnPO-6GMDkw3yyFQH8WbGvnvxG/preview" target="_blank">Juzgado Primero Civil Monclova</a>
+                                <a href="https://drive.google.com/file/d/1xFqlS17gX00spJiUYFUGE_B7bgUICnJ/preview" target="_blank">Juzgado Segundo Civil Monclova</a>
+                                <a href="https://drive.google.com/file/d/1kYq4rusLIul9VOMuIIqNxiJc4Uqhp2L5/preview" target="_blank">Juzgado Tercero Civil Monclova</a>
+                                <a href="https://drive.google.com/file/d/1MiX0b4SlEVWaH4A8OzsjxnPLWUncvF30/preview" target="_blank">Juzgado Primero Familiar Monclova</a>
+                                <a href="https://drive.google.com/file/d/1a-UqkIj4zhnMkEexk0k95y4E2EtbhOHt/preview" target="_blank">Juzgado Segundo Familiar Monclova</a>
+                                <a href="https://drive.google.com/file/d/1wKJpCem3LpxHC42C2FM5UhzqHXjXE0x2/preview" target="_blank">Juzgado Tercero Familiar Monclova</a>
+                                <a href="https://drive.google.com/file/d/1cMDKHyCHXn_FD_7MN-rF-fS4WCIlIFWt/preview" target="_blank">Juzgado Cuarto Familiar Monclova</a>
+                                <a href="https://drive.google.com/file/d/1CxPk4QIZ6oB0t9C8BlOWSUxrdtvppV16/preview" target="_blank">Juzgado Penal Del Sistema Acusatorio Y Oral Frontera</a>
+                                <a href="https://drive.google.com/file/d/1zmD_QGpha8T58MPImepQXsM7drgKe0KZpreview" target="_blank">Juzgado Civil Sabinas</a>
+                                <a href="https://drive.google.com/file/d/1QxH5FOZfttDyiySt0MehUcq7p45PrbGR/preview" target="_blank">Juzgado Familiar Sabinas</a>
+                                <a href="https://drive.google.com/file/d/1d0xyfkRlR9Z9m9lDOKnPFRRJfol4_bAG/preview" target="_blank">Juzgado Penal Del Sistema Acusatorio Y Oral Sabinas</a>
+                                <a href="https://drive.google.com/file/d/1TzZ_E7dqxJ1DmDPTYwYvTOEQp7kgBGN8/preview" target="_blank">Juzgado Primero Civil Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/R11Cc6caZ-GHkXZBQ5MYliDjarq1uYvQaI/preview" target="_blank">Juzgado Segundo Civil Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/15xYjuCYJC_mPuJ8p_8o7sIlQ6RNui5jy/preview" target="_blank">Juzgado Primero Familiar Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1JaPJ1s1AbRIfbBcYrD5AbVfCbFf0zCt_/preview" target="_blank">Juzgado Segundo Familiar Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1_YZJUXNXoOP5wYRmK01NBDoi-w-_rRZy/preview" target="_blank">Juzgado Penal Del Sistema Acusatorio Y Oral Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1NomIfoBu0FQOFVuSdok5I8iaaOHoWnUk/preview" target="_blank">Juzgado Civil Acuña</a>
+                                <a href="https://drive.google.com/file/d/11f8FtbmgCatUZ7BobikP-TTDVRTcEXBm/preview" target="_blank">Juzgado Familiar Acuña</a>
+                                <a href="https://drive.google.com/file/d/1NFQYYVm1ICQO265IfEO-nozymZoCuPRK/preview" target="_blank">Tribunal Laboral del Distrito Judicial de Saltillo</a>
+                                <a href="https://drive.google.com/file/d/19dbXarD5geDtAnEc6ugefI15xknqsRN0/preview" target="_blank">Tribunal Laboral del Distrito Judicial de Acuña</a>
+                                <a href="https://drive.google.com/file/d/1wzuFsbL2kGMUu1FneWhyWCS9nNKIwz-Y/preview" target="_blank">Tribunal Laboral del Distrito Judicial de Monclova</a>
+                                <a href="https://drive.google.com/file/d/12Ad6ONOFHODw61dnw3LOOCw5wZ-ImRhX/preview" target="_blank">Tribunal Laboral del Distrito Judicial de Río Grande</a>
+                                <a href="https://drive.google.com/file/d/1qB2flpl_HoDXSZeonQSGdo3yTdxgo8BG/preview" target="_blank">Tribunal Laboral del Distrito Judicial de Torreón</a>
+                                <a href="https://drive.google.com/file/d/1mPSPBhicMrWZwQlqkm3hRVM-Pf499ove/preview" target="_blank">Central de Actuarios en Materia Hipotecaria Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1_9KLTKBLhqR_ZUFznYKaxvybR5gwa-Yv/preview" target="_blank">Central de Actuarios Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1bWSfaetTdRk4QLmIqGJkde98yR6Tyaap/preview" target="_blank">Central de Actuarios Torreón</a>
+                            </div>
+                        </details>
+                        <div class="pje-button-text-fixed">ESTRUCTURA JURISDICCIONAL</div>
+                    </div>
+
+                    <div class="pje-dropdown">
+                        <details>
+                            <summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png" class="pje-button-image"></summary>
+                            <div class="pje-dropdown-content-details">
+                                <a href="https://drive.google.com/file/d/1w-ruZQInWxpCWn-9t196wb8b51dEV4w2/view?usp=sharing" target="_blank">Tribunal de Disciplina Judicial</a>
+                                <a href="https://drive.google.com/file/d/1BCSIUnLTSlxuxgzcLv3uei2KU_7NA4ty/preview" target="_blank">Instituto de Especialización Judicial</a>
+                                <a href="https://drive.google.com/file/d/1uDMIcgUgX9SfTwLQEAnwwNOppVwP8lQA/view?usp=sharing" target="_blank">Centro de Medios Alternos de Solución de Controversias</a>
+                                <a href="https://drive.google.com/file/d/10-PRbwqgauM9ywoY759z_HPWCAO2U9LX/preview" target="_blank">CEMASC Delegación Acuña</a>
+                                <a href="https://drive.google.com/file/d/1mVa1A2oqtK-B6s6FSbQMe8-iSfXOfCEI/preview" target="_blank">CEMASC Delegación Monclova</a>
+                                <a href="https://drive.google.com/file/d/1y9LOoQFpwumiZZEmrwFXp3bL8PIRrorD/preview" target="_blank">CEMASC Delegación Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1-aZe8Uvj79vQ11WH6ICRSAVqz46ZgtfL/preview" target="_blank">CEMASC Delegación Sabinas</a>
+                                <a href="https://drive.google.com/file/d/11JDEl4GWwM4JECT6WjBt9lmFLFISCsAN" target="_blank">CEMASC Delegación San Pedro</a>
+                                <a href="https://drive.google.com/file/d/1baSdIyvyr2YdsaZ9z7hQJpFL-t7J8B58/preview" target="_blank">CEMASC Delegación Torreón</a>
+                                <a href="https://drive.google.com/file/d/1HUc2Q_GyiFzvzZQBwK61ouEg581KpR5-/preview" target="_blank">Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1LVQhX9Nm8iXdTyLuI4-lZEzAFOFmypYq/preview" target="_blank"> Delegación Acuña del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1aNJg6yaTWwRJWl-vT0x4-HeekcrMpg93/preview" target="_blank">Delegación Monclova del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1zcdVuTlItHzS-G4ZJFVUgk49XL--N_y1/preview" target="_blank">Delegación Parras del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1auK0FS9wxYNoXJ85kEF-kfW1fL4yOs5Z/preview" target="_blank">Delegación Piedras Negras del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1pjR83-T0f-jO9fh_yS9ASG5N7rx06dQs/preview" target="_blank">Delegación Sabinas del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1ZtrcgaF2ihf9Q2sh8wt9zmLLSnotf3vw/preview" target="_blank">Delegación San Pedro del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1ksK_seQC-hQ9khk_Ge_19VPV_O3GjFyj/preview" target="_blank">Delegación Torreón del Instituto Estatal de Defensoría Pública</a>
+                                <a href="https://drive.google.com/file/d/1As_EKAG_-IuccOfGnTaVsrPojsXo25fs/preview" target="_blank">Nuevo Sistema Defensoria Sabinas</a>
+                                <a href="https://drive.google.com/file/d/1dvO_HWoiYBfyOUCT-lk261gfH9dLiJB8/preview" target="_blank">Nuevo Sistema Defensoria Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1O_l8OS9G5xX4ngZWo6OhOVbRiTUarPNQ/preview" target="_blank">Nuevo Sistema Defensoria Torreon</a>
+                                <a href="https://drive.google.com/file/d/1DAqz8BLMYkUaZDjSHLtdoWFfqq8yGnZ1/preview" target="_blank">Nuevo Sistema Defensoría Acuña</a>
+                                <a href="https://drive.google.com/file/d/1YOKLtzmlkShsrWysI-lZSth3P_xtlM0m/preview" target="_blank">Nuevo Sistema Defensoría Monclova</a>
+                                <a href="https://drive.google.com/file/d/1ubrZDu-dp0J3DzJBzD-yTrQ4hvfUQwHc/preview" target="_blank">Nuevo Sistema Defensoría Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/12FzKXQP-_iWnpcvmqAE-QdrNcc9o066X/preview" target="_blank">Centro de Evaluación Psicosocial</a>
+                                <a href="https://drive.google.com/file/d/12zT6ZnwNaWmPvV4lWmxyNX6SzQkmtWyX/preview" target="_blank">Centro de Evaluación Psicosocial Unidad Acuña</a>
+                                <a href="https://drive.google.com/file/d/1SD2sQoF0nOqRutNzdlApOwWj_w5XWj4s/preview" target="_blank">Centro de Evaluación Psicosocial Unidad Laguna</a>
+                                <a href="https://drive.google.com/file/d/1U82T22wyXck7s5Lpoark1RKKDoCWVJk4/preview" target="_blank">Centro de Evaluación Psicosocial Unidad Región Carbonífera</a>
+                                <a href="https://drive.google.com/file/d/16Q2enK-OGvfdK2ssz2-c268x0MOfVELI/preview" target="_blank">Centro de Evaluación Psicosocial Unidad Región Centro</a>
+                                <a href="https://drive.google.com/file/d/1XdXH8vQE5Dyqe230qQ446dW9Ut4G_LVb/preview" target="_blank">Centro de Evaluación Psicosocial Unidad San Pedro</a>
+                                <a href="https://drive.google.com/file/d/1Wi45-uApLTuuXXDEYWQYIkFsoeW_2SFx/preview" target="_blank">Centro de Evaluación Psicosocial Unidad Región Norte</a>
+                                <a href="https://drive.google.com/file/d/1Dx8GMYDFd4CxRVUmlKsHHJAhWpD2D2HR/preview" target="_blank">Oficialías de Partes - Región Carbonífera</a>
+                                <a href="https://drive.google.com/file/d/1Xf6sjdT7jpwUMGKG5nyBMXb4ox34IpZa/preview" target="_blank">Oficialías de Partes - Saltillo</a>
+                                <a href="https://drive.google.com/file/d/1LdY-fEgK8-unaW44fZBsf_5CUC2Q-COy/preview" target="_blank">Oficialías de Partes - Monclova</a>
+                                <a href="https://drive.google.com/file/d/1o0btwIeHRHX2_FBNnsU60fd8sXa2k9xD/preview" target="_blank">Oficialías de Partes - Piedras Negras</a>
+                                <a href="https://drive.google.com/file/d/1VoDrWTlLezCYoV1JSv9AEifjeVe0FwiO/preview" target="_blank">Oficialías de Partes - Torreón</a>
+                                <a href="https://drive.google.com/file/d/1CdUmzEGINKwFsDs1UqWmC7MxUntMfsFp/preview" target="_blank">Visitaduría Judicial General</a>
+                            </div>
+                        </details>
+                        <div class="pje-button-text-fixed">ESTRUCTURA NO JURISDICCIONAL</div>
+                    </div>
+
+                    <div class="pje-dropdown">
+                        <details>
+                            <summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jose%20Ignacio%20Maynez.png" class="pje-button-image"></summary>
+                            <div class="pje-dropdown-content-details">
+                                <a href="https://drive.google.com/file/d/16KoOsRDbqQlgb12VKZj1mFhSQcMmCYkl/preview" target="_blank">Archivo General</a>
+                                <a href="https://drive.google.com/file/d/1Sv8aaCguS7yGupOeI5lDQUvsNlyLmkqL/preview" target="_blank">Archivo Regional de Acuña</a>
+                                <a href="https://drive.google.com/file/d/18Bq-P0glrfQJax6YmiO4sDnN7betLlRe/preview" target="_blank">Archivo Regional de Monclova</a>
+                                <a href="https://drive.google.com/file/d/19OqE2tVSOe_NI3yOIfb_p3aw_eQB-6sb/preview" target="_blank">Archivo Regional de Río Grande</a>
+                                <a href="https://drive.google.com/file/d/1sNsXFDicyjllzziaAEZcfK4Ks4JYfqft/preview" target="_blank">Archivo Regional de Torreón</a>
+                                <a href="https://drive.google.com/file/d/1RvnbrCCIJgoXGKKAt91j3k_GCCNENfLE/preview" target="_blank">Archivo Único Carbonífera</a>
+                                <a href="https://drive.google.com/file/d/1olnM_gmoXx4vV7jrGPuj5Bo-rVQO6D_6/preview" target="_blank">Secretaría Técnica y de Planeación</a>
+                                <a href="https://drive.google.com/file/d/130AfQSTPIduF6gKshaW6haJWkMPd_2Qg/preview" target="_blank"> Consejo de la Judicatura</a>
+                                <a href="https://drive.google.com/file/d/1K3nf_aYUQsCY8dFLA7D4hbsYasCojmnZ/preview" target="_blank">Oficialía Mayor</a>
+                                <a href="https://drive.google.com/file/d/1F8Gvv4Cx3QhWtKK6HdW79tkI_WaKd44X/preview" target="_blank">Unidad de Apoyo Juridiccional</a>
+                                <a href="https://drive.google.com/file/d/1ArETnYWOdmjnWXTjK7JCDRZQBnShY_bE/preview" target="_blank">Dirección de Informática</a>
+                                <a href="https://drive.google.com/file/d/1rcAD3HlBhMnWP3rsBImS7lAtxjr6SndW/preview" target="_blank">Dirección de Infraestructura Física</a>
+                                <a href="https://drive.google.com/file/d/1o10HcoLqYlNplIc6xVagnjsOcMyZOZzV/preview" target="_blank">Dirección de Pagos</a>
+                                <a href="https://drive.google.com/file/d/12Kf6zC5In1cbXwgown0yhtdbR3fQOv6L/preview" target="_blank">Dirección de Recursos Financieros</a>
+                                <a href="https://drive.google.com/file/d/1lUez0LoNbHTb_zAqAaFG_1IQy7XonsE7/preview" target="_blank">Dirección de Recursos Humanos</a>
+                                <a href="https://drive.google.com/file/d/1YAJL4ySWlmyKM884DYjTpChdpKiLwn-p/preview" target="_blank">Dirección de Recursos Materiales</a>
+                                <a href="https://drive.google.com/file/d/1ArETnYWOdmjnWXTjK7JCDRZQBnShY_bE/preview" target="_blank">Consejo de la Judicatura</a>
+                                <a href="https://drive.google.com/file/d/1Bz6Tn8brG0OZbbNgQZxzuCcT8rVTkm8Y/preview" target="_blank">Centro de Control de Vigilancia</a>
+                                <a href="https://drive.google.com/file/d/1F0N3p1vbTE5PvxermWRcCue6MR5LqK1L/preview" target="_blank">C. J. - Unidad Jurídica</a>
+                                <a href="https://drive.google.com/file/d/1zQzoT9EHAw3UKEGj0SlbPl_YXD2N96Pq/preview" target="_blank">C. J. - Unidad de Nóminas</a>
+                                <a href="https://drive.google.com/file/d/1YObF79Hnmk_jzdXIbUU3440yWAEHMssa/preview" target="_blank">Auditoría Interna</a>
+                                <a href="https://drive.google.com/file/d/1SiWSc0EK1MtaTbhIqJELI-cE-5V8mHuz/preview" target="_blank">Centro de Justicia de Saltillo</a>
+                                <a href="https://drive.google.com/file/d/15jG-Rs1IiepPP8xVzxJmcMZ2duP1ar-q/preview" target="_blank">Unidad Administrativa Distrito Judicial De Acuña</a>
+                                <a href="https://drive.google.com/file/d/1nYrqOjy4ZJXXlNX0VL8FibFeApjS09zv/preview" target="_blank">Unidad Administrativa Torreón - San Pedro</a>
+                                <a href="https://drive.google.com/file/d/1jozWC0V0EFAeJM5rC5FeiRrpMuo2BIok/preview" target="_blank">Unidad Administrativa Región Carbonífera</a>
+                                <a href="https://drive.google.com/file/d/1wEmjbmScGpBxivAmmahmW7ZNoVJrMbcd/preview" target="_blank">Unidad Administrativa Distrito Judicial de Monclova</a>
+                                <a href="https://drive.google.com/file/d/14L6tJYaG7Kq-IYApVR03g16fmbFMMfs4/preview" target="_blank">Unidad Administrativa Distrito Judicial de Río Grande</a>
+                            </div>
+                        </details>
+                        <div class="pje-button-text-fixed">ESTRUCTURA ADMINISTRATIVA</div>
+                    </div>
+                </div>
+            </div>`;
+        } else if (t.includes("VI. Directorio")) {
             tabs.innerHTML = `<div class="dir65-tabs"><button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button><button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button></div>`;
             setModo('VISUAL');
         } else if (t.includes("I. Marco normativo")) {
