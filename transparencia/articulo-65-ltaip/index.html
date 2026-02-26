@@ -332,25 +332,14 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     .pje-encabezado-info strong { color: var(--pje-azul); min-width: 140px; display: inline-block; }
     .pje-desc-text { font-size: 11px; color: #666; text-align: justify; margin-top: 5px; display: block; }
 
-    /* Estilos Iconos Normatividad */
+    /* Estilos de Tabla e Iconos */
     .pje-table-norma { width: 100%; border-collapse: collapse; margin-bottom: 25px; font-size: 13px; border: 1px solid #eee; }
     .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; font-weight: bold; }
-    .pje-table-norma td { padding: 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
-    .pje-btn-act, .pje-btn-desc { font-size: 24px; text-decoration: none; cursor: pointer; display: inline-block; transition: 0.2s; }
+    .pje-table-norma td { padding: 10px 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
+    .pje-btn-act, .pje-btn-desc { font-size: 22px; text-decoration: none; cursor: pointer; display: inline-block; transition: 0.2s; }
+    .pje-btn-act:hover, .pje-btn-desc:hover { transform: scale(1.2); }
 
-    /* Estilos Estructura Orgánica (Fracción II) */
-    .pje-organica-wrap { padding: 30px; color: #333; overflow-y: visible; }
-    .pje-contenedor-principal { display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; margin: 20px 0; }
-    .pje-dropdown { position: relative; display: block; text-align: center; width: 150px; margin-bottom: 120px; }
-    .pje-dropdown details > summary { list-style: none; cursor: pointer; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; border: 2px solid #ccc; width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; margin: 0 auto; }
-    .pje-dropdown details > summary::-webkit-details-marker { display: none; }
-    .pje-button-image { width: 100%; height: 100%; object-fit: cover; }
-    .pje-button-text-fixed { color: #333; font-size: 13px; font-weight: bold; text-align: center; text-transform: uppercase; margin-top: 10px; display: block; }
-    .pje-dropdown-content-details { background-color: #ffffff; border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); position: absolute; z-index: 1000; min-width: 350px; max-height: 350px; overflow-y: auto; left: 50%; transform: translateX(-50%); text-align: left; }
-    .pje-dropdown-content-details a { color: #333; padding: 8px 5px; text-decoration: none; display: block; border-bottom: 1px dotted #eee; font-size: 12px; }
-    .pje-dropdown-content-details a:hover { background-color: #f8f9fa; color: var(--pje-azul); }
-
-    /* Estilos Directorio (Fracción VI) */
+    /* Estilos Directorio */
     .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
     .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
     .tab-btn.active { background: var(--pje-gris); }
@@ -401,7 +390,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 
     document.getElementById('pje-grid-65').innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
 
-    function rowNorma(n, u) { 
+    function rowDoc(n, u) { 
         return `<tr><td style="font-weight:bold;">${n}</td><td style="text-align:center;"><a href="${u}" target="_blank" class="pje-btn-act">👁️</a></td><td style="text-align:center;"><a href="${u}" target="_blank" class="pje-btn-desc">📥</a></td></tr>`; 
     }
 
@@ -414,7 +403,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
 
         let descText = t.split('. ')[1];
         if(t.includes("II. Estructura orgánica")) {
-            descText = `<span class="pje-desc-text">La función jurisdiccional se ejerce por magistrados y jueces independientes, imparciales, responsables y sometidos únicamente al imperio de la ley... El Poder Judicial esta integrado: el Tribunal Superior de Justicia, Tribunales Distritales, Juzgados de Primera Instancia; Tribunal de Disciplina Judicial y, el Órgano de Administración Judicial... En atención al proceso electoral judicial 2025, el Poder Judicial del Estado de Coahuila de Zaragoza se encuentra en fase de reestructuración.</span>`;
+            descText = `<span class="pje-desc-text">La función jurisdiccional se ejerce por magistrados y jueces independientes, imparciales, responsables y sometidos únicamente al imperio de la ley, no existiendo entre ellos relación jerárquica de supra o de subordinación. El Poder Judicial esta integrado: el Tribunal Superior de Justicia, Tribunales Distritales, Juzgados de Primera Instancia; Tribunal de Disciplina Judicial y, el Órgano de Administración Judicial. El Tribunal Superior de Justicia se integra por trece magistraturas, en el ámbito de su competencia, es el máximo órgano jurisdiccional del Poder Judicial con residencia en Saltillo, funciona en Pleno o en Salas. Las facultades del Pleno del Tribunal Superior de Justicia son en materia normativa, jurisdiccional y gobierno interno. Al Tribunal de Disciplina Judicial corresponde la vigilancia, disciplina, evaluación y contraloría de todo el personal de los Juzgados de Primera Instancia, cualquiera que sea su denominación, así como de los demás órganos y dependencias del Poder Judicial, con excepción del Tribunal Superior de Justicia. Al Órgano de Administración Judicial será responsable de la administración, de la carrera judicial, del servicio profesional, así como de los demás servicios no jurisdiccionales del Poder Judicial. En atención al proceso electoral judicial 2025, el Poder Judicial del Estado de Coahuila de Zaragoza se encuentra en fase de reestructuración, por lo que, conforme se genere la información por las áreas competentes, ésta se publicara en el apartado correspondiente.</span>`;
         }
 
         header.innerHTML = `<div class="pje-encabezado-info"><p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila de Zaragoza</p><p><strong>Disposición normativa:</strong> Ley General de Transparencia y Acceso a la Información Pública</p><p><strong>Rubro:</strong> Artículo 65. Fracción ${t.split('.')[0]}</p><p><strong>Descripción:</strong> ${descText}</p></div>`;
@@ -422,41 +411,45 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         if (t.includes("II. Estructura orgánica")) {
             tabs.innerHTML = '';
             body.innerHTML = `
-            <div class="pje-organica-wrap">
-                <div class="pje-contenedor-principal">
-                    <div class="pje-dropdown">
-                        <details><summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Miguel%20Felipe%20Mery%20Ayup.png" class="pje-button-image"></summary>
-                        <div class="pje-dropdown-content-details">
-                            <a href="https://drive.google.com/file/d/1c3Bj9pIHguwkthEC0AMXdK2D2pjapB8a/preview" target="_blank">Pleno</a>
-                            <a href="https://drive.google.com/file/d/1yGslR0RvaNGhZqv59brHPBt02TfjIYx_/preview" target="_blank">Presidencia</a>
-                            <a href="https://drive.google.com/file/d/1LqdsDfyLsPOiTllM1rvuhJ4ZSwzUMsyh/preview" target="_blank">Sala Familiar</a>
-                            <a href="https://drive.google.com/file/d/1Ev_Sp8DmbfHGwwDNIHhaOoXvnNi8s03u/preview" target="_blank">Sala Penal</a>
-                            <a href="https://drive.google.com/file/d/1T3zI4n2_c_29OjlOrxKBVXlKNu5D43te/preview" target="_blank">Primer Tribunal Saltillo</a>
-                            <a href="https://drive.google.com/file/d/1vqIgTTTRBS6Xf03rJj4-CVY20u15YoPo/preview" target="_blank">Segundo Tribunal Torreón</a>
-                            <a href="https://drive.google.com/file/d/1eGzko5DK6-UTUr9mRAXa08_fHZO0--pg/preview" target="_blank">Tercer Tribunal Monclova</a>
-                            <a href="https://drive.google.com/file/d/1ddbR8g0xlWb_YR5HxrwHs0zV1_VGuV2Z/preview" target="_blank">Cuarto Tribunal Piedras Negras</a>
-                        </div></details>
-                        <div class="pje-button-text-fixed">ESTRUCTURA JURISDICCIONAL</div>
-                    </div>
-                    <div class="pje-dropdown">
-                        <details><summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png" class="pje-button-image"></summary>
-                        <div class="pje-dropdown-content-details">
-                            <a href="https://drive.google.com/file/d/1w-ruZQInWxpCWn-9t196wb8b51dEV4w2/view?usp=sharing" target="_blank">Tribunal de Disciplina Judicial</a>
-                            <a href="https://drive.google.com/file/d/1BCSIUnLTSlxuxgzcLv3uei2KU_7NA4ty/preview" target="_blank">Instituto de Especialización Judicial</a>
-                            <a href="https://drive.google.com/file/d/1HUc2Q_GyiFzvzZQBwK61ouEg581KpR5-/preview" target="_blank">Instituto Estatal de Defensoría Pública</a>
-                        </div></details>
-                        <div class="pje-button-text-fixed">ESTRUCTURA NO JURISDICCIONAL</div>
-                    </div>
-                    <div class="pje-dropdown">
-                        <details><summary><img src="https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Jose%20Ignacio%20Maynez.png" class="pje-button-image"></summary>
-                        <div class="pje-dropdown-content-details">
-                            <a href="https://drive.google.com/file/d/16KoOsRDbqQlgb12VKZj1mFhSQcMmCYkl/preview" target="_blank">Archivo General</a>
-                            <a href="https://drive.google.com/file/d/1olnM_gmoXx4vV7jrGPuj5Bo-rVQO6D_6/preview" target="_blank">Secretaría Técnica y de Planeación</a>
-                            <a href="https://drive.google.com/file/d/1K3nf_aYUQsCY8dFLA7D4hbsYasCojmnZ/preview" target="_blank">Oficialía Mayor</a>
-                        </div></details>
-                        <div class="pje-button-text-fixed">ESTRUCTURA ADMINISTRATIVA</div>
-                    </div>
-                </div>
+            <div style="padding:25px;">
+                <table class="pje-table-norma">
+                    <thead><tr><th>Estructura Jurisdiccional</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowDoc("Pleno", "https://drive.google.com/file/d/1c3Bj9pIHguwkthEC0AMXdK2D2pjapB8a/preview")}
+                        ${rowDoc("Presidencia", "https://drive.google.com/file/d/1yGslR0RvaNGhZqv59brHPBt02TfjIYx_/preview")}
+                        ${rowDoc("Sala Familiar", "https://drive.google.com/file/d/1LqdsDfyLsPOiTllM1rvuhJ4ZSwzUMsyh/preview")}
+                        ${rowDoc("Sala Penal", "https://drive.google.com/file/d/1Ev_Sp8DmbfHGwwDNIHhaOoXvnNi8s03u/preview")}
+                        ${rowDoc("Sala Regional Torreón", "https://drive.google.com/file/d/1vqIgTTTRBS6Xf03rJj4-CVY20u15YoPo/preview")}
+                        ${rowDoc("Primer Tribunal Saltillo", "https://drive.google.com/file/d/1T3zI4n2_c_29OjlOrxKBVXlKNu5D43te/preview")}
+                        ${rowDoc("Segundo Tribunal Torreón", "https://drive.google.com/file/d/1vqIgTTTRBS6Xf03rJj4-CVY20u15YoPo/preview")}
+                        ${rowDoc("Tercer Tribunal Monclova", "https://drive.google.com/file/d/1eGzko5DK6-UTUr9mRAXa08_fHZO0--pg/preview")}
+                        ${rowDoc("Cuarto Tribunal Piedras Negras", "https://drive.google.com/file/d/1ddbR8g0xlWb_YR5HxrwHs0zV1_VGuV2Z/preview")}
+                        ${rowDoc("Central de Actuarios Saltillo", "https://drive.google.com/file/d/1b6ENQKINblfaZkx4SncPvSfVMW4J4N_8/preview")}
+                        ${rowDoc("Central de Actuarios Torreón", "https://drive.google.com/file/d/1bWSfaetTdRk4QLmIqGJkde98yR6Tyaap/preview")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Estructura No Jurisdiccional</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowDoc("Tribunal de Disciplina Judicial", "https://drive.google.com/file/d/1w-ruZQInWxpCWn-9t196wb8b51dEV4w2/view?usp=sharing")}
+                        ${rowDoc("Instituto de Especialización Judicial", "https://drive.google.com/file/d/1BCSIUnLTSlxuxgzcLv3uei2KU_7NA4ty/preview")}
+                        ${rowDoc("Centro de Medios Alternos (CEMASC)", "https://drive.google.com/file/d/1uDMIcgUgX9SfTwLQEAnwwNOppVwP8lQA/preview")}
+                        ${rowDoc("Instituto Estatal de Defensoría Pública", "https://drive.google.com/file/d/1HUc2Q_GyiFzvzZQBwK61ouEg581KpR5-/preview")}
+                        ${rowDoc("Visitaduría Judicial General", "https://drive.google.com/file/d/1CdUmzEGINKwFsDs1UqWmC7MxUntMfsFp/preview")}
+                    </tbody>
+                </table>
+                <table class="pje-table-norma">
+                    <thead><tr><th>Estructura Administrativa</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead>
+                    <tbody>
+                        ${rowDoc("Archivo General", "https://drive.google.com/file/d/16KoOsRDbqQlgb12VKZj1mFhSQcMmCYkl/preview")}
+                        ${rowDoc("Secretaría Técnica y de Planeación", "https://drive.google.com/file/d/1olnM_gmoXx4vV7jrGPuj5Bo-rVQO6D_6/preview")}
+                        ${rowDoc("Oficialía Mayor", "https://drive.google.com/file/d/1K3nf_aYUQsCY8dFLA7D4hbsYasCojmnZ/preview")}
+                        ${rowDoc("Unidad de Apoyo Jurisdiccional", "https://drive.google.com/file/d/1F8Gvv4Cx3QhWtKK6HdW79tkI_WaKd44X/preview")}
+                        ${rowDoc("Dirección de Informática", "https://drive.google.com/file/d/1ArETnYWOdmjnWXTjK7JCDRZQBnShY_bE/preview")}
+                        ${rowDoc("Dirección de Recursos Humanos", "https://drive.google.com/file/d/1lUez0LoNbHTb_zAqAaFG_1IQy7XonsE7/preview")}
+                        ${rowDoc("Dirección de Recursos Financieros", "https://drive.google.com/file/d/12Kf6zC5In1cbXwgown0yhtdbR3fQOv6L/preview")}
+                    </tbody>
+                </table>
             </div>`;
         } 
         else if (t.includes("VI. Directorio")) {
@@ -467,8 +460,12 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
             tabs.innerHTML = '';
             body.innerHTML = `<div style="padding:25px;">
                 <table class="pje-table-norma"><thead><tr><th>Constituciones</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
-                    ${rowNorma("Constitución Política de México", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}
-                    ${rowNorma("Constitución Política de Coahuila", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}
+                    ${rowDoc("Constitución Política de México", "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf")}
+                    ${rowDoc("Constitución Política de Coahuila", "https://www.congresocoahuila.gob.mx/epub/faces/Vis/Vis10.xhtml")}
+                </tbody></table>
+                <table class="pje-table-norma"><thead><tr><th>Leyes Federales y Estatales</th><th style="width:80px;text-align:center;">Ver</th><th style="width:80px;text-align:center;">Descargar</th></tr></thead><tbody>
+                    ${rowDoc("Ley de Amparo", "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf")}
+                    ${rowDoc("Ley de Acceso de las Mujeres", "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa158.pdf")}
                 </tbody></table>
             </div>`;
         } else { tabs.innerHTML = ''; body.innerHTML = '<div style="padding:80px; text-align:center; color:#999;">Contenido en proceso de actualización.</div>'; }
@@ -489,7 +486,7 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         if (m === 'VISUAL') {
             const fMery = "https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Miguel%20Felipe%20Mery%20Ayup.png";
             let h = '<div style="padding:20px;"><details class="dir65-details" open><summary class="dir65-summary">▶ Tribunal Superior de Justicia</summary><div class="dir65-miembros-wrap">';
-            h += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona(fMery, "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "01/01/2019", "844-777-4498", "miguel.mery@pje.mx", "Francisco Coss 945") + '</div>';
+            h += '<div class="dir65-subtitulo-interno">Presidencia</div><div class="dir65-grid-miembros">' + persona(fMery, "Miguel Felipe Mery Ayup", "Magistrado Presidente", "MAG01", "01/01/2019", "844-777-4498", "mery@pje.mx", "Francisco Coss 945") + '</div>';
             h += '<div class="dir65-subtitulo-interno">Salas</div><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/maria-eugenia-galindo-hernandez.png", "María Eugenia Galindo Hernández", "Magistrada Presidenta", "MAG01", "16/04/1998", "844-777-4498", "maria@pje.mx", "Coss 945") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Vladimir%20Kaiceros%20Barranco.png", "Vladimir Kaiceros Barranco", "Magistrado", "MAG01", "16/03/2001", "844-777-4498", "vladimir@pje.mx", "Coss 945") + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Valeriano%20Valdes%20Cabello.png", "Valeriano Valdés Cabello", "Magistrado", "MAG01", "01/08/2025", "844-777-4498", "valeriano@pje.mx", "Coss 945") + '</div>';
             h += '</div></details>';
             h += '<details class="dir65-details"><summary class="dir65-summary">▶ Tribunal de Disciplina</summary><div class="dir65-miembros-wrap"><div class="dir65-grid-miembros">' + persona("https://www.pjecz.gob.mx/transparencia/articulo-65-ltaip/f06-directorio/images/Dulce%20Maria%20Fuentes%20Mancillas.png", "Dulce María Fuentes Mancillas", "Presidenta", "MAG01", "01/08/2025", "844-777-4568", "dulce@pje.mx", "Colosio 703") + '</div></div></details>';
