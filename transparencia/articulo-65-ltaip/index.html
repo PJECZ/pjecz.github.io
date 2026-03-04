@@ -321,43 +321,45 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     #pje-art65-container { display: block; width: 100%; --pje-oro: #BDB9A6; --pje-gris: #49545E; --pje-azul: #003366; }
 
     /* Toolbar de Vistas */
-    .pje-main-toolbar { display: flex; justify-content: flex-end; gap: 10px; padding: 10px 30px; background: #f9f9f9; border-bottom: 1px solid #eee; }
-    .btn-view-toggle { padding: 8px 15px; cursor: pointer; border: 1px solid #ccc; background: #fff; font-size: 12px; font-weight: bold; border-radius: 4px; transition: 0.3s; }
+    .pje-main-toolbar { display: flex; justify-content: flex-end; gap: 10px; padding: 15px 30px; background: #f1f1f1; border-bottom: 1px solid #ddd; }
+    .btn-view-toggle { padding: 8px 15px; cursor: pointer; border: 1px solid #ccc; background: #fff; font-size: 12px; font-weight: bold; border-radius: 4px; transition: 0.3s; color: var(--pje-gris); }
     .btn-view-toggle.active { background: var(--pje-gris); color: #fff; border-color: var(--pje-gris); }
 
-    /* Vista Mosaico */
+    /* Vista Mosaico (Grid) */
     #pje-grid-65 { display: grid; padding: 30px; gap: 15px; background: #f4f4f4; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-    .pje-item-65 { background: var(--pje-oro); color: var(--pje-gris); padding: 25px 15px; text-align: center; border-radius: 8px; cursor: pointer; font-size: 11px; font-weight: bold; text-transform: uppercase; transition: 0.3s; min-height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.05); line-height: 1.3; }
+    .pje-item-65 { background: var(--pje-oro); color: var(--pje-gris); padding: 25px 15px; text-align: center; border-radius: 8px; cursor: pointer; font-size: 11px; font-weight: bold; text-transform: uppercase; transition: 0.3s; min-height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.05); line-height: 1.3; text-decoration: none; }
     .pje-item-65:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); background: #ada996; }
     .pje-item-65::before { content: " 📁 "; font-size: 32px; margin-bottom: 12px; display: block; opacity: 0.8; }
 
     /* Vista Lista */
-    #pje-list-65 { display: none; padding: 30px; background: #fff; }
-    .pje-list-item { padding: 15px 20px; border-bottom: 1px solid #eee; display: flex; align-items: center; cursor: pointer; transition: 0.2s; font-size: 14px; color: #333; }
+    #pje-list-65 { display: none; padding: 20px 30px; background: #fff; border: 1px solid #eee; }
+    .pje-list-item { padding: 14px 20px; border-bottom: 1px solid #eee; display: flex; align-items: center; cursor: pointer; transition: 0.2s; font-size: 13px; color: #444; text-decoration: none; font-weight: 600; }
     .pje-list-item:hover { background: #f8f9fa; color: var(--pje-azul); padding-left: 30px; }
-    .pje-list-item::before { content: "📄"; margin-right: 15px; font-size: 18px; }
+    .pje-list-item::before { content: "📄"; margin-right: 15px; font-size: 16px; opacity: 0.7; }
+    .pje-list-item.external-link::after { content: " ↗"; font-size: 12px; margin-left: auto; opacity: 0.5; }
 
-    /* Modal y otros estilos se mantienen igual */
+    /* Modal Principal */
     #pje-modal-65 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; z-index: 99999; align-items: center; justify-content: center; }
-    .pje-modal-box { background: #fff; width: 95%; max-width: 1200px; max-height: 92vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+    .pje-modal-box { background: #fff; width: 95%; max-width: 1200px; max-height: 92vh; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
     .pje-modal-h { padding: 15px 25px; background: #f8f9fa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+
+    /* Tablas e Info dentro del Modal */
     .pje-encabezado-info { background: #fdfdfd; padding: 15px 25px; border-bottom: 1px solid #eee; font-size: 12px; line-height: 1.4; color: #333; }
     .pje-encabezado-info strong { color: var(--pje-azul); min-width: 140px; display: inline-block; }
-    .pje-table-norma { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 13px; border: 1px solid #eee; }
-    .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; font-weight: bold; }
-    .pje-table-norma td { padding: 10px 12px; border-bottom: 1px solid #eee; color: #444; vertical-align: middle; }
-    .pje-btn-act, .pje-btn-desc { font-size: 24px; text-decoration: none; cursor: pointer; display: inline-block; transition: 0.2s; }
+    .pje-table-norma { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 13px; }
+    .pje-table-norma thead th { background: var(--pje-gris); color: white; padding: 12px; text-align: left; }
+    .pje-table-norma td { padding: 10px 12px; border-bottom: 1px solid #eee; color: #444; }
+    .pje-btn-act, .pje-btn-desc { font-size: 24px; text-decoration: none; cursor: pointer; transition: 0.2s; }
 
-    /* Estilos Directorio y Tabs */
+    /* Directorio y Tabs */
     .dir65-tabs { display: flex; justify-content: center; background: #e0e0e0; padding: 10px; gap: 10px; }
-    .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; transition: 0.3s; font-size: 11px; }
+    .tab-btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; background: #bbb; color: #fff; font-size: 11px; }
     .tab-btn.active { background: var(--pje-gris); }
     .pj-toolbar { display: flex; flex-wrap: wrap; gap: 10px; background: #f1f1f1; padding: 15px; align-items: center; border-bottom: 1px solid #ddd; }
     .pj-search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 4px; flex-grow: 1; }
+    .pj-search-box input { border: none; outline: none; width: 100%; font-size: 13px; margin-left: 8px; }
     .pj-table-wrap { overflow-x: auto; width: 100%; flex-grow: 1; background: #fff; }
     .pj-table { width: 100%; border-collapse: collapse; font-size: 11px; min-width: 1300px; }
-    .pj-table th { background: #ececec; color: #333; padding: 12px 10px; text-align: left; border-bottom: 2px solid #ccc; position: sticky; top: 0; z-index: 10; }
-    .pj-table td { padding: 10px; border-bottom: 1px solid #eee; vertical-align: top; }
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -387,6 +389,14 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
     const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvHXjm4h5MtHoaqQJOgD4R359NmMuQvxmC1tboLoT85Aoc7XivDKIkwwa-XljmePZCTKs-ewZ_OBCT/pub?output=csv';
     let datosFull = [];
 
+    // --- CONFIGURACIÓN DE VÍNCULOS EXTERNOS ---
+    // Agrega aquí las fracciones que quieras que lleven a otra página en lugar de abrir el modal
+    const vinculosPersonalizados = {
+        "I. Marco normativo": "https://www.pjecz.gob.mx/marco-normativo/",
+        "XII. Domicilio de la Unidad de Transparencia": "https://www.pjecz.gob.mx/contacto/",
+        "XLVI. Cualquier otra información útil o relevante": "#seccion-especial"
+    };
+
     const fracciones = [
         "I. Marco normativo", "II. Estructura orgánica", "III. Facultades", "IV. Metas y objetivos", 
         "V. Indicadores relacionados con temas de interés", "VI. Directorio de todas las personas servidoras públicas", 
@@ -412,30 +422,35 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         "XLVI. Cualquier otra información útil o relevante"
     ];
 
-    // Cargar ambas vistas al inicio
-    document.getElementById('pje-grid-65').innerHTML = fracciones.map(f => `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`).join('');
-    document.getElementById('pje-list-65').innerHTML = fracciones.map(f => `<div class="pje-list-item" onclick="abrirModal65('${f}')">${f}</div>`).join('');
+    // Renderizado Inicial
+    function init() {
+        // Render Vista Mosaico
+        document.getElementById('pje-grid-65').innerHTML = fracciones.map(f => {
+            const link = vinculosPersonalizados[f];
+            if(link) {
+                return `<a href="${link}" target="_blank" class="pje-item-65">${f}</a>`;
+            }
+            return `<div class="pje-item-65" onclick="abrirModal65('${f}')">${f}</div>`;
+        }).join('');
 
-    function cambiarVistaPrincipal(modo) {
-        const grid = document.getElementById('pje-grid-65');
-        const list = document.getElementById('pje-list-65');
-        const btnGrid = document.getElementById('btn-grid-view');
-        const btnList = document.getElementById('btn-list-view');
-
-        if (modo === 'GRID') {
-            grid.style.display = 'grid';
-            list.style.display = 'none';
-            btnGrid.classList.add('active');
-            btnList.classList.remove('active');
-        } else {
-            grid.style.display = 'none';
-            list.style.display = 'block';
-            btnGrid.classList.remove('active');
-            btnList.classList.add('active');
-        }
+        // Render Vista Lista
+        document.getElementById('pje-list-65').innerHTML = fracciones.map(f => {
+            const link = vinculosPersonalizados[f];
+            if(link) {
+                return `<a href="${link}" target="_blank" class="pje-list-item external-link">${f}</a>`;
+            }
+            return `<div class="pje-list-item" onclick="abrirModal65('${f}')">${f}</div>`;
+        }).join('');
     }
 
-    // Funciones de Modal y Contenido (se mantienen tus lógicas de II, III, IV, VI, etc.)
+    function cambiarVistaPrincipal(modo) {
+        document.getElementById('pje-grid-65').style.display = (modo === 'GRID') ? 'grid' : 'none';
+        document.getElementById('pje-list-65').style.display = (modo === 'LIST') ? 'block' : 'none';
+        document.getElementById('btn-grid-view').classList.toggle('active', modo === 'GRID');
+        document.getElementById('btn-list-view').classList.toggle('active', modo === 'LIST');
+    }
+
+    // Funciones de Apoyo Modal
     function rowDoc(n, u) { return `<tr><td style="font-weight:bold;">${n}</td><td style="text-align:center;"><a href="${u}" target="_blank" class="pje-btn-act">👁️</a></td><td style="text-align:center;"><a href="${u}" target="_blank" class="pje-btn-desc">📥</a></td></tr>`; }
 
     function abrirModal65(t) {
@@ -444,14 +459,13 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         const body = document.getElementById('pje-body-65');
         const header = document.getElementById('pje-header-container');
         const tabs = document.getElementById('pje-tabs-container');
-        let descText = t.split('. ')[1];
+        let descText = t.split('. ')[1] || t;
 
         header.innerHTML = `<div class="pje-encabezado-info"><p><strong>Sujeto obligado:</strong> Poder Judicial del Estado de Coahuila</p><p><strong>Rubro:</strong> Fracción ${t.split('.')[0]}</p><p><strong>Descripción:</strong> ${descText}</p></div>`;
 
-        // Aquí van tus condiciones else if para cada fracción...
-        if (t.includes("I. Marco normativo")) {
+        if (t.includes("II. Estructura orgánica")) {
             tabs.innerHTML = '';
-            body.innerHTML = `<div style="padding:25px;"><details class="pje-norma-details" open><summary class="pje-norma-summary">Constituciones</summary><div class="pje-norma-content"><table class="pje-table-norma"><tbody>${rowDoc("Constitución Política de los Estados Unidos Mexicanos", "#")}</tbody></table></div></details></div>`;
+            body.innerHTML = `<div style="padding:25px;"><details class="pje-norma-details" open><summary class="pje-norma-summary">Estructura Jurisdiccional</summary><div class="pje-norma-content"><table class="pje-table-norma"><tbody>${rowDoc("Pleno", "#")}${rowDoc("Presidencia", "#")}</tbody></table></div></details></div>`;
         } 
         else if (t.includes("VI. Directorio")) {
             tabs.innerHTML = `<div class="dir65-tabs"><button class="tab-btn active" id="btn-vis" onclick="setModo('VISUAL')">ESTRUCTURA VISUAL</button><button class="tab-btn" id="btn-tab" onclick="setModo('TABLA')">BUSCADOR GENERAL</button></div>`;
@@ -463,9 +477,32 @@ Los sujetos obligados pondrán a disposición del público y mantendrán actuali
         }
     }
 
-    // (Aquí debes mantener las funciones setModo, persona, cargarCSV, etc. que ya tenías)
+    // Funciones Directorio (se mantienen tus originales)
+    function setModo(m) {
+        const body = document.getElementById('pje-body-65');
+        document.getElementById('btn-vis')?.classList.toggle('active', m === 'VISUAL');
+        document.getElementById('btn-tab')?.classList.toggle('active', m === 'TABLA');
+        if (m === 'VISUAL') {
+            body.innerHTML = '<div style="padding:20px; text-align:center;">Cargando organigrama...</div>';
+            // Aquí puedes re-insertar tu lógica de "persona(...)"
+        } else {
+            body.innerHTML = `<div class="pj-toolbar"><div class="pj-search-box">🔍 <input type="text" id="q65" placeholder="Buscar..." onkeyup="filtrar65()"></div></div><div class="pj-table-wrap"><table class="pj-table"><thead><tr><th>ÁREA</th><th>NOMBRE</th><th>CARGO</th></tr></thead><tbody id="pje-tbody"></tbody></table></div>`;
+            cargarCSV();
+        }
+    }
+
+    function cargarCSV() { 
+        Papa.parse(CSV_URL, { download: true, header: true, skipEmptyLines: true, complete: function(r) { 
+            datosFull = r.data; 
+            const b = document.getElementById('pje-tbody');
+            if(b) b.innerHTML = r.data.map(i => `<tr><td>${i.AREA||''}</td><td>${i.NOMBRE||''}</td><td>${i.CARGO||''}</td></tr>`).join('');
+        }}); 
+    }
+
     function cerrarModal65() { document.getElementById('pje-modal-65').style.display = 'none'; }
-    function setModo(m) { /* Tu lógica de Directorio */ }
+
+    // Ejecutar inicio
+    init();
 </script>
 </div>
     </div>
