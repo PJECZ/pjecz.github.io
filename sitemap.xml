@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-03-09T11:19:58-00:00</lastmod>
+<lastmod>2026-03-09T15:38:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9364,7 +9364,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/quinta-sesion-ordinaria/</loc>
-<lastmod>2026-03-13T10:30:00-06:00</lastmod>
+<lastmod>2026-03-17T10:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -9372,6 +9372,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2026/quinta-sesion-ordinaria/</loc>
 <lastmod>2026-03-12T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/novena-sesion-ordinaria/</loc>
+<lastmod>2026-03-10T13:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
