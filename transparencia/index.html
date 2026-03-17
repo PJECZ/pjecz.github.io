@@ -262,8 +262,9 @@
         font-family: sans-serif;
     }
 
+    /* Contenedor estándar para secciones que NO son el portal (encabezado, historial, etc.) */
     .contenido-limite {
-        max-width: 1000px; /* Un poco más ancho para el portal */
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -281,7 +282,18 @@
         font-size: 1.25rem;
     }
 
-    /* 2. INTEGRACIÓN DEL PORTAL (IFRAME) */
+    /* 2. INTEGRACIÓN DEL PORTAL (MODIFICADO PARA ANCHO TOTAL) */
+
+    /* Contenedor fluido para el portal - ESTO ES CLAVE */
+    .container-fluid-full {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 3rem;
+    }
+
     .contenedor-portal-integrado {
         width: 100%;
         margin-bottom: 3rem;
@@ -291,10 +303,21 @@
 
     .iframe-transparente {
         width: 100%;
-        height: 1000px; /* Altura ajustable según prefieras */
+        height: 1200px; /* Altura ajustable según prefieras, suficiente para ver el contenido sin excesivo scroll interno */
         border: none; /* Elimina el borde del iframe */
         display: block;
         overflow-y: auto; /* Mantiene la barra de desplazamiento si es necesaria */
+    }
+
+    /* Opcional: Centrar el título y subtítulo antes del portal sin usar el contenedor limitado */
+    .centrar-titulos-portal {
+        max-width: 800px; /* Opcional, para que el texto de instrucción no sea muy ancho */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding-left: 15px; /* Espacio mínimo si la pantalla es muy pequeña */
+        padding-right: 15px;
     }
 
     /* 3. OCULTAR ELEMENTOS DEL SISTEMA/CMS */
@@ -348,9 +371,9 @@
   </div>
 </div>
 
-<div class="container my-5 contenido-limite">
+<div class="container-fluid-full">
 
-  <div class="text-center mb-4">
+  <div class="centrar-titulos-portal">
     <h2 class="titulo-ley">Portal de Obligaciones de Transparencia</h2>
     <p>Consulta la información oficial del Poder Judicial del Estado de Coahuila de Zaragoza a través de nuestra plataforma interactiva:</p>
   </div>
@@ -365,6 +388,9 @@
     </iframe>
   </div>
 
+</div>
+
+<div class="container my-5 contenido-limite">
   <hr class="my-5">
 
   <h5 class="titulo-ley">
