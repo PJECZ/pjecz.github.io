@@ -447,6 +447,17 @@
       font-size: 1.25rem;
     }
 
+    /* Estilos para el contenedor del Iframe */
+    .contenedor-iframe {
+      width: 100%;
+      min-height: 900px;
+      overflow: hidden;
+      margin: 20px 0;
+      padding: 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
     /* Ocultar títulos automáticos del CMS o sistema */
     h1, h1.titulo-transparencia, .page-title, .titulo-principal {
       display: none !important;
@@ -456,14 +467,13 @@
       padding: 0 !important;
     }
 
-    /* Ocultar textos sueltos al final (IMPORTANTE PARA LO QUE PEDISTE) */
+    /* Ocultar textos sueltos al final */
     body > .contenido-limite ~ p,
     body > .contenido-limite ~ h3,
     body > .contenido-limite ~ h5,
     body > .contenido-limite ~ a,
-    body > p, /* Esto es clave para ocultar los párrafos "Artículo XX LTAIP" que aparecen abajo */
-    body > div.container.my-5.contenido-limite + p /* Una regla más específica para el caso */
-     {
+    body > p,
+    body > div.container.my-5.contenido-limite + p {
       display: none !important;
     }
 
@@ -479,20 +489,12 @@
         <h5 class="modal-title" id="modalAvisoLabel">Suspensión del plazo</h5>
       </div>
       <div class="modal-body small text-justify">
-        <p>
-          Con fundamento en el artículo quinto transitorio del Decreto número 267, de la reforma en materia de transparencia y acceso a la información, publicado el 27 de junio de 2025 en el Periódico Oficial del Gobierno del Estado número 51, se suspenden por un plazo de treinta días naturales contados a partir de su entrada en vigor todos y cada uno de los trámites, procedimientos y demás medios de impugnación que conocía el Instituto Coahuilense de Acceso a la Información Pública.
-        </p>
-        <p>
-          Lo anterior con excepción de los que se tramitan a través de la Plataforma Nacional de Transparencia consistentes en la recepción y atención de las solicitudes de acceso a la información y solicitudes de acceso, rectificación, cancelación y oposición de datos personales, los cuales se tramitarán conforme a las disposiciones vigentes al momento en que ingresaron su solicitud.
-        </p>
-        <p>
-          En virtud de lo anterior nos encontramos actualizando los contenidos de este sitio para cumplir con las nuevas disposiciones legales.
-          <strong>Agradecemos su comprensión.</strong>
-        </p>
-        </div>
+        <p>Con fundamento en el artículo quinto transitorio del Decreto número 267... (tu texto actual)</p>
+        <p>En virtud de lo anterior nos encontramos actualizando los contenidos de este sitio para cumplir con las nuevas disposiciones legales. <strong>Agradecemos su comprensión.</strong></p>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
-        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -505,68 +507,51 @@
 
 <div class="container my-5 contenido-limite">
 
-  <h5 class="titulo-ley">
-    Información Pública de Oficio conforme a la anterior Ley de Acceso a la Información Pública del Estado de Coahuila de Zaragoza
-  </h5>
+  <div class="mb-5">
+    <h2 class="titulo-ley" style="font-size: 1.5rem;">Portal de Obligaciones de Transparencia</h2>
+    <p class="text-center">Consulta la información oficial del Poder Judicial del Estado de Coahuila de Zaragoza a través de nuestra plataforma interactiva:</p>
 
-  <div class="mb-4 text-center">
+    <div class="contenedor-iframe shadow-sm">
+      <iframe 
+        src="https://portal-de-transparencia-poder-judicial-de-coahuil-5229110419.us-west1.run.app/" 
+        width="100%" 
+        height="900px" 
+        style="border: none; display: block;" 
+        title="Portal Transparencia PJECZ"
+        allow="clipboard-write; geolocation"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="mt-5 text-center">
+    <h5 class="titulo-ley">
+      Información Pública de Oficio conforme a la anterior Ley de Acceso a la Información Pública
+    </h5>
+
     <button type="button" class="btn btn-link p-0 border-0 bg-transparent"
       data-bs-toggle="collapse" data-bs-target="#leyAnterior"
       aria-expanded="false" aria-controls="leyAnterior">
       <img src="consulta-historica-ley-anterior.png" alt="Ley Anterior" style="width: 150px; cursor: pointer;" />
     </button>
+
     <div class="collapse mt-3" id="leyAnterior">
-      <h5 class="fw-semibold">
-        Última actualización al segundo trimestre de 2025
-      </h5>
-      <ul class="list-unstyled ps-3">
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-8/#gsc.tab=0">Artículo 8</a></li>
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-18/#gsc.tab=0">Artículo 18</a></li>
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-20/#gsc.tab=0/#gsc.tab=0">Artículo 20</a></li>
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-21/#gsc.tab=0">Artículo 21</a></li>
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-22/#gsc.tab=0">Artículo 22</a></li>
-        <li><a href="https://www.pjecz.gob.mx/transparencia/articulo-27/#gsc.tab=0">Artículo 27</a></li>
-      </ul>
+      <div class="card card-body border-0 bg-light">
+          <h5 class="fw-semibold">Última actualización al segundo trimestre de 2025</h5>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-8/#gsc.tab=0" class="text-decoration-none">Artículo 8</a></li>
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-18/#gsc.tab=0" class="text-decoration-none">Artículo 18</a></li>
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-20/#gsc.tab=0" class="text-decoration-none">Artículo 20</a></li>
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-21/#gsc.tab=0" class="text-decoration-none">Artículo 21</a></li>
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-22/#gsc.tab=0" class="text-decoration-none">Artículo 22</a></li>
+            <li class="mb-2"><a href="https://www.pjecz.gob.mx/transparencia/articulo-27/#gsc.tab=0" class="text-decoration-none">Artículo 27</a></li>
+          </ul>
+      </div>
     </div>
   </div>
 
-  <h5 class="titulo-ley">
-    Información Pública de Oficio, conforme a la nueva Ley de Transparencia y Acceso a la Información Pública para el Estado de Coahuila de Zaragoza
-  </h5>
-
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-3 text-center mb-3">
-      <a href="articulo-22-ltaip/">
-        <img src="transparencia-22.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 22" />
-        <h5 class="mt-2">Artículo 22 (LTAIP)</h5>
-      </a>
-    </div>
-    <div class="col-md-3 text-center mb-3">
-      <a href="articulo-27-ltaip/">
-        <img src="transparencia-27.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 27" />
-        <h5 class="mt-2">Artículo 27 (LTAIP)</h5>
-      </a>
-    </div>
-  </div>
-
-  <h5 class="titulo-ley mt-4">
-    Ley General de Transparencia y Acceso a la Información
-  </h5>
-
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-3 text-center mb-3">
-      <a href="articulo-65-ltaip/">
-        <img src="transparencia-65.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 65" />
-        <h5 class="mt-2">Artículo 65 (LTAIP)</h5>
-      </a>
-    </div>
-    <div class="col-md-3 text-center mb-3">
-      <a href="articulo-69-ltaip/">
-        <img src="transparencia-69.png" class="rounded-circle shadow" style="width: 130px;" alt="Artículo 69" />
-        <h5 class="mt-2">Artículo 69 (LTAIP)</h5>
-      </a>
-    </div>
-  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
