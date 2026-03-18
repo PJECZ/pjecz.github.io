@@ -251,23 +251,23 @@
             }
         </script>
     <div class="container py-4">
-        <style>
-    /* 1. ESTILOS GENERALES Y RESET */
+        <p><html lang="es">
+<head>
+<meta charset="UTF-8"></p>
+<style>
+    /* 1. ESTILOS GENERALES */
     body {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
     }
-    /* Contenedor estándar para secciones que NO son el portal (encabezado, historial, etc.) */
+
     .contenido-limite {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
-    .sin-espacio-arriba {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-    }
+
     .titulo-ley {
         color: #198754;
         font-weight: 600;
@@ -275,69 +275,47 @@
         margin-bottom: 1.5rem;
         font-size: 1.25rem;
     }
-    /* 2. INTEGRACIÓN DEL PORTAL (MODIFICADO PARA ANCHO TOTAL) */
-    /* Contenedor fluido para el portal - ESTO ES CLAVE */
+
+    /* 2. INTEGRACIÓN DEL PORTAL (ANCHO TOTAL) */
     .container-fluid-full {
         width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: auto;
-        margin-left: auto;
+        padding: 0;
         margin-bottom: 3rem;
     }
+
     .contenedor-portal-integrado {
         width: 100%;
-        margin-bottom: 3rem;
-        /* Esto elimina el aspecto de "cuadro" o "recuadro" */
         border: none;
+        margin-top: 10px; /* Pequeño espacio tras la cabecera */
     }
+
     .iframe-transparente {
         width: 100%;
-        height: 1200px; /* Altura ajustable según prefieras, suficiente para ver el contenido sin excesivo scroll interno */
-        border: none; /* Elimina el borde del iframe */
+        height: 1200px; 
+        border: none;
         display: block;
-        overflow-y: auto; /* Mantiene la barra de desplazamiento si es necesaria */
+        overflow-y: auto;
     }
-    /* Opcional: Centrar el título y subtítulo antes del portal sin usar el contenedor limitado */
-    .centrar-titulos-portal {
-        max-width: 800px; /* Opcional, para que el texto de instrucción no sea muy ancho */
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        margin-bottom: 1.5rem;
-        padding-left: 15px; /* Espacio mínimo si la pantalla es muy pequeña */
-        padding-right: 15px;
-    }
-    /* 3. OCULTAR ELEMENTOS DEL SISTEMA/CMS */
-    h1, h1.titulo-transparencia, .page-title, .titulo-principal {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
-    }
-    body > .contenido-limite ~ p,
-    body > .contenido-limite ~ h3,
-    body > .contenido-limite ~ h5,
-    body > .contenido-limite ~ a,
-    body > p,
-    body > div.container.my-5.contenido-limite + p {
+
+    /* 3. OCULTAR ELEMENTOS DEL SISTEMA */
+    h1, .page-title, .titulo-principal {
         display: none !important;
     }
+
     footer, footer * {
         display: none !important;
     }
 </style>
+<p></head></p>
+<body>
 
-<div class="container contenido-limite sin-espacio-arriba mt-0">
+<div class="container contenido-limite mt-0">
   <div class="text-center">
     <img src="cabecera.jpg" class="img-fluid rounded shadow-sm" alt="Encabezado" style="max-width: 100%;" />
   </div>
 </div>
 
 <div class="container-fluid-full">
-  <div class="centrar-titulos-portal">
-    <h2 class="titulo-ley">Portal de Obligaciones de Transparencia</h2>
-    <p>Consulta la información oficial del Poder Judicial del Estado de Coahuila de Zaragoza a través de nuestra plataforma interactiva:</p>
-  </div>
   <div class="contenedor-portal-integrado">
     <iframe 
       src="https://portal-de-transparencia-poder-judicial-de-coahuil-5229110419.us-west1.run.app/" 
@@ -354,12 +332,14 @@
   <h5 class="titulo-ley">
     Información Pública de Oficio conforme a la anterior Ley de Acceso a la Información Pública
   </h5>
+
   <div class="mb-4 text-center">
     <button type="button" class="btn btn-link p-0 border-0 bg-transparent"
       data-bs-toggle="collapse" data-bs-target="#leyAnterior"
       aria-expanded="false" aria-controls="leyAnterior">
       <img src="consulta-historica-ley-anterior.png" alt="Ley Anterior" style="width: 150px; cursor: pointer;" />
     </button>
+
     <div class="collapse mt-3" id="leyAnterior">
       <div class="card card-body bg-light border-0">
         <h5 class="fw-bold mb-3">Última actualización al segundo trimestre de 2025</h5>
@@ -376,6 +356,10 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<p></html></p>
 <h2>Descargar</h2>
 <ul>
 <li><a href="https://storage.googleapis.com/pjecz-gob-mx/Transparencia/Aviso de Privacidad Integral.pdf">Aviso de Privacidad Integral.pdf</a></li>
