@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-03-18T15:50:41-00:00</lastmod>
+<lastmod>2026-03-18T18:42:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2111,6 +2111,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/2026-03-18-convocatoria-magistrado-por-un-dia/</loc>
+<lastmod>2026-03-18T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/armonizacion-contable/200-informacion-financiera-gubernamental/203-informacion-programatica/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2735,6 +2749,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/alyssa-valeria-zamora-adame/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/alyssa-valeria-zamora-adame/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3840,7 +3861,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/dalia-alessa-herrera-sifuentes/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/daniela-nicole-barboza-ramirez/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/daniela-nicole-barboza-ramirez/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -3939,6 +3974,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/diego-alberto-balderas-martinez/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/diego-alberto-balderas-martinez/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -4351,6 +4393,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/dulce-jimena-perez-lopez/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/edictos-de-declaracion-de-ausencia/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -4408,6 +4457,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/emilio-valdes-zertuche/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/emilio-valdes-zertuche/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -6941,6 +6997,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/galeria/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/derechos-humanos-e-igualdad-de-genero/biblioteca-digital/genero-y-feminismo/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -7012,6 +7075,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/hector-salvador-ramirez-hernandez/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/hector-salvador-ramirez-hernandez/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -7256,6 +7326,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/isa-dayana-rodriguez-orejon/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/magistrados/isadora-de-lourdes-rodriguez-garza/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -7291,7 +7368,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/jorge-lopez-medina/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/jose-abelardo-ramos-fuentes/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/jose-abelardo-ramos-fuentes/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -7327,6 +7418,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/joy-alejandra-duran-cortes/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/joy-alejandra-duran-cortes/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -7789,6 +7887,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/maria-elisa-valdes-perales/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/maria-elisa-valdes-perales/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
@@ -8726,6 +8831,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/magistrados/ricardo-lopez-campos/</loc>
 <lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -8951,6 +9063,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2025/resultados/sharis-valentina-garcia-dominguez/</loc>
+<lastmod>2025-04-30T09:00:00-05:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/resultados/sharis-valentina-garcia-dominguez/</loc>
 <lastmod>2025-04-30T09:00:00-05:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
