@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-04-20T17:12:36-00:00</lastmod>
+<lastmod>2026-04-20T17:25:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9498,6 +9498,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/decima-tercera-sesion-ordinaria/</loc>
 <lastmod>2026-04-22T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2026/2026-04-20-acuerdo-creacion-juzgado-um---supresion-juzgados-letrados-y-mercantiles/</loc>
+<lastmod>2026-04-20T14:50:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
