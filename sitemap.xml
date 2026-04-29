@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-04-28T17:58:59-00:00</lastmod>
+<lastmod>2026-04-29T08:03:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9489,6 +9489,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/decima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2026-04-29T15:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2026/octava-sesion-ordinaria/</loc>
 <lastmod>2026-04-29T14:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9496,8 +9503,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/decima-cuarta-sesion-ordinaria/</loc>
-<lastmod>2026-04-29T09:00:00-05:00</lastmod>
+<loc>https://www.pjecz.gob.mx/sesiones/pleno-del-tribunal-superior-de-justicia/2026/sexta-sesion-ordinaria/</loc>
+<lastmod>2026-04-29T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
