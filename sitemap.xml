@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-06-19T11:58:00-00:00</lastmod>
+<lastmod>2026-06-19T19:34:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9546,7 +9546,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/decima-segunda-sesion-ordinaria/</loc>
-<lastmod>2026-06-25T10:00:00-05:00</lastmod>
+<lastmod>2026-06-26T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -9602,6 +9602,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/decima-sesion-ordinaria/</loc>
+<lastmod>2026-05-27T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/decima-sesion-ordinaria/</loc>
+<lastmod>2026-05-27T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal-2026-05-27/</loc>
 <lastmod>2026-05-27T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
@@ -9743,6 +9757,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/decima-segunda-sesion-ordinaria/</loc>
 <lastmod>2026-04-16T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/septima-sesion-ordinaria/</loc>
+<lastmod>2026-04-15T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal-2026-04-15/</loc>
+<lastmod>2026-04-15T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
