@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-07-08T15:35:44-00:00</lastmod>
+<lastmod>2026-07-08T15:50:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9526,6 +9526,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/vigesima-primera-sesion-ordinaria/</loc>
 <lastmod>2026-07-09T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/decima-cuarta-sesion-ordinaria/</loc>
+<lastmod>2026-07-09T10:30:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
