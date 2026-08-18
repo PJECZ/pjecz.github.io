@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-08-17T11:07:09-00:00</lastmod>
+<lastmod>2026-08-18T16:10:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9547,6 +9547,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/vigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2026-08-19T13:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2026/2026-08-18-acuerdo-autoriza-cuerpo-pericia-_iedp-agosto-26-torreon-saltillo/</loc>
+<lastmod>2026-08-18T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
