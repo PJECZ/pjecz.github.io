@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-09-11T16:06:17-00:00</lastmod>
+<lastmod>2026-09-14T12:23:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9531,6 +9531,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2026/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2026-09-30T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2026-09-23T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/vigesima-novena-sesion-ordinaria/</loc>
+<lastmod>2026-09-17T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2026/decima-septima-sesion-ordinaria/</loc>
 <lastmod>2026-09-10T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9594,6 +9615,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/decima-septima-sesion-ordinaria/</loc>
+<lastmod>2026-08-25T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/vigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2026-08-19T13:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9603,6 +9631,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/noticias/2026/2026-08-19-firma-convenio-aplicate/</loc>
 <lastmod>2026-08-19T11:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/decima-sexta-sesion-ordinaria/</loc>
+<lastmod>2026-08-19T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/sesion-ordinaria-del-tribunal-de-apelacion-en-materia-penal-2026-08-19/</loc>
+<lastmod>2026-08-19T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
