@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-09-21T15:43:58-00:00</lastmod>
+<lastmod>2026-09-21T16:14:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9568,6 +9568,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-familiar/2026/decima-octava-sesion-ordinaria/</loc>
 <lastmod>2026-09-23T10:30:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/acuerdos-del-consejo/2026/2026-09-21-acuerdo-c-128-2026-integracion-oimasc-autorizar-certificacion/</loc>
+<lastmod>2026-09-21T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
