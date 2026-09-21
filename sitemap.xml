@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-09-21T13:31:34-00:00</lastmod>
+<lastmod>2026-09-21T15:43:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9580,6 +9580,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/decima-novena-sesion-ordinaria/</loc>
+<lastmod>2026-09-14T10:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-penal/2026/decima-septima-sesion-ordinaria/</loc>
 <lastmod>2026-09-10T12:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9603,6 +9610,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/vigesima-octava-sesion-ordinaria/</loc>
 <lastmod>2026-09-09T12:00:00-05:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/sesiones/sala-regional/2026/decima-octava-sesion-ordinaria/</loc>
+<lastmod>2026-09-07T10:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
