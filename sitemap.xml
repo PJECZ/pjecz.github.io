@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-11-09T16:18:07-00:00</lastmod>
+<lastmod>2026-11-10T15:38:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1915,6 +1915,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/resoluciones-definitivas-en-materia-disciplinaria/2025/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/convocatorias/2025/</loc>
 <lastmod>2025-01-01T12:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -2113,6 +2120,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/justicia-para-ti/convocatorias/2026/2026-03-18-convocatoria-magistrado-por-un-dia/</loc>
 <lastmod>2026-03-18T00:00:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/resoluciones-definitivas-en-materia-disciplinaria/2026/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -8882,6 +8896,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.pjecz.gob.mx/convocatorias/2025/requisitos/</loc>
 <lastmod>2025-01-07T16:05:00-06:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://www.pjecz.gob.mx/conocenos/estructura/consejo-de-la-judicatura/resoluciones-definitivas-en-materia-disciplinaria/</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
