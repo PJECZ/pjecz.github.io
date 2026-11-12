@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.pjecz.gob.mx/</loc>
-<lastmod>2026-11-11T15:58:00-00:00</lastmod>
+<lastmod>2026-11-12T13:04:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -9629,6 +9629,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.pjecz.gob.mx/noticias/2026/2026-10-29-boletin-20-aniversario-del-centro-de-evaluacion-psicosocial/</loc>
+<lastmod>2026-10-29T11:00:00-06:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
 <loc>https://www.pjecz.gob.mx/sesiones/sala-civil-y-mercantil/2026/trigesima-quinta-sesion-ordinaria/</loc>
 <lastmod>2026-10-28T12:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
@@ -9678,7 +9685,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.pjecz.gob.mx/noticias/2026/2026-1013-boletin-firma-convenio-pj-vizcaya/</loc>
+<loc>https://www.pjecz.gob.mx/noticias/2026/2026-10-13-boletin-firma-convenio-pj-vizcaya/</loc>
 <lastmod>2026-10-13T11:00:00-05:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
